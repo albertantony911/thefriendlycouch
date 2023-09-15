@@ -6,10 +6,19 @@ module.exports = {
     colors: {
       'light-purple': '#1fb6ff',
       'dark-purple': '#463174',
+      'light': '#FFFFFF',
     },
 
+    
 
-    extend: {},
+
+    extend: {
+
+      fontFamily:{
+        'poppins': ['Poppins']
+      }
+
+    },
   },
   plugins: [],
 }
