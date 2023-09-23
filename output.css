@@ -894,6 +894,10 @@ video {
   font-weight: 100;
 }
 
+.font-semibold{
+  font-weight: 600;
+}
+
 .text-dark-purple{
   --tw-text-opacity: 1;
   color: rgb(70 49 116 / var(--tw-text-opacity));
