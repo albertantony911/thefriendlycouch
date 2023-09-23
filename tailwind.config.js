@@ -10,6 +10,10 @@ module.exports = {
       'light': '#FFFFFF',
     },
 
+    container: {
+      center: true,
+    },
+
     
 
 
