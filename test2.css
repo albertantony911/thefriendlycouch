@@ -8,8 +8,7 @@
 .menu-burger input {
  
   opacity: 0;
-  right: 30px;
-  top: 30px;
+
   -webkit-font-smoothing: antialiased;
   z-index: 3;
   cursor: pointer;
@@ -18,9 +17,8 @@
 /* Burger */
 .menu-burger svg {
   
-  right: 30px;
-  top: 25px;
-  color: #ffffff;
+  
+  stroke: rgb(70 49 116);
   z-index: 2;
 }
 
