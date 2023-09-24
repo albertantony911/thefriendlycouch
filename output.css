@@ -657,6 +657,10 @@ video {
   height: 6rem;
 }
 
+.h-28{
+  height: 7rem;
+}
+
 .h-36{
   height: 9rem;
 }
@@ -675,10 +679,6 @@ video {
 
 .h-screen{
   height: 100vh;
-}
-
-.h-28{
-  height: 7rem;
 }
 
 .min-h-screen{
@@ -814,24 +814,14 @@ video {
   padding-bottom: 1.25rem;
 }
 
-.py-7{
-  padding-top: 1.75rem;
-  padding-bottom: 1.75rem;
-}
-
-.px-8{
-  padding-left: 2rem;
-  padding-right: 2rem;
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.py-6{
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
 }
 
 .pt-20{
@@ -920,14 +910,7 @@ video {
 
 * {
   -webkit-tap-highlight-color: transparent;
-}
-
-@media (max-width: 767px) {
-  .mobile-checkbox {
-    transition-property: none !important;
-    /* For iOS Safari */
-    transition: none !important;
-  }
+  touch-action: manipulation;
 }
 
 .hover\:scale-105:hover{
@@ -986,6 +969,10 @@ video {
     height: 2.75rem;
   }
 
+  .lg\:h-14{
+    height: 3.5rem;
+  }
+
   .lg\:h-16{
     height: 4rem;
   }
@@ -996,14 +983,6 @@ video {
 
   .lg\:h-9{
     height: 2.25rem;
-  }
-
-  .lg\:h-12{
-    height: 3rem;
-  }
-
-  .lg\:h-14{
-    height: 3.5rem;
   }
 
   .lg\:w-2\/12{
@@ -1020,26 +999,6 @@ video {
 
   .lg\:gap-5{
     gap: 1.25rem;
-  }
-
-  .lg\:py-8{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-
-  .lg\:py-7{
-    padding-top: 1.75rem;
-    padding-bottom: 1.75rem;
-  }
-
-  .lg\:py-5{
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-  }
-
-  .lg\:py-4{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
   }
 
   .lg\:py-3{
@@ -1083,3 +1042,8 @@ video {
     line-height: 1rem;
   }
 }
+
+
+
+
+

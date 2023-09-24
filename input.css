@@ -5,14 +5,10 @@
 
 * {
     -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
 }
 
 
 
 
-@media (max-width: 767px) {
-    .mobile-checkbox {
-      transition-property: none !important; /* For iOS Safari */
-      transition: none !important;
-    }
-  }
+
