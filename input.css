@@ -3,7 +3,16 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-    -webkit-tap-highlight-color: transparent;
-    touch-action: manipulation;
+@layer base {
+  html {
+    font-family: Poppins, system-ui, sans-serif;
+  }
 }
+
+/* Highlight and Checkbox delay removed */
+input[type="checkbox"], button {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  
+}
+
