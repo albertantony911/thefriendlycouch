@@ -13,12 +13,12 @@
 </head>
 
 
-<body class="flex flex-col min-h-screen bg-dark-purple m-0 p-0 scroll-smooth">
+<body class="flex flex-col bg-dark-purple m-0 p-0 scroll-smooth">
 
     
 
 
-<header class="fixed w-screen h-32 lg:h-14 tablet:h-14  bg-light z-50">
+<header class="fixed w-screen h-32 lg:h-14  bg-light z-50">
     <div class="relative">
         <div>
             <a class="flex items-center px-7 mb-4 lg:mb-0">
@@ -28,9 +28,9 @@
 
         <nav>
             <div class="menu-burger">
-                <input type="checkbox" class="h-24 lg:h-14 tablet:h-12 lg:top-4 tablet:top-2 top-7 right-8 tablet:right-4 lg:right-4 lg:w-12 w-24" />
+                <input type="checkbox" class="h-24 lg:h-14 lg:top-4 top-7 right-8  lg:right-4 lg:w-12 w-24" />
                 <svg xmlns="http://www.w3.org/2000/svg"
-                    class="icon icon-tabler icon-tabler-menu-2 h-20 lg:h-12 tablet:h-10 lg:top-4 tablet:top-2 top-7 right-8 tablet:right-4 lg:right-4" viewBox="0 0 24 24"
+                    class="icon icon-tabler icon-tabler-menu-2 h-20 lg:h-10 lg:top-2 tablet:top-2 top-7 right-8 lg:right-4" viewBox="0 0 24 24"
                     stroke-width="1.2" stroke="" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                     <line x1="4" y1="6" x2="20" y2="6" />
@@ -40,18 +40,18 @@
 
 
                 <ul
-                    class="menu-burger__item-list h-screen grid grid-flow-row place-content-center lg:gap-5 tablet:gap-5 gap-16 bg-dark-purple font-poppins text-light text-center  lg:text-2xl tablet:text-2xl text-5xl ">
+                    class="menu-burger__item-list h-screen grid grid-flow-row place-content-center lg:gap-5 gap-16 bg-dark-purple font-poppins text-light text-center  lg:text-2xl text-5xl ">
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">ABOUT</a></li>
                     <li><a href="#">THERAPY</a></li>
                     <li><a href="#">DIAGNOSIS</a></li>
                     <li><a href="#">WORKSHOP</a></li>
 
-                    <li class="lg:text-base tablet:text-base text-3xl text-light-purple font-medium lg:mt-8 tablet:mt-8 mt-16">HAVE A QUESTION ?</li>
+                    <li class="lg:text-base text-3xl text-light-purple font-medium lg:mt-8 mt-16">HAVE A QUESTION ?</li>
                     <li><a href="#">FAQ</a></li>
                     <li><a href="#">CONTACT</a></li>
 
-                    <li class="lg:text-base tablet:text-base text-3xl text-light-purple font-medium lg:mt-8 tablet:mt-8 mt-16">WANT TO WORK WITH US?
+                    <li class="lg:text-base  text-3xl text-light-purple font-medium lg:mt-8 mt-16">WANT TO WORK WITH US?
                     </li>
                     <li><a href="#">CAREER</a></li>
                 </ul>
@@ -63,53 +63,59 @@
 
 <!-- Full Screen Section-->
 
-<div class="h-screen z-10">
-
-        <div class="h-3/5 bg-dark-purple flex flex-col relative">
-            <!-- Heading -->
-            <div class="absolute flex flex-col inset-x-0 top-1/4 transform -translate-y-1/2 text-center  text-light">
-                
-                <h1 class="text-5xl lg:text-3xl tablet:text-3xl  mt-80 lg:mt-44 tablet:mt-52 font-medium">It's okay to feel the way you do.</h1>
-                <h1 class="text-5xl lg:text-3xl tablet:text-3xl  mt-5 font-medium">Your emotions are real.</h1>                
-                <p class="text-3xl lg:text-lg tablet:text-lg lg:mt-8 mt-28 tablet:mt-14  mr-16 ml-16 font-light leading-relaxed">Ease into The Friendly Couch, a space to reflect, talk and feel empowered through online mental health support</p>
-
-            </div>
-        
-            <!-- Image container -->
-            
-            <div
-                class="absolute inset-x-0 bottom-0 transform -translate-y-1/2 w-3/4 lg:w-2/6 tablet:w-2/6 mx-auto text-center top-[970px] md:top-[600px] tablet:top-[460px]">
-                <img class="w-full" src="test.svg" alt="">
-            </div>
-
+<div class="h-screen  z-10 flex flex-col justify-between">
+    <!-- Dark Purple Section -->
+    <div class=" bg-dark-purple flex flex-col  justify-center items-center text-light">
+        <!-- Heading -->
+        <div class="text-center">
+            <h1 class="text-5xl lg:text-3xl mt-72 lg:mt-32 lg:portrait:mt-52 font-semibold">It's okay to feel
+                the way you do.</h1>
+            <h1 class="text-5xl lg:text-3xl mt-5 font-semibold">Your emotions are real.</h1>
+            <p
+                class="text-4xl lg:text-lg  lg:mt-14 mt-44 lg:portrait:mt-20 mr-44 lg:portrait:mr-60 ml-44 lg:portrait:ml-60 font-light leading-relaxed">
+                Ease into The Friendly Couch, a space to reflect, talk, and feel empowered through online mental health
+                support</p>
         </div>
 
+    </div>
+        <!-- End of Heading -->
 
+       
 
-
-        <div class="bg-mid-purple h-2/5  flex justify-center gap-16 pt-72 lg:py-52 tablet:py-48 ">
-            
-            <button class="inline-block rounded-full  bg-light w-2/6 h-36 lg:h-16 tablet:h-16 lg:w-2/12 tablet:w-2/12 font-medium transition hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring hover:bg-light-purple text-dark-purple hover:text-light select-none">
-            
-                <a class="lg:text-lg tablet:text-lg text-4xl  font-normal" href="#">Therapy</a>
-            
+    <!-- Mid Purple Section -->
+    <div class="bg-mid-purple h-1/3 relative">
+        <!-- Image Container (Overlaps with Top Section) -->
+        <div
+            class="absolute inset-x-0 top-0 transform -translate-y-3/4 w-3/4 lg:w-2/6 lg:portrait:w-3/5 mx-auto text-center ">
+            <img class="w-full" src="test.svg" alt="">
+        </div>
+    
+        <!-- Buttons -->
+        <div class="absolute inset-x-0 top-24 lg:top-16 lg:portrait:top-32 transform translate-y-full flex justify-center gap-16 lg:portrait:gap-32 lg:gap-28">
+            <button
+                class="rounded-full bg-light w-2/5 h-36 lg:h-16  lg:w-2/12 lg:portrait:w-3/12 font-medium transition hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring hover:bg-light-purple text-dark-purple hover:text-light select-none">
+                <a class="lg:text-lg tablet:text-lg text-4xl font-normal" href="#">Therapy</a>
             </button>
-            
-        <button
-            class="inline-block rounded-full  bg-light w-2/6 h-36 lg:h-16 tablet:h-16 lg:w-2/12 tablet:w-2/12 font-medium transition hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring hover:bg-light-purple text-dark-purple hover:text-light select-none">
-            
+            <button
+                class="rounded-full bg-light w-2/5 h-36 lg:h-16  lg:w-2/12 lg:portrait:w-3/12 font-medium transition hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring hover:bg-light-purple text-dark-purple hover:text-light select-none">
                 <a class="lg:text-lg tablet:text-lg text-4xl font-normal" href="#">Diagnosis</a>
-            
             </button>
-        </div>  
+        </div>
 
+        <div class="absolute inset-x-0  w-1/12 lg:bottom-16 bottom-44 lg:portrait:bottom-24 lg:w-10 lg:portrait:w-12  mx-auto  animate-bounce">
+            <img class="w-full" src="Arrow.svg" alt="">
+        </div>
+        
+    </div>
+    <!-- End of Mid Purple Section lg:bottom-20 bottom-44 -->
 </div>
 
 
 
 
 
-<footer class="mt-auto h-auto bg-dark-purple">
+
+<footer class=" bg-dark-purple">
     <div class="flex flex-col text-center divide-y  divide-light divide-solid mr-[10%] ml-[10%]">
 
         <!-- Social Links -->
