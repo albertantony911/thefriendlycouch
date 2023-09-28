@@ -39,6 +39,10 @@ ul.menu-burger__item-list
   
 }
 
+.hide{
+  opacity: 1;
+}
+
 /* Menu fold-out */
 input:checked ~ .menu-burger__item-list {
   transform: none;
@@ -120,4 +124,12 @@ input:checked ~ .menu-burger__item-list {
   opacity: 0;
   transform: translateY(-20px);
   transition-delay: 0s; /* Reset delay to 0 */
+}
+
+
+/* When the checkbox is checked, fade-in the menu items */
+.menu-burger input:checked ~ .hide {
+  opacity: 0;
+  transform: translateY(0);
+  transition-delay: 0.3s; /* Add a delay for each menu item */
 }

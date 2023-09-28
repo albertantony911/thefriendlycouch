@@ -6,13 +6,20 @@
 @layer base {
   html {
     font-family: Poppins, system-ui, sans-serif;
+    
   }
 }
 
 /* Highlight and Checkbox delay removed */
-input[type="checkbox"], button {
+input[type="checkbox"], button  {
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
   
 }
 
+ img {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  cursor:text
+  
+}
