@@ -1,6 +1,51 @@
-const menuButton = document.getElementById('menuButton');
-const menu = document.getElementById('menu');
+document.addEventListener("DOMContentLoaded", function() {
+  const menuButtonContainer = document.getElementById("menuButtonContainer");
+  const nav = document.querySelector("nav");
+  const menuItems = document.querySelectorAll(".menudrop li");
 
-menuButton.addEventListener('click', () => {
-  menu.classList.toggle('hidden');
+  menuButtonContainer.addEventListener("click", function() {
+    // Toggle the 'menu-open' class to trigger the animations
+    menuButtonContainer.classList.toggle("menu-open");
+
+    // Toggle the 'translate-y-[-100%]' class to open/close the navigation menu
+    nav.classList.toggle("translate-y-[-100%]");
+
+    // Toggle the 'toggled' class on the list items
+    menuItems.forEach(item => item.classList.toggle("toggled"));
+  });
 });
+
+ 
+// Function to animate a counter
+function animatedCounter(target, time = 300, start = 0, elementId) {
+    let current = start;
+    const increment = (target - current) / time;
+    const counterElement = document.getElementById(elementId);
+
+    function updateCounter() {
+        if (current < target) {
+            current += increment;
+            const roundedValue = Math.round(current);
+            counterElement.innerHTML = `${roundedValue}<span class="text-dark font-medium animate-pulse">+</span>`;
+            requestAnimationFrame(updateCounter);
+        }
+    }
+
+    // Initialize the counter animation when the element is in the viewport
+    const observer = new IntersectionObserver(entries => {
+        if (entries[0].isIntersecting) {
+            updateCounter();
+            observer.unobserve(counterElement); // Stop observing once it starts
+        }
+    });
+
+    // Start observing the counter element
+    observer.observe(counterElement);
+}2
+
+// Initialize the animated counters
+animatedCounter(500, 200, 0, "counter1");
+animatedCounter(500, 200, 0, "counter2");
+animatedCounter(500, 200, 0, "counter3");
+animatedCounter(500, 200, 0, "counter4");
+// Add more counters as needed

@@ -5,68 +5,180 @@
 
 @layer base {
   html {
-    font-family: Poppins, system-ui, sans-serif;
-    
+    font-family: 'Poppins', sans-serif; /* Added quotes around font name */
   }
 }
 
-/* Highlight and Checkbox delay removed */
-input[type="checkbox"], button  {
+
+
+
+* {
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
-  
 }
 
- img {
+img {
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
-  cursor:text
-
-  
+  cursor: pointer;
 }
 
 
-    @keyframes slow-bounce {
-        0%, 20%, 50%, 80%, 100% {
-            transform: translateY(0) scaleY(1);
-        }
-        40% {
-            transform: translateY(-0.7rem) scaleY(0.98);
-        }
-        60% {
-            transform: translateY(-0.4rem) scaleY(1);
-        }
-    }
-
-    /* Apply the custom animation */
-    .slow-bounce {
-        animation: slow-bounce 2s infinite;
-    }
 
 
+/* Menu List Animation */
 
-
-@keyframes diagonal-fade {
-    0% {
-        opacity: 0;
-        transform: translate(-20px, 20px);
-    }
-    25% {
-        opacity: 1;
-        transform: translate(0, 0);
-    }
-    50% {
-        opacity: 0;
-        transform: translate(20px, -20px);
-    }
-    100% {
-        opacity: 0;
-        transform: translate(-20px, 20px);
-    }
+.menudrop {
+  transition: transform 0.5s cubic-bezier(0.9, 0.7, 0.1, 1);
 }
 
-.animate-diagonal-fade {
-    animation: diagonal-fade 4s linear infinite;
+/* Initially hidden */
+.menudrop li {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.2s ease-in-out, transform 0s ease-in-out; /* Adjust duration for easing in and out */
+}
+
+/* Class to fade in */
+.menudrop li.toggled {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.3s;
 }
 
 
+
+/* Button Aniamtion */
+
+/* Change line color on click */
+#menuButtonContainer.menu-open svg line {
+    stroke: white;
+}
+
+/* Set transform origins to center of respective line */
+#menuButton svg line:nth-of-type(1) {
+    transform-origin: center 6px;
+}
+
+#menuButton svg line:nth-of-type(2) {
+    transform-origin: center 12px;
+}
+
+#menuButton svg line:nth-of-type(3) {
+    transform-origin: center 18px;
+}
+
+
+
+
+/* Line animations */
+#menuButton svg line {
+    transition-duration: 0.5s;
+    transition-property: stroke, opacity, transform;
+    transition-timing-function: cubic-bezier(0.9, 0.7, 0.1, 1); /* Updated cubic bezier for stroke color change */
+}
+
+/* Fade out middle line on click */
+#menuButtonContainer.menu-open svg line:nth-of-type(2) {
+    opacity: 0;
+    transform: scale(0.3);
+    transition-timing-function: cubic-bezier(0.9, 0, 0.1, 1); /* Updated cubic bezier for rotation animation */
+}
+
+/* Center top and bottom lines vertically, then rotate by 45 degrees in opposing directions on click */
+#menuButtonContainer.menu-open svg line:nth-of-type(1) {
+    transform: translate(0, 6px) rotate(45deg);
+    transition-timing-function: cubic-bezier(0.9, 0, 0.1, 1); /* Updated cubic bezier for rotation animation */
+}
+
+#menuButtonContainer.menu-open svg line:nth-of-type(3) {
+    transform: translate(0, -6px) rotate(-45deg);
+    transition-timing-function: cubic-bezier(0.9, 0, 0.1, 1); /* Updated cubic bezier for rotation animation */
+}
+
+
+
+
+
+
+
+
+
+@keyframes slow-bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0) scaleY(1);
+  }
+  40% {
+    transform: translateY(-0.7rem) scaleY(0.98);
+  }
+  60% {
+    transform: translateY(-0.4rem) scaleY(1);
+  }
+}
+
+/* Apply the custom animation */
+.slow-bounce {
+  animation: slow-bounce 2s infinite;
+}
+
+/* Counter Animation */
+@keyframes count-up {
+  from {
+    content: "0";
+  }
+  to {
+    content: attr(data-count);
+  }
+}
+
+.animate-counter::before {
+  content: "0";
+  animation: count-up 5s ease-in-out infinite;
+}
+
+/* Diagonal Fade Animation */
+@keyframes animate-diagonal {
+  0% {
+    opacity: 0;
+    transform: translate(-20px, 20px);
+  }
+  25% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  50% {
+    opacity: 0;
+    transform: translate(20px, -20px);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-20px, 20px);
+  }
+}
+
+.animate-diagonal {
+  animation: animate-diagonal 4s linear infinite;
+}
+
+/* Accordion */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked + .accordion-content {
+  max-height: 1000px;
+}
+
+.arrow {
+  transition: transform 0.3s ease-in-out;
+}
+
+input[type="checkbox"]:checked + label .arrow {
+  transform: rotate(180deg);
+}

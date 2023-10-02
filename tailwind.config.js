@@ -13,6 +13,7 @@ module.exports = {
         'dark-purple': '#463174',
         'mid-purple': '#593F92',
         'light': '#FFFFFF',
+        'dark' : '#303030' ,
       },
     },
   },
