@@ -1717,6 +1717,14 @@ html {
   font-weight: 200;
 }
 
+.font-extrabold{
+  font-weight: 800;
+}
+
+.font-black{
+  font-weight: 900;
+}
+
 .italic{
   font-style: italic;
 }
