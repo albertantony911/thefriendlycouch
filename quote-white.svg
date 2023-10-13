@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="2655.94 1218.81 154.327 87.8735" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs/>
+<clipPath id="ArtboardFrame">
+<rect height="87.8735" width="154.327" x="2655.94" y="1218.81"/>
+</clipPath>
+<g clip-path="url(#ArtboardFrame)" id="Layer" vectornator:layerName="Layer">
+<g opacity="1" vectornator:layerName="Group 1">
+<path d="M2689.16 1306.69C2670.97 1306.69 2655.31 1293.42 2655.96 1271.66C2656.61 1249.91 2682.56 1212.69 2691.75 1219.67C2695.46 1222.49 2687.51 1231.3 2685.27 1241.59C2686.6 1241.41 2718.95 1244.39 2722.11 1273.74C2724.05 1291.83 2707.35 1306.69 2689.16 1306.69Z" fill="#ffffff" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="Curve 3"/>
+<path d="M2777.17 1306.69C2758.97 1306.69 2743.32 1293.42 2743.97 1271.66C2744.62 1249.91 2770.57 1212.69 2779.76 1219.67C2783.47 1222.49 2775.52 1231.3 2773.28 1241.59C2774.61 1241.41 2806.96 1244.39 2810.12 1273.74C2812.06 1291.83 2795.36 1306.69 2777.17 1306.69Z" fill="#ffffff" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="Curve 2"/>
+</g>
+</g>
+</svg>

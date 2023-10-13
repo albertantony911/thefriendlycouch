@@ -7,58 +7,40 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap">
     <script src="https://kit.fontawesome.com/9fa9d11dac.js" crossorigin="anonymous"></script>
     <script src="main.js"></script> <!-- Include your JavaScript file at the end of the head section -->
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.x.x/dist/alpine.js" defer></script>
+
 </head>
 
-<body class="bg-dark-purple mx-auto">
+<body class="mx-auto bg-dark-purple ">
 
 
-    <header class="sticky top-0 flex flex-col z-[100] h-14 md:h-32 lg:h-14 landscape:sm:h-14  bg-light">
+<div class="z-10 flex flex-col border text-slate-100 bg-dark-purple ">
+    <h2
+        class="text-2xl font-semibold text-center landscape:sm:text-3xl portrait:sm:text-6xl portrait:lg:text-3xl pt-44 lg:pt-28 pb-28 lg:pb-28">
+        WHAT WE DO
+    </h2>
 
-        <div class="absolute top-0">
-            <a>
-                <img class="h-14 md:h-32 lg:h-14 landscape:sm:h-14 px-5 " src="logo.svg" alt="logo">
-            </a>
-        </div>
+    <div class="mx-auto px-24 font-light leading-relaxed text-center text-4xl landscape:lg:text-base landscape:sm:text-lg">
 
-        <div class="absolute  h-14 md:h-32 lg:h-14 landscape:sm:h-14 right-3 cursor-pointer z-[50] antialiased " id="menuButtonContainer">
-            <button class="h-14 md:h-32 lg:h-14 landscape:sm:h-14 " id="menuButton">
-                <svg xmlns="http://www.w3.org/2000/svg"
-                    class="icon icon-tabler icon-tabler-menu-2   h-12 md:h-20 lg:h-12 landscape:sm:h-12 right-3
-                     transition-transform transform stroke-dark-purple"
-                    viewBox="0 0 24 24" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <line x1="4" y1="6" x2="20" y2="6" />
-                    <line x1="4" y1="12" x2="20" y2="12" />
-                    <line x1="4" y1="18" x2="20" y2="18" />
-                </svg>
-            </button>
-        </div>
+        <p>
+            Finding a therapist can be difficult. With so many different types of professionals (and quacks) in the field, how does one know who to choose?
+        </p>
+        <p class="mt-10">
+            This is where we help. We only work with non-judgmental & friendly therapists that have the right qualifications.
+        </p>
 
-        <nav class="relative top-0 ">
-            <ul
-                class="flex flex-col h-screen justify-center items-center text-center text-sm landscape:sm:gap-2 landscape:lg:gap-4 portrait:lg:gap-5 portrait:sm:gap-16  gap-1 bg-dark-purple font-poppins text-light landscape:sm:text-base  portrait:sm:text-5xl landscape:lg:text-2xl portrait:lg:text-2xl  z-20 antialiased">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">THERAPY</a></li>
-                <li><a href="#">DIAGNOSIS</a></li>
-                <li><a href="#">WORKSHOP</a></li>
+    </div>
 
-                <li class="text-xs landscape:sm:text-xs portrait:sm:text-3xl landscape:lg:text-sm portrait:lg:text-sm text-light-purple font-medium lg:mt-8 mt-3 landscape:sm:mt-5 landscape:lg:mt-12 portrait:lg:mt-12">HAVE A QUESTION ?
-                </li>
+    <button
+        class="text-center mx-auto my-44 lg:my-28 lg:py-5 lg:px-12 py-10 px-24 landscape:py-5 landscape:px-12 whitespace-nowrap font-medium transition rounded-full select-none bg-light  hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring hover:bg-light-purple text-dark-purple hover:text-light">
 
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">CONTACT</a></li>
+        <a class="portrait:sm:text-4xl text-lg portrait:lg:text-lg font-normal " href="#">About Us</a>
 
-                <li class="text-xs landscape:sm:text-xs portrait:sm:text-3xl landscape:lg:text-sm portrait:lg:text-sm text-light-purple font-medium lg:mt-8 mt-3 landscape:sm:mt-5 landscape:lg:mt-12 portrait:lg:mt-12">WANT TO WORK WITH
-                    US?
-                </li>
+    </button>
 
-                <li><a href="#">CAREER</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    
+   
+</div>
 
 
 </body>

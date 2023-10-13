@@ -44,8 +44,37 @@ function animatedCounter(target, time = 300, start = 0, elementId) {
 }2
 
 // Initialize the animated counters
-animatedCounter(500, 200, 0, "counter1");
-animatedCounter(500, 200, 0, "counter2");
-animatedCounter(500, 200, 0, "counter3");
-animatedCounter(500, 200, 0, "counter4");
+animatedCounter(8, 100, 0, "counter1");
+animatedCounter(12, 100, 0, "counter2");
+animatedCounter(2500, 200, 0, "counter3");
+animatedCounter(7000, 200, 0, "counter4");
 // Add more counters as needed
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const button = document.getElementById('navbar-toggle');
+  const menu = document.getElementById('navbar-dropdown');
+
+  const dropdownButton = document.getElementById('dropdownNavbarLink');
+  const dropdownMenu = document.getElementById('dropdownNavbar');
+
+  const doubleDropdownButton = document.getElementById('doubleDropdownButton');
+  const doubleDropdown = document.getElementById('doubleDropdown');
+
+  dropdownButton.addEventListener('click', () => {
+    dropdownMenu.classList.toggle('hidden');
+  });
+
+  doubleDropdownButton.addEventListener('click', () => {
+    doubleDropdown.classList.toggle('hidden');
+  });
+
+  button.addEventListener('click', function () {
+    menu.classList.toggle('hidden');
+  });
+});
