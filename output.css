@@ -2093,6 +2093,10 @@ input[type="checkbox"]:checked + label .arrow {
     bottom: 10rem;
   }
 
+  .md\:bottom-44{
+    bottom: 11rem;
+  }
+
   .md\:my-16{
     margin-top: 4rem;
     margin-bottom: 4rem;
