@@ -2097,6 +2097,18 @@ input[type="checkbox"]:checked + label .arrow {
     bottom: 11rem;
   }
 
+  .md\:bottom-64{
+    bottom: 16rem;
+  }
+
+  .md\:bottom-5{
+    bottom: 1.25rem;
+  }
+
+  .md\:bottom-56{
+    bottom: 14rem;
+  }
+
   .md\:my-16{
     margin-top: 4rem;
     margin-bottom: 4rem;
