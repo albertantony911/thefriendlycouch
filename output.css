@@ -930,6 +930,10 @@ html {
   margin-top: 7rem;
 }
 
+.mt-40{
+  margin-top: 10rem;
+}
+
 .block{
   display: block;
 }
@@ -2168,6 +2172,18 @@ input[type="checkbox"]:checked + label .arrow {
     margin-top: 1.25rem;
   }
 
+  .md\:mt-56{
+    margin-top: 14rem;
+  }
+
+  .md\:mb-64{
+    margin-bottom: 16rem;
+  }
+
+  .md\:mb-72{
+    margin-bottom: 18rem;
+  }
+
   .md\:h-20{
     height: 5rem;
   }
@@ -2198,6 +2214,14 @@ input[type="checkbox"]:checked + label .arrow {
 
   .md\:w-8{
     width: 2rem;
+  }
+
+  .md\:w-9{
+    width: 2.25rem;
+  }
+
+  .md\:w-10{
+    width: 2.5rem;
   }
 
   .md\:flex-row{
