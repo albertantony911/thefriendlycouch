@@ -953,6 +953,10 @@ html {
           margin-inline-end: auto;
 }
 
+.mb-48{
+  margin-bottom: 12rem;
+}
+
 .block{
   display: block;
 }
@@ -1099,6 +1103,10 @@ html {
 
 .w-64{
   width: 16rem;
+}
+
+.w-screen{
+  width: 100vw;
 }
 
 .min-w-full{
@@ -2338,6 +2346,14 @@ input[type="checkbox"]:checked + label .arrow {
 
   .md\:mb-32{
     margin-bottom: 8rem;
+  }
+
+  .md\:mb-4{
+    margin-bottom: 1rem;
+  }
+
+  .md\:mb-48{
+    margin-bottom: 12rem;
   }
 
   .md\:h-20{
