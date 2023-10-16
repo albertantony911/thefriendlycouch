@@ -2739,6 +2739,10 @@ input[type="checkbox"]:checked + label .arrow {
     display: none;
   }
 
+  .portrait\:h-14{
+    height: 3.5rem;
+  }
+
   .portrait\:flex-col{
     flex-direction: column;
   }
