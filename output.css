@@ -579,6 +579,10 @@ html {
   }
 }
 
+.collapse{
+  visibility: collapse;
+}
+
 .absolute{
   position: absolute;
 }
@@ -758,6 +762,11 @@ html {
   margin-bottom: 3.5rem;
 }
 
+.my-2{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .-mt-1{
   margin-top: -0.25rem;
 }
@@ -932,6 +941,11 @@ html {
 
 .mt-40{
   margin-top: 10rem;
+}
+
+.me-auto{
+  -webkit-margin-end: auto;
+          margin-inline-end: auto;
 }
 
 .block{
@@ -2877,6 +2891,21 @@ input[type="checkbox"]:checked + label .arrow {
 
     .portrait\:md\:pt-3{
       padding-top: 0.75rem;
+    }
+
+    .portrait\:md\:text-3xl{
+      font-size: 1.875rem;
+      line-height: 2.25rem;
+    }
+
+    .portrait\:md\:text-2xl{
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+
+    .portrait\:md\:text-lg{
+      font-size: 1.125rem;
+      line-height: 1.75rem;
     }
   }
 }
