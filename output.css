@@ -2254,6 +2254,10 @@ input[type="checkbox"]:checked + label .arrow {
     width: 2.5rem;
   }
 
+  .md\:w-1\/4{
+    width: 25%;
+  }
+
   .md\:flex-row{
     flex-direction: row;
   }
@@ -2836,6 +2840,14 @@ input[type="checkbox"]:checked + label .arrow {
   }
 
   @media (min-width: 768px){
+    .portrait\:md\:bottom-40{
+      bottom: 10rem;
+    }
+
+    .portrait\:md\:bottom-32{
+      bottom: 8rem;
+    }
+
     .portrait\:md\:my-16{
       margin-top: 4rem;
       margin-bottom: 4rem;
@@ -2863,6 +2875,10 @@ input[type="checkbox"]:checked + label .arrow {
       margin-bottom: 15rem;
     }
 
+    .portrait\:md\:mt-64{
+      margin-top: 16rem;
+    }
+
     .portrait\:md\:h-1{
       height: 0.25rem;
     }
@@ -2872,6 +2888,30 @@ input[type="checkbox"]:checked + label .arrow {
     }
 
     .portrait\:md\:w-1\/2{
+      width: 50%;
+    }
+
+    .portrait\:md\:w-1{
+      width: 0.25rem;
+    }
+
+    .portrait\:md\:w-1\/4{
+      width: 25%;
+    }
+
+    .portrait\:md\:w-full{
+      width: 100%;
+    }
+
+    .portrait\:md\:w-2\/5{
+      width: 40%;
+    }
+
+    .portrait\:md\:w-3\/5{
+      width: 60%;
+    }
+
+    .portrait\:md\:w-3\/6{
       width: 50%;
     }
 
@@ -2895,6 +2935,10 @@ input[type="checkbox"]:checked + label .arrow {
 
     .portrait\:md\:pt-3{
       padding-top: 0.75rem;
+    }
+
+    .portrait\:md\:pt-28{
+      padding-top: 7rem;
     }
 
     .portrait\:md\:text-3xl{
@@ -2930,6 +2974,10 @@ input[type="checkbox"]:checked + label .arrow {
   @media (min-width: 1024px){
     .portrait\:lg\:bottom-24{
       bottom: 6rem;
+    }
+
+    .portrait\:lg\:bottom-40{
+      bottom: 10rem;
     }
   }
 }
@@ -2974,6 +3022,11 @@ input[type="checkbox"]:checked + label .arrow {
       margin-top: auto;
       margin-bottom: auto;
     }
+
+    .portrait\:lg\:my-28{
+      margin-top: 7rem;
+      margin-bottom: 7rem;
+    }
   }
 }
 
@@ -3013,6 +3066,10 @@ input[type="checkbox"]:checked + label .arrow {
 
     .portrait\:lg\:mt-5{
       margin-top: 1.25rem;
+    }
+
+    .portrait\:lg\:mt-80{
+      margin-top: 20rem;
     }
 
     .portrait\:lg\:h-14{
@@ -3146,6 +3203,10 @@ input[type="checkbox"]:checked + label .arrow {
 
     .portrait\:lg\:pt-7{
       padding-top: 1.75rem;
+    }
+
+    .portrait\:lg\:pt-32{
+      padding-top: 8rem;
     }
 
     .portrait\:lg\:text-2xl{
