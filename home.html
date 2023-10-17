@@ -2,6 +2,10 @@
 <html class="scroll-smooth">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+
     <link rel="stylesheet" href="output.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap">
@@ -9,25 +13,29 @@
     <script src="main.js" defer></script> <!-- Include your JavaScript file at the end of the head section -->
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.x.x/dist/alpine.js" defer></script>
 
-   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="gsap.js" defer></script>
+
+
+
 
 </head>
 
 <body class="mx-auto leading-relaxed">
 
 
-    <header class="sticky top-0 flex flex-col z-[100] h-14 md:h-32 lg:h-14 landscape:sm:h-14  bg-light drop-shadow-2xl ">
+    <header class="sticky top-0 flex flex-col z-[100] h-14   bg-light drop-shadow-2xl ">
 
         <div class="absolute top-0">
             <a>
-                <img class="px-7 h-14 md:h-32 lg:h-14 landscape:sm:h-14 " src="logo.svg" alt="logo">
+                <img class="px-5 h-14 " src="logo.svg" alt="logo">
             </a>
         </div>
 
-        <div class="absolute  h-14 md:h-32 lg:h-14 landscape:sm:h-14 right-7 cursor-pointer z-[50] antialiased landscape:hidden" id="menuButtonContainer">
-            <button class="h-14 md:h-32 lg:h-14 landscape:sm:h-14 " id="menuButton">
+        <div class="absolute  h-14 right-5 cursor-pointer z-[50] antialiased landscape:hidden" id="menuButtonContainer">
+            <button class="h-14" id="menuButton">
                 <svg xmlns="http://www.w3.org/2000/svg"
-                    class="h-12 transition-transform transform icon icon-tabler icon-tabler-menu-2 md:h-20 lg:h-12 landscape:sm:h-12 right-3 stroke-dark-purple"
+                    class="h-10 transition-transform transform icon icon-tabler icon-tabler-menu-2 stroke-dark-purple"
                     viewBox="0 0 24 24" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                     <line x1="4" y1="6" x2="20" y2="6" />
@@ -39,43 +47,38 @@
 
         <nav class="relative top-0 transform translate-y-[-100%] menudrop landscape:hidden">
             <ul
-                class="z-20 flex flex-col items-center justify-center h-screen gap-1 text-sm antialiased text-center landscape:sm:gap-2 landscape:lg:gap-4 portrait:lg:gap-5 portrait:sm:gap-12 bg-dark-purple font-poppins text-light landscape:sm:text-sm portrait:sm:text-5xl landscape:lg:text-xl portrait:lg:text-xl">
+                class="z-20 flex flex-col items-center justify-center h-screen gap-2  text-lg md:text-xl antialiased text-center  bg-dark-purple font-poppins text-light">
                 <li><a href="#">HOME</a></li>
                 <li><a href="#">ABOUT</a></li>
                 <li><a href="#">PRICING</a></li>
-                
-              
 
-                <li class="mt-16 text-xs font-medium landscape:sm:text-xs portrait:sm:text-3xl landscape:lg:text-sm portrait:lg:text-sm text-light-purple lg:mt-8 landscape:sm:mt-5 landscape:lg:mt-12 portrait:lg:mt-12">OUR SERVICES
+                <li class="mt-7 md:mt-10 mb-2 text-xs font-medium  text-light-purple">
+                    OUR SERVICES
                 </li>
 
                 <li><a href="#">THERAPY</a></li>
                 <li><a href="#">DIAGNOSIS</a></li>
                 <li><a href="#">COUPLE'S COUNSELLING</a></li>
-                <li
-                    class="mt-16 text-xs font-medium landscape:sm:text-xs portrait:sm:text-3xl landscape:lg:text-sm portrait:lg:text-sm text-light-purple lg:mt-8 landscape:sm:mt-5 landscape:lg:mt-12 portrait:lg:mt-12">
+                <li class="mt-7 md:mt-10 mb-2 text-xs font-medium  text-light-purple">
                     HAVE A QUESTION ?
                 </li>
-                
+
                 <li><a href="#">FAQ</a></li>
                 <li><a href="#">CONTACT</a></li>
 
-                <li
-                    class="mt-16 lg:mt-8 landscape:sm:mt-5 landscape:lg:mt-12 portrait:lg:mt-12">
+                <li class="mt-10">
                 </li>
 
                 <li><a href="#">WORKSHOP</a></li>
                 <li><a href="#">CAREER</a></li>
 
-                
-                
             </ul>
         </nav>
 
-        <nav class="absolute  h-14 md:h-32 lg:h-14 landscape:sm:h-14 right-3 cursor-pointer z-[50] antialiased portrait:hidden text-dark-purple">
-            <ul class="flex flex-row w-full flex-wrap items-center h-14">
-            
-            
+        <nav class="absolute h-14 right-3 cursor-pointer z-[50] antialiased portrait:hidden text-dark-purple">
+            <ul class="flex flex-row w-full flex-wrap items-center">
+
+
                 <li class="block relative">
                     <a href="#"
                         class="flex items-center h-14 leading-10 px-4 rounded cursor-pointer no-underline hover:no-underline transition-colors duration-100 mx-1 hover:bg-gray-100">
@@ -96,8 +99,8 @@
                     </a>
                 </li>
 
-            
-            
+
+
                 <li class="block relative" x-data="{showChildren:false}" @click.away="showChildren=false">
                     <a href="#"
                         class="flex items-center h-14 leading-10 px-4 rounded cursor-pointer no-underline hover:no-underline transition-colors duration-100 mx-1 hover:bg-gray-100"
@@ -107,35 +110,37 @@
                     </a>
                     <div class="bg-white shadow-md rounded border border-gray-300 text-sm absolute top-auto left-0 min-w-full w-56 z-30 mt-1"
                         x-show="showChildren" x-transition:enter="transition ease duration-300 transform"
-                        x-transition:enter-start="opacity-0 translate-y-2" x-transition:enter-end="opacity-100 translate-y-0"
+                        x-transition:enter-start="opacity-0 translate-y-2"
+                        x-transition:enter-end="opacity-100 translate-y-0"
                         x-transition:leave="transition ease duration-300 transform"
-                        x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-4"
-                        style="display: none;">
-                        <span class="absolute top-0 left-0 w-3 h-3 bg-white border transform rotate-45 -mt-1 ml-6"></span>
+                        x-transition:leave-start="opacity-100 translate-y-0"
+                        x-transition:leave-end="opacity-0 translate-y-4" style="display: none;">
+                        <span
+                            class="absolute top-0 left-0 w-3 h-3 bg-white border transform rotate-45 -mt-1 ml-6"></span>
                         <div class="bg-white rounded w-full relative z-10 py-1">
                             <ul class="list-reset">
                                 <li class="relative" x-data="{showChildren:false}" @mouseleave="showChildren=false"
                                     @mouseenter="showChildren=true">
                                     <a href="#"
-                                        class="px-4 py-2 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer">
+                                        class="px-4 py-4 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer">
                                         <span class="flex-1">Therapy</span> </a>
                                 </li>
                                 <li class="relative" x-data="{showChildren:false}" @mouseleave="showChildren=false"
                                     @mouseenter="showChildren=true">
                                     <a href="#"
-                                        class="px-4 py-2 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer">
+                                        class="px-4 py-4 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer">
                                         <span class="flex-1">Diagnosis</span> </a>
                                 </li>
                                 <li class="relative" x-data="{showChildren:false}" @mouseleave="showChildren=false"
                                     @mouseenter="showChildren=true">
                                     <a href="#"
-                                        class="px-4 py-2 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer">
+                                        class="px-4 py-4 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer">
                                         <span class="flex-1">Couple's Counselling</span> </a>
                                 </li>
                                 <li class="relative" x-data="{showChildren:false}" @mouseleave="showChildren=false"
                                     @mouseenter="showChildren=true">
                                     <a href="#"
-                                        class="px-4 py-2 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer">
+                                        class="px-4 py-4 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer">
                                         <span class="flex-1">Workshops</span> </a>
                                 </li>
                             </ul>
@@ -159,86 +164,92 @@
             </ul>
         </nav>
 
-        
-        
+
     </header>
 
-    
 
 
-    <div class="z-10 flex flex-col text-center justify-around h-auto  bg-dark-purple text-light">     
+    <div class="z-10 flex flex-col text-center justify-around bg-dark-purple text-light">
 
-        <div class="h-3/6 landscape:lg:py-16 py-36 landscape:sm:py-12">
-                <h1 class="text-2xl font-semibold text-center landscape:sm:text-3xl portrait:sm:text-6xl portrait:lg:text-3xl">You deserve a better you</h1>
-                <h1
-                    class="text-xl font-semibold text-center landscape:sm:text-2xl portrait:sm:text-5xl portrait:lg:text-2xl mt-12 lg:mt-5 lg:portrait:mt-5 landscape:sm:mt-3 landscape:lg:mt-2">
-                    We’ll help you get there</h1>
-                
-                <p class="text-4xl portrait:lg:text-base landscape:lg:text-lg landscape:sm:text-lg font-light leading-relaxed lg:mt-14 landscape:lg:mt-14 mt-32 lg:portrait:mt-20 mx-28 lg:portrait:mx-60 landscape:sm:mt-7 mb-96 landscape:sm:mb-32 landscape:lg:mb-64 portrait:lg:mb-72">
-                    Finding a therapist can be difficult, let us do it for you. 
-                </p>
+        <div class="pt-10 portrait:md:pt-20 portrait:lg:pt-44">
+            <h1 class="text-2xl md:text-3xl  font-semibold text-center">
+                You deserve a better you</h1>
+            <h1 class="text-xl md:text-2xl font-semibold text-center mt-3 portrait:md:pt-3">
+                We’ll help you get there</h1>
+
+            <p
+                class="whitespace-pre-line md:whitespace-normal text-sm md:text-lg font-light leading-relaxed my-8 portrait:md:my-20 portrait:lg:my-28">
+                Finding a therapist can be difficult,
+                let us do it for you
+            </p>
         </div>
-        
-        <div class="relative bg-mid-purple h-2/6 ">
-            
-            
-            <div class="absolute inset-x-0 top-0 w-3/4 mx-auto transform -translate-y-3/4 lg:w-2/6 portrait:lg:w-1/2 landscape:sm:w-1/3 landscape:lg:w-2/6 ">
-                <img src="test.svg" alt="">
-            </div> 
 
-            
-                <button
-                    class="mx-auto mt-56 mb-80 landscape:sm:my-24 landscape:lg:mt-28 landscape:lg:mb-44  portrait:lg:my-52 lg:mt-20 lg:py-5 lg:px-12 py-14 px-24 landscape:py-5 landscape:px-12 whitespace-nowrap font-medium transition rounded-full select-none bg-light hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring hover:bg-light-purple text-dark-purple hover:text-light">
-                
-                    <a class="portrait:sm:text-4xl text-lg portrait:lg:text-lg font-normal " href="#">Book a Session</a>
-                
-                </button>
-                <div
-                    class="absolute inset-x-0 w-16 lg:w-7 portrait:lg:w-7 landscape:sm:w-7 lg:bottom-16 bottom-44 portrait:lg:bottom-24 landscape:lg:bottom-28 landscape:sm:bottom-10 mx-auto animate-bounce">
-                    <img class="w-full" src="Arrow.svg" alt="">
-                </div>
+        <div class="relative bg-mid-purple mt-44 md:mt-48 portrait:md:mt-64 portrait:lg:mt-80">
+
+
+            <div
+                class="absolute inset-x-0 top-0  mx-auto transform -translate-y-3/4 w-72 md:w-80 lg:w-96 portrait:md:w-1/2 ">
+                <img class="couch" src="test.svg" alt="">
+            </div>
+
+
+            <button
+                class="mx-auto mt-20 mb-44 md:mt-24 md:mb-40 portrait:md:mt-28 portrait:lg:mt-36 portrait:md:mb-44 portrait:lg:mb-48  px-8 py-6 md:px-8 md:py-5  whitespace-nowrap  transition rounded-full select-none bg-light hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring hover:bg-light-purple text-dark-purple hover:text-light">
+
+                <a class="text-base md:text-lg font-normal " href="#">Book a Session</a>
+
+            </button>
+            <div
+                class="absolute inset-x-0 w-6 md:w-7 bottom-24 md:bottom-24 portrait:md:bottom-28 portrait:lg:bottom-28 mx-auto animate-bounce">
+                <img class="w-full" src="Arrow.svg" alt="">
+            </div>
 
         </div>
         <!-- End of Mid Purple Section-->
-    </div >
+    </div>
 
 
-    <div class="z-10 flex landscape:flex-row portrait:lg:flex-row portrait:sm:flex-col bg-dark-purple items-center landscape:divide-x portrait:lg:divide-x divide-solid divide-slate-200 py-16" >
-        <div class="landscape:w-1/2 w-full">
-            <img class="w-1/2 mx-auto portrait:sm:mt-44 portrait:lg:my-auto lg:my-auto " src="couch.svg" alt="">
-        
+
+
+    <div
+        class="z-10 mx-auto flex flex-col md:flex-row portrait:md:flex-col  bg-dark-purple items-center landscape:md:divide-x divide-solid divide-slate-200 py-24 md:py-20">
+        <div class="md:w-2/3 portrait:md:w-3/6 w-full">
+            <img class="w-1/2  mx-auto" src="couch.svg" alt="">
+
         </div>
-        <div class="landscape:w-1/2 w-full flex flex-col text-slate-100 ">
-            <h2
-                class="text-2xl font-semibold text-center landscape:sm:text-3xl portrait:sm:text-6xl portrait:lg:text-3xl pt-44 landscape:sm:pt-10 portrait:lg:pt-10  landscape:lg:pt-14 pb-28  landscape:lg:pb-14 portrait:lg:pb-8 landscape:sm:pb-10">
+        <div class="md:w-full w-full portrait:md:w-full flex flex-col text-slate-100 ">
+            <h2 class="font-semibold text-center text-2xl md:text-3xl  pt-20 landscape:md:pt-0">
                 WHAT WE DO
             </h2>
-        
+
             <div
-                class="mx-auto px-24 font-light leading-relaxed text-center text-4xl portrait:lg:text-base landscape:lg:text-lg landscape:sm:text-lg">
-        
+                class="mx-auto px-12 md:px-32  portrait:md:px-24 font-light leading-relaxed text-center  text-sm md:text-lg pt-7 md:pt-10">
+
                 <p>
-                    With so many different types of professionals (and quacks) in the field, how does one know who to choose?
+                    With so many different types of professionals (and quacks) in the field, 
+                    how does one know who to choose?
                 </p>
-                <p class="mt-10 portrait:lg:mt-5">
-                    This is where we help. We only work with non-judgmental & friendly therapists that have the right
+                <p class="mt-4 md:mt-5">
+                    This is where we help. We only work with friendly & non-judgmental therapists that have the right
                     qualifications.
                 </p>
-        
+
             </div>
-        
+
             <button
-                class="text-center mx-auto my-44 landscape:sm:my-10 landscape:lg:my-20 lg:my-14 portrait:lg:mb-10 portrait:lg:mt-14 lg:py-5 lg:px-12 py-14 px-24 landscape:py-5  landscape:px-12 whitespace-nowrap font-medium transition rounded-full select-none bg-light  hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring hover:bg-light-purple text-dark-purple hover:text-light">
-        
-                <a class="portrait:sm:text-4xl text-lg portrait:lg:text-lg font-normal " href="#">About Us</a>
-        
+                class="text-center mx-auto mt-20 md:mt-12 px-8 py-6 md:px-8 md:py-5 whitespace-nowrap font-medium transition rounded-full select-none bg-light  hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring hover:bg-light-purple text-dark-purple hover:text-light">
+
+                <a class="text-base md:text-lg font-normal" href="#">About Us</a>
+
             </button>
-        
-        
-        
+
+
+
         </div>
-   
+
     </div>
+
+
 
 
    
@@ -246,11 +257,13 @@
  
     <div class="mx-auto flex flex-col text-dark-purple bg-light">
         <h2
-            class="text-2xl font-semibold text-center landscape:sm:text-3xl portrait:sm:text-6xl portrait:lg:text-3xl pt-44 landscape:sm:pt-28 portrait:lg:pt-24  landscape:lg:pt-20 ">
-            Each Number Holds a Story
+            class="font-semibold text-center whitespace-pre-line md:whitespace-normal text-2xl md:text-3xl  pt-10 md:pt-20  ">
+            EACH NUMBER HOLDS 
+
+            A STORY
         </h2>
         
-        <div class="mx-auto px-24 pt-16 landscape:sm:pt-20 landscape:lg:pt-16 pb-44 lg:pb-20 landscape:sm:pb-24 landscape:lg:pb-20 font-light leading-relaxed text-center text-4xl portrait:lg:text-base landscape:lg:text-lg landscape:sm:text-lg">
+        <div class="mx-auto px-12 md:px-32 font-light leading-relaxed text-center  text-sm md:text-lg py-10 md:py-10">
         
             <p>
                 These numbers represents people who have started their mental health journey with us, one step at a time.
@@ -258,33 +271,33 @@
            
         </div>
 
-        <div class="flex flex-row flex-wrap justify-center border text-dark-purple lg:gap-10 landscape:sm:gap-12 landscape:lg:gap-10">
+        <div class="flex flex-row flex-wrap justify-center border text-dark-purple md:gap-4">
             <div
-                class="flex flex-col items-center w-2/4 landscape:lg:w-1/6 landscape:sm:w-1/6 p-20 landscape:sm:p-12  portrait:sm:border lg:w-1/6 lg:p-10 gap-14 landscape:sm:gap-8 lg:gap-4 lg:border-transparent">
-                <div id="counter1" class="text-6xl landscape:sm:text-4xl font-bold text-center counter lg:text-3xl">0</div>
+                class="flex flex-col items-center w-2/4 md:w-1/6 border md:border-none py-12 md:p-10 gap-8">
+                <div id="counter1" class="text-4xl font-bold text-center counter">0</div>
                 <div>
-                    <h3 class="text-4xl landscape:sm:text-lg font-normal lg:text-lg">Languages</h3>
+                    <h3 class="font-normal text-base md:text-lg">Languages</h3>
                 </div>
             </div>
             <div
-                class="flex flex-col items-center w-2/4 landscape:lg:w-1/6 landscape:sm:w-1/6 p-20 landscape:sm:p-12  portrait:sm:border lg:w-1/6 lg:p-10 gap-14 landscape:sm:gap-8 lg:gap-4 lg:border-transparent">
-                <div id="counter2" class="text-6xl landscape:sm:text-4xl font-bold text-center counter lg:text-3xl">0</div>
+                class="flex flex-col items-center w-2/4 md:w-1/6 border md:border-none py-12 md:p-10 gap-8">
+                <div id="counter2" class="text-4xl font-bold text-center counter">0</div>
                 <div>
-                    <h3 class="text-4xl landscape:sm:text-lg font-normal lg:text-lg">Therapists</h3>
+                    <h3 class="font-normal text-base md:text-lg">Therapists</h3>
                 </div>
             </div>
             <div
-                class="flex flex-col items-center w-2/4 landscape:lg:w-1/6 landscape:sm:w-1/6 p-20 landscape:sm:p-12  portrait:sm:border lg:w-1/6 lg:p-10 gap-14 landscape:sm:gap-8 lg:gap-4 lg:border-transparent">
-                <div id="counter3" class="text-6xl landscape:sm:text-4xl font-bold text-center counter lg:text-3xl">0</div>
+                class="flex flex-col items-center w-2/4 md:w-1/6 border md:border-none py-12 md:p-10 gap-8">
+                <div id="counter3" class="text-4xl font-bold text-center counter">0</div>
                 <div>
-                    <h3 class="text-4xl landscape:sm:text-lg font-normal lg:text-lg">Clients</h3>
+                    <h3 class="font-normal text-base md:text-lg">Clients</h3>
                 </div>
             </div>
             <div
-                class="flex flex-col items-center w-2/4 landscape:lg:w-1/6 landscape:sm:w-1/6 p-20 landscape:sm:p-12  portrait:sm:border lg:w-1/6 lg:p-10 gap-14 landscape:sm:gap-8 lg:gap-4 lg:border-transparent">
-                <div id="counter4" class="text-6xl landscape:sm:text-4xl font-bold text-center counter lg:text-3xl">0</div>
+                class="flex flex-col items-center w-2/4 md:w-1/6 border md:border-none py-12 md:p-10 gap-8">
+                <div id="counter4" class="text-4xl font-bold text-center counter">0</div>
                 <div>
-                    <h3 class="text-4xl landscape:sm:text-lg font-normal lg:text-lg">Sessions</h3>
+                    <h3 class="font-normal text-base md:text-lg">Sessions</h3>
                 </div>
             </div>
         </div>
@@ -297,15 +310,15 @@
     <div class="z-10 flex flex-col text-slate-100 bg-dark-purple ">
             
                 <h2
-                    class="text-2xl font-semibold text-center landscape:sm:text-3xl portrait:sm:text-6xl portrait:lg:text-3xl pt-44 landscape:sm:pt-28 portrait:lg:pt-24  landscape:lg:pt-20 ">
+                    class="font-semibold text-center text-2xl md:text-3xl">
                     Everyone is welcome here.
                 </h2>
 
-            <div class="mx-auto px-24 pb-44 pt-28 landscape:lg:pt-16 portrait:lg:pt-16 landscape:sm:pt-20 landscape:lg:pb-20 portrait:lg:pb-24 landscape:sm:pb-28  text-4xl portrait:lg:text-base landscape:lg:text-lg landscape:sm:text-lg text-center leading-relaxed">
+            <div class="mx-auto px-14 pt-10 text-sm md:text-lg text-center leading-relaxed">
 
                 <p>Each person has a story. These stories shape us and make us who we are. We at The Friendly Couch see people without bias and without judgement.</p>
 
-                <p class="font-semibold pt-16 landscape:lg:pt-14 portrait:lg:pt-10 landscape:sm:pt-10 text-4xl portrait:lg:text-lg landscape:lg:text-lg landscape:sm:text-lg">
+                <p class="font-semibold pt-16 text-base md:text-xl">
                     Always.</p>
             </div>
     </div>
@@ -313,25 +326,25 @@
 </div>
 
 
-<div class="mx-auto flex flex-col h-auto bg-light text-dark-purple  items-center justify-center py-44 lg:py-28 landscape:lg:py-28 landscape:sm:py-28">
+<div class="mx-auto flex flex-col h-auto bg-light text-dark-purple  items-center justify-center py-20 md:py-28">
     
     <div class="w-full">
-        <div class="relative inset-x-0 w-28 lg:w-16 landscape:lg:w-16 landscape:sm:w-14 mx-auto animate-bounce">
+        <div class="relative inset-x-0 w-12 mx-auto animate-bounce">
             <img class="w-full" src="quote.svg" alt="">
         </div>
     </div>
 
-    <div class="lg:w-1/2 w-2/3 pt-16 lg:pt-10 landscape:lg:pt-10 landscape:sm:pt-10 ">
+    <div class="w-3/4 pt-10 lg:pt-10 landscape:lg:pt-10 landscape:sm:pt-10 ">
 
-        <p class="text-4xl portrait:lg:text-base landscape:lg:text-lg landscape:sm:text-lg text-center leading-relaxed px-5 py-5">
-            Thank you to your organization, which understands our Indian culture well and comprehends how the lack of awareness and
+        <p class="text-sm md:text-lg text-center leading-relaxed px-5 py-5">
+            Thanks to your organization, which understands our Indian culture well and comprehends how the lack of awareness and
             information about various mental health issues impacts India. Therapy isn't a Western concept; Indians just haven't
             recognized it.</p>
 
     </div>
 
-    <div class="w-full pt-16 lg:pt-10 landscape:lg:pt-10 landscape:sm:pt-10">
-        <p class="text-3xl portrait:lg:text-sm landscape:lg:text-sm landscape:sm:text-base font-light text-center">Someone we made happy</p>
+    <div class="w-full py-5">
+        <p class="text-sm md:text-base font-light text-center">Someone we made happy</p>
     </div>
 
 </div>
@@ -343,174 +356,164 @@
 
 <div class="mx-auto flex flex-col text-light bg-dark-purple">
     <h2
-        class="text-2xl font-semibold text-center landscape:sm:text-3xl portrait:sm:text-6xl portrait:lg:text-3xl pt-44 landscape:sm:pt-28 portrait:lg:pt-24  landscape:lg:pt-24 ">
+        class="text-2xl md:text-3xl font-semibold text-center  pt-16 md:pt-24 ">
         Concerns we work with
     </h2>
 
     <div
-        class="mx-auto px-24 pt-16 landscape:sm:pt-20 landscape:lg:pt-16  font-light leading-relaxed text-center text-4xl portrait:lg:text-base landscape:lg:text-lg landscape:sm:text-lg">
+        class="mx-auto px-14 pt-10 font-light leading-relaxed text-center  text-sm md:text-lg">
 
         <p>We're here to support you through a wide range of challenges, and this list is not limited.</p>
 
     </div>
 
     <div
-        class="flex flex-row flex-wrap justify-center mx-auto  text-light  py-40 lg:py-20 landscape:sm:py-24 landscape:lg:py-16">
+        class="flex flex-row flex-wrap justify-center mx-auto  text-light py-12  md:py-20 ">
         <div
-            class="flex flex-col items-center w-2/4 landscape:lg:w-4/12 portrait:lg:w-4/12 landscape:sm:w-1/6 p-20 landscape:sm:p-12 lg:w-1/6 lg:p-10 gap-14 landscape:sm:gap-8 lg:gap-4">
+            class="flex mx-auto flex-col items-center w-2/5 md:w-1/3 p-5 md:px-10  gap-4">
             <img src="couch.svg">
 
             <div>
-                <h3 class="text-4xl landscape:sm:text-lg font-normal lg:text-lg">Anxiety</h3>
+                <h3 class="text-base font-normal md:text-lg">Anxiety</h3>
             </div>
 
         </div>
-        <div
-            class="flex flex-col items-center w-2/4 landscape:lg:w-4/12 portrait:lg:w-4/12 landscape:sm:w-1/6 p-20 landscape:sm:p-12  lg:w-1/6 lg:p-10 gap-14 landscape:sm:gap-8 lg:gap-4">
-            <img src="couch.svg">
+        <div class="flex mx-auto flex-col items-center w-2/5 md:w-1/3 p-5 md:px-10 gap-4">
+                 <img src="couch.svg">
             <div>
-                <h3 class="text-4xl landscape:sm:text-lg font-normal lg:text-lg">Stress</h3>
+                <h3 class="text-base font-normal md:text-lg">Stress</h3>
             </div>
         </div>
-        <div
-            class="flex flex-col items-center w-2/4 landscape:lg:w-4/12 portrait:lg:w-4/12 landscape:sm:w-1/6 p-20 landscape:sm:p-12 lg:w-1/6 lg:p-10 gap-14 landscape:sm:gap-8 lg:gap-4">
-            <img src="couch.svg">
+        <div class="flex mx-auto flex-col items-center w-2/5 md:w-1/3 p-5 md:px-10 gap-4">
+                <img src="couch.svg">
             <div>
-                <h3 class="text-4xl landscape:sm:text-lg font-normal lg:text-lg">Relationships</h3>
+                <h3 class="text-base font-normal md:text-lg">Relationships</h3>
             </div>
 
         </div>
 
-        <div
-            class="flex flex-col items-center w-2/4 landscape:lg:w-4/12 portrait:lg:w-4/12 landscape:sm:w-1/6 p-20 landscape:sm:p-12 lg:w-1/6 lg:p-10 gap-14 landscape:sm:gap-8 lg:gap-4">
-            <img src="couch.svg">
+        <div class="flex mx-auto flex-col items-center w-2/5 md:w-1/3 p-5 md:px-10 gap-4">
+            
+                 <img src="couch.svg">
             <div>
-                <h3 class="text-4xl landscape:sm:text-lg font-normal lg:text-lg">ADHD</h3>
+                <h3 class="text-base font-normal md:text-lg">ADHD</h3>
             </div>
         </div>
-        <div
-            class="flex flex-col items-center w-2/4 landscape:lg:w-4/12 portrait:lg:w-4/12 landscape:sm:w-1/6 p-20 landscape:sm:p-12 lg:w-1/6 lg:p-10 gap-14 landscape:sm:gap-8 lg:gap-4">
-            <img src="couch.svg">
+        <div class="flex mx-auto flex-col items-center w-2/5 md:w-1/3 p-5 md:px-10  gap-4">
+                 <img src="couch.svg">
             <div>
-                <h3 class="text-4xl landscape:sm:text-lg font-normal lg:text-lg">Trauma</h3>
+                <h3 class="text-base font-normal md:text-lg">Trauma</h3>
             </div>
         </div>
-        <div
-            class="flex flex-col items-center w-2/4 landscape:lg:w-4/12 portrait:lg:w-4/12 landscape:sm:w-1/6 p-20 landscape:sm:p-12 lg:w-1/6 lg:p-10 gap-14 landscape:sm:gap-8 lg:gap-4">
-            <img src="couch.svg">
+        <div class="flex mx-auto flex-col items-center w-2/5 md:w-1/3 p-5 md:px-10  gap-4">     <img src="couch.svg">
             <div>
-                <h3 class="text-4xl landscape:sm:text-lg font-normal lg:text-lg">Depression</h3>
+                <h3 class="text-base font-normal md:text-lg">Depression</h3>
             </div>
         </div>
     </div>
 </div>
    
 
-<div class="z-10 flex landscape:flex-row portrait:lg:flex-row portrait:sm:flex-col bg-light text-dark-purple items-center landscape:divide-x portrait:lg:divide-x divide-solid divide-slate-200 py-16">
+<div
+    class="z-10 mx-auto flex flex-col md:flex-row portrait:md:flex-col  bg-light text-dark-purple items-center landscape:md:divide-x divide-solid divide-slate-200 py-24 md:py-20">
+    <div class="md:w-3/6 portrait:md:w-full w-full">
+        <img class="w-1/3 portrait:md:w-1/3 mx-auto" src="couch.svg" alt="">
+        <h3 class="font-semibold leading-relaxed text-center  text-base md:text-lg pt-12 md:pt-10">Divija Bhasin</h3>
+        <h3 class="font-light leading-relaxed text-center  text-base md:text-lg pt-3">Counselling Psychologist</h3>
 
-        <div class="landscape:w-1/2 w-full">
+    </div>
+    <div class="w-full portrait:md:w-full flex flex-col  ">
+        <h2 class="font-semibold text-center text-2xl md:text-3xl pt-20 md:pt-0 portrait:md:pt-16">
+            Founder's Note
+        </h2>
 
-            <img class="w-1/2 mx-auto portrait:sm:mt-44 portrait:lg:my-auto lg:my-auto " src="couch.svg" alt="">
+        <div
+            class="mx-auto px-12 md:px-32 portrait:md:px-24 font-light leading-relaxed text-center  text-sm md:text-lg pt-7 md:pt-10">
 
-            <h3 class="text-4xl landscape:sm:text-lg font-semibold text-center lg:text-lg pt-12">Divija Bhasin</h3>
-            <h3 class="text-4xl landscape:sm:text-lg font-normal text-center lg:text-lg pt-5 pb-16">Counselling Psychologist</h3>
+            <p>
+                Growing up, I saw people around me struggle with their mental health. I knew that it was hard but
+                realised that it was even more challenging without professional support.
+            </p>
+            <p class="my-5 md:my-6 font-medium "> How do you cope without having someone to go to?</p>
+            <p>
+                Helping people with their mental health journey is not just my profession, it’s also personal for me.
+                The Friendly Couch started as an idea when I was just a kid. I'm thrilled that I am finally doing it!
+            </p>
+            <p class="mt-14 font-medium">
+                Get to know me, The Friendly Couch and my team of therapists.
+            </p>
 
         </div>
 
-        <div class="w-full flex flex-col  ">
-            <h2
-                class="text-2xl font-semibold text-center landscape:sm:text-3xl portrait:sm:text-6xl portrait:lg:text-3xl pt-28 landscape:sm:pt-10 portrait:lg:pt-6  landscape:lg:pt-10 pb-28  landscape:lg:pb-10 portrait:lg:pb-8 landscape:sm:pb-10">
-                Founder's note
-            </h2>
-    
-            <div
-                class="mx-auto px-24 font-light leading-relaxed text-center text-4xl portrait:lg:text-base landscape:lg:text-lg landscape:sm:text-lg">
-            
-                <p>
-                    Growing up, I saw people around me struggle with their mental health.
-                    I knew that it was hard but realised that it was even more challenging without professional support. How do you
-                    cope
-                    without having someone to go to?
-                </p>
-                <p class="mt-7">
-                    Helping people with their mental health journey is not just my profession, it’s also personal for me. The
-                    Friendly
-                    Couch
-                    started as an idea when I was just a kid. I'm thrilled that I am finally doing it!
-                </p>
-                <p class="mt-14 font-medium">
-                    Get to know me, The Friendly Couch and my team of therapists.
-                </p>
-            
-            </div>
-    
-            <button
-                class="text-center mx-auto my-44 landscape:sm:my-10 landscape:lg:my-14 lg:my-14 portrait:lg:my-8  lg:py-5 lg:px-12lg:py-5 lg:px-12 py-14 px-24 landscape:py-5  landscape:px-12 whitespace-nowrap font-medium transition rounded-full select-none bg-dark-purple  hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring hover:bg-light-purple text-light hover:text-light">
-    
-                <a class="portrait:sm:text-4xl text-lg portrait:lg:text-lg font-normal " href="#">About Us</a>
-    
-            </button>
-    
-        </div>
-    
+        <button
+            class="text-center mx-auto mt-20 md:mt-12 px-8 py-6 md:px-8 md:py-5 whitespace-nowrap font-medium transition rounded-full select-none bg-dark-purple  hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring hover:bg-light-purple text-light hover:text-light">
+
+            <a class="text-base md:text-lg font-normal" href="#">About Us</a>
+
+        </button>
+
+
+
+    </div>
+
 </div>
 
 
 
 <div class="mx-auto flex flex-col text-light bg-mid-purple">
     <h2
-        class="text-2xl font-semibold text-center landscape:sm:text-3xl portrait:sm:text-6xl portrait:lg:text-3xl pt-44 landscape:sm:pt-20 portrait:lg:pt-24  landscape:lg:pt-28 ">
+        class="text-2xl md:text-3xl font-semibold text-center  pt-16 md:pt-24 ">
         Features
     </h2>
 
-    <div class="mx-auto px-24 pt-16 landscape:sm:pt-10 landscape:lg:pt-16  font-light leading-relaxed text-center text-4xl portrait:lg:text-base landscape:lg:text-lg landscape:sm:text-lg">
+    <div class="mx-auto px-14 pt-10 font-light leading-relaxed text-center  text-sm md:text-lg">
 
         <p>Explore the recognition and features we've garnered throughout these years</p>
 
     </div>
 
     <div
-        class="flex flex-row  flex-wrap justify-center  text-light  py-44 lg:py-20 landscape:sm:py-12 landscape:lg:py-20">
+        class="flex flex-row mx-auto flex-wrap justify-center  text-light  py-16 ">
         <div
-            class="items-center w-1/3 landscape:lg:w-[11%] landscape:sm:w-[20%] p-20 landscape:sm:p-12 portrait:lg:w-[15%] lg:p-10">
+            class="items-center w-1/4 p-8 md:w-2/12 mx-3 md:p-10">
             <img src="couch.svg">
             
         </div>
         <div
-            class="ftems-center w-1/3 landscape:lg:w-[11%] landscape:sm:w-[20%] p-20 landscape:sm:p-12 portrait:lg:w-[15%]  lg:p-10">
+            class="ftems-center w-1/4 p-8 md:w-2/12 mx-3 md:p-10">
             <img src="couch.svg">
             
         </div>
         <div
-            class="items-center w-1/3 landscape:lg:w-[11%] landscape:sm:w-[20%] p-20 landscape:sm:p-12 portrait:lg:w-[15%] lg:p-10">
+            class="items-center w-1/4 p-8 md:w-2/12 mx-3 md:p-10">
             <img src="couch.svg">
         </div>
         <div
-            class="items-center w-1/3 landscape:lg:w-[11%] landscape:sm:w-[20%] p-20 landscape:sm:p-12 portrait:lg:w-[15%] lg:p-10">
-            <img src="couch.svg">
-            
-        </div>
-        <div
-            class="items-center w-1/3 landscape:lg:w-[11%] landscape:sm:w-[20%] p-20 landscape:sm:p-12 portrait:lg:w-[15%] lg:p-10">
+            class="items-center w-1/4 p-8 md:w-2/12 mx-3 md:p-10">
             <img src="couch.svg">
             
         </div>
         <div
-            class="items-center w-1/3 landscape:lg:w-[11%] landscape:sm:w-[20%] p-20 landscape:sm:p-12 portrait:lg:w-[15%] lg:p-10">
+            class="items-center w-1/4 p-8 md:w-2/12 mx-3 md:p-10">
+            <img src="couch.svg">
+            
+        </div>
+        <div
+            class="items-center w-1/4 p-8 md:w-2/12 mx-3 md:p-10">
             <img src="couch.svg">
         </div>
         <div
-            class="items-center w-1/3 landscape:lg:w-[11%] landscape:sm:w-[20%] p-20 landscape:sm:p-12 portrait:lg:w-[15%] lg:p-10">
+            class="items-center w-1/4 p-8 md:w-2/12 mx-3 md:p-10">
             <img src="couch.svg">
          
         </div>
         <div
-            class="items-center w-1/3 landscape:lg:w-[11%] landscape:sm:w-[20%] p-20 landscape:sm:p-12 portrait:lg:w-[15%] lg:p-10">
+            class="items-center w-1/4 p-8 md:w-2/12 mx-3 md:p-10">
             <img src="couch.svg">
             
         </div>
         <div
-            class="ftems-center w-1/3 landscape:lg:w-[11%] landscape:sm:w-[20%] p-20 landscape:sm:p-12 portrait:lg:w-[15%]  lg:p-10">
+            class="ftems-center w-1/4 p-8 md:w-2/12 mx-3 md:p-10">
             <img src="couch.svg">
             
         </div>
@@ -520,83 +523,95 @@
 
 
 <div
-    class="z-10  bg-dark-purple text-slate-200 items-center  py-16">
+    class="z-10  bg-dark-purple text-slate-200 items-center  py-16 md:py-24">
 
     
 
     <div class="w-full flex flex-col ">
         <h2
-            class="text-2xl font-semibold text-center landscape:sm:text-3xl portrait:sm:text-6xl portrait:lg:text-3xl pt-28 landscape:sm:pt-10 portrait:lg:pt-6  landscape:lg:pt-10 pb-28  landscape:lg:pb-10 portrait:lg:pb-8 landscape:sm:pb-10">
+            class="text-2xl md:text-3xl font-semibold text-center  pb-8  md:pb-12">
             Our Approach to Therapy
         </h2>
 
         <div
-            class=" px-20 font-light leading-relaxed justify-center text-center text-4xl portrait:lg:text-base landscape:lg:text-lg landscape:sm:text-lg">
+            class=" font-light leading-relaxed  text-center text-sm md:text-lg">
 
-            <p class="lg:w-2/3 mx-auto">
+            <p class="px-14 md:px-32 mx-auto">
                 We believe that each client is unique, and not every approach to therapy works for everyone. Our therapists adopt an eclectic approach, drawing from a diverse range of methodologies. All the therapists follow a queer-friendly, trauma-informed approach.
             </p>
 
+<div class="flex place-content-center">
 
-            <div class="grid gap-x-6 sm:grid-cols-1 lg:grid-cols-2 landscape:sm:grid-cols-2 pt-32 lg:pl-32 px-10  landscape:sm:pl-10 landscape:lg:pl-32 font-normal text-3xl portrait:lg:text-base landscape:lg:text-lg landscape:sm:text-sm text-center leading-relaxed ">
-                <div class="flex flex-row gap-4 mb-6">
-                
-                    <img class="w-8 landscape:sm:w-6 lg:w-6" src="checkmark.svg" alt="">
-                    <p class="flex items-center ">
-                        Cognitive Behavioural Therapy (CBT)
-                    </p>
-                </div><div class="flex flex-row gap-4 mb-6 ">
-                
-                    <img class="w-8 landscape:sm:w-6 lg:w-6" src="checkmark.svg" alt="">
-                    <p class="flex items-center ">
-                        Acceptance and Commitment Therapy (ACT)
-                    </p>
-                </div><div class="flex flex-row gap-4 mb-6 ">
-                
-                    <img class="w-8 landscape:sm:w-6 lg:w-6" src="checkmark.svg" alt="">
-                    <p class="flex items-center ">
-                        Dialectical behavioural therapy (DBT)
-                    </p>
-                </div><div class="flex flex-row gap-4 mb-6 ">
-                
-                    <img class="w-8 landscape:sm:w-6 lg:w-6" src="checkmark.svg" alt="">
-                    <p class="flex items-center ">
-                        Person-Centred Therapy
-                    </p>
-                </div><div class="flex flex-row gap-4 mb-6 ">
-                
-                    <img class="w-8 landscape:sm:w-6 lg:w-6" src="checkmark.svg" alt="">
-                    <p class="flex items-center ">
-                        Emotion-focused therapy (EFT)
-                    </p>
-                </div><div class="flex flex-row gap-4 mb-6 ">
-                
-                    <img class="w-8 landscape:sm:w-6 lg:w-6" src="checkmark.svg" alt="">
-                    <p class="flex items-center ">
-                        Exposure Response Prevention Therapy (ERP)
-                    </p>
-                </div><div class="flex flex-row  gap-4 mb-6 ">
-                
-                    <img class="w-8 landscape:sm:w-6 lg:w-6" src="checkmark.svg" alt="">
-                    <p class="flex items-center ">
-                        Mindfulness
-                    </p>
-                </div><div class="flex flex-row gap-4 mb-6 ">
-                
-                    <img class="w-8 landscape:sm:w-6 lg:w-6" src="checkmark.svg" alt="">
-                    <p class="flex items-center ">
-                        Narrative therapy
-                    </p>
-                </div>
-            </div>
+    <div
+        class="grid gap-x-6 grid-cols-1 md:grid-cols-1 lg:grid-cols-2 py-14 md:py-16  font-normal text-xs md:text-lg text-center leading-relaxed ">
+        <div class="flex flex-row gap-3 mb-4">
+    
+            <img class="w-4" src="checkmark.svg" alt="">
+            <p class="flex items-center ">
+                Cognitive Behavioural Therapy (CBT)
+            </p>
+        </div>
+        <div class="flex flex-row gap-3 mb-4 ">
+    
+            <img class="w-4" src="checkmark.svg" alt="">
+            <p class="flex items-center ">
+                Acceptance and Commitment Therapy (ACT)
+            </p>
+        </div>
+        <div class="flex flex-row gap-3 mb-4 ">
+    
+            <img class="w-4" src="checkmark.svg" alt="">
+            <p class="flex items-center ">
+                Dialectical behavioural therapy (DBT)
+            </p>
+        </div>
+        <div class="flex flex-row gap-3 mb-4 ">
+    
+            <img class="w-4" src="checkmark.svg" alt="">
+            <p class="flex items-center ">
+                Person-Centred Therapy
+            </p>
+        </div>
+        <div class="flex flex-row gap-3 mb-4 ">
+    
+            <img class="w-4" src="checkmark.svg" alt="">
+            <p class="flex items-center ">
+                Emotion-focused therapy (EFT)
+            </p>
+        </div>
+        <div class="flex flex-row gap-3 mb-4 ">
+    
+            <img class="w-4" src="checkmark.svg" alt="">
+            <p class="flex items-center ">
+                Exposure Response Prevention Therapy (ERP)
+            </p>
+        </div>
+        <div class="flex flex-row  gap-3 mb-4 ">
+    
+            <img class="w-4" src="checkmark.svg" alt="">
+            <p class="flex items-center ">
+                Mindfulness
+            </p>
+        </div>
+        <div class="flex flex-row gap-3 mb-4 ">
+    
+            <img class="w-4" src="checkmark.svg" alt="">
+            <p class="flex items-center ">
+                Narrative therapy
+            </p>
+        </div>
+    </div>
+
+</div>
+            
 
         </div>
 
         <button
-            class="text-center mx-auto my-44 landscape:sm:my-10 landscape:lg:my-14 lg:my-14 portrait:lg:my-8  lg:py-5 lg:px-12lg:py-5 lg:px-12 py-14 px-24 landscape:py-5  landscape:px-12 whitespace-nowrap font-medium transition rounded-full select-none bg-light  hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring hover:bg-light-purple text-dark-purple hover:text-light">
-
-            <a class="portrait:sm:text-4xl text-lg portrait:lg:text-lg font-normal " href="#">About Us</a>
-
+            class="text-center mx-auto my-2 md:my-8 px-8 py-6 md:px-8 md:py-5 whitespace-nowrap font-medium transition rounded-full select-none bg-light  hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring hover:bg-light-purple text-dark-purple hover:text-light">
+        
+            <a class="text-base md:text-lg font-normal" href="#">About Us</a>
+        
         </button>
 
     </div>
@@ -614,49 +629,49 @@
 
             <div class="mx-auto flex flex-col text-dark-purple bg-light">
                 <h2
-                    class="text-2xl font-semibold text-center landscape:sm:text-3xl  pt-72 landscape:sm:pt-20  landscape:lg:pt-20 portrait:hidden">
+                    class="text-2xl md:text-3xl font-semibold text-center   pt-16 md:pt-24 portrait:hidden">
                     Languages that connect us
                 </h2>
 
                 <div
-                    class="flex flex-row flex-wrap justify-center align-center  text-light lg:gap-10 py-44 lg:py-20 landscape:sm:py-16 landscape:lg:py-20">
+                    class="flex flex-row flex-wrap justify-center align-center py-16 md:py-10 mx-auto text-light ">
                     <div
-                        class="items-center w-1/3 landscape:lg:w-1/5 landscape:sm:w-1/4 p-20 landscape:sm:p-5 landscape:lg:p-5 lg:w-1/6 lg:p-10 landscape:sm:pt-5">
+                        class="items-center w-32 p-5 md:w-1/4 md:p-8">
                         <img src="couch.svg">
 
                     </div>
                     <div
-                        class="items-center w-1/3 landscape:lg:w-1/5 landscape:sm:w-1/4 p-20 landscape:sm:p-5 landscape:lg:p-5 lg:w-1/6 lg:p-10 landscape:sm:pt-5">
+                        class="items-center w-32 p-5 md:w-1/4 md:p-8">
                         <img src="couch.svg">
 
                     </div>
                     <div
-                        class="items-center w-1/3 landscape:lg:w-1/5 landscape:sm:w-1/4 p-20 landscape:sm:p-5 landscape:lg:p-5 lg:w-1/6 lg:p-10 landscape:sm:pt-5">
+                        class="items-center w-32 p-5 md:w-1/4 md:p-8">
                         <img src="couch.svg">
 
                     </div>
                     <div
-                        class="items-center w-1/3 landscape:lg:w-1/5 landscape:sm:w-1/4 p-20 landscape:sm:p-5 landscape:lg:p-5 lg:w-1/6 lg:p-10 landscape:sm:pt-5">
+                        class="items-center w-32 p-5 md:w-1/4 md:p-8">
                         <img src="couch.svg">
 
                     </div>
                     <div
-                        class="items-center w-1/3 landscape:lg:w-1/5 landscape:sm:w-1/4 p-20 landscape:sm:p-5 landscape:lg:p-5 lg:w-1/6 lg:p-10 landscape:sm:pt-5">
+                        class="items-center w-32 p-5 md:w-1/4 md:p-8">
                         <img src="couch.svg">
 
                     </div>
                     <div
-                        class="items-center w-1/3 landscape:lg:w-1/5 landscape:sm:w-1/4 p-20 landscape:sm:p-5 landscape:lg:p-5 lg:w-1/6 lg:p-10 landscape:sm:pt-5">
+                        class="items-center w-32 p-5 md:w-1/4 md:p-8">
                         <img src="couch.svg">
 
                     </div>
                     <div
-                        class="items-center w-1/3 landscape:lg:w-1/5 landscape:sm:w-1/4 p-20 landscape:sm:p-5 landscape:lg:p-5 lg:w-1/6 lg:p-10 landscape:sm:pt-5">
+                        class="items-center w-32 p-5 md:w-1/4 md:p-8">
                         <img src="couch.svg">
 
                     </div>
                     <div
-                        class="items-center w-1/3 landscape:lg:w-1/5 landscape:sm:w-1/4 p-20 landscape:sm:p-5 landscape:lg:p-5 lg:w-1/6 lg:p-10 landscape:sm:pt-5">
+                        class="items-center w-32 p-5 md:w-1/4 md:p-8">
                         <img src="couch.svg">
 
                     </div>
@@ -673,40 +688,37 @@
                 <img class="w-1/2 mx-auto " src="couch.svg" alt="">
             </div>
             <h2
-                class="text-2xl font-semibold text-dark-purple text-center portrait:sm:text-6xl portrait:lg:text-4xl  portrait:lg:py-20 portrait:sm:py-32 landscape:hidden">
+                class="text-2xl md:text-3xl font-semibold text-dark-purple text-center py-16 md:py-24 landscape:hidden">
                 Languages that connect us
             </h2>
 </div>  
 
 
 
-        <div
-            class="mx-auto flex flex-col h-auto bg-dark-purple text-light  items-center justify-center py-44 lg:py-28 landscape:lg:py-28 landscape:sm:py-28">
+        
+
+        <div class="mx-auto flex flex-col h-auto bg-dark-purple text-slate-100  items-center justify-center py-24">
+        
             <div class="w-full">
-                <div class="relative inset-x-0 w-28 lg:w-16 landscape:lg:w-16 landscape:sm:w-14 mx-auto animate-bounce">
-                    <img class="w-full" src="quote-white.svg" alt=""">
+                <div class="relative inset-x-0 w-12 mx-auto animate-bounce">
+                    <img class="w-full" src="quote-white.svg" alt="">
                 </div>
             </div>
         
-            <div class="lg:w-1/2 w-2/3 pt-16 lg:pt-10 landscape:lg:pt-10 landscape:sm:pt-10 ">
-               
-                <div
-                    class="text-4xl portrait:lg:text-base landscape:lg:text-lg landscape:sm:text-lg text-center leading-relaxed px-5 py-5">
-
-                    <p>Before starting the therapy, I thought I wouldn't be comfortable talking if it's not in Punjabi. But actually, that
+            <div class="w-3/4 pt-10 lg:pt-10 landscape:lg:pt-10 landscape:sm:pt-10 ">
+        
+                <p class="text-sm md:text-lg text-center leading-relaxed px-5 py-5">
+                    Before starting the therapy, I thought I wouldn't be comfortable talking if it's not in Punjabi. But actually, that
                     wasn't the case. I was pretty comfortable in Hindi and English, and I loved how my therapist made me feel so comfortable
                     in every session. Just the knowledge that my therapist understands Punjabi was enough to boost my confidence to speak in
                     Hindi and English.</p>
-                  
-                </div>
-
+        
             </div>
         
-            <div class="w-full pt-16 lg:pt-10 landscape:lg:pt-10 landscape:sm:pt-10">
-                <p class="text-3xl portrait:lg:text-sm landscape:lg:text-sm landscape:sm:text-base font-light text-center">
-                    Someone we made happy</p>
+            <div class="w-full pt-5">
+                <p class="text-sm md:text-base font-light text-center">Someone we made happy</p>
             </div>
-
+        
         </div>
 
 
@@ -721,7 +733,7 @@
     <div class="flex flex-col bg-light text-dark-purple">
         <div>
    
-                <h2 class="text-2xl font-semibold text-center landscape:sm:text-3xl portrait:sm:text-6xl portrait:lg:text-3xl pt-28 landscape:sm:pt-20 portrait:lg:pt-6  landscape:lg:pt-20   portrait:lg:pb-8 ">
+                <h2 class="text-2xl md:text-3xl font-semibold text-center  pt-16  md:pt-24">
                     Commonly Asked Questions
                 </h2>
 
@@ -730,55 +742,56 @@
         <div class="relative justify-center antialiased font-poppins">
     
             <div class="relative flex flex-col justify-center overflow-hidden ">
-                <div class="w-full max-w-3xl px-4 py-24 mx-auto text-center lg:max-w-5xl portrait:lg:max-w-3xl lg:px-6">
+                <div class="w-3/4  py-12 md:py-20 mx-auto text-center ">
     
     
                     <!-- Accordion component -->
                     <div class="divide-y divide-slate-200">
-                        <!-- Accordion item -->
-                        <div x-data="{ expanded: false }" class="py-8 lg:py-4 landscape:lg:py-4 landscape:sm:py-2">
+                        <!-- Accordion item - 1 -->
+                        <div x-data="{ expanded: false }" class="py-5">
                             <h2>
                                 <button id="faq-1" type="button"
-                                    class="flex items-center justify-between w-full text-3xl portrait:lg:text-base landscape:lg:text-lg landscape:sm:text-lg font-medium text-left lg:text-base "
+                                    class="flex items-center justify-between w-full text-sm md:text-lg font-medium text-left "
                                     @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faq-1">
                                     <span>What are the charges?</span>
     
-                                    <img class="h-10 ml-8 transition duration-200 origin-center transform lg:h-5 landscape:lg:h-5 landscape:sm:h-6 shrink-0"
+                                    <img class="h-5 ml-8 transition duration-200 origin-center transform shrink-0"
                                         src="drop-arrow.svg" :class="{'!rotate-180': expanded}">
                                 </button>
                             </h2>
                             <div id="faq-1" role="region" aria-labelledby="faq-1"
-                                class="grid  overflow-hidden text-3xl portrait:lg:text-base landscape:lg:text-sm landscape:sm:text-base leading-relaxed text-justify transition-all duration-300 ease-in-out lg:text-sm  "
+                                class="grid  overflow-hidden text-sm  leading-relaxed text-justify transition-all duration-300 ease-in-out lg:text-sm"
                                 :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
                                 <div class="overflow-hidden">
-                                    <p class="py-8 lg:py-3">
+                                    <p class="whitespace-pre-line">
                                         Our standard charges are
-                                        <br>Counselling Psychologist - INR2200
-                                        <br>Clinical Psychologist - INR2500
-                                        <br>
-                                        <br>For further details visit our pricing page.
-
+                                        Counselling Psychologist - INR2200
+                                        Clinical Psychologist - INR2500
+                                        
+                                        For further details visit our pricing page.
                                     </p>
                                 </div>
                             </div>
                         </div>
 
-                        <div x-data="{ expanded: false }" class="py-8 lg:py-4 landscape:lg:py-4 landscape:sm:py-2">
+                        <!-- Accordion item - 2 -->
+
+                        <div x-data="{ expanded: false }" class="py-5">
                             <h2>
                                 <button id="faq-2" type="button"
-                                    class="flex items-center justify-between w-full text-3xl portrait:lg:text-base landscape:lg:text-lg landscape:sm:text-lg font-medium text-left lg:text-base "
+                                    class="flex items-center justify-between w-full text-sm md:text-lg font-medium text-left "
                                     @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faq-2">
                                     <span>How do I schedule a session?</span>
                         
-                                    <img class="h-10 ml-8 transition duration-200 origin-center transform lg:h-5 landscape:lg:h-5 landscape:sm:h-6 shrink-0" src="drop-arrow.svg"
+                                    <img class="h-5 ml-8 transition duration-200 origin-center transform  shrink-0" src="drop-arrow.svg"
                                         :class="{'!rotate-180': expanded}">
                                 </button>
                             </h2>
                             <div id="faq-2" role="region" aria-labelledby="faq-2"
-                                class="grid overflow-hidden text-3xl portrait:lg:text-base landscape:lg:text-sm landscape:sm:text-lg leading-relaxed text-justify transition-all duration-300 ease-in-out lg:text-sm "
+                                class="grid  overflow-hidden text-sm  leading-relaxed text-justify transition-all duration-300 ease-in-out lg:text-sm"
                                 :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
                                 <div class="overflow-hidden">
-                                    <p class="py-8 lg:py-3">
+                                    <p class="whitespace-pre-line">
                                         You can book a session by messaging us on 
                                         <br>
                                         <br>WhatsApp (+919205025183)
@@ -791,22 +804,22 @@
                             </div>
                         </div>
 
-                        <div x-data="{ expanded: false }" class="py-8 lg:py-4 landscape:lg:py-4 landscape:sm:py-2">
+                        <div x-data="{ expanded: false }" class="py-5">
                             <h2>
                                 <button id="faq-3" type="button"
-                                    class="flex items-center justify-between w-full text-3xl portrait:lg:text-base landscape:lg:text-lg landscape:sm:text-lg font-medium text-left lg:text-base "
+                                    class="flex items-center justify-between w-full text-sm md:text-lg font-medium text-left "
                                     @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faq-3-answer">
                                     <span>Can you help me get diagnosed?</span>
                         
-                                    <img class="h-10 ml-8 transition duration-200 origin-center transform lg:h-5 landscape:lg:h-5 landscape:sm:h-6 shrink-0" src="drop-arrow.svg"
+                                    <img class="h-5 ml-8 transition duration-200 origin-center transform shrink-0" src="drop-arrow.svg"
                                         :class="{'!rotate-180': expanded}">
                                 </button>
                             </h2>
                             <div id="faq-3-answer" role="region" aria-labelledby="faq-3"
-                                class="grid overflow-hidden text-3xl portrait:lg:text-base landscape:lg:text-sm landscape:sm:text-lg leading-relaxed text-justify transition-all duration-300 ease-in-out lg:text-sm  "
+                                class="grid  overflow-hidden text-sm  leading-relaxed text-justify transition-all duration-300 ease-in-out lg:text-sm "
                                 :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
                                 <div class="overflow-hidden">
-                                    <p class="py-8 lg:py-3">
+                                    <p class="whitespace-pre-line">
                                         Yes, the clinical psychologists on our team offer diagnosis/diagnostic evaluation. Please visit our
                                         <a href="diagnosis-page-link">Diagnosis page</a> for more information.
                                     </p>
@@ -814,22 +827,22 @@
                             </div>
                         </div>
                         
-                        <div x-data="{ expanded: false }" class="py-8 lg:py-4 landscape:lg:py-4 landscape:sm:py-2">
+                        <div x-data="{ expanded: false }" class="py-5">
                             <h2>
                                 <button id="faq-4" type="button"
-                                    class="flex items-center justify-between w-full text-3xl portrait:lg:text-base landscape:lg:text-lg landscape:sm:text-lg font-medium text-left lg:text-base "
+                                    class="flex items-center justify-between w-full text-sm md:text-lg font-medium text-left "
                                     @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faq-4-answer">
                                     <span>How many sessions will I need?</span>
                         
-                                    <img class="h-10 ml-8 transition duration-200 origin-center transform lg:h-5 landscape:lg:h-5 landscape:sm:h-6 shrink-0" src="drop-arrow.svg"
+                                    <img class="h-5 ml-8 transition duration-200 origin-center transform shrink-0" src="drop-arrow.svg"
                                         :class="{'!rotate-180': expanded}">
                                 </button>
                             </h2>
                             <div id="faq-4-answer" role="region" aria-labelledby="faq-4"
-                                class="grid overflow-hidden text-3xl portrait:lg:text-base landscape:lg:text-sm landscape:sm:text-lg leading-relaxed text-justify transition-all duration-300 ease-in-out lg:text-sm  "
+                                class="grid  overflow-hidden text-sm  leading-relaxed text-justify transition-all duration-300 ease-in-out lg:text-sm "
                                 :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
                                 <div class="overflow-hidden">
-                                    <p class="py-8 lg:py-3">
+                                    <p class="whitespace-pre-line">
                                         The therapist will recommend a general frequency for the sessions during the first session on the basis
                                         of your concerns.
                                         There is no strict frequency you need to follow. You can take the sessions at a frequency you're
@@ -840,16 +853,15 @@
                             </div>
                         </div>
                         
-                        <!-- Repeat the above structure for the other questions and answers -->
                         
-                        <div x-data="{ expanded: false }" class="py-8 lg:py-4 landscape:lg:py-4 landscape:sm:py-2">
+                        <div x-data="{ expanded: false }" class="py-5">
                             <h2>
                                 <button id="faq-5" type="button"
-                                    class="flex items-center justify-between w-full text-3xl portrait:lg:text-base landscape:lg:text-lg landscape:sm:text-lg font-medium text-left lg:text-base "
+                                    class="flex items-center justify-between w-full text-sm md:text-lg font-medium text-left "
                                     @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faq-5-answer">
                                     <span>Are trial/introductory sessions available?</span>
                         
-                                    <img class="h-10 ml-8 transition duration-200 origin-center transform lg:h-5  landscape:lg:h-5 landscape:sm:h-6 shrink-0" src="drop-arrow.svg"
+                                    <img class="h-5 ml-8 transition duration-200 origin-center transform shrink-0" src="drop-arrow.svg"
                                         :class="{'!rotate-180': expanded}">
                                 </button>
                             </h2>
@@ -857,7 +869,7 @@
                                 class="grid  overflow-hidden text-3xl portrait:lg:text-base landscape:lg:text-sm landscape:sm:text-lg leading-relaxed text-justify transition-all duration-300 ease-in-out lg:text-sm  "
                                 :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
                                 <div class="overflow-hidden">
-                                    <p class="py-8 lg:py-3">
+                                    <p class="whitespace-pre-line">
                                         We don't offer any introductory calls or trial/free sessions as we want to compensate the therapists
                                         fairly for their time and effort in helping people as well as for their knowledge and expertise. You can
                                         have a brief conversation over WhatsApp chat/messages prior to your first session. There's no pressure
@@ -867,14 +879,14 @@
                             </div>
                         </div>
                         
-                        <div x-data="{ expanded: false }" class="py-8 lg:py-4 landscape:lg:py-4 landscape:sm:py-2">
+                        <div x-data="{ expanded: false }" class="py-5">
                             <h2>
                                 <button id="faq-6" type="button"
-                                    class="flex items-center justify-between w-full text-3xl portrait:lg:text-base landscape:lg:text-lg landscape:sm:text-lg font-medium text-left lg:text-base "
+                                    class="flex items-center justify-between w-full text-sm md:text-lg font-medium text-left "
                                     @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faq-6-answer">
                                     <span>Do you provide in-person therapy?</span>
                         
-                                    <img class="h-10 ml-8 transition duration-200 origin-center transform lg:h-5 landscape:lg:h-5 landscape:sm:h-6 shrink-0" src="drop-arrow.svg"
+                                    <img class="h-5 ml-8 transition duration-200 origin-center transform  shrink-0" src="drop-arrow.svg"
                                         :class="{'!rotate-180': expanded}">
                                 </button>
                             </h2>
@@ -882,7 +894,7 @@
                                 class="grid  overflow-hidden text-3xl portrait:lg:text-base landscape:lg:text-sm landscape:sm:text-base leading-relaxed text-justify transition-all duration-300 ease-in-out lg:text-sm  "
                                 :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
                                 <div class="overflow-hidden">
-                                    <p class="py-8 lg:py-3">
+                                    <p class="whitespace-pre-line">
                                         We currently only offer online therapy over audio & video calls.
                                     </p>
                                 </div>
@@ -898,9 +910,9 @@
                     <!-- End: Accordion component -->
 
                     <button
-                        class="text-center mx-auto my-24 landscape:sm:my-14 landscape:lg:my-14 lg:my-14 portrait:lg:my-8  lg:py-5 lg:px-12lg:py-5 lg:px-12 py-14 px-24 landscape:py-5  landscape:px-12 whitespace-nowrap font-medium transition rounded-full select-none bg-dark-purple  hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring hover:bg-light-purple text-light  hover:text-light">
+                        class="text-center mx-auto mt-16 mb-8 md:mt-20 md:mb-6 px-14 py-6 md:px-12 md:py-5 whitespace-nowrap font-medium transition rounded-full select-none bg-dark-purple  hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring hover:bg-light-purple text-light hover:text-light">
                     
-                        <a class="portrait:sm:text-4xl text-lg portrait:lg:text-lg font-normal " href="#">FAQ</a>
+                        <a class="text-base md:text-lg font-normal" href="#">FAQ</a>
                     
                     </button>
     
@@ -914,9 +926,9 @@
     </div>
 
 
-    <div class=" py-40  lg:py-20 text-slate-200 bg-mid-purple">
+    <div class="py-40 md:py-20 text-slate-200 bg-mid-purple">
     
-        <h2 class="text-2xl font-semibold text-center landscape:sm:text-3xl portrait:sm:text-6xl portrait:lg:text-3xl py-28 landscape:sm:py-2 portrait:lg:py-6  landscape:lg:py-20   ">
+        <h2 class="text-2xl md:text-3xl font-semibold text-center ">
             CONTACT
         </h2>
     
@@ -928,10 +940,10 @@
 
 
     <footer class="flex flex-col bg-dark-purple">
-        <div class=" text-center divide-y divide-light divide-solid mr-[10%] ml-[10%]">
+        <div class="text-center divide-y divide-light divide-solid mr-[10%] ml-[10%]">
             <!-- Social Links -->
             <div style="color: white;"
-                class="flex justify-center lg:gap-10 landscape:lg:gap-10 landscape:sm:gap-10 gap-20 lg:pt-20 landscape:lg:pt-16 landscape:sm:pt-14 portrait:sm:pt-24 portrait:lg:pt-14 p-32 lg:pb-16 landscape:lg:pb-12 landscape:sm:pb-10 portrait:sm:pb-20 portrait:lg:pb-10 lg:text-xl landscape:lg:text-xl landscape:sm:text-base text-4xl">
+                class="flex justify-center gap-10 md:gap-16  pt-12  pb-10  text-base">
                 <a href="#" title="Facebook" target="_blank"><i class="fa-brands fa-facebook "></i></a>
                 <a href="#" title="Twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a>
                 <a href="#" title="Behance" target="_blank"><i class="fa-brands fa-instagram"></i></a>
@@ -939,12 +951,12 @@
                 <a href="#" title="Dribbble" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
             <!-- Copyright -->
-            <div class="text-light font-poppins lg:text-sm text-3xl landscape:lg:text-lg landscape:sm:text-base font-thin lg:pt-12 pt-24 landscape:lg:pt-10 portrait:lg:pt-10 portrait:sm:pt-20 landscape:sm:pt-10 ">
+            <div class="text-light text-base font-thin pt-8">
                 <a href="#" target="_blank" class="">&copy; The Friendly Couch 2023</a>
             </div>
         </div> 
         <div class="text-center">
-            <div class="pb-16 pt-16  landscape:lg:pt-5 landscape:sm:pt-5 portrait:lg:pt-7 portrait:sm:pt-12 portrait:lg:pb-8 portrait:sm:pb-12  landscape:lg:pb-7 landscape:sm:pb-5 text-light font-poppin lg:text-xs text-2xl landscape:lg:text-xs landscape:sm:text-sm font-normal">
+            <div class="pb-7 pt-5 text-light text-xs font-normal">
                 <div>Powered By <a href="#" target="_blank">blackwoodbox.com</a></div>
             </div>
         </div>
