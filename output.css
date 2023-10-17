@@ -1072,8 +1072,16 @@ html {
   flex: 1 1 0%;
 }
 
+.flex-shrink{
+  flex-shrink: 1;
+}
+
 .shrink-0{
   flex-shrink: 0;
+}
+
+.shrink{
+  flex-shrink: 1;
 }
 
 .origin-center{
@@ -2152,9 +2160,25 @@ input[type="checkbox"]:checked + label .arrow {
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
+@media not all and (min-width: 768px){
+  .max-md\:hidden{
+    display: none;
+  }
+}
+
 @media (min-width: 640px){
   .sm\:grid-cols-1{
     grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .sm\:px-4{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .sm\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -2257,6 +2281,10 @@ input[type="checkbox"]:checked + label .arrow {
 
   .md\:grid{
     display: grid;
+  }
+
+  .md\:hidden{
+    display: none;
   }
 
   .md\:h-20{
@@ -2491,6 +2519,11 @@ input[type="checkbox"]:checked + label .arrow {
   .md\:px-12{
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .md\:px-4{
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .md\:pt-0{

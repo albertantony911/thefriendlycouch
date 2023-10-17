@@ -26,7 +26,7 @@ function animatedCounter(target, time = 300, start = 0, elementId) {
         if (current < target) {
             current += increment;
             const roundedValue = Math.round(current);
-            counterElement.innerHTML = `${roundedValue}<span class="text-dark-purple font-medium animate-pulse">+</span>`;
+            counterElement.innerHTML = `${roundedValue}<span class="text-dark-purple font-normal animate-pulse">+</span>`;
             requestAnimationFrame(updateCounter);
         }
     }
@@ -46,8 +46,8 @@ function animatedCounter(target, time = 300, start = 0, elementId) {
 // Initialize the animated counters
 animatedCounter(8, 100, 0, "counter1");
 animatedCounter(12, 100, 0, "counter2");
-animatedCounter(2500, 200, 0, "counter3");
-animatedCounter(7000, 200, 0, "counter4");
+animatedCounter(2500, 100, 0, "counter3");
+animatedCounter(7000, 100, 0, "counter4");
 // Add more counters as needed
 
 
