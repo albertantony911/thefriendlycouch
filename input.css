@@ -7,11 +7,15 @@
 
 @layer base {
   html {
-    font-family: 'Poppins', sans-serif; /* Added quotes around font name */
+    font-family: 'Poppins', sans-serif; 
   }
 }
 
 
+.last {
+  text-align-last: center;
+  text-wrap: balance;
+}
 
 
 * {
