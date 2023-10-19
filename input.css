@@ -14,7 +14,7 @@
 
 .last {
   text-align-last: center;
-  text-wrap: balance;
+  word-spacing: -2px;
 }
 
 

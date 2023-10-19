@@ -648,6 +648,14 @@ html {
   top: auto;
 }
 
+.left-2{
+  left: 0.5rem;
+}
+
+.left-24{
+  left: 6rem;
+}
+
 .z-10{
   z-index: 10;
 }
@@ -735,6 +743,16 @@ html {
 .my-8{
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.mx-16{
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.mx-0{
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .-mt-1{
@@ -855,6 +873,18 @@ html {
 
 .mt-72{
   margin-top: 18rem;
+}
+
+.ml-0{
+  margin-left: 0px;
+}
+
+.ml-12{
+  margin-left: 3rem;
+}
+
+.mt-8{
+  margin-top: 2rem;
 }
 
 .block{
@@ -1154,6 +1184,10 @@ html {
 
 .items-start{
   align-items: flex-start;
+}
+
+.items-end{
+  align-items: flex-end;
 }
 
 .items-center{
@@ -1557,6 +1591,18 @@ html {
   padding-top: 2rem;
 }
 
+.pl-12{
+  padding-left: 3rem;
+}
+
+.pt-2{
+  padding-top: 0.5rem;
+}
+
+.pt-6{
+  padding-top: 1.5rem;
+}
+
 .text-left{
   text-align: left;
 }
@@ -1565,12 +1611,16 @@ html {
   text-align: center;
 }
 
+.text-right{
+  text-align: right;
+}
+
 .text-justify{
   text-align: justify;
 }
 
-.text-start{
-  text-align: start;
+.text-end{
+  text-align: end;
 }
 
 .align-top{
@@ -1786,7 +1836,7 @@ html {
 .last {
   -moz-text-align-last: center;
        text-align-last: center;
-  text-wrap: balance;
+  word-spacing: -2px;
 }
 
 * {
@@ -2055,6 +2105,16 @@ input[type="checkbox"]:checked + label .arrow {
     margin-bottom: 2rem;
   }
 
+  .md\:mx-12{
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .md\:mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .md\:mb-40{
     margin-bottom: 10rem;
   }
@@ -2097,6 +2157,14 @@ input[type="checkbox"]:checked + label .arrow {
 
   .md\:mt-72{
     margin-top: 18rem;
+  }
+
+  .md\:ml-auto{
+    margin-left: auto;
+  }
+
+  .md\:mr-auto{
+    margin-right: auto;
   }
 
   .md\:hidden{
@@ -2169,6 +2237,10 @@ input[type="checkbox"]:checked + label .arrow {
 
   .md\:flex-row-reverse{
     flex-direction: row-reverse;
+  }
+
+  .md\:items-center{
+    align-items: center;
   }
 
   .md\:gap-16{
@@ -2278,6 +2350,10 @@ input[type="checkbox"]:checked + label .arrow {
 
   .md\:pt-24{
     padding-top: 6rem;
+  }
+
+  .md\:text-right{
+    text-align: right;
   }
 
   .md\:text-justify{
@@ -2553,6 +2629,71 @@ input[type="checkbox"]:checked + label .arrow {
     margin-right: auto;
   }
 
+  .portrait\:mx-12{
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .portrait\:mx-14{
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+  }
+
+  .portrait\:mx-16{
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+  .portrait\:mx-24{
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  .portrait\:mx-28{
+    margin-left: 7rem;
+    margin-right: 7rem;
+  }
+
+  .portrait\:mx-20{
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .portrait\:mx-\[16\]{
+    margin-left: 16;
+    margin-right: 16;
+  }
+
+  .portrait\:mx-\[5rem\]{
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .portrait\:mx-\[6rem\]{
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  .portrait\:mx-\[4rem\]{
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+  .portrait\:mx-\[16rem\]{
+    margin-left: 16rem;
+    margin-right: 16rem;
+  }
+
+  .portrait\:mx-0{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .portrait\:mx-1{
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+
   .portrait\:hidden{
     display: none;
   }
@@ -2658,6 +2799,11 @@ input[type="checkbox"]:checked + label .arrow {
     .portrait\:md\:my-24{
       margin-top: 6rem;
       margin-bottom: 6rem;
+    }
+
+    .portrait\:md\:mx-auto{
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .portrait\:md\:mb-44{
