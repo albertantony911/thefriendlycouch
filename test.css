@@ -30,7 +30,7 @@
   bottom: 7px;
   left: 7px;
   background-color: #ffffff;
-  background-image: url(/founder.webp);
+  background-image: url("founder.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
