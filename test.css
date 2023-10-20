@@ -1,133 +1,138 @@
-section.contact-us #contact {
-  position: relative;
+.blob-w {
   display: block;
-  width: 380px;
-  height: auto;
-  background-color: #fff;
-  padding: 40px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 15px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
-}
-
-section.contact-us .section-heading {
-  position: relative; 
-  display: block;
-  margin: auto;
-}
-
-.section-heading h4 {
-  line-height: 40px;
-  font-size: 28px;
-  font-weight: 900;
-  color: #dc8cdb;
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 40px;
-}
-
-input, textarea {
-  width: 350px;
   position: relative;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 48% 52% 68% 32%/42% 28% 72% 58%;
+  background: #ffffff;
+  background-size: 500% 100%;
+  animation: blobber 30s 0s linear infinite, cobler 30s 0s linear infinite alternate;
+}
+
+.blob-c {
   display: block;
-  background-color: #f4f7fb;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  border: none;
-  box-shadow: none;
-  border-radius: 5px;
-  outline-color: #9e9e9e;
-}
-
-input {
-  height: 40px;
-  padding: 0px 15px;
-}
-
-textarea {
-  min-height: 140px;
-  max-height: 180px;
-  padding: 15px;
-  resize: none;
-}
-
-.contact-us span {
-  height: 20px;
-	font-size: 12px;
-  margin-bottom: 20px;
-}
-
-.valid_info_name, .valid_info_email, .valid_info_message{
-  display: inline-block;
-  font-size: 13px;
-  margin: 5px 2px;
-}
-
-.valid {
-  border: 2px solid green;
-  outline-color: green;
-}
-
-.invalid {
-  border: 2px solid red;
-  outline-color: red;
-}
-
-.btn {
-  display: inline-flex;
-  width: 100%;
-  justify-content: flex-end;
-}
-
-#form-submit {
   position: relative;
-  display: inline-block;
-  float: right;
-  font-size: 12px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #fff;
-  background: rgb(219,138,222);
-  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%);
-  padding: 12px 20px;
-  border-radius: 5px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  transition: all .3s;
-  transition: all .3s;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 48% 52% 68% 32%/42% 28% 72% 58%;
+  background: #D1BEF9;
+  background-size: 500% 100%;
+  animation: blobber 30s 0s linear infinite, cobler 30s 0s linear infinite alternate;
+}
+.blob-w:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  bottom: 7px;
+  left: 7px;
+  background-color: #ffffff;
+  background-image: url(/founder.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  mix-blend-mode: normal;
+  animation: blobber 30s 0s ease-in-out infinite, wobbler 15s 0s linear infinite alternate;
 }
 
-#form-submit:disabled {
-  border: 1px solid #9e9e9e;
-  background: transparent;
-  color: #9e9e9e;
-  transition: none;
-  transform: none;
-  cursor: default;
+.blob-c:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  bottom: 7px;
+  left: 7px;
+  background-color: hsl(0, 0%, 100%);
+  background-image: url(/founder.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  mix-blend-mode: normal;
+  animation: blobber 30s 0s ease-in-out infinite, wobbler 15s 0s linear infinite alternate;
 }
 
-#form-submit:hover:disabled{
-  border: 1px solid #9e9e9e;
-  color: #9e9e9e;
-  background: transparent;
-  transition: none;
-  transform: none;
-  cursor: default;
+@keyframes blobber {
+  0% {
+    border-radius: 48% 52% 68% 32%/42% 28% 72% 58%;
+  }
+  5% {
+    border-radius: 48% 52% 41% 59%/66% 37% 63% 34%;
+  }
+  10% {
+    border-radius: 69% 31% 71% 29%/67% 31% 69% 33%;
+  }
+  15% {
+    border-radius: 60% 40% 71% 29%/63% 65% 35% 37%;
+  }
+  20% {
+    border-radius: 61% 39% 51% 49%/57% 58% 42% 43%;
+  }
+  25% {
+    border-radius: 66% 34% 25% 75%/47% 30% 70% 53%;
+  }
+  30% {
+    border-radius: 32% 68% 38% 62%/65% 60% 40% 35%;
+  }
+  35% {
+    border-radius: 63% 37% 41% 59%/35% 38% 62% 65%;
+  }
+  40% {
+    border-radius: 57% 43% 49% 51%/55% 71% 29% 45%;
+  }
+  45% {
+    border-radius: 47% 53% 34% 66%/65% 36% 64% 35%;
+  }
+  50% {
+    border-radius: 44% 56% 32% 68%/69% 26% 74% 31%;
+  }
+  55% {
+    border-radius: 28% 72% 37% 63%/71% 44% 56% 29%;
+  }
+  60% {
+    border-radius: 38% 62% 35% 65%/74% 53% 47% 26%;
+  }
+  65% {
+    border-radius: 73% 27% 46% 54%/54% 47% 53% 46%;
+  }
+  70% {
+    border-radius: 75% 25% 47% 53%/49% 53% 47% 51%;
+  }
+  75% {
+    border-radius: 62% 38% 43% 57%/55% 60% 40% 45%;
+  }
+  80% {
+    border-radius: 41% 59% 65% 35%/73% 50% 50% 27%;
+  }
+  85% {
+    border-radius: 55% 45% 57% 43%/73% 61% 39% 27%;
+  }
+  90% {
+    border-radius: 74% 26% 33% 67%/40% 65% 35% 60%;
+  }
+  95% {
+    border-radius: 58% 42% 57% 43%/53% 45% 55% 47%;
+  }
+  100% {
+    border-radius: 48% 52% 68% 32%/42% 28% 72% 58%;
+  }
 }
-
-button:active {
-	transform: scale(0.95);
+@keyframes cobler {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
 }
-
-button:focus {
-	outline: none;
-}
-
-button.ghost {
-	background-color: transparent;
-	border-color: #FFFFFF;
+@keyframes wobbler {
+  0% {
+    transform: rotateZ(4deg);
+  }
+  100% {
+    transform: rotateZ(-4deg);
+  }
 }
