@@ -1,3 +1,13 @@
+.blob {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 48% 52% 68% 32%/42% 28% 72% 58%;
+  background: #ffffff;
+  background-size: 500% 100%;
+  animation: blobber 30s 0s linear infinite, cobler 30s 0s linear infinite alternate;
+}
+
 .blob-w {
   display: block;
   position: relative;
@@ -21,6 +31,23 @@
   background-size: 500% 100%;
   animation: blobber 30s 0s linear infinite, cobler 30s 0s linear infinite alternate;
 }
+
+.blob:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  bottom: 7px;
+  left: 7px;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  mix-blend-mode: normal;
+  animation: blobber 30s 0s ease-in-out infinite, wobbler 15s 0s linear infinite alternate;
+}
+
 .blob-w:after {
   content: "";
   display: block;
