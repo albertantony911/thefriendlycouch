@@ -550,6 +550,10 @@ html {
   position: sticky;
 }
 
+.inset-0 {
+  inset: 0px;
+}
+
 .-inset-x-0 {
   left: -0px;
   right: -0px;
@@ -1015,14 +1019,6 @@ html {
   width: 1px;
 }
 
-.w-44 {
-  width: 11rem;
-}
-
-.w-60 {
-  width: 15rem;
-}
-
 .min-w-full {
   min-width: 100%;
 }
@@ -1122,16 +1118,6 @@ html {
   animation: bounce 1s infinite;
 }
 
-@keyframes pulse {
-  50% {
-    opacity: .5;
-  }
-}
-
-.animate-pulse {
-  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
 .cursor-pointer {
   cursor: pointer;
 }
@@ -1164,10 +1150,6 @@ html {
 
 .flex-col {
   flex-direction: column;
-}
-
-.flex-col-reverse {
-  flex-direction: column-reverse;
 }
 
 .flex-wrap {
@@ -1383,6 +1365,11 @@ html {
      object-fit: cover;
 }
 
+.object-bottom {
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
 .p-20 {
   padding: 5rem;
 }
@@ -1406,11 +1393,6 @@ html {
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
-}
-
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
 }
 
 .px-12 {
@@ -1644,10 +1626,6 @@ html {
   padding-top: 2rem;
 }
 
-.pb-12 {
-  padding-bottom: 3rem;
-}
-
 .text-left {
   text-align: left;
 }
@@ -1753,6 +1731,11 @@ html {
 .text-dark-purple {
   --tw-text-opacity: 1;
   color: rgb(70 49 116 / var(--tw-text-opacity));
+}
+
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
 .text-light {
@@ -1876,7 +1859,7 @@ html {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
-.arrow {
+.box {
   align-items: center;
 }
 
@@ -2117,6 +2100,10 @@ input[type="checkbox"]:checked + label .arrow {
 }
 
 @media (min-width: 640px) {
+  .sm\:max-w-xl {
+    max-width: 36rem;
+  }
+
   .sm\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -2287,20 +2274,8 @@ input[type="checkbox"]:checked + label .arrow {
     width: 70%;
   }
 
-  .md\:w-2\/4 {
-    width: 50%;
-  }
-
-  .md\:w-3\/4 {
-    width: 75%;
-  }
-
-  .md\:w-3\/5 {
-    width: 60%;
-  }
-
-  .md\:w-2\/5 {
-    width: 40%;
+  .md\:max-w-full {
+    max-width: 100%;
   }
 
   .md\:grid-cols-1 {
@@ -2376,6 +2351,11 @@ input[type="checkbox"]:checked + label .arrow {
     padding-right: 4rem;
   }
 
+  .md\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
   .md\:px-32 {
     padding-left: 8rem;
     padding-right: 8rem;
@@ -2414,16 +2394,6 @@ input[type="checkbox"]:checked + label .arrow {
   .md\:py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
-  }
-
-  .md\:py-16 {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-
-  .md\:px-20 {
-    padding-left: 5rem;
-    padding-right: 5rem;
   }
 
   .md\:pb-12 {
@@ -2493,6 +2463,10 @@ input[type="checkbox"]:checked + label .arrow {
 }
 
 @media (min-width: 1024px) {
+  .lg\:absolute {
+    position: absolute;
+  }
+
   .lg\:bottom-16 {
     bottom: 4rem;
   }
@@ -2551,6 +2525,10 @@ input[type="checkbox"]:checked + label .arrow {
     height: 1.25rem;
   }
 
+  .lg\:h-full {
+    height: 100%;
+  }
+
   .lg\:w-1\/2 {
     width: 50%;
   }
@@ -2589,6 +2567,10 @@ input[type="checkbox"]:checked + label .arrow {
 
   .lg\:max-w-5xl {
     max-width: 64rem;
+  }
+
+  .lg\:max-w-screen-xl {
+    max-width: 1280px;
   }
 
   .lg\:-translate-y-20 {
@@ -2642,6 +2624,11 @@ input[type="checkbox"]:checked + label .arrow {
   .lg\:px-7 {
     padding-left: 1.75rem;
     padding-right: 1.75rem;
+  }
+
+  .lg\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .lg\:py-20 {

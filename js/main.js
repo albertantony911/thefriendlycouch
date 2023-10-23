@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
- 
+
 // Function to animate a counter
 function animatedCounter(target, time = 300, start = 0, elementId) {
     let current = start;
@@ -41,18 +41,14 @@ function animatedCounter(target, time = 300, start = 0, elementId) {
 
     // Start observing the counter element
     observer.observe(counterElement);
-}2
+}
 
 // Initialize the animated counters
 animatedCounter(8, 100, 0, "counter1");
 animatedCounter(12, 100, 0, "counter2");
 animatedCounter(2500, 100, 0, "counter3");
 animatedCounter(7000, 100, 0, "counter4");
-// Add more counters as needed
-
-
-
-
+ 
 
 
 
@@ -78,3 +74,5 @@ document.addEventListener('DOMContentLoaded', function () {
     menu.classList.toggle('hidden');
   });
 });
+
+

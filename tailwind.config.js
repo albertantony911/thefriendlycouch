@@ -1,6 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./**/*.{html,js}"],
+  content: [
+    './html/**/*.html',
+    './js/**/*.js',
+    
+  ],
+
+
   theme: {
 
     
@@ -15,7 +21,7 @@ module.exports = {
         'dark-purple': '#463174',
         'mid-purple': '#593F92',
         'light': '#FFFFFF',
-        'dark' : '#303030' ,
+        
       },
     },
   },

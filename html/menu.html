@@ -1,0 +1,77 @@
+<!doctype html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="menu.css" />
+
+    <script
+      src="https://kit.fontawesome.com/9fa9d11dac.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+
+    <style></style>
+  </head>
+
+  <body class="flex flex-col w-full bg-mid-purple scroll-smooth">
+    <header class="sticky top-0 flex flex-col lg:h-16 h-36 bg-white">
+      <div class="absolute">
+        <a>
+          <img class="lg:h-16 h-36 px-5" src="logo.svg" alt="logo" />
+        </a>
+      </div>
+
+      <div
+        class="absolute lg:h-16 h-36 right-3 cursor-pointer z-50 antialiased"
+        id="menuButtonContainer"
+      >
+        <button class="lg:h-16 h-36" id="menuButton">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-menu-2 lg:h-12 h-24 px-3 transition-transform transform stroke-dark-purple"
+            viewBox="0 0 24 24"
+            stroke-width="1.2"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="4" y1="6" x2="20" y2="6" />
+            <line x1="4" y1="12" x2="20" y2="12" />
+            <line x1="4" y1="18" x2="20" y2="18" />
+          </svg>
+        </button>
+      </div>
+
+      <nav class="relative top-0 transform translate-y-[-100%] menudrop">
+        <ul
+          class="flex flex-col h-screen justify-center items-center text-center lg:gap-5 gap-16 bg-dark-purple font-poppins text-light lg:text-xl text-5xl z-20 antialiased"
+        >
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">THERAPY</a></li>
+          <li><a href="#">DIAGNOSIS</a></li>
+          <li><a href="#">WORKSHOP</a></li>
+
+          <li
+            class="lg:text-sm text-3xl text-light-purple font-medium lg:mt-8 mt-16"
+          >
+            HAVE A QUESTION ?
+          </li>
+
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">CONTACT</a></li>
+
+          <li
+            class="lg:text-sm text-3xl text-light-purple font-medium lg:mt-8 mt-16"
+          >
+            WANT TO WORK WITH US?
+          </li>
+
+          <li><a href="#">CAREER</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>

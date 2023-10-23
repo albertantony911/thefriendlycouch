@@ -1,0 +1,1054 @@
+<!doctype html>
+<html class="scroll-smooth">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/output.css" />
+    <link rel="stylesheet" href="test.css" />
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"/>
+    <script src="https://kit.fontawesome.com/9fa9d11dac.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/main.js" defer></script>
+    <!-- Include your JavaScript file at the end of the head section -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/alpinejs@2.x.x/dist/alpine.js"
+      defer
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="test.js"></script>
+    
+
+
+  </head>
+
+  <body class="mx-auto leading-relaxed">
+    <header
+      class="sticky top-0 flex flex-col z-[100] h-14 bg-light drop-shadow-2xl"
+    >
+      <div class="absolute top-0">
+        <a>
+          <img class="h-14 px-5" src="/img/logo.svg" alt="logo" />
+        </a>
+      </div>
+
+      <div
+        class="absolute h-14 right-5 cursor-pointer z-[50] antialiased landscape:hidden"
+        id="menuButtonContainer"
+      >
+        <button class="h-14" id="menuButton">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-menu-2 stroke-dark-purple h-10 transition-transform transform"
+            viewBox="0 0 24 24"
+            stroke-width="1.2"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="4" y1="6" x2="20" y2="6" />
+            <line x1="4" y1="12" x2="20" y2="12" />
+            <line x1="4" y1="18" x2="20" y2="18" />
+          </svg>
+        </button>
+      </div>
+
+      <nav
+        class="relative top-0 transform translate-y-[-100%] menudrop landscape:hidden"
+      >
+        <ul
+          class="md:text-xl bg-dark-purple font-poppins text-light z-20 flex flex-col items-center justify-center h-screen gap-2 text-lg antialiased text-center"
+        >
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">PRICING</a></li>
+
+          <li class="mt-7 md:mt-10 text-light-purple mb-2 text-xs font-medium">
+            OUR SERVICES
+          </li>
+
+          <li><a href="#">THERAPY</a></li>
+          <li><a href="#">DIAGNOSIS</a></li>
+          <li><a href="#">COUPLE'S COUNSELLING</a></li>
+          <li class="mt-7 md:mt-10 text-light-purple mb-2 text-xs font-medium">
+            HAVE A QUESTION ?
+          </li>
+
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">CONTACT</a></li>
+
+          <li class="mt-10"></li>
+
+          <li><a href="#">WORKSHOP</a></li>
+          <li><a href="#">CAREER</a></li>
+        </ul>
+      </nav>
+
+      <nav
+        class="absolute h-14 right-3 cursor-pointer z-[50] antialiased portrait:hidden text-dark-purple"
+      >
+        <ul class="flex flex-row flex-wrap items-center w-full">
+          <li class="relative block">
+            <a
+              href="#"
+              class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer"
+            >
+              <span>Home</span>
+            </a>
+          </li>
+
+          <li class="relative block">
+            <a
+              href="#"
+              class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer"
+            >
+              <span>About</span>
+            </a>
+          </li>
+          <li class="relative block">
+            <a
+              href="#"
+              class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer"
+            >
+              <span>Pricing</span>
+            </a>
+          </li>
+
+          <li
+            class="relative block"
+            x-data="{showChildren:false}"
+            @click.away="showChildren=false"
+          >
+            <a
+              href="#"
+              class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer"
+              @click.prevent="showChildren=!showChildren"
+            >
+              <span>Our Services</span>
+              <span class="ml-2"> <i class="mdi mdi-chevron-down"></i> </span>
+            </a>
+            <div
+              class="absolute left-0 top-auto z-30 w-56 min-w-full mt-1 text-sm bg-white border border-gray-300 rounded shadow-md"
+              x-show="showChildren"
+              x-transition:enter="transition ease duration-300 transform"
+              x-transition:enter-start="opacity-0 translate-y-2"
+              x-transition:enter-end="opacity-100 translate-y-0"
+              x-transition:leave="transition ease duration-300 transform"
+              x-transition:leave-start="opacity-100 translate-y-0"
+              x-transition:leave-end="opacity-0 translate-y-4"
+              style="display: none"
+            >
+              <span
+                class="absolute top-0 left-0 w-3 h-3 ml-6 -mt-1 transform rotate-45 bg-white border"
+              ></span>
+              <div class="relative z-10 w-full py-1 bg-white rounded">
+                <ul class="list-reset">
+                  <li
+                    class="relative"
+                    x-data="{showChildren:false}"
+                    @mouseleave="showChildren=false"
+                    @mouseenter="showChildren=true"
+                  >
+                    <a
+                      href="#"
+                      class="hover:bg-gray-100 hover:no-underline flex items-start w-full px-4 py-4 no-underline transition-colors duration-100 cursor-pointer"
+                    >
+                      <span class="flex-1">Therapy</span>
+                    </a>
+                  </li>
+                  <li
+                    class="relative"
+                    x-data="{showChildren:false}"
+                    @mouseleave="showChildren=false"
+                    @mouseenter="showChildren=true"
+                  >
+                    <a
+                      href="#"
+                      class="hover:bg-gray-100 hover:no-underline flex items-start w-full px-4 py-4 no-underline transition-colors duration-100 cursor-pointer"
+                    >
+                      <span class="flex-1">Diagnosis</span>
+                    </a>
+                  </li>
+                  <li
+                    class="relative"
+                    x-data="{showChildren:false}"
+                    @mouseleave="showChildren=false"
+                    @mouseenter="showChildren=true"
+                  >
+                    <a
+                      href="#"
+                      class="hover:bg-gray-100 hover:no-underline flex items-start w-full px-4 py-4 no-underline transition-colors duration-100 cursor-pointer"
+                    >
+                      <span class="flex-1">Couple's Counselling</span>
+                    </a>
+                  </li>
+                  <li
+                    class="relative"
+                    x-data="{showChildren:false}"
+                    @mouseleave="showChildren=false"
+                    @mouseenter="showChildren=true"
+                  >
+                    <a
+                      href="#"
+                      class="hover:bg-gray-100 hover:no-underline flex items-start w-full px-4 py-4 no-underline transition-colors duration-100 cursor-pointer"
+                    >
+                      <span class="flex-1">Workshops</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="relative block">
+            <a
+              href="#"
+              class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer"
+            >
+              <span>FAQ</span>
+            </a>
+          </li>
+
+          <li class="relative block">
+            <a
+              href="#"
+              class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer"
+            >
+              <span>Contact Us</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section-->
+
+      <div
+        class="bg-dark-purple z-10 flex flex-col justify-around text-center text-white"
+      >
+        <div class="portrait:md:pt-20 portrait:lg:pt-44 pt-10">
+          <h1 class="md:text-3xl text-2xl font-semibold text-center">
+            You deserve a better you
+          </h1>
+          <h1
+            class="md:text-2xl portrait:md:pt-3 mt-3 text-xl font-semibold text-center"
+          >
+            We’ll help you get there
+          </h1>
+
+          <h2
+            class="md:whitespace-normal md:text-lg portrait:md:my-20 portrait:lg:my-28 my-8 text-sm font-light leading-relaxed whitespace-pre-line"
+          >
+            Finding a therapist can be difficult, let us do it for you
+          </h2>
+        </div>
+
+        <div
+          class="bg-mid-purple mt-44 md:mt-48 portrait:md:mt-64 portrait:lg:mt-80 relative"
+        >
+          <div
+            class="-translate-y-3/4 w-72 md:w-80 lg:w-96 portrait:md:w-1/2 absolute inset-x-0 top-0 mx-auto transform"
+          >
+            <img class="couch" src="/img/test.svg" alt="" />
+          </div>
+
+          <button
+            class="mb-44 md:mt-24 md:mb-40 portrait:md:mt-28 portrait:lg:mt-36 portrait:md:mb-44 portrait:lg:mb-48 md:px-8 md:py-5 whitespace-nowrap bg-light hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring hover:bg-light-purple text-dark-purple hover:text-light px-8 py-6 mx-auto mt-20 transition rounded-full select-none"
+          >
+            <a class="md:text-lg text-base font-normal" href="#"
+              >Book a Session</a
+            >
+          </button>
+          <div
+            class="md:w-7 bottom-24 md:bottom-24 portrait:md:bottom-28 portrait:lg:bottom-28 animate-bounce absolute inset-x-0 w-6 mx-auto"
+          >
+            <img class="arrow w-full" src="/img/Arrow.svg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!-- About Section-->
+
+      <div
+        class="md:flex-row portrait:md:flex-col bg-dark-purple landscape:md:divide-x divide-solid divide-slate-200 md:py-20 z-10 flex flex-col items-center py-24 mx-auto"
+      >
+        <div class="md:w-2/3 portrait:md:w-3/6 w-full">
+          <div class="blob-w mx-auto"></div>
+        </div>
+
+        <div class="text-slate-100 flex flex-col w-full">
+          <h2
+            class="md:text-3xl landscape:md:pt-0 pt-20 text-2xl font-semibold text-center text-white"
+          >
+            WHAT WE DO
+          </h2>
+
+          <div
+            class="md:px-32 portrait:md:px-24 md:text-lg pt-7 md:pt-10 px-12 mx-auto text-sm font-light leading-relaxed text-center"
+          >
+            <p>
+              With so many different types of professionals (and quacks) in the
+              field, how does one know who to choose?
+            </p>
+            <p class="md:mt-5 mt-4">
+              This is where we help. We only work with friendly & non-judgmental
+              therapists that have the right qualifications.
+            </p>
+          </div>
+
+          <button
+            class="md:mt-12 md:px-8 md:py-5 whitespace-nowrap bg-light hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring hover:bg-light-purple text-dark-purple hover:text-light px-8 py-6 mx-auto mt-20 font-medium text-center transition rounded-full select-none"
+          >
+            <a class="md:text-lg text-base font-normal" href="#">About Us</a>
+          </button>
+        </div>
+      </div>
+
+    <!-- Statistics Section-->
+    
+    <div class="text-dark-purple bg-light flex flex-col mx-auto">
+        <h2 class="md:whitespace-normal max-md:hidden  pt-16 text-3xl font-semibold text-center whitespace-pre-line">
+            EACH NUMBER HOLDS A STORY
+        </h2>
+    
+        <div class="md:hidden flex flex-col gap-3 pt-16 text-2xl font-semibold text-center">
+            <h2>
+                EACH NUMBER HOLDS
+            </h2>
+            <h2>
+                A STORY
+            </h2>
+        </div>
+    
+    
+    
+        <div class="md:px-32 md:text-lg md:py-10 px-12 py-10 mx-auto text-sm font-light leading-relaxed text-center">
+    
+            <p>
+                These numbers represents people who have started their mental health journey with us, one step at a time.
+            </p>
+    
+        </div>
+    
+        <div class="text-dark-purple md:gap-4 flex flex-row flex-wrap justify-center border">
+            <div class="md:w-1/6 md:border-none md:p-10 flex flex-col items-center w-2/4 gap-8 py-12 border">
+                <div id="counter1" class="counter text-3xl font-bold text-center">0</div>
+                <div>
+                    <h3 class="md:text-lg text-base font-normal">Languages</h3>
+                </div>
+            </div>
+            <div class="md:w-1/6 md:border-none md:p-10 flex flex-col items-center w-2/4 gap-8 py-12 border">
+                <div id="counter2" class="counter text-3xl font-bold text-center">0</div>
+                <div>
+                    <h3 class="md:text-lg text-base font-normal">Therapists</h3>
+                </div>
+            </div>
+            <div class="md:w-1/6 md:border-none md:p-10 flex flex-col items-center w-2/4 gap-8 py-12 border">
+                <div id="counter3" class="counter text-3xl font-bold text-center">0</div>
+                <div>
+                    <h3 class="md:text-lg text-base font-normal">Clients</h3>
+                </div>
+            </div>
+            <div class="md:w-1/6 md:border-none md:p-10 flex flex-col items-center w-2/4 gap-8 py-12 border">
+                <div id="counter4" class="counter text-3xl font-bold text-center">0</div>
+                <div>
+                    <h3 class="md:text-lg text-base font-normal">Sessions</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <!-- Inclusivity Section-->
+
+      <div class="py-[200px] bg-dark-purple">
+        <div class="text-slate-100 bg-dark-purple z-10 flex flex-col">
+          <h2 class="md:text-3xl text-2xl font-semibold text-center text-white">
+            EVERYONE IS WELCOME HERE
+          </h2>
+
+          <div
+            class="px-14 md:text-lg pt-10 mx-auto text-sm leading-relaxed text-center"
+          >
+            <p>
+              Each person has a story. These stories shape us and make us who we
+              are. We at The Friendly Couch see people without bias and without
+              judgement.
+            </p>
+
+            <p class="md:text-xl pt-16 text-base font-semibold">Always.</p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-light text-dark-purple md:py-28 flex flex-col items-center justify-center h-auto py-20 mx-auto"
+      >
+        <div class="w-full">
+          <div class="animate-bounce relative inset-x-0 w-12 mx-auto">
+            <img class="w-full" src="/img/quote.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="lg:pt-10 landscape:lg:pt-10 landscape:sm:pt-10 w-3/4 pt-10">
+          <p class="md:text-lg px-5 py-5 text-sm leading-relaxed text-center">
+            Thanks to your organization, which understands our Indian culture
+            well and comprehends how the lack of awareness and information about
+            various mental health issues impacts India. Therapy isn't a Western
+            concept; Indians just haven't recognized it.
+          </p>
+        </div>
+
+        <div class="w-full py-5">
+          <p class="md:text-base text-sm font-light text-center">
+            Someone we made happy
+          </p>
+        </div>
+      </div>
+
+      <!-- Concerns Covered Section-->
+
+      <div class="text-slate-100 bg-dark-purple flex flex-col mx-auto">
+        <h2
+          class="md:text-3xl md:pt-24 pt-16 text-2xl font-semibold text-center text-white"
+        >
+          CONCERNS WE WORK WITH
+        </h2>
+
+        <div
+          class="px-14 md:text-lg pt-10 mx-auto text-sm font-light leading-relaxed text-center"
+        >
+          <p>
+            We're here to support you through a wide range of challenges, and
+            this list is not limited.
+          </p>
+        </div>
+
+        <div
+          class="text-light md:py-24 flex flex-row flex-wrap justify-center py-16 mx-auto"
+        >
+          <div
+            class="md:w-1/3 md:px-10 flex flex-col items-center w-2/5 gap-4 p-5 mx-auto"
+          >
+            <img src="/img/couch.svg" />
+
+            <div>
+              <h3 class="md:text-lg text-sm font-normal">Anxiety</h3>
+            </div>
+          </div>
+          <div
+            class="md:w-1/3 md:px-10 flex flex-col items-center w-2/5 gap-4 p-5 mx-auto"
+          >
+            <img src="/img/couch.svg" />
+            <div>
+              <h3 class="md:text-lg text-sm font-normal">Stress</h3>
+            </div>
+          </div>
+          <div
+            class="md:w-1/3 md:px-10 flex flex-col items-center w-2/5 gap-4 p-5 mx-auto"
+          >
+            <img src="/img/couch.svg" />
+            <div>
+              <h3 class="md:text-lg text-sm font-normal">Relationships</h3>
+            </div>
+          </div>
+
+          <div
+            class="md:w-1/3 md:px-10 flex flex-col items-center w-2/5 gap-4 p-5 mx-auto"
+          >
+            <img src="/img/couch.svg" />
+            <div>
+              <h3 class="md:text-lg text-sm font-normal">ADHD</h3>
+            </div>
+          </div>
+          <div
+            class="md:w-1/3 md:px-10 flex flex-col items-center w-2/5 gap-4 p-5 mx-auto"
+          >
+            <img src="/img/couch.svg" />
+            <div>
+              <h3 class="md:text-lg text-sm font-normal">Trauma</h3>
+            </div>
+          </div>
+          <div
+            class="md:w-1/3 md:px-10 flex flex-col items-center w-2/5 gap-4 p-5 mx-auto"
+          >
+            <img src="/img/couch.svg" />
+            <div>
+              <h3 class="md:text-lg text-sm font-normal">Depression</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Founder's Message Section-->
+
+      <div
+        class="md:flex-row portrait:md:flex-col bg-light text-dark-purple landscape:md:divide-x divide-solid divide-slate-200 md:py-20 z-10 flex flex-col items-center py-24 mx-auto"
+      >
+        <div class="md:w-3/6 portrait:md:w-full w-full">
+          <div class="blob-c mx-auto"></div>
+          <h3
+            class="md:text-lg md:pt-10 pt-12 text-base font-semibold leading-relaxed text-center"
+          >
+            Divija Bhasin
+          </h3>
+          <h3
+            class="md:text-lg pt-3 text-base font-light leading-relaxed text-center"
+          >
+            Counselling Psychologist
+          </h3>
+        </div>
+        <div class="portrait:md:w-full flex flex-col w-full">
+          <h2
+            class="md:text-3xl md:pt-0 portrait:md:pt-16 pt-16 text-2xl font-semibold text-center"
+          >
+            FOUNDER'S NOTE
+          </h2>
+
+          <div
+            class="md:px-32 portrait:md:px-20 md:text-lg pt-7 md:pt-10 px-8 mx-auto text-sm font-light leading-relaxed text-left"
+          >
+            <p class="">
+              Growing up, I saw people around me struggle with their mental
+              health. I knew that it was hard but realised that it was even more
+              challenging without professional support.
+            </p>
+            <p class="md:my-6 md:text-center my-4 font-medium text-left">
+              Nothing can replace therapy.
+            </p>
+            <p class="">
+              Helping people with their mental health journey is not just my
+              profession, it’s also personal for me. The Friendly Couch started
+              as an idea when I was just a kid. I'm thrilled that I am finally
+              doing it!
+            </p>
+            <p class="md:mt-5 mt-10 font-medium text-center">
+              Get to know me, The Friendly Couch and my team of therapists.
+            </p>
+          </div>
+
+          <button
+            class="md:mt-12 md:px-8 md:py-5 whitespace-nowrap bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring hover:bg-light-purple text-light hover:text-light px-8 py-6 mx-auto mt-16 font-medium text-center transition rounded-full select-none"
+          >
+            <a class="md:text-lg text-base font-normal" href="#">About Us</a>
+          </button>
+        </div>
+      </div>
+
+      <!-- Features Section-->
+
+      <div class="text-slate-100 bg-mid-purple flex flex-col mx-auto">
+        <h2
+          class="md:text-3xl md:pt-24 pt-16 text-2xl font-semibold text-center text-white"
+        >
+          FEATURES
+        </h2>
+
+        <div
+          class="px-14 md:text-lg pt-10 mx-auto text-sm font-light leading-relaxed text-center"
+        >
+          <p>
+            Explore the recognition and features we've garnered throughout these
+            years
+          </p>
+        </div>
+
+        <div class="flex flex-row flex-wrap justify-center py-16 mx-auto">
+          <div class="md:w-2/12 md:p-10 items-center w-1/4 p-4 mx-3">
+            <img src="/img/couch.svg" />
+          </div>
+          <div class="md:w-2/12 md:p-10 items-center w-1/4 p-5 mx-3">
+            <img src="/img/couch.svg" />
+          </div>
+          <div class="md:w-2/12 md:p-10 items-center w-1/4 p-5 mx-3">
+            <img src="/img/couch.svg" />
+          </div>
+          <div class="md:w-2/12 md:p-10 items-center w-1/4 p-5 mx-3">
+            <img src="/img/couch.svg" />
+          </div>
+          <div class="md:w-2/12 md:p-10 items-center w-1/4 p-5 mx-3">
+            <img src="/img/couch.svg" />
+          </div>
+          <div class="md:w-2/12 md:p-10 items-center w-1/4 p-5 mx-3">
+            <img src="/img/couch.svg" />
+          </div>
+          <div class="md:w-2/12 md:p-10 items-center w-1/4 p-5 mx-3">
+            <img src="/img/couch.svg" />
+          </div>
+          <div class="md:w-2/12 md:p-10 items-center w-1/4 p-5 mx-3">
+            <img src="/img/couch.svg" />
+          </div>
+          <div class="ftems-center md:w-2/12 md:p-10 w-1/4 p-5 mx-3">
+            <img src="/img/couch.svg" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Types of Therapies Section-->
+
+      <div
+        class="bg-dark-purple text-slate-100 md:py-24 z-10 items-center py-16"
+      >
+        <div class="flex flex-col w-full">
+          <h2
+            class="md:text-3xl md:pb-12 pb-8 text-2xl font-semibold text-center text-white"
+          >
+            OUR APPROACH TO THERAPY
+          </h2>
+
+          <div class="md:text-lg text-sm font-light leading-relaxed text-left">
+            <p class="md:px-16 px-8 mx-auto">
+              We believe that each client is unique, and not every approach to
+              therapy works for everyone. Our therapists adopt an eclectic
+              approach, drawing from a diverse range of methodologies. All the
+              therapists working with us follow a queer-friendly,
+              trauma-informed approach.
+            </p>
+
+            <div class="place-content-center flex">
+              <div
+                class="gap-x-6 md:grid-cols-1 lg:grid-cols-2 py-14 md:py-20 md:text-lg grid grid-cols-1 text-xs font-normal leading-relaxed text-center"
+              >
+                <div class="flex flex-row gap-3 mb-4">
+                  <img class="w-4" src="/img/checkmark.svg" alt="" />
+                  <p class="flex items-center">
+                    Cognitive Behavioural Therapy (CBT)
+                  </p>
+                </div>
+                <div class="flex flex-row gap-3 mb-4">
+                  <img class="w-4" src="/img/checkmark.svg" alt="" />
+                  <p class="flex items-center">
+                    Acceptance and Commitment Therapy (ACT)
+                  </p>
+                </div>
+                <div class="flex flex-row gap-3 mb-4">
+                  <img class="w-4" src="/img/checkmark.svg" alt="" />
+                  <p class="flex items-center">
+                    Dialectical behavioural therapy (DBT)
+                  </p>
+                </div>
+                <div class="flex flex-row gap-3 mb-4">
+                  <img class="w-4" src="/img/checkmark.svg" alt="" />
+                  <p class="flex items-center">Person-Centred Therapy</p>
+                </div>
+                <div class="flex flex-row gap-3 mb-4">
+                  <img class="w-4" src="/img/checkmark.svg" alt="" />
+                  <p class="flex items-center">Emotion-focused therapy (EFT)</p>
+                </div>
+                <div class="flex flex-row gap-3 mb-4">
+                  <img class="w-4" src="/img/checkmark.svg" alt="" />
+                  <p class="flex items-center">
+                    Exposure Response Prevention Therapy (ERP)
+                  </p>
+                </div>
+                <div class="flex flex-row gap-3 mb-4">
+                  <img class="w-4" src="/img/checkmark.svg" alt="" />
+                  <p class="flex items-center">Mindfulness</p>
+                </div>
+                <div class="flex flex-row gap-3 mb-4">
+                  <img class="w-4" src="/img/checkmark.svg" alt="" />
+                  <p class="flex items-center">Narrative therapy</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="md:my-6 md:px-8 md:py-5 whitespace-nowrap bg-light hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring hover:bg-light-purple text-dark-purple hover:text-light px-8 py-6 mx-auto my-2 font-medium text-center transition rounded-full select-none"
+          >
+            <a class="md:text-lg text-base font-normal" href="#">About Us</a>
+          </button>
+        </div>
+      </div>
+
+      <!-- Languages Section-->
+
+      <div
+        class="landscape:flex-row portrait:flex-col-reverse landscape:divide-x divide-solid divide-slate-300 flex items-center"
+      >
+        <div class="text-dark-purple bg-light flex flex-col mx-auto">
+          <h2
+            class="md:text-3xl md:pt-24 portrait:hidden pt-16 text-2xl font-semibold text-center"
+          >
+            LANGUAGES THAT CONNECT US
+          </h2>
+
+          <div
+            class="align-center md:py-10 text-light flex flex-row flex-wrap justify-center py-20 mx-auto"
+          >
+            <div class="md:w-1/4 md:p-8 items-center w-32 p-5">
+              <img src="/img/couch.svg" />
+            </div>
+            <div class="md:w-1/4 md:p-8 items-center w-32 p-5">
+              <img src="/img/couch.svg" />
+            </div>
+            <div class="md:w-1/4 md:p-8 items-center w-32 p-5">
+              <img src="/img/couch.svg" />
+            </div>
+            <div class="md:w-1/4 md:p-8 items-center w-32 p-5">
+              <img src="/img/couch.svg" />
+            </div>
+            <div class="md:w-1/4 md:p-8 items-center w-32 p-5">
+              <img src="/img/couch.svg" />
+            </div>
+            <div class="md:w-1/4 md:p-8 items-center w-32 p-5">
+              <img src="/img/couch.svg" />
+            </div>
+            <div class="md:w-1/4 md:p-8 items-center w-32 p-5">
+              <img src="/img/couch.svg" />
+            </div>
+            <div class="md:w-1/4 md:p-8 items-center w-32 p-5">
+              <img src="/img/couch.svg" />
+            </div>
+          </div>
+        </div>
+
+        <div class="landscape:w-1/2 w-full align-middle">
+          <img class="w-1/2 mx-auto" src="/img/couch.svg" alt="" />
+        </div>
+        <h2
+          class="md:text-3xl text-dark-purple md:pb-24 landscape:hidden pb-16 text-2xl font-semibold text-center"
+        >
+          CONNECT US
+        </h2>
+        <h2
+          class="md:text-3xl text-dark-purple md:pt-24 md:pb-6 landscape:hidden pt-16 pb-4 text-2xl font-semibold text-center"
+        >
+          LANGUAGES THAT
+        </h2>
+      </div>
+
+      <!-- Testimonial Dark Section-->
+
+      <div
+        class="bg-dark-purple text-slate-100 flex flex-col items-center justify-center h-auto py-24 mx-auto"
+      >
+        <div class="w-full">
+          <div class="animate-bounce relative inset-x-0 w-12 mx-auto">
+            <img class="w-full" src="/img/quote-white.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="lg:pt-10 landscape:lg:pt-10 landscape:sm:pt-10 w-3/4 pt-10">
+          <p class="md:text-lg px-5 py-5 text-sm leading-relaxed text-center">
+            Before starting the therapy, I thought I wouldn't be comfortable
+            talking if it's not in Punjabi. But actually, that wasn't the case.
+            I was pretty comfortable in Hindi and English, and I loved how my
+            therapist made me feel so comfortable in every session. Just the
+            knowledge that my therapist understands Punjabi was enough to boost
+            my confidence to speak in Hindi and English.
+          </p>
+        </div>
+
+        <div class="w-full pt-5">
+          <p class="md:text-base text-sm font-light text-center">
+            Someone we made happy
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ Section-->
+
+      <div class="bg-light text-dark-purple flex flex-col">
+        <div>
+          <h2
+            class="md:text-3xl md:pt-24 pt-16 text-2xl font-semibold text-center"
+          >
+            COMMON QUESTIONS
+          </h2>
+        </div>
+
+        <div class="font-poppins relative justify-center antialiased">
+          <div class="relative flex flex-col justify-center overflow-hidden">
+            <div class="md:py-20 w-3/4 py-12 mx-auto text-center">
+              <!-- Accordion component -->
+              <div class="divide-slate-200 divide-y">
+                <!-- Accordion item  -->
+                <div x-data="{ expanded: false }" class="py-4">
+                  <h2>
+                    <button
+                      id="faq-1"
+                      type="button"
+                      class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
+                      @click="expanded = !expanded"
+                      :aria-expanded="expanded"
+                      aria-controls="faq-1"
+                    >
+                      <span>What are the charges?</span>
+
+                      <img
+                        class="shrink-0 h-5 ml-8 transition duration-200 origin-center transform"
+                        src="/img//img/drop-arrow.svg"
+                        :class="{'!rotate-180': expanded}"
+                      />
+                    </button>
+                  </h2>
+                  <div
+                    id="faq-1"
+                    role="region"
+                    aria-labelledby="faq-1"
+                    class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-justify transition-all duration-300 ease-in-out"
+                    :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
+                  >
+                    <div class="overflow-hidden">
+                      <p class="whitespace-pre-line">
+                        Our standard charges are Counselling Psychologist -
+                        INR2200 Clinical Psychologist - INR2500 For further
+                        details visit our pricing page.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Accordion item end -->
+
+                <div x-data="{ expanded: false }" class="py-4">
+                  <h2>
+                    <button
+                      id="faq-2"
+                      type="button"
+                      class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
+                      @click="expanded = !expanded"
+                      :aria-expanded="expanded"
+                      aria-controls="faq-2"
+                    >
+                      <span>How do I schedule a session?</span>
+
+                      <img
+                        class="shrink-0 h-5 ml-8 transition duration-200 origin-center transform"
+                        src="/img/drop-arrow.svg"
+                        :class="{'!rotate-180': expanded}"
+                      />
+                    </button>
+                  </h2>
+                  <div
+                    id="faq-2"
+                    role="region"
+                    aria-labelledby="faq-2"
+                    class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-justify transition-all duration-300 ease-in-out"
+                    :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
+                  >
+                    <div class="overflow-hidden">
+                      <p class="whitespace-pre-line">
+                        You can book a session by messaging us on WhatsApp
+                        (+919205025183) Instagram (@thefriendlycouch) For
+                        further details visit our Therapy page.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div x-data="{ expanded: false }" class="py-4">
+                  <h2>
+                    <button
+                      id="faq-3"
+                      type="button"
+                      class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
+                      @click="expanded = !expanded"
+                      :aria-expanded="expanded"
+                      aria-controls="faq-3-answer"
+                    >
+                      <span>Can you help me get diagnosed?</span>
+
+                      <img
+                        class="shrink-0 h-5 ml-8 transition duration-200 origin-center transform"
+                        src="/img/drop-arrow.svg"
+                        :class="{'!rotate-180': expanded}"
+                      />
+                    </button>
+                  </h2>
+                  <div
+                    id="faq-3-answer"
+                    role="region"
+                    aria-labelledby="faq-3"
+                    class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-justify transition-all duration-300 ease-in-out"
+                    :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
+                  >
+                    <div class="overflow-hidden">
+                      <p class="whitespace-pre-line">
+                        Yes, the clinical psychologists on our team offer
+                        diagnosis/diagnostic evaluation. Please visit our
+                        <a href="diagnosis-page-link">Diagnosis Page</a> for
+                        more information.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div x-data="{ expanded: false }" class="py-4">
+                  <h2>
+                    <button
+                      id="faq-4"
+                      type="button"
+                      class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
+                      @click="expanded = !expanded"
+                      :aria-expanded="expanded"
+                      aria-controls="faq-4-answer"
+                    >
+                      <span>How many sessions will I need?</span>
+
+                      <img
+                        class="shrink-0 h-5 ml-8 transition duration-200 origin-center transform"
+                        src="/img/drop-arrow.svg"
+                        :class="{'!rotate-180': expanded}"
+                      />
+                    </button>
+                  </h2>
+                  <div
+                    id="faq-4-answer"
+                    role="region"
+                    aria-labelledby="faq-4"
+                    class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-justify transition-all duration-300 ease-in-out"
+                    :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
+                  >
+                    <div class="overflow-hidden">
+                      <p class="whitespace-pre-line">
+                        The therapist will recommend a general frequency for the
+                        sessions during the first session on the basis of your
+                        concerns.There is no strict frequency you need to
+                        follow. You can take the sessions at a frequency you're
+                        comfortable with. The decision is always yours!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div x-data="{ expanded: false }" class="py-4">
+                  <h2>
+                    <button
+                      id="faq-5"
+                      type="button"
+                      class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
+                      @click="expanded = !expanded"
+                      :aria-expanded="expanded"
+                      aria-controls="faq-5-answer"
+                    >
+                      <span>Are trial/introductory sessions available?</span>
+
+                      <img
+                        class="shrink-0 h-5 ml-8 transition duration-200 origin-center transform"
+                        src="/img/drop-arrow.svg"
+                        :class="{'!rotate-180': expanded}"
+                      />
+                    </button>
+                  </h2>
+                  <div
+                    id="faq-5-answer"
+                    role="region"
+                    aria-labelledby="faq-5"
+                    class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-justify transition-all duration-300 ease-in-out"
+                    :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
+                  >
+                    <div class="overflow-hidden">
+                      <p class="whitespace-pre-line">
+                        We don't offer any introductory calls or trial/free
+                        sessions as we want to compensate the therapists fairly
+                        for their time and effort in helping people as well as
+                        for their knowledge and expertise. You can have a brief
+                        conversation over WhatsApp chat/messages prior to your
+                        first session. There's no pressure or compulsion to
+                        continue taking therapy. The decision is always yours!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div x-data="{ expanded: false }" class="py-4">
+                  <h2>
+                    <button
+                      id="faq-6"
+                      type="button"
+                      class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
+                      @click="expanded = !expanded"
+                      :aria-expanded="expanded"
+                      aria-controls="faq-6-answer"
+                    >
+                      <span>Do you provide in-person therapy?</span>
+
+                      <img
+                        class="shrink-0 h-5 ml-8 transition duration-200 origin-center transform"
+                        src="/img/drop-arrow.svg"
+                        :class="{'!rotate-180': expanded}"
+                      />
+                    </button>
+                  </h2>
+                  <div
+                    id="faq-6-answer"
+                    role="region"
+                    aria-labelledby="faq-6"
+                    class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-justify transition-all duration-300 ease-in-out"
+                    :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
+                  >
+                    <div class="overflow-hidden">
+                      <p class="whitespace-pre-line">
+                        We currently only offer online therapy over audio &
+                        video calls.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End: Accordion component -->
+
+              <button
+                class="md:mt-20 md:mb-6 px-14 md:px-12 md:py-5 whitespace-nowrap bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring hover:bg-light-purple text-light hover:text-light py-6 mx-auto mt-16 mb-8 font-medium text-center transition rounded-full select-none"
+              >
+                <a class="md:text-lg text-base font-normal" href="#">FAQ</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Section-->
+
+      <div class="md:py-20 text-slate-100 bg-mid-purple py-40">
+        <h2 class="md:text-3xl text-2xl font-semibold text-center text-white">
+          CONTACT
+        </h2>
+      </div>
+    </main>
+
+    <footer class="bg-dark-purple flex flex-col">
+      <div
+        class="text-center divide-y divide-light divide-solid mr-[10%] ml-[10%]"
+      >
+        <!-- Social Links -->
+        <div
+          style="color: white"
+          class="md:gap-16 flex justify-center gap-10 pt-12 pb-10 text-base"
+        >
+          <a href="#" title="Facebook" target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="#" title="Twitter" target="_blank"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="#" title="Behance" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="#" title="LinkedIn+" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="#" title="Dribbble" target="_blank"
+            ><i class="fa-brands fa-whatsapp"></i
+          ></a>
+        </div>
+        <!-- Copyright -->
+        <div class="text-slate-100 pt-8 text-sm font-thin">
+          <a href="#" target="_blank" class=""
+            >&copy; The Friendly Couch 2023</a
+          >
+        </div>
+      </div>
+      <div class="text-center">
+        <div class="pb-7 text-slate-100 pt-5 text-xs font-normal">
+          <div>Powered By <a href="#" target="_blank">blackwoodbox.com</a></div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
