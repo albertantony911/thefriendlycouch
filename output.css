@@ -2307,6 +2307,10 @@ input[type="checkbox"]:checked + label .arrow {
     width: 80%;
   }
 
+  .md\:w-1\/5 {
+    width: 20%;
+  }
+
   .md\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
