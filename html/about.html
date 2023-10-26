@@ -31,7 +31,7 @@
     >
       <div class="absolute top-0">
         <a>
-          <img class="px-5 h-14" src="logo.svg" alt="logo" />
+          <img class="h-14 px-5" src="logo.svg" alt="logo" />
         </a>
       </div>
 
@@ -42,7 +42,7 @@
         <button class="h-14" id="menuButton">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-10 transition-transform transform icon icon-tabler icon-tabler-menu-2 stroke-dark-purple"
+            class="icon icon-tabler icon-tabler-menu-2 stroke-dark-purple h-10 transition-transform transform"
             viewBox="0 0 24 24"
             stroke-width="1.2"
             fill="none"
@@ -61,20 +61,20 @@
         class="relative top-0 transform translate-y-[-100%] menudrop landscape:hidden"
       >
         <ul
-          class="z-20 flex flex-col items-center justify-center h-screen gap-2 text-lg md:text-xl antialiased text-center bg-dark-purple font-poppins text-light"
+          class="md:text-xl bg-dark-purple font-poppins text-light z-20 flex flex-col items-center justify-center h-screen gap-2 text-lg antialiased text-center"
         >
           <li><a href="#">HOME</a></li>
           <li><a href="#">ABOUT</a></li>
           <li><a href="#">PRICING</a></li>
 
-          <li class="mt-7 md:mt-10 mb-2 text-xs font-medium text-light-purple">
+          <li class="mt-7 md:mt-10 text-light-purple mb-2 text-xs font-medium">
             OUR SERVICES
           </li>
 
           <li><a href="#">THERAPY</a></li>
           <li><a href="#">DIAGNOSIS</a></li>
           <li><a href="#">COUPLE'S COUNSELLING</a></li>
-          <li class="mt-7 md:mt-10 mb-2 text-xs font-medium text-light-purple">
+          <li class="mt-7 md:mt-10 text-light-purple mb-2 text-xs font-medium">
             HAVE A QUESTION ?
           </li>
 
@@ -91,48 +91,48 @@
       <nav
         class="absolute h-14 right-3 cursor-pointer z-[50] antialiased portrait:hidden text-dark-purple"
       >
-        <ul class="flex flex-row w-full flex-wrap items-center">
-          <li class="block relative">
+        <ul class="flex flex-row flex-wrap items-center w-full">
+          <li class="relative block">
             <a
               href="#"
-              class="flex items-center h-14 leading-10 px-1 sm:px-4 text-xs md:text-base rounded cursor-pointer no-underline hover:no-underline transition-colors duration-100 mx-1 hover:bg-gray-100"
+              class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer"
             >
               <span>Home</span>
             </a>
           </li>
 
-          <li class="block relative">
+          <li class="relative block">
             <a
               href="#"
-              class="flex items-center h-14 leading-10 px-1 sm:px-4 text-xs md:text-base rounded cursor-pointer no-underline hover:no-underline transition-colors duration-100 mx-1 hover:bg-gray-100"
+              class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer"
             >
               <span>About</span>
             </a>
           </li>
-          <li class="block relative">
+          <li class="relative block">
             <a
               href="#"
-              class="flex items-center h-14 leading-10 px-1 sm:px-4 text-xs md:text-base rounded cursor-pointer no-underline hover:no-underline transition-colors duration-100 mx-1 hover:bg-gray-100"
+              class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer"
             >
               <span>Pricing</span>
             </a>
           </li>
 
           <li
-            class="block relative"
+            class="relative block"
             x-data="{showChildren:false}"
             @click.away="showChildren=false"
           >
             <a
               href="#"
-              class="flex items-center h-14 leading-10 px-1 sm:px-4 text-xs md:text-base rounded cursor-pointer no-underline hover:no-underline transition-colors duration-100 mx-1 hover:bg-gray-100"
+              class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer"
               @click.prevent="showChildren=!showChildren"
             >
               <span>Our Services</span>
               <span class="ml-2"> <i class="mdi mdi-chevron-down"></i> </span>
             </a>
             <div
-              class="bg-white shadow-md rounded border border-gray-300 text-sm absolute top-auto left-0 min-w-full w-56 z-30 mt-1"
+              class="absolute left-0 top-auto z-30 w-56 min-w-full mt-1 text-sm bg-white border border-gray-300 rounded shadow-md"
               x-show="showChildren"
               x-transition:enter="transition ease duration-300 transform"
               x-transition:enter-start="opacity-0 translate-y-2"
@@ -143,9 +143,9 @@
               style="display: none"
             >
               <span
-                class="absolute top-0 left-0 w-3 h-3 bg-white border transform rotate-45 -mt-1 ml-6"
+                class="absolute top-0 left-0 w-3 h-3 ml-6 -mt-1 transform rotate-45 bg-white border"
               ></span>
-              <div class="bg-white rounded w-full relative z-10 py-1">
+              <div class="relative z-10 w-full py-1 bg-white rounded">
                 <ul class="list-reset">
                   <li
                     class="relative"
@@ -155,7 +155,7 @@
                   >
                     <a
                       href="#"
-                      class="px-4 py-4 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer"
+                      class="hover:bg-gray-100 hover:no-underline flex items-start w-full px-4 py-4 no-underline transition-colors duration-100 cursor-pointer"
                     >
                       <span class="flex-1">Therapy</span>
                     </a>
@@ -168,7 +168,7 @@
                   >
                     <a
                       href="#"
-                      class="px-4 py-4 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer"
+                      class="hover:bg-gray-100 hover:no-underline flex items-start w-full px-4 py-4 no-underline transition-colors duration-100 cursor-pointer"
                     >
                       <span class="flex-1">Diagnosis</span>
                     </a>
@@ -181,7 +181,7 @@
                   >
                     <a
                       href="#"
-                      class="px-4 py-4 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer"
+                      class="hover:bg-gray-100 hover:no-underline flex items-start w-full px-4 py-4 no-underline transition-colors duration-100 cursor-pointer"
                     >
                       <span class="flex-1">Couple's Counselling</span>
                     </a>
@@ -194,7 +194,7 @@
                   >
                     <a
                       href="#"
-                      class="px-4 py-4 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer"
+                      class="hover:bg-gray-100 hover:no-underline flex items-start w-full px-4 py-4 no-underline transition-colors duration-100 cursor-pointer"
                     >
                       <span class="flex-1">Workshops</span>
                     </a>
@@ -204,19 +204,19 @@
             </div>
           </li>
 
-          <li class="block relative">
+          <li class="relative block">
             <a
               href="#"
-              class="flex items-center h-14 leading-10 px-1 sm:px-4 text-xs md:text-base rounded cursor-pointer no-underline hover:no-underline transition-colors duration-100 mx-1 hover:bg-gray-100"
+              class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer"
             >
               <span>FAQ</span>
             </a>
           </li>
 
-          <li class="block relative">
+          <li class="relative block">
             <a
               href="#"
-              class="flex items-center h-14 leading-10 px-1 sm:px-4 text-xs md:text-base rounded cursor-pointer no-underline hover:no-underline transition-colors duration-100 mx-1 hover:bg-gray-100"
+              class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer"
             >
               <span>Contact Us</span>
             </a>
@@ -228,32 +228,32 @@
     <main>
       <!-- Hero Section-->
 
-      <div class="z-10 flex flex-col text-center justify-around text-white">
+      <div class="z-10 flex flex-col justify-around text-center text-white">
         <div
           class="pt-16 pb-80 md:pt-20 md:pb-80 portrait:md:pt-44 portrait:md:pb-[25rem] bg-gradient-to-b from-dark-purple to-mid-purple"
         >
-          <h1 class="text-2xl md:text-3xl font-thin text-center">
+          <h1 class="md:text-3xl text-2xl font-thin text-center">
             It all started with a
           </h1>
-          <h1 class="text-2xl md:text-3xl font-semibold text-center mt-3">
+          <h1 class="md:text-3xl mt-3 text-2xl font-semibold text-center">
             simple dream.
           </h1>
         </div>
 
-        <div class="relative bg-dark-purple h-72">
+        <div class="bg-dark-purple h-72 relative">
           <div
             class="absolute inset-x-0 top-0 mx-auto transform -translate-y-[93%] w-3/12 md:w-1/12"
           >
             <img class="couch" src="divija.svg" alt="" />
           </div>
 
-          <div class="my-16 md:my-14">
-            <h1 class="text-2xl md:text-3xl font-medium text-center">
+          <div class="md:my-14 my-16">
+            <h1 class="md:text-3xl text-2xl font-medium text-center">
               ABOUT US
             </h1>
           </div>
 
-          <div class="absolute inset-x-0 w-6 md:w-7 mx-auto animate-bounce">
+          <div class="md:w-7 animate-bounce absolute inset-x-0 w-6 mx-auto">
             <img class="w-full" src="Arrow.svg" alt="" />
           </div>
         </div>
@@ -261,26 +261,26 @@
 
       <!-- About Section-->
 
-      <div class="z-10 mx-auto flex flex-col bg-light items-center py-24">
+      <div class="bg-light z-10 flex flex-col items-center py-24 mx-auto">
         <div class="w-full">
-          <img class="w-1/2 md:w-1/4 mx-auto" src="couch.svg" alt="" />
+          <img class="md:w-1/4 w-1/2 mx-auto" src="couch.svg" alt="" />
         </div>
-        <div class="w-full flex flex-col text-dark-purple">
-          <h2 class="font-medium text-center text-bas md:text-lg pt-16">
+        <div class="text-dark-purple flex flex-col w-full">
+          <h2 class="text-bas md:text-lg pt-16 font-medium text-center">
             Divija Bhasin
           </h2>
-          <h2 class="font-normal text-center text-sm md:text-base pt-5">
+          <h2 class="md:text-base pt-5 text-sm font-normal text-center">
             Founder
           </h2>
-          <h2 class="font-normal text-center text-sm md:text-base pt-1">
+          <h2 class="md:text-base pt-1 text-sm font-normal text-center">
             Counselling Psychologist
           </h2>
-          <h2 class="font-semibold text-center text-2xl md:text-3xl pt-16">
+          <h2 class="md:text-3xl pt-16 text-2xl font-semibold text-center">
             VISION & MISSION
           </h2>
 
           <div
-            class="mx-auto px-12 md:px-64 portrait:md:px-24 font-light leading-relaxed text-center text-sm md:text-lg pt-7 md:pt-10"
+            class="md:px-64 portrait:md:px-24 md:text-lg pt-7 md:pt-10 px-12 mx-auto text-sm font-light leading-relaxed text-center"
           >
             <p>
               In a world where taboo around mental health is common, we at The
@@ -288,7 +288,7 @@
               decision to start therapy can be a difficult step to take. A
               difficult step in the right direction.
             </p>
-            <p class="mt-4 md:mt-5">
+            <p class="md:mt-5 mt-4">
               Finding reliable mental health professionals is often an obstacle
               to therapy in India. Our goal is to help fill this gap and help
               people all over the country and beyond to start their therapy
@@ -298,11 +298,11 @@
         </div>
       </div>
 
-      <div class="mx-auto flex flex-col text-slate-100 bg-dark-purple py-24">
-        <h2 class="font-semibold text-center text-white text-3xl">OUR STORY</h2>
+      <div class="text-slate-100 bg-dark-purple flex flex-col py-24 mx-auto">
+        <h2 class="text-3xl font-semibold text-center text-white">OUR STORY</h2>
 
         <div
-          class="mx-auto px-12 md:px-32 font-light leading-relaxed text-center text-sm md:text-lg py-10 md:py-10"
+          class="md:px-32 md:text-lg md:py-10 px-12 py-10 mx-auto text-sm font-light leading-relaxed text-center"
         >
           <p>
             This is our journey, tracing our path from the very beginning to
@@ -312,24 +312,24 @@
       </div>
 
       <div
-        class="z-10 mx-auto flex flex-col md:flex-row-reverse portrait:md:flex-col bg-mid-purple text-slate-100 md:items-center items-start py-24 md:py-20"
-      >
+        class="md:flex-row-reverse portrait:md:flex-col bg-mid-purple text-slate-100 md:items-center md:py-20 z-10 flex flex-col items-start py-24 mx-auto">
+        
         <div class="md:w-3/6 portrait:md:w-full w-full">
           <img
-            class="w-1/2 portrait:md:w-1/3 md:ml-0 mx-auto portrait:mx-auto"
+            class="portrait:md:w-1/3 md:ml-0 portrait:mx-auto w-1/2 mx-auto"
             src="couch.svg"
             alt=""
           />
         </div>
-        <div class="w-full portrait:md:w-full flex flex-col">
+        <div class="portrait:md:w-full flex flex-col w-full">
           <h2
-            class="font-semibold px-16 md:px-32 text-center text-2xl md:text-3xl pt-20 md:pt-0 text-white portrait:md:pt-16"
+            class="md:px-32 md:text-3xl md:pt-0 portrait:md:pt-16 px-16 pt-20 text-2xl font-semibold text-center text-white"
           >
             MY DREAM
           </h2>
 
           <div
-            class="mx-auto px-8 md:px-32 portrait:md:px-24 font-light leading-relaxed text-left text-sm md:text-lg pt-6 md:pt-10"
+            class="md:px-32 portrait:md:px-24 md:text-lg md:pt-10 px-8 pt-6 mx-auto text-sm font-light leading-relaxed text-left"
           >
             <p>
               My dream began when I was just a child in the early 2000s. I saw
@@ -351,37 +351,37 @@
       </div>
 
       <div
-        class="z-10 mx-auto flex flex-col md:flex-row portrait:md:flex-col bg-dark-purple text-slate-100 md:items-center items-start py-24 md:py-20"
+        class="md:flex-row portrait:md:flex-col bg-dark-purple text-slate-100 md:items-center md:py-20 z-10 flex flex-col items-start py-24 mx-auto"
       >
         <div class="md:w-3/6 portrait:md:w-full w-full">
           <img
-            class="w-1/2 portrait:md:w-1/3 md:ml-auto portrait:mx-auto"
+            class="portrait:md:w-1/3 md:ml-auto portrait:mx-auto w-1/2"
             src="couch.svg"
             alt=""
           />
         </div>
-        <div class="w-full portrait:md:w-full flex flex-col">
+        <div class="portrait:md:w-full flex flex-col w-full">
           <h2
-            class="font-semibold text-center md:px-32 text-2xl text-white md:text-3xl pt-20 md:pt-0 portrait:md:pt-12 portrait:hidden"
+            class="md:px-32 md:text-3xl md:pt-0 portrait:md:pt-12 portrait:hidden pt-20 text-2xl font-semibold text-center text-white"
           >
             TAKING UP PSYCHOLOGY AS A CAREER
           </h2>
 
           <div class="landscape:hidden text-white">
             <h2
-              class="font-semibold px-8 text-center text-2xl md:text-3xl pt-20 md:pt-0 portrait:md:pt-16"
+              class="md:text-3xl md:pt-0 portrait:md:pt-16 px-8 pt-20 text-2xl font-semibold text-center"
             >
               TAKING UP PSYCHOLOGY
             </h2>
             <h2
-              class="font-semibold px-8 text-center text-2xl md:text-3xl pt-2"
+              class="md:text-3xl px-8 pt-2 text-2xl font-semibold text-center"
             >
               AS A CAREER
             </h2>
           </div>
 
           <div
-            class="mx-auto px-8 md:px-32 portrait:md:px-24 font-light leading-relaxed text-left text-sm md:text-lg pt-6 md:pt-10"
+            class="md:px-32 portrait:md:px-24 md:text-lg md:pt-10 px-8 pt-6 mx-auto text-sm font-light leading-relaxed text-left"
           >
             <p>
               I have had the privilege of studying Psychology for 8 years. My
@@ -406,24 +406,24 @@
       </div>
 
       <div
-        class="z-10 mx-auto flex flex-col md:flex-row-reverse portrait:md:flex-col bg-mid-purple text-slate-100 items-center py-24 md:py-20"
+        class="md:flex-row-reverse portrait:md:flex-col bg-mid-purple text-slate-100 md:py-20 z-10 flex flex-col items-center py-24 mx-auto"
       >
         <div class="md:w-3/6 portrait:md:w-full w-full">
           <img
-            class="w-1/2 portrait:md:w-1/3 portrait:mx-auto"
+            class="portrait:md:w-1/3 portrait:mx-auto w-1/2"
             src="couch.svg"
             alt=""
           />
         </div>
-        <div class="w-full portrait:md:w-full flex flex-col">
+        <div class="portrait:md:w-full flex flex-col w-full">
           <h2
-            class="font-bold text-center text-2xl md:text-3xl pt-20 md:pt-0 portrait:md:pt-16 text-white"
+            class="md:text-3xl md:pt-0 portrait:md:pt-16 pt-20 text-2xl font-bold text-center text-white"
           >
             HOW WE STARTED
           </h2>
 
           <div
-            class="mx-auto px-8 md:px-32 portrait:md:px-24 font-light leading-relaxed text-left text-sm md:text-lg pt-6 md:pt-10"
+            class="md:px-32 portrait:md:px-24 md:text-lg md:pt-10 px-8 pt-6 mx-auto text-sm font-light leading-relaxed text-left"
           >
             <p>
               I’ve always been drawn to thinking outside the box. While I can
@@ -451,37 +451,37 @@
       </div>
 
       <div
-        class="z-10 mx-auto flex flex-col md:flex-row portrait:md:flex-col bg-dark-purple text-slate-100 items-center py-24 md:py-20"
+        class="md:flex-row portrait:md:flex-col bg-dark-purple text-slate-100 md:py-20 z-10 flex flex-col items-center py-24 mx-auto"
       >
         <div class="md:w-3/6 portrait:md:w-full w-full">
           <img
-            class="w-1/2 portrait:md:w-1/3 portrait:mx-auto ml-auto"
+            class="portrait:md:w-1/3 portrait:mx-auto w-1/2 ml-auto"
             src="couch.svg"
             alt=""
           />
         </div>
-        <div class="w-full portrait:md:w-full flex flex-col">
+        <div class="portrait:md:w-full flex flex-col w-full">
           <h2
-            class="font-semibold text-center text-white text-2xl md:text-3xl pt-20 md:pt-0 portrait:md:pt-16 portrait:hidden"
+            class="md:text-3xl md:pt-0 portrait:md:pt-16 portrait:hidden pt-20 text-2xl font-semibold text-center text-white"
           >
             OUR VISION FOR TOMORROW
           </h2>
 
           <div class="landscape:hidden">
             <h2
-              class="font-semibold text-center text-white text-2xl md:text-3xl pt-20 md:pt-0 portrait:md:pt-16"
+              class="md:text-3xl md:pt-0 portrait:md:pt-16 pt-20 text-2xl font-semibold text-center text-white"
             >
               OUR VISION FOR
             </h2>
             <h2
-              class="font-semibold text-center text-white text-2xl md:text-3xl pt-2"
+              class="md:text-3xl pt-2 text-2xl font-semibold text-center text-white"
             >
               TOMORROW
             </h2>
           </div>
 
           <div
-            class="mx-auto px-8 md:px-32 portrait:md:px-24 font-light leading-relaxed text-left text-sm md:text-lg pt-6 md:pt-10"
+            class="md:px-32 portrait:md:px-24 md:text-lg md:pt-10 px-8 pt-6 mx-auto text-sm font-light leading-relaxed text-left"
           >
             <p>
               At The Friendly Couch (TFC), our essence is simple: we want to
@@ -515,16 +515,16 @@
       <!-- Inclusivity Section-->
 
       <div
-        class="mx-auto flex flex-col h-auto bg-light text-dark-purple items-center justify-center py-20 md:py-28"
+        class="bg-light text-dark-purple md:py-28 flex flex-col items-center justify-center h-auto py-20 mx-auto"
       >
         <div class="w-full">
-          <div class="relative inset-x-0 w-12 mx-auto animate-bounce">
+          <div class="animate-bounce relative inset-x-0 w-12 mx-auto">
             <img class="w-full" src="quote.svg" alt="" />
           </div>
         </div>
 
-        <div class="w-3/4 pt-10 lg:pt-10 landscape:lg:pt-10 landscape:sm:pt-10">
-          <p class="text-sm md:text-lg text-center leading-relaxed px-5 py-5">
+        <div class="lg:pt-10 landscape:lg:pt-10 landscape:sm:pt-10 w-3/4 pt-10">
+          <p class="md:text-lg px-5 py-5 text-sm leading-relaxed text-center">
             I used to think that therapy was only for people with severe issues,
             but when I was struggling to get through my days, I decided to start
             therapy sessions. I'm really grateful to have finally reached this
@@ -537,18 +537,18 @@
         </div>
 
         <div class="w-full py-5">
-          <p class="text-sm md:text-base font-light text-center">
+          <p class="md:text-base text-sm font-light text-center">
             Someone we made happy
           </p>
         </div>
       </div>
 
-      <div class="z-10 mx-auto flex flex-col bg-dark-purple items-center py-24">
-        <h2 class="font-semibold text-center text-2xl text-white md:text-3xl">
+      <div class="bg-dark-purple z-10 flex flex-col items-center py-24 mx-auto">
+        <h2 class="md:text-3xl text-2xl font-semibold text-center text-white">
           OUR TEAM
         </h2>
         <div
-          class="grid grid-cols-3 md:grid-cols-5 mx-8 md:mx-20 flex-wrap justify-center gap-6 md:gap-12 py-16"
+          class="md:grid-cols-5 md:mx-20 md:gap-12 grid flex-wrap justify-center grid-cols-3 gap-6 py-16 mx-8"
         >
           <div
             class="blob mx-auto after:bg-[url('founder.webp')] h-24 md:h-44 w-24 md:w-44"
@@ -597,13 +597,13 @@
           ></div>
         </div>
 
-        <div class="w-full flex flex-col text-slate-100">
-          <h2 class="font-medium text-center text-base md:text-lg">
+        <div class="text-slate-100 flex flex-col w-full">
+          <h2 class="md:text-lg text-base font-medium text-center">
             The Friendly Couch
           </h2>
 
           <div
-            class="mx-auto px-8 md:px-64 portrait:md:px-24 font-light leading-relaxed text-left text-sm md:text-lg pt-10 md:pt-10"
+            class="md:px-64 portrait:md:px-24 md:text-lg md:pt-10 px-8 pt-10 mx-auto text-sm font-light leading-relaxed text-left"
           >
             <p>
               Our dedicated team of psychologists is the driving force behind
@@ -614,14 +614,14 @@
               potential team member via a stringent selection process to ensure
               the highest quality of services for our clients.
             </p>
-            <p class="mt-4 md:mt-5">
+            <p class="md:mt-5 mt-4">
               It is our utmost priority to ensure that the therapists on our
               team adhere to a strict protocol rooted in empathy, ethics, and
               professionalism. The psychologists we bring on board are not only
               qualified and experienced but also open to feedback.
             </p>
 
-            <p class="mt-5 font-medium md:text-center md:mt-12">
+            <p class="md:text-center md:mt-12 mt-5 font-medium">
               Together, we have accomplished remarkable milestones and have
               touched the lives of countless individuals on their journey to
               improving their mental health and well-being.
@@ -632,21 +632,21 @@
 
       <!-- Contact Section-->
 
-      <div class="py-40 md:py-20 text-slate-100 bg-mid-purple">
-        <h2 class="text-2xl md:text-3xl text-white font-semibold text-center">
+      <div class="md:py-20 text-slate-100 bg-mid-purple py-40">
+        <h2 class="md:text-3xl text-2xl font-semibold text-center text-white">
           CONTACT
         </h2>
       </div>
     </main>
 
-    <footer class="flex flex-col bg-dark-purple">
+    <footer class="bg-dark-purple flex flex-col">
       <div
         class="text-center divide-y divide-light divide-solid mr-[10%] ml-[10%]"
       >
         <!-- Social Links -->
         <div
           style="color: white"
-          class="flex justify-center gap-10 md:gap-16 pt-12 pb-10 text-base"
+          class="md:gap-16 flex justify-center gap-10 pt-12 pb-10 text-base"
         >
           <a href="#" title="Facebook" target="_blank"
             ><i class="fa-brands fa-facebook"></i
@@ -665,14 +665,14 @@
           ></a>
         </div>
         <!-- Copyright -->
-        <div class="text-light text-sm font-thin pt-8">
+        <div class="text-light pt-8 text-sm font-thin">
           <a href="#" target="_blank" class=""
             >&copy; The Friendly Couch 2023</a
           >
         </div>
       </div>
       <div class="text-center">
-        <div class="pb-7 pt-5 text-light text-xs font-normal">
+        <div class="pb-7 text-light pt-5 text-xs font-normal">
           <div>Powered By <a href="#" target="_blank">blackwoodbox.com</a></div>
         </div>
       </div>
