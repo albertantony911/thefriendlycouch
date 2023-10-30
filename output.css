@@ -1211,6 +1211,10 @@ html {
   width: 100vw;
 }
 
+.w-3\/5 {
+  width: 60%;
+}
+
 .min-w-full {
   min-width: 100%;
 }
@@ -1593,6 +1597,10 @@ html {
   border-radius: 0.75rem;
 }
 
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -1745,6 +1753,21 @@ html {
 .bg-red-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(254 226 226 / var(--tw-bg-opacity));
+}
+
+.bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.bg-indigo-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(79 70 229 / var(--tw-bg-opacity));
+}
+
+.bg-purple-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 232 255 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-40 {
@@ -1979,6 +2002,11 @@ html {
 .py-2\.5 {
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .pb-1 {
@@ -2378,6 +2406,76 @@ html {
 .placeholder-purple-300::placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(216 180 254 / var(--tw-placeholder-opacity));
+}
+
+.placeholder-gray-500::-moz-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-placeholder-opacity));
+}
+
+.placeholder-gray-500::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-placeholder-opacity));
+}
+
+.placeholder-purple-500::-moz-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(168 85 247 / var(--tw-placeholder-opacity));
+}
+
+.placeholder-purple-500::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(168 85 247 / var(--tw-placeholder-opacity));
+}
+
+.placeholder-purple-200::-moz-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(233 213 255 / var(--tw-placeholder-opacity));
+}
+
+.placeholder-purple-200::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(233 213 255 / var(--tw-placeholder-opacity));
+}
+
+.placeholder-gray-400::-moz-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-placeholder-opacity));
+}
+
+.placeholder-gray-400::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-placeholder-opacity));
+}
+
+.placeholder-white::-moz-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-placeholder-opacity));
+}
+
+.placeholder-white::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-placeholder-opacity));
+}
+
+.placeholder-gray-100::-moz-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-placeholder-opacity));
+}
+
+.placeholder-gray-100::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-placeholder-opacity));
+}
+
+.placeholder-gray-200::-moz-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-placeholder-opacity));
+}
+
+.placeholder-gray-200::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-placeholder-opacity));
 }
 
 .opacity-0 {
@@ -2784,6 +2882,16 @@ input[type="checkbox"]:checked + label .arrow {
 .hover\:text-dark-purple:hover {
   --tw-text-opacity: 1;
   color: rgb(70 49 116 / var(--tw-text-opacity));
+}
+
+.hover\:text-indigo-100:hover {
+  --tw-text-opacity: 1;
+  color: rgb(224 231 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-light-purple:hover {
+  --tw-text-opacity: 1;
+  color: rgb(209 190 249 / var(--tw-text-opacity));
 }
 
 .hover\:no-underline:hover {
