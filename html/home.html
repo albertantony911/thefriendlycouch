@@ -197,13 +197,105 @@
             <img class="couch" src="../img/test.svg" alt="" />
           </div>
 
-          <button
-            class="mb-44 md:mt-24 md:px-8 md:py-5 whitespace-nowrap bg-light hover:scale-105 hover:shadow-2xl focus:outline-none hover:bg-light-purple text-dark-purple hover:text-light px-8 py-6 mx-auto mt-20 transition rounded-full select-none"
-          >
-            <a class="md:text-lg text-base font-normal" href="#"
-              >Book a Session</a
-            >
-          </button>
+
+
+          
+
+          <div x-data="{ showModal: false }">
+            <!-- Trigger button -->
+            <button
+              class="mb-44 md:mt-24 md:px-8 md:py-5 whitespace-nowrap hover:scale-105 hover:shadow-2xl focus:outline-none hover:bg-light-purple hover:text-light text-dark-purple px-8 py-6 mx-auto mt-20 transition bg-white rounded-full select-none"
+              @click="showModal = true">
+              Book a Session
+            </button>
+          
+            <!-- Modal -->
+            <div x-show="showModal" class=" bg-dark-purple fixed inset-0 z-50 flex items-center justify-center bg-opacity-75"
+              x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0"
+              x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in duration-200"
+              x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" @click="showModal = false" style="display: none;">
+          
+          
+              <div class="md:w-1/2 w-[95%] md:p-12 px-6 py-12 transform bg-white text-dark-purple rounded-2xl shadow-2xl">
+                <!-- Modal Header -->
+                <div class=" flex flex-col">
+                  <h2 class="text-2xl font-semibold text-center">BOOK A SESSION</h2>
+                  <button @click="showModal = false" class="hover:text-gray-700 focus:outline-none right-6 top-6 absolute text-gray-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-x stroke-dark-purple">
+                      <line x1="18" y1="6" x2="6" y2="18"></line>
+                      <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                  </button>
+                </div>
+          
+                <!-- Modal Content -->
+                <div class=" md:text-base flex flex-col text-sm text-center">
+                  <h4 class="md:mt-5 mt-7 font-semibold">OUR STANDARD CHARGES</h4>
+                
+                  <div class=" md:flex-row md:gap-5 flex flex-col justify-center gap-2 mt-3">
+                    <p>
+                      Counselling Psychologist - INR2200
+                    </p>
+                    <p>
+                        Clinical Psychologist - INR2500
+                    </p>
+
+                  </div>
+                    <h4 class="mt-7 font-normal">For more information and booking details checkout</h4>
+
+
+                    <div class="md:flex-row md:gap-3 flex flex-wrap justify-center gap-4 mx-auto mt-3 underline">
+
+                      <h4 class="font-medium"><a href="#">THERAPY</a></h4>
+                      <h4 class="font-medium"><a href="#">DIAGNOSIS</a></h4>
+                      <h4 class="font-medium"><a href="#">PRICING</a></h4>
+                      <h4 class="font-medium"><a href="#">COUPLE'S COUNSELLING</a></h4>
+                      
+                      
+                      
+                    </div>
+                    
+
+                  
+                
+                  <div class="flex items-center py-8">
+                    <hr class="flex-grow">
+                    <span class="px-5">OR</span>
+                    <hr class="flex-grow">
+                  </div>
+                
+                  <div>
+                    <h3 class="font-semibold">BOOK DIRECTLY</h3>
+                
+                    <p class="mt-2">Message us and book the session</p>
+                  </div>
+                
+                  <div class="md:flex-row flex justify-center gap-2 pt-8">
+                    <button
+                      class="md:px-8 md:py-5 whitespace-nowrap hover:scale-105 hover:shadow-2xl focus:outline-none  text-white hover:text-white px-6 py-4 mx-auto  transition bg-[#25D366] rounded-full select-none ">
+                      <div class="md:gap-4 flex flex-row gap-2 my-auto">
+                        <img class="md:w-7 w-5" src="../img/whatsapp-logo.svg" alt="">
+                        <a class="md:text-lg my-auto text-base font-medium" href=" https://wa.me/919205025183?text=Any%20text%20we%20want%20here">WhatsApp</a>
+                      </div>
+                    </button>
+                    <button
+                      class=" md:px-8 md:py-5 whitespace-nowrap hover:scale-105 hover:shadow-2xl focus:outline-none hover:text-light px-6 py-4 mx-auto text-white transition rounded-full select-none"
+                      style="background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);">
+                      <div class="md:gap-4 flex flex-row gap-2 my-auto">
+                
+                        <img class="md:w-7 w-5" src="../img/instagram-logo.svg" alt="">
+                        <a class="md:text-lg my-auto text-base font-medium" href="https://ig.me/m/thefriendlycouch">Instagram</a>
+                      </div>
+                
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
           <div
             class="md:w-7 bottom-24 md:bottom-24 portrait:md:bottom-28 portrait:lg:bottom-28 animate-bounce absolute inset-x-0 w-6 mx-auto"
           >
@@ -221,11 +313,10 @@
 
 
 
+  
 
 
 
-
-<!-- ====== Modal Section End -->
 
 
       
