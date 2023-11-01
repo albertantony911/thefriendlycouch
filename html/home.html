@@ -5,11 +5,16 @@
 
     <link rel="stylesheet" type="text/css" href="../output.css">
     <link rel="stylesheet" type="text/css" href="../css/test.css">
-    <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
+
+      
     <script src="https://kit.fontawesome.com/9fa9d11dac.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.x.x/dist/alpine.js" defer></script>
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     
@@ -216,10 +221,10 @@
               x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" @click="showModal = false" style="display: none;">
           
           
-              <div class="md:w-1/2 w-[95%] md:p-12 px-6 py-12 transform bg-white text-dark-purple rounded-2xl shadow-2xl">
+              <div class="landscape:md:w-2/3 portrait:md:w-[65%] w-[95%] md:p-12 px-5 py-12 transform bg-white text-dark-purple rounded-2xl shadow-2xl">
                 <!-- Modal Header -->
                 <div class=" flex flex-col">
-                  <h2 class="text-2xl font-semibold text-center">BOOK A SESSION</h2>
+                  <h2 class="hidden text-2xl font-semibold text-center">BOOK A SESSION</h2>
                   <button @click="showModal = false" class="hover:text-gray-700 focus:outline-none right-6 top-6 absolute text-gray-500">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
                       stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
@@ -232,9 +237,9 @@
           
                 <!-- Modal Content -->
                 <div class=" md:text-base flex flex-col justify-center mx-auto text-sm text-center">
-                  <h4 class="md:mt-5 mt-4 font-semibold">OUR STANDARD CHARGES</h4>
+                  <h4 class="md:mt-5 font-semibold">OUR STANDARD CHARGES</h4>
                 
-                  <div class=" md:flex-row md:gap-20 rounded-xl py-7 flex flex-row justify-center gap-5 px-4 mt-5 bg-gray-100">
+                  <div class="md:gap-10 rounded-xl py-7 md:px-10 flex flex-row justify-center gap-5 px-4 mx-auto mt-5 bg-gray-100">
                     <div class=" flex flex-col justify-center gap-4">
                       <p class=" whitespace-pre-line">Counselling
                       Psychologist
@@ -256,13 +261,13 @@
                     </div>
                   </div>
 
-                    <h4 class="mt-7 font-normal">For booking and more information visit</h4>
+                    <h4 class="mt-7 font-normal">For more information visit</h4>
 
-                    <div class="md:flex-row md:gap-3 flex flex-wrap justify-center gap-4 mx-auto mt-3 underline">
-                      <h4 class="font-medium"><a href="#">THERAPY</a></h4>
-                      <h4 class="font-medium"><a href="#">DIAGNOSIS</a></h4>
-                      <h4 class="font-medium"><a href="#">PRICING</a></h4>
-                      <h4 class="font-medium"><a href="#">COUPLE'S COUNSELLING</a></h4>
+                    <div class="md:flex-row md:gap-3 text-mid-purple flex flex-wrap justify-center gap-4 mx-auto mt-3 font-medium">
+                      <h4 class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 transition bg-gray-100 rounded-full"><a href="#">THERAPY</a></h4>
+                      <h4 class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 transition bg-gray-100 rounded-full"><a href="#">DIAGNOSIS</a></h4>
+                      <h4 class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 transition bg-gray-100 rounded-full"><a href="#">PRICING</a></h4>
+                      <h4 class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 transition bg-gray-100 rounded-full"><a href="#">COUPLE'S COUNSELLING</a></h4>
                     </div>
                     
                   <div class="flex items-center py-8">
@@ -272,28 +277,34 @@
                   </div>
                 
                   <div>
-                    <h3 class="font-semibold">BOOK DIRECTLY</h3>               
+                    <h3 class="text-xl font-semibold">BOOK A SESSION</h3>               
                     <p class="mt-2">Message us and book your session.</p>
                   </div>
                 
-                  <div class="md:flex-row md:gap-7 flex flex-wrap justify-center gap-3 pt-8 mx-auto">
-                    <button
-                      class="md:px-8 md:py-5 whitespace-nowrap hover:scale-105 hover:shadow-2xl focus:outline-none  text-white hover:text-white px-6 py-4 mx-auto  transition bg-[#25D366] rounded-full select-none ">
-                      <div class="md:gap-4 flex flex-row gap-2 my-auto">
-                        <img class="md:w-7 w-5" src="../img/whatsapp-logo.svg" alt="">
-                        <a class="md:text-lg my-auto text-base font-medium" href=" https://wa.me/919205025183?text=I%20want%20to%20book%20an%20online%20section.">WhatsApp</a>
-                      </div>
-                    </button>
-                    <button
-                      class=" md:px-8 md:py-5 whitespace-nowrap hover:scale-105 hover:shadow-2xl focus:outline-none hover:text-light px-6 py-4 mx-auto text-white transition rounded-full select-none"
-                      style="background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);">
-                      <div class="md:gap-4 flex flex-row gap-2 my-auto">
-                
-                        <img class="md:w-7 w-5" src="../img/instagram-logo.svg" alt="">
-                        <a class="md:text-lg my-auto text-base font-medium" href="https://ig.me/m/thefriendlycouch">Instagram</a>
-                      </div>
-                
-                    </button>
+                  <div class="md:flex-row landscape:md:gap-8 md:gap-5 flex justify-center gap-4 pt-8 mx-auto">
+                    
+                    
+                      <button
+                        class="md:px-8 md:py-4 whitespace-nowrap hover:scale-105 hover:shadow-2xl focus:outline-none  text-white hover:text-white px-6 py-3 mx-auto  transition bg-[#25D366] rounded-full select-none"
+                        style="background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);">
+                        <div class="md:gap-3 flex flex-row gap-2 my-auto">
+                      
+                          <img class="md:w-6 w-5" src="../img/instagram-logo.svg" alt="">
+                          <a class="md:text-2xl my-auto text-xl font-medium" style="font-family: 'Grand Hotel', cursive;" href="https://ig.me/m/thefriendlycouch">Instagram</a>
+                        </div>
+                      </button>
+                   
+                      <button
+                        class="md:px-7 md:py-4 whitespace-nowrap hover:scale-105 hover:shadow-2xl focus:outline-none  text-white hover:text-white px-5 py-3 mx-auto  transition bg-[#25D366] rounded-full select-none">
+                        <div class="md:gap-3 flex flex-row gap-2 my-auto">
+                          <img class="md:w-6 w-5" src="../img/whatsapp-logo.svg" alt="">
+                          <a class="md:text-lg my-auto text-base font-semibold"
+                            href=" https://wa.me/919205025183?text=I%20want%20to%20book%20an%20online%20section."
+                            style="font-family: 'Helvetica Neue', sans-serif;">WhatsApp</a>
+                        </div>
+                      </button>
+                    
+                    
                   </div>
                 </div>
               </div>
@@ -308,23 +319,6 @@
         </div>
       </div>
 
-
-
-      
-
-
-
-
-
-
-  
-
-
-
-
-
-      
-
       
 
       <!-- About Section-->
@@ -338,7 +332,7 @@
 
         <div class="text-slate-100 flex flex-col w-full">
           <h2
-            class="md:text-3xl landscape:md:pt-0 pt-20 text-2xl font-semibold text-center text-white"
+            class="md:text-3xl landscape:md:pt-0 pt-20 text-2xl font-semibold text-center text-white" 
           >
             WHAT WE DO
           </h2>
@@ -459,7 +453,7 @@
         </div>
 
         <div class="w-full py-5">
-          <p class="md:text-base text-sm font-light text-center">
+          <p class="md:text-base text-sm italic font-light text-center">
             Someone we made happy
           </p>
         </div>
@@ -800,7 +794,7 @@
         </div>
 
         <div class="w-full pt-5">
-          <p class="md:text-base text-sm font-light text-center">
+          <p class="md:text-base text-sm italic font-light text-center">
             Someone we made happy
           </p>
         </div>
