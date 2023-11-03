@@ -3625,6 +3625,10 @@ input[type="checkbox"]:checked + label .arrow {
       flex-direction: column;
     }
 
+    .portrait\:md\:gap-10 {
+      gap: 2.5rem;
+    }
+
     .portrait\:md\:px-20 {
       padding-left: 5rem;
       padding-right: 5rem;
