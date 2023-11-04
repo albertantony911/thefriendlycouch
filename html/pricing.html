@@ -391,7 +391,7 @@
                     <div class="flex mt-10">
 
                         <p
-                            class="hover:text-white hover:bg-light-purple text-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 mx-auto transition bg-gray-100 rounded-full">
+                            class="hover:text-white hover:bg-light-purple text-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 mx-auto text-sm transition bg-gray-100 rounded-full">
                             <a href="#">THERAPY</a>
                         </p>
 
@@ -405,117 +405,151 @@
             
             
             <div x-data="{ abroad: false }">
-                <div class="rounded-2xl md:w-1/4 flex w-2/3 mx-auto font-normal bg-purple-200 border-4 border-purple-200">
-                    <button class="rounded-xl block w-full py-1 text-sm transition"
+                <div class="md:w-1/4 flex w-2/3 mx-auto font-medium bg-purple-200 border-4 border-purple-200 rounded-full">
+                    <button class="block w-full py-2 text-sm transition rounded-full"
                         :class="{ 'bg-white shadow-sm': !abroad, 'hover:text-gray-400': abroad }" @click="abroad = false"
                         type="button">
-                        India
+                        INDIA
                     </button>
-                    <button class="rounded-xl block w-full py-1 text-sm transition"
+                    <button class="block w-full py-2 text-sm transition rounded-full"
                         :class="{ 'bg-white shadow-sm': abroad, 'hover:text-gray-400': !abroad }" @click="abroad = true"
                         type="button">
-                        Outside India
+                        OUTSIDE INDIA
                     </button>
                 </div>
             
-                <div class="md:py-14 md:text-2xl py-10 text-xl font-semibold text-center text-white">
-                    <p><span x-text="abroad ? 'STANDARD CHARGES OUTSIDE INDIA' : 'STANDARD CHARGES WITHIN INDIA'"></span></p>
+                <div class="md:pt-14 md:text-2xl pt-10 text-xl font-semibold text-center text-white">
+                    <p><span x-text="abroad ? 'STANDARD CHARGES OUTSIDE INDIA' : 'STANDARD CHARGES IN INDIA'"></span></p>
+                </div>
+
+                <div class="md:pb-14 md:pt-5 md:text-2xl pt-5 pb-10 text-sm font-light text-center text-white">
+                    <p><span x-text="abroad ? '(For professionals working abroad)' : ''"></span></p>
                 </div>
             
                 <div class=" mx-auto">
             
                     <div class="landscape:flex-row md:items-center md:gap-20 gap-14 flex flex-col justify-center w-full pb-16 mx-auto">
                         
+                        
+            
+            
                         <div class="md:w-1/2 md:justify-end flex justify-center w-full mx-auto">
             
                             <div
-                                class="md:text-base text-dark-purple rounded-[30px] md:px-10 flex flex-col justify-center px-5 py-10 text-sm text-center bg-white shadow-2xl">
+                                class="md:text-base text-dark-purple rounded-[30px] md:px-10 flex flex-col justify-center px-8 py-10 text-sm text-center bg-white shadow-2xl">
             
                                 <h4 class="md:text-xl text-lg font-semibold">COUNSELLING PSYCHOLOGIST</h4>
             
-                                <div
-                                    class="md:gap-10 rounded-xl py-7 md:py-8 md:px-8 px-7 flex flex-row justify-center gap-5 mx-auto mt-5 bg-gray-100">
-            
-                                    <div class="flex flex-col justify-center gap-1">
-            
-                                        <p class="md:text-2xl text-xl font-semibold transition">
-                                            <span class="font-mono">₹</span><span x-text="abroad ? '4,400' : '2,200'"></span>
-                                        </p>
-                                        <p class="text-xs font-medium">*PER SESSION</p>
-                                    </div>
-            
-                                    <div class="w-[1px] h-auto bg-gray-300"></div>
-            
-                                    <div class=" flex flex-col justify-center gap-2 text-left">
-                                        <p class="font-semibold">SILVER PACK</p>
-                                        <p class="">Pack : <span class="font-semibold">1 Session</span></p>
-                                    </div>
-                                </div>
-            
-                                <div class="flex items-center py-6">
-                                    <div class="flex-grow border-t border-gray-300"></div>
-                                    <span class="px-5 text-lg font-semibold">PACKAGES</span>
-                                    <div class="flex-grow border-t border-gray-300"></div>
-                                </div>
-            
-                                <div
-                                    class="md:gap-10 rounded-[30px] py-7 md:py-8 md:px-8 px-7 bg-mid-purple flex flex-row justify-center gap-5 mx-auto text-white">
-            
-                                    <div class=" flex flex-col justify-center gap-1">
-                                        <p class=" -translate-y-9 opacity-30 absolute text-lg font-semibold translate-x-4">
-                                            <span class="font-mono">₹</span><span class="line-through"
-                                                x-text="abroad ? '4,400' : '2,200'"></span>
-                                        </p>
-            
-                                        <p class="md:text-2xl text-xl font-semibold">
-                                            <span class="font-mono">₹</span><span x-text="abroad ? '4,000' : '2,000'"></span>
-                                        </p>
-                                        <div class=" flex flex-col text-sm font-normal">
-                                            <p class="text-xs font-medium">PER SESSION*</p>
+                               
+                                
+                                <div class="py-4 md:py-6 rounded-[30px] md:px-8 px-9 bg-gray-100 flex flex-col mx-auto mt-8 text-dark-purple">
+                                
+                                    <p class="mb-5 text-xl font-semibold text-center">SILVER PACK</p>
+                                
+                                    <div class="md:gap-10 flex flex-row justify-center gap-5 mx-auto">
+                                
+                                        <div class="flex flex-col justify-center gap-2">
+                                            
+                                            <p class="md:text-2xl text-xl font-semibold">
+                                                <span class="font-mono">₹</span><span x-text="abroad ? '4,000' : '2,000'"></span>
+                                            </p>
+                                            <div class=" flex flex-col text-sm font-normal">
+                                                <p class="text-xs font-medium">PER SESSION*</p>
+                                            </div>
+                                        </div>
+                                
+                                        <div class="w-[1px] h-20 bg-gray-300"></div>
+                                
+                                        <div class="flex flex-col justify-center gap-2 text-left">
+                                
+                                            <p class="">TOTAL : <span class="font-mono font-semibold">₹</span>
+                                                <span class="font-semibold" x-text="abroad ? '4,400' : '2,200'"></span>**
+                                            </p>
+                                            <p class="">Pack : <span class="font-semibold">1 Session</span></p>
                                         </div>
                                     </div>
-            
-                                    <div class="w-[1px] h-auto bg-gray-300"></div>
-            
-                                    <div class="flex flex-col justify-center gap-2 text-left">
-                                        <p class=" font-semibold">VIOLET PACK</p>
-                                        <p class="">Pack : <span class="font-semibold">4 Sessions</span></p>
-                                        <p class="">TOTAL AMOUNT : <span class="font-mono font-semibold">₹</span>
-                                            <span class="font-semibold" x-text="abroad ? '16,000' : '8,000'"></span>**
-                                        </p>
-                                    </div>
+                                
                                 </div>
-            
-                                <div
-                                    class="md:gap-10 rounded-[30px] py-7 md:py-8 md:px-8 px-7 bg-dark-purple flex flex-row justify-center gap-5 mx-auto mt-5 text-white">
-            
-                                    <div class="flex flex-col justify-center gap-2">
-                                        <p class=" -translate-y-9 opacity-30 absolute text-lg font-semibold translate-x-4">
-                                            <span class="font-mono">₹</span><span class="line-through"
-                                                x-text="abroad ? '4,400' : '2,200'"></span>
-                                        </p>
-                                        <p class="md:text-2xl text-xl font-semibold">
-                                            <span class="font-mono">₹</span><span x-text="abroad ? '3,850' : '1,925'"></span>
-                                        </p>
-                                        <div class=" flex flex-col text-sm font-normal">
-                                            <p class="text-xs font-medium">PER SESSION*</p>
+                                
+
+                                <div class="py-4 md:py-6 rounded-[30px] md:px-8 px-9 bg-mid-purple flex flex-col mx-auto mt-5 text-white">
+
+                                    <p class="mb-5 text-xl font-semibold text-center">PURPLE PACK</p>
+
+                                    <div
+                                        class="md:gap-10 flex flex-row justify-center gap-5 mx-auto">
+                                    
+                                        <div class="flex flex-col justify-center gap-2">
+                                            <p class=" -translate-y-9 absolute text-base font-semibold translate-x-3 opacity-50">
+                                                <span class="font-mono">₹</span><span class="line-through" x-text="abroad ? '4,400' : '2,200'"></span>
+                                            </p>
+                                            <p class="md:text-2xl text-xl font-semibold">
+                                                <span class="font-mono">₹</span><span x-text="abroad ? '4,000' : '2,000'"></span>
+                                            </p>
+                                            <div class=" flex flex-col text-sm font-normal">
+                                                <p class="text-xs font-medium">PER SESSION*</p>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="w-[1px] h-20 bg-gray-300"></div>
+                                    
+                                        <div class="flex flex-col justify-center gap-2 text-left">
+                                    
+                                    
+                                            <p class="md:-translate-y-9 md:text-sm md:translate-x-16 translate-x-14 absolute text-xs font-semibold -translate-y-8 opacity-50"><span
+                                                    class=" font-mono font-semibold">₹</span>
+                                                <span class="font-semibold line-through" x-text="abroad ? '17,600' : '8,800'"></span>
+                                            </p>
+                                            <p class="">TOTAL : <span class="font-mono font-semibold">₹</span>
+                                                <span class="font-semibold" x-text="abroad ? '16,000' : '8,000'"></span>**
+                                            </p>
+                                            <p class="">Pack : <span class="font-semibold">4 Sessions</span></p>
                                         </div>
                                     </div>
-            
-                                    <div class="w-[1px] h-auto bg-gray-300"></div>
-            
-                                    <div class="flex flex-col justify-center gap-2 text-left">
-                                        <p class=" font-semibold">PURPLE PACK</p>
-                                        <p class="">Pack : <span class="font-semibold">6 Sessions</span></p>
-                                        <p class="">TOTAL AMOUNT : <span class="font-mono font-semibold">₹</span>
-                                            <span class="font-semibold" x-text="abroad ? '23,100' : '11,550'"></span>**
-                                        </p>
-                                    </div>
+
                                 </div>
+
+                                <div class="py-4 md:py-6 rounded-[30px] md:px-8 px-9 bg-dark-purple flex flex-col mx-auto mt-5 text-white">
+                                
+                                    <p class="mb-5 text-xl font-semibold text-center">VIOLET PACK</p>
+                                
+                                    <div class="md:gap-10 flex flex-row justify-center gap-5 mx-auto">
+                                
+                                        <div class="flex flex-col justify-center gap-2">
+                                            <p class=" -translate-y-9 absolute text-base font-semibold translate-x-3 opacity-50">
+                                                <span class="font-mono">₹</span><span class="line-through" x-text="abroad ? '4,400' : '2,200'"></span>
+                                            </p>
+                                            <p class="md:text-2xl text-xl font-semibold">
+                                                <span class="font-mono">₹</span><span x-text="abroad ? '3,850' : '1,925'"></span>
+                                            </p>
+                                            <div class=" flex flex-col text-sm font-normal">
+                                                <p class="text-xs font-medium">PER SESSION*</p>
+                                            </div>
+                                        </div>
+                                
+                                        <div class="w-[1px] h-20 bg-gray-300"></div>
+                                
+                                        <div class="flex flex-col justify-center gap-2 text-left">
+                                
+                                
+                                            <p class="md:-translate-y-9 md:text-sm md:translate-x-16 translate-x-14 absolute text-xs font-semibold -translate-y-8 opacity-50"><span
+                                                    class=" font-mono font-semibold">₹</span>
+                                                <span class="font-semibold line-through" x-text="abroad ? '26,400' : '13,200'"></span>
+                                            </p>
+                                            <p class="">TOTAL : <span class="font-mono font-semibold">₹</span>
+                                                <span class="font-semibold" x-text="abroad ? '23,100' : '11,550'"></span>**
+                                            </p>
+                                            <p class="">Pack : <span class="font-semibold">6 Sessions</span></p>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+            
+                                
             
                                 <div>
-                                    <p class="mt-4 text-sm">*Total amount must be paid in advance</p>
-                                    <p class="mt-2 text-sm">**1 hour session each</p>
+                                    <p class="mt-4 text-sm">*Each session is 60mins (1 hour)</p>
+                                    <p class="mt-2 text-sm">**To be paid in full in advance.</p>
                                 </div>
             
                                 <div class="md:flex-row landscape:md:gap-8 md:gap-5 flex justify-center gap-4 pt-8 mx-auto">
@@ -528,105 +562,141 @@
                                 </div>
                             </div>
                         </div>
-            
-            
+
+
                         <div class="md:w-1/2 md:justify-start flex justify-center w-full mx-auto">
-            
+                        
                             <div
-                                class="md:text-base text-dark-purple rounded-[30px] md:px-10 flex flex-col justify-center px-5 py-10 text-sm text-center bg-white shadow-2xl">
-            
+                                class="md:text-base text-dark-purple rounded-[30px] md:px-10 flex flex-col justify-center px-8 py-10 text-sm text-center bg-white shadow-2xl">
+                        
                                 <h4 class="md:text-xl text-lg font-semibold">COUNSELLING PSYCHOLOGIST</h4>
-            
-                                <div
-                                    class="md:gap-10 rounded-xl py-7 md:py-8 md:px-8 px-7 flex flex-row justify-center gap-5 mx-auto mt-5 bg-gray-100">
-            
-                                    <div class="flex flex-col justify-center gap-1">
-                                        <p class="md:text-2xl text-xl font-semibold">
-                                            <span class="font-mono">₹</span><span x-text="abroad ? '4,400' : '2,200'"></span>
-                                        </p>
-                                        <p class="text-xs font-medium">*PER SESSION</p>
-                                    </div>
-            
-                                    <div class="w-[1px] h-auto bg-gray-300"></div>
-            
-                                    <div class=" flex flex-col justify-center gap-2 text-left">
-                                        <p class="font-semibold text-center">SILVER PACK</p>
-                                        <p class="">Pack : <span class="font-semibold">1 Session</span></p>
-                                    </div>
-                                </div>
-            
-                                <div class="flex items-center py-6">
-                                    <div class="flex-grow border-t border-gray-300"></div>
-                                    <span class="px-5 text-lg font-semibold">PACKAGES</span>
-                                    <div class="flex-grow border-t border-gray-300"></div>
-                                </div>
-            
-                                <div
-                                    class="md:gap-10 rounded-[30px] py-7 md:py-8 md:px-8 px-7 bg-mid-purple flex flex-row justify-center gap-5 mx-auto text-white">
-            
-                                    <div class=" flex flex-col justify-center gap-1">
-                                        <p class=" -translate-y-9 opacity-30 absolute text-lg font-semibold translate-x-4">
-                                            <span class="font-mono">₹</span><span class="line-through"
-                                                x-text="abroad ? '4,400' : '2,200'"></span>
-                                        </p>
-                                        <p class="md:text-2xl text-xl font-semibold">
-                                            <span class="font-mono">₹</span><span x-text="abroad ? '4,000' : '2,000'"></span>
-                                        </p>
-                                        <div class=" flex flex-col text-sm font-normal">
-                                            <p class="text-xs font-medium">PER SESSION*</p>
+                        
+                        
+                        
+                                
+                        
+                        
+                        
+                        
+                                <div class="py-4 md:py-6 rounded-[30px] md:px-8 px-9 bg-gray-100 flex flex-col mx-auto mt-8 text-dark-purple">
+                        
+                                    <p class="mb-5 text-xl font-semibold text-center">SILVER PACK</p>
+                        
+                                    <div class="md:gap-10 flex flex-row justify-center gap-5 mx-auto">
+                        
+                                        <div class="flex flex-col justify-center gap-2">
+                        
+                                            <p class="md:text-2xl text-xl font-semibold">
+                                                <span class="font-mono">₹</span><span x-text="abroad ? '4,400' : '2,200'"></span>
+                                            </p>
+                                            <div class=" flex flex-col text-sm font-normal">
+                                                <p class="text-xs font-medium">PER SESSION*</p>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="w-[1px] h-20 bg-gray-300"></div>
+                        
+                                        <div class="flex flex-col justify-center gap-2 text-left">
+                        
+                                            <p class="">TOTAL : <span class="font-mono font-semibold">₹</span>
+                                                <span class="font-semibold" x-text="abroad ? '4,000' : '2,000'"></span>**
+                                            </p>
+                                            <p class="">Pack : <span class="font-semibold">1 Session</span></p>
                                         </div>
                                     </div>
-            
-                                    <div class="w-[1px] h-auto bg-gray-300"></div>
-            
-                                    <div class="flex flex-col justify-center gap-2 text-left">
-                                        <p class=" font-semibold text-center">VIOLET PACK</p>
-                                        <p class="">Pack : <span class="font-semibold">4 Sessions</span></p>
-                                        <p class="">TOTAL AMOUNT : <span class="font-mono font-semibold">₹</span>
-                                            <span class="font-semibold" x-text="abroad ? '16,000' : '8,000'"></span>**
-                                        </p>
-            
-                                    </div>
+                        
                                 </div>
-            
-                                <div
-                                    class="md:gap-10 rounded-[30px] py-7 md:py-8 md:px-8 px-7 bg-dark-purple flex flex-row justify-center gap-5 mx-auto mt-5 text-white">
-            
-                                    <div class="flex flex-col justify-center gap-2">
-                                        <p class=" -translate-y-9 opacity-30 absolute text-lg font-semibold translate-x-4">
-                                            <span class="font-mono">₹</span><span class="line-through"
-                                                x-text="abroad ? '4,400' : '2,200'"></span>
-                                        </p>
-                                        <p class="md:text-2xl text-xl font-semibold">
-                                            <span class="font-mono">₹</span><span x-text="abroad ? '3,850' : '1,925'"></span>
-                                        </p>
-                                        <div class=" flex flex-col text-sm font-normal">
-                                            <p class="text-xs font-medium">PER SESSION*</p>
+                        
+                        
+                                <div class="py-4 md:py-6 rounded-[30px] md:px-8 px-9 bg-mid-purple flex flex-col mx-auto mt-5 text-white">
+                        
+                                    <p class="mb-5 text-xl font-semibold text-center">PURPLE PACK</p>
+                        
+                                    <div class="md:gap-10 flex flex-row justify-center gap-5 mx-auto">
+                        
+                                        <div class="flex flex-col justify-center gap-2">
+                                            <p class=" -translate-y-9 absolute text-base font-semibold translate-x-3 opacity-50">
+                                                <span class="font-mono">₹</span><span class="line-through"
+                                                    x-text="abroad ? '4,400' : '2,200'"></span>
+                                            </p>
+                                            <p class="md:text-2xl text-xl font-semibold">
+                                                <span class="font-mono">₹</span><span x-text="abroad ? '4,000' : '2,000'"></span>
+                                            </p>
+                                            <div class=" flex flex-col text-sm font-normal">
+                                                <p class="text-xs font-medium">PER SESSION*</p>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="w-[1px] h-20 bg-gray-300"></div>
+                        
+                                        <div class="flex flex-col justify-center gap-2 text-left">
+                        
+                        
+                                            <p
+                                                class="md:-translate-y-9 md:text-sm md:translate-x-16 translate-x-14 absolute text-xs font-semibold -translate-y-8 opacity-50">
+                                                <span class=" font-mono font-semibold">₹</span>
+                                                <span class="font-semibold line-through" x-text="abroad ? '17,600' : '8,800'"></span>
+                                            </p>
+                                            <p class="">TOTAL : <span class="font-mono font-semibold">₹</span>
+                                                <span class="font-semibold" x-text="abroad ? '16,000' : '8,000'"></span>**
+                                            </p>
+                                            <p class="">Pack : <span class="font-semibold">4 Sessions</span></p>
                                         </div>
                                     </div>
-            
-                                    <div class="w-[1px] h-auto bg-gray-300"></div>
-            
-                                    <div class="flex flex-col justify-center gap-2 text-left">
-                                        <p class=" font-semibold text-center">PURPLE PACK</p>
-                                        <p class="">Pack : <span class="font-semibold">6 Sessions</span></p>
-                                        <p class="">TOTAL AMOUNT : <span class="font-mono font-semibold">₹</span>
-                                            <span class="font-semibold" x-text="abroad ? '23,100' : '11,550'"></span>**
-                                        </p>
-                                    </div>
+                        
                                 </div>
-            
+                        
+                                <div class="py-4 md:py-6 rounded-[30px] md:px-8 px-9 bg-dark-purple flex flex-col mx-auto mt-5 text-white">
+                        
+                                    <p class="mb-5 text-xl font-semibold text-center">VIOLET PACK</p>
+                        
+                                    <div class="md:gap-10 flex flex-row justify-center gap-5 mx-auto">
+                        
+                                        <div class="flex flex-col justify-center gap-2">
+                                            <p class=" -translate-y-9 absolute text-base font-semibold translate-x-3 opacity-50">
+                                                <span class="font-mono">₹</span><span class="line-through"
+                                                    x-text="abroad ? '4,400' : '2,200'"></span>
+                                            </p>
+                                            <p class="md:text-2xl text-xl font-semibold">
+                                                <span class="font-mono">₹</span><span x-text="abroad ? '3,850' : '1,925'"></span>
+                                            </p>
+                                            <div class=" flex flex-col text-sm font-normal">
+                                                <p class="text-xs font-medium">PER SESSION*</p>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="w-[1px] h-20 bg-gray-300"></div>
+                        
+                                        <div class="flex flex-col justify-center gap-2 text-left">
+                        
+                        
+                                            <p
+                                                class="md:-translate-y-9 md:text-sm md:translate-x-16 translate-x-14 absolute text-xs font-semibold -translate-y-8 opacity-50">
+                                                <span class=" font-mono font-semibold">₹</span>
+                                                <span class="font-semibold line-through" x-text="abroad ? '26,400' : '13,200'"></span>
+                                            </p>
+                                            <p class="">TOTAL : <span class="font-mono font-semibold">₹</span>
+                                                <span class="font-semibold" x-text="abroad ? '23,100' : '11,550'"></span>**
+                                            </p>
+                                            <p class="">Pack : <span class="font-semibold">6 Sessions</span></p>
+                                        </div>
+                                    </div>
+                        
+                                </div>
+                        
+                        
+                        
                                 <div>
-                                    <p class="mt-4 text-sm">*Total amount must be paid in advance</p>
-                                    <p class="mt-2 text-sm">**1 hour session each</p>
+                                    <p class="mt-4 text-sm">*Each session is 60mins (1 hour)</p>
+                                    <p class="mt-2 text-sm">**To be paid in full in advance.</p>
                                 </div>
-            
+                        
                                 <div class="md:flex-row landscape:md:gap-8 md:gap-5 flex justify-center gap-4 pt-8 mx-auto">
                                     <button
                                         class=" md:px-8 md:py-5 whitespace-nowrap bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring hover:bg-light-purple hover:text-light px-8 py-6 mx-auto text-white transition rounded-full select-none">
-            
+                        
                                         <a class="md:text-lg text-base font-normal" href="#">Book a Session</a>
-            
+                        
                                     </button>
                                 </div>
                             </div>
