@@ -1145,6 +1145,34 @@ html {
   width: 1px;
 }
 
+.w-1 {
+  width: 0.25rem;
+}
+
+.w-4\/5 {
+  width: 80%;
+}
+
+.w-2 {
+  width: 0.5rem;
+}
+
+.w-\[20rem\] {
+  width: 20rem;
+}
+
+.w-\[10rem\] {
+  width: 10rem;
+}
+
+.w-\[15rem\] {
+  width: 15rem;
+}
+
+.w-\[17rem\] {
+  width: 17rem;
+}
+
 .min-w-full {
   min-width: 100%;
 }
@@ -1327,6 +1355,10 @@ html {
   align-items: flex-start;
 }
 
+.items-end {
+  align-items: flex-end;
+}
+
 .items-center {
   align-items: center;
 }
@@ -1483,12 +1515,44 @@ html {
   border-radius: 0.75rem;
 }
 
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+
 .border {
   border-width: 1px;
 }
 
 .border-4 {
   border-width: 4px;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-\[2px\] {
+  border-width: 2px;
+}
+
+.border-\[0\.25rem\] {
+  border-width: 0.25rem;
+}
+
+.border-\[0\.1rem\] {
+  border-width: 0.1rem;
+}
+
+.border-\[0\.8rem\] {
+  border-width: 0.8rem;
+}
+
+.border-\[0\.08rem\] {
+  border-width: 0.08rem;
+}
+
+.border-\[0\.07rem\] {
+  border-width: 0.07rem;
 }
 
 .border-t {
@@ -1508,6 +1572,11 @@ html {
 .border-purple-200 {
   --tw-border-opacity: 1;
   border-color: rgb(233 213 255 / var(--tw-border-opacity));
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .bg-\[\#25D366\] {
@@ -1782,6 +1851,11 @@ html {
   padding-bottom: 200px;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -1912,6 +1986,14 @@ html {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pb-24 {
+  padding-bottom: 6rem;
+}
+
+.pb-14 {
+  padding-bottom: 3.5rem;
 }
 
 .text-left {
@@ -2482,6 +2564,16 @@ input[type="checkbox"]:checked + label .arrow {
   .max-md\:hidden {
     display: none;
   }
+
+  .max-md\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .max-md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
 }
 
 @media (min-width: 640px) {
@@ -2708,6 +2800,22 @@ input[type="checkbox"]:checked + label .arrow {
     width: 95%;
   }
 
+  .md\:w-\[40\%\] {
+    width: 40%;
+  }
+
+  .md\:w-4\/5 {
+    width: 80%;
+  }
+
+  .md\:w-\[50rem\] {
+    width: 50rem;
+  }
+
+  .md\:w-\[45rem\] {
+    width: 45rem;
+  }
+
   .md\:-translate-y-8 {
     --tw-translate-y: -2rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -2736,6 +2844,14 @@ input[type="checkbox"]:checked + label .arrow {
 
   .md\:items-center {
     align-items: center;
+  }
+
+  .md\:justify-start {
+    justify-content: flex-start;
+  }
+
+  .md\:justify-end {
+    justify-content: flex-end;
   }
 
   .md\:gap-0 {
@@ -2772,6 +2888,10 @@ input[type="checkbox"]:checked + label .arrow {
 
   .md\:gap-7 {
     gap: 1.75rem;
+  }
+
+  .md\:gap-6 {
+    gap: 1.5rem;
   }
 
   .md\:divide-x > :not([hidden]) ~ :not([hidden]) {
@@ -2907,6 +3027,11 @@ input[type="checkbox"]:checked + label .arrow {
     padding-bottom: 1.5rem;
   }
 
+  .md\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
   .md\:pb-0 {
     padding-bottom: 0px;
   }
@@ -2967,6 +3092,30 @@ input[type="checkbox"]:checked + label .arrow {
     padding-top: 1.25rem;
   }
 
+  .md\:pl-24 {
+    padding-left: 6rem;
+  }
+
+  .md\:pr-24 {
+    padding-right: 6rem;
+  }
+
+  .md\:pr-16 {
+    padding-right: 4rem;
+  }
+
+  .md\:pr-14 {
+    padding-right: 3.5rem;
+  }
+
+  .md\:pr-10 {
+    padding-right: 2.5rem;
+  }
+
+  .md\:pt-32 {
+    padding-top: 8rem;
+  }
+
   .md\:text-left {
     text-align: left;
   }
@@ -3003,6 +3152,11 @@ input[type="checkbox"]:checked + label .arrow {
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -3261,6 +3415,30 @@ input[type="checkbox"]:checked + label .arrow {
     flex-direction: column-reverse;
   }
 
+  .portrait\:gap-20 {
+    gap: 5rem;
+  }
+
+  .portrait\:gap-16 {
+    gap: 4rem;
+  }
+
+  .portrait\:gap-12 {
+    gap: 3rem;
+  }
+
+  .portrait\:gap-10 {
+    gap: 2.5rem;
+  }
+
+  .portrait\:gap-8 {
+    gap: 2rem;
+  }
+
+  .portrait\:gap-4 {
+    gap: 1rem;
+  }
+
   .portrait\:divide-y > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-y-reverse: 0;
     border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
@@ -3398,6 +3576,10 @@ input[type="checkbox"]:checked + label .arrow {
       flex-direction: column;
     }
 
+    .portrait\:md\:gap-4 {
+      gap: 1rem;
+    }
+
     .portrait\:md\:px-20 {
       padding-left: 5rem;
       padding-right: 5rem;
@@ -3406,6 +3588,11 @@ input[type="checkbox"]:checked + label .arrow {
     .portrait\:md\:px-24 {
       padding-left: 6rem;
       padding-right: 6rem;
+    }
+
+    .portrait\:md\:px-32 {
+      padding-left: 8rem;
+      padding-right: 8rem;
     }
 
     .portrait\:md\:pb-\[25rem\] {
@@ -3762,6 +3949,22 @@ input[type="checkbox"]:checked + label .arrow {
     justify-content: flex-end;
   }
 
+  .landscape\:gap-28 {
+    gap: 7rem;
+  }
+
+  .landscape\:gap-32 {
+    gap: 8rem;
+  }
+
+  .landscape\:gap-24 {
+    gap: 6rem;
+  }
+
+  .landscape\:gap-0 {
+    gap: 0px;
+  }
+
   .landscape\:divide-x > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-x-reverse: 0;
     border-right-width: calc(1px * var(--tw-divide-x-reverse));
@@ -3802,8 +4005,47 @@ input[type="checkbox"]:checked + label .arrow {
     padding-bottom: 1.25rem;
   }
 
+  .landscape\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .landscape\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .landscape\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
   .landscape\:pt-0 {
     padding-top: 0px;
+  }
+
+  .landscape\:pl-24 {
+    padding-left: 6rem;
+  }
+
+  .landscape\:pl-20 {
+    padding-left: 5rem;
+  }
+
+  .landscape\:pl-16 {
+    padding-left: 4rem;
+  }
+
+  .landscape\:pl-9 {
+    padding-left: 2.25rem;
+  }
+
+  .landscape\:pr-0 {
+    padding-right: 0px;
+  }
+
+  .landscape\:pl-0 {
+    padding-left: 0px;
   }
 
   .landscape\:text-left {

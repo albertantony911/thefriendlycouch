@@ -365,530 +365,584 @@
 
 
 
-        <div class="bg-dark-purple flex flex-col mx-auto">
-
-            <div class="py-auto bg-dark-purple flex w-full mx-auto">
-            
-                <div class=" text-slate-100 md:pt-24 flex flex-col items-center justify-center pt-24 pb-16 mx-auto">
-                    <div class=" md:w-1/2 w-full">
-                        <div class="">
-                            <img class="w-1/2 mx-auto" src="../img/couch.svg" alt="" />
-                        </div>
-            
-                        <div class="md:pt-5 md:pb-10 pt-5 pb-10">
-                            <p class="text-3xl font-semibold text-center">
-                                THERAPY PRICING
-                            </p>
-                        </div>
-                    </div>
-            
-                    <div class="md:text-lg md:w-2/3 md:px-0 px-8 mx-auto my-auto text-sm leading-relaxed text-center">
-                        <p class="">
-                            Trained and experienced therapists that provide a non-judgmental open space for you to empower yourself. Our Clinical Psychologists are RCI registered who can provide specialised therapy for disorders and severe concerns. If want to know more about how therapy happens with The Friendly Couch visit our dedicated page.
-                        </p>
-                        
-                    </div>
-                    <div class="flex mt-10">
-
-                        <p
-                            class="hover:text-white hover:bg-light-purple text-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 mx-auto text-sm transition bg-gray-100 rounded-full">
-                            <a href="#">THERAPY</a>
-                        </p>
-
-                    </div>
-                    
-                    
-                </div>
-            </div>
-            
-
-            
-            
+        <div class="bg-dark-purple text-slate-100 flex flex-col mx-auto">
             <div x-data="{ abroad: false }">
-                <div class="md:w-[25rem] flex w-2/3 mx-auto font-medium bg-purple-200 border-4 border-purple-200 rounded-full">
-                    <button class="block w-full py-2 text-sm transition rounded-full"
-                        :class="{ 'bg-white shadow-sm': !abroad, 'hover:text-gray-400': abroad }" @click="abroad = false"
-                        type="button">
-                        INDIA
-                    </button>
-                    <button class="block w-full py-2 text-sm transition rounded-full"
-                        :class="{ 'bg-white shadow-sm': abroad, 'hover:text-gray-400': !abroad }" @click="abroad = true"
-                        type="button">
-                        OUTSIDE INDIA
-                    </button>
-                </div>
+
+
+                <div class="flex flex-col">
+
+                    <div class="landscape:flex-row landscape:px-24 gap-14 landscape:gap-0 flex flex-col justify-center pt-24 mx-auto">
             
-                <div class="md:pt-14 md:text-2xl pt-10 text-xl font-semibold text-center text-white">
-                    <p><span x-text="abroad ? 'STANDARD CHARGES OUTSIDE INDIA' : 'STANDARD CHARGES IN INDIA'"></span></p>
-                </div>
-
-                <div class="md:pb-14 md:pt-5 md:text-base pt-5 pb-10 text-sm font-light text-center text-white">
-                    <p><span x-text="abroad ? '(For professionals working abroad)' : ''"></span></p>
-                </div>
-            
-                <div class=" mx-auto">
-            
-                    <div class="landscape:flex-row landscape:items-center md:gap-20 gap-14 flex flex-col justify-center w-full pb-16 mx-auto">
-                        
-
-                        <div class="landscape:w-1/2 landscape:justify-end flex justify-center w-full mx-auto">
-                        
-                            <div
-                                class="md:text-base text-dark-purple rounded-[30px] landscape:px-10 flex flex-col justify-center px-6 py-10 text-sm text-center bg-white shadow-2xl">
-                        
-                                <h4 class="md:text-xl text-lg font-semibold">COUNSELLING PSYCHOLOGIST</h4>
-                        
-                                <div class="py-4 md:py-6 rounded-[30px] shadow-lg md:px-8 px-9 bg-gray-100 flex flex-col mx-auto mt-8 text-dark-purple">
-                        
-                                    <p class="mb-4 text-xl font-semibold text-center">SILVER PACK</p>
-                        
-                                    <div class="md:gap-10 flex flex-row justify-center gap-5 mx-auto">
-                        
-                                        <div class="flex flex-col justify-center gap-1">
-                        
-                                            <p class="text-2xl font-semibold">
-                                                <span class="font-mono">₹</span><span x-text="abroad ? '4,400' : '2,200'"></span>
-                                            </p>
-                                            <div class="flex text-xs font-medium">
-                                                <p class="">PER SESSION*</p>
-                                            </div>
-                                        </div>
-                        
-                                        <div class="w-[1px] h-16 bg-gray-300"></div>
-                        
-                                        <div class="flex flex-col justify-center gap-1 text-left">
-                        
-                                            <p class="">Total : <span class="font-mono font-semibold">₹</span>
-                                                <span class="text-base font-semibold" x-text="abroad ? '4,400' : '2,200'"></span>**
-                                            </p>
-                                            <p class="">Pack : <span class="font-semibold">1 Session</span></p>
-                                        </div>
-                                    </div>
-                        
-                                </div>
-                        
-                        
-                                <div class="py-5 md:py-6 rounded-[30px] shadow-lg md:px-8 px-9 bg-mid-purple flex flex-col mx-auto mt-5 text-white">
-                        
-                                    <p class="mb-5 text-xl font-semibold text-center">PURPLE PACK</p>
-                        
-                                    <div class="md:gap-10 flex flex-row justify-center gap-5 mx-auto">
-                        
-                                        <div class="flex flex-col justify-center gap-1">
-                                            <p class=" absolute text-sm font-semibold translate-x-4 -translate-y-8 opacity-50">
-                                                <span class="font-mono">₹</span><span class="line-through"
-                                                    x-text="abroad ? '4,400' : '2,200'"></span>
-                                            </p>
-                                            <p class="text-2xl font-semibold">
-                                                <span class="font-mono">₹</span><span x-text="abroad ? '4,000' : '2,000'"></span>
-                                            </p>
-                                            <div class=" flex flex-col">
-                                                <p class="text-xs font-medium">PER SESSION*</p>
-                                            </div>
-                                        </div>
-                        
-                                        <div class="w-[1px] h-16 bg-gray-300"></div>
-                        
-                                        <div class="flex flex-col justify-center gap-1 text-left">
-                        
-                                            <p
-                                                class="md:-translate-y-8 text-sm md:translate-x-14 absolute  font-semibold translate-x-[3rem] -translate-y-8 opacity-50">
-                                                <span class="font-mono">₹</span>
-                                                <span class="line-through" x-text="abroad ? '17,600' : '8,800'"></span>
-                                            </p>
-                                            <p class="">Total : <span class="font-mono font-semibold">₹</span>
-                                                <span class="text-base font-semibold" x-text="abroad ? '16,000' : '8,000'"></span>**
-                                            </p>
-                                            <p class="">Pack : <span class="font-semibold">4 Sessions</span></p>
-                                        </div>
-                                    </div>
-                        
-                                </div>
-                        
-                                <div class="py-5 md:py-6 rounded-[30px] shadow-lg md:px-8 px-9 bg-dark-purple flex flex-col mx-auto mt-5 text-white">
-                        
-                                    <p class="mb-5 text-xl font-semibold text-center">VIOLET PACK</p>
-                        
-                                    <div class="md:gap-10 flex flex-row justify-center gap-5 mx-auto">
-                        
-                                        <div class="flex flex-col justify-center gap-1">
-                                            <p class=" absolute text-sm font-semibold translate-x-4 -translate-y-8 opacity-50">
-                                                <span class="font-mono">₹</span><span class="line-through"
-                                                    x-text="abroad ? '4,400' : '2,200'"></span>
-                                            </p>
-                                            <p class="text-2xl font-semibold">
-                                                <span class="font-mono">₹</span><span x-text="abroad ? '3,850' : '1,925'"></span>
-                                            </p>
-                                            <div class=" flex flex-col">
-                                                <p class="text-xs font-medium">PER SESSION*</p>
-                                            </div>
-                                        </div>
-                        
-                                        <div class="w-[1px] h-16 bg-gray-300"></div>
-                        
-                                        <div class="flex flex-col justify-center gap-1 text-left">
-                        
-                                            <p
-                                                class="md:-translate-y-8 text-sm md:translate-x-14 absolute  font-semibold translate-x-[3rem] -translate-y-8 opacity-50">
-                                                <span class="font-mono">₹</span>
-                                                <span class="line-through" x-text="abroad ? '26,400' : '13,200'"></span>
-                                            </p>
-                                            <p class="">Total : <span class="font-mono font-semibold">₹</span>
-                                                <span class="text-base font-semibold" x-text="abroad ? '23,100' : '11,550'"></span>**
-                                            </p>
-                                            <p class="">Pack : <span class="font-semibold">6 Sessions</span></p>
-                                        </div>
-                                    </div>
-                        
-                                </div>
-                        
-                        
-                        
-                                <div>
-                                    <p class="mt-3 text-xs">*Each session is 60mins (1 hour)</p>
-                                    <p class="mt-1 text-xs">**To be paid in full in advance.</p>
-                                </div>
-                        
-                                <div class="md:flex-row flex justify-center gap-4 pt-5 mx-auto">
-                                    <button
-                                        class="md:px-8 md:py-5 whitespace-nowrap bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring hover:bg-light-purple hover:text-light px-8 py-6 mx-auto text-white transition rounded-full select-none">
-                        
-                                        <a class="md:text-lg text-base font-normal" href="#">Book a Session</a>
-                        
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="landscape:w-1/2 landscape:justify-start flex justify-center w-full mx-auto">
-                        
-                            <div
-                                class="md:text-base text-dark-purple rounded-[30px] landscape:px-10 flex flex-col justify-center px-6 py-10 text-sm text-center bg-white shadow-2xl">
-                        
-                                <h4 class="md:text-xl text-lg font-semibold">CLINICAL PSYCHOLOGIST</h4>
-                        
-                                <div class="py-4 md:py-6 rounded-[30px] shadow-lg md:px-8 px-9 bg-gray-100 flex flex-col mx-auto mt-8 text-dark-purple">
-                        
-                                    <p class="mb-4 text-xl font-semibold text-center">SILVER PACK</p>
-                        
-                                    <div class="md:gap-10 flex flex-row justify-center gap-5 mx-auto">
-                        
-                                        <div class="flex flex-col justify-center gap-1">
-                        
-                                            <p class="text-2xl font-semibold">
-                                                <span class="font-mono">₹</span><span x-text="abroad ? '5,000' : '2,500'"></span>
-                                            </p>
-                                            <div class="flex text-xs font-medium">
-                                                <p class="">PER SESSION*</p>
-                                            </div>
-                                        </div>
-                        
-                                        <div class="w-[1px] h-16 bg-gray-300"></div>
-                        
-                                        <div class="flex flex-col justify-center gap-1 text-left">
-                        
-                                            <p class="">Total : <span class="font-mono font-semibold">₹</span>
-                                                <span class="text-base font-semibold" x-text="abroad ? '5,000' : '2,500'"></span>**
-                                            </p>
-                                            <p class="">Pack : <span class="font-semibold">1 Session</span></p>
-                                        </div>
-                                    </div>
-                        
-                                </div>
-                        
-                        
-                                <div class="py-5 md:py-6 rounded-[30px] shadow-lg md:px-8 px-9 bg-mid-purple flex flex-col mx-auto mt-5 text-white">
-                                
-                                    <p class="mb-5 text-xl font-semibold text-center">PURPLE PACK</p>
-                                
-                                    <div class="md:gap-10 flex flex-row justify-center gap-5 mx-auto">
-                                
-                                        <div class="flex flex-col justify-center gap-1">
-                                            <p class=" absolute text-sm font-semibold translate-x-4 -translate-y-8 opacity-50">
-                                                <span class="font-mono">₹</span><span class="line-through" x-text="abroad ? '5,000' : '2,500'"></span>
-                                            </p>
-                                            <p class="text-2xl font-semibold">
-                                                <span class="font-mono">₹</span><span x-text="abroad ? '4,500' : '2,250'"></span>
-                                            </p>
-                                            <div class=" flex flex-col">
-                                                <p class="text-xs font-medium">PER SESSION*</p>
-                                            </div>
-                                        </div>
-                                
-                                        <div class="w-[1px] h-16 bg-gray-300"></div>
-                                
-                                        <div class="flex flex-col justify-center gap-1 text-left">
-                                
-                                            <p
-                                                class="md:-translate-y-8 text-sm md:translate-x-14 absolute  font-semibold translate-x-[3rem] -translate-y-8 opacity-50">
-                                                <span class="font-mono">₹</span>
-                                                <span class="line-through" x-text="abroad ? '20,000' : '10,000'"></span>
-                                            </p>
-                                            <p class="">Total : <span class="font-mono font-semibold">₹</span>
-                                                <span class="text-base font-semibold" x-text="abroad ? '18,000' : '9,000'"></span>**
-                                            </p>
-                                            <p class="">Pack : <span class="font-semibold">4 Sessions</span></p>
-                                        </div>
-                                    </div>
-                                
-                                </div>
-                        
-                                <div class="py-5 md:py-6 rounded-[30px] shadow-lg md:px-8 px-9 bg-dark-purple flex flex-col mx-auto mt-5 text-white">
-                        
-                                    <p class="mb-5 text-xl font-semibold text-center">VIOLET PACK</p>
-                        
-                                    <div class="md:gap-10 flex flex-row justify-center gap-5 mx-auto">
-                        
-                                        <div class="flex flex-col justify-center gap-1">
-                                            <p class=" absolute text-sm font-semibold translate-x-4 -translate-y-8 opacity-50">
-                                                <span class="font-mono">₹</span><span class="line-through"
-                                                    x-text="abroad ? '5,000' : '2,500'"></span>
-                                            </p>
-                                            <p class="text-2xl font-semibold">
-                                                <span class="font-mono">₹</span><span x-text="abroad ? '4,375' : '2,188'"></span>
-                                            </p>
-                                            <div class=" flex flex-col">
-                                                <p class="text-xs font-medium">PER SESSION*</p>
-                                            </div>
-                                        </div>
-                        
-                                        <div class="w-[1px] h-16 bg-gray-300"></div>
-                        
-                                        <div class="flex flex-col justify-center gap-1 text-left">
-                        
-                                            <p
-                                                class="md:-translate-y-8 text-sm md:translate-x-14 absolute  font-semibold translate-x-[3rem] -translate-y-8 opacity-50">
-                                                <span class="font-mono">₹</span>
-                                                <span class="line-through" x-text="abroad ? '30,000' : '15,000'"></span>
-                                            </p>
-                                            <p class="">Total : <span class="font-mono font-semibold">₹</span>
-                                                <span class="text-base font-semibold" x-text="abroad ? '26,250' : '13,128'"></span>**
-                                            </p>
-                                            <p class="">Pack : <span class="font-semibold">6 Sessions</span></p>
-                                        </div>
-                                    </div>
-                        
-                                </div>
-                        
-                        
-                        
-                                <div>
-                                    <p class="mt-3 text-xs">*Each session is 60mins (1 hour)</p>
-                                    <p class="mt-1 text-xs">**To be paid in full in advance.</p>
-                                </div>
-                        
-                                <div class="md:flex-row flex justify-center gap-4 pt-5 mx-auto">
-                                    <button
-                                        class="md:px-8 md:py-5 whitespace-nowrap bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring hover:bg-light-purple hover:text-light px-8 py-6 mx-auto text-white transition rounded-full select-none">
-                        
-                                        <a class="md:text-lg text-base font-normal" href="#">Book a Session</a>
-                        
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>           
-                </div>
-            </div> 
-        </div>
-
-
-
-        <div class="bg-mid-purple text-slate-100 flex flex-col mx-auto">
-            <div x-data="{ abroad: false }">
-                
-                    <div
-                        class="landscape:flex-row md:gap-0 gap-14 md:mx-16 flex flex-col justify-center py-16 mx-auto">
-
-                        <div class="md:text-lg md:text-left md:w-1/2 md:px-24 w-full px-4 mx-auto my-auto text-sm leading-relaxed text-left">
+                        <div
+                            class="landscape:w-1/2 portrait:md:px-32 w-full px-10 mx-auto my-auto leading-relaxed text-left">
                             <div class=" mx-auto">
-                        
-                                <div class=" flex w-full mx-auto">
-                                
+            
+                                <div class=" flex w-full">
+            
                                     <div class=" flex flex-col items-center mx-auto text-left">
                                         <div class="">
                                             <div class="">
                                                 <img class="w-1/2 mx-auto" src="../img/couch.svg" alt="" />
                                             </div>
-                                
+            
                                             <div class="md:pt-5 md:pb-10 pt-5 pb-10">
                                                 <p class="text-3xl font-semibold text-center">
-                                                    DIAGNOSIS PRICING
+                                                    THERAPY PRICING
                                                 </p>
                                             </div>
                                         </div>
-                                
-                                        <div class="md:text-lg md:px-0 px-8 mx-auto my-auto text-sm leading-relaxed text-left">
+            
+                                        <div class="md:text-lg md:px-5 mx-auto my-auto text-sm leading-relaxed text-left">
                                             <p class="">
-                                                We use standardised tests & assessments and follow the International Classification of Diseases (ICD-10) guidelines to give you official diagnoses for mental health disorders.
+                                                Trained and experienced therapists that provide a non-judgmental open space for you to empower yourself. Our Clinical Psychologists are RCI registered who can provide specialised therapy for disorders and severe concerns. 
                                             </p>
-                                
+            
                                         </div>
-                                        
-                                        <div class="flex mt-10">
-                                
+            
+                                        <div class="flex mt-12">
+            
                                             <p
                                                 class="hover:text-white hover:bg-light-purple text-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 mx-auto text-sm transition bg-gray-100 rounded-full">
-                                                <a href="#">DIAGNOSIS</a>
+                                                <a href="#">THERAPY</a>
                                             </p>
-                                
+            
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-        
-        
-                        <div class="md:px-28 text-dark-purple md:w-1/2 flex flex-col justify-center w-full px-4 mx-auto">
-
+            
+            
+                        <div class=" text-dark-purple md:w-1/2 flex flex-col justify-center w-full mx-auto">
+            
                             <div class="pb-10">
-                                <div class="md:w-[20rem] flex w-2/3 mx-auto font-medium bg-purple-200 border-4 border-purple-200 rounded-full">
+                                <div
+                                    class="md:w-[20rem] flex w-3/4 mx-auto font-medium bg-purple-200 border-4 border-purple-200 rounded-full">
                                     <button class="block w-full py-2 text-sm transition rounded-full"
-                                        :class="{ 'bg-white shadow-sm': !abroad, 'hover:text-gray-400': abroad }" @click="abroad = false" type="button">
+                                        :class="{ 'bg-white shadow-sm': !abroad, 'hover:text-gray-400': abroad }"
+                                        @click="abroad = false" type="button">
                                         INDIA
                                     </button>
                                     <button class="block w-full py-2 text-sm transition rounded-full"
-                                        :class="{ 'bg-white shadow-sm': abroad, 'hover:text-gray-400': !abroad }" @click="abroad = true" type="button">
+                                        :class="{ 'bg-white shadow-sm': abroad, 'hover:text-gray-400': !abroad }"
+                                        @click="abroad = true" type="button">
                                         OUTSIDE INDIA
                                     </button>
-                                </div> 
+                                </div>
                             </div>
-        
+            
                             <div
-                                class="md:text-base text-dark-purple rounded-[30px] landscape:px-8 flex flex-col justify-center mx-auto px-6 py-10 text-sm text-center bg-white shadow-2xl">
-
+                                class="md:text-base text-dark-purple rounded-[30px] md:px-10 flex flex-col justify-center mx-auto px-7 py-8 md:py-10 text-sm text-center bg-white shadow-2xl">
+            
                                 <div>
                                     <div class="md:text-2xl text-xl font-semibold text-center">
                                         <p><span x-text="abroad ? 'CHARGES OUTSIDE INDIA' : 'CHARGES IN INDIA'"></span></p>
                                     </div>
-                                    
+            
                                     <div class="pt-1 pb-2 text-sm font-light text-center">
                                         <p><span x-text="abroad ? '(For professionals working abroad)' : ''"></span></p>
                                     </div>
                                 </div>
-        
+            
                                 <div
                                     class="py-4 md:py-6 rounded-[30px] md:px-8 px-9 bg-gray-100 shadow-lg flex flex-col mx-auto mt-2 text-dark-purple">
-
-                                    <h4 class="md:text-xl pb-4 text-lg font-semibold">DIAGNOSIS PACKAGE</h4>
-        
-        
-                                    <div class="md:gap-7 flex flex-row justify-center gap-5 mx-auto">
-        
+            
+            
+            
+                                    <div class="md:gap-7 flex flex-row items-center justify-center gap-5 mx-auto">
+            
                                         <div class=" flex flex-col justify-center gap-1">
-        
+            
                                             <p class="text-2xl font-semibold">
-                                                <span class="font-mono">₹</span><span
-                                                    x-text="abroad ? '20,000' : '10,000'"></span>
+                                                <span class="font-mono">₹</span><span x-text="abroad ? '4,400' : '2,200'"></span>
                                             </p>
-                                            
-                                            <p class="flex text-xs font-medium">PER DIAGNOSIS</p>
-                                          
+            
+                                            <p class="flex text-xs font-medium">PER SESSION</p>
+            
                                         </div>
-        
+            
                                         <div class="w-[1px] h-20 bg-gray-300"></div>
-        
-                                        <div>
-                                            <ul class="flex flex-col justify-center gap-2 text-left">
-
-                                                <li class=" flex space-x-1">
-                                                    <svg class="flex-shrink-0 w-4 h-4 md:w-3 md:h-3 md:mt-[0.3rem] mt-[0.15rem]" aria-hidden="true"
-                                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                                        <path
-                                                            d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                                                    </svg>
-                                                    <span class="text-sm font-medium">
-                                                        Case History
-                                                    </span>
-                                                </li>
-
-                                                <li class=" flex space-x-1">
-                                                    <svg class="flex-shrink-0 w-4 h-4 md:w-3 md:h-3 md:mt-[0.3rem] mt-[0.15rem]" aria-hidden="true"
-                                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                                        <path
-                                                            d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                                                    </svg>
-                                                    <span class="text-sm font-medium">
-                                                        Diagnosis Test
-                                                    </span>
-                                                </li>
-
-                                                <li class=" flex space-x-1">
-                                                    <svg class="flex-shrink-0 w-4 h-4 md:w-3 md:h-3 md:mt-[0.3rem] mt-[0.15rem]" aria-hidden="true"
-                                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                                        <path
-                                                            d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                                                    </svg>
-                                                    <span class="text-sm font-medium">
-                                                        Report
-                                                    </span>
-                                                </li>
-                                            </ul>    
+            
+                                        <div class=" text-base font-semibold text-left whitespace-pre-line">
+                                            <p>Counselling
+                                                Psychologist</p>
                                         </div>
                                     </div>
                                 </div>
 
+                                <div class="py-4 md:py-6 rounded-[30px] md:px-8 px-9 bg-gray-100 shadow-lg flex flex-col mx-auto mt-7 text-dark-purple">
+                                
+                                
+                                
+                                    <div class="md:gap-7 flex flex-row items-center justify-center gap-5 mx-auto">
+                                
+                                        <div class=" flex flex-col justify-center gap-1">
+                                
+                                            <p class="text-2xl font-semibold">
+                                                <span class="font-mono">₹</span><span x-text="abroad ? '5,000' : '2,500'"></span>
+                                            </p>
+                                
+                                            <p class="flex text-xs font-medium">PER SESSION</p>
+                                
+                                        </div>
+                                
+                                        <div class="w-[1px] h-20 bg-gray-300"></div>
+                                
+                                        <div class=" text-base font-semibold text-left whitespace-pre-line">
+                                            <p>Clinical
+                                                Psychologist</p>
+                                        </div>
+                                    </div>
+                                </div>
+            
                                 <div>
                                     <p class="mt-3 text-xs">Any note we want to mention</p>
                                 </div>
-                            
+            
                                 <div class="md:flex-row flex justify-center gap-4 pt-5 mx-auto">
                                     <button
                                         class="md:px-8 md:py-5 whitespace-nowrap bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring hover:bg-light-purple hover:text-light px-8 py-6 mx-auto text-white transition rounded-full select-none">
-                                
+            
                                         <a class="md:text-lg text-base font-normal" href="#">Book a Session</a>
-                                
+            
                                     </button>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <div class="md:text-3xl md:w-[45rem] flex flex-col items-center w-[17rem] pt-28  mx-auto text-xl font-semibold ">
+                        <span class="px-4">THERAPY PACKAGES</span>
+                        <p class=" pb-14 mt-5 text-sm font-normal text-center">we can put a description about discounts here</p>
+                        
+                    </div>
+                    
+
+                    
+                    
+                        <div
+                            class="md:flex-row md:items-center portrait:md:gap-4 landscape:gap-24 gap-14 pb-28 flex flex-col justify-center w-full mx-auto">
+                    
+                    
+                            <div class="md:w-1/2 md:justify-end flex justify-center w-full mx-auto">
+                    
+                                <div
+                                    class="md:text-base text-dark-purple rounded-[30px] landscape:px-10 flex flex-col justify-center px-6 py-10 text-sm text-center bg-white shadow-2xl">
+                    
+                                    <h4 class="md:text-xl text-lg font-semibold">COUNSELLING PSYCHOLOGIST</h4>
+
+                                    <div
+                                        class="py-5 md:py-6 rounded-[30px] shadow-lg md:px-8 px-9 bg-mid-purple flex flex-col mx-auto mt-5 text-white">
+                    
+                                        <p class="mb-5 text-xl font-semibold text-center">PURPLE PACK</p>
+                    
+                                        <div class="md:gap-5 flex flex-row justify-center gap-5 mx-auto">
+                    
+                                            <div class="flex flex-col justify-center gap-1">
+                                                <p class=" absolute text-sm font-semibold translate-x-4 -translate-y-8 opacity-50">
+                                                    <span class="font-mono">₹</span><span class="line-through"
+                                                        x-text="abroad ? '4,400' : '2,200'"></span>
+                                                </p>
+                                                <p class="text-2xl font-semibold">
+                                                    <span class="font-mono">₹</span><span x-text="abroad ? '4,000' : '2,000'"></span>
+                                                </p>
+                                                <div class=" flex flex-col">
+                                                    <p class="text-xs font-medium">PER SESSION*</p>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="w-[1px] h-16 bg-gray-300"></div>
+                    
+                                            <div class="flex flex-col justify-center gap-1 text-left">
+                    
+                                                <p       
+                                                    class="md:-translate-y-8 text-sm md:translate-x-14 absolute  font-semibold translate-x-[3rem] -translate-y-8 opacity-50">
+                                                    <span class="font-mono">₹</span>
+                                                    <span class="line-through" x-text="abroad ? '17,600' : '8,800'"></span>
+                                                </p>         
+                                                <p class="">Total : <span class="font-mono font-semibold">₹</span>
+                                                    <span class="text-base font-semibold" x-text="abroad ? '16,000' : '8,000'"></span>**
+                                                </p>
+                                                <p class="">Pack : <span class="font-semibold">4 Sessions</span></p>
+                                            </div>
+                                        </div>
+                    
+                                    </div>
+                    
+                                    <div
+                                        class="py-5 md:py-6 rounded-[30px] shadow-lg md:px-8 px-9 bg-dark-purple flex flex-col mx-auto mt-5 text-white">
+                    
+                                        <p class="mb-5 text-xl font-semibold text-center">VIOLET PACK</p>
+                    
+                                        <div class="md:gap-5 flex flex-row justify-center gap-5 mx-auto">
+                    
+                                            <div class="flex flex-col justify-center gap-1">
+                                                <p class=" absolute text-sm font-semibold translate-x-4 -translate-y-8 opacity-50">
+                                                    <span class="font-mono">₹</span><span class="line-through"
+                                                        x-text="abroad ? '4,400' : '2,200'"></span>
+                                                </p>
+                                                <p class="text-2xl font-semibold">
+                                                    <span class="font-mono">₹</span><span x-text="abroad ? '3,850' : '1,925'"></span>
+                                                </p>
+                                                <div class=" flex flex-col">
+                                                    <p class="text-xs font-medium">PER SESSION*</p>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="w-[1px] h-16 bg-gray-300"></div>
+                    
+                                            <div class="flex flex-col justify-center gap-1 text-left">
+                    
+                                                <p
+                                                    class="md:-translate-y-8 text-sm md:translate-x-14 absolute  font-semibold translate-x-[3rem] -translate-y-8 opacity-50">
+                                                    <span class="font-mono">₹</span>
+                                                    <span class="line-through" x-text="abroad ? '26,400' : '13,200'"></span>
+                                                </p>
+                                                <p class="">Total : <span class="font-mono font-semibold">₹</span>
+                                                    <span class="text-base font-semibold" x-text="abroad ? '23,100' : '11,550'"></span>**
+                                                </p>
+                                                <p class="">Pack : <span class="font-semibold">6 Sessions</span></p>
+                                            </div>
+                                        </div>
+                    
+                                    </div>
+                    
+                    
+                    
+                                    <div>
+                                        <p class="mt-3 text-xs">*Each session is 60mins (1 hour)</p>
+                                        <p class="mt-1 text-xs">**To be paid in full in advance.</p>
+                                    </div>
+                    
+                                    <div class="md:flex-row flex justify-center gap-4 pt-5 mx-auto">
+                                        <button
+                                            class="md:px-8 md:py-5 whitespace-nowrap bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring hover:bg-light-purple hover:text-light px-8 py-6 mx-auto text-white transition rounded-full select-none">
+                    
+                                            <a class="md:text-lg text-base font-normal" href="#">Book a Session</a>
+                    
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                    
+                            <div class="md:w-1/2 md:justify-start flex justify-center w-full mx-auto">
+                    
+                                <div
+                                    class="md:text-base text-dark-purple rounded-[30px] landscape:px-10 flex flex-col justify-center px-6 py-10 text-sm text-center bg-white shadow-2xl">
+                    
+                                    <h4 class="md:text-xl text-lg font-semibold">CLINICAL PSYCHOLOGIST</h4>
+                    
+                    
+                    
+                    
+                                    <div
+                                        class="py-5 md:py-6 rounded-[30px] shadow-lg md:px-8 px-9 bg-mid-purple flex flex-col mx-auto mt-5 text-white">
+                    
+                                        <p class="mb-5 text-xl font-semibold text-center">PURPLE PACK</p>
+                    
+                                        <div class="md:gap-5 flex flex-row justify-center gap-5 mx-auto">
+                    
+                                            <div class="flex flex-col justify-center gap-1">
+                                                <p class=" absolute text-sm font-semibold translate-x-4 -translate-y-8 opacity-50">
+                                                    <span class="font-mono">₹</span><span class="line-through"
+                                                        x-text="abroad ? '5,000' : '2,500'"></span>
+                                                </p>
+                                                <p class="text-2xl font-semibold">
+                                                    <span class="font-mono">₹</span><span x-text="abroad ? '4,500' : '2,250'"></span>
+                                                </p>
+                                                <div class=" flex flex-col">
+                                                    <p class="text-xs font-medium">PER SESSION*</p>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="w-[1px] h-16 bg-gray-300"></div>
+                    
+                                            <div class="flex flex-col justify-center gap-1 text-left">
+                    
+                                                <p
+                                                    class="md:-translate-y-8 text-sm md:translate-x-14 absolute  font-semibold translate-x-[3rem] -translate-y-8 opacity-50">
+                                                    <span class="font-mono">₹</span>
+                                                    <span class="line-through" x-text="abroad ? '20,000' : '10,000'"></span>
+                                                </p>
+                                                <p class="">Total : <span class="font-mono font-semibold">₹</span>
+                                                    <span class="text-base font-semibold" x-text="abroad ? '18,000' : '9,000'"></span>**
+                                                </p>
+                                                <p class="">Pack : <span class="font-semibold">4 Sessions</span></p>
+                                            </div>
+                                        </div>
+                    
+                                    </div>
+                    
+                                    <div
+                                        class="py-5 md:py-6 rounded-[30px] shadow-lg md:px-8 px-9 bg-dark-purple flex flex-col mx-auto mt-5 text-white">
+                    
+                                        <p class="mb-5 text-xl font-semibold text-center">VIOLET PACK</p>
+                    
+                                        <div class="md:gap-5 flex flex-row justify-center gap-5 mx-auto">
+                    
+                                            <div class="flex flex-col justify-center gap-1">
+                                                <p class=" absolute text-sm font-semibold translate-x-4 -translate-y-8 opacity-50">
+                                                    <span class="font-mono">₹</span><span class="line-through"
+                                                        x-text="abroad ? '5,000' : '2,500'"></span>
+                                                </p>
+                                                <p class="text-2xl font-semibold">
+                                                    <span class="font-mono">₹</span><span x-text="abroad ? '4,375' : '2,188'"></span>
+                                                </p>
+                                                <div class=" flex flex-col">
+                                                    <p class="text-xs font-medium">PER SESSION*</p>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="w-[1px] h-16 bg-gray-300"></div>
+                    
+                                            <div class="flex flex-col justify-center gap-1 text-left">
+                    
+                                                <p
+                                                    class="md:-translate-y-8 text-sm md:translate-x-14 absolute  font-semibold translate-x-[3rem] -translate-y-8 opacity-50">
+                                                    <span class="font-mono">₹</span>
+                                                    <span class="line-through" x-text="abroad ? '30,000' : '15,000'"></span>
+                                                </p>
+                                                <p class="">Total : <span class="font-mono font-semibold">₹</span>
+                                                    <span class="text-base font-semibold" x-text="abroad ? '26,250' : '13,128'"></span>**
+                                                </p>
+                                                <p class="">Pack : <span class="font-semibold">6 Sessions</span></p>
+                                            </div>
+                                        </div>
+                    
+                                    </div>
+                    
+                    
+                    
+                                    <div>
+                                        <p class="mt-3 text-xs">*Each session is 60mins (1 hour)</p>
+                                        <p class="mt-1 text-xs">**To be paid in full in advance.</p>
+                                    </div>
+                    
+                                    <div class="md:flex-row flex justify-center gap-4 pt-5 mx-auto">
+                                        <button
+                                            class="md:px-8 md:py-5 whitespace-nowrap bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring hover:bg-light-purple hover:text-light px-8 py-6 mx-auto text-white transition rounded-full select-none">
+                    
+                                            <a class="md:text-lg text-base font-normal" href="#">Book a Session</a>
+                    
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+
+                </div>
             </div>
         </div>
 
 
+        
+
+
+
+        <div class="bg-mid-purple text-slate-100 flex flex-col mx-auto">
+            <div x-data="{ abroad: false }">
+
+
+                <div class="landscape:flex-row landscape:px-24 gap-14 landscape:gap-0 flex flex-col justify-center py-24 mx-auto">
+                
+                    <div class="landscape:w-1/2 portrait:md:px-32 w-full px-10 mx-auto my-auto leading-relaxed text-left">
+                        <div class=" mx-auto">
+                        
+                            <div class="flex w-full mx-auto">
+                        
+                                <div class=" flex flex-col items-center mx-auto text-left">
+                                    <div class="">
+                                        <div class="">
+                                            <img class="w-1/2 mx-auto" src="../img/couch.svg" alt="" />
+                                        </div>
+                        
+                                        <div class="md:pt-5 md:pb-10 pt-5 pb-10">
+                                            <p class="text-3xl font-semibold text-center">
+                                                DIAGNOSIS PRICING
+                                            </p>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="md:text-lg mx-auto my-auto text-sm leading-relaxed text-left">
+                                        <p class="">
+                                            We use standardised tests & assessments and follow the International Classification of Diseases
+                                            (ICD-10) guidelines to give you official diagnoses for mental health disorders.
+                                        </p>
+                        
+                                    </div>
+                        
+                                    <div class="flex mt-10">
+                        
+                                        <p
+                                            class="hover:text-white hover:bg-light-purple text-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 mx-auto text-sm transition bg-gray-100 rounded-full">
+                                            <a href="#">DIAGNOSIS</a>
+                                        </p>
+                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                
+                    <div class=" text-dark-purple landscape:w-1/2 flex flex-col justify-center w-full px-4 mx-auto">
+                    
+                        <div class="pb-10">
+                            <div class="md:w-[20rem] flex w-2/3 mx-auto font-medium bg-purple-200 border-4 border-purple-200 rounded-full">
+                                <button class="block w-full py-2 text-sm transition rounded-full"
+                                    :class="{ 'bg-white shadow-sm': !abroad, 'hover:text-gray-400': abroad }" @click="abroad = false"
+                                    type="button">
+                                    INDIA
+                                </button>
+                                <button class="block w-full py-2 text-sm transition rounded-full"
+                                    :class="{ 'bg-white shadow-sm': abroad, 'hover:text-gray-400': !abroad }" @click="abroad = true"
+                                    type="button">
+                                    OUTSIDE INDIA
+                                </button>
+                            </div>
+                        </div>
+                    
+                        <div
+                            class="md:text-base text-dark-purple rounded-[30px] landscape:px-8 flex flex-col justify-center mx-auto px-6 py-10 text-sm text-center bg-white shadow-2xl">
+                    
+                            <div>
+                                <div class="md:text-2xl text-xl font-semibold text-center">
+                                    <p><span x-text="abroad ? 'CHARGES OUTSIDE INDIA' : 'CHARGES IN INDIA'"></span></p>
+                                </div>
+                    
+                                <div class="pt-1 pb-2 text-sm font-light text-center">
+                                    <p><span x-text="abroad ? '(For professionals working abroad)' : ''"></span></p>
+                                </div>
+                            </div>
+                    
+                            <div
+                                class="py-4 md:py-6 rounded-[30px] md:px-8 px-9 bg-gray-100 shadow-lg flex flex-col mx-auto mt-2 text-dark-purple">
+                    
+                                <h4 class="md:text-xl pb-4 text-lg font-semibold">DIAGNOSIS PACKAGE</h4>
+                    
+                    
+                                <div class="md:gap-7 flex flex-row justify-center gap-5 mx-auto">
+                    
+                                    <div class=" flex flex-col justify-center gap-1">
+                    
+                                        <p class="text-2xl font-semibold">
+                                            <span class="font-mono">₹</span><span x-text="abroad ? '20,000' : '10,000'"></span>
+                                        </p>
+                    
+                                        <p class="flex text-xs font-medium">PER DIAGNOSIS</p>
+                    
+                                    </div>
+                    
+                                    <div class="w-[1px] h-20 bg-gray-300"></div>
+                    
+                                    <div>
+                                        <ul class="flex flex-col justify-center gap-2 text-left">
+                    
+                                            <li class=" flex space-x-1">
+                                                <svg class="flex-shrink-0 w-4 h-4 md:w-3 md:h-3 md:mt-[0.3rem] mt-[0.15rem]"
+                                                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 20 20">
+                                                    <path
+                                                        d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                                                </svg>
+                                                <span class="text-sm font-medium">
+                                                    Case History
+                                                </span>
+                                            </li>
+                    
+                                            <li class=" flex space-x-1">
+                                                <svg class="flex-shrink-0 w-4 h-4 md:w-3 md:h-3 md:mt-[0.3rem] mt-[0.15rem]"
+                                                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 20 20">
+                                                    <path
+                                                        d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                                                </svg>
+                                                <span class="text-sm font-medium">
+                                                    Diagnosis Test
+                                                </span>
+                                            </li>
+                    
+                                            <li class=" flex space-x-1">
+                                                <svg class="flex-shrink-0 w-4 h-4 md:w-3 md:h-3 md:mt-[0.3rem] mt-[0.15rem]"
+                                                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 20 20">
+                                                    <path
+                                                        d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                                                </svg>
+                                                <span class="text-sm font-medium">
+                                                    Report
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div>
+                                <p class="mt-3 text-xs">Any note we want to mention</p>
+                            </div>
+                    
+                            <div class="md:flex-row flex justify-center gap-4 pt-5 mx-auto">
+                                <button
+                                    class="md:px-8 md:py-5 whitespace-nowrap bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring hover:bg-light-purple hover:text-light px-8 py-6 mx-auto text-white transition rounded-full select-none">
+                    
+                                    <a class="md:text-lg text-base font-normal" href="#">Book a Session</a>
+                    
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                    
+            </div>
+        </div>
 
 
 
         <div class="bg-dark-purple text-slate-100 flex flex-col mx-auto">
             <div x-data="{ abroad: false }">
         
-                <div class="landscape:flex-row-reverse md:gap-0 gap-14 md:mx-16 flex flex-col justify-center py-16 mx-auto">
         
-                    <div
-                        class="md:text-lg md:text-left md:w-1/2 md:px-24 w-full px-4 mx-auto my-auto text-sm leading-relaxed text-left">
+                <div
+                    class="landscape:flex-row landscape:px-24 gap-14 landscape:gap-0 flex flex-col justify-center py-24 mx-auto">
+        
+                    <div class="landscape:w-1/2 portrait:md:px-32 w-full px-10 mx-auto my-auto leading-relaxed text-left">
                         <div class=" mx-auto">
-        
+                        
                             <div class=" flex w-full mx-auto">
-        
+                        
                                 <div class=" flex flex-col items-center mx-auto text-left">
                                     <div class="">
                                         <div class="">
                                             <img class="w-1/2 mx-auto" src="../img/couch.svg" alt="" />
                                         </div>
-        
+                        
                                         <div class="md:pt-5 md:pb-10 pt-5 pb-10">
                                             <p class="text-3xl font-semibold text-center">
                                                 COUPLE'S COUNSELLING
                                             </p>
                                         </div>
                                     </div>
-        
-                                    <div class="md:text-lg md:px-0 px-8 mx-auto my-auto text-sm leading-relaxed text-left">
+                        
+                                    <div class="md:text-lg mx-auto my-auto text-sm leading-relaxed text-left">
                                         <p class="">
-                                            Our Couple’s Counselling sessions empower couples to navigate through open dialogue and personal growth; enhancing communication and emotional intimacy while also equipping them with the skills needed for a balanced relationship.
+                                            Our Couple’s Counselling sessions empower couples to navigate through open dialogue and personal
+                                            growth; enhancing communication and emotional intimacy while also equipping them with the skills
+                                            needed for a balanced relationship.
                                         </p>
-        
+                        
                                     </div>
-        
+                        
                                     <div class="flex mt-10">
-        
+                        
                                         <p
                                             class="hover:text-white hover:bg-light-purple text-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 mx-auto text-sm transition bg-gray-100 rounded-full">
                                             <a href="#">COUPLE'S COUNSELLING</a>
                                         </p>
-        
+                        
                                     </div>
                                 </div>
                             </div>
@@ -896,86 +950,96 @@
                     </div>
         
         
-                    <div class="md:px-28 text-dark-purple md:w-1/2 flex flex-col justify-center w-full px-4 mx-auto">
-        
+                    <div class=" text-dark-purple landscape:w-1/2 flex flex-col justify-center w-full px-4 mx-auto">
+                    
                         <div class="pb-10">
-                            <div
-                                class="md:w-[20rem] flex w-2/3 mx-auto font-medium bg-purple-200 border-4 border-purple-200 rounded-full">
+                            <div class="md:w-[20rem] flex w-2/3 mx-auto font-medium bg-purple-200 border-4 border-purple-200 rounded-full">
                                 <button class="block w-full py-2 text-sm transition rounded-full"
-                                    :class="{ 'bg-white shadow-sm': !abroad, 'hover:text-gray-400': abroad }"
-                                    @click="abroad = false" type="button">
+                                    :class="{ 'bg-white shadow-sm': !abroad, 'hover:text-gray-400': abroad }" @click="abroad = false"
+                                    type="button">
                                     INDIA
                                 </button>
                                 <button class="block w-full py-2 text-sm transition rounded-full"
-                                    :class="{ 'bg-white shadow-sm': abroad, 'hover:text-gray-400': !abroad }"
-                                    @click="abroad = true" type="button">
+                                    :class="{ 'bg-white shadow-sm': abroad, 'hover:text-gray-400': !abroad }" @click="abroad = true"
+                                    type="button">
                                     OUTSIDE INDIA
                                 </button>
                             </div>
                         </div>
-        
+                    
                         <div
-                            class="md:text-base text-dark-purple rounded-[30px] landscape:px-8 flex flex-col justify-center mx-auto px-6 py-10 text-sm text-center bg-white shadow-2xl">
-        
+                            class="md:text-base text-dark-purple rounded-[30px]  flex flex-col justify-center mx-auto px-6 py-10 text-sm text-center bg-white shadow-2xl">
+                    
                             <div>
                                 <div class="md:text-2xl text-xl font-semibold text-center">
                                     <p><span x-text="abroad ? 'CHARGES OUTSIDE INDIA' : 'CHARGES IN INDIA'"></span></p>
                                 </div>
-        
+                    
                                 <div class="pt-1 pb-2 text-sm font-light text-center">
                                     <p><span x-text="abroad ? '(For professionals working abroad)' : ''"></span></p>
                                 </div>
                             </div>
-        
+                    
                             <div
                                 class="py-4 md:py-6 rounded-[30px] md:px-8 px-9 bg-gray-100 shadow-lg flex flex-col mx-auto mt-2 text-dark-purple">
-        
+                    
                                 <h4 class="md:text-xl pb-4 text-lg font-semibold">COUNSELLING PACKAGE</h4>
-        
-        
+                    
+                    
                                 <div class="md:gap-7 flex flex-row justify-center gap-5 mx-auto">
-        
+                    
                                     <div class=" flex flex-col justify-center gap-1">
-        
+                    
                                         <p class="text-2xl font-semibold">
                                             <span class="font-mono">₹</span><span x-text="abroad ? '4,400' : '2,200'"></span>
                                         </p>
-        
+                    
                                         <p class="flex text-xs font-medium">INDIVIDUAL SESSION</p>
-        
+                    
                                     </div>
-        
+                    
                                     <div class="w-[1px] h-16 bg-gray-300"></div>
-        
+                    
                                     <div class=" flex flex-col justify-center gap-1">
-                                    
+                    
                                         <p class="text-2xl font-semibold">
                                             <span class="font-mono">₹</span><span x-text="abroad ? '8,000' : '4,000'"></span>
                                         </p>
-                                    
+                    
                                         <p class="flex text-xs font-medium">JOINT SESSION</p>
-                                    
+                    
                                     </div>
                                 </div>
                             </div>
-        
+                    
                             <div>
                                 <p class="mt-3 text-xs">Any note we want to mention</p>
                             </div>
-        
+                    
                             <div class="md:flex-row flex justify-center gap-4 pt-5 mx-auto">
                                 <button
                                     class="md:px-8 md:py-5 whitespace-nowrap bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring hover:bg-light-purple hover:text-light px-8 py-6 mx-auto text-white transition rounded-full select-none">
-        
+                    
                                     <a class="md:text-lg text-base font-normal" href="#">Book a Session</a>
-        
+                    
                                 </button>
                             </div>
                         </div>
                     </div>
                 </div>
+        
+        
             </div>
         </div>
+
+
+        
+
+
+
+
+
+        
 
 
         
