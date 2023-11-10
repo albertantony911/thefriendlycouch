@@ -1,7 +1,6 @@
 
 
 
-
 document.addEventListener("DOMContentLoaded", function () {
   const menuButtonContainer = document.getElementById("menuButtonContainer");
   const nav = document.querySelector("nav");

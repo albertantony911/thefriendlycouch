@@ -1,31 +1,36 @@
 <!doctype html>
-<html class="scroll-smooth">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" type="text/css" href="../output.css">
-    <link rel="stylesheet" type="text/css" href="../css/test.css">
-    
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../output.css">
+  <link rel="stylesheet" type="text/css" href="../css/test.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-      
-    <script src="https://kit.fontawesome.com/9fa9d11dac.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.x.x/dist/alpine.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-    
-    <script src="../js/main.js" defer></script>
-    <script src="../js/test.js" defer></script>
-    <script src="../js/gsap.js" defer></script>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
 
 
+  <script src="https://kit.fontawesome.com/9fa9d11dac.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.x.x/dist/alpine.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@motionone/types@10.16.3/dist/index.es.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <script src="../js/main.js" defer></script>
+  <script src="../js/animations.js" defer></script>
+  <script src="../js/aos.js" defer></script>
+  <script src="../js/test.js" defer></script>
+  <script src="../js/gsap.js" defer></script>
 
 
-  </head>
+</head>
 
   <body class="mx-auto leading-relaxed">
     <header class="sticky top-0 flex flex-col z-[100] h-14   bg-light drop-shadow-2xl ">
@@ -173,44 +178,60 @@
     <main>
       <!-- Hero Section-->
 
-      <div
-        class="bg-dark-purple z-10 flex flex-col justify-around text-center text-white"
-      >
-        <div class="portrait:md:pt-20 portrait:lg:pt-44 pt-10">
+      <div class="bg-dark-purple z-10 flex flex-col justify-around text-center text-white" >
+        <div class="portrait:md:pt-20 portrait:lg:pt-44 pt-10" data-aos="fade-in" data-aos-delay="250">
           <h1 class="md:text-3xl text-2xl font-semibold text-center">
             You deserve a better you
           </h1>
-          <h1
-            class="md:text-2xl portrait:md:pt-3 mt-3 text-xl font-semibold text-center"
-          >
+          <h1 class="md:text-2xl portrait:md:pt-3 mt-3 text-xl font-semibold text-center">
             We’ll help you get there
           </h1>
 
-          <h2
-            class="md:whitespace-normal md:text-lg portrait:md:my-20 portrait:lg:my-28 my-8 text-sm font-light leading-relaxed whitespace-pre-line"
-          >
-            Finding a therapist can be difficult, let us do it for you
+          <h2 class="md:whitespace-normal md:text-lg portrait:md:my-20 portrait:lg:my-28 my-8 text-sm font-light leading-relaxed whitespace-pre-line">
+            Finding a therapist can be difficult, 
+            let us do it for you.
           </h2>
         </div>
 
-        <div
-          class="bg-mid-purple mt-44 md:mt-48 portrait:md:mt-64 portrait:lg:mt-80 relative"
-        >
-          <div
-            class="-translate-y-3/4 w-72 md:w-80 lg:w-96 portrait:md:w-1/2 absolute inset-x-0 top-0 mx-auto transform"
-          >
-            <img class="couch" src="../img/test.svg" alt="" />
-          </div>
+        
 
-
-
+        <div class="bg-mid-purple mt-44 md:mt-48 portrait:md:mt-64 portrait:lg:mt-80 relative" >
           
+          <div class=" flex flex-col items-center mx-auto" data-aos="fade-down" data-aos-duration="700">
+            
+            <div class="clock absolute  h-[4.5rem] w-[4.5rem] m-auto   rounded-full md:translate-y-[-12.97rem] translate-y-[-10.76rem] translate-x-[3.26rem] md:translate-x-[4.6rem] flex ">
+              <div class="wrap w-[2rem] h-[2rem] m-auto overflow-hidden ">
+                <span class="hour bg-light-purple absolute w-[0.13rem] shadow-2xl top-[1.57rem] left-[2.22rem] h-[0.7rem] rounded-full m-auto transform origin-bottom  rotate-0"></span>
+                <span class="minute bg-light-purple absolute w-[0.08rem] shadow-2xl left-[2.25rem] top-[1.2rem] h-[1.05rem] rounded-full m-auto origin-bottom transform rotate-90"></span>
+                <span
+                  class="second  bg-white rounded-4 absolute w-[0.05rem] shadow-2xl top-[1.06rem] rounded-full h-[1.2rem] m-auto origin-bottom transform rotate-180"></span>
+                <span class="dot top-[2.12rem] left-[2.15rem] absolute w-1 h-1 bg-white shadow-2xl border rounded-full"></span>
+              </div>
+            </div>
+            
+              <div class=" absolute translate-y-[-5.5rem] md:translate-y-[-7rem] ">
+                   <img class="  w-[13.5rem] md:w-[18rem] couch" src="../img/couch.svg" alt="" />
+              </div>
+
+              <div class=" absolute translate-y-[-10.08rem] md:translate-y-[-12.5rem] max-md:translate-x-[-0.86rem] ">
+                <img class="  w-[25rem] md:w-[28rem] " src="../img/clock-bg.svg" alt="" />
+              </div>
+
+              <img class="absolute translate-y-[-10rem] md:translate-y-[-13rem] translate-x-[0.3rem] md:translate-x-[0.6rem] w-[20rem] md:w-[27rem] "
+                src="../img/room.svg" alt="">
+
+                <div class="-inset-x-0 left-[3.4rem] md:left-[3.6rem] md:translate-y-[-9.4rem] md:text-xl absolute z-10 w-20 h-20 mx-auto text-lg text-white translate-y-[-8.7rem]">
+               
+                  <span class=" animate-diagonal infinite absolute bottom-0 opacity-0" style="animation-delay: 0.1s">z</span>
+                  <span class=" animate-diagonal infinite absolute bottom-0 opacity-0" style="animation-delay: 0.5s">z</span>
+                  <span class=" animate-diagonal infinite absolute bottom-0 opacity-0" style="animation-delay: 1s">z</span>
+                </div>
+          </div>
 
           <div x-data="{ showModal: false }">
             <!-- Trigger button -->
-            <button
-              class="mb-44 md:mt-24 md:px-8 md:py-5 whitespace-nowrap hover:scale-105 hover:shadow-2xl focus:outline-none hover:bg-light-purple hover:text-light text-dark-purple px-8 py-6 mx-auto mt-20 transition bg-white rounded-full select-none"
-              @click="showModal = true">
+            <button  class=" mb-44 md:mt-24 md:px-8 md:py-5 whitespace-nowrap hover:scale-105 hover:shadow-2xl focus:outline-none hover:bg-light-purple hover:text-light text-dark-purple px-8 py-6 mx-auto mt-20 transition bg-white rounded-full select-none"
+              @click="showModal = true" data-aos="fade-in" data-aos-delay="250">
               Book a Session
             </button>
           
@@ -311,9 +332,7 @@
             </div>
           </div>
           
-          <div
-            class="md:w-7 bottom-24 md:bottom-24 portrait:md:bottom-28 portrait:lg:bottom-28 animate-bounce absolute inset-x-0 w-6 mx-auto"
-          >
+          <div class="md:w-7 bottom-24 portrait:md:bottom-28 animate-bounce absolute inset-x-0 w-6 mx-auto" data-aos="fade-in" data-aos-delay="250">
             <img class="arrow w-full" src="../img/Arrow.svg" alt="" />
           </div>
         </div>
@@ -324,15 +343,16 @@
       <!-- About Section-->
 
       <div
-        class="md:flex-row portrait:md:flex-col bg-dark-purple landscape:md:divide-x divide-solid divide-slate-200 md:py-20 flex flex-col items-center py-24 mx-auto"
+        class="md:flex-row portrait:md:flex-col bg-dark-purple landscape:md:divide-x divide-solid divide-slate-200 md:py-20 flex flex-col items-center py-24 mx-auto" 
       >
-        <div class="md:w-2/3 portrait:md:w-3/6 w-full">
+        <div class="md:w-2/3 portrait:md:w-3/6 w-full" data-aos="fade-in">
           <div class="blob-w mx-auto"></div>
         </div>
 
-        <div class="text-slate-100 flex flex-col w-full">
+        <div class="text-slate-100 flex flex-col w-full" data-aos="fade-in">
           <h2
             class="md:text-3xl landscape:md:pt-0 pt-20 text-2xl font-semibold text-center text-white" 
+     
           >
             WHAT WE DO
           </h2>
@@ -360,7 +380,7 @@
 
     <!-- Statistics Section-->
     
-    <div class="text-dark-purple bg-light flex flex-col mx-auto">
+    <div class="text-dark-purple bg-light flex flex-col mx-auto" data-aos="fade-in">
         <h2 class="md:whitespace-normal max-md:hidden pt-16 text-3xl font-semibold text-center whitespace-pre-line">
             EACH NUMBER HOLDS A STORY
         </h2>
@@ -416,7 +436,7 @@
 
       <div class="py-[200px] bg-dark-purple">
         <div class="text-slate-100 bg-dark-purple z-10 flex flex-col">
-          <h2 class="md:text-3xl text-2xl font-semibold text-center text-white">
+          <h2 class="md:text-3xl text-2xl font-semibold text-center text-white" data-aos="fade-in">
             EVERYONE IS WELCOME HERE
           </h2>
 
@@ -461,77 +481,68 @@
 
       <!-- Concerns Covered Section-->
 
-      <div class="text-slate-100 bg-dark-purple flex flex-col mx-auto">
-        <h2
-          class="md:text-3xl md:pt-24 pt-16 text-2xl font-semibold text-center text-white"
-        >
-          CONCERNS WE WORK WITH
-        </h2>
+      <div class="bg-dark-purple">
 
-        <div
-          class="px-14 md:text-lg pt-10 mx-auto text-sm font-light leading-relaxed text-center"
-        >
-          <p>
-            We're here to support you through a wide range of challenges, and
-            this list is not limited.
-          </p>
-        </div>
 
-        <div
-          class="text-light md:py-24 flex flex-row flex-wrap justify-center py-16 mx-auto"
-        >
-          <div
-            class="md:w-1/3 md:px-10 flex flex-col items-center w-2/5 gap-4 p-5 mx-auto"
-          >
-            <img src="../img/couch.svg" />
-
-            <div>
-              <h3 class="md:text-lg text-sm font-normal">Anxiety</h3>
-            </div>
+        <div class="text-slate-100 flex flex-col mx-auto">
+          <h2 class="md:text-3xl md:pt-24 section fade pt-16 text-2xl font-semibold text-center text-white">
+            CONCERNS WE WORK WITH
+          </h2>
+        
+          <div class="px-14 md:text-lg section fade pt-10 mx-auto text-sm font-light leading-relaxed text-center">
+            <p>
+              We're here to support you through a wide range of challenges, and
+              this list is not limited.
+            </p>
           </div>
-          <div
-            class="md:w-1/3 md:px-10 flex flex-col items-center w-2/5 gap-4 p-5 mx-auto"
-          >
-            <img src="../img/couch.svg" />
-            <div>
-              <h3 class="md:text-lg text-sm font-normal">Stress</h3>
+        
+          <div class="text-light md:py-24 section fade flex flex-row flex-wrap justify-center py-16 mx-auto">
+            <div class="md:w-1/3 md:px-10 flex flex-col items-center w-2/5 gap-4 p-5 mx-auto">
+              <img src="../img/couch.svg" />
+        
+              <div>
+                <h3 class="md:text-lg text-sm font-normal">Anxiety</h3>
+              </div>
             </div>
-          </div>
-          <div
-            class="md:w-1/3 md:px-10 flex flex-col items-center w-2/5 gap-4 p-5 mx-auto"
-          >
-            <img src="../img/couch.svg" />
-            <div>
-              <h3 class="md:text-lg text-sm font-normal">Relationships</h3>
+            <div class="md:w-1/3 md:px-10 flex flex-col items-center w-2/5 gap-4 p-5 mx-auto">
+              <img src="../img/couch.svg" />
+              <div>
+                <h3 class="md:text-lg text-sm font-normal">Stress</h3>
+              </div>
             </div>
-          </div>
-
-          <div
-            class="md:w-1/3 md:px-10 flex flex-col items-center w-2/5 gap-4 p-5 mx-auto"
-          >
-            <img src="../img/couch.svg" />
-            <div>
-              <h3 class="md:text-lg text-sm font-normal">ADHD</h3>
+            <div class="md:w-1/3 md:px-10 flex flex-col items-center w-2/5 gap-4 p-5 mx-auto">
+              <img src="../img/couch.svg" />
+              <div>
+                <h3 class="md:text-lg text-sm font-normal">Relationships</h3>
+              </div>
             </div>
-          </div>
-          <div
-            class="md:w-1/3 md:px-10 flex flex-col items-center w-2/5 gap-4 p-5 mx-auto"
-          >
-            <img src="../img/couch.svg" />
-            <div>
-              <h3 class="md:text-lg text-sm font-normal">Trauma</h3>
+        
+            <div class="md:w-1/3 md:px-10 flex flex-col items-center w-2/5 gap-4 p-5 mx-auto">
+              <img src="../img/couch.svg" />
+              <div>
+                <h3 class="md:text-lg text-sm font-normal">ADHD</h3>
+              </div>
             </div>
-          </div>
-          <div
-            class="md:w-1/3 md:px-10 flex flex-col items-center w-2/5 gap-4 p-5 mx-auto"
-          >
-            <img src="../img/couch.svg" />
-            <div>
-              <h3 class="md:text-lg text-sm font-normal">Depression</h3>
+            <div class="md:w-1/3 md:px-10 flex flex-col items-center w-2/5 gap-4 p-5 mx-auto">
+              <img src="../img/couch.svg" />
+              <div>
+                <h3 class="md:text-lg text-sm font-normal">Trauma</h3>
+              </div>
+            </div>
+            <div class="md:w-1/3 md:px-10 flex flex-col items-center w-2/5 gap-4 p-5 mx-auto">
+              <img src="../img/couch.svg" />
+              <div>
+                <h3 class="md:text-lg text-sm font-normal">Depression</h3>
+              </div>
             </div>
           </div>
         </div>
+
+
+        
       </div>
+
+      
 
       <!-- Founder's Message Section-->
 
@@ -1178,5 +1189,32 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      var inc = 1000;
+
+        clock();
+
+        function clock() {
+          const date = new Date();
+
+          const hours = ((date.getHours() + 11) % 12 + 1);
+          const minutes = date.getMinutes();
+          const seconds = date.getSeconds();
+
+          const hour = hours * 30;
+          const minute = minutes * 6;
+          const second = seconds * 6;
+
+          document.querySelector('.hour').style.transform = `rotate(${hour}deg)`
+          document.querySelector('.minute').style.transform = `rotate(${minute}deg)`
+          document.querySelector('.second').style.transform = `rotate(${second}deg)`
+        }
+
+        setInterval(clock, inc);
+
+    </script>
+
+
   </body>
 </html>
