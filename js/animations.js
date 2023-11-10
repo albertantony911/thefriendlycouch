@@ -27,7 +27,7 @@ anime({
         { opacity: 0, translateX: 20, translateY: -20 },
         { opacity: 0, translateX: -20, translateY: 20 }
       ],
-      duration: 2500,
+      duration: 3500,
       easing: 'linear',
       loop: true
     });
