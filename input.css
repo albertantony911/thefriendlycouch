@@ -146,7 +146,7 @@ img {
 }
 
 .animate-diagonal {
-  animation: animate-diagonal 4s linear infinite;
+  animation: animate-diagonal 3500ms linear infinite;
 }
 
 /* Accordion */

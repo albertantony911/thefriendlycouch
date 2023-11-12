@@ -219,9 +219,9 @@
             <img class="absolute translate-y-[-10rem] md:translate-y-[-13rem] translate-x-[0.3rem] md:translate-x-[0.6rem] w-[20rem] md:w-[27rem]" src="../img/room.svg" alt="">
 
             <div class="-inset-x-0 left-[3.4rem] md:left-[3.6rem] md:translate-y-[-9.4rem] absolute z-10 w-20 h-20 mx-auto text-white translate-y-[-8.7rem]">
-              <span class=" animate-diagonal infinite absolute bottom-0 text-xl opacity-0" style="animation-delay: 0.1s">z</span>
-              <span class=" animate-diagonal infinite absolute bottom-0 text-lg opacity-0" style="animation-delay: 0.5s">z</span>
-              <span class=" animate-diagonal infinite absolute bottom-0 text-sm opacity-0" style="animation-delay: 1s">z</span>
+              <span class=" animate-diagonal infinite absolute bottom-0 text-xl opacity-0" >z</span>
+              <span class=" animate-diagonal infinite absolute bottom-0 text-lg opacity-0" style="animation-delay: 0.4s">z</span>
+              <span class=" animate-diagonal infinite absolute bottom-0 text-sm opacity-0" style="animation-delay: 0.8s">z</span>
             </div>
           </div>
 
@@ -451,9 +451,9 @@
                 </defs>
                 <!-- Sun's center circle -->
                 <g fill="#FFFFFF">
-                  <circle cx="100" cy="100" r="58" filter="url(#drop-shadow)" data-aos="fade-up" data-aos-delay="400" data-aos-anchor="#inclusivity"/>
-                  <circle cx="100" cy="100" r="46" filter="url(#drop-shadow)" data-aos="fade-up" data-aos-delay="300" data-aos-anchor="#inclusivity"/>
-                  <circle cx="100" cy="100" r="34" filter="url(#drop-shadow)" data-aos="fade-up" data-aos-delay="200" data-aos-anchor="#inclusivity"/>
+                  <circle cx="100" cy="100" r="58" filter="url(#drop-shadow)" data-aos="fade-up" data-aos-delay="700" data-aos-anchor="#inclusivity"/>
+                  <circle cx="100" cy="100" r="46" filter="url(#drop-shadow)" data-aos="fade-up" data-aos-delay="500" data-aos-anchor="#inclusivity"/>
+                  <circle cx="100" cy="100" r="34" filter="url(#drop-shadow)" data-aos="fade-up" data-aos-delay="300" data-aos-anchor="#inclusivity"/>
                 </g>
               </svg>
             </div>
@@ -468,34 +468,52 @@
             </filter>
           </defs>
         
-          <!-- First Cloud Group with Animation -->
-          <g transform="translate(1366, 20)" filter="url(#drop-shadow)" fill="#FFFFFF">
+          <g transform="translate(1366, 0)" filter="url(#drop-shadow)" fill="#FFFFFF">
+            <ellipse cx="70" cy="80" rx="30" ry="30" />
+            <ellipse cx="100" cy="60" rx="30" ry="30" />
+            <ellipse cx="100" cy="85" rx="30" ry="30" />
+            <ellipse cx="120" cy="75" rx="30" ry="30" />
+        
+            <animateTransform attributeName="transform" type="translate" values="0 -30; 1366 0; 0 0" dur="150s"
+              repeatCount="indefinite" />
+          </g>
+
+          <g transform="translate(700, 0)" filter="url(#drop-shadow)" fill="#FFFFFF">
             <ellipse cx="70" cy="80" rx="40" ry="35" />
             <ellipse cx="100" cy="60" rx="40" ry="35" />
             <ellipse cx="100" cy="85" rx="40" ry="35" />
             <ellipse cx="120" cy="75" rx="40" ry="35" />
-        
-            <animateTransform attributeName="transform" type="translate" values="0 20; 1366 0; 0 0" dur="150s"
+          
+            <animateTransform attributeName="transform" type="translate" values="0 100; 700 0; 0 0" dur="250s"
               repeatCount="indefinite" />
           </g>
         
-          <!-- Second Cloud Group with Animation -->
-          <g transform="translate(1000, 50)" filter="url(#drop-shadow)" fill="#FFFFFF">
+          <g transform="translate(1000, 0)" filter="url(#drop-shadow)" fill="#FFFFFF">
             <ellipse cx="70" cy="80" rx="40" ry="30" />
             <ellipse cx="100" cy="60" rx="40" ry="30" />
             <ellipse cx="100" cy="85" rx="40" ry="30" />
             <ellipse cx="120" cy="75" rx="40" ry="30" />
         
-            <animateTransform attributeName="transform" type="translate" values="1000 50; 0 0; 1000 0" dur="90s"
+            <animateTransform attributeName="transform" type="translate" values="1000 10; 0 0; 1000 0" dur="200s"
+              repeatCount="indefinite" />
+          </g>
+
+
+          <g transform="translate(1366, 0)" filter="url(#drop-shadow)" fill="#FFFFFF">
+            <ellipse cx="70" cy="80" rx="35" ry="25" />
+            <ellipse cx="100" cy="60" rx="35" ry="25" />
+            <ellipse cx="100" cy="85" rx="35" ry="25" />
+            <ellipse cx="120" cy="75" rx="35" ry="25" />
+          
+            <animateTransform attributeName="transform" type="translate" values="1366 -50; 0 0; 1000 0" dur="300s"
               repeatCount="indefinite" />
           </g>
         
          
         
-          <!-- Fourth Cloud Group with Animation -->
-          <g transform="translate(1366, 10)" filter="url(#drop-shadow)" fill="#FFFFFF">
-            <ellipse cx="70" cy="80" rx="50" ry="35" />
-            <ellipse cx="100" cy="60" rx="50" ry="35" />
+          <g transform="translate(1366, 40)" filter="url(#drop-shadow)" fill="#FFFFFF">
+            <ellipse cx="80" cy="80" rx="50" ry="35" />
+            <ellipse cx="110" cy="60" rx="50" ry="35" />
             <ellipse cx="100" cy="85" rx="50" ry="35" />
             <ellipse cx="120" cy="75" rx="50" ry="35" />
         
@@ -513,19 +531,21 @@
         
           <div class="">
 
-            <svg class=" mb-[-2px] md:hidden" viewBox="0 317 960 223" xmlns="http://www.w3.org/2000/svg" data-aos="fade-in">
+            <svg class=" mb-[-2px] landscape:hidden" viewBox="0 317 960 223" xmlns="http://www.w3.org/2000/svg">
+
+              
               <path
                 d="m0 375 26.7-4.3c26.6-4.4 80-13 133.3-14.4 53.3-1.3 106.7 4.7 160-4.1 53.3-8.9 106.7-32.5 160-34.9 53.3-2.3 106.7 16.7 160 24.2s106.7 3.5 160 8.3c53.3 4.9 106.7 18.5 133.3 25.4L960 382v159H0Z"
-                fill="#d1bef9" />
+                fill="#d1bef9"/>
               <path
                 d="m0 381 26.7 4.7c26.6 4.6 80 14 133.3 23.5 53.3 9.5 106.7 19.1 160 20.5 53.3 1.3 106.7-5.7 160-12.4 53.3-6.6 106.7-13 160-17.8 53.3-4.8 106.7-8.2 160-12 53.3-3.8 106.7-8.2 133.3-10.3L960 375v166H0Z"
                 fill="#8974b5" />
               <path
                 d="M0 433h26.7c26.6 0 80 0 133.3 9.2 53.3 9.1 106.7 27.5 160 38.1 53.3 10.7 106.7 13.7 160 5.5 53.3-8.1 106.7-27.5 160-30.1 53.3-2.7 106.7 11.3 160 9.3s106.7-20 133.3-29l26.7-9v114H0Z"
-                fill="#463174" />
+                fill="#463174"/>
             </svg>
 
-            <svg class="mb-[-1px] max-md:hidden" viewBox="0 0 4000 600" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
+            <svg class="mb-[-1px] portrait:hidden" viewBox="0 0 4000 600" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
               style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2">
               <path
                 d="m0 98.045 60.417-4.167c60.416-4.166 181.25-12.5 302.916-15.833 121.25-3.75 243.75-2.083 365 14.583 121.667 16.667 242.5 48.334 363.334 60.417 120.833 11.667 241.666 3.333 362.5-12.5 120.833-16.25 241.666-39.583 363.333-40.417 121.25-.833 243.75 21.667 365 7.084 121.667-14.584 242.5-66.25 363.333-89.584 120.834-23.75 241.667-19.583 362.5 6.25 120.834 25.417 241.667 72.917 363.334 90 121.25 17.5 243.75 5 365-2.5 121.666-7.916 242.5-10.416 302.916-12.083l60.417-1.25v504.167H0V98.045Z"
@@ -553,9 +573,9 @@
               </div>
             </div>
 
-            <div class="flex justify-center md:translate-y-[-3rem] translate-y-[-1rem]">
+            <div class="flex justify-center landscape:md:translate-y-[-3rem] portrait:md:translate-y-[-1.5rem] translate-y-[-1rem]">
 
-              <img class="md:w-1/3 absolute w-1/2 md:translate-y-[-4rem] translate-y-[-2rem]" src="../img/people.svg" alt="" >
+              <img class="landscape:w-1/3 absolute w-1/2 landscape:md:translate-y-[-4rem] portrait:md:translate-y-[-5rem] translate-y-[-2rem]" src="../img/people.svg" alt="" >
               
               <svg class=" absolute bg-transparent" viewBox="0 -7 4000 182"
                 xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
