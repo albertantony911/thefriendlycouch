@@ -19,19 +19,6 @@ var bouncingBall = anime({
     
 });
 
-anime({
-      targets: '.animate-diagonal',
-      keyframes: [
-        { opacity: 0, translateX: -20, translateY: 20 },
-        { opacity: 1, translateX: 0, translateY: 0 },
-        { opacity: 0, translateX: 20, translateY: -20 },
-        { opacity: 0, translateX: -20, translateY: 20 }
-      ],
-      duration: 3500,
-      easing: 'linear',
-      loop: true
-});
-    
 
 
 
@@ -45,3 +32,5 @@ anime({
   loop: true
 });
     
+
+
