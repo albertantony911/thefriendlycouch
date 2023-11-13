@@ -1169,10 +1169,6 @@ html {
   width: 60%;
 }
 
-.w-32 {
-  width: 8rem;
-}
-
 .w-4 {
   width: 1rem;
 }
@@ -2428,14 +2424,14 @@ html {
   transition-duration: 150ms;
 }
 
-.transition-transform {
-  transition-property: transform;
+.transition-opacity {
+  transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
 
-.transition-opacity {
-  transition-property: opacity;
+.transition-transform {
+  transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -2444,16 +2440,16 @@ html {
   transition-duration: 100ms;
 }
 
+.duration-1000 {
+  transition-duration: 1000ms;
+}
+
 .duration-200 {
   transition-duration: 200ms;
 }
 
 .duration-300 {
   transition-duration: 300ms;
-}
-
-.duration-1000 {
-  transition-duration: 1000ms;
 }
 
 .ease-in {
@@ -2906,7 +2902,7 @@ svg.active .svg-elem-37 {
   bottom: 7px;
   left: 7px;
   background-color: hsl(0, 0%, 100%);
-  background-image: url("../img/founder.webp");
+  background-image: url("img/founder.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -3639,10 +3635,6 @@ input[type="checkbox"]:checked + label .arrow {
     padding: 7rem;
   }
 
-  .md\:p-8 {
-    padding: 2rem;
-  }
-
   .md\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -3703,6 +3695,11 @@ input[type="checkbox"]:checked + label .arrow {
     padding-bottom: 2.5rem;
   }
 
+  .md\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
   .md\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -3731,11 +3728,6 @@ input[type="checkbox"]:checked + label .arrow {
   .md\:py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-  }
-
-  .md\:py-16 {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
   }
 
   .md\:pb-0 {

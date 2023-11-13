@@ -499,7 +499,7 @@ svg.active .svg-elem-37 {
   bottom: 7px;
   left: 7px;
   background-color: hsl(0, 0%, 100%);
-  background-image: url("../img/founder.webp");
+  background-image: url("img/founder.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -594,7 +594,6 @@ svg.active .svg-elem-37 {
  /*****************************************
  * Blob Animation - End
  *****************************************/
-
 
 
 
