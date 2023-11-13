@@ -29,7 +29,9 @@
   </head>
 
   <body>
-    <div class="wrapper">    
+    <div class="wrapper">
+      <h2 class="title">SVG Drawing Animation</h2>
+    
       <!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
       
       <!-- Created with Vectornator (http://vectornator.io/) -->
@@ -190,47 +192,13 @@
           </g>
         </g>
       </svg>
+
+    
+      <div class="controls">
+        <button class="btn-draw">Draw</button>
+        <button class="btn-erase">Erase</button>
+      </div>
     </div>
-
-    <script>
-      // India Map Animation start
-      const options = {
-        root: null, // Use the viewport as the root
-        rootMargin: '0px', // No margin
-        threshold: 0.5, // Trigger when 50% of the target is visible
-      };
-
-      // Callback function for the Intersection Observer
-      function handleIntersection(entries, observer) {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            draw(); // If the target is in view, trigger the draw function
-          }
-        });
-      }
-
-      // Create an Intersection Observer instance
-      const observer = new IntersectionObserver(handleIntersection, options);
-
-      // Target the SVG element
-      const svgElement = document.querySelector('.wrapper svg');
-
-      // Start observing the SVG element
-      observer.observe(svgElement);
-
-      // We are only adding the 'active' class,
-      // the entire animation is defined in the CSS code
-      function draw() {
-        svgElement.classList.add('active');
-        // Stop observing after animation is triggered
-        observer.unobserve(svgElement);
-      }
-
-// India Map Animation end
-
-    </script>
-
-
 
   </body>
 </html>

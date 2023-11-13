@@ -1,24 +1,37 @@
-   var wrapper = document.querySelector('.wrapper svg')
-var btnDraw = document.querySelector('.btn-draw')
-var btnErase = document.querySelector('.btn-erase')
+     // India Map Animation start
+      const options = {
+        root: null, // Use the viewport as the root
+        rootMargin: '0px', // No margin
+        threshold: 0.5, // Trigger when 50% of the target is visible
+      };
 
-// We are only adding and removing the 'active' class,
-// the entire animation is defined in the CSS code
-function draw() {
-  wrapper.classList.add('active')
-}
+      // Callback function for the Intersection Observer
+      function handleIntersection(entries, observer) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            draw(); // If the target is in view, trigger the draw function
+          }
+        });
+      }
 
-function erase() {
-  wrapper.classList.remove('active')
-}
+      // Create an Intersection Observer instance
+      const observer = new IntersectionObserver(handleIntersection, options);
 
-// Add handlers to our buttons
-btnDraw.addEventListener('click', draw, false)
-btnErase.addEventListener('click', erase, false)
+      // Target the SVG element
+      const svgElement = document.querySelector('.map svg');
 
-// Play draw animation once
-setTimeout(draw, 300)
+      // Start observing the SVG element
+      observer.observe(svgElement);
 
+      // We are only adding the 'active' class,
+      // the entire animation is defined in the CSS code
+      function draw() {
+        svgElement.classList.add('active');
+        // Stop observing after animation is triggered
+        observer.unobserve(svgElement);
+      }
+
+// India Map Animation end
 
 
 
