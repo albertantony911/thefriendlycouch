@@ -1,4 +1,41 @@
-     // India Map Animation start
+    // Languages transition start
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const imageSets = document.querySelectorAll('.fade-image-set');
+  let currentIndex = 0;
+
+  function fadeInNextImage() {
+    imageSets.forEach((set) => {
+      const images = set.children;
+      const nextIndex = (currentIndex + 1) % images.length;
+
+      images[currentIndex].classList.remove('opacity-100');
+      images[currentIndex].classList.add('opacity-0');
+
+      images[nextIndex].classList.remove('opacity-0');
+      images[nextIndex].classList.add('opacity-100');
+    });
+
+    currentIndex = (currentIndex + 1) % imageSets[0].children.length;
+  }
+
+  // Start the transition after a short delay (adjust as needed)
+  setTimeout(() => {
+    setInterval(fadeInNextImage, 3000); // Change images every 3 seconds (adjust as needed)
+  }, 500);
+});
+
+
+
+     
+    // Languages transition end
+
+
+
+
+
+// India Map Animation start
       const options = {
         root: null, // Use the viewport as the root
         rootMargin: '0px', // No margin

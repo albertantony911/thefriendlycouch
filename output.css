@@ -1213,6 +1213,10 @@ html {
   width: 0.13rem;
 }
 
+.w-\[10rem\] {
+  width: 10rem;
+}
+
 .w-\[13\.5rem\] {
   width: 13.5rem;
 }
@@ -1247,6 +1251,10 @@ html {
 
 .w-\[7\.5rem\] {
   width: 7.5rem;
+}
+
+.w-\[7rem\] {
+  width: 7rem;
 }
 
 .w-\[80\%\] {
@@ -2232,20 +2240,12 @@ html {
   line-height: 2.5rem;
 }
 
-.leading-relaxed {
-  line-height: 1.625;
-}
-
-.leading-4 {
-  line-height: 1rem;
-}
-
-.leading-8 {
-  line-height: 2rem;
-}
-
 .leading-9 {
   line-height: 2.25rem;
+}
+
+.leading-relaxed {
+  line-height: 1.625;
 }
 
 .text-dark-purple {
@@ -2434,6 +2434,12 @@ html {
   transition-duration: 150ms;
 }
 
+.transition-opacity {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .duration-100 {
   transition-duration: 100ms;
 }
@@ -2444,6 +2450,10 @@ html {
 
 .duration-300 {
   transition-duration: 300ms;
+}
+
+.duration-1000 {
+  transition-duration: 1000ms;
 }
 
 .ease-in {
@@ -2480,7 +2490,7 @@ img {
 
 svg .svg-elem-1 {
   fill: transparent;
-  transition: fill 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) 0.1s;
+  transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
 }
 
 svg.active .svg-elem-1 {
@@ -2489,7 +2499,7 @@ svg.active .svg-elem-1 {
 
 svg .svg-elem-2 {
   fill: transparent;
-  transition: fill 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) 0.2s;
+  transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.02s;
 }
 
 svg.active .svg-elem-2 {
@@ -2498,7 +2508,7 @@ svg.active .svg-elem-2 {
 
 svg .svg-elem-3 {
   fill: transparent;
-  transition: fill 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) 0.30000000000000004s;
+  transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.04s;
 }
 
 svg.active .svg-elem-3 {
@@ -2507,7 +2517,7 @@ svg.active .svg-elem-3 {
 
 svg .svg-elem-4 {
   fill: transparent;
-  transition: fill 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) 0.4s;
+  transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.06s;
 }
 
 svg.active .svg-elem-4 {
@@ -2516,7 +2526,7 @@ svg.active .svg-elem-4 {
 
 svg .svg-elem-5 {
   fill: transparent;
-  transition: fill 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) 0.5s;
+  transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.08s;
 }
 
 svg.active .svg-elem-5 {
@@ -2525,7 +2535,7 @@ svg.active .svg-elem-5 {
 
 svg .svg-elem-6 {
   fill: transparent;
-  transition: fill 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) 0.6s;
+  transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.1s;
 }
 
 svg.active .svg-elem-6 {
@@ -2534,7 +2544,7 @@ svg.active .svg-elem-6 {
 
 svg .svg-elem-7 {
   fill: transparent;
-  transition: fill 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) 0.7000000000000001s;
+  transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s;
 }
 
 svg.active .svg-elem-7 {
@@ -2543,7 +2553,7 @@ svg.active .svg-elem-7 {
 
 svg .svg-elem-8 {
   fill: transparent;
-  transition: fill 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
+  transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.14s;
 }
 
 svg.active .svg-elem-8 {
@@ -2552,7 +2562,7 @@ svg.active .svg-elem-8 {
 
 svg .svg-elem-9 {
   fill: transparent;
-  transition: fill 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) 0.9s;
+  transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.16s;
 }
 
 svg.active .svg-elem-9 {
@@ -2561,7 +2571,7 @@ svg.active .svg-elem-9 {
 
 svg .svg-elem-10 {
   fill: transparent;
-  transition: fill 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) 1s;
+  transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.18s;
 }
 
 svg.active .svg-elem-10 {
@@ -2570,7 +2580,7 @@ svg.active .svg-elem-10 {
 
 svg .svg-elem-11 {
   fill: transparent;
-  transition: fill 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) 1.1s;
+  transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.2s;
 }
 
 svg.active .svg-elem-11 {
@@ -2579,7 +2589,7 @@ svg.active .svg-elem-11 {
 
 svg .svg-elem-12 {
   fill: transparent;
-  transition: fill 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) 1.2000000000000002s;
+  transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.22s;
 }
 
 svg.active .svg-elem-12 {
@@ -2588,7 +2598,7 @@ svg.active .svg-elem-12 {
 
 svg .svg-elem-13 {
   fill: transparent;
-  transition: fill 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) 1.3000000000000003s;
+  transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.24s;
 }
 
 svg.active .svg-elem-13 {
@@ -2597,7 +2607,7 @@ svg.active .svg-elem-13 {
 
 svg .svg-elem-14 {
   fill: transparent;
-  transition: fill 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) 1.4000000000000001s;
+  transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.26s;
 }
 
 svg.active .svg-elem-14 {
@@ -2606,7 +2616,7 @@ svg.active .svg-elem-14 {
 
 svg .svg-elem-15 {
   fill: transparent;
-  transition: fill 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) 1.5000000000000002s;
+  transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.28s;
 }
 
 svg.active .svg-elem-15 {
@@ -2615,7 +2625,7 @@ svg.active .svg-elem-15 {
 
 svg .svg-elem-16 {
   fill: transparent;
-  transition: fill 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) 1.6s;
+  transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.3s;
 }
 
 svg.active .svg-elem-16 {
@@ -2624,7 +2634,7 @@ svg.active .svg-elem-16 {
 
 svg .svg-elem-17 {
   fill: transparent;
-  transition: fill 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) 1.7000000000000002s;
+  transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.32s;
 }
 
 svg.active .svg-elem-17 {
@@ -2633,7 +2643,7 @@ svg.active .svg-elem-17 {
 
 svg .svg-elem-18 {
   fill: transparent;
-  transition: fill 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) 1.8000000000000003s;
+  transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.34s;
 }
 
 svg.active .svg-elem-18 {
@@ -2642,7 +2652,7 @@ svg.active .svg-elem-18 {
 
 svg .svg-elem-19 {
   fill: transparent;
-  transition: fill 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) 1.9000000000000001s;
+  transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.36s;
 }
 
 svg.active .svg-elem-19 {
@@ -2651,7 +2661,7 @@ svg.active .svg-elem-19 {
 
 svg .svg-elem-20 {
   fill: transparent;
-  transition: fill 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) 2s;
+  transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.38s;
 }
 
 svg.active .svg-elem-20 {
@@ -2660,7 +2670,7 @@ svg.active .svg-elem-20 {
 
 svg .svg-elem-21 {
   fill: transparent;
-  transition: fill 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) 2.1s;
+  transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.4s;
 }
 
 svg.active .svg-elem-21 {
@@ -2669,7 +2679,7 @@ svg.active .svg-elem-21 {
 
 svg .svg-elem-22 {
   fill: transparent;
-  transition: fill 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) 2.2s;
+  transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.42s;
 }
 
 svg.active .svg-elem-22 {
@@ -2678,7 +2688,7 @@ svg.active .svg-elem-22 {
 
 svg .svg-elem-23 {
   fill: transparent;
-  transition: fill 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) 2.3000000000000003s;
+  transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.44s;
 }
 
 svg.active .svg-elem-23 {
@@ -2687,7 +2697,7 @@ svg.active .svg-elem-23 {
 
 svg .svg-elem-24 {
   fill: transparent;
-  transition: fill 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) 2.4000000000000004s;
+  transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.46s;
 }
 
 svg.active .svg-elem-24 {
@@ -2696,7 +2706,7 @@ svg.active .svg-elem-24 {
 
 svg .svg-elem-25 {
   fill: transparent;
-  transition: fill 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) 2.5000000000000004s;
+  transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.48s;
 }
 
 svg.active .svg-elem-25 {
@@ -2705,7 +2715,7 @@ svg.active .svg-elem-25 {
 
 svg .svg-elem-26 {
   fill: transparent;
-  transition: fill 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) 2.6s;
+  transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.5s;
 }
 
 svg.active .svg-elem-26 {
@@ -2714,7 +2724,7 @@ svg.active .svg-elem-26 {
 
 svg .svg-elem-27 {
   fill: transparent;
-  transition: fill 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) 2.7s;
+  transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.52s;
 }
 
 svg.active .svg-elem-27 {
@@ -2723,7 +2733,7 @@ svg.active .svg-elem-27 {
 
 svg .svg-elem-28 {
   fill: transparent;
-  transition: fill 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) 2.8000000000000003s;
+  transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.54s;
 }
 
 svg.active .svg-elem-28 {
@@ -2732,7 +2742,7 @@ svg.active .svg-elem-28 {
 
 svg .svg-elem-29 {
   fill: transparent;
-  transition: fill 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) 2.9000000000000004s;
+  transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.56s;
 }
 
 svg.active .svg-elem-29 {
@@ -2741,7 +2751,7 @@ svg.active .svg-elem-29 {
 
 svg .svg-elem-30 {
   fill: transparent;
-  transition: fill 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) 3.0000000000000004s;
+  transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.58s;
 }
 
 svg.active .svg-elem-30 {
@@ -2750,7 +2760,7 @@ svg.active .svg-elem-30 {
 
 svg .svg-elem-31 {
   fill: transparent;
-  transition: fill 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) 3.1s;
+  transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.6s;
 }
 
 svg.active .svg-elem-31 {
@@ -2759,7 +2769,7 @@ svg.active .svg-elem-31 {
 
 svg .svg-elem-32 {
   fill: transparent;
-  transition: fill 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) 3.2s;
+  transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.62s;
 }
 
 svg.active .svg-elem-32 {
@@ -2768,7 +2778,7 @@ svg.active .svg-elem-32 {
 
 svg .svg-elem-33 {
   fill: transparent;
-  transition: fill 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) 3.3000000000000003s;
+  transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.64s;
 }
 
 svg.active .svg-elem-33 {
@@ -2777,7 +2787,7 @@ svg.active .svg-elem-33 {
 
 svg .svg-elem-34 {
   fill: transparent;
-  transition: fill 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) 3.4000000000000004s;
+  transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.66s;
 }
 
 svg.active .svg-elem-34 {
@@ -2786,7 +2796,7 @@ svg.active .svg-elem-34 {
 
 svg .svg-elem-35 {
   fill: transparent;
-  transition: fill 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) 3.5000000000000004s;
+  transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.68s;
 }
 
 svg.active .svg-elem-35 {
@@ -2795,7 +2805,7 @@ svg.active .svg-elem-35 {
 
 svg .svg-elem-36 {
   fill: transparent;
-  transition: fill 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) 3.6s;
+  transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.7000000000000001s;
 }
 
 svg.active .svg-elem-36 {
@@ -2804,7 +2814,7 @@ svg.active .svg-elem-36 {
 
 svg .svg-elem-37 {
   fill: transparent;
-  transition: fill 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) 3.7s;
+  transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.72s;
 }
 
 svg.active .svg-elem-37 {
@@ -3464,6 +3474,10 @@ input[type="checkbox"]:checked + label .arrow {
     width: 70%;
   }
 
+  .md\:w-\[8rem\] {
+    width: 8rem;
+  }
+
   .md\:w-\[90\%\] {
     width: 90%;
   }
@@ -3719,6 +3733,11 @@ input[type="checkbox"]:checked + label .arrow {
     padding-bottom: 1.5rem;
   }
 
+  .md\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
   .md\:pb-0 {
     padding-bottom: 0px;
   }
@@ -3739,16 +3758,8 @@ input[type="checkbox"]:checked + label .arrow {
     padding-bottom: 5rem;
   }
 
-  .md\:pb-24 {
-    padding-bottom: 6rem;
-  }
-
   .md\:pb-40 {
     padding-bottom: 10rem;
-  }
-
-  .md\:pb-6 {
-    padding-bottom: 1.5rem;
   }
 
   .md\:pb-8 {
@@ -4071,14 +4082,6 @@ input[type="checkbox"]:checked + label .arrow {
 
   .portrait\:flex-col-reverse {
     flex-direction: column-reverse;
-  }
-
-  .portrait\:gap-10 {
-    gap: 2.5rem;
-  }
-
-  .portrait\:gap-5 {
-    gap: 1.25rem;
   }
 
   .portrait\:divide-y > :not([hidden]) ~ :not([hidden]) {
