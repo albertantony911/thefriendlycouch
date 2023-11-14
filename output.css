@@ -825,6 +825,21 @@ html {
   margin-bottom: auto;
 }
 
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .-mt-1 {
   margin-top: -0.25rem;
 }
@@ -1269,6 +1284,14 @@ html {
   width: 1px;
 }
 
+.w-\[8rem\] {
+  width: 8rem;
+}
+
+.w-\[8\.5rem\] {
+  width: 8.5rem;
+}
+
 .min-w-full {
   min-width: 100%;
 }
@@ -1485,6 +1508,10 @@ html {
           user-select: none;
 }
 
+.grid-flow-col {
+  grid-auto-flow: column;
+}
+
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -1499,6 +1526,18 @@ html {
 
 .grid-rows-\[1fr\] {
   grid-template-rows: 1fr;
+}
+
+.grid-rows-3 {
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+}
+
+.grid-rows-4 {
+  grid-template-rows: repeat(4, minmax(0, 1fr));
+}
+
+.grid-rows-2 {
+  grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -1992,6 +2031,16 @@ html {
 .py-\[200px\] {
   padding-top: 200px;
   padding-bottom: 200px;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-11 {
+  padding-left: 2.75rem;
+  padding-right: 2.75rem;
 }
 
 .pb-1 {
@@ -2797,6 +2846,22 @@ img {
     width: 95%;
   }
 
+  .md\:w-\[9rem\] {
+    width: 9rem;
+  }
+
+  .md\:w-\[9\.2rem\] {
+    width: 9.2rem;
+  }
+
+  .md\:w-\[9\.5rem\] {
+    width: 9.5rem;
+  }
+
+  .md\:w-\[8\.2rem\] {
+    width: 8.2rem;
+  }
+
   .md\:-translate-y-8 {
     --tw-translate-y: -2rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -2860,6 +2925,14 @@ img {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:grid-rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -2914,6 +2987,10 @@ img {
 
   .md\:gap-7 {
     gap: 1.75rem;
+  }
+
+  .md\:gap-2 {
+    gap: 0.5rem;
   }
 
   .md\:divide-x > :not([hidden]) ~ :not([hidden]) {
