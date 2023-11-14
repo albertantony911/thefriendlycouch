@@ -1,0 +1,703 @@
+
+
+/*****************************************
+ * Map Animation - Start
+ * SVG stroke animation code
+ *****************************************/
+
+
+svg .svg-elem-1 {
+  fill: transparent;
+  -webkit-transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
+          transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
+}
+
+svg.active .svg-elem-1 {
+  fill: rgb(0, 0, 0);
+}
+
+svg .svg-elem-2 {
+  fill: transparent;
+  -webkit-transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.02s;
+          transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.02s;
+}
+
+svg.active .svg-elem-2 {
+  fill: rgb(70, 49, 116);
+}
+
+svg .svg-elem-3 {
+  fill: transparent;
+  -webkit-transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.04s;
+          transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.04s;
+}
+
+svg.active .svg-elem-3 {
+  fill: rgb(70, 49, 116);
+}
+
+svg .svg-elem-4 {
+  fill: transparent;
+  -webkit-transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.06s;
+          transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.06s;
+}
+
+svg.active .svg-elem-4 {
+  fill: rgb(70, 49, 116);
+}
+
+svg .svg-elem-5 {
+  fill: transparent;
+  -webkit-transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.08s;
+          transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.08s;
+}
+
+svg.active .svg-elem-5 {
+  fill: rgb(70, 49, 116);
+}
+
+svg .svg-elem-6 {
+  fill: transparent;
+  -webkit-transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.1s;
+          transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.1s;
+}
+
+svg.active .svg-elem-6 {
+  fill: rgb(70, 49, 116);
+}
+
+svg .svg-elem-7 {
+  fill: transparent;
+  -webkit-transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s;
+          transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s;
+}
+
+svg.active .svg-elem-7 {
+  fill: rgb(70, 49, 116);
+}
+
+svg .svg-elem-8 {
+  fill: transparent;
+  -webkit-transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.14s;
+          transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.14s;
+}
+
+svg.active .svg-elem-8 {
+  fill: rgb(70, 49, 116);
+}
+
+svg .svg-elem-9 {
+  fill: transparent;
+  -webkit-transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.16s;
+          transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.16s;
+}
+
+svg.active .svg-elem-9 {
+  fill: rgb(70, 49, 116);
+}
+
+svg .svg-elem-10 {
+  fill: transparent;
+  -webkit-transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.18s;
+          transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.18s;
+}
+
+svg.active .svg-elem-10 {
+  fill: rgb(70, 49, 116);
+}
+
+svg .svg-elem-11 {
+  fill: transparent;
+  -webkit-transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.2s;
+          transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.2s;
+}
+
+svg.active .svg-elem-11 {
+  fill: rgb(70, 49, 116);
+}
+
+svg .svg-elem-12 {
+  fill: transparent;
+  -webkit-transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.22s;
+          transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.22s;
+}
+
+svg.active .svg-elem-12 {
+  fill: rgb(70, 49, 116);
+}
+
+svg .svg-elem-13 {
+  fill: transparent;
+  -webkit-transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.24s;
+          transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.24s;
+}
+
+svg.active .svg-elem-13 {
+  fill: rgb(70, 49, 116);
+}
+
+svg .svg-elem-14 {
+  fill: transparent;
+  -webkit-transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.26s;
+          transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.26s;
+}
+
+svg.active .svg-elem-14 {
+  fill: rgb(70, 49, 116);
+}
+
+svg .svg-elem-15 {
+  fill: transparent;
+  -webkit-transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.28s;
+          transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.28s;
+}
+
+svg.active .svg-elem-15 {
+  fill: rgb(70, 49, 116);
+}
+
+svg .svg-elem-16 {
+  fill: transparent;
+  -webkit-transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.3s;
+          transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.3s;
+}
+
+svg.active .svg-elem-16 {
+  fill: rgb(70, 49, 116);
+}
+
+svg .svg-elem-17 {
+  fill: transparent;
+  -webkit-transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.32s;
+          transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.32s;
+}
+
+svg.active .svg-elem-17 {
+  fill: rgb(70, 49, 116);
+}
+
+svg .svg-elem-18 {
+  fill: transparent;
+  -webkit-transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.34s;
+          transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.34s;
+}
+
+svg.active .svg-elem-18 {
+  fill: rgb(70, 49, 116);
+}
+
+svg .svg-elem-19 {
+  fill: transparent;
+  -webkit-transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.36s;
+          transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.36s;
+}
+
+svg.active .svg-elem-19 {
+  fill: rgb(70, 49, 116);
+}
+
+svg .svg-elem-20 {
+  fill: transparent;
+  -webkit-transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.38s;
+          transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.38s;
+}
+
+svg.active .svg-elem-20 {
+  fill: rgb(70, 49, 116);
+}
+
+svg .svg-elem-21 {
+  fill: transparent;
+  -webkit-transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.4s;
+          transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.4s;
+}
+
+svg.active .svg-elem-21 {
+  fill: rgb(70, 49, 116);
+}
+
+svg .svg-elem-22 {
+  fill: transparent;
+  -webkit-transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.42s;
+          transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.42s;
+}
+
+svg.active .svg-elem-22 {
+  fill: rgb(70, 49, 116);
+}
+
+svg .svg-elem-23 {
+  fill: transparent;
+  -webkit-transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.44s;
+          transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.44s;
+}
+
+svg.active .svg-elem-23 {
+  fill: rgb(70, 49, 116);
+}
+
+svg .svg-elem-24 {
+  fill: transparent;
+  -webkit-transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.46s;
+          transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.46s;
+}
+
+svg.active .svg-elem-24 {
+  fill: rgb(70, 49, 116);
+}
+
+svg .svg-elem-25 {
+  fill: transparent;
+  -webkit-transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.48s;
+          transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.48s;
+}
+
+svg.active .svg-elem-25 {
+  fill: rgb(70, 49, 116);
+}
+
+svg .svg-elem-26 {
+  fill: transparent;
+  -webkit-transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.5s;
+          transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.5s;
+}
+
+svg.active .svg-elem-26 {
+  fill: rgb(70, 49, 116);
+}
+
+svg .svg-elem-27 {
+  fill: transparent;
+  -webkit-transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.52s;
+          transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.52s;
+}
+
+svg.active .svg-elem-27 {
+  fill: rgb(70, 49, 116);
+}
+
+svg .svg-elem-28 {
+  fill: transparent;
+  -webkit-transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.54s;
+          transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.54s;
+}
+
+svg.active .svg-elem-28 {
+  fill: rgb(70, 49, 116);
+}
+
+svg .svg-elem-29 {
+  fill: transparent;
+  -webkit-transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.56s;
+          transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.56s;
+}
+
+svg.active .svg-elem-29 {
+  fill: rgb(70, 49, 116);
+}
+
+svg .svg-elem-30 {
+  fill: transparent;
+  -webkit-transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.58s;
+          transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.58s;
+}
+
+svg.active .svg-elem-30 {
+  fill: rgb(70, 49, 116);
+}
+
+svg .svg-elem-31 {
+  fill: transparent;
+  -webkit-transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.6s;
+          transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.6s;
+}
+
+svg.active .svg-elem-31 {
+  fill: rgb(70, 49, 116);
+}
+
+svg .svg-elem-32 {
+  fill: transparent;
+  -webkit-transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.62s;
+          transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.62s;
+}
+
+svg.active .svg-elem-32 {
+  fill: rgb(70, 49, 116);
+}
+
+svg .svg-elem-33 {
+  fill: transparent;
+  -webkit-transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.64s;
+          transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.64s;
+}
+
+svg.active .svg-elem-33 {
+  fill: rgb(70, 49, 116);
+}
+
+svg .svg-elem-34 {
+  fill: transparent;
+  -webkit-transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.66s;
+          transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.66s;
+}
+
+svg.active .svg-elem-34 {
+  fill: rgb(70, 49, 116);
+}
+
+svg .svg-elem-35 {
+  fill: transparent;
+  -webkit-transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.68s;
+          transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.68s;
+}
+
+svg.active .svg-elem-35 {
+  fill: rgb(70, 49, 116);
+}
+
+svg .svg-elem-36 {
+  fill: transparent;
+  -webkit-transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.7000000000000001s;
+          transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.7000000000000001s;
+}
+
+svg.active .svg-elem-36 {
+  fill: rgb(70, 49, 116);
+}
+
+svg .svg-elem-37 {
+  fill: transparent;
+  -webkit-transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.72s;
+          transition: fill 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.72s;
+}
+
+svg.active .svg-elem-37 {
+  fill: rgb(70, 49, 116);
+}
+
+
+
+/*****************************************
+ * Map Animation - End
+ * SVG stroke animation code
+ *****************************************/
+
+
+
+
+.text-center-last::after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+    }
+
+
+
+/* Menu List Animation */
+
+.menudrop {
+  transition: transform 0.5s cubic-bezier(0.9, 0.7, 0.1, 1);
+}
+
+/* Initially hidden */
+.menudrop li {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.2s ease-in-out, transform 0s ease-in-out; /* Adjust duration for easing in and out */
+}
+
+/* Class to fade in */
+.menudrop li.toggled {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.3s;
+}
+
+
+
+/* Button Aniamtion */
+
+/* Change line color on click */
+#menuButtonContainer.menu-open svg line {
+    stroke: white;
+}
+
+/* Set transform origins to center of respective line */
+#menuButton svg line:nth-of-type(1) {
+    transform-origin: center 6px;
+}
+
+#menuButton svg line:nth-of-type(2) {
+    transform-origin: center 12px;
+}
+
+#menuButton svg line:nth-of-type(3) {
+    transform-origin: center 18px;
+}
+
+
+
+
+/* Line animations */
+#menuButton svg line {
+    transition-duration: 0.5s;
+    transition-property: stroke, opacity, transform;
+    transition-timing-function: cubic-bezier(0.9, 0.7, 0.1, 1); /* Updated cubic bezier for stroke color change */
+}
+
+/* Fade out middle line on click */
+#menuButtonContainer.menu-open svg line:nth-of-type(2) {
+    opacity: 0;
+    transform: scale(0.3);
+    transition-timing-function: cubic-bezier(0.9, 0, 0.1, 1); /* Updated cubic bezier for rotation animation */
+}
+
+/* Center top and bottom lines vertically, then rotate by 45 degrees in opposing directions on click */
+#menuButtonContainer.menu-open svg line:nth-of-type(1) {
+    transform: translate(0, 6px) rotate(45deg);
+    transition-timing-function: cubic-bezier(0.9, 0, 0.1, 1); /* Updated cubic bezier for rotation animation */
+}
+
+#menuButtonContainer.menu-open svg line:nth-of-type(3) {
+    transform: translate(0, -6px) rotate(-45deg);
+    transition-timing-function: cubic-bezier(0.9, 0, 0.1, 1); /* Updated cubic bezier for rotation animation */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Diagonal Fade Animation */
+@keyframes animate-diagonal {
+  0% {
+    opacity: 0;
+    transform: translate(-20px, 20px);
+  }
+  25% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  50% {
+    opacity: 0;
+    transform: translate(20px, -20px);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-20px, 20px);
+  }
+}
+
+.animate-diagonal {
+  animation: animate-diagonal 3500ms linear infinite;
+}
+
+/* Accordion */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked + .accordion-content {
+  max-height: 1000px;
+}
+
+.arrow {
+  transition: transform 0.3s ease-in-out;
+}
+
+input[type="checkbox"]:checked + label .arrow {
+  transform: rotate(180deg);
+}
+
+
+
+ /*****************************************
+ * Blob Animation - Start
+ *****************************************/
+
+
+.blob {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 48% 52% 68% 32%/42% 28% 72% 58%;
+  background: #ffffff;
+  background-size: 500% 100%;
+  animation: blobber 30s 0s linear infinite, cobler 30s 0s linear infinite alternate;
+}
+
+.blob-w {
+  display: block;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 48% 52% 68% 32%/42% 28% 72% 58%;
+  background: #ffffff;
+  background-size: 500% 100%;
+  animation: blobber 30s 0s linear infinite, cobler 30s 0s linear infinite alternate;
+}
+
+.blob-c {
+  display: block;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 48% 52% 68% 32%/42% 28% 72% 58%;
+  background: #D1BEF9;
+  background-size: 500% 100%;
+  animation: blobber 30s 0s linear infinite, cobler 30s 0s linear infinite alternate;
+}
+
+.blob:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  bottom: 7px;
+  left: 7px;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  mix-blend-mode: normal;
+  animation: blobber 30s 0s ease-in-out infinite, wobbler 15s 0s linear infinite alternate;
+}
+
+.blob-w:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  bottom: 7px;
+  left: 7px;
+  background-color: #ffffff;
+  background-image: url("../img/founder.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  mix-blend-mode: normal;
+  animation: blobber 30s 0s ease-in-out infinite, wobbler 15s 0s linear infinite alternate;
+}
+
+.blob-c:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  bottom: 7px;
+  left: 7px;
+  background-color: hsl(0, 0%, 100%);
+  background-image: url("../img/founder.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  mix-blend-mode: normal;
+  animation: blobber 30s 0s ease-in-out infinite, wobbler 15s 0s linear infinite alternate;
+}
+
+@keyframes blobber {
+  0% {
+    border-radius: 48% 52% 68% 32%/42% 28% 72% 58%;
+  }
+  5% {
+    border-radius: 48% 52% 41% 59%/66% 37% 63% 34%;
+  }
+  10% {
+    border-radius: 69% 31% 71% 29%/67% 31% 69% 33%;
+  }
+  15% {
+    border-radius: 60% 40% 71% 29%/63% 65% 35% 37%;
+  }
+  20% {
+    border-radius: 61% 39% 51% 49%/57% 58% 42% 43%;
+  }
+  25% {
+    border-radius: 66% 34% 25% 75%/47% 30% 70% 53%;
+  }
+  30% {
+    border-radius: 32% 68% 38% 62%/65% 60% 40% 35%;
+  }
+  35% {
+    border-radius: 63% 37% 41% 59%/35% 38% 62% 65%;
+  }
+  40% {
+    border-radius: 57% 43% 49% 51%/55% 71% 29% 45%;
+  }
+  45% {
+    border-radius: 47% 53% 34% 66%/65% 36% 64% 35%;
+  }
+  50% {
+    border-radius: 44% 56% 32% 68%/69% 26% 74% 31%;
+  }
+  55% {
+    border-radius: 28% 72% 37% 63%/71% 44% 56% 29%;
+  }
+  60% {
+    border-radius: 38% 62% 35% 65%/74% 53% 47% 26%;
+  }
+  65% {
+    border-radius: 73% 27% 46% 54%/54% 47% 53% 46%;
+  }
+  70% {
+    border-radius: 75% 25% 47% 53%/49% 53% 47% 51%;
+  }
+  75% {
+    border-radius: 62% 38% 43% 57%/55% 60% 40% 45%;
+  }
+  80% {
+    border-radius: 41% 59% 65% 35%/73% 50% 50% 27%;
+  }
+  85% {
+    border-radius: 55% 45% 57% 43%/73% 61% 39% 27%;
+  }
+  90% {
+    border-radius: 74% 26% 33% 67%/40% 65% 35% 60%;
+  }
+  95% {
+    border-radius: 58% 42% 57% 43%/53% 45% 55% 47%;
+  }
+  100% {
+    border-radius: 48% 52% 68% 32%/42% 28% 72% 58%;
+  }
+}
+@keyframes cobler {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+@keyframes wobbler {
+  0% {
+    transform: rotateZ(4deg);
+  }
+  100% {
+    transform: rotateZ(-4deg);
+  }
+}
+
+
+
+ /*****************************************
+ * Blob Animation - End
+ *****************************************/
