@@ -117,37 +117,37 @@
               <span class="ml-2"> <i class="mdi mdi-chevron-down"></i> </span>
             </a>
             <div
-              class="absolute left-0 top-auto z-30 w-56 min-w-full mt-1 text-sm bg-white border border-gray-300 rounded shadow-md"
+              class="rounded-3xl absolute left-0 top-auto z-30 w-56 min-w-full mt-1 text-base bg-white border border-gray-300 shadow-md"
               x-show="showChildren" x-transition:enter="transition ease duration-300 transform"
               x-transition:enter-start="opacity-0 translate-y-2" x-transition:enter-end="opacity-100 translate-y-0"
               x-transition:leave="transition ease duration-300 transform"
               x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-4"
               style="display: none;">
-              <span class="absolute top-0 left-0 w-3 h-3 ml-6 -mt-1 transform rotate-45 bg-white border"></span>
-              <div class="relative z-10 w-full py-1 bg-white rounded">
+              <span class="absolute top-0 left-0 w-4 h-5 ml-6 -mt-1 transform rotate-45 bg-white border"></span>
+              <div class="rounded-3xl relative z-10 w-full px-2 py-6 text-center bg-white">
                 <ul class="list-reset">
                   <li class="relative" x-data="{showChildren:false}" @mouseleave="showChildren=false"
                     @mouseenter="showChildren=true">
                     <a href="#"
-                      class="hover:bg-gray-100 hover:no-underline flex items-start w-full px-4 py-4 no-underline transition-colors duration-100 cursor-pointer">
+                      class="hover:bg-gray-100 hover:no-underline flex items-start w-full px-4 pb-4 no-underline transition-colors duration-100 border-b cursor-pointer">
                       <span class="flex-1">Therapy</span> </a>
                   </li>
                   <li class="relative" x-data="{showChildren:false}" @mouseleave="showChildren=false"
                     @mouseenter="showChildren=true">
                     <a href="#"
-                      class="hover:bg-gray-100 hover:no-underline flex items-start w-full px-4 py-4 no-underline transition-colors duration-100 cursor-pointer">
+                      class="hover:bg-gray-100 hover:no-underline flex items-start w-full px-4 py-4 no-underline transition-colors duration-100 border-b cursor-pointer">
                       <span class="flex-1">Diagnosis</span> </a>
                   </li>
                   <li class="relative" x-data="{showChildren:false}" @mouseleave="showChildren=false"
                     @mouseenter="showChildren=true">
                     <a href="#"
-                      class="hover:bg-gray-100 hover:no-underline flex items-start w-full px-4 py-4 no-underline transition-colors duration-100 cursor-pointer">
+                      class="hover:bg-gray-100 hover:no-underline flex items-start w-full px-4 py-4 no-underline transition-colors duration-100 border-b cursor-pointer">
                       <span class="flex-1">Couple's Counselling</span> </a>
                   </li>
                   <li class="relative" x-data="{showChildren:false}" @mouseleave="showChildren=false"
                     @mouseenter="showChildren=true">
                     <a href="#"
-                      class="hover:bg-gray-100 hover:no-underline flex items-start w-full px-4 py-4 no-underline transition-colors duration-100 cursor-pointer">
+                      class="hover:bg-gray-100 hover:no-underline flex items-start w-full px-4 pt-4 no-underline transition-colors duration-100 cursor-pointer">
                       <span class="flex-1">Workshops</span> </a>
                   </li>
                 </ul>
@@ -178,7 +178,7 @@
       <!-- Hero Section-->
 
       <div class="bg-dark-purple z-10 flex flex-col justify-around text-center text-white" >
-        <div class="portrait:md:pt-20 portrait:lg:pt-44 pt-10" data-aos="fade-in" data-aos-delay="250">
+        <div class="portrait:md:pt-20 portrait:lg:pt-44 pt-14" data-aos="fade-in" data-aos-delay="250">
           <h1 class="md:text-3xl text-2xl font-semibold text-center">
             You deserve a better you
           </h1>
@@ -194,7 +194,7 @@
 
         
 
-        <div class="bg-mid-purple mt-44 md:mt-48 portrait:md:mt-64 portrait:lg:mt-80 relative" >
+        <div class="bg-mid-purple mt-44 md:mt-56 portrait:md:mt-64 portrait:lg:mt-80 relative" >
           
           <div class=" flex flex-col items-center mx-auto" data-aos="fade-down" data-aos-duration="700">
             
@@ -226,7 +226,7 @@
 
           <div x-data="{ showModal: false }">
             <!-- Trigger button -->
-            <button  class=" mb-44 md:mt-24 md:px-8 md:py-5 whitespace-nowrap hover:scale-105 hover:shadow-2xl focus:outline-none hover:bg-light-purple hover:text-light text-dark-purple px-8 py-6 mx-auto mt-20 transition bg-white rounded-full select-none"
+            <button  class=" md:mt-28 md:px-8 md:py-5 whitespace-nowrap hover:scale-105 hover:shadow-2xl focus:outline-none hover:bg-light-purple hover:text-light text-dark-purple mb-36 px-8 py-6 mx-auto mt-20 transition bg-white rounded-full select-none"
               @click="showModal = true" data-aos="fade-in" data-aos-delay="250">
               Book a Session
             </button>
