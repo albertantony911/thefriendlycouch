@@ -176,7 +176,7 @@
     <main>
       <!-- Hero Section-->
 
-      <div class="bg-dark-purple z-10 flex flex-col justify-around text-center text-white" >
+      <div id="hero" class="bg-dark-purple z-10 flex flex-col justify-around text-center text-white" >
         <div class="portrait:md:pt-20 portrait:lg:pt-44 pt-14" data-aos="fade-in" data-aos-delay="250">
           <h1 class="md:text-3xl text-2xl font-semibold text-center">
             You deserve a better you
@@ -195,7 +195,7 @@
 
         <div class="bg-mid-purple mt-44 md:mt-56 portrait:md:mt-64 portrait:lg:mt-80 relative" >
           
-          <div class=" flex flex-col items-center mx-auto" data-aos="fade-down" data-aos-duration="700">
+          <div class=" flex flex-col items-center mx-auto" data-aos="fade-down" data-aos-duration="700" data-aos-anchor="#hero">
             
             <div class="clock absolute  h-[4.5rem] w-[4.5rem] m-auto   rounded-full md:translate-y-[-12.97rem] translate-y-[-10.76rem] translate-x-[3.26rem] md:translate-x-[4.6rem] flex ">
                 <div class="wrap w-[2rem] h-[2rem] m-auto overflow-hidden ">
@@ -226,7 +226,7 @@
           <div x-data="{ showModal: false }">
             <!-- Trigger button -->
             <button  class=" md:mt-28 md:px-8 md:py-5 whitespace-nowrap hover:scale-105 hover:shadow-2xl focus:outline-none hover:bg-light-purple hover:text-light text-dark-purple mb-36 px-8 py-6 mx-auto mt-20 transition bg-white rounded-full select-none"
-              @click="showModal = true" data-aos="fade-in" data-aos-delay="250">
+              @click="showModal = true" data-aos="fade-in" data-aos-delay="250" data-aos-anchor="#hero">
               Book a Session
             </button>
           
@@ -327,7 +327,7 @@
             </div>
           </div>
           
-          <div class="md:w-7 bottom-24 portrait:md:bottom-28 animate-bounce absolute inset-x-0 w-6 mx-auto" data-aos="fade-in" data-aos-delay="250" data-aos-anchor="#couch">
+          <div class="md:w-7 bottom-24 portrait:md:bottom-28 animate-bounce absolute inset-x-0 w-6 mx-auto" data-aos="fade-in" data-aos-delay="250" data-aos-anchor="#hero">
             <img class="w-full mx-auto" src="../img/Arrow.svg" alt="" />
           </div>
         </div>
