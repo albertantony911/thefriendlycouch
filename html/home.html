@@ -109,10 +109,10 @@
     
     
     
-          <li class="relative block" x-data="{showChildren:false}" @click.away="showChildren=false">
+          <li class="relative block" x-data="{showChildren:false}" @click.away="showChildren=false" @touchstart="showChildren = !showChildren">
             <a href="#"
-              class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer"
-              @click.prevent="showChildren=!showChildren">
+              class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer" @mouseenter="showChildren = true" @mouseleave="showChildren = false"
+              >
               <span>Our Services</span>
               <span class="ml-2"> <i class="mdi mdi-chevron-down"></i> </span>
             </a>
