@@ -2364,6 +2364,11 @@ html {
   padding-right: 8rem;
 }
 
+.py-9 {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -3621,6 +3626,10 @@ img {
 
   .md\:gap-14 {
     gap: 3.5rem;
+  }
+
+  .md\:gap-1 {
+    gap: 0.25rem;
   }
 
   .md\:divide-x > :not([hidden]) ~ :not([hidden]) {
