@@ -21,7 +21,7 @@
 
    var bouncingButton = anime({
 	targets: '.bouncingbutton',
-	translateY: '0.6rem',
+	translateY: '0.7rem',
 	duration: 400,
 	loop: true,
 	direction: 'alternate',
