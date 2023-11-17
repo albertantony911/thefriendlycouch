@@ -18,6 +18,28 @@
     
     
 });
+
+
+ const intersectionObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('heartbeat');
+                    intersectionObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+// Target the observed divs
+        const observedDiv1 = document.getElementById('heartBeat1');
+        const observedDiv2 = document.getElementById('heartBeat2');
+
+        // Start observing the divs
+        intersectionObserver.observe(observedDiv1);
+        intersectionObserver.observe(observedDiv2);       
+
+
+
+
    
 
 
