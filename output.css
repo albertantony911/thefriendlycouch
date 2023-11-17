@@ -2512,6 +2512,10 @@ html {
   padding-top: 2.25rem;
 }
 
+.pb-9 {
+  padding-bottom: 2.25rem;
+}
+
 .text-left {
   text-align: left;
 }
