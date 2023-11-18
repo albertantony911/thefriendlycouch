@@ -40,19 +40,6 @@
 });
 
 
-const animatedElement = document.getElementById('shaker');
-
-  function shakeWithPause() {
-    animatedElement.classList.remove('shake-top'); // Remove the class to reset the animation
-    void animatedElement.offsetWidth; // Trigger reflow to restart the animation without a delay
-    animatedElement.classList.add('shake-top'); // Add the class to restart the animation
-    setTimeout(shakeWithPause, 3000); // Wait for 3 seconds before triggering the next iteration
-  }
-
-  // Start the animation loop
-  shakeWithPause();
-
-   
 
 
 // Languages transition start
