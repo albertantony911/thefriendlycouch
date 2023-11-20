@@ -727,7 +727,7 @@ input[type="checkbox"]:checked + label .arrow {
   right: 7px;
   bottom: 7px;
   left: 7px;
-  background-color: #ffffff;
+  background-color: hsl(0, 0%, 100%);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -743,7 +743,7 @@ input[type="checkbox"]:checked + label .arrow {
   right: 7px;
   bottom: 7px;
   left: 7px;
-  background-color: #ffffff;
+  background-color: hsl(0, 0%, 100%);
   background-image: url("../img/founder.webp");
   background-repeat: no-repeat;
   background-size: cover;
