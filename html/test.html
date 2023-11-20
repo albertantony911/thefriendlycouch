@@ -209,19 +209,31 @@
         <div class=" flex flex-col items-center mx-auto" data-aos="fade-down" data-aos-duration="700"
           data-aos-anchor="#hero">
 
-          <div
-            class="clock  absolute border  portrait:h-[10svw] portrait:w-[10svw] m-auto  portrait:translate-y-[-333%] translate-x-[131%] flex ">
-            <div class="flex m-auto overflow-hidden">
-              <div
-                class="hour bg-light-purple absolute w-[0.13rem] shadow-2xl top-[1.57rem] left-[2.22rem] h-[0.7rem] rounded-full  m-auto transform origin-bottom  rotate-0"></div>
-              <div
-                class="minute bg-light-purple absolute w-[0.08rem] shadow-2xl left-[2.25rem] top-[1.2rem] h-[1.05rem] rounded-full  m-auto origin-bottom transform rotate-90"></div>
-              <div
-                class="second  bg-white rounded-4 absolute w-[0.3svw] shadow-2xl   rounded-full  h-[4svw] m-auto  transform rotate-180"></div>
-               <div class="absolute translate-x-[-50%] translate-y-[-50%] w-[1svw] h-[1svw] bg-white border rounded-full shadow-2xl"></div>
+          
 
+
+          <div class=" absolute hidden -scale-100  m-auto 
+                        
+                        lg:landscape:translate-y-[-334.52%] landscape:translate-y-[-448.52%] lg:landscape:translate-x-[133%] landscape:translate-x-[186%]
+                        
+                        portrait:translate-y-[-50%]
+                          ">
+          
+            <div class="wrap m-auto overflow-hidden">
+              <span
+                class="hour bg-light-purple absolute shadow-2xl w-[0.2svh] h-[1.2svh] rounded-full m-auto transform origin-top rotate-0"></span>
+              <span
+                class="minute bg-light-purple absolute shadow-2xl w-[0.2svh] h-[2svh] rounded-full m-auto origin-top transform rotate-90"></span>
+              <span
+                class="second  bg-white  absolute w-[0.1svh] h-[2.1svh] shadow-2xl rounded-full m-auto origin-top transform rotate-180"></span>
+          
+              <span
+                class="absolute w-[0.6svh] translate-x-[-35%] translate-y-[-50%] h-[0.6svh] origin-center bg-white  rounded-full shadow-2xl"></span>
             </div>
+          
           </div>
+          
+          
 
           <div class="absolute translate-y-[-60%]">
             <img class="landscape:w-[40svh] lg:landscape:w-[30svh] portrait:w-[50svw] lg:portrait:w-[35svw]  couch" src="../img/couch.svg" alt="" />

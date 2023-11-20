@@ -1,27 +1,36 @@
 <!doctype html>
 <html class="scroll-smooth">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="../output.css" />
-    <link rel="stylesheet" href="../css/test.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
-    />
-    <script
-      src="https://kit.fontawesome.com/9fa9d11dac.js"
-      crossorigin="anonymous"
-    ></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="../output.css">
+    <link rel="stylesheet" type="text/css" href="../css/animations.css">
+  
+  
+  
+    <!-- External Libraries -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  
+    <script src="https://kit.fontawesome.com/9fa9d11dac.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.x.x/dist/alpine.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@motionone/types@10.16.3/dist/index.es.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  
+    <!-- Google Fonts -->
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap">
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/helvetica-neue-55">
+  
+    <!-- Custom Scripts -->
     <script src="../js/main.js" defer></script>
-    <!-- Include your JavaScript file at the end of the head section -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/alpinejs@2.x.x/dist/alpine.js"
-      defer
-    ></script>
-    <script src="../js/test.js" defer></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="../js/animations.js" defer></script>
+    <script src="../js/aos.js" defer></script>
     <script src="../js/gsap.js" defer></script>
   </head>
 
@@ -228,11 +237,9 @@
     <main>
       <!-- Hero Section-->
 
-      <div class="z-10 flex flex-col justify-around text-center text-white">
-        <div
-          class="pt-16 pb-80 md:pt-20 md:pb-80 portrait:md:pt-44 portrait:md:pb-[25rem] bg-gradient-to-b from-dark-purple to-mid-purple"
-        >
-          <h1 class="md:text-3xl text-2xl font-thin text-center">
+      <div class="relative z-10 flex flex-col justify-around text-center text-white">
+        <div class="h-[60svh] bg-gradient-to-b from-dark-purple to-mid-purple" >
+          <h1 class="pt-44 md:text-3xl text-2xl font-thin text-center">
             It all started with a
           </h1>
           <h1 class="md:text-3xl mt-3 text-2xl font-semibold text-center">
@@ -240,11 +247,9 @@
           </h1>
         </div>
 
-        <div class="bg-dark-purple h-72 relative">
-          <div
-            class="absolute inset-x-0 top-0 mx-auto transform -translate-y-[93%] w-3/12 md:w-1/12"
-          >
-            <img class="couch" src="../img/divija.svg" alt="" />
+        <div class="bg-dark-purple h-[40svh] relative">
+          <div class="absolute inset-x-0 top-0 mx-auto transform -translate-y-[93%] w-3/12 md:w-1/12" >
+            <img class="0" src="../img/divija.svg" alt="" />
           </div>
 
           <div class="md:my-14 my-16">
@@ -263,7 +268,7 @@
 
       <div class="bg-light z-10 flex flex-col items-center py-24 mx-auto">
         <div class="w-full">
-          <img class="md:w-1/4 w-1/2 mx-auto" src="../img/couch.svg" alt="" />
+            <div class="blob-c mx-auto"></div>
         </div>
         <div class="text-dark-purple flex flex-col w-full">
           <h2 class="text-bas md:text-lg pt-16 font-medium text-center">
@@ -312,14 +317,10 @@
       </div>
 
       <div
-        class="md:flex-row-reverse portrait:md:flex-col bg-mid-purple text-slate-100 md:items-center md:py-20 z-10 flex flex-col items-start py-24 mx-auto">
+        class="md:flex-row-reverse portrait:md:flex-col bg-mid-purple text-slate-100 md:py-20 z-10 flex flex-col items-center py-24 mx-auto">
         
-        <div class="md:w-3/6 portrait:md:w-full w-full">
-          <img
-            class="portrait:md:w-1/3 md:ml-0 portrait:mx-auto w-1/2 mx-auto"
-            src="../img/couch.svg"
-            alt=""
-          />
+        <div class="md:w-1/2 w-3/5">
+          <img class=" landscape:mr-auto md:w-3/4 portrait:mx-auto w-full" src="../img/dream.svg" alt="" />
         </div>
         <div class="portrait:md:w-full flex flex-col w-full">
           <h2
@@ -351,15 +352,12 @@
       </div>
 
       <div
-        class="md:flex-row portrait:md:flex-col bg-dark-purple text-slate-100 md:items-center md:py-20 z-10 flex flex-col items-start py-24 mx-auto"
+        class="md:flex-row portrait:md:flex-col bg-dark-purple text-slate-100 md:py-20 z-10 flex flex-col items-center py-24 mx-auto"
       >
-        <div class="md:w-3/6 portrait:md:w-full w-full">
-          <img
-            class="portrait:md:w-1/3 md:ml-auto portrait:mx-auto w-1/2"
-            src="../img/couch.svg"
-            alt=""
-          />
+        <div class="md:w-1/2 w-3/5">
+          <img class="landscape:ml-auto md:w-3/4 portrait:mx-auto w-full" src="../img/education.svg" alt="" />
         </div>
+        
         <div class="portrait:md:w-full flex flex-col w-full">
           <h2
             class="md:px-32 md:text-3xl md:pt-0 portrait:md:pt-12 portrait:hidden pt-20 text-2xl font-semibold text-center text-white"
@@ -408,12 +406,8 @@
       <div
         class="md:flex-row-reverse portrait:md:flex-col bg-mid-purple text-slate-100 md:py-20 z-10 flex flex-col items-center py-24 mx-auto"
       >
-        <div class="md:w-3/6 portrait:md:w-full w-full">
-          <img
-            class="portrait:md:w-1/3 portrait:mx-auto w-1/2"
-            src="../img/couch.svg"
-            alt=""
-          />
+        <div class="md:w-1/2 w-3/5">
+          <img class=" landscape:mr-auto md:w-3/4 portrait:mx-auto w-full" src="../img/foundation.svg" alt="" />
         </div>
         <div class="portrait:md:w-full flex flex-col w-full">
           <h2
@@ -453,12 +447,11 @@
       <div
         class="md:flex-row portrait:md:flex-col bg-dark-purple text-slate-100 md:py-20 z-10 flex flex-col items-center py-24 mx-auto"
       >
-        <div class="md:w-3/6 portrait:md:w-full w-full">
+        <div class="md:w-1/2 w-3/5">
           <img
-            class="portrait:md:w-1/3 portrait:mx-auto w-1/2 ml-auto"
-            src="../img/couch.svg"
-            alt=""
-          />
+            class=" landscape:ml-auto md:w-3/4 portrait:mx-auto w-full"
+            src="../img/future.svg"
+            alt=""/>
         </div>
         <div class="portrait:md:w-full flex flex-col w-full">
           <h2
@@ -519,7 +512,7 @@
       >
         <div class="w-full">
           <div class="animate-bounce relative inset-x-0 w-12 mx-auto">
-            <img class="w-full" src="quote.svg" alt="" />
+            <img class="w-full" src="../img/quote.svg" alt="" />
           </div>
         </div>
 
@@ -625,12 +618,124 @@
       </div>
 
       <!-- Contact Section-->
-
-      <div class="md:py-20 text-slate-100 bg-mid-purple py-40">
-        <h2 class="md:text-3xl text-2xl font-semibold text-center text-white">
-          CONTACT
-        </h2>
+      
+      
+      
+      <!-- 
+                =======================================================================
+            
+                This is a working contact form. To receive email, 
+                Replace YOUR_ACCESS_KEY_HERE with your actual Access Key.
+            
+                Create Access Key here 👉 https://web3forms.com/
+            
+                =======================================================================
+             -->
+      
+      
+      <div class="xl:flex-row bg-mid-purple xl:px-32 xl:py-20 shadow-3xl flex flex-col">
+      
+        <div class="xl:w-1/2 bg-dark-purple max-xl:py-24 xl:rounded-s-3xl flex flex-col justify-center w-full mx-auto"
+          data-aos="fade-in" data-aos-delay="200" data-aos-once="true">
+          <img class="xl:w-[20rem] w-2/3 md:w-1/3 mx-auto" src="../img/contact_hero.svg" alt="">
+          <h3 class="mt-16 mb-5 text-xl font-semibold text-center text-white">GET IN TOUCH WITH US ON</h3>
+          <div class="md:gap-10 xl:gap-5 flex flex-row justify-center gap-4 pt-8 mx-auto">
+      
+            <button
+              class="bouncingbutton md:px-8 md:py-4 whitespace-nowrap hover:scale-105 hover:shadow-2xl focus:outline-none hover:text-white px-7 py-4 mx-auto text-white transition rounded-full shadow-xl select-none"
+              style="background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);">
+              <div class="md:gap-3 flex flex-row gap-2 my-auto">
+                <img class="md:w-6 w-6" src="../img/instagram-logo.svg" alt="">
+                <a class="md:text-2xl my-auto text-2xl font-medium" style="font-family: 'Grand Hotel', cursive;"
+                  href="https://ig.me/m/thefriendlycouch">Instagram</a>
+              </div>
+            </button>
+      
+            <button
+              class="bouncingbutton shadow-xl md:px-7 md:py-4 whitespace-nowrap hover:scale-105 hover:shadow-2xl focus:outline-none  text-white hover:text-white px-6 py-4 mx-auto  transition bg-[#25D366] rounded-full select-none">
+              <div class="md:gap-3 flex flex-row gap-2 my-auto">
+                <img class="md:w-6 w-6" src="../img/whatsapp-logo.svg" alt="">
+                <a class="md:text-lg my-auto text-lg font-semibold"
+                  href="https://wa.me/919205025183?text=I%20want%20to%20book%20an%20online%20session."
+                  style="font-family: 'Helvetica Neue', sans-serif;">WhatsApp</a>
+              </div>
+            </button>
+          </div>
+      
+          <div class="flex items-center px-24 py-8 text-white">
+            <div class="flex-grow border-t border-gray-300"></div>
+            <span class="px-5">OR</span>
+            <div class="flex-grow border-t border-gray-300"></div>
+          </div>
+      
+          <div class="flex flex-row gap-10 mx-auto text-white">
+            <div class="md:gap-2 flex flex-row gap-1 my-auto">
+              <img class="md:w-6 w-6" src="../img/instagram-logo.svg" alt="">
+              <p class="md:text-base my-auto text-sm font-medium">@thefriendlycouch</p>
+            </div>
+      
+            <div class="md:gap-2 flex flex-row gap-1 my-auto">
+              <img class="md:w-5 w-5" src="../img/whatsapp-logo_green.svg" alt="">
+              <a class="md:text-base my-auto text-sm font-medium">+91 9205025183 </a>
+            </div>
+          </div>
+      
+        </div>
+      
+        <div
+          class=" bg-light landscape:text-base xl:rounded-e-3xl landscape:xl:w-1/2 xl:py-12 flex flex-col items-center w-full py-20 mx-auto text-sm">
+          <div class=" text-center">
+            <h1 class=" text-dark-purple mb-1 text-3xl font-semibold" data-aos="fade-in" data-aos-delay="100"
+              data-aos-once="true">
+              CONTACT US
+            </h1>
+            <p class=" text-dark-purple pt-3 pb-6" data-aos="fade-in">
+              Fill up the form below to send us a message.
+            </p>
+          </div>
+      
+          <div class="xl:w-[50%] w-[70%] md:w-[35%] " data-aos="fade-in" data-aos-delay="100" data-aos-once="true">
+            <form action="https://api.web3forms.com/submit" method="POST" id="form">
+              <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+              <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+              <input type="checkbox" name="botcheck" id="" style="display: none;" />
+      
+              <div class="mb-3">
+                <label for="name" class="text-dark-purple block mb-2 text-sm">Full Name</label>
+                <input type="text" name="name" id="name" placeholder="Full Name" required
+                  class="focus:outline-none w-full h-12 px-4 py-2 text-sm text-gray-900 placeholder-gray-500 bg-gray-100 rounded-lg" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="text-dark-purple block mb-2 text-sm">Email Address</label>
+                <input type="email" name="email" id="email" placeholder="name@mail.com" required
+                  class="focus:outline-none w-full h-12 px-4 py-2 text-sm text-gray-900 placeholder-gray-500 bg-gray-100 rounded-lg" />
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="text-dark-purple block mb-2 text-sm">Phone Number</label>
+                <input type="text" name="phone" id="phone" placeholder="+91 9847654321" required
+                  class="focus:outline-none w-full h-12 px-4 py-2 text-sm text-gray-900 placeholder-gray-500 bg-gray-100 rounded-lg" />
+              </div>
+              <div class="mb-4">
+                <label for="message" class="text-dark-purple block mb-2 text-sm">Your Message</label>
+      
+                <textarea rows="4" name="message" id="message" placeholder="Your Message"
+                  class="focus:outline-none w-full px-4 py-2 text-sm text-gray-900 placeholder-gray-500 bg-gray-100 rounded-lg"
+                  required></textarea>
+              </div>
+              <div class=" px-auto flex justify-center">
+                <button type="submit"
+                  class="hover:text-light-purple focus:outline-none bg-dark-purple md:w-2/3 md:py-5 inline-block w-3/5 px-4 py-6 text-white no-underline rounded-full">
+                  SEND MESSAGE
+                </button>
+              </div>
+              <p class="text-dark-purple text-base text-center" id="result"></p>
+            </form>
+          </div>
+        </div>
+      
       </div>
+       
+       
     </main>
 
     <footer class="bg-dark-purple flex flex-col">
