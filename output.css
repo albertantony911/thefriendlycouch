@@ -2486,6 +2486,56 @@ img {
   background-image: url('../img/founder.webp');
 }
 
+.after\:bg-\[url\(\'\.\.\/img\/therapist_1\.\'\)\]::after {
+  content: var(--tw-content);
+  background-image: url('../img/therapist_1.');
+}
+
+.after\:bg-\[url\(\'\.\.\/img\/therapist_1\'\)\]::after {
+  content: var(--tw-content);
+  background-image: url('../img/therapist_1');
+}
+
+.after\:bg-\[url\(\'\.\.\/img\/therapist_1\.jpg\'\)\]::after {
+  content: var(--tw-content);
+  background-image: url('../img/therapist_1.jpg');
+}
+
+.after\:bg-\[url\(\'\.\.\/img\/therapist_1\.webp\'\)\]::after {
+  content: var(--tw-content);
+  background-image: url('../img/therapist_1.webp');
+}
+
+.after\:bg-\[url\(\'\.\.\/img\/therapist_2\.webp\'\)\]::after {
+  content: var(--tw-content);
+  background-image: url('../img/therapist_2.webp');
+}
+
+.after\:bg-\[url\(\'\.\.\/img\/therapist_3\.webp\'\)\]::after {
+  content: var(--tw-content);
+  background-image: url('../img/therapist_3.webp');
+}
+
+.after\:bg-\[url\(\'\.\.\/img\/therapist_4\.webp\'\)\]::after {
+  content: var(--tw-content);
+  background-image: url('../img/therapist_4.webp');
+}
+
+.after\:bg-\[url\(\'\.\.\/img\/therapist_5\.webp\'\)\]::after {
+  content: var(--tw-content);
+  background-image: url('../img/therapist_5.webp');
+}
+
+.after\:bg-\[url\(\'\.\.\/img\/therapist_6\.webp\'\)\]::after {
+  content: var(--tw-content);
+  background-image: url('../img/therapist_6.webp');
+}
+
+.after\:bg-\[url\(\'\.\.\/img\/therapist_7\.webp\'\)\]::after {
+  content: var(--tw-content);
+  background-image: url('../img/therapist_7.webp');
+}
+
 .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
