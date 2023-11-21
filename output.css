@@ -1038,10 +1038,6 @@ html {
   height: 47svh;
 }
 
-.h-\[47vh\] {
-  height: 47vh;
-}
-
 .h-\[53svh\] {
   height: 53svh;
 }
@@ -2461,26 +2457,6 @@ img {
   cursor: pointer;
 }
 
-.home-hero-t {
-  height: 53svh;
-  height: 53vh;
-}
-
-.home-hero-b {
-  height: 47svh;
-  height: 47vh;
-}
-
-.about-hero-t {
-  height: 60svh;
-  height: 60vh;
-}
-
-.about-hero-b {
-  height: 40svh;
-  height: 40vh;
-}
-
 .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
@@ -3492,8 +3468,16 @@ img {
     width: 50svw;
   }
 
+  .portrait\:w-\[50vw\] {
+    width: 50vw;
+  }
+
   .portrait\:w-\[75svw\] {
     width: 75svw;
+  }
+
+  .portrait\:w-\[75vw\] {
+    width: 75vw;
   }
 
   .portrait\:translate-y-\[-50\%\] {
@@ -3844,8 +3828,8 @@ img {
       width: 60%;
     }
 
-    .lg\:portrait\:w-\[30svw\] {
-      width: 30svw;
+    .lg\:portrait\:w-\[30vw\] {
+      width: 30vw;
     }
 
     .lg\:portrait\:w-\[35svw\] {
@@ -3854,6 +3838,10 @@ img {
 
     .lg\:portrait\:w-\[55svw\] {
       width: 55svw;
+    }
+
+    .lg\:portrait\:w-\[55vw\] {
+      width: 55vw;
     }
   }
 }

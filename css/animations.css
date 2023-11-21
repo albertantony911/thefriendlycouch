@@ -1,4 +1,28 @@
 
+.home-hero-t {
+  height: 53svh;
+  height: 53vh;
+}
+
+.home-hero-b {
+  height: 47svh;
+  height: 47vh;
+}
+
+
+
+
+.about-hero-t {
+  height: 60svh;
+  height: 60vh;
+}
+
+.about-hero-b {
+  height: 40svh;
+  height: 40vh;
+}
+
+
 
 .heartbeat {
 	-webkit-animation: heartbeat 2s ease-in-out infinite both;
