@@ -741,6 +741,30 @@ input[type="checkbox"]:checked + label .arrow {
   background-image: url("../img/therapist_1.webp");
 }
 
+.blob-image-2:after {
+  background-image: url("../img/therapist_2.webp");
+}
+
+.blob-image-3:after {
+  background-image: url("../img/therapist_3.webp");
+}
+
+.blob-image-4:after {
+  background-image: url("../img/therapist_4.webp");
+}
+
+.blob-image-5:after {
+  background-image: url("../img/therapist_5.webp");
+}
+
+.blob-image-6:after {
+  background-image: url("../img/therapist_6.webp");
+}
+
+.blob-image-7:after {
+  background-image: url("../img/therapist_7.webp");
+}
+
 
 
 .blob-w:after {
