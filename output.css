@@ -1034,10 +1034,6 @@ html {
   height: 2svh;
 }
 
-.h-\[40svh\] {
-  height: 40svh;
-}
-
 .h-\[47svh\] {
   height: 47svh;
 }
@@ -1048,10 +1044,6 @@ html {
 
 .h-\[53svh\] {
   height: 53svh;
-}
-
-.h-\[60svh\] {
-  height: 60svh;
 }
 
 .h-\[6svw\] {
@@ -2469,44 +2461,24 @@ img {
   cursor: pointer;
 }
 
-.after\:bg-\[url\(\'\.\.\/img\/founder\.webp\'\)\]::after {
-  content: var(--tw-content);
-  background-image: url('../img/founder.webp');
+.home-hero-t {
+  height: 53svh;
+  height: 53vh;
 }
 
-.after\:bg-\[url\(\'\.\.\/img\/therapist_1\.webp\'\)\]::after {
-  content: var(--tw-content);
-  background-image: url('../img/therapist_1.webp');
+.home-hero-b {
+  height: 47svh;
+  height: 47vh;
 }
 
-.after\:bg-\[url\(\'\.\.\/img\/therapist_2\.webp\'\)\]::after {
-  content: var(--tw-content);
-  background-image: url('../img/therapist_2.webp');
+.about-hero-t {
+  height: 60svh;
+  height: 60vh;
 }
 
-.after\:bg-\[url\(\'\.\.\/img\/therapist_3\.webp\'\)\]::after {
-  content: var(--tw-content);
-  background-image: url('../img/therapist_3.webp');
-}
-
-.after\:bg-\[url\(\'\.\.\/img\/therapist_4\.webp\'\)\]::after {
-  content: var(--tw-content);
-  background-image: url('../img/therapist_4.webp');
-}
-
-.after\:bg-\[url\(\'\.\.\/img\/therapist_5\.webp\'\)\]::after {
-  content: var(--tw-content);
-  background-image: url('../img/therapist_5.webp');
-}
-
-.after\:bg-\[url\(\'\.\.\/img\/therapist_6\.webp\'\)\]::after {
-  content: var(--tw-content);
-  background-image: url('../img/therapist_6.webp');
-}
-
-.after\:bg-\[url\(\'\.\.\/img\/therapist_7\.webp\'\)\]::after {
-  content: var(--tw-content);
-  background-image: url('../img/therapist_7.webp');
+.about-hero-b {
+  height: 40svh;
+  height: 40vh;
 }
 
 .hover\:scale-105:hover {
@@ -4770,4 +4742,3 @@ img {
     }
   }
 }
-
