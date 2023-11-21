@@ -2455,6 +2455,7 @@ img {
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
   cursor: pointer;
+  backface-visibility: hidden;
 }
 
 .hover\:scale-105:hover {
