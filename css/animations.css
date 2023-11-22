@@ -49,7 +49,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 199px;
+    width: 10rem;
     height: 1px;
     background: linear-gradient(90deg, #fff, transparent);
 }
