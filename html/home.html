@@ -211,41 +211,32 @@
       
           <div class=" flex flex-col items-center mx-auto" data-aos="fade-down" data-aos-duration="700" data-aos-anchor="#hero">
       
-              <div class="clock hidden absolute border w-[6svw] h-[6svw] m-auto  lg:landscape:translate-y-[-334.52%] landscape:translate-y-[-448.52%] lg:landscape:translate-x-[133%] landscape:translate-x-[186%] portrait:translate-y-[-50%]">
-                <div class="wrap m-auto overflow-hidden">
-                  <span
-                    class="hour bg-light-purple absolute shadow-2xl w-[0.2svh] h-[1.2svh] rounded-full m-auto transform origin-top rotate-0"></span>
-                  <span
-                    class="minute bg-light-purple absolute shadow-2xl w-[0.2svh] h-[2svh] rounded-full m-auto origin-top transform rotate-90"></span>
-                  <span
-                    class="second  bg-white  absolute w-[0.1svh] h-[2.1svh] shadow-2xl rounded-full m-auto origin-top transform rotate-180"></span>
-              
-                  <span
-                    class="absolute w-[0.6svh] translate-x-[-35%] translate-y-[-50%] h-[0.6svh] origin-center bg-white  rounded-full shadow-2xl"></span>
-                </div>
+            <div class="clock -scale-100 absolute lg:landscape:translate-y-[-17.1svh] landscape:translate-y-[-23svh] lg:landscape:translate-x-[7.9svh] landscape:translate-x-[10.55svh] portrait:translate-y-[-28.48svw] portrait:translate-x-[13.18svw]">
+              <div class="wrap m-auto overflow-hidden">
+                <span class="hour bg-light-purple absolute shadow-2xl w-[0.3svh] h-[1.5svh] rounded-full m-auto transform origin-top rotate-0"></span>
+                <span class="minute bg-light-purple absolute shadow-2xl w-[0.2svh] h-[2.1svh] rounded-full m-auto origin-top transform rotate-90"></span>
+                <span class="second  bg-white  absolute w-[0.1svh] h-[2.2svh] shadow-2xl rounded-full m-auto origin-top transform rotate-180"></span>
+                <span class="absolute w-[0.6svh] translate-x-[-35%] translate-y-[-50%] h-[0.6svh] origin-center bg-white rounded-full shadow-2xl"></span>
               </div>
+            </div>
       
-              <div class="absolute translate-y-[-60%]">
-                  <div class="couch">
-                    <img class=" landscape:w-[40svh] lg:landscape:w-[30svh] portrait:w-[50vw] lg:portrait:w-[30vw]" src="../img/couch.svg"
-                      alt="" />
-                  </div>
-              </div>
+            <div class="absolute translate-y-[-60%] ">
+                <div class="couch">
+                  <img class=" landscape:w-[40svh] lg:landscape:w-[30svh] portrait:w-[50vw] lg:portrait:w-[30vw]" src="../img/couch.svg"
+                    alt="" />
+                </div>
+            </div>
                 
+            <div class="absolute translate-y-[-70%] translate-x-[3%]">
+              <img class="landscape:w-[60svh] lg:landscape:w-[45svh] portrait:w-[75vw] lg:portrait:w-[55vw]" src="../img/room.svg" alt="" />
+            </div>
 
-                <div class="absolute translate-y-[-70%] translate-x-[3%]">
-                  <img class="landscape:w-[60svh] lg:landscape:w-[45svh] portrait:w-[75vw] lg:portrait:w-[55vw]"
-                    src="../img/room.svg" alt="" />
-                </div>
-                
-      
+            <div class="-inset-x-0  absolute z-10 w-20 h-20 mx-auto text-white translate-y-[-175%] translate-x-[35%]">
+              <span class=" animate-diagonal infinite absolute bottom-0 text-xl opacity-0">z</span>
+              <span class=" animate-diagonal infinite absolute bottom-0 text-lg opacity-0" style="animation-delay: 0.4s">z</span>
+              <span class=" animate-diagonal infinite absolute bottom-0 text-sm opacity-0" style="animation-delay: 0.8s">z</span>
+            </div>
             
-      
-                <div class="-inset-x-0  absolute z-10 w-20 h-20 mx-auto text-white translate-y-[-175%] translate-x-[35%]">
-                  <span class=" animate-diagonal infinite absolute bottom-0 text-xl opacity-0">z</span>
-                  <span class=" animate-diagonal infinite absolute bottom-0 text-lg opacity-0" style="animation-delay: 0.4s">z</span>
-                  <span class=" animate-diagonal infinite absolute bottom-0 text-sm opacity-0" style="animation-delay: 0.8s">z</span>
-                </div>
           </div>
       
           <div x-data="{ showModal: false }">
@@ -754,7 +745,7 @@
       
         <div class="landscape:w-1/2 flex w-full align-middle">
           <div class="map md:w-1/2 w-3/4 py-5 mx-auto">
-            <svg height="100%" stroke-miterlimit="10" stroke="bg-light-purple"
+            <svg class="" height="100%" stroke-miterlimit="10" stroke="bg-light-purple"
               style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1"
               viewBox="120.882 5490.05 224.497 255.251" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
               xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
