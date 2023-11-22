@@ -241,11 +241,14 @@
       
           <div x-data="{ showModal: false }">
             <!-- Trigger button -->
-            <button
-              class="md:mt-28 whitespace-nowrap focus:outline-none hover:scale-105 hover:shadow-2xl hover:bg-light-purple hover:text-light text-dark-purple portrait:mt-[13svh] landscape:mt-[12svh] lg:landscape:mt-[13svh] landscape:text-xs lg:landscape:text-base portrait:px-8 portrait:py-6 landscape:px-4 landscape:py-3 lg:landscape:px-6 lg:landscape:py-5 mx-auto transition-transform duration-300 transform bg-white rounded-full select-none"
-              @click="showModal = true" data-aos="fade-in" data-aos-delay="250" data-aos-anchor="#hero" data-aos-once="true">
-              Book a Session
-            </button>
+            <div data-aos="fade-in" data-aos-delay="250" data-aos-anchor="#hero" data-aos-once="true">
+              <button
+                class="md:mt-28 whitespace-nowrap focus:outline-none hover:scale-105 hover:shadow-2xl hover:bg-light-purple hover:text-light text-dark-purple portrait:mt-[13svh] landscape:mt-[12svh] lg:landscape:mt-[13svh] landscape:text-xs lg:landscape:text-base portrait:px-8 portrait:py-6 landscape:px-4 landscape:py-3 lg:landscape:px-6 lg:landscape:py-5 mx-auto transition-transform duration-300 transform bg-white rounded-full select-none"
+                @click="showModal = true" >
+                Book a Session
+              </button>
+            </div>
+            
       
             <!-- Modal -->
             <div x-show="showModal" class=" bg-dark-purple fixed inset-0 z-50 flex items-center justify-center bg-opacity-75"
