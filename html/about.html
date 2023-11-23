@@ -37,13 +37,13 @@
 <body class=" scroll-smooth mx-auto leading-relaxed">
 
   <header class="sticky top-0 flex flex-col z-[100] h-14   bg-light drop-shadow-2xl ">
-
+  
     <div class="absolute top-0">
       <a>
         <img class="h-14 px-5" src="../img/logo.svg" alt="logo">
       </a>
     </div>
-
+  
     <div class="absolute  h-14 right-5 cursor-pointer z-[50] antialiased landscape:hidden" id="menuButtonContainer">
       <button class="h-14" id="menuButton">
         <svg xmlns="http://www.w3.org/2000/svg"
@@ -56,63 +56,63 @@
         </svg>
       </button>
     </div>
-
+  
     <nav class="relative top-0 transform translate-y-[-100%] menudrop landscape:hidden">
       <ul
         class="md:text-xl bg-dark-purple font-poppins text-light z-20 flex flex-col items-center justify-center h-screen gap-2 text-lg antialiased text-center">
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">PRICING</a></li>
-
+        <li><a href="../html/home.html">HOME</a></li>
+        <li><a href="../html/about.html">ABOUT</a></li>
+        <li><a href="../html/pricing.html">PRICING</a></li>
+  
         <li class="mt-7 md:mt-10 text-light-purple mb-2 text-xs font-medium">
           OUR SERVICES
         </li>
-
-        <li><a href="#">THERAPY</a></li>
-        <li><a href="#">DIAGNOSIS</a></li>
-        <li><a href="#">COUPLE'S COUNSELLING</a></li>
+  
+        <li><a href="../html/therapy.html">THERAPY</a></li>
+        <li><a href="../html/diagnosis.html">DIAGNOSIS</a></li>
+        <li><a href="../html/couples-counselling.html">COUPLE'S COUNSELLING</a></li>
         <li class="mt-7 md:mt-10 text-light-purple mb-2 text-xs font-medium">
           HAVE A QUESTION ?
         </li>
-
-        <li><a href="#">FAQ</a></li>
-        <li><a href="#">CONTACT</a></li>
-
+  
+        <li><a href="../html/faq.html">FAQ</a></li>
+        <li><a href="../html/contact.html">CONTACT</a></li>
+  
         <li class="mt-10">
         </li>
-
+  
         <li><a href="#">WORKSHOP</a></li>
         <li><a href="#">CAREER</a></li>
-
+  
       </ul>
     </nav>
-
+  
     <nav class="absolute h-14 right-3 cursor-pointer z-[50] antialiased portrait:hidden text-dark-purple">
       <ul class="flex flex-row flex-wrap items-center w-full">
-
-
+  
+  
         <li class=" relative block">
-          <a href="#"
+          <a href="../html/home.html"
             class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
             <span>Home</span>
           </a>
         </li>
-
+  
         <li class="relative block">
-          <a href="#"
+          <a href="../html/about.html"
             class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
             <span>About</span>
           </a>
         </li>
         <li class="relative block">
-          <a href="#"
+          <a href="../html/pricing.html"
             class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
             <span>Pricing</span>
           </a>
         </li>
-
-
-
+  
+  
+  
         <li class="relative block" x-data="{ showChildren: false, submenuTimeout: null }"
           @click.away="showChildren = false; clearTimeout(submenuTimeout)" @touchstart="showChildren = !showChildren">
           <a href="#"
@@ -134,21 +134,21 @@
               <ul class="list-reset">
                 <li class="relative" x-data="{ showChildren: false }" @mouseenter="showChildren = true"
                   @mouseleave="showChildren = false">
-                  <a href="#"
+                  <a href="../html/therapy.html"
                     class="hover:text-mid-purple hover:no-underline hover:scale-105 flex items-start w-full px-4 pb-5 no-underline transition-all duration-300 transform border-b cursor-pointer">
                     <span class="flex-1">Therapy</span>
                   </a>
                 </li>
                 <li class="relative" x-data="{ showChildren: false }" @mouseenter="showChildren = true"
                   @mouseleave="showChildren = false">
-                  <a href="#"
+                  <a href="../html/diagnosis.html"
                     class="hover:text-mid-purple hover:no-underline hover:scale-105 flex items-start w-full px-4 py-5 no-underline transition-all duration-300 transform border-b cursor-pointer">
                     <span class="flex-1">Diagnosis</span>
                   </a>
                 </li>
                 <li class="relative" x-data="{ showChildren: false }" @mouseenter="showChildren = true"
                   @mouseleave="showChildren = false">
-                  <a href="#"
+                  <a href="../html/couples-counselling.html"
                     class="hover:text-mid-purple hover:no-underline hover:scale-105 flex items-start w-full px-4 py-5 no-underline transition-all duration-300 transform border-b cursor-pointer">
                     <span class="flex-1">Couple's Counselling</span>
                   </a>
@@ -164,26 +164,26 @@
             </div>
           </div>
         </li>
-
-
-
-
+  
+  
+  
+  
         <li class="relative block">
-          <a href="#"
+          <a href="../html/faq.html"
             class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
             <span>FAQ</span>
           </a>
         </li>
-
+  
         <li class="relative block">
-          <a href="#"
+          <a href="../html/contact.html"
             class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
             <span>Contact Us</span>
           </a>
         </li>
       </ul>
     </nav>
-
+  
   </header>
 
     <main>

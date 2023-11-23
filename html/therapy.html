@@ -36,14 +36,15 @@
 <body class="mx-auto leading-relaxed">
 
 
-    <header class="sticky top-0 flex flex-col z-[100] h-14 bg-light drop-shadow-2xl">
+    <header class="sticky top-0 flex flex-col z-[100] h-14   bg-light drop-shadow-2xl ">
+    
         <div class="absolute top-0">
             <a>
-                <img class="h-14 px-5" src="../img/logo.svg" alt="logo" />
+                <img class="h-14 px-5" src="../img/logo.svg" alt="logo">
             </a>
         </div>
     
-        <div class="absolute h-14 right-5 cursor-pointer z-[50] antialiased landscape:hidden" id="menuButtonContainer">
+        <div class="absolute  h-14 right-5 cursor-pointer z-[50] antialiased landscape:hidden" id="menuButtonContainer">
             <button class="h-14" id="menuButton">
                 <svg xmlns="http://www.w3.org/2000/svg"
                     class="icon icon-tabler icon-tabler-menu-2 stroke-dark-purple h-10 transition-transform transform"
@@ -59,95 +60,105 @@
         <nav class="relative top-0 transform translate-y-[-100%] menudrop landscape:hidden">
             <ul
                 class="md:text-xl bg-dark-purple font-poppins text-light z-20 flex flex-col items-center justify-center h-screen gap-2 text-lg antialiased text-center">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">PRICING</a></li>
+                <li><a href="../html/home.html">HOME</a></li>
+                <li><a href="../html/about.html">ABOUT</a></li>
+                <li><a href="../html/pricing.html">PRICING</a></li>
     
                 <li class="mt-7 md:mt-10 text-light-purple mb-2 text-xs font-medium">
                     OUR SERVICES
                 </li>
     
-                <li><a href="#">THERAPY</a></li>
-                <li><a href="#">DIAGNOSIS</a></li>
-                <li><a href="#">COUPLE'S COUNSELLING</a></li>
+                <li><a href="../html/therapy.html">THERAPY</a></li>
+                <li><a href="../html/diagnosis.html">DIAGNOSIS</a></li>
+                <li><a href="../html/couples-counselling.html">COUPLE'S COUNSELLING</a></li>
                 <li class="mt-7 md:mt-10 text-light-purple mb-2 text-xs font-medium">
                     HAVE A QUESTION ?
                 </li>
     
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="../html/faq.html">FAQ</a></li>
+                <li><a href="../html/contact.html">CONTACT</a></li>
     
-                <li class="mt-10"></li>
+                <li class="mt-10">
+                </li>
     
                 <li><a href="#">WORKSHOP</a></li>
                 <li><a href="#">CAREER</a></li>
+    
             </ul>
         </nav>
     
         <nav class="absolute h-14 right-3 cursor-pointer z-[50] antialiased portrait:hidden text-dark-purple">
             <ul class="flex flex-row flex-wrap items-center w-full">
-                <li class="relative block">
-                    <a href="#"
+    
+    
+                <li class=" relative block">
+                    <a href="../html/home.html"
                         class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
                         <span>Home</span>
                     </a>
                 </li>
     
                 <li class="relative block">
-                    <a href="#"
+                    <a href="../html/about.html"
                         class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
                         <span>About</span>
                     </a>
                 </li>
                 <li class="relative block">
-                    <a href="#"
+                    <a href="../html/pricing.html"
                         class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
                         <span>Pricing</span>
                     </a>
                 </li>
     
-                <li class="relative block" x-data="{showChildren:false}" @click.away="showChildren=false">
+    
+    
+                <li class="relative block" x-data="{ showChildren: false, submenuTimeout: null }"
+                    @click.away="showChildren = false; clearTimeout(submenuTimeout)"
+                    @touchstart="showChildren = !showChildren">
                     <a href="#"
                         class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer"
-                        @click.prevent="showChildren=!showChildren">
+                        @mouseenter="showChildren = true; clearTimeout(submenuTimeout)"
+                        @mouseleave="submenuTimeout = setTimeout(() => showChildren = false, 300)">
                         <span>Our Services</span>
                         <span class="ml-2"> <i class="mdi mdi-chevron-down"></i> </span>
                     </a>
-                    <div class="absolute left-0 top-auto z-30 w-56 min-w-full mt-1 text-sm bg-white border border-gray-300 rounded shadow-md"
+                    <div class="rounded-3xl absolute left-0 top-auto z-30 w-56 min-w-full mt-1 text-base bg-white border border-gray-300 shadow-md"
                         x-show="showChildren" x-transition:enter="transition ease duration-300 transform"
                         x-transition:enter-start="opacity-0 translate-y-2"
                         x-transition:enter-end="opacity-100 translate-y-0"
                         x-transition:leave="transition ease duration-300 transform"
                         x-transition:leave-start="opacity-100 translate-y-0"
-                        x-transition:leave-end="opacity-0 translate-y-4" style="display: none">
-                        <span class="absolute top-0 left-0 w-3 h-3 ml-6 -mt-1 transform rotate-45 bg-white border"></span>
-                        <div class="relative z-10 w-full py-1 bg-white rounded">
+                        x-transition:leave-end="opacity-0 translate-y-4" style="display: none;"
+                        @mouseenter="clearTimeout(submenuTimeout)" @mouseleave="showChildren = false">
+                        <span class="absolute top-0 left-0 w-4 h-5 ml-6 -mt-1 transform rotate-45 bg-white border"></span>
+                        <div class="rounded-3xl relative z-10 w-full px-2 py-6 bg-white">
                             <ul class="list-reset">
-                                <li class="relative" x-data="{showChildren:false}" @mouseleave="showChildren=false"
-                                    @mouseenter="showChildren=true">
-                                    <a href="#"
-                                        class="hover:bg-gray-100 hover:no-underline flex items-start w-full px-4 py-4 no-underline transition-colors duration-100 cursor-pointer">
+                                <li class="relative" x-data="{ showChildren: false }" @mouseenter="showChildren = true"
+                                    @mouseleave="showChildren = false">
+                                    <a href="../html/therapy.html"
+                                        class="hover:text-mid-purple hover:no-underline hover:scale-105 flex items-start w-full px-4 pb-5 no-underline transition-all duration-300 transform border-b cursor-pointer">
                                         <span class="flex-1">Therapy</span>
                                     </a>
                                 </li>
-                                <li class="relative" x-data="{showChildren:false}" @mouseleave="showChildren=false"
-                                    @mouseenter="showChildren=true">
-                                    <a href="#"
-                                        class="hover:bg-gray-100 hover:no-underline flex items-start w-full px-4 py-4 no-underline transition-colors duration-100 cursor-pointer">
+                                <li class="relative" x-data="{ showChildren: false }" @mouseenter="showChildren = true"
+                                    @mouseleave="showChildren = false">
+                                    <a href="../html/diagnosis.html"
+                                        class="hover:text-mid-purple hover:no-underline hover:scale-105 flex items-start w-full px-4 py-5 no-underline transition-all duration-300 transform border-b cursor-pointer">
                                         <span class="flex-1">Diagnosis</span>
                                     </a>
                                 </li>
-                                <li class="relative" x-data="{showChildren:false}" @mouseleave="showChildren=false"
-                                    @mouseenter="showChildren=true">
-                                    <a href="#"
-                                        class="hover:bg-gray-100 hover:no-underline flex items-start w-full px-4 py-4 no-underline transition-colors duration-100 cursor-pointer">
+                                <li class="relative" x-data="{ showChildren: false }" @mouseenter="showChildren = true"
+                                    @mouseleave="showChildren = false">
+                                    <a href="../html/couples-counselling.html"
+                                        class="hover:text-mid-purple hover:no-underline hover:scale-105 flex items-start w-full px-4 py-5 no-underline transition-all duration-300 transform border-b cursor-pointer">
                                         <span class="flex-1">Couple's Counselling</span>
                                     </a>
                                 </li>
-                                <li class="relative" x-data="{showChildren:false}" @mouseleave="showChildren=false"
-                                    @mouseenter="showChildren=true">
+                                <li class="relative" x-data="{ showChildren: false }" @mouseenter="showChildren = true"
+                                    @mouseleave="showChildren = false">
                                     <a href="#"
-                                        class="hover:bg-gray-100 hover:no-underline flex items-start w-full px-4 py-4 no-underline transition-colors duration-100 cursor-pointer">
+                                        class="hover:text-mid-purple hover:no-underline hover:scale-105 flex items-start w-full px-4 pt-5 no-underline transition-all duration-300 transform cursor-pointer">
                                         <span class="flex-1">Workshops</span>
                                     </a>
                                 </li>
@@ -156,21 +167,25 @@
                     </div>
                 </li>
     
+    
+    
+    
                 <li class="relative block">
-                    <a href="#"
+                    <a href="../html/faq.html"
                         class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
                         <span>FAQ</span>
                     </a>
                 </li>
     
                 <li class="relative block">
-                    <a href="#"
+                    <a href="../html/contact.html"
                         class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
                         <span>Contact Us</span>
                     </a>
                 </li>
             </ul>
         </nav>
+    
     </header>
 
 
@@ -180,12 +195,12 @@
 
         <div class="text-slate-100 z-10 flex flex-col justify-around text-center">
 
-        <div class=" bg-gradient-to-b from-light-purple to-white h-[58svh]">
+        <div class=" bg-gradient-to-b from-light-purple to-white h-[58svh] md:h-[60svh]">
         
         
             <div class=" flex justify-center">
         
-                <svg class="absolute z-20 w-[7.5rem] md:w-[10.5rem] md:h-[10.5rem]  md:translate-x-[-5rem] md:translate-y-[3rem] translate-x-[-5rem] translate-y-[4rem] h-[7.5rem]  "
+                <svg class="absolute z-20 w-[7.5rem] md:w-[10.5rem] md:h-[10.5rem]  md:translate-x-[-5rem] md:translate-y-[3rem] translate-x-[3rem] translate-y-[10rem] h-[7.5rem]  "
                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
         
                     <defs>
@@ -272,7 +287,7 @@
         
         
             </svg>
-            <h1 class="md:text-3xl text-dark-purple mt-20 text-xl font-thin text-center">
+            <h1 class="md:text-3xl text-mid-purple mt-[-1rem] text-xl font-thin text-center">
             Let’s begin your therapy journey.
         </h1>
         
@@ -280,11 +295,19 @@
         </div>
                 
 
-            <div class="bg-mid-purple h-[42svh]">
+            <div class="bg-mid-purple h-[42svh] md:h-[40svh]">
                 <div
                     class="translate-y-[-100%]  absolute w-full mx-auto md:hidden">
-                    <img  src="../img/therapy-3.svg" alt="">
+                    <img  src="../img/therapy-4.svg" alt="">
+                    
                 </div>
+
+                <div class="translate-y-[-100%]  absolute w-full mx-auto max-md:hidden">
+                    <img src="../img/therapy-l-2.svg" alt="">
+                
+                </div>
+
+                
 
                 <div class="w-full  absolute landscape:translate-y-[-90%] portrait:translate-y-[-78%]">
                     <svg viewBox="0 0 1781 88" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
@@ -296,27 +319,146 @@
                 
                 </div>
 
-                <div class="mt-10">
-                    <h1 class="md:text-3xl text-2xl font-medium text-center">
+                <div class="">
+                    <h1 class="md:text-3xl md:mt-10 md:mb-6 mt-6 mb-4 text-3xl font-medium text-center">
                         THERAPY
                     </h1>
 
-                    <p>jbjvbabrwbabrib</p>
-                    <p>jbjvbabrwbabrib</p>
+                    <p class="md:text-base max-md:whitespace-pre-line text-sm font-light">Trained and experienced therapists
+                         that provide a non-judgmental open space
+                          for you to empower yourself.</p>
                 </div>
 
-                <button
-                    class="md:mt-5 md:mb-10 portrait:md:mt-28 portrait:lg:mt-36 portrait:md:mb-44 portrait:lg:mb-48 md:px-8 md:py-5 whitespace-nowrap bg-light hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring hover:bg-light-purple text-dark-purple hover:text-light px-8 py-6 mx-auto mt-5 mb-10 transition rounded-full select-none">
-                
-                    <a class="md:text-lg text-base font-normal" href="#">Book a Session</a>
-                
-                </button>
+                <div x-data="{ showModal: false }">
+            <!-- Trigger button -->
+            <div class="bouncingbutton-m" >
+                <div  data-aos="fade-in" data-aos-delay="250" data-aos-anchor="#hero" data-aos-once="true">
+              <button
+                class=" whitespace-nowrap focus:outline-none hover:scale-105 hover:shadow-2xl hover:bg-light-purple hover:text-light text-dark-purple portrait:mt-[4svh] landscape:mt-[4vh] landscape:text-base portrait:px-8 portrait:py-6 landscape:px-6 landscape:py-5 mx-auto transition-transform duration-300 transform bg-white rounded-full select-none"
+                @click="showModal = true" >
+                Book a Session
+              </button>
+            </div>
+
+            </div>
+            
+            
+      
+            <!-- Modal -->
+            <div x-show="showModal" class=" bg-dark-purple fixed inset-0 z-50 flex items-center justify-center bg-opacity-75"
+              x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0"
+              x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in duration-200"
+              x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" @click="showModal = false"
+              style="display: none;">
+      
+      
+              <div class="landscape:md:w-2/3 portrait:md:w-[65%] w-[95%] md:p-12 px-5 py-12 transform bg-white text-dark-purple rounded-2xl shadow-2xl">
+                <!-- Modal Header -->
+                <div class=" flex flex-col">
+                  <h2 class="hidden text-2xl font-semibold text-center">BOOK A SESSION</h2>
+                  <button @click="showModal = false"
+                    class="hover:text-gray-700 focus:outline-none right-6 top-6 absolute text-gray-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-x stroke-dark-purple">
+                      <line x1="18" y1="6" x2="6" y2="18"></line>
+                      <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                  </button>
+                </div>
+      
+                <!-- Modal Content -->
+                <div class=" md:text-base flex flex-col justify-center mx-auto text-sm text-center">
+                  <h4 class="md:mt-5 font-semibold">OUR STANDARD CHARGES</h4>
+      
+                  <div
+                    class="md:gap-10 rounded-xl py-7 md:px-10 flex flex-row justify-center gap-5 px-4 mx-auto mt-5 bg-gray-100">
+                    <div class=" flex flex-col justify-center gap-4">
+                      <p class=" whitespace-pre-line">Counselling
+                        Psychologist
+                      </p>
+                      <p class="font-semibold">
+                        <span class="text-base"><span class="font-mono">₹</span>2200</span>/session
+                      </p>
+                    </div>
+      
+                    <div class="w-[1px] h-auto bg-gray-300"></div>
+      
+                    <div class=" flex flex-col justify-center gap-4">
+                      <p class=" whitespace-pre-line">Clinical
+                        Psychologist
+                      </p>
+                      <p class="font-semibold">
+                        <span class=" text-base"><span class="font-mono">₹</span>2500</span>/session
+                      </p>
+                    </div>
+                  </div>
+      
+                  <h4 class="mt-7 font-normal">For more information visit</h4>
+      
+                  <div
+                    class="md:flex-row md:gap-3 text-mid-purple flex flex-wrap justify-center gap-4 mx-auto mt-3 font-medium">
+                    <h4
+                      class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 transition bg-gray-100 rounded-full">
+                      <a href="#">THERAPY</a>
+                    </h4>
+                    <h4
+                      class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 transition bg-gray-100 rounded-full">
+                      <a href="#">DIAGNOSIS</a>
+                    </h4>
+                    <h4
+                      class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 transition bg-gray-100 rounded-full">
+                      <a href="#">PRICING</a>
+                    </h4>
+                    <h4
+                      class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 transition bg-gray-100 rounded-full">
+                      <a href="#">COUPLE'S COUNSELLING</a>
+                    </h4>
+                  </div>
+      
+                  <div class="flex items-center py-8">
+                    <div class="flex-grow border-t border-gray-300"></div>
+                    <span class="px-5">OR</span>
+                    <div class="flex-grow border-t border-gray-300"></div>
+                  </div>
+      
+                  <div>
+                    <h3 class="text-xl font-semibold">BOOK A SESSION</h3>
+                    <p class="mt-2">Message us and book your session.</p>
+                  </div>
+      
+                  <div class="md:flex-row landscape:md:gap-8 md:gap-5 flex justify-center gap-4 pt-8 mx-auto">
+      
+      
+                    <button
+                      class="bouncingbutton md:px-8 md:py-4 whitespace-nowrap hover:scale-105 hover:shadow-2xl focus:outline-none hover:text-white px-6 py-3 mx-auto text-white transition rounded-full shadow-2xl select-none"
+                      style="background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);">
+                      <div class="md:gap-3 flex flex-row gap-2 my-auto">
+      
+                        <img class="md:w-6 w-5" src="../img/instagram-logo.svg" alt="">
+                        <a class="md:text-2xl my-auto text-xl font-medium" style="font-family: 'Grand Hotel', cursive;"
+                          href="https://ig.me/m/thefriendlycouch">Instagram</a>
+                      </div>
+                    </button>
+      
+                    <button
+                      class="bouncingbutton shadow-2xl md:px-7 md:py-4 whitespace-nowrap hover:scale-105 hover:shadow-2xl focus:outline-none  text-white hover:text-white px-5 py-3 mx-auto  transition bg-[#25D366] rounded-full select-none">
+                      <div class="md:gap-3 flex flex-row gap-2 my-auto">
+                        <img class="md:w-6 w-5" src="../img/whatsapp-logo.svg" alt="">
+                        <a class="md:text-lg my-auto text-base font-semibold"
+                          href="https://wa.me/919205025183?text=I%20want%20to%20book%20an%20online%20session."
+                          style="font-family: 'Helvetica Neue', sans-serif;">WhatsApp</a>
+                      </div>
+                    </button>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
                 
-                <div
-                    class="md:w-7 animate-bounce absolute inset-x-0 w-6 mx-auto">
-                    <img class="w-full" src="../img/Arrow.svg" alt="">
-                </div>
+                
 
             </div>
         </div>

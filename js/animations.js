@@ -37,6 +37,26 @@
 		delay: 250
     }
      
+   });
+
+     var bouncingButton = anime({
+	targets: '.bouncingbutton-m',
+	translateY: '0.3rem',
+	duration: 500,
+	loop: true,
+	direction: 'alternate',
+	easing: 'easeInCubic',
+	scaleY: {
+		value: 0.98,
+		duration: 250,
+		delay: 250
+    },
+    scaleX: {
+		value: 1.02,
+		duration: 250,
+		delay: 250
+    }
+     
 });
 
 

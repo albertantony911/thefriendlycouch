@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="1.84268e-14 515.49 1920 564.51" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs/>
+<g id="Layer-1" vectornator:layerName="Layer 1">
+<path d="M1920 644.724C1920 644.724 1021.44 338.355 9.14824e-14 669.047L9.14824e-14 1080L1920 1080L1920 644.724Z" fill="#593f92" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="Curve 6"/>
+<path d="M1193.29 527.371C1193.29 527.371 1159.7 524.637 1128.27 522.609C1096.85 520.581 1067.58 519.259 1067.58 519.259C1067.58 519.259 1104.34 657.269 1073.52 755.483L1244.88 760.228C1258.24 604.366 1193.29 527.371 1193.29 527.371Z" fill="#d1bef9" fill-rule="nonzero" opacity="1" stroke="#d1bef9" stroke-linecap="butt" stroke-linejoin="round" stroke-width="0.782677" vectornator:layerName="Rectangle 5"/>
+<path d="M9.14824e-14 758.871C9.14824e-14 758.871 1255.94 456.4 1920 932.245L1920 1080L1.84268e-14 1080L9.14824e-14 758.871Z" fill="#463174" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="Curve 1"/>
+<path d="M845.667 664.183C845.667 664.183 906.512 665.102 925.084 667.314C943.657 669.526 1007.36 672.834 1007.36 672.834C1007.36 672.834 962.883 742.182 944.267 843.708C925.651 945.234 932.897 1078.94 932.897 1078.94L749.965 1078.94C749.965 1078.94 759.709 936.666 783.634 832.977C807.56 729.289 845.667 664.183 845.667 664.183Z" fill="#d1bef9" fill-rule="nonzero" opacity="1" stroke="#d1bef9" stroke-linecap="butt" stroke-linejoin="round" stroke-width="0.782677" vectornator:layerName="Rectangle 6"/>
+<g opacity="1" vectornator:layerName="Group 6">
+<g opacity="1" vectornator:layerName="Group 11">
+<path d="M1019.36 772.938C1014.75 765.355 1000.13 765.83 986.694 773.997C973.261 782.165 966.108 794.933 970.718 802.515C975.328 810.098 989.956 809.623 1003.39 801.456C1016.82 793.288 1023.97 780.52 1019.36 772.938Z" fill="#7451c2" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="Oval 1"/>
+<g opacity="1" vectornator:layerName="Group 8">
+<path d="M1019.18 764.38C1016.69 749.827 1003.09 740.008 988.789 742.448C974.489 744.889 964.911 758.665 967.395 773.219C969.879 787.772 971.662 798.215 997.784 795.15C1023.88 792.089 1021.66 778.933 1019.18 764.38Z" fill="#ffffff" fill-rule="nonzero" opacity="1" stroke="#463174" stroke-linecap="butt" stroke-linejoin="round" stroke-width="0.749812" vectornator:layerName="Oval 2"/>
+</g>
+</g>
+<g opacity="1" vectornator:layerName="Group 10">
+<path d="M1010.88 756.45C1010.57 754.394 1008.66 752.975 1006.62 753.28C1004.57 753.585 1003.15 755.499 1003.46 757.556C1003.76 759.612 1005.67 761.031 1007.72 760.726C1009.77 760.421 1011.19 758.507 1010.88 756.45Z" fill="#463174" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="Oval 3"/>
+<path d="M1009.75 755.111C1009.61 754.211 1008.78 753.589 1007.88 753.722C1006.98 753.856 1006.36 754.695 1006.5 755.596C1006.63 756.497 1007.47 757.119 1008.36 756.985C1009.26 756.851 1009.88 756.012 1009.75 755.111Z" fill="#ffffff" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="Oval 2"/>
+</g>
+</g>
+</g>
+</svg>
