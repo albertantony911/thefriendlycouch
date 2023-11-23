@@ -52,7 +52,7 @@
 		delay: 250
     },
     scaleX: {
-		value: 1.02,
+		value: 1.01,
 		duration: 250,
 		delay: 250
     }
