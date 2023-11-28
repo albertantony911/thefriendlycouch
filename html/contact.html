@@ -1,0 +1,382 @@
+<!doctype html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" type="text/css" href="../output.css">
+  <link rel="stylesheet" type="text/css" href="../css/animations.css">
+
+  
+
+  <!-- External Libraries -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+  <script src="https://kit.fontawesome.com/9fa9d11dac.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.x.x/dist/alpine.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@motionone/types@10.16.3/dist/index.es.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap">
+  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/helvetica-neue-55">
+
+  <!-- Custom Scripts -->
+  <script src="../js/main.js" defer></script>
+    <script src="../js/animations.js" defer></script>
+  <script src="../js/aos.js" defer></script>
+  <script src="../js/gsap.js" defer></script>
+</head>
+
+  <body class=" scroll-smooth mx-auto leading-relaxed">
+    
+    <header class="sticky top-0 flex flex-col z-[100] h-14   bg-light drop-shadow-2xl ">
+    
+      <div class="absolute top-0">
+        <a>
+          <img class="h-14 px-5" src="../img/logo.svg" alt="logo">
+        </a>
+      </div>
+    
+      <div class="absolute  h-14 right-5 cursor-pointer z-[50] antialiased landscape:hidden" id="menuButtonContainer">
+        <button class="h-14" id="menuButton">
+          <svg xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-menu-2 stroke-dark-purple h-10 transition-transform transform"
+            viewBox="0 0 24 24" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="4" y1="6" x2="20" y2="6" />
+            <line x1="4" y1="12" x2="20" y2="12" />
+            <line x1="4" y1="18" x2="20" y2="18" />
+          </svg>
+        </button>
+      </div>
+    
+      <nav class="relative top-0 transform translate-y-[-100%] menudrop landscape:hidden">
+        <ul
+          class="md:text-xl bg-dark-purple font-poppins text-light z-20 flex flex-col items-center justify-center h-screen gap-2 text-lg antialiased text-center">
+          <li><a href="../html/home.html">HOME</a></li>
+          <li><a href="../html/about.html">ABOUT</a></li>
+          <li><a href="../html/pricing.html">PRICING</a></li>
+    
+          <li class="mt-7 md:mt-10 text-light-purple mb-2 text-xs font-medium">
+            OUR SERVICES
+          </li>
+    
+          <li><a href="../html/therapy.html">THERAPY</a></li>
+          <li><a href="../html/diagnosis.html">DIAGNOSIS</a></li>
+          <li><a href="../html/couples-counselling.html">COUPLE'S COUNSELLING</a></li>
+          <li class="mt-7 md:mt-10 text-light-purple mb-2 text-xs font-medium">
+            HAVE A QUESTION ?
+          </li>
+    
+          <li><a href="../html/faq.html">FAQ</a></li>
+          <li><a href="../html/contact.html">CONTACT</a></li>
+    
+          <li class="mt-10">
+          </li>
+    
+          <li><a href="#">WORKSHOP</a></li>
+          <li><a href="../html/career.html ">CAREER</a></li>
+          <li><a href="../html/test.html ">TEST</a></li>
+    
+        </ul>
+      </nav>
+    
+      <nav class="absolute h-14 right-3 cursor-pointer z-[50] antialiased portrait:hidden text-dark-purple">
+        <ul class="flex flex-row flex-wrap items-center w-full">
+    
+    
+          <li class=" relative block">
+            <a href="../html/home.html"
+              class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
+              <span>Home</span>
+            </a>
+          </li>
+    
+          <li class="relative block">
+            <a href="../html/about.html"
+              class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
+              <span>About</span>
+            </a>
+          </li>
+          <li class="relative block">
+            <a href="../html/pricing.html"
+              class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
+              <span>Pricing</span>
+            </a>
+          </li>
+    
+    
+    
+          <li class="relative block" x-data="{ showChildren: false, submenuTimeout: null }"
+            @click.away="showChildren = false; clearTimeout(submenuTimeout)" @touchstart="showChildren = !showChildren">
+            <a href="#"
+              class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer"
+              @mouseenter="showChildren = true; clearTimeout(submenuTimeout)"
+              @mouseleave="submenuTimeout = setTimeout(() => showChildren = false, 300)">
+              <span>Our Services</span>
+              <span class="ml-2"> <i class="mdi mdi-chevron-down"></i> </span>
+            </a>
+            <div
+              class="rounded-3xl absolute left-0 top-auto z-30 w-56 min-w-full mt-1 text-base bg-white border border-gray-300 shadow-md"
+              x-show="showChildren" x-transition:enter="transition ease duration-300 transform"
+              x-transition:enter-start="opacity-0 translate-y-2" x-transition:enter-end="opacity-100 translate-y-0"
+              x-transition:leave="transition ease duration-300 transform"
+              x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-4"
+              style="display: none;" @mouseenter="clearTimeout(submenuTimeout)" @mouseleave="showChildren = false">
+              <span class="absolute top-0 left-0 w-4 h-5 ml-6 -mt-1 transform rotate-45 bg-white border"></span>
+              <div class="rounded-3xl relative z-10 w-full px-2 py-6 bg-white">
+                <ul class="list-reset">
+                  <li class="relative" x-data="{ showChildren: false }" @mouseenter="showChildren = true"
+                    @mouseleave="showChildren = false">
+                    <a href="../html/therapy.html"
+                      class="hover:text-mid-purple hover:no-underline hover:scale-105 flex items-start w-full px-4 pb-5 no-underline transition-all duration-300 transform border-b cursor-pointer">
+                      <span class="flex-1">Therapy</span>
+                    </a>
+                  </li>
+                  <li class="relative" x-data="{ showChildren: false }" @mouseenter="showChildren = true"
+                    @mouseleave="showChildren = false">
+                    <a href="../html/diagnosis.html"
+                      class="hover:text-mid-purple hover:no-underline hover:scale-105 flex items-start w-full px-4 py-5 no-underline transition-all duration-300 transform border-b cursor-pointer">
+                      <span class="flex-1">Diagnosis</span>
+                    </a>
+                  </li>
+                  <li class="relative" x-data="{ showChildren: false }" @mouseenter="showChildren = true"
+                    @mouseleave="showChildren = false">
+                    <a href="../html/couples-counselling.html"
+                      class="hover:text-mid-purple hover:no-underline hover:scale-105 flex items-start w-full px-4 py-5 no-underline transition-all duration-300 transform border-b cursor-pointer">
+                      <span class="flex-1">Couple's Counselling</span>
+                    </a>
+                  </li>
+                  <li class="relative" x-data="{ showChildren: false }" @mouseenter="showChildren = true"
+                    @mouseleave="showChildren = false">
+                    <a href="#"
+                      class="hover:text-mid-purple hover:no-underline hover:scale-105 flex items-start w-full px-4 pt-5 no-underline transition-all duration-300 transform cursor-pointer">
+                      <span class="flex-1">Workshops</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+    
+    
+    
+    
+          <li class="relative block">
+            <a href="../html/faq.html"
+              class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
+              <span>FAQ</span>
+            </a>
+          </li>
+    
+          <li class="relative block">
+            <a href="../html/contact.html"
+              class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
+              <span>Contact Us</span>
+            </a>
+          </li>
+          <li class="relative block">
+            <a href="../html/career.html"
+              class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
+              <span>Career(test)</span>
+            </a>
+          </li>
+          <li class="relative block">
+            <a href="../html/test.html"
+              class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
+              <span>Test(test)</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    
+    </header>
+
+    <main>
+     
+
+      
+
+     
+
+      <!-- 
+          =======================================================================
+      
+          This is a working contact form. To receive email, 
+          Replace YOUR_ACCESS_KEY_HERE with your actual Access Key.
+      
+          Create Access Key here 👉 https://web3forms.com/
+      
+          =======================================================================
+       -->
+
+
+       <div class="xl:flex-row bg-mid-purple xl:px-32 xl:py-20 shadow-3xl flex flex-col">
+
+        <div class="xl:w-1/2 bg-dark-purple max-xl:py-24 xl:rounded-s-3xl max-md:h-[100svh] flex flex-col justify-center w-full mx-auto"  data-aos="fade-in" data-aos-delay="200" data-aos-once="true">
+          <img class="xl:w-[20rem] w-2/3 md:w-1/3 mx-auto" src="../img/contact_hero.svg" alt="">
+
+          
+
+          
+          <h3 class="mt-16 mb-5 text-xl font-semibold text-center text-white">GET IN TOUCH WITH US ON</h3>
+          <div class="md:gap-10 xl:gap-5 flex flex-row justify-center gap-4 pt-8 mx-auto">
+    
+            <button
+              class="bouncingbutton md:px-8 md:py-4 whitespace-nowrap hover:scale-105 hover:shadow-2xl focus:outline-none hover:text-white px-7 py-4 mx-auto text-white transition rounded-full shadow-xl select-none"
+              style="background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);">
+              <div class="md:gap-3 flex flex-row gap-2 my-auto">
+                <img class="md:w-6 w-6" src="../img/instagram-logo.svg" alt="">
+                <a class="md:text-2xl my-auto text-2xl font-medium" style="font-family: 'Grand Hotel', cursive;"
+                  href="https://ig.me/m/thefriendlycouch">Instagram</a>
+              </div>
+            </button>
+    
+            <button 
+              class="bouncingbutton shadow-xl md:px-7 md:py-4 whitespace-nowrap hover:scale-105 hover:shadow-2xl focus:outline-none  text-white hover:text-white px-6 py-4 mx-auto  transition bg-[#25D366] rounded-full select-none">
+              <div class="md:gap-3 flex flex-row gap-2 my-auto">
+                <img class="md:w-6 w-6" src="../img/whatsapp-logo.svg" alt="">
+                <a class="md:text-lg my-auto text-lg font-semibold"
+                  href="https://wa.me/919205025183?text=I%20want%20to%20book%20an%20online%20session."
+                  style="font-family: 'Helvetica Neue', sans-serif;">WhatsApp</a>
+              </div>
+            </button>
+          </div>
+
+          <div class="flex items-center px-24 py-8 text-white">
+                <div class="flex-grow border-t border-gray-300"></div>
+                <span class="px-5">OR</span>
+                <div class="flex-grow border-t border-gray-300"></div>
+          </div>
+                
+          <div class="flex flex-row gap-10 mx-auto text-white">
+              <div class="md:gap-2 flex flex-row gap-1 my-auto">
+                <img class="md:w-6 w-6" src="../img/instagram-logo.svg" alt="">
+                <p class="md:text-base my-auto text-sm font-medium" >@thefriendlycouch</p>
+              </div>
+            
+              <div class="md:gap-2 flex flex-row gap-1 my-auto">
+                <img class="md:w-5 w-5" src="../img/whatsapp-logo_green.svg" alt="">
+                <a class="md:text-base my-auto text-sm font-medium">+91 9205025183 </a>
+              </div>
+          </div>
+
+          <div
+            class="landscape:hidden animate-bounce portrait:w-6 landscape:w-[4svh] lg:landscape:w-7 mt-20 mx-auto"
+            data-aos="fade-in" data-aos-delay="250" data-aos-anchor="#hero" data-aos-once="true">
+            <img class="w-full mx-auto" src="../img/Arrow.svg" alt="" />
+          </div>
+
+        </div>
+    
+        <div class=" bg-light landscape:text-base xl:rounded-e-3xl landscape:xl:w-1/2 xl:py-12 flex flex-col items-center w-full py-20 mx-auto text-sm" >
+          <div class=" text-center">
+            <h1 class=" text-dark-purple mb-1 text-3xl font-semibold" data-aos="fade-in" data-aos-delay="100" data-aos-once="true">
+              CONTACT US
+            </h1>
+            <p class=" text-dark-purple pt-3 pb-6" data-aos="fade-in" >
+              Fill up the form below to send us a message.
+            </p>
+          </div>
+    
+          <div class="xl:w-[50%] w-[70%] md:w-[35%] " data-aos="fade-in" data-aos-delay="100" data-aos-once="true">
+            <form action="https://api.web3forms.com/submit" method="POST" id="form">
+              <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+              <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+              <input type="checkbox" name="botcheck" id="" style="display: none;" />
+    
+              <div class="mb-3">
+                <label for="name" class="text-dark-purple block mb-2 text-sm">Full Name</label>
+                <input type="text" name="name" id="name" placeholder="Full Name" required
+                  class="focus:outline-none w-full h-12 px-4 py-2 text-sm text-gray-900 placeholder-gray-500 bg-gray-100 rounded-lg" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="text-dark-purple block mb-2 text-sm">Email Address</label>
+                <input type="email" name="email" id="email" placeholder="name@mail.com" required
+                  class="focus:outline-none w-full h-12 px-4 py-2 text-sm text-gray-900 placeholder-gray-500 bg-gray-100 rounded-lg" />
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="text-dark-purple block mb-2 text-sm">Phone Number</label>
+                <input type="text" name="phone" id="phone" placeholder="+91 9847654321" required
+                  class="focus:outline-none w-full h-12 px-4 py-2 text-sm text-gray-900 placeholder-gray-500 bg-gray-100 rounded-lg" />
+              </div>
+              <div class="mb-4">
+                <label for="message" class="text-dark-purple block mb-2 text-sm">Your Message</label>
+    
+                <textarea rows="4" name="message" id="message" placeholder="Your Message"
+                  class="focus:outline-none w-full px-4 py-2 text-sm text-gray-900 placeholder-gray-500 bg-gray-100 rounded-lg"
+                  required></textarea>
+              </div>
+              <div class=" px-auto flex justify-center">
+                <button type="submit"
+                  class="hover:text-light-purple focus:outline-none bg-dark-purple md:w-2/3 md:py-5 inline-block w-3/5 px-4 py-6 text-white no-underline rounded-full">
+                  SEND MESSAGE
+                </button>
+              </div>
+              <p class="text-dark-purple text-base text-center" id="result"></p>
+            </form>
+          </div>
+        </div>
+        
+       </div>
+    
+    
+        
+
+
+
+
+      
+       
+      
+      
+
+
+
+      
+</main>
+
+    <footer class="bg-dark-purple flex flex-col">
+      <div class="text-center divide-y divide-light divide-solid mr-[10%] ml-[10%]">
+        <!-- Social Links -->
+        <div style="color: white"class="md:gap-16 flex justify-center gap-10 pt-12 pb-10 text-base">
+          <a href="#" title="Facebook" target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="#" title="Twitter" target="_blank"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="#" title="Behance" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="#" title="LinkedIn+" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="#" title="Dribbble" target="_blank"
+            ><i class="fa-brands fa-whatsapp"></i
+          ></a>
+        </div>
+        <!-- Copyright -->
+        <div class="text-slate-100 pt-8 text-sm font-thin">
+          <a href="#" target="_blank" class=""
+            >&copy; The Friendly Couch 2023</a
+          >
+        </div>
+      </div>
+      <div class="text-center">
+        <div class="pb-7 text-slate-100 pt-5 text-xs font-normal">
+          <div>Powered By <a href="#" target="_blank">blackwoodbox.com</a></div>
+        </div>
+      </div>
+    </footer>
+
+   
+
+
+  </body>
+</html>

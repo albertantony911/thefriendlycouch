@@ -1,109 +1,36 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const menuButtonContainer = document.getElementById("menuButtonContainer");
-  const nav = document.querySelector("nav");
-  const menuItems = document.querySelectorAll(".menudrop li");
+document.addEventListener("DOMContentLoaded", function() {
+  const scrollGroup = document.getElementById("scrollGroup");
 
-  menuButtonContainer.addEventListener("click", function() {
-    // Toggle the 'menu-open' class to trigger the animations
-    menuButtonContainer.classList.toggle("menu-open");
+  // Number of tiny cards
+  const numCards = 10;
 
-    // Toggle the 'translate-y-[-100%]' class to open/close the navigation menu
-    nav.classList.toggle("translate-y-[-100%]");
+  // Create tiny cards with tick marks
+  for (let i = 0; i < numCards; i++) {
+    const tinyCard = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+    tinyCard.setAttribute("x", i * 20); // Adjust spacing
+    tinyCard.setAttribute("y", 10);
+    tinyCard.setAttribute("width", 15);
+    tinyCard.setAttribute("height", 20);
+    tinyCard.setAttribute("fill", "#3498db"); // Adjust color
+    tinyCard.setAttribute("opacity", "0");
 
-    // Toggle the 'toggled' class on the list items
-    menuItems.forEach(item => item.classList.toggle("toggled"));
-  });
+    const tickMark = document.createElementNS("http://www.w3.org/2000/svg", "line");
+    tickMark.setAttribute("x1", i * 20 + 2);
+    tickMark.setAttribute("y1", 15);
+    tickMark.setAttribute("x2", i * 20 + 8);
+    tickMark.setAttribute("y2", 25);
+    tickMark.setAttribute("stroke", "#fff"); // Adjust color
+    tickMark.setAttribute("stroke-width", "2");
+    tickMark.setAttribute("opacity", "0");
+
+    tinyCard.appendChild(tickMark);
+    scrollGroup.appendChild(tinyCard);
+  }
+
+  // Animation
+  const tl = gsap.timeline({ repeat: -1 });
+
+  tl.to("#scrollGroup", { duration: 2, x: -180 * numCards, ease: "linear" });
+  tl.to("#scrollGroup rect", { duration: 0.5, opacity: 1, stagger: 0.1 });
+  tl.to("#scrollGroup rect", { duration: 0.5, opacity: 0, stagger: 0.1 });
 });
-
-
-// Clock Animation start
-var inc = 1000;
-
-        clock();
-
-        function clock() {
-            const date = new Date();
-
-            const hours = ((date.getHours() + 11) % 12 + 1);
-            const minutes = date.getMinutes();
-            const seconds = date.getSeconds();
-
-            const hour = (hours * 30) + (minutes / 2);
-            const minute = minutes * 6;
-            const second = seconds * 6;
-
-            document.querySelector('.hour').style.transform = `rotate(${hour}deg)`
-            document.querySelector('.minute').style.transform = `rotate(${minute}deg)`
-            document.querySelector('.second').style.transform = `rotate(${second}deg)`
-          }
-
-setInterval(clock, inc);
-        
-
-    // Clock Animation end
-
-
-
-
-
-
-// Function to animate a counter
-function animatedCounter(target, time = 300, start = 0, elementId) {
-    let current = start;
-    const increment = (target - current) / time;
-    const counterElement = document.getElementById(elementId);
-
-    function updateCounter() {
-        if (current < target) {
-            current += increment;
-            const roundedValue = Math.round(current);
-            counterElement.innerHTML = `${roundedValue}<span class="text-dark-purple font-normal animate-pulse">+</span>`;
-            requestAnimationFrame(updateCounter);
-        }
-    }
-
-    // Initialize the counter animation when the element is in the viewport
-    const observer = new IntersectionObserver(entries => {
-        if (entries[0].isIntersecting) {
-            updateCounter();
-            observer.unobserve(counterElement); // Stop observing once it starts
-        }
-    });
-
-    // Start observing the counter element
-    observer.observe(counterElement);
-}
-
-// Initialize the animated counters
-animatedCounter(8, 100, 0, "counter1");
-animatedCounter(12, 100, 0, "counter2");
-animatedCounter(2500, 100, 0, "counter3");
-animatedCounter(7000, 100, 0, "counter4");
- 
-
-
-
-document.addEventListener('DOMContentLoaded', function () {
-  const button = document.getElementById('navbar-toggle');
-  const menu = document.getElementById('navbar-dropdown');
-
-  const dropdownButton = document.getElementById('dropdownNavbarLink');
-  const dropdownMenu = document.getElementById('dropdownNavbar');
-
-  const doubleDropdownButton = document.getElementById('doubleDropdownButton');
-  const doubleDropdown = document.getElementById('doubleDropdown');
-
-  dropdownButton.addEventListener('click', () => {
-    dropdownMenu.classList.toggle('hidden');
-  });
-
-  doubleDropdownButton.addEventListener('click', () => {
-    doubleDropdown.classList.toggle('hidden');
-  });
-
-  button.addEventListener('click', function () {
-    menu.classList.toggle('hidden');
-  });
-});
-
-

@@ -37,8 +37,10 @@
     <header class="sticky top-0 flex flex-col z-[100] h-14   bg-light drop-shadow-2xl ">
     
       <div class="absolute top-0">
-        <a>
-          <img class="h-14 px-5" src="../img/logo.svg" alt="logo">
+        <a href="../html/home.html">
+          <button aria-label="Home">
+            <img class="h-14 px-5" src="../img/logo.svg" alt="Logo">
+          </button>
         </a>
       </div>
     
@@ -80,7 +82,8 @@
           </li>
     
           <li><a href="#">WORKSHOP</a></li>
-          <li><a href="#">CAREER</a></li>
+          <li><a href="../html/career.html ">CAREER</a></li>
+          <li><a href="../html/test.html ">TEST</a></li>
     
         </ul>
       </nav>
@@ -179,6 +182,18 @@
               <span>Contact Us</span>
             </a>
           </li>
+          <li class="relative block">
+            <a href="../html/career.html"
+              class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
+              <span>Career(test)</span>
+            </a>
+          </li>
+          <li class="relative block">
+            <a href="../html/test.html"
+              class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
+              <span>Test(test)</span>
+            </a>
+          </li>
         </ul>
       </nav>
 
@@ -211,24 +226,24 @@
       
           <div class=" flex flex-col items-center mx-auto" data-aos="fade-down" data-aos-duration="700" data-aos-anchor="#hero">
       
-            <div class="clock -scale-100 absolute lg:landscape:translate-y-[-17.1svh] landscape:translate-y-[-23svh] lg:landscape:translate-x-[7.9svh] landscape:translate-x-[10.55svh] portrait:translate-y-[-28.48svw] portrait:translate-x-[13.18svw]">
+            <div class="clock -scale-100 absolute lg:landscape:translate-y-[-17.1svh] landscape:translate-y-[-23svh] lg:landscape:translate-x-[7.9svh] landscape:translate-x-[10.55svh] portrait:translate-y-[-28.48svw] portrait:translate-x-[13.18svw] md:portrait:translate-y-[-20.75svw] md:portrait:translate-x-[9.7svw]">
               <div class="wrap m-auto overflow-hidden">
                 <span class="hour bg-light-purple absolute shadow-2xl w-[0.3svh] h-[1.5svh] rounded-full m-auto transform origin-top rotate-0"></span>
                 <span class="minute bg-light-purple absolute shadow-2xl w-[0.2svh] h-[2.1svh] rounded-full m-auto origin-top transform rotate-90"></span>
                 <span class="second  bg-white  absolute w-[0.1svh] h-[2.2svh] shadow-2xl rounded-full m-auto origin-top transform rotate-180"></span>
-                <span class="absolute w-[0.6svh] translate-x-[-35%] translate-y-[-50%] h-[0.6svh] origin-center bg-white rounded-full shadow-2xl"></span>
+                <span class="absolute w-[0.6svh] translate-x-[-28%] translate-y-[-50%] h-[0.6svh] origin-center bg-white rounded-full shadow-2xl"></span>
               </div>
             </div>
       
             <div class="absolute translate-y-[-60%] ">
                 <div class="couch">
-                  <img class=" landscape:w-[40svh] lg:landscape:w-[30svh] portrait:w-[50vw] lg:portrait:w-[30vw]" src="../img/couch.svg"
+                  <img class=" landscape:w-[40svh] lg:landscape:w-[30svh] portrait:w-[50svw] md:portrait:w-[30svw]" src="../img/couch.svg"
                     alt="" />
                 </div>
             </div>
                 
             <div class="absolute translate-y-[-70%] translate-x-[3%]">
-              <img class="landscape:w-[60svh] lg:landscape:w-[45svh] portrait:w-[75vw] lg:portrait:w-[55vw]" src="../img/room.svg" alt="" />
+              <img class="landscape:w-[60svh] lg:landscape:w-[45svh] portrait:w-[75svw] md:portrait:w-[55svw]" src="../img/room.svg" alt="" />
             </div>
 
             <div class="-inset-x-0  absolute z-10 w-20 h-20 mx-auto text-white translate-y-[-175%] translate-x-[35%]">
@@ -258,13 +273,12 @@
               style="display: none;">
       
       
-              <div class="landscape:md:w-2/3 portrait:md:w-[65%] w-[95%] md:p-12 px-5 py-12 transform bg-white text-dark-purple rounded-2xl shadow-2xl">
+              <div class=" text-mid-purple rounded-[3rem] px-[6svw] md:px-8 py-9 transform bg-white shadow-2xl">
                 <!-- Modal Header -->
                 <div class=" flex flex-col">
-                  <h2 class="hidden text-2xl font-semibold text-center">BOOK A SESSION</h2>
                   <button @click="showModal = false"
-                    class="hover:text-gray-700 focus:outline-none right-6 top-6 absolute text-gray-500">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                    class="hover:text-gray-700 focus:outline-none right-7 top-7 absolute text-gray-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none"
                       stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
                       class="feather feather-x stroke-dark-purple">
                       <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -275,11 +289,9 @@
       
                 <!-- Modal Content -->
                 <div class=" md:text-base flex flex-col justify-center mx-auto text-sm text-center">
-                  <h4 class="md:mt-5 font-semibold">OUR STANDARD CHARGES</h4>
-      
-                  <div
-                    class="md:gap-10 rounded-xl py-7 md:px-10 flex flex-row justify-center gap-5 px-4 mx-auto mt-5 bg-gray-100">
-                    <div class=" flex flex-col justify-center gap-4">
+                      <h4 class="md:mt-5 font-semibold">OUR STANDARD CHARGES</h4>
+                  <div class="rounded-3xl py-7 flex flex-row justify-center mx-auto mt-5 bg-gray-100">
+                    <div class="pl-7 pr-5 md:pr-8 md:pl-12 flex flex-col justify-center gap-[0.75rem]">
                       <p class=" whitespace-pre-line">Counselling
                         Psychologist
                       </p>
@@ -290,7 +302,7 @@
       
                     <div class="w-[1px] h-auto bg-gray-300"></div>
       
-                    <div class=" flex flex-col justify-center gap-4">
+                    <div class="pr-7 pl-5 md:pr-12 md:pl-8 flex flex-col justify-center gap-[0.75rem]">
                       <p class=" whitespace-pre-line">Clinical
                         Psychologist
                       </p>
@@ -300,44 +312,48 @@
                     </div>
                   </div>
       
-                  <h4 class="mt-7 font-normal">For more information visit</h4>
-      
-                  <div
-                    class="md:flex-row md:gap-3 text-mid-purple flex flex-wrap justify-center gap-4 mx-auto mt-3 font-medium">
+                  <h4 class="mt-5 mb-3 font-normal">For more information visit</h4>
+
+                  
+
+                    <div class="md:flex-row md:gap-3 text-mid-purple flex flex-wrap justify-center gap-[0.8rem] mx-auto font-medium">
+                      <button
+                        class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 transition bg-gray-100 rounded-full">
+                        <a href="#">THERAPY</a>
+                      </button>
+                      <button
+                        class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 transition bg-gray-100 rounded-full">
+                        <a href="#">DIAGNOSIS</a>
+                      </button>
+                      <button
+                        class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 transition bg-gray-100 rounded-full">
+                        <a href="#">PRICING</a>
+                      </button>
+                      
+                    </div>
+                    
                     <button
-                      class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 transition bg-gray-100 rounded-full">
-                      <a href="#">THERAPY</a>
-                    </button>
-                    <h4
-                      class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 transition bg-gray-100 rounded-full">
-                      <a href="#">DIAGNOSIS</a>
-                    </h4>
-                    <h4
-                      class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 transition bg-gray-100 rounded-full">
-                      <a href="#">PRICING</a>
-                    </h4>
-                    <h4
-                      class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 transition bg-gray-100 rounded-full">
+                      class="font-medium text-mid-purple mt-[0.8rem] hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 mx-auto transition bg-gray-100 rounded-full">
                       <a href="#">COUPLE'S COUNSELLING</a>
-                    </h4>
-                  </div>
+                    </button>
+
+                    
       
-                  <div class="flex items-center py-8">
-                    <div class="flex-grow border-t border-gray-300"></div>
-                    <span class="px-5">OR</span>
-                    <div class="flex-grow border-t border-gray-300"></div>
+                  <div class="flex items-center w-[85%] mx-auto py-6">
+                    <div class="flex-grow border-t border-gray-200"></div>
+                    <span class="px-5 text-gray-500">OR</span>
+                    <div class="flex-grow border-t border-gray-200"></div>
                   </div>
       
                   <div>
-                    <h3 class="text-xl font-semibold">BOOK A SESSION</h3>
-                    <p class="mt-2">Message us and book your session.</p>
+                    <h3 class="text-sm font-medium">MESSAGE US AND BOOK YOUR SESSION</h3>
                   </div>
       
-                  <div class="md:flex-row landscape:md:gap-8 md:gap-5 flex justify-center gap-4 pt-8 mx-auto">
+                  <div class="md:flex-row landscape:md:gap-8 md:gap-5 flex justify-center gap-4 pt-6 mx-auto">
       
-      
+                    
                     <button
-                      class="bouncingbutton md:px-8 md:py-4 whitespace-nowrap hover:scale-105 hover:shadow-2xl focus:outline-none hover:text-white px-6 py-3 mx-auto text-white transition rounded-full shadow-2xl select-none"
+                      class=" md:px-8 md:py-4 whitespace-nowrap hover:scale-105 hover:shadow-lg focus:outline-none hover:text-white px-6 py-3 mx-auto text-white transition rounded-full shadow-lg select-none"
                       style="background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);">
                       <div class="md:gap-3 flex flex-row gap-2 my-auto">
       
@@ -348,7 +364,7 @@
                     </button>
       
                     <button
-                      class="bouncingbutton shadow-2xl md:px-7 md:py-4 whitespace-nowrap hover:scale-105 hover:shadow-2xl focus:outline-none  text-white hover:text-white px-5 py-3 mx-auto  transition bg-[#25D366] rounded-full select-none">
+                      class=" shadow-lg md:px-7 md:py-4 whitespace-nowrap hover:scale-105 hover:shadow-lg focus:outline-none  text-white hover:text-white px-5 py-3 mx-auto  transition bg-[#25D366] rounded-full select-none">
                       <div class="md:gap-3 flex flex-row gap-2 my-auto">
                         <img class="md:w-6 w-5" src="../img/whatsapp-logo.svg" alt="">
                         <a class="md:text-lg my-auto text-base font-semibold"
@@ -559,9 +575,7 @@
         
           <div class="">
 
-            <svg class=" mb-[-2px] md:hidden" viewBox="0 317 960 223" xmlns="http://www.w3.org/2000/svg" >
-
-              
+            <svg class=" mb-[-2px] md:hidden" viewBox="0 317 960 223" xmlns="http://www.w3.org/2000/svg" > 
               <path
                 d="m0 375 26.7-4.3c26.6-4.4 80-13 133.3-14.4 53.3-1.3 106.7 4.7 160-4.1 53.3-8.9 106.7-32.5 160-34.9 53.3-2.3 106.7 16.7 160 24.2s106.7 3.5 160 8.3c53.3 4.9 106.7 18.5 133.3 25.4L960 382v159H0Z"
                 fill="#d1bef9"/>
@@ -584,7 +598,7 @@
               <path
                 d="M0 589s9.982 1.623 15 1.423c15-.596 49.945-4.919 75-5 25.833-.083 54.167 3.238 80 4.5 24.991 1.222 47.8 3.077 75 3.077 27.1 0 55.7-.7 83 2 27.3 2.7 54.167-1.743 81-1.577 26.68.166 54 2.66 80 2.577 25.354-.081 50.667-2.038 76-3.077 19.14-.785 45.667 1.834 63.5 1.5 14.544-.272 28.953-3.521 43.5-3.5 17.91.027 42.605 3.795 63.959 3.66 24.267-.154 59.473-4.473 81.647-4.583 17.181-.085 37.662 3.603 51.394 3.923 10.352.242 31-2 31-2V601H0v-12Z"
                 style="fill:#463174;fill-rule:nonzero" transform="matrix(1 0 0 1.39698 0 -788.585)" />
-              </svg>
+            </svg>
             
             
             <div id="inclusivity" class=" text-slate-100 bg-gradient-to-b from-dark-purple to-mid-purple z-10 flex flex-col pt-10">
@@ -1482,6 +1496,10 @@
 
         <div class="xl:w-1/2 bg-mid-purple max-xl:py-24 xl:rounded-s-3xl flex flex-col justify-center w-full mx-auto"  data-aos="fade-in" data-aos-delay="200" data-aos-once="true">
           <img class="xl:w-[20rem] w-2/3 md:w-1/3 mx-auto" src="../img/contact_hero.svg" alt="">
+
+          
+
+          
           <h3 class="mt-16 mb-5 text-xl font-semibold text-center text-white">GET IN TOUCH WITH US ON</h3>
           <div class="md:gap-10 xl:gap-5 flex flex-row justify-center gap-4 pt-8 mx-auto">
     
@@ -1541,6 +1559,7 @@
               <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
               <input type="hidden" name="subject" value="New Submission from Web3Forms" />
               <input type="checkbox" name="botcheck" id="" style="display: none;" />
+              <input type="hidden" name="redirect" value="https://www.thefriendlycouch.com/message-recieved.html">
     
               <div class="mb-3">
                 <label for="name" class="text-dark-purple block mb-2 text-sm">Full Name</label>
