@@ -1549,6 +1549,15 @@ html {
   width: 90%;
 }
 
+.w-\[95svw\] {
+  width: 95svw;
+}
+
+.w-min {
+  width: -moz-min-content;
+  width: min-content;
+}
+
 .min-w-full {
   min-width: 100%;
 }
@@ -2179,6 +2188,10 @@ html {
 
 .rounded-\[3rem\] {
   border-radius: 3rem;
+}
+
+.rounded-\[4rem\] {
+  border-radius: 4rem;
 }
 
 .border {
@@ -3540,6 +3553,54 @@ svg {
     width: 45svh;
   }
 
+  .md\:w-\[\] {
+    width: ;
+  }
+
+  .md\:w-\[60svh\] {
+    width: 60svh;
+  }
+
+  .md\:w-\[70svh\] {
+    width: 70svh;
+  }
+
+  .md\:w-\[75svh\] {
+    width: 75svh;
+  }
+
+  .md\:w-\[77svh\] {
+    width: 77svh;
+  }
+
+  .md\:w-\[65svh\] {
+    width: 65svh;
+  }
+
+  .md\:w-\[63svh\] {
+    width: 63svh;
+  }
+
+  .md\:w-\[6svh\] {
+    width: 6svh;
+  }
+
+  .md\:w-\[71svh\] {
+    width: 71svh;
+  }
+
+  .md\:w-\[72svh\] {
+    width: 72svh;
+  }
+
+  .md\:w-\[73svh\] {
+    width: 73svh;
+  }
+
+  .md\:w-\[74svh\] {
+    width: 74svh;
+  }
+
   .md\:-translate-y-8 {
     --tw-translate-y: -2rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -3748,6 +3809,10 @@ svg {
 
   .md\:p-28 {
     padding: 7rem;
+  }
+
+  .md\:p-14 {
+    padding: 3.5rem;
   }
 
   .md\:px-0 {
@@ -4713,7 +4778,35 @@ svg {
     .md\:portrait\:w-\[55svw\] {
       width: 55svw;
     }
+  }
+}
 
+@media (orientation: portrait) {
+  @media (min-width: 768px) {
+    .portrait\:md\:w-\[74svh\] {
+      width: 74svh;
+    }
+
+    .portrait\:md\:w-\[74svw\] {
+      width: 74svw;
+    }
+
+    .portrait\:md\:w-\[64svw\] {
+      width: 64svw;
+    }
+
+    .portrait\:md\:w-\[67svw\] {
+      width: 67svw;
+    }
+
+    .portrait\:md\:w-\[70svw\] {
+      width: 70svw;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  @media (orientation: portrait) {
     .md\:portrait\:translate-y-\[-28\.48svw\] {
       --tw-translate-y: -28.48svw;
       transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -5677,6 +5770,22 @@ svg {
 
     .landscape\:md\:w-\[90\%\] {
       width: 90%;
+    }
+
+    .landscape\:md\:w-\[74svh\] {
+      width: 74svh;
+    }
+
+    .landscape\:md\:w-\[65svh\] {
+      width: 65svh;
+    }
+
+    .landscape\:md\:w-\[50svh\] {
+      width: 50svh;
+    }
+
+    .landscape\:md\:w-\[55svh\] {
+      width: 55svh;
     }
 
     .landscape\:md\:gap-8 {
