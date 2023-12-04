@@ -57,7 +57,31 @@
 		delay: 250
     }
      
+	 });
+
+
+const swiper = new Swiper('.swiper', {
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+  direction: 'horizontal',
+  loop: true,
+  autoplay: {
+    delay: 1500,
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
+  a11y: {
+    prevSlideMessage: 'Previous slide', // Customize accessibility messages as needed
+    nextSlideMessage: 'Next slide',
+    firstSlideMessage: 'This is the first slide',
+    lastSlideMessage: 'This is the last slide',
+  },
 });
+
 
 
 

@@ -11,6 +11,8 @@
 
     <!-- External Libraries -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 
     <script src="https://kit.fontawesome.com/9fa9d11dac.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.x.x/dist/alpine.js" defer></script>
@@ -19,6 +21,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@motionone/types@10.16.3/dist/index.es.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    
+
 
     <!-- Google Fonts -->
     <link rel="stylesheet"
@@ -31,6 +37,7 @@
     <script src="../js/animations.js" defer></script>
     <script src="../js/aos.js" defer></script>
     <script src="../js/gsap.js" defer></script>
+
 </head>
 
 <body class="mx-auto leading-relaxed">
@@ -459,74 +466,128 @@
         
             <p class="md:text-lg md:pt-14 md:text-center md:px-32 px-10 pt-10 text-sm text-left">We use an evidence based approach to help couples find their way back to happiness and connection. The process involves tailoring a unique plan suited to the needs of each couple based on the Gottmans method of couple’s counselling.</p>
         </div>
-        
 
-        <div
-            class="md:flex-row-reverse portrait:md:flex-col bg-dark-purple text-slate-100 md:items-center md:py-28 z-10 flex flex-col items-start py-24 mx-auto">
+
+        <div class="text-dark-purple md:text-lg md:px-20 flex flex-col px-8 text-sm divide-y">
         
-            <div class="md:w-3/6 portrait:md:w-full w-full">
-                <img class="portrait:md:w-1/3 md:ml-0 portrait:mx-auto w-1/2 mx-auto" src="../img/couch.svg" alt="" />
-            </div>
-            <div class="portrait:md:w-full flex flex-col w-full">
-                <h2
-                    class="md:px-32 md:text-3xl md:pt-0 portrait:md:pt-16 px-16 pt-20 text-2xl font-semibold text-center text-white">
-                   1. INDIVIDUAL SESSION
+            <div class="pb-14 pt-16">
+                <h2 class="md:text-3xl text-2xl font-semibold text-center">
+                    OUR COUNSELLING PROCESS
                 </h2>
+            </div>
         
-                <div
-                    class="md:px-32 portrait:md:px-24 md:text-lg md:pt-10 px-8 pt-8 mx-auto text-sm font-light leading-relaxed text-left">
-                    <p>
-                        We start by working with each partner individually to explore their emotions, perspectives, and experiences in depth.
-                        This helps us gain a comprehensive understanding of both sides of the relationship.
-                    </p>
+            <div class="landscape:flex-row-reverse flex flex-col-reverse gap-16 mx-auto">
+                <div class="landscape:py-20 landscape:w-4/5 pt-5 pb-16">
+                    <div class="flex">
+                        <div class="flex flex-col items-center mr-4">
+                            <div>
+                                <div
+                                    class="text-dark-purple bg-light-purple flex items-center justify-center w-10 h-10 rounded-full">
+                                    <svg class=" w-4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                        stroke-linejoin="round" viewBox="0 0 24 24">
+                                        <line fill="none" stroke-miterlimit="10" x1="12" y1="2" x2="12" y2="22"></line>
+                                        <polyline fill="none" stroke-miterlimit="10" points="19,15 12,22 5,15"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="bg-light-purple vertical-line w-px h-full"></div>
+                        </div>
+                        <div class=" pt-1 pb-8">
+                            <p class="mb-2 text-lg font-bold">INDIVIDUAL SESSION</p>
+                            <p>
+                                We start by working with each partner individually to explore their emotions, perspectives, and experiences in depth.
+                                This helps us gain a comprehensive understanding of both sides of the relationship.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex">
+                        <div class="flex flex-col items-center mr-4">
+                            <div>
+                                <div
+                                    class=" text-dark-purple bg-light-purple flex items-center justify-center w-10 h-10 border rounded-full">
+                                    <svg class=" w-4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                        stroke-linejoin="round" viewBox="0 0 24 24">
+                                        <line fill="none" stroke-miterlimit="10" x1="12" y1="2" x2="12" y2="22"></line>
+                                        <polyline fill="none" stroke-miterlimit="10" points="19,15 12,22 5,15"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class=" bg-light-purple w-px h-full"></div>
+                        </div>
+                        <div class="pt-1 pb-8">
+                            <p class="mb-2 text-lg font-bold">JOINT SESSION</p>
+                            <p>
+                                Building on the insights from individual sessions, we bring both partners together for the core of the therapeutic
+                                process. These sessions encourage open dialogue, provide exercises, and focus on improving communication, understanding,
+                                and emotional connection.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="flex flex-col items-center mr-4">
+                            <div>
+                                <div
+                                    class="text-dark-purple bg-light-purple flex items-center justify-center w-10 h-10 border rounded-full">
+                                    <svg class=" w-4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                        stroke-linejoin="round" viewBox="0 0 24 24">
+                                        <line fill="none" stroke-miterlimit="10" x1="12" y1="2" x2="12" y2="22"></line>
+                                        <polyline fill="none" stroke-miterlimit="10" points="19,15 12,22 5,15"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="bg-light-purple w-px h-full"></div>
+                        </div>
+                        <div class="pt-1 pb-8">
+                            <p class="mb-2 text-lg font-bold">PERSONAL SESSION</p>
+                            <p>
+                                After the initial round of sessions (two individual and one joint), our therapist will create a personalised plan. This
+                                may involve more individual sessions or regular joint sessions, depending on the couple's needs and progress.
+                            </p>
+                        </div>
+                    </div>
+        
+                    <div class="flex">
+                        <div class="flex flex-col items-center mr-4">
+                            <div>
+                                <div
+                                    class="text-dark-purple bg-light-purple flex items-center justify-center w-10 h-10 border rounded-full">
+                                    <img class="heartbeat w-5" src="../img/heart-purple.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-1">
+                            <p class="mb-2 text-lg font-semibold">Make your relationships happier</p>
+                        </div>
+        
+                    </div>
+                    
+        
+                </div>
+        
+                <div class="landscape:w-[30svh] portrait:w-[60svw]  flex my-auto   mx-auto ">
                    
-                </div>
-            </div>
-        </div>
-        
-        <div
-            class="md:flex-row portrait:md:flex-col bg-mid-purple text-slate-100 md:items-center md:py-28 z-10 flex flex-col items-start py-24 mx-auto">
-            <div class="md:w-3/6 portrait:md:w-full w-full">
-                <img class="portrait:md:w-1/3 md:ml-auto portrait:mx-auto w-1/2" src="../img/couch.svg" alt="" />
-            </div>
-            <div class="portrait:md:w-full flex flex-col w-full">
-                <h2
-                    class="md:px-32 md:text-3xl md:pt-0 portrait:md:pt-12 pt-20 text-2xl font-semibold text-center text-white">
-                    2. JOINT SESSION
-                </h2>
-
-                <div
-                    class="md:px-32 portrait:md:px-24 md:text-lg md:pt-10 px-8 pt-8 mx-auto text-sm font-light leading-relaxed text-left">
-                    <p>
-                        Building on the insights from individual sessions, we bring both partners together for the core of the therapeutic
-                        process. These sessions encourage open dialogue, provide exercises, and focus on improving communication, understanding,
-                        and emotional connection.
-                    </p>
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper mt-16">
+                            <!-- Slides -->
+                            <div class="swiper-slide" data-swiper-autoplay="1500"><img src="../img/counselling-step-1.svg" alt=""></div>
+                            <div class="swiper-slide" data-swiper-autoplay="2000"><img src="../img/counselling-step-2.svg" alt=""></div> 
+                            <div class="swiper-slide " data-swiper-autoplay="5000"><img class="" src="../img/counselling-step-3.svg" alt="">
+                                <div class="absolute translate-y-[-8.5rem] flex justify-center w-full">
+                                    <img class="w-[1.8rem] heartbeat" src="../img/heart-purple.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     
                 </div>
             </div>
         </div>
         
-        <div
-            class="md:flex-row-reverse portrait:md:flex-col bg-dark-purple text-slate-100 md:py-28 z-10 flex flex-col items-center py-24 mx-auto">
-            <div class="md:w-3/6 portrait:md:w-full w-full">
-                <img class="portrait:md:w-1/3 portrait:mx-auto w-1/2" src="../img/couch.svg" alt="" />
-            </div>
-            <div class="portrait:md:w-full flex flex-col w-full">
-                <h2 class="md:text-3xl md:pt-0 portrait:md:pt-16 pt-20 text-2xl font-semibold text-center text-white">
-                    3. PERSONAL SESSION
-                </h2>
+
         
-                <div
-                    class="md:px-32 portrait:md:px-24 md:text-lg md:pt-10 px-8 pt-8 mx-auto text-sm font-light leading-relaxed text-left">
-                    <p>
-                        After the initial round of sessions (two individual and one joint), our therapist will create a personalised plan. This
-                        may involve more individual sessions or regular joint sessions, depending on the couple's needs and progress.
-                    </p>
-                    
-                </div>
-            </div>
-        </div>
         
         
 
@@ -534,9 +595,9 @@
         
 
 
-        <div class="bg-mid-purple md:p-16 p-0">
+        <div class="bg-mid-purple md:p-14 p-0">
 
-            <div class="text-dark-purple md:py-28 flex flex-col items-center justify-center h-auto py-20 mx-auto bg-white">
+            <div class="md:text-dark-purple max-md:text-white md:py-16 md:bg-white max-md:bg-dark-purple flex flex-col items-center justify-center h-auto py-20 mx-auto">
             
             
                 
@@ -555,7 +616,7 @@
                 <div x-data="{ showModal: false }">
                     <!-- Trigger button -->
                     <button
-                        class=" md:px-8 md:py-5 whitespace-nowrap hover:scale-105 hover:shadow-2xl focus:outline-none hover:bg-light-purple hover:text-light bg-dark-purple px-8 py-6 mx-auto mt-10 text-white transition rounded-full select-none"
+                        class=" md:px-8 md:py-5 whitespace-nowrap hover:scale-105 hover:shadow-2xl focus:outline-none hover:bg-light-purple hover:text-light md:bg-dark-purple max-md:bg-white md:text-white max-md:text-dark-purple px-8 py-6 mx-auto mt-10 transition rounded-full select-none"
                         @click="showModal = true">
                         Book a Session
                     </button>
@@ -669,6 +730,142 @@
             
             </div>
 
+        </div>
+
+        <div class="text-dark-purple md:text-lg md:px-20 flex flex-col px-8 text-sm border divide-y">
+        
+            <div class="pt-24 pb-16">
+                <h2 class="md:text-3xl text-2xl font-semibold text-center">
+                    OUR COUNSELLING PROCESS
+                </h2>
+            </div>
+        
+            <div class="landscape:flex-row-reverse landscape:pt-0 flex flex-col-reverse gap-16 pt-16 mx-auto">
+                <div class="landscape:py-24 landscape:w-4/5 pt-12 pb-20">
+                    <div class="flex">
+                        <div class="flex flex-col items-center mr-4">
+                            <div>
+                                <div
+                                    class="text-dark-purple bg-light-purple flex items-center justify-center w-10 h-10 rounded-full">
+                                    <svg class=" w-4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                        stroke-linejoin="round" viewBox="0 0 24 24">
+                                        <line fill="none" stroke-miterlimit="10" x1="12" y1="2" x2="12" y2="22"></line>
+                                        <polyline fill="none" stroke-miterlimit="10" points="19,15 12,22 5,15"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="bg-light-purple vertical-line w-px h-full"></div>
+                        </div>
+                        <div class=" pt-1 pb-8">
+                            <p class="mb-2 text-lg font-bold">INDIVIDUAL SESSION</p>
+                            <p>
+                                We start by working with each partner individually to explore their emotions, perspectives, and
+                                experiences in depth.
+                                This helps us gain a comprehensive understanding of both sides of the relationship.
+                            </p>
+                        </div>
+                    </div>
+        
+                    <div class="flex">
+                        <div class="flex flex-col items-center mr-4">
+                            <div>
+                                <div
+                                    class=" text-dark-purple bg-light-purple flex items-center justify-center w-10 h-10 border rounded-full">
+                                    <svg class=" w-4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                        stroke-linejoin="round" viewBox="0 0 24 24">
+                                        <line fill="none" stroke-miterlimit="10" x1="12" y1="2" x2="12" y2="22"></line>
+                                        <polyline fill="none" stroke-miterlimit="10" points="19,15 12,22 5,15"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class=" bg-light-purple w-px h-full"></div>
+                        </div>
+                        <div class="pt-1 pb-8">
+                            <p class="mb-2 text-lg font-bold">JOINT SESSION</p>
+                            <p>
+                                Building on the insights from individual sessions, we bring both partners together for the core
+                                of the therapeutic
+                                process. These sessions encourage open dialogue, provide exercises, and focus on improving
+                                communication, understanding,
+                                and emotional connection.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="flex flex-col items-center mr-4">
+                            <div>
+                                <div
+                                    class="text-dark-purple bg-light-purple flex items-center justify-center w-10 h-10 border rounded-full">
+                                    <svg class=" w-4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                        stroke-linejoin="round" viewBox="0 0 24 24">
+                                        <line fill="none" stroke-miterlimit="10" x1="12" y1="2" x2="12" y2="22"></line>
+                                        <polyline fill="none" stroke-miterlimit="10" points="19,15 12,22 5,15"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="bg-light-purple w-px h-full"></div>
+                        </div>
+                        <div class="pt-1 pb-8">
+                            <p class="mb-2 text-lg font-bold">PERSONAL SESSION</p>
+                            <p>
+                                After the initial round of sessions (two individual and one joint), our therapist will create a
+                                personalised plan. This
+                                may involve more individual sessions or regular joint sessions, depending on the couple's needs
+                                and progress.
+                            </p>
+                        </div>
+                    </div>
+        
+                    <div class="flex">
+                        <div class="flex flex-col items-center mr-4">
+                            <div>
+                                <div
+                                    class="text-dark-purple bg-light-purple flex items-center justify-center w-10 h-10 border rounded-full">
+                                    <svg class="text-dark-purple w-6" stroke="currentColor" viewBox="0 0 24 24">
+                                        <polyline fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-miterlimit="10" points="6,12 10,16 18,8"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-1">
+                            <p class="mb-2 text-lg font-medium">Start your therapy journey with us!</p>
+                        </div>
+        
+                    </div>
+                    <div class="text-center">
+        
+                        <button
+                            class="md:mt-12 md:px-8 md:py-5 whitespace-nowrap bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring hover:bg-light-purple hover:text-light text-slate-100 px-8 py-6 mx-auto mt-20 font-medium text-center transition rounded-full select-none">
+                            <a class="md:text-lg text-base font-normal" href="#">BOOK A SESSION</a>
+                        </button>
+        
+                    </div>
+        
+                </div>
+        
+                <div class="landscape:w-[30svh] portrait:w-[60svw]  flex my-auto  mx-auto">
+        
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide" data-swiper-autoplay="1500"><img src="../img/counselling-step-1.svg"
+                                    alt=""></div>
+                            <div class="swiper-slide" data-swiper-autoplay="2000"><img src="../img/counselling-step-2.svg"
+                                    alt=""></div>
+                            <div class="swiper-slide " data-swiper-autoplay="5000"><img class=""
+                                    src="../img/counselling-step-3.svg" alt="">
+                                <div class="absolute translate-y-[-8.5rem] flex justify-center w-full">
+                                    <img class="w-[1.8rem] heartbeat" src="../img/heart-purple.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
         </div>
 
         
