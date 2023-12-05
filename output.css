@@ -1282,6 +1282,22 @@ html {
   width: 1px;
 }
 
+.w-\[80\%\] {
+  width: 80%;
+}
+
+.w-\[5rem\] {
+  width: 5rem;
+}
+
+.w-\[25rem\] {
+  width: 25rem;
+}
+
+.w-\[20rem\] {
+  width: 20rem;
+}
+
 .min-w-full {
   min-width: 100%;
 }
@@ -2804,6 +2820,10 @@ svg {
     margin-top: 0.3rem;
   }
 
+  .md\:mt-14 {
+    margin-top: 3.5rem;
+  }
+
   .md\:hidden {
     display: none;
   }
@@ -2946,6 +2966,34 @@ svg {
 
   .md\:w-\[95\%\] {
     width: 95%;
+  }
+
+  .md\:w-\[80\%\] {
+    width: 80%;
+  }
+
+  .md\:w-\[20\%\] {
+    width: 20%;
+  }
+
+  .md\:w-\[30\%\] {
+    width: 30%;
+  }
+
+  .md\:w-\[70\%\] {
+    width: 70%;
+  }
+
+  .md\:w-\[40\%\] {
+    width: 40%;
+  }
+
+  .md\:w-\[60\%\] {
+    width: 60%;
+  }
+
+  .md\:w-\[65\%\] {
+    width: 65%;
   }
 
   .md\:-translate-y-8 {
@@ -4387,6 +4435,10 @@ svg {
     flex-direction: row-reverse;
   }
 
+  .landscape\:flex-col {
+    flex-direction: column;
+  }
+
   .landscape\:gap-0 {
     gap: 0px;
   }
@@ -4800,6 +4852,14 @@ svg {
 
     .lg\:landscape\:mt-\[7svh\] {
       margin-top: 7svh;
+    }
+
+    .lg\:landscape\:mt-\[3svh\] {
+      margin-top: 3svh;
+    }
+
+    .lg\:landscape\:mt-\[6svh\] {
+      margin-top: 6svh;
     }
   }
 }

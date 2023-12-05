@@ -61,14 +61,13 @@
 
 
 const swiper = new Swiper('.swiper', {
-  effect: 'fade',
-  fadeEffect: {
-    crossFade: true
-  },
+  spaceBetween: 30,
+      effect: "fade",
+	  
   direction: 'horizontal',
   loop: true,
   autoplay: {
-    delay: 1500,
+    delay: 2000,
   },
   keyboard: {
     enabled: true,
