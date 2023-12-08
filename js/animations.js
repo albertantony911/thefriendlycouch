@@ -61,29 +61,28 @@
 
 
 	document.addEventListener('DOMContentLoaded', function () {
-                var swiper = new Swiper(".mySwiper", {
-      
-                    effect: "fade",
-                    fadeEffect: {
-                        crossFade: true
-                    },
-                    direction: 'horizontal',
-                    loop: true,
-                    waitForTransition: false,
-                    autoplay: {
-                        delay: 1500,
-                    },
-                    keyboard: {
-                        enabled: true,
-                        onlyInViewport: true,
-                    },
-                    a11y: {
-                        prevSlideMessage: 'Previous slide', // Customize accessibility messages as needed
-                        nextSlideMessage: 'Next slide',
-                        firstSlideMessage: 'This is the first slide',
-                        lastSlideMessage: 'This is the last slide',
-                    },
-                });
+                const swiper = new Swiper('.swiper', {
+					effect: 'fade',
+					fadeEffect: {
+						crossFade: true,
+					},
+					direction: 'horizontal',
+					loop: true,
+					waitForTransition: false,
+					autoplay: {
+						delay: 1000, // Adjust this value as needed
+					},
+					keyboard: {
+						enabled: true,
+						onlyInViewport: true,
+					},
+					a11y: {
+						prevSlideMessage: 'Previous slide',
+						nextSlideMessage: 'Next slide',
+						firstSlideMessage: 'This is the first slide',
+						lastSlideMessage: 'This is the last slide',
+					},
+					});
             });
 
 
