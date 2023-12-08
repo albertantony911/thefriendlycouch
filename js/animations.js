@@ -60,27 +60,99 @@
 	 });
 
 
-const swiper = new Swiper('.swiper', {
-  spaceBetween: 30,
-      effect: "fade",
-	  
-  direction: 'horizontal',
-  loop: true,
-  autoplay: {
-    delay: 2000,
-  },
-  keyboard: {
-    enabled: true,
-    onlyInViewport: true,
-  },
-  a11y: {
-    prevSlideMessage: 'Previous slide', // Customize accessibility messages as needed
-    nextSlideMessage: 'Next slide',
-    firstSlideMessage: 'This is the first slide',
-    lastSlideMessage: 'This is the last slide',
-  },
+	document.addEventListener('DOMContentLoaded', function () {
+                var swiper = new Swiper(".mySwiper", {
+      
+                    effect: "fade",
+                    fadeEffect: {
+                        crossFade: true
+                    },
+                    direction: 'horizontal',
+                    loop: true,
+                    waitForTransition: false,
+                    autoplay: {
+                        delay: 1500,
+                    },
+                    keyboard: {
+                        enabled: true,
+                        onlyInViewport: true,
+                    },
+                    a11y: {
+                        prevSlideMessage: 'Previous slide', // Customize accessibility messages as needed
+                        nextSlideMessage: 'Next slide',
+                        firstSlideMessage: 'This is the first slide',
+                        lastSlideMessage: 'This is the last slide',
+                    },
+                });
+            });
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const steps = document.querySelectorAll('.color-change');
+
+  function changeColor(index) {
+    setTimeout(() => {
+      // Change background color
+      steps[index].style.backgroundColor = '#593F92';
+      // Change text color
+      steps[index].style.color = 'white';
+
+      if (index < steps.length - 1) {
+        changeColor(index + 1);
+      } else {
+        // All steps have changed color, reset the colors
+        setTimeout(() => {
+          steps.forEach(step => {
+            step.style.backgroundColor = '';
+            step.style.color = '';
+          });
+          // Restart the animation
+          changeColor(0);
+        }, 1500); // Adjust the delay before restarting the animation
+      }
+    }, 1500); // Adjust the delay between color changes
+  }
+
+  // Start the animation from the first step
+  changeColor(0); // Start from the first step
 });
 
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const textElements = document.querySelectorAll('.text-color-change');
+
+  // Set initial styles for the first text element
+  textElements[0].style.color = '#463174';
+  textElements[0].style.textShadow = '0.5px 0.5px 2px rgba(70, 49, 116, 0.1)';
+
+  function changeTextColor(index) {
+    setTimeout(() => {
+      // Change text color and add text shadow
+      textElements[index].style.color = '#463174';
+      textElements[index].style.textShadow = '0.5px 0.5px 2px rgba(70, 49, 116, 0.1)';
+
+      if (index < textElements.length - 1) {
+        changeTextColor(index + 1);
+      } else {
+        // All text elements have changed color, reset the styles
+        setTimeout(() => {
+          textElements.forEach(element => {
+            element.style.color = '';
+            element.style.textShadow = '';
+          });
+          // Restart the animation
+          changeTextColor(0);
+        }, 1000); // Adjust the delay before restarting the animation
+      }
+    }, 1000); // Adjust the delay between color changes
+  }
+
+  // Start the animation
+  changeTextColor(1); // Start from the second text element to make the first one already colored
+});
 
 
 

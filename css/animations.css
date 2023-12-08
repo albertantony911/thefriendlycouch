@@ -237,11 +237,46 @@
 
 
 
+@keyframes rotateEyes {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(2deg); /* Adjust the rotation angle as needed */
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Apply the animation to the eye group */
+#eyes {
+  transform-origin: center;
+  animation: rotateEyes 2s ease-in-out infinite;
+}
+
+
+
+.pink-text-shadow {
+    text-shadow: .5px .5px 5px #D1BEF9;
+}
+
+
+
+
 /**
  * ----------------------------------------
  * animation heartbeat
  * ----------------------------------------
  */
+
+ #heart-relationship{
+    transform-origin: center;
+    transform-box: fill-box;
+    translate: 0 5%;
+    -webkit-animation: heartbeat 2s ease-in-out infinite both;
+	        animation: heartbeat 2s ease-in-out infinite both;
+ }
 
 .heartbeat {
 	-webkit-animation: heartbeat 2s ease-in-out infinite both;

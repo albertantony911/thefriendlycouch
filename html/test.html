@@ -6,11 +6,16 @@
 
   <!-- CSS Stylesheets -->
   <link rel="stylesheet" type="text/css" href="../output.css">
-  <link rel="stylesheet" type="text/css" href="../css/test.css">
   <link rel="stylesheet" type="text/css" href="../css/animations.css">
 
   <!-- External Libraries -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+
+
+
 
   <script src="https://kit.fontawesome.com/9fa9d11dac.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.x.x/dist/alpine.js" defer></script>
@@ -19,16 +24,27 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@motionone/types@10.16.3/dist/index.es.min.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+
+
+
+
 
   <!-- Google Fonts -->
-  <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap">
   <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/helvetica-neue-55">
 
   <!-- Custom Scripts -->
   <script src="../js/main.js" defer></script>
-  <script src="../js/test.js" defer></script>
   <script src="../js/animations.js" defer></script>
+  <script src="../js/aos.js" defer></script>
+  <script src="../js/gsap.js" defer></script>
 
 </head>
 
@@ -204,90 +220,445 @@
     
 
         
-        <svg class="w-[30svh] h-[30svh]" height="100%" stroke-miterlimit="10"
-          style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1"
-          viewBox="639.68 250.624 356.302 469.494" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-          xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
-          <defs>
-            <filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="5.44749" id="Filter" width="85.6452"
-              x="786.8" y="403.451">
-              <feDropShadow dx="-0" dy="0" flood-color="#000000" flood-opacity="0.333" in="SourceGraphic" result="Shadow"
-                stdDeviation="0" />
-            </filter>
-            <filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="5.44749" id="Filter_2"
-              width="85.6452" x="786.8" y="431.823">
-              <feDropShadow dx="-0" dy="0" flood-color="#000000" flood-opacity="0.333" in="SourceGraphic" result="Shadow"
-                stdDeviation="0" />
-            </filter>
-            <filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="5.44749" id="Filter_3"
-              width="85.6452" x="786.8" y="459.348">
-              <feDropShadow dx="-0" dy="0" flood-color="#000000" flood-opacity="0.333" in="SourceGraphic" result="Shadow"
-                stdDeviation="0" />
-            </filter>
-            <filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="5.44749" id="Filter_4"
-              width="85.6452" x="786.8" y="494.525">
-              <feDropShadow dx="-0" dy="0" flood-color="#000000" flood-opacity="0.333" in="SourceGraphic" result="Shadow"
-                stdDeviation="0" />
-            </filter>
-            <filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="5.44749" id="Filter_5"
-              width="85.6452" x="786.8" y="537.276">
-              <feDropShadow dx="-0" dy="0" flood-color="#000000" flood-opacity="0.333" in="SourceGraphic" result="Shadow"
-                stdDeviation="0" />
-            </filter>
-            <filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="5.44749" id="Filter_6"
-              width="85.6452" x="786.8" y="621.103">
-              <feDropShadow dx="-0" dy="0" flood-color="#000000" flood-opacity="0.333" in="SourceGraphic" result="Shadow"
-                stdDeviation="0" />
-            </filter>
-          </defs>
-          <clipPath id="ArtboardFrame">
-            <rect height="469.494" width="356.302" x="639.68" y="250.624" />
-          </clipPath>
-          <g clip-path="url(#ArtboardFrame)" id="Layer" vectornator:layerName="Layer">
-            <g opacity="1" vectornator:layerName="Group 11">
-              <path
-                d="M640.055 374.102C640.055 322.242 676.116 280.201 720.599 280.201L915.064 280.201C959.547 280.201 995.608 322.242 995.608 374.102L995.608 625.842C995.608 677.702 959.547 719.743 915.064 719.743L720.599 719.743C676.116 719.743 640.055 677.702 640.055 625.842L640.055 374.102Z"
-                fill="#ffffff" fill-rule="nonzero" opacity="1" stroke="#463174" stroke-linecap="butt" stroke-linejoin="round"
-                stroke-width="0.749812" vectornator:layerName="Rectangle 1" />
-              <path
-                d="M732.186 293.736C732.186 285.746 738.664 279.268 746.654 279.268L889.01 279.268C897 279.268 903.477 285.746 903.477 293.736L903.477 314.902C903.477 322.892 897 329.369 889.01 329.369L746.654 329.369C738.664 329.369 732.186 322.892 732.186 314.902L732.186 293.736Z"
-                fill="#593f92" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="Rectangle 2" />
-              <path
-                d="M786.8 279.268C786.8 263.449 800.693 250.624 817.832 250.624C834.97 250.624 848.863 263.449 848.863 279.268C848.863 295.088 834.97 307.913 817.832 307.913C800.693 307.913 786.8 295.088 786.8 279.268Z"
-                fill="#c0a3ff" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="Oval 1" />
-              <path
-                d="M786.8 406.175C786.8 404.67 788.02 403.451 789.524 403.451L869.722 403.451C871.226 403.451 872.445 404.67 872.445 406.175L872.445 406.175C872.445 407.679 871.226 408.898 869.722 408.898L789.524 408.898C788.02 408.898 786.8 407.679 786.8 406.175L786.8 406.175Z"
-                fill="#593f92" fill-rule="nonzero" filter="url(#Filter)" stroke="none" vectornator:layerName="Rectangle 4"
-                vectornator:shadowAngle="2.0207" vectornator:shadowColor="#000000" vectornator:shadowOffset="0"
-                vectornator:shadowOpacity="0.333" vectornator:shadowRadius="0" />
-              <path
-                d="M786.8 434.546C786.8 433.042 788.02 431.823 789.524 431.823L869.722 431.823C871.226 431.823 872.445 433.042 872.445 434.546L872.445 434.546C872.445 436.051 871.226 437.27 869.722 437.27L789.524 437.27C788.02 437.27 786.8 436.051 786.8 434.546L786.8 434.546Z"
-                fill="#593f92" fill-rule="nonzero" filter="url(#Filter_2)" stroke="none" vectornator:layerName="Rectangle 5"
-                vectornator:shadowAngle="2.0207" vectornator:shadowColor="#000000" vectornator:shadowOffset="0"
-                vectornator:shadowOpacity="0.333" vectornator:shadowRadius="0" />
-              <path class="animate-pulse"
-                d="M786.8 462.071C786.8 460.567 788.02 459.348 789.524 459.348L869.722 459.348C871.226 459.348 872.445 460.567 872.445 462.071L872.445 462.071C872.445 463.576 871.226 464.795 869.722 464.795L789.524 464.795C788.02 464.795 786.8 463.576 786.8 462.071L786.8 462.071Z"
-                fill="#593f92" fill-rule="nonzero" filter="url(#Filter_3)" stroke="none" vectornator:layerName="Rectangle 6"
-                vectornator:shadowAngle="2.0207" vectornator:shadowColor="#000000" vectornator:shadowOffset="0"
-                vectornator:shadowOpacity="0.333" vectornator:shadowRadius="0" />
-              <path
-                d="M786.8 497.248C786.8 495.744 788.02 494.525 789.524 494.525L869.722 494.525C871.226 494.525 872.445 495.744 872.445 497.248L872.445 497.248C872.445 498.753 871.226 499.972 869.722 499.972L789.524 499.972C788.02 499.972 786.8 498.753 786.8 497.248L786.8 497.248Z"
-                fill="#593f92" fill-rule="nonzero" filter="url(#Filter_4)" stroke="none" vectornator:layerName="Rectangle 7"
-                vectornator:shadowAngle="2.0207" vectornator:shadowColor="#000000" vectornator:shadowOffset="0"
-                vectornator:shadowOpacity="0.333" vectornator:shadowRadius="0" />
-              <path
-                d="M786.8 540C786.8 538.496 788.02 537.276 789.524 537.276L869.722 537.276C871.226 537.276 872.445 538.496 872.445 540L872.445 540C872.445 541.504 871.226 542.724 869.722 542.724L789.524 542.724C788.02 542.724 786.8 541.504 786.8 540L786.8 540Z"
-                fill="#593f92" fill-rule="nonzero" filter="url(#Filter_5)" stroke="none" vectornator:layerName="Rectangle 8"
-                vectornator:shadowAngle="2.0207" vectornator:shadowColor="#000000" vectornator:shadowOffset="0"
-                vectornator:shadowOpacity="0.333" vectornator:shadowRadius="0" />
-              <path
-                d="M786.8 623.827C786.8 622.322 788.02 621.103 789.524 621.103L869.722 621.103C871.226 621.103 872.445 622.322 872.445 623.827L872.445 623.827C872.445 625.331 871.226 626.55 869.722 626.55L789.524 626.55C788.02 626.55 786.8 625.331 786.8 623.827L786.8 623.827Z"
-                fill="#593f92" fill-rule="nonzero" filter="url(#Filter_6)" stroke="none" vectornator:layerName="Rectangle 3"
-                vectornator:shadowAngle="2.0207" vectornator:shadowColor="#000000" vectornator:shadowOffset="0"
-                vectornator:shadowOpacity="0.333" vectornator:shadowRadius="0" />
-            </g>
-          </g>
-        </svg>
+        <div class="text-mid-purple md:text-lg md:px-20 flex flex-col px-8 text-sm divide-y">
+        
+          <div class="pt-20 pb-16">
+            <h2 class="md:text-3xl text-2xl font-semibold text-center">
+              OUR COUNSELLING PROCESS
+            </h2>
+          </div>
+        
+          <div class="landscape:flex-row-reverse flex flex-col-reverse gap-16 mx-auto">
+            <div class="landscape:py-24 landscape:w-4/5 pt-5 pb-16 mx-auto">
+              <div class="flex">
+                <div class="flex flex-col items-center mr-4">
+                  <div>
+                    <div id="step1"
+                      class="text-dark-purple color-change bg-light-purple flex items-center justify-center w-10 h-10 transition-colors rounded-full">
+                      <svg class=" w-4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                        viewBox="0 0 24 24">
+                        <line fill="none" stroke-miterlimit="10" x1="12" y1="2" x2="12" y2="22"></line>
+                        <polyline fill="none" stroke-miterlimit="10" points="19,15 12,22 5,15"></polyline>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="bg-light-purple vertical-line w-px h-full"></div>
+                </div>
+                <div id="textElement1" class="text-color-change pt-1 pb-8">
+                  <p class="mb-2 text-lg font-bold">INDIVIDUAL SESSION</p>
+                  <p>
+                    We start by working with each partner individually to explore their emotions, perspectives, and experiences
+                    in depth.
+                    This helps us gain a comprehensive understanding of both sides of the relationship.
+                  </p>
+                </div>
+              </div>
+        
+              <div class="flex">
+                <div class="flex flex-col items-center mr-4">
+                  <div>
+                    <div id="step2"
+                      class=" text-dark-purple color-change bg-light-purple flex items-center justify-center w-10 h-10 transition-colors border rounded-full">
+                      <svg class=" w-4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                        viewBox="0 0 24 24">
+                        <line fill="none" stroke-miterlimit="10" x1="12" y1="2" x2="12" y2="22"></line>
+                        <polyline fill="none" stroke-miterlimit="10" points="19,15 12,22 5,15"></polyline>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class=" bg-light-purple w-px h-full"></div>
+                </div>
+                <div id="textElement2" class="text-color-change pt-1 pb-8">
+                  <p class="mb-2 text-lg font-bold">JOINT SESSION</p>
+                  <p>
+                    Building on the insights from individual sessions, we bring both partners together for the core of the
+                    therapeutic
+                    process. These sessions encourage open dialogue, provide exercises, and focus on improving communication,
+                    understanding,
+                    and emotional connection.
+                  </p>
+                </div>
+              </div>
+              <div class="flex">
+                <div class=" flex flex-col items-center mr-4">
+                  <div>
+                    <div id="step3"
+                      class="text-dark-purple color-change bg-light-purple flex items-center justify-center w-10 h-10 transition-colors border rounded-full">
+                      <svg class=" w-4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                        viewBox="0 0 24 24">
+                        <line fill="none" stroke-miterlimit="10" x1="12" y1="2" x2="12" y2="22"></line>
+                        <polyline fill="none" stroke-miterlimit="10" points="19,15 12,22 5,15"></polyline>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="bg-light-purple w-px h-full"></div>
+                </div>
+                <div id="textElement3" class="text-color-change pt-1 pb-8">
+                  <p class=" mb-2 text-lg font-bold">PERSONAL SESSION</p>
+                  <p>
+                    After the initial round of sessions (two individual and one joint), our therapist will create a personalised
+                    plan. This
+                    may involve more individual sessions or regular joint sessions, depending on the couple's needs and
+                    progress.
+                  </p>
+                </div>
+              </div>
+        
+              <div class="flex">
+                <div class="flex flex-col items-center mr-4">
+                  <div>
+                    <div id="step4"
+                      class="text-dark-purple color-change bg-light-purple flex items-center justify-center w-10 h-10 transition-colors border rounded-full">
+                      <img class="heartbeat w-5" src="../img/heart-white.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-1">
+                  <p id="textElement4" class="text-color-change mb-2 text-lg font-semibold">Make your relationships happier</p>
+                </div>
+        
+              </div>
+        
+              <div class="landscape:hidden text-center" x-data="{ showModal: false }">
+                <!-- Trigger button -->
+                <div data-aos="fade-in" data-aos-delay="250" data-aos-anchor="#hero" data-aos-once="true">
+                  <button
+                    class="md:mt-28 whitespace-nowrap focus:outline-none hover:scale-105 hover:shadow-2xl hover:bg-light-purple hover:text-light text-white portrait:mt-[7svh]  portrait:px-8 portrait:py-6  mx-auto transition-transform duration-300 transform bg-dark-purple rounded-full select-none"
+                    @click="showModal = true">
+                    Book a Session
+                  </button>
+                </div>
+        
+        
+                <!-- Modal -->
+                <div x-show="showModal"
+                  class=" bg-dark-purple fixed inset-0 z-50 flex items-center justify-center bg-opacity-75"
+                  x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0"
+                  x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in duration-200"
+                  x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" @click="showModal = false"
+                  style="display: none;">
+        
+        
+                  <div class=" text-mid-purple rounded-[3rem] px-[6svw] md:px-8 py-9 transform bg-white shadow-2xl">
+                    <!-- Modal Header -->
+                    <div class=" flex flex-col">
+                      <button @click="showModal = false"
+                        class="hover:text-gray-700 focus:outline-none right-7 top-7 absolute text-gray-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                          stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                          class="feather feather-x stroke-dark-purple">
+                          <line x1="18" y1="6" x2="6" y2="18"></line>
+                          <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                      </button>
+                    </div>
+        
+                    <!-- Modal Content -->
+                    <div class=" md:text-base flex flex-col justify-center mx-auto text-sm text-center">
+                      <h4 class="md:mt-5 font-semibold">OUR STANDARD CHARGES</h4>
+                      <div class="rounded-3xl py-7 flex flex-row justify-center mx-auto mt-5 bg-gray-100">
+                        <div class="pl-7 pr-5 md:pr-8 md:pl-12 flex flex-col justify-center gap-[0.75rem]">
+                          <p class=" whitespace-pre-line">Counselling
+                            Psychologist
+                          </p>
+                          <p class="font-semibold">
+                            <span class="text-base"><span class="font-mono">₹</span>2200</span>/session
+                          </p>
+                        </div>
+        
+                        <div class="w-[1px] h-auto bg-gray-300"></div>
+        
+                        <div class="pr-7 pl-5 md:pr-12 md:pl-8 flex flex-col justify-center gap-[0.75rem]">
+                          <p class=" whitespace-pre-line">Clinical
+                            Psychologist
+                          </p>
+                          <p class="font-semibold">
+                            <span class=" text-base"><span class="font-mono">₹</span>2500</span>/session
+                          </p>
+                        </div>
+                      </div>
+        
+                      <h4 class="mt-5 mb-3 font-normal">For more information visit</h4>
+        
+        
+        
+                      <div
+                        class="md:flex-row md:gap-3 text-mid-purple flex flex-wrap justify-center gap-[0.8rem] mx-auto font-medium">
+                        <button
+                          class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 transition bg-gray-100 rounded-full">
+                          <a href="#">THERAPY</a>
+                        </button>
+                        <button
+                          class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 transition bg-gray-100 rounded-full">
+                          <a href="#">DIAGNOSIS</a>
+                        </button>
+                        <button
+                          class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 transition bg-gray-100 rounded-full">
+                          <a href="#">PRICING</a>
+                        </button>
+        
+                      </div>
+        
+                      <button
+                        class="font-medium text-mid-purple mt-[0.8rem] hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 mx-auto transition bg-gray-100 rounded-full">
+                        <a href="#">COUPLE'S COUNSELLING</a>
+                      </button>
+        
+        
+        
+                      <div class="flex items-center w-[85%] mx-auto py-6">
+                        <div class="flex-grow border-t border-gray-200"></div>
+                        <span class="px-5 text-gray-500">OR</span>
+                        <div class="flex-grow border-t border-gray-200"></div>
+                      </div>
+        
+                      <div>
+                        <h3 class="text-sm font-medium">MESSAGE US AND BOOK YOUR SESSION</h3>
+                      </div>
+        
+                      <div class="md:flex-row landscape:md:gap-8 md:gap-5 flex justify-center gap-4 pt-6 mx-auto">
+        
+        
+                        <button
+                          class=" md:px-8 md:py-4 whitespace-nowrap hover:scale-105 hover:shadow-lg focus:outline-none hover:text-white px-6 py-3 mx-auto text-white transition rounded-full shadow-lg select-none"
+                          style="background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);">
+                          <div class="md:gap-3 flex flex-row gap-2 my-auto">
+        
+                            <img class="md:w-6 w-5" src="../img/instagram-logo.svg" alt="">
+                            <a class="md:text-2xl my-auto text-xl font-medium" style="font-family: 'Grand Hotel', cursive;"
+                              href="https://ig.me/m/thefriendlycouch">Instagram</a>
+                          </div>
+                        </button>
+        
+                        <button
+                          class=" shadow-lg md:px-7 md:py-4 whitespace-nowrap hover:scale-105 hover:shadow-lg focus:outline-none  text-white hover:text-white px-5 py-3 mx-auto  transition bg-[#25D366] rounded-full select-none">
+                          <div class="md:gap-3 flex flex-row gap-2 my-auto">
+                            <img class="md:w-6 w-5" src="../img/whatsapp-logo.svg" alt="">
+                            <a class="md:text-lg my-auto text-base font-semibold"
+                              href="https://wa.me/919205025183?text=I%20want%20to%20book%20an%20online%20session."
+                              style="font-family: 'Helvetica Neue', sans-serif;">WhatsApp</a>
+                          </div>
+                        </button>
+        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+        
+            </div>
+        
+            <div class="landscape:w-[30svh] portrait:w-[60svw]  flex landscape:flex-col my-auto justify-center   mx-auto ">
+        
+              <div x-data="{swiper: null}" x-init="swiper = new Swiper($refs.container, {
+                    loop: true,
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                
+                    breakpoints: {
+                      640: {
+                        slidesPerView: 1,
+                        spaceBetween: 0,
+                      },
+                      768: {
+                        slidesPerView: 1,
+                        spaceBetween: 0,
+                      },
+                      1024: {
+                        slidesPerView: 1,
+                        spaceBetween: 0,
+                      },
+                    },
+                  })" class="relative flex flex-row w-10/12 mx-auto">
+                <div class="absolute inset-y-0 left-0 z-10 flex items-center">
+                  <button @click="swiper.slidePrev()"
+                    class="lg:-ml-4 focus:outline-none flex items-center justify-center w-10 h-10 -ml-2 bg-white rounded-full shadow">
+                    <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-left w-6 h-6">
+                      <path fill-rule="evenodd"
+                        d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </button>
+                </div>
+              
+                <div class="swiper-container" x-ref="container">
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide p-4">
+                      <div class="flex flex-col overflow-hidden rounded shadow">
+                        <div class="flex-shrink-0">
+                          <img class="object-cover w-full h-48"
+                            src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
+                            alt="">
+                        </div>
+                      </div>
+                    </div>
+              
+                    <div class="swiper-slide p-4">
+                      <div class="flex flex-col overflow-hidden rounded shadow">
+                        <div class="flex-shrink-0">
+                          <img class="object-cover w-full h-48"
+                            src="https://images.unsplash.com/photo-1598951092651-653c21f5d0b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
+                            alt="">
+                        </div>
+                      </div>
+                    </div>
+              
+                    <div class="swiper-slide p-4">
+                      <div class="flex flex-col overflow-hidden rounded shadow">
+                        <div class="flex-shrink-0">
+                          <img class="object-cover w-full h-48"
+                            src="https://images.unsplash.com/photo-1598946423291-ce029c687a42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
+                            alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="absolute inset-y-0 right-0 z-10 flex items-center">
+                  <button @click="swiper.slideNext()"
+                    class="lg:-mr-4 focus:outline-none flex items-center justify-center w-10 h-10 -mr-2 bg-white rounded-full shadow">
+                    <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-right w-6 h-6">
+                      <path fill-rule="evenodd"
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+        
+              <div class="portrait:hidden mx-auto" x-data="{ showModal: false }">
+                <!-- Trigger button -->
+                <div data-aos="fade-in" data-aos-delay="250" data-aos-anchor="#hero" data-aos-once="true">
+                  <button
+                    class=" whitespace-nowrap focus:outline-none hover:scale-105 hover:shadow-2xl hover:bg-light-purple hover:text-light text-white landscape:mt-[12svh] lg:landscape:mt-[5svh] landscape:text-xs lg:landscape:text-baselandscape:px-4 landscape:py-3 lg:landscape:px-6 lg:landscape:py-5 mx-auto transition-transform duration-300 transform bg-dark-purple rounded-full select-none"
+                    @click="showModal = true">
+                    Book a Session
+                  </button>
+                </div>
+        
+        
+                <!-- Modal -->
+                <div x-show="showModal"
+                  class=" bg-dark-purple fixed inset-0 z-50 flex items-center justify-center bg-opacity-75"
+                  x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0"
+                  x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in duration-200"
+                  x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" @click="showModal = false"
+                  style="display: none;">
+        
+        
+                  <div class=" text-mid-purple rounded-[3rem] px-[6svw] md:px-8 py-9 transform bg-white shadow-2xl">
+                    <!-- Modal Header -->
+                    <div class=" flex flex-col">
+                      <button @click="showModal = false"
+                        class="hover:text-gray-700 focus:outline-none right-7 top-7 absolute text-gray-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                          stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                          class="feather feather-x stroke-dark-purple">
+                          <line x1="18" y1="6" x2="6" y2="18"></line>
+                          <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                      </button>
+                    </div>
+        
+                    <!-- Modal Content -->
+                    <div class=" md:text-base flex flex-col justify-center mx-auto text-sm text-center">
+                      <h4 class="md:mt-5 font-semibold">OUR STANDARD CHARGES</h4>
+                      <div class="rounded-3xl py-7 flex flex-row justify-center mx-auto mt-5 bg-gray-100">
+                        <div class="pl-7 pr-5 md:pr-8 md:pl-12 flex flex-col justify-center gap-[0.75rem]">
+                          <p class=" whitespace-pre-line">Counselling
+                            Psychologist
+                          </p>
+                          <p class="font-semibold">
+                            <span class="text-base"><span class="font-mono">₹</span>2200</span>/session
+                          </p>
+                        </div>
+        
+                        <div class="w-[1px] h-auto bg-gray-300"></div>
+        
+                        <div class="pr-7 pl-5 md:pr-12 md:pl-8 flex flex-col justify-center gap-[0.75rem]">
+                          <p class=" whitespace-pre-line">Clinical
+                            Psychologist
+                          </p>
+                          <p class="font-semibold">
+                            <span class=" text-base"><span class="font-mono">₹</span>2500</span>/session
+                          </p>
+                        </div>
+                      </div>
+        
+                      <h4 class="mt-5 mb-3 font-normal">For more information visit</h4>
+        
+        
+        
+                      <div
+                        class="md:flex-row md:gap-3 text-mid-purple flex flex-wrap justify-center gap-[0.8rem] mx-auto font-medium">
+                        <button
+                          class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 transition bg-gray-100 rounded-full">
+                          <a href="#">THERAPY</a>
+                        </button>
+                        <button
+                          class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 transition bg-gray-100 rounded-full">
+                          <a href="#">DIAGNOSIS</a>
+                        </button>
+                        <button
+                          class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 transition bg-gray-100 rounded-full">
+                          <a href="#">PRICING</a>
+                        </button>
+        
+                      </div>
+        
+                      <button
+                        class="font-medium text-mid-purple mt-[0.8rem] hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 mx-auto transition bg-gray-100 rounded-full">
+                        <a href="#">COUPLE'S COUNSELLING</a>
+                      </button>
+        
+        
+        
+                      <div class="flex items-center w-[85%] mx-auto py-6">
+                        <div class="flex-grow border-t border-gray-200"></div>
+                        <span class="px-5 text-gray-500">OR</span>
+                        <div class="flex-grow border-t border-gray-200"></div>
+                      </div>
+        
+                      <div>
+                        <h3 class="text-sm font-medium">MESSAGE US AND BOOK YOUR SESSION</h3>
+                      </div>
+        
+                      <div class="md:flex-row landscape:md:gap-8 md:gap-5 flex justify-center gap-4 pt-6 mx-auto">
+        
+        
+                        <button
+                          class=" md:px-8 md:py-4 whitespace-nowrap hover:scale-105 hover:shadow-lg focus:outline-none hover:text-white px-6 py-3 mx-auto text-white transition rounded-full shadow-lg select-none"
+                          style="background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);">
+                          <div class="md:gap-3 flex flex-row gap-2 my-auto">
+        
+                            <img class="md:w-6 w-5" src="../img/instagram-logo.svg" alt="">
+                            <a class="md:text-2xl my-auto text-xl font-medium" style="font-family: 'Grand Hotel', cursive;"
+                              href="https://ig.me/m/thefriendlycouch">Instagram</a>
+                          </div>
+                        </button>
+        
+                        <button
+                          class=" shadow-lg md:px-7 md:py-4 whitespace-nowrap hover:scale-105 hover:shadow-lg focus:outline-none  text-white hover:text-white px-5 py-3 mx-auto  transition bg-[#25D366] rounded-full select-none">
+                          <div class="md:gap-3 flex flex-row gap-2 my-auto">
+                            <img class="md:w-6 w-5" src="../img/whatsapp-logo.svg" alt="">
+                            <a class="md:text-lg my-auto text-base font-semibold"
+                              href="https://wa.me/919205025183?text=I%20want%20to%20book%20an%20online%20session."
+                              style="font-family: 'Helvetica Neue', sans-serif;">WhatsApp</a>
+                          </div>
+                        </button>
+        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
 
 
       

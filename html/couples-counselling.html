@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-
     <script src="https://kit.fontawesome.com/9fa9d11dac.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.x.x/dist/alpine.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
@@ -21,9 +20,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@motionone/types@10.16.3/dist/index.es.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
 
 
     <!-- Google Fonts -->
@@ -470,7 +467,7 @@
 
         
 
-        <div class="text-dark-purple md:text-lg md:px-20 flex flex-col px-8 text-sm divide-y">
+        <div class="text-mid-purple md:text-lg md:px-20 flex flex-col px-8 text-sm divide-y">
         
             <div class="pt-20 pb-16">
                 <h2 class="md:text-3xl text-2xl font-semibold text-center">
@@ -483,8 +480,8 @@
                     <div class="flex">
                         <div class="flex flex-col items-center mr-4">
                             <div>
-                                <div
-                                    class="text-dark-purple bg-light-purple flex items-center justify-center w-10 h-10 rounded-full">
+                                <div id="step1"
+                                    class="text-dark-purple color-change bg-light-purple flex items-center justify-center w-10 h-10 transition-colors rounded-full">
                                     <svg class=" w-4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
                                         stroke-linejoin="round" viewBox="0 0 24 24">
                                         <line fill="none" stroke-miterlimit="10" x1="12" y1="2" x2="12" y2="22"></line>
@@ -494,7 +491,7 @@
                             </div>
                             <div class="bg-light-purple vertical-line w-px h-full"></div>
                         </div>
-                        <div class=" pt-1 pb-8">
+                        <div id="textElement1" class="text-color-change pt-1 pb-8">
                             <p class="mb-2 text-lg font-bold">INDIVIDUAL SESSION</p>
                             <p>
                                 We start by working with each partner individually to explore their emotions, perspectives, and experiences in depth.
@@ -506,8 +503,8 @@
                     <div class="flex">
                         <div class="flex flex-col items-center mr-4">
                             <div>
-                                <div
-                                    class=" text-dark-purple bg-light-purple flex items-center justify-center w-10 h-10 border rounded-full">
+                                <div id="step2"
+                                    class=" text-dark-purple color-change bg-light-purple flex items-center justify-center w-10 h-10 transition-colors border rounded-full">
                                     <svg class=" w-4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
                                         stroke-linejoin="round" viewBox="0 0 24 24">
                                         <line fill="none" stroke-miterlimit="10" x1="12" y1="2" x2="12" y2="22"></line>
@@ -517,7 +514,7 @@
                             </div>
                             <div class=" bg-light-purple w-px h-full"></div>
                         </div>
-                        <div class="pt-1 pb-8">
+                        <div id="textElement2" class="text-color-change pt-1 pb-8" >
                             <p class="mb-2 text-lg font-bold">JOINT SESSION</p>
                             <p>
                                 Building on the insights from individual sessions, we bring both partners together for the core of the therapeutic
@@ -527,10 +524,10 @@
                         </div>
                     </div>
                     <div class="flex">
-                        <div class="flex flex-col items-center mr-4">
+                        <div class=" flex flex-col items-center mr-4">
                             <div>
-                                <div
-                                    class="text-dark-purple bg-light-purple flex items-center justify-center w-10 h-10 border rounded-full">
+                                <div  id="step3" 
+                                    class="text-dark-purple color-change bg-light-purple flex items-center justify-center w-10 h-10 transition-colors border rounded-full">
                                     <svg class=" w-4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
                                         stroke-linejoin="round" viewBox="0 0 24 24">
                                         <line fill="none" stroke-miterlimit="10" x1="12" y1="2" x2="12" y2="22"></line>
@@ -540,8 +537,8 @@
                             </div>
                             <div class="bg-light-purple w-px h-full"></div>
                         </div>
-                        <div class="pt-1 pb-8">
-                            <p class="mb-2 text-lg font-bold">PERSONAL SESSION</p>
+                        <div id="textElement3" class="text-color-change pt-1 pb-8">
+                            <p class=" mb-2 text-lg font-bold">PERSONAL SESSION</p>
                             <p>
                                 After the initial round of sessions (two individual and one joint), our therapist will create a personalised plan. This
                                 may involve more individual sessions or regular joint sessions, depending on the couple's needs and progress.
@@ -552,14 +549,14 @@
                     <div class="flex">
                         <div class="flex flex-col items-center mr-4">
                             <div>
-                                <div
-                                    class="text-dark-purple bg-light-purple flex items-center justify-center w-10 h-10 border rounded-full">
-                                    <img class="heartbeat w-5" src="../img/heart-purple.svg" alt="">
+                                <div id="step4"
+                                    class="text-dark-purple color-change bg-light-purple flex items-center justify-center w-10 h-10 transition-colors border rounded-full">
+                                    <img class="heartbeat w-5" src="../img/heart-white.svg" alt="">
                                 </div>
                             </div>
                         </div>
                         <div class="pt-1">
-                            <p class="mb-2 text-lg font-semibold">Make your relationships happier</p>
+                            <p id="textElement4" class="text-color-change mb-2 text-lg font-semibold">Make your relationships happier</p>
                         </div>
         
                     </div>
@@ -696,16 +693,132 @@
         
                 <div class="landscape:w-[30svh] portrait:w-[60svw]  flex landscape:flex-col my-auto justify-center   mx-auto ">
                 
-                    <div class="swiper">
+                    <div class="mySwiper ">
                         <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper mt-16">
+                        <div class="swiper-wrapper antialiased">
                             <!-- Slides -->
-                            <div class="swiper-slide" ><img src="../img/counselling-step-1.svg" alt=""></div>
-                            <div class="swiper-slide" ><img src="../img/counselling-step-2.svg" alt=""></div> 
-                            <div class="swiper-slide"  data-swiper-autoplay="3000"><img class="" src="../img/counselling-step-3.svg" alt="">
-                                <div class="absolute translate-y-[-8.5rem] flex justify-center w-full">
-                                    <img class="w-[1.8rem] heartbeat" src="../img/heart-purple.svg" alt="">
-                                </div>
+                            <div class="swiper-slide px-1 mt-auto" data-swiper-autoplay="3000"><img src="../img/counselling-step-1.svg" alt=""></div>
+                            <div class="swiper-slide px-1 mt-auto" data-swiper-autoplay="1300"><img src="../img/counselling-step-2.svg" alt=""></div> 
+                            <div class="swiper-slide px-1 mt-auto" data-swiper-autoplay="2448" >
+                                
+                                <svg width="100%" height="100%" viewBox="0 0 794 695" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"
+                                    style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:10;">
+                                    <g id="Layer">
+                                        <g>
+                                            <path id="shadow"
+                                                d="M40.213,661.692c0,-18.321 159.545,-33.175 356.358,-33.175c196.812,0 356.362,14.854 356.362,33.175c0,18.321 -159.55,33.175 -356.362,33.175c-196.813,0 -356.358,-14.854 -356.358,-33.175Z"
+                                                style="fill:#593f92;fill-rule:nonzero;" />
+                                            <g class="" id="couch-relationship">
+                                                <g>
+                                                    <path
+                                                        d="M40.004,472.163c0,-59.871 53.004,-108.409 118.392,-108.409l473.804,0c65.388,0 118.396,48.538 118.396,108.409l0,30.395c0,59.875 -53.008,108.409 -118.396,108.409l-473.804,0c-65.388,0 -118.392,-48.534 -118.392,-108.409l0,-30.395Z"
+                                                        style="fill:#d1bef9;fill-rule:nonzero;stroke:#463174;stroke-width:9.02px;" />
+                                                    <path
+                                                        d="M39.754,417.946c0.009,-264.734 84.225,-202.379 365.179,-202.379c280.955,0 352.775,-52.625 345.413,202.379c-2.538,87.933 -177.65,87.971 -355.296,87.971c-177.65,0 -355.3,1.604 -355.296,-87.971Z"
+                                                        style="fill:#d1bef9;fill-rule:nonzero;stroke:#463174;stroke-width:7.7px;" />
+                                                    <path
+                                                        d="M4.513,498.325c0,-39.937 31.745,-72.312 70.908,-72.312c39.162,0 70.908,32.375 70.908,72.312l0,32.908c0,39.938 -31.746,72.313 -70.908,72.313c-39.163,0 -70.908,-32.375 -70.908,-72.313l0,-32.908Z"
+                                                        style="fill:#d1bef9;fill-rule:nonzero;stroke:#463174;stroke-width:9.02px;" />
+                                                    <path
+                                                        d="M138.317,625.35c6.321,-10.946 18.25,-15.887 26.65,-11.042c8.4,4.85 10.083,17.654 3.762,28.6l-5.208,9.021c-6.321,10.95 -18.25,15.892 -26.65,11.042c-8.4,-4.846 -10.083,-17.654 -3.763,-28.6l5.209,-9.021Z"
+                                                        style="fill:#d1bef9;fill-rule:nonzero;stroke:#463174;stroke-width:9.02px;" />
+                                                    <path
+                                                        d="M635.35,642.908c-6.321,-10.946 -4.633,-23.75 3.763,-28.6c8.4,-4.845 20.333,0.096 26.65,11.042l5.208,9.021c6.321,10.946 4.637,23.754 -3.763,28.6c-8.395,4.85 -20.329,-0.092 -26.65,-11.042l-5.208,-9.021Z"
+                                                        style="fill:#d1bef9;fill-rule:nonzero;stroke:#463174;stroke-width:9.02px;" />
+                                                    <path
+                                                        d="M646.817,498.325c0,-39.937 31.746,-72.312 70.908,-72.312c39.163,0 70.908,32.375 70.908,72.312l0,32.908c0,39.938 -31.745,72.313 -70.908,72.313c-39.162,0 -70.908,-32.375 -70.908,-72.313l0,-32.908Z"
+                                                        style="fill:#d1bef9;fill-rule:nonzero;stroke:#463174;stroke-width:9.02px;" />
+                                                    <path d="M231.963,356.038c0,0 18.37,-31.075 41.666,0.729"
+                                                        style="fill:none;fill-rule:nonzero;stroke:#463174;stroke-width:9.02px;stroke-linecap:square;" />
+                                                    <path d="M519.517,356.038c0,0 18.366,-31.075 41.666,0.729"
+                                                        style="fill:none;fill-rule:nonzero;stroke:#463174;stroke-width:9.02px;stroke-linecap:square;" />
+                                                </g>
+                                                <g>
+                                                    <g>
+                                                        <path
+                                                            d="M270.933,435.579c0,-35.558 29.034,-64.383 64.846,-64.383c35.813,0 64.842,28.825 64.842,64.383c0,35.559 0,64.663 -64.842,64.388c-64.854,-0.275 -64.846,-28.829 -64.846,-64.388Z"
+                                                            style="fill:#fff;fill-rule:nonzero;stroke:#463174;stroke-width:8.33px;" />
+                                                        <g>
+                                                            <g>
+                                                                <path
+                                                                    d="M302.883,437.975c0,-4.571 3.484,-8.275 7.78,-8.275c4.295,0 7.779,3.704 7.779,8.275c0,4.571 -3.484,8.275 -7.779,8.275c-4.296,0 -7.78,-3.704 -7.78,-8.275Z"
+                                                                    style="fill:#463174;fill-rule:nonzero;" />
+                                                                <path
+                                                                    d="M310.663,437.975c0,-1.65 1.5,-2.983 3.345,-2.983c1.85,0 3.35,1.333 3.35,2.983c0,1.646 -1.5,2.983 -3.35,2.983c-1.845,0 -3.345,-1.337 -3.345,-2.983Z"
+                                                                    style="fill:#fff;fill-rule:nonzero;" />
+                                                            </g>
+                                                            <g>
+                                                                <path
+                                                                    d="M356.096,437.975c0,-4.571 3.483,-8.275 7.779,-8.275c4.296,0 7.775,3.704 7.775,8.275c0,4.571 -3.479,8.275 -7.775,8.275c-4.296,0 -7.779,-3.704 -7.779,-8.275Z"
+                                                                    style="fill:#463174;fill-rule:nonzero;" />
+                                                                <path
+                                                                    d="M363.875,437.975c0,-1.65 1.496,-2.983 3.346,-2.983c1.85,0 3.346,1.333 3.346,2.983c0,1.646 -1.496,2.983 -3.346,2.983c-1.85,0 -3.346,-1.337 -3.346,-2.983Z"
+                                                                    style="fill:#fff;fill-rule:nonzero;" />
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                    <g>
+                                                        <g>
+                                                            <path
+                                                                d="M328.913,459.188c0,-4.246 2.92,-2.713 8.083,-2.713c5.162,0 8.25,-1.625 8.25,2.713c0,4.337 -3.571,7.291 -8.083,7.291c-4.509,0 -8.25,-3.05 -8.25,-7.291Z"
+                                                                style="fill:#463174;fill-rule:nonzero;" />
+                                                        </g>
+                                                        <path
+                                                            d="M330.317,463.337c-0.984,-1.433 3.012,-3.595 6.671,-3.733c3.662,-0.141 7.912,1.975 6.945,3.633c-1.112,1.909 -3.991,3.23 -6.758,3.23c-2.767,0 -5.55,-1.234 -6.858,-3.13Z"
+                                                            style="fill:#7451c2;fill-opacity:0.45;fill-rule:nonzero;" />
+                                                    </g>
+                                                </g>
+                                                <g>
+                                                    <g>
+                                                        <path
+                                                            d="M522.213,435.579c0,-35.558 -29.034,-64.383 -64.846,-64.383c-35.813,0 -64.846,28.825 -64.846,64.383c0,35.559 0,64.621 64.846,64.388c64.854,-0.238 64.846,-28.829 64.846,-64.388Z"
+                                                            style="fill:#fff;fill-rule:nonzero;stroke:#463174;stroke-width:8.33px;" />
+                                                        <g>
+                                                            <g>
+                                                                <path
+                                                                    d="M490.263,437.975c0,-4.571 -3.484,-8.275 -7.78,-8.275c-4.295,0 -7.779,3.704 -7.779,8.275c0,4.571 3.484,8.275 7.779,8.275c4.296,0 7.78,-3.704 7.78,-8.275Z"
+                                                                    style="fill:#463174;fill-rule:nonzero;" />
+                                                                <path
+                                                                    d="M482.483,437.975c0,-1.65 -1.5,-2.983 -3.35,-2.983c-1.845,0 -3.345,1.333 -3.345,2.983c0,1.646 1.5,2.983 3.345,2.983c1.85,0 3.35,-1.337 3.35,-2.983Z"
+                                                                    style="fill:#fff;fill-rule:nonzero;" />
+                                                            </g>
+                                                            <g>
+                                                                <path
+                                                                    d="M437.05,437.975c0,-4.571 -3.483,-8.275 -7.779,-8.275c-4.296,0 -7.779,3.704 -7.779,8.275c0,4.571 3.483,8.275 7.779,8.275c4.296,0 7.779,-3.704 7.779,-8.275Z"
+                                                                    style="fill:#463174;fill-rule:nonzero;" />
+                                                                <path
+                                                                    d="M429.271,437.975c0,-1.65 -1.496,-2.983 -3.346,-2.983c-1.85,0 -3.346,1.333 -3.346,2.983c0,1.646 1.496,2.983 3.346,2.983c1.85,0 3.346,-1.337 3.346,-2.983Z"
+                                                                    style="fill:#fff;fill-rule:nonzero;" />
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                    <g>
+                                                        <g>
+                                                            <path
+                                                                d="M466.004,459.188c0,-4.246 -2.921,-2.713 -8.083,-2.713c-5.167,0 -8.254,-1.625 -8.254,2.713c0,4.337 3.575,7.291 8.083,7.291c4.513,0 8.254,-3.05 8.254,-7.291Z"
+                                                                style="fill:#463174;fill-rule:nonzero;" />
+                                                        </g>
+                                                        <path
+                                                            d="M464.596,463.337c0.987,-1.433 -3.008,-3.595 -6.671,-3.733c-3.658,-0.141 -7.913,1.975 -6.946,3.633c1.117,1.909 3.996,3.23 6.763,3.23c2.766,0 5.546,-1.234 6.854,-3.13Z"
+                                                            style="fill:#7451c2;fill-opacity:0.45;fill-rule:nonzero;" />
+                                                    </g>
+                                                </g>
+                                                <path
+                                                    d="M222.671,456.583c6.612,-19.966 27.979,-24.271 44.804,-18.85c16.829,5.421 38.838,12.859 32.229,32.813c-6.796,20.525 -36.787,33.204 -53.525,27.508c-16.733,-5.696 -30.121,-21.508 -23.508,-41.471Z"
+                                                    style="fill:#d1bef9;fill-rule:nonzero;" />
+                                                <path
+                                                    d="M570.475,456.583c-6.612,-19.966 -27.979,-24.271 -44.804,-18.85c-16.829,5.421 -38.842,12.859 -32.234,32.813c6.801,20.525 36.792,33.204 53.53,27.508c16.733,-5.696 30.12,-21.508 23.508,-41.471Z"
+                                                    style="fill:#d1bef9;fill-rule:nonzero;" />
+                                            </g>
+                                            <path id="heart-relationship"
+                                                d="M396.529,164.733l-6.233,-4.12c-8.604,-5.671 -84.046,-56.833 -84.046,-105.038c0,-30.644 25.325,-55.575 56.45,-55.575c12.275,0 24.142,4.035 33.871,11.315c9.733,-7.28 21.6,-11.315 33.871,-11.315c31.129,0 56.454,24.931 56.454,55.575c0,49.028 -75.5,99.5 -84.104,105.092l-6.263,4.066Z"
+                                                style="fill:#463174;fill-rule:nonzero;" />
+                                        </g>
+                                    </g>
+                                </svg>
+
+
                             </div>
                         </div>
                     </div>
@@ -865,6 +978,9 @@
                 </p>
             </div>
         </div>
+
+
+        
 
 
 
@@ -1103,6 +1219,7 @@
             </div>
         </div>
     </footer>
+
 </body>
 
 </html>

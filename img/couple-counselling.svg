@@ -1,60 +1,49 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Created with Vectornator (http://vectornator.io/) -->
-<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="79.5858 2911.07 90 82.1409" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
-<defs/>
-<clipPath id="ArtboardFrame">
-<rect height="82.1409" width="90" x="79.5858" y="2911.07"/>
-</clipPath>
-<g clip-path="url(#ArtboardFrame)" id="Layer" vectornator:layerName="Layer">
-<g opacity="1" vectornator:layerName="Group 16">
-<g opacity="1" vectornator:layerName="Group 13">
-<path d="M81.2436 2950.62C72.1538 2920.47 102.341 2915.46 125.6 2915.46C148.858 2915.46 180.468 2937.28 165.878 2954.63C154.936 2967.64 145.798 2993.47 122.541 2993.21C98.6605 2992.93 87.7539 2972.21 81.2436 2950.62Z" fill="#c0a3ff" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="Oval 16"/>
-<g opacity="1" vectornator:layerName="Group 1">
-<path d="M121.915 2936.52L120.952 2935.88C119.623 2935.01 107.968 2927.1 107.968 2919.65C107.968 2914.92 111.88 2911.07 116.689 2911.07C118.585 2911.07 120.418 2911.69 121.922 2912.82C123.425 2911.69 125.258 2911.07 127.154 2911.07C131.963 2911.07 135.875 2914.92 135.875 2919.65C135.875 2927.23 124.212 2935.03 122.883 2935.89L121.915 2936.52Z" fill="#593f92" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="path"/>
-</g>
-<g opacity="1" vectornator:layerName="Group 11">
-<path d="M97.2898 2963.21C97.2898 2956.89 109.511 2951.76 124.586 2951.76C139.661 2951.76 151.882 2956.89 151.882 2963.21C151.882 2969.54 139.661 2974.67 124.586 2974.67C109.511 2974.67 97.2898 2969.54 97.2898 2963.21Z" fill="#7451c2" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="Oval 1"/>
-<g opacity="1" vectornator:layerName="Group 10">
-<path d="M123.407 2951.03C123.407 2944.96 128.369 2940.03 134.49 2940.03C140.611 2940.03 145.573 2944.96 145.573 2951.03C145.573 2957.11 145.573 2961.47 134.49 2962.04C123.42 2962.6 123.407 2957.11 123.407 2951.03Z" fill="#ffffff" fill-rule="nonzero" opacity="1" stroke="#463174" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.18" vectornator:layerName="Oval 2"/>
-<g opacity="1" vectornator:layerName="Group 4">
-<g opacity="1" vectornator:layerName="Group 2">
-<path d="M128.868 2951.44C128.868 2950.66 129.463 2950.03 130.198 2950.03C130.932 2950.03 131.527 2950.66 131.527 2951.44C131.527 2952.22 130.932 2952.86 130.198 2952.86C129.463 2952.86 128.868 2952.22 128.868 2951.44Z" fill="#463174" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="Oval 4"/>
-<path d="M129.054 2951.95C129.054 2951.67 129.31 2951.44 129.626 2951.44C129.942 2951.44 130.198 2951.67 130.198 2951.95C130.198 2952.23 129.942 2952.46 129.626 2952.46C129.31 2952.46 129.054 2952.23 129.054 2951.95Z" fill="#ffffff" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="Oval 7"/>
-</g>
-<g opacity="1" vectornator:layerName="Group 1">
-<path d="M137.963 2951.44C137.963 2950.66 138.558 2950.03 139.292 2950.03C140.026 2950.03 140.622 2950.66 140.622 2951.44C140.622 2952.22 140.026 2952.86 139.292 2952.86C138.558 2952.86 137.963 2952.22 137.963 2951.44Z" fill="#463174" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="Oval 4"/>
-<path d="M138.148 2951.95C138.148 2951.67 138.404 2951.44 138.72 2951.44C139.036 2951.44 139.292 2951.67 139.292 2951.95C139.292 2952.23 139.036 2952.46 138.72 2952.46C138.404 2952.46 138.148 2952.23 138.148 2951.95Z" fill="#ffffff" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="Oval 7"/>
-</g>
-</g>
-</g>
-<g opacity="1" vectornator:layerName="Group 11">
-<path d="M103.798 2956.9C103.798 2950.82 108.76 2945.9 114.881 2945.9C121.002 2945.9 125.964 2950.82 125.964 2956.9C125.964 2962.98 125.964 2967.34 114.881 2967.9C103.811 2968.47 103.798 2962.98 103.798 2956.9Z" fill="#ffffff" fill-rule="nonzero" opacity="1" stroke="#463174" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.18" vectornator:layerName="Oval 2"/>
-<g opacity="1" vectornator:layerName="Group 4">
-<g opacity="1" vectornator:layerName="Group 2">
-<path d="M109.259 2957.31C109.259 2956.53 109.854 2955.9 110.589 2955.9C111.323 2955.9 111.918 2956.53 111.918 2957.31C111.918 2958.09 111.323 2958.72 110.589 2958.72C109.854 2958.72 109.259 2958.09 109.259 2957.31Z" fill="#463174" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="Oval 4"/>
-<path d="M110.589 2957.31C110.589 2957.03 110.845 2956.8 111.161 2956.8C111.477 2956.8 111.733 2957.03 111.733 2957.31C111.733 2957.59 111.477 2957.82 111.161 2957.82C110.845 2957.82 110.589 2957.59 110.589 2957.31Z" fill="#ffffff" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="Oval 7"/>
-</g>
-<g opacity="1" vectornator:layerName="Group 1">
-<path d="M118.354 2957.31C118.354 2956.53 118.949 2955.9 119.683 2955.9C120.417 2955.9 121.013 2956.53 121.013 2957.31C121.013 2958.09 120.417 2958.72 119.683 2958.72C118.949 2958.72 118.354 2958.09 118.354 2957.31Z" fill="#463174" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="Oval 4"/>
-<path d="M119.683 2957.31C119.683 2957.03 119.939 2956.8 120.255 2956.8C120.571 2956.8 120.827 2957.03 120.827 2957.31C120.827 2957.59 120.571 2957.82 120.255 2957.82C119.939 2957.82 119.683 2957.59 119.683 2957.31Z" fill="#ffffff" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="Oval 7"/>
-</g>
-</g>
-</g>
-</g>
-</g>
-<g opacity="1" vectornator:layerName="Group 15">
-<g opacity="1" vectornator:layerName="Group 5">
-<path d="M133.379 2955.73C133.379 2955.01 133.878 2955.27 134.761 2955.27C135.644 2955.27 136.171 2954.99 136.171 2955.73C136.171 2956.47 135.561 2956.98 134.79 2956.98C134.019 2956.98 133.379 2956.46 133.379 2955.73Z" fill="#463174" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="Oval 4"/>
-</g>
-<path d="M133.62 2956.44C133.451 2956.2 134.134 2955.83 134.76 2955.8C135.386 2955.78 136.112 2956.14 135.947 2956.42C135.757 2956.75 135.264 2956.98 134.791 2956.98C134.318 2956.98 133.843 2956.77 133.62 2956.44Z" fill="#7451c2" fill-rule="nonzero" opacity="0.453846" stroke="none" vectornator:layerName="Oval 5"/>
-</g>
-<g opacity="1" vectornator:layerName="Group 14">
-<g opacity="1" vectornator:layerName="Group 5">
-<path d="M113.708 2960.76C113.708 2960.03 114.207 2960.3 115.089 2960.3C115.972 2960.3 116.5 2960.02 116.5 2960.76C116.5 2961.5 115.889 2962.01 115.118 2962.01C114.347 2962.01 113.708 2961.49 113.708 2960.76Z" fill="#463174" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="Oval 4"/>
-</g>
-<path d="M113.948 2961.47C113.779 2961.22 114.462 2960.86 115.088 2960.83C115.714 2960.81 116.441 2961.17 116.275 2961.45C116.085 2961.78 115.593 2962 115.12 2962C114.647 2962 114.172 2961.79 113.948 2961.47Z" fill="#7451c2" fill-rule="nonzero" opacity="0.453846" stroke="none" vectornator:layerName="Oval 5"/>
-</g>
-</g>
-</g>
+<svg width="100%" height="100%" viewBox="0 0 90 83" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:10;">
+    <g id="blobs-in-love">
+        <path id="blob" d="M1.658,39.55c-9.09,-30.15 21.097,-35.16 44.356,-35.16c23.258,0 54.868,21.82 40.278,39.17c-10.942,13.01 -20.08,38.84 -43.337,38.58c-23.88,-0.28 -34.787,-21 -41.297,-42.59Z" style="fill:#c0a3ff;fill-rule:nonzero;"/>
+        <path id="heart" d="M42.329,25.45l-0.963,-0.64c-1.329,-0.87 -12.984,-8.78 -12.984,-16.23c0,-4.73 3.912,-8.58 8.721,-8.58c1.896,0 3.729,0.62 5.233,1.75c1.503,-1.13 3.336,-1.75 5.232,-1.75c4.809,0 8.721,3.85 8.721,8.58c0,7.58 -11.663,15.38 -12.992,16.24l-0.968,0.63Z" style="fill:#593f92;fill-rule:nonzero;"/>
+        <path id="blob-shadow" d="M17.704,52.14c0,-6.32 12.221,-11.45 27.296,-11.45c15.075,0 27.296,5.13 27.296,11.45c0,6.33 -12.221,11.46 -27.296,11.46c-15.075,0 -27.296,-5.13 -27.296,-11.46Z" style="fill:#7451c2;fill-rule:nonzero;"/>
+        <g>
+            <g id="blob-2">
+                <path id="blob-body-2" d="M43.821,39.96c0,-6.07 4.962,-11 11.083,-11c6.121,0 11.083,4.93 11.083,11c0,6.08 0,10.44 -11.083,11.01c-11.07,0.56 -11.083,-4.93 -11.083,-11.01Z" style="fill:#fff;fill-rule:nonzero;stroke:#463174;stroke-width:1.18px;"/>
+                <g id="blob-mouth-2">
+                    <g>
+                        <path d="M53.793,44.66c0,-0.72 0.499,-0.46 1.382,-0.46c0.883,0 1.41,-0.28 1.41,0.46c0,0.74 -0.61,1.25 -1.381,1.25c-0.771,0 -1.411,-0.52 -1.411,-1.25Z" style="fill:#463174;fill-rule:nonzero;"/>
+                    </g>
+                    <path d="M54.034,45.37c-0.169,-0.24 0.514,-0.61 1.14,-0.64c0.626,-0.02 1.352,0.34 1.187,0.62c-0.19,0.33 -0.683,0.56 -1.156,0.56c-0.473,0 -0.948,-0.21 -1.171,-0.54Z" style="fill:#7451c2;fill-opacity:0.45;fill-rule:nonzero;"/>
+                </g>
+                <g id="blob-eyes-2">
+                    <g>
+                        <path d="M49.282,40.37c0,-0.78 0.595,-1.41 1.33,-1.41c0.734,0 1.329,0.63 1.329,1.41c0,0.78 -0.595,1.42 -1.329,1.42c-0.735,0 -1.33,-0.64 -1.33,-1.42Z" style="fill:#463174;fill-rule:nonzero;"/>
+                        <path d="M49.468,40.88c0,-0.28 0.256,-0.51 0.572,-0.51c0.316,0 0.572,0.23 0.572,0.51c0,0.28 -0.256,0.51 -0.572,0.51c-0.316,0 -0.572,-0.23 -0.572,-0.51Z" style="fill:#fff;fill-rule:nonzero;"/>
+                    </g>
+                    <g>
+                        <path d="M58.377,40.37c0,-0.78 0.595,-1.41 1.329,-1.41c0.734,0 1.33,0.63 1.33,1.41c0,0.78 -0.596,1.42 -1.33,1.42c-0.734,0 -1.329,-0.64 -1.329,-1.42Z" style="fill:#463174;fill-rule:nonzero;"/>
+                        <path d="M58.562,40.88c0,-0.28 0.256,-0.51 0.572,-0.51c0.316,0 0.572,0.23 0.572,0.51c0,0.28 -0.256,0.51 -0.572,0.51c-0.316,0 -0.572,-0.23 -0.572,-0.51Z" style="fill:#fff;fill-rule:nonzero;"/>
+                    </g>
+                </g>
+            </g>
+            <g id="blob-1">
+                <path id="blob-body-1" d="M24.212,45.83c0,-6.08 4.962,-11 11.083,-11c6.121,0 11.083,4.92 11.083,11c0,6.08 0,10.44 -11.083,11c-11.07,0.57 -11.083,-4.92 -11.083,-11Z" style="fill:#fff;fill-rule:nonzero;stroke:#463174;stroke-width:1.18px;"/>
+                <g id="blob-eyes-1">
+                    <g>
+                        <path d="M29.673,46.24c0,-0.78 0.595,-1.41 1.33,-1.41c0.734,0 1.329,0.63 1.329,1.41c0,0.78 -0.595,1.41 -1.329,1.41c-0.735,0 -1.33,-0.63 -1.33,-1.41Z" style="fill:#463174;fill-rule:nonzero;"/>
+                        <path d="M31.003,46.24c0,-0.28 0.256,-0.51 0.572,-0.51c0.316,0 0.572,0.23 0.572,0.51c0,0.28 -0.256,0.51 -0.572,0.51c-0.316,0 -0.572,-0.23 -0.572,-0.51Z" style="fill:#fff;fill-rule:nonzero;"/>
+                    </g>
+                    <g>
+                        <path d="M38.768,46.24c0,-0.78 0.595,-1.41 1.329,-1.41c0.734,0 1.33,0.63 1.33,1.41c0,0.78 -0.596,1.41 -1.33,1.41c-0.734,0 -1.329,-0.63 -1.329,-1.41Z" style="fill:#463174;fill-rule:nonzero;"/>
+                        <path d="M40.097,46.24c0,-0.28 0.256,-0.51 0.572,-0.51c0.316,0 0.572,0.23 0.572,0.51c0,0.28 -0.256,0.51 -0.572,0.51c-0.316,0 -0.572,-0.23 -0.572,-0.51Z" style="fill:#fff;fill-rule:nonzero;"/>
+                    </g>
+                </g>
+                <g id="blob-mouth-1">
+                    <g>
+                        <path d="M34.122,49.69c0,-0.73 0.499,-0.46 1.381,-0.46c0.883,0 1.411,-0.28 1.411,0.46c0,0.74 -0.611,1.25 -1.382,1.25c-0.771,0 -1.41,-0.52 -1.41,-1.25Z" style="fill:#463174;fill-rule:nonzero;"/>
+                    </g>
+                    <path d="M34.362,50.4c-0.169,-0.25 0.514,-0.61 1.14,-0.64c0.626,-0.02 1.353,0.34 1.187,0.62c-0.19,0.33 -0.682,0.55 -1.155,0.55c-0.473,0 -0.948,-0.21 -1.172,-0.53Z" style="fill:#7451c2;fill-opacity:0.45;fill-rule:nonzero;"/>
+                </g>
+            </g>
+        </g>
+    </g>
 </svg>

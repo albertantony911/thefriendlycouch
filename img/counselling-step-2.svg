@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Created with Vectornator (http://vectornator.io/) -->
-<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="270.872 115.365 190.354 116.708" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="270.872 115.365 190.354 117.491" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
 <filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="32.9707" id="Filter" width="33.2487" x="333.8" y="155.896">
 <feDropShadow dx="-0" dy="0" flood-color="#000000" flood-opacity="0.333" in="SourceGraphic" result="Shadow" stdDeviation="0"/>
@@ -11,10 +11,11 @@
 </filter>
 </defs>
 <clipPath id="ArtboardFrame">
-<rect height="116.708" width="190.354" x="270.872" y="115.365"/>
+<rect height="117.491" width="190.354" x="270.872" y="115.365"/>
 </clipPath>
 <g clip-path="url(#ArtboardFrame)" id="Layer" vectornator:layerName="Layer">
 <g opacity="1" vectornator:layerName="Group 23">
+<path d="M280.523 224.894C280.523 220.497 318.814 216.932 366.049 216.932C413.284 216.932 451.576 220.497 451.576 224.894C451.576 229.291 413.284 232.856 366.049 232.856C318.814 232.856 280.523 229.291 280.523 224.894Z" fill="#9783c2" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="Oval 3"/>
 <g opacity="1" vectornator:layerName="Group 18">
 <path d="M280.473 179.407C280.473 165.038 293.194 153.389 308.887 153.389L422.6 153.389C438.293 153.389 451.015 165.038 451.015 179.407L451.015 186.702C451.015 201.072 438.293 212.72 422.6 212.72L308.887 212.72C293.194 212.72 280.473 201.072 280.473 186.702L280.473 179.407Z" fill="#d1bef9" fill-rule="nonzero" opacity="1" stroke="#463174" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2.16483" vectornator:layerName="Rectangle 1"/>
 <path d="M280.412 166.395C280.415 102.859 300.627 117.824 368.056 117.824C435.484 117.824 452.721 105.194 450.955 166.395C450.345 187.499 408.319 187.508 365.684 187.508C323.048 187.508 280.412 187.893 280.412 166.395Z" fill="#d1bef9" fill-rule="nonzero" opacity="1" stroke="#463174" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.84828" vectornator:layerName="Curve 1"/>
@@ -24,8 +25,8 @@
 <path d="M423.356 220.386C421.839 217.759 422.243 214.686 424.259 213.522L424.259 213.522C426.275 212.359 429.138 213.545 430.655 216.172L431.905 218.337C433.422 220.964 433.018 224.038 431.002 225.201L431.002 225.201C428.986 226.365 426.123 225.179 424.606 222.551L423.356 220.386Z" fill="#d1bef9" fill-rule="nonzero" opacity="1" stroke="#463174" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2.16483" vectornator:layerName="Rectangle 5"/>
 <path d="M426.108 185.686C426.108 176.101 433.727 168.331 443.126 168.331L443.126 168.331C452.525 168.331 460.144 176.101 460.144 185.686L460.144 193.584C460.144 203.169 452.525 210.939 443.126 210.939L443.126 210.939C433.727 210.939 426.108 203.169 426.108 193.584L426.108 185.686Z" fill="#d1bef9" fill-rule="nonzero" opacity="1" stroke="#463174" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2.16483" vectornator:layerName="Rectangle 4"/>
 <g opacity="1" vectornator:layerName="Group 1">
-<path d="M325.338 150.288C325.338 150.288 330.54 142.831 337.138 150.464" fill="none" opacity="1" stroke="#463174" stroke-linecap="square" stroke-linejoin="round" stroke-width="2.16483" vectornator:layerName="Curve 5"/>
-<path d="M394.35 150.288C394.35 150.288 399.552 142.831 406.15 150.464" fill="none" opacity="1" stroke="#463174" stroke-linecap="square" stroke-linejoin="round" stroke-width="2.16483" vectornator:layerName="Curve 4"/>
+<path d="M326.043 151.537C326.043 151.537 331.245 144.079 337.843 151.712" fill="none" opacity="1" stroke="#463174" stroke-linecap="square" stroke-linejoin="round" stroke-width="2.16483" vectornator:layerName="Curve 5"/>
+<path d="M395.055 151.537C395.055 151.537 399.905 144.079 406.055 151.712" fill="none" opacity="1" stroke="#463174" stroke-linecap="square" stroke-linejoin="round" stroke-width="2.16483" vectornator:layerName="Curve 4"/>
 </g>
 </g>
 <g opacity="1" vectornator:layerName="Group 22">
