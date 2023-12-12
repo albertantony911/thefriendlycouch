@@ -60,98 +60,141 @@
 	 });
 
 
-	document.addEventListener('DOMContentLoaded', function () {
-                const swiper = new Swiper('.swiper', {
-					effect: 'fade',
-					fadeEffect: {
-						crossFade: true,
-					},
-					direction: 'horizontal',
-					loop: true,
-					waitForTransition: false,
-					autoplay: {
-						delay: 1000, // Adjust this value as needed
-					},
-					keyboard: {
-						enabled: true,
-						onlyInViewport: true,
-					},
-					a11y: {
-						prevSlideMessage: 'Previous slide',
-						nextSlideMessage: 'Next slide',
-						firstSlideMessage: 'This is the first slide',
-						lastSlideMessage: 'This is the last slide',
-					},
-					});
-            });
-
-
-
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const steps = document.querySelectorAll('.color-change');
+  let currentIndex = 0;
+  let automaticMode = true;
 
   function changeColor(index) {
-    setTimeout(() => {
-      // Change background color
-      steps[index].style.backgroundColor = '#593F92';
-      // Change text color
-      steps[index].style.color = 'white';
-
-      if (index < steps.length - 1) {
-        changeColor(index + 1);
+    for (let i = 0; i < steps.length; i++) {
+      if (i <= index) {
+        steps[i].style.backgroundColor = '#593F92';
+        steps[i].style.color = 'white';
       } else {
-        // All steps have changed color, reset the colors
-        setTimeout(() => {
-          steps.forEach(step => {
-            step.style.backgroundColor = '';
-            step.style.color = '';
-          });
-          // Restart the animation
-          changeColor(0);
-        }, 1500); // Adjust the delay before restarting the animation
+        steps[i].style.backgroundColor = '';
+        steps[i].style.color = '';
       }
-    }, 1500); // Adjust the delay between color changes
+    }
+
+    if (automaticMode && index < steps.length - 1) {
+      setTimeout(() => {
+        changeColor(index + 1);
+      }, 1500); // Adjust the delay between color changes
+    } else if (automaticMode) {
+      setTimeout(() => {
+        currentIndex = 0;
+        changeColor(currentIndex);
+      }, 1500); // Adjust the delay before restarting
+    }
+  }
+
+  function handleKeyPress(event) {
+    automaticMode = false; // Switch to manual mode
+    if (event.key === 'ArrowLeft') {
+      currentIndex = Math.max(0, currentIndex - 1);
+    } else if (event.key === 'ArrowRight') {
+      currentIndex = Math.min(steps.length - 1, currentIndex + 1);
+    } else {
+      return;
+    }
+
+    // Change the color based on the current index
+    changeColor(currentIndex);
+  }
+
+  function handleStepClick(index) {
+    automaticMode = false; // Switch to manual mode
+    currentIndex = index;
+
+    // Change the color based on the clicked index
+    changeColor(currentIndex);
   }
 
   // Start the animation from the first step
-  changeColor(0); // Start from the first step
+  changeColor(currentIndex);
+
+  // Listen for keyboard events
+  document.addEventListener('keydown', handleKeyPress);
+
+  // Listen for click events on each step
+  const clickableDivs = document.querySelectorAll('.touch-control');
+  clickableDivs.forEach((div, index) => {
+    div.addEventListener('click', () => {
+      handleStepClick(index);
+    });
+  });
 });
 
 
+document.addEventListener("DOMContentLoaded", function () {
+  const slider = document.querySelector('.slider');
+  const prevButton = document.querySelector('.prev-button');
+  const nextButton = document.querySelector('.next-button');
+  const slides = document.querySelectorAll('.slide');
 
+  let currentIndex = 0;
 
-document.addEventListener("DOMContentLoaded", function() {
-  const textElements = document.querySelectorAll('.text-color-change');
-
-  // Set initial styles for the first text element
-  textElements[0].style.color = '#463174';
-  textElements[0].style.textShadow = '0.5px 0.5px 2px rgba(70, 49, 116, 0.1)';
-
-  function changeTextColor(index) {
-    setTimeout(() => {
-      // Change text color and add text shadow
-      textElements[index].style.color = '#463174';
-      textElements[index].style.textShadow = '0.5px 0.5px 2px rgba(70, 49, 116, 0.1)';
-
-      if (index < textElements.length - 1) {
-        changeTextColor(index + 1);
-      } else {
-        // All text elements have changed color, reset the styles
-        setTimeout(() => {
-          textElements.forEach(element => {
-            element.style.color = '';
-            element.style.textShadow = '';
-          });
-          // Restart the animation
-          changeTextColor(0);
-        }, 1000); // Adjust the delay before restarting the animation
-      }
-    }, 1000); // Adjust the delay between color changes
+  function showSlide(index) {
+    const newPosition = -index * 100 + '%';
+    slider.style.transform = 'translateX(' + newPosition + ')';
   }
 
-  // Start the animation
-  changeTextColor(1); // Start from the second text element to make the first one already colored
+  function updateStepColors(index) {
+    slides.forEach((slide, i) => {
+      if (i === index) {
+        // Highlight the current step
+        slide.style.backgroundColor = '#593F92';
+        slide.style.color = 'white';
+      } else {
+        // Reset other steps
+        slide.style.backgroundColor = '';
+        slide.style.color = '';
+      }
+    });
+  }
+
+  function goToSlide(index) {
+    currentIndex = index;
+    showSlide(currentIndex);
+    updateStepColors(currentIndex);
+  }
+
+  function goToPrevSlide() {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    showSlide(currentIndex);
+    updateStepColors(currentIndex);
+  }
+
+  function goToNextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+    updateStepColors(currentIndex);
+  }
+
+  // Initial setup
+  showSlide(currentIndex);
+  updateStepColors(currentIndex);
+
+  // Event listeners for navigation buttons
+  prevButton.addEventListener('click', goToPrevSlide);
+  nextButton.addEventListener('click', goToNextSlide);
+
+  // Event listener for manual step change
+  slides.forEach((slide, index) => {
+    slide.addEventListener('click', () => {
+      goToSlide(index);
+    });
+  });
 });
+
+
+
+
+
+
+
+
+
 
 
 
