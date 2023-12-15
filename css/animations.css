@@ -1,46 +1,36 @@
-/* Your styles go here if needed */
-
-/* Basic slider styles */
-.slider-container {
-  position: relative;
-}
-
 .slider {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
+    position: relative;
+    width: 100%; /* Adjust the width as needed */
+    overflow: hidden;
 }
 
-.slide {
-  width: 100%;
-  box-sizing: border-box;
+
+
+.slider img {
+    width: 100%; /* Ensure the images take up the entire width of the container */
+    height: auto;
 }
 
-/* Navigation buttons styles */
-.prev-button, .next-button {
+
+.color-change.active-step {
+  background-color: #593F92;
+  color: white;
+}
+
+
+.sr-only {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 10px;
-  cursor: pointer;
-}
-
-.prev-button {
-  left: 10px;
-}
-
-.next-button {
-  right: 10px;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 
 
-
-
-
-.swiper {
-  width: 100%;
-  height: 100%;
-}
 
 .home-hero-t {
   height: 53svh;

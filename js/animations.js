@@ -60,36 +60,53 @@
 	 });
 
 
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
   const steps = document.querySelectorAll('.color-change');
+  const splide = new Splide('.splide', {
+    type: 'fade',
+    pagination: false,
+    heightRatio: 1,
+    speed: 1000,
+  }).mount();
+
   let currentIndex = 0;
   let automaticMode = true;
+  let intervalId = null;
 
-  function changeColor(index) {
+  function changeColorAndSlide(index) {
     for (let i = 0; i < steps.length; i++) {
       if (i <= index) {
-        steps[i].style.backgroundColor = '#593F92';
-        steps[i].style.color = 'white';
+        steps[i].classList.add('active-step');
       } else {
-        steps[i].style.backgroundColor = '';
-        steps[i].style.color = '';
+        steps[i].classList.remove('active-step');
       }
     }
 
-    if (automaticMode && index < steps.length - 1) {
-      setTimeout(() => {
-        changeColor(index + 1);
-      }, 1500); // Adjust the delay between color changes
-    } else if (automaticMode) {
-      setTimeout(() => {
+    // Move Splide to the corresponding slide with fade transition
+    splide.go(index);
+  }
+
+  function startAutomaticMode() {
+    automaticMode = true;
+
+    intervalId = setInterval(() => {
+      if (currentIndex < steps.length - 1) {
+        currentIndex++;
+      } else {
         currentIndex = 0;
-        changeColor(currentIndex);
-      }, 1500); // Adjust the delay before restarting
-    }
+      }
+
+      changeColorAndSlide(currentIndex);
+    }, 1650); // Adjust the delay between automatic mode changes
   }
 
   function handleKeyPress(event) {
     automaticMode = false; // Switch to manual mode
+    clearInterval(intervalId); // Clear the interval
+
     if (event.key === 'ArrowLeft') {
       currentIndex = Math.max(0, currentIndex - 1);
     } else if (event.key === 'ArrowRight') {
@@ -98,20 +115,42 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
-    // Change the color based on the current index
-    changeColor(currentIndex);
+    // Change the color and move Splide based on the current index
+    changeColorAndSlide(currentIndex);
+
+    // Restart automatic mode after manual change
+    startAutomaticMode();
   }
 
   function handleStepClick(index) {
     automaticMode = false; // Switch to manual mode
+    clearInterval(intervalId); // Clear the interval
     currentIndex = index;
 
-    // Change the color based on the clicked index
-    changeColor(currentIndex);
+    // Change the color and move Splide based on the clicked index
+    changeColorAndSlide(currentIndex);
+
+    // Restart automatic mode after manual change
+    startAutomaticMode();
   }
 
+  // Listen for slide changes and update the active step
+  splide.on('moved', function (newIndex) {
+    automaticMode = false; // Set automaticMode to false when the slide changes manually
+    clearInterval(intervalId); // Clear the interval
+
+    currentIndex = newIndex; // Update currentIndex based on the moved event
+    changeColorAndSlide(newIndex);
+
+    // Restart automatic mode after manual change
+    startAutomaticMode();
+  });
+
+  // Manually set the initial state
+  changeColorAndSlide(currentIndex);
+
   // Start the animation from the first step
-  changeColor(currentIndex);
+  startAutomaticMode();
 
   // Listen for keyboard events
   document.addEventListener('keydown', handleKeyPress);
@@ -123,69 +162,30 @@ document.addEventListener("DOMContentLoaded", function () {
       handleStepClick(index);
     });
   });
-});
 
-
-document.addEventListener("DOMContentLoaded", function () {
-  const slider = document.querySelector('.slider');
-  const prevButton = document.querySelector('.prev-button');
-  const nextButton = document.querySelector('.next-button');
-  const slides = document.querySelectorAll('.slide');
-
-  let currentIndex = 0;
-
-  function showSlide(index) {
-    const newPosition = -index * 100 + '%';
-    slider.style.transform = 'translateX(' + newPosition + ')';
-  }
-
-  function updateStepColors(index) {
-    slides.forEach((slide, i) => {
-      if (i === index) {
-        // Highlight the current step
-        slide.style.backgroundColor = '#593F92';
-        slide.style.color = 'white';
-      } else {
-        // Reset other steps
-        slide.style.backgroundColor = '';
-        slide.style.color = '';
-      }
-    });
-  }
-
-  function goToSlide(index) {
-    currentIndex = index;
-    showSlide(currentIndex);
-    updateStepColors(currentIndex);
-  }
-
-  function goToPrevSlide() {
-    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-    showSlide(currentIndex);
-    updateStepColors(currentIndex);
-  }
-
-  function goToNextSlide() {
-    currentIndex = (currentIndex + 1) % slides.length;
-    showSlide(currentIndex);
-    updateStepColors(currentIndex);
-  }
-
-  // Initial setup
-  showSlide(currentIndex);
-  updateStepColors(currentIndex);
-
-  // Event listeners for navigation buttons
-  prevButton.addEventListener('click', goToPrevSlide);
-  nextButton.addEventListener('click', goToNextSlide);
-
-  // Event listener for manual step change
-  slides.forEach((slide, index) => {
-    slide.addEventListener('click', () => {
-      goToSlide(index);
-    });
+  // Handle page visibility changes
+  document.addEventListener('visibilitychange', function () {
+    if (document.visibilityState === 'hidden') {
+      // Page is hidden, stop automatic mode
+      automaticMode = false;
+      clearInterval(intervalId);
+    } else {
+      // Page is visible again, restart automatic mode
+      startAutomaticMode();
+    }
   });
 });
+
+
+
+
+
+
+
+
+
+
+
 
 
 
