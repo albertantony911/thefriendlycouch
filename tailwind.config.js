@@ -9,6 +9,7 @@ module.exports = {
 
   theme: {
 
+    fluidTypography: {},
     
     extend: {
       container: {
@@ -25,5 +26,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-fluid-typography")],
 };
