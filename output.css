@@ -705,6 +705,38 @@ html {
   top: auto;
 }
 
+.right-\[2vw\] {
+  right: 2vw;
+}
+
+.top-\[2vw\] {
+  top: 2vw;
+}
+
+.right-\[5vw\] {
+  right: 5vw;
+}
+
+.top-\[5vw\] {
+  top: 5vw;
+}
+
+.right-\[6vw\] {
+  right: 6vw;
+}
+
+.top-\[6vw\] {
+  top: 6vw;
+}
+
+.right-\[6\.5vw\] {
+  right: 6.5vw;
+}
+
+.top-\[6\.5vw\] {
+  top: 6.5vw;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -983,6 +1015,30 @@ html {
   margin-top: 8svh;
 }
 
+.mt-\[1vw\] {
+  margin-top: 1vw;
+}
+
+.mt-\[3vw\] {
+  margin-top: 3vw;
+}
+
+.mt-\[2vw\] {
+  margin-top: 2vw;
+}
+
+.mt-\[4vw\] {
+  margin-top: 4vw;
+}
+
+.mb-\[3v\] {
+  margin-bottom: 3v;
+}
+
+.mb-\[3vw\] {
+  margin-bottom: 3vw;
+}
+
 .block {
   display: block;
 }
@@ -1121,6 +1177,48 @@ html {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-max {
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.h-min {
+  height: -moz-min-content;
+  height: min-content;
+}
+
+.h-\[25rem\] {
+  height: 25rem;
+}
+
+.h-\[100\%\] {
+  height: 100%;
+}
+
+.h-\[20rem\] {
+  height: 20rem;
+}
+
+.h-\[22rem\] {
+  height: 22rem;
+}
+
+.h-\[21rem\] {
+  height: 21rem;
+}
+
+.h-\[20\.5rem\] {
+  height: 20.5rem;
+}
+
+.h-\[10\%\] {
+  height: 10%;
+}
+
+.h-\[50\%\] {
+  height: 50%;
 }
 
 .w-1\/2 {
@@ -1298,6 +1396,42 @@ html {
 
 .w-px {
   width: 1px;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.w-\[80\%\] {
+  width: 80%;
+}
+
+.w-\[75\%\] {
+  width: 75%;
+}
+
+.w-\[90svw\] {
+  width: 90svw;
+}
+
+.w-\[85svw\] {
+  width: 85svw;
+}
+
+.w-\[2px\] {
+  width: 2px;
+}
+
+.w-\[5vw\] {
+  width: 5vw;
+}
+
+.w-\[3vw\] {
+  width: 3vw;
+}
+
+.w-\[4vw\] {
+  width: 4vw;
 }
 
 .min-w-full {
@@ -1661,6 +1795,38 @@ html {
   gap: 0.8rem;
 }
 
+.gap-\[2vw\] {
+  gap: 2vw;
+}
+
+.gap-\[1\.9vw\] {
+  gap: 1.9vw;
+}
+
+.gap-\[1vw\] {
+  gap: 1vw;
+}
+
+.gap-\[3vw\] {
+  gap: 3vw;
+}
+
+.gap-\[\] {
+  gap: ;
+}
+
+.gap-\[1v\.5w\] {
+  gap: 1v.5w;
+}
+
+.gap-\[1\.5vww\] {
+  gap: 1.5vww;
+}
+
+.gap-\[1\.5vw\] {
+  gap: 1.5vw;
+}
+
 .gap-x-6 {
   -moz-column-gap: 1.5rem;
        column-gap: 1.5rem;
@@ -1755,6 +1921,10 @@ html {
 
 .rounded-xl {
   border-radius: 0.75rem;
+}
+
+.rounded-\[5vw\] {
+  border-radius: 5vw;
 }
 
 .border {
@@ -2109,6 +2279,91 @@ html {
   padding-bottom: 200px;
 }
 
+.px-\[90\] {
+  padding-left: 90;
+  padding-right: 90;
+}
+
+.px-\[90svw\] {
+  padding-left: 90svw;
+  padding-right: 90svw;
+}
+
+.px-\[50svw\] {
+  padding-left: 50svw;
+  padding-right: 50svw;
+}
+
+.px-\[5vw\] {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.px-\[1vw\] {
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+.px-\[3vw\] {
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+
+.px-\[4vw\] {
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+
+.py-\[2vw\] {
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+}
+
+.py-\[1vw\] {
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+}
+
+.py-\[3vw\] {
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+}
+
+.py-\[4vw\] {
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+}
+
+.py-\[5vw\] {
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+}
+
+.py-\[6vw\] {
+  padding-top: 6vw;
+  padding-bottom: 6vw;
+}
+
+.py-\[10vw\] {
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+}
+
+.py-\[8vw\] {
+  padding-top: 8vw;
+  padding-bottom: 8vw;
+}
+
+.py-\[7vw\] {
+  padding-top: 7vw;
+  padding-bottom: 7vw;
+}
+
+.py-\[4\.5vw\] {
+  padding-top: 4.5vw;
+  padding-bottom: 4.5vw;
+}
+
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -2265,6 +2520,46 @@ html {
   padding-top: 2.25rem;
 }
 
+.pl-\[2vw\] {
+  padding-left: 2vw;
+}
+
+.pr-\[2vw\] {
+  padding-right: 2vw;
+}
+
+.pl-\[3vw\] {
+  padding-left: 3vw;
+}
+
+.pr-\[3vw\] {
+  padding-right: 3vw;
+}
+
+.pl-\[4vw\] {
+  padding-left: 4vw;
+}
+
+.pr-\[4vw\] {
+  padding-right: 4vw;
+}
+
+.pl-\[5vw\] {
+  padding-left: 5vw;
+}
+
+.pr-\[5vw\] {
+  padding-right: 5vw;
+}
+
+.pt-\[5vw\] {
+  padding-top: 5vw;
+}
+
+.pt-\[6vw\] {
+  padding-top: 6vw;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2339,6 +2634,86 @@ html {
   line-height: 1rem;
 }
 
+.text-\[10\%\] {
+  font-size: 10%;
+}
+
+.text-\[20\%\] {
+  font-size: 20%;
+}
+
+.text-\[50\%\] {
+  font-size: 50%;
+}
+
+.text-\[1em\] {
+  font-size: 1em;
+}
+
+.text-\[200\%\] {
+  font-size: 200%;
+}
+
+.text-\[100\%\] {
+  font-size: 100%;
+}
+
+.text-\[80\%\] {
+  font-size: 80%;
+}
+
+.text-\[90\%\] {
+  font-size: 90%;
+}
+
+.text-\[90vw\] {
+  font-size: 90vw;
+}
+
+.text-\[9vw\] {
+  font-size: 9vw;
+}
+
+.text-\[1vw\] {
+  font-size: 1vw;
+}
+
+.text-\[5vw\] {
+  font-size: 5vw;
+}
+
+.text-\[4vw\] {
+  font-size: 4vw;
+}
+
+.text-\[3vw\] {
+  font-size: 3vw;
+}
+
+.text-\[1rem\] {
+  font-size: 1rem;
+}
+
+.text-\[2vw\] {
+  font-size: 2vw;
+}
+
+.text-\[3\.5vw\] {
+  font-size: 3.5vw;
+}
+
+.text-\[2\.75vw\] {
+  font-size: 2.75vw;
+}
+
+.text-\[3\.25vw\] {
+  font-size: 3.25vw;
+}
+
+.text-\[2\.8vw\] {
+  font-size: 2.8vw;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -2381,6 +2756,26 @@ html {
 
 .leading-relaxed {
   line-height: 1.625;
+}
+
+.leading-3 {
+  line-height: .75rem;
+}
+
+.leading-\[\] {
+  line-height: ;
+}
+
+.leading-\[1vw\] {
+  line-height: 1vw;
+}
+
+.leading-\[3vw\] {
+  line-height: 3vw;
+}
+
+.leading-\[5vw\] {
+  line-height: 5vw;
 }
 
 .text-dark-purple {
@@ -2456,6 +2851,14 @@ html {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\] {
+  color: ;
+}
+
+.text-\[5\] {
+  color: 5;
 }
 
 .line-through {
@@ -2963,6 +3366,34 @@ svg {
     width: 95%;
   }
 
+  .md\:w-\[\] {
+    width: ;
+  }
+
+  .md\:w-\[40\%\] {
+    width: 40%;
+  }
+
+  .md\:w-\[10rem\] {
+    width: 10rem;
+  }
+
+  .md\:w-\[60\%\] {
+    width: 60%;
+  }
+
+  .md\:w-\[70\%\] {
+    width: 70%;
+  }
+
+  .md\:w-\[1\.vw\] {
+    width: 1.vw;
+  }
+
+  .md\:w-\[1vw\] {
+    width: 1vw;
+  }
+
   .md\:-translate-y-8 {
     --tw-translate-y: -2rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -3208,6 +3639,31 @@ svg {
   .md\:py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+  }
+
+  .md\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .md\:px-28 {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+
+  .md\:px-\[8\] {
+    padding-left: 8;
+    padding-right: 8;
+  }
+
+  .md\:px-\[3vw\] {
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+
+  .md\:py-\[2vw\] {
+    padding-top: 2vw;
+    padding-bottom: 2vw;
   }
 
   .md\:pb-0 {
@@ -3579,6 +4035,30 @@ svg {
     width: 50%;
   }
 
+  .xl\:w-\[80\%\] {
+    width: 80%;
+  }
+
+  .xl\:w-\[70\%\] {
+    width: 70%;
+  }
+
+  .xl\:w-\[75\%\] {
+    width: 75%;
+  }
+
+  .xl\:w-\[77\%\] {
+    width: 77%;
+  }
+
+  .xl\:w-\[78\%\] {
+    width: 78%;
+  }
+
+  .xl\:w-\[79\%\] {
+    width: 79%;
+  }
+
   .xl\:flex-row {
     flex-direction: row;
   }
@@ -3658,6 +4138,16 @@ svg {
   .xl\:py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
+  }
+
+  .xl\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .xl\:px-40 {
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 }
 
@@ -3769,35 +4259,12 @@ svg {
     padding-bottom: 1.5rem;
   }
 
-  .portrait\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  .portrait\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
-
-  .portrait\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
   .portrait\:fluid-sm {
     font-size: clamp(0.8333rem, calc(-0.0831vw + 0.8500rem), 0.7502rem);
     line-height: var(--fluid-line-height);
     letter-spacing: var(--fluid-letter-spacing);
     --fluid-line-height: 1.5;
     --fluid-letter-spacing: 0.2px;
-  }
-
-  .portrait\:fluid-base {
-    font-size: 1rem;
-    line-height: var(--fluid-line-height);
-    letter-spacing: var(--fluid-letter-spacing);
-    --fluid-line-height: 1.4;
-    --fluid-letter-spacing: 0.5px;
   }
 
   .portrait\:fluid-lg {
@@ -3813,14 +4280,6 @@ svg {
     letter-spacing: var(--fluid-letter-spacing);
     --fluid-line-height: 1.35;
     --fluid-letter-spacing: 0.0125em;
-    line-height: var(--fluid-line-height);
-  }
-
-  .portrait\:fluid-2xl {
-    font-size: clamp(1.7280rem, calc(0.6406vw + 1.5999rem), 2.3686rem);
-    letter-spacing: var(--fluid-letter-spacing);
-    --fluid-line-height: 1.35;
-    --fluid-letter-spacing: normal;
     line-height: var(--fluid-line-height);
   }
 
