@@ -327,12 +327,12 @@
               style="display: none;">
           
           
-              <div class=" text-mid-purple rounded-[3rem] w-[85svw]  py-[7vw] transform bg-white shadow-2xl">
+              <div class=" text-mid-purple rounded-[3rem] w-[85svw] md:w-auto md:px-8  py-[7vw] md:py-9 transform bg-white shadow-2xl">
                 <!-- Modal Header -->
                 <div class=" flex flex-col">
                   <button @click="showModal = false"
-                    class="hover:text-gray-700 focus:outline-none right-[6.5vw] top-[6.5vw] absolute text-gray-500">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="5vw" height="5vw" viewBox="0 0 24 24" fill="none"
+                    class="hover:text-gray-700 focus:outline-none right-[6.5vw] md:right-7 md:top-7 top-[6.5vw] absolute text-gray-500">
+                    <svg xmlns="http://www.w3.org/2000/svg"  class="h-[5vw] w-[5vw] md:h-[2.3rem] md:w-[2.3rem]" viewBox="0 0 24 24" fill="none"
                       stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
                       class="feather feather-x stroke-dark-purple">
                       <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -343,13 +343,14 @@
           
                 <!-- Modal Content -->
                 <div class=" md:text-base flex flex-col justify-center mx-auto text-center">
-                  <h4 class="md:mt-5 text-[3.5vw] font-semibold">OUR STANDARD CHARGES</h4>
-                  <div class="text-[3vw] rounded-[5vw] w-[85%] py-[6vw] flex flex-row justify-center mx-auto mt-[4vw] bg-gray-100">
-                    <div class="pl-[3vw] pr-[5vw] md:pr-8 md:pl-12 flex flex-col justify-center gap-[1.9vw]">
-                      <p class="leading-[5vw] whitespace-pre-line">Individual 
+                  <h4 class="md:mt-5 text-[3.5vw] md:text-base font-semibold">OUR STANDARD CHARGES</h4>
+                  <div class="text-[3vw] md:text-base rounded-[5vw] w-[85%] md:w-auto py-[6vw] md:py-7 flex flex-row justify-center mx-auto mt-[4vw] md:mt-5 bg-gray-100">
+                    
+                    <div class="pl-[3vw] pr-[5vw] md:pr-8 md:pl-12 flex flex-col justify-center gap-[1.9vw] md:gap-[0.75rem]">
+                      <p class="max-md:leading-[5vw] whitespace-pre-line">Individual 
                         Session
                       </p>
-                      <p class="font-semibold text-[3.25vw]">
+                      <p class="font-semibold md:text-base text-[3.25vw]">
                         <span class=""><span class=" font-mono">₹</span>2200</span>/session
                       </p>
                     </div>
@@ -357,58 +358,58 @@
                     <div class="w-[1px] h-auto bg-gray-300"></div>
           
                     <div class="pr-[3vw] pl-[5vw] md:pr-12 md:pl-8 flex flex-col justify-center gap-[1.9vw]">
-                      <p class="leading-[5vw] whitespace-pre-line">Joint 
+                      <p class="max-md:leading-[5vw] whitespace-pre-line">Joint 
                         Session
                       </p>
-                      <p class="font-semibold text-[3.25vw]">
+                      <p class="font-semibold md:text-base text-[3.25vw]">
                         <span class=""><span class="font-mono">₹</span>4000</span>/session
                       </p>
                     </div>
                   </div>
           
-                  <h4 class="mt-[4vw] mb-[3vw] text-[3vw] font-normal">For more information visit</h4>
+                  <h4 class="mt-[4vw] md:mt-5 md:mb-3 md:text-base mb-[3vw] text-[3vw] font-normal">For more information visit</h4>
           
           
           
                   <div
-                    class="text-[3vw] md:flex-row md:gap-3 text-mid-purple flex flex-wrap justify-center gap-[3vw] mx-auto font-medium">
+                    class="text-[3vw] md:text-base md:flex-row md:gap-3 text-mid-purple flex flex-wrap justify-center gap-[3vw] mx-auto font-medium">
                     <button
-                      class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-[3vw] py-[2vw] transition bg-gray-100 rounded-full">
+                      class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-[3vw] md:px-4 md:py-2 py-[2vw] transition bg-gray-100 rounded-full">
                       <a href="#">THERAPY</a>
                     </button>
                     <button
-                      class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-[3vw] py-[2vw] transition bg-gray-100 rounded-full">
+                      class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-[3vw] md:px-4 md:py-2 py-[2vw] transition bg-gray-100 rounded-full">
                       <a href="#">DIAGNOSIS</a>
                     </button>
                     <button
-                      class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-[3vw] py-[2vw] transition bg-gray-100 rounded-full">
+                      class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-[3vw] md:px-4 md:py-2 py-[2vw] transition bg-gray-100 rounded-full">
                       <a href="#">PRICING</a>
                     </button>
           
                   </div>
           
                   <button
-                    class="font-medium text-[3vw] text-mid-purple mt-[3vw] hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-[3vw] py-[2vw] mx-auto transition bg-gray-100 rounded-full">
+                    class="font-medium md:text-base text-[3vw] md:mt-[0.8rem] text-mid-purple mt-[3vw] hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-[3vw] py-[2vw] md:px-4 md:py-2 mx-auto transition bg-gray-100 rounded-full">
                     <a href="#">COUPLE'S COUNSELLING</a>
                   </button>
           
           
           
-                  <div class="flex items-center w-[85%] mx-auto py-[4.5vw]">
+                  <div class="flex items-center w-[85%] mx-auto md:py-6 py-[4.5vw]">
                     <div class="flex-grow border-t border-gray-200"></div>
-                    <span class="px-5 text-gray-500 text-[3vw]">OR</span>
+                    <span class="px-5 text-gray-500 md:text-base text-[3vw]">OR</span>
                     <div class="flex-grow border-t border-gray-200"></div>
                   </div>
           
                   <div>
-                    <h3 class="text-[3vw] font-medium">MESSAGE US AND BOOK YOUR SESSION</h3>
+                    <h3 class="text-[3vw] md:text-sm font-medium">MESSAGE US AND BOOK YOUR SESSION</h3>
                   </div>
           
-                  <div class="md:flex-row landscape:md:gap-8 md:gap-5 flex justify-center gap-[3vw] pt-[6vw] mx-auto">
+                  <div class="md:flex-row landscape:md:gap-8 md:gap-5 flex justify-center gap-[3vw] pt-[6vw] md:pt-6 mx-auto">
           
           
                     <button
-                      class=" md:px-8 md:py-4 whitespace-nowrap hover:scale-105 hover:shadow-lg focus:outline-none hover:text-white px-[5vw] py-[4vw] mx-auto text-white transition rounded-full shadow-lg select-none"
+                      class="md:px-8 md:py-4 whitespace-nowrap hover:scale-105 hover:shadow-lg focus:outline-none hover:text-white px-[5vw] py-[4vw] mx-auto text-white transition rounded-full shadow-lg select-none"
                       style="background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);">
                       <div class="md:gap-3 flex flex-row gap-[1.5vw] my-auto">
           
