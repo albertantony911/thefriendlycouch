@@ -1151,6 +1151,34 @@ html {
   height: 100vh;
 }
 
+.h-\[10\%\] {
+  height: 10%;
+}
+
+.h-\[10\] {
+  height: 10;
+}
+
+.h-\[10svh\] {
+  height: 10svh;
+}
+
+.h-\[8svh\] {
+  height: 8svh;
+}
+
+.h-\[7svh\] {
+  height: 7svh;
+}
+
+.h-\[6svh\] {
+  height: 6svh;
+}
+
+.h-\[5svh\] {
+  height: 5svh;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -1707,6 +1735,10 @@ html {
 
 .gap-\[3vw\] {
   gap: 3vw;
+}
+
+.gap-\[1vw\] {
+  gap: 1vw;
 }
 
 .gap-x-6 {
@@ -2477,6 +2509,14 @@ html {
   line-height: 1rem;
 }
 
+.text-\[2vw\] {
+  font-size: 2vw;
+}
+
+.text-\[4vw\] {
+  font-size: 4vw;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -3027,6 +3067,14 @@ svg {
 
   .md\:h-\[60svh\] {
     height: 60svh;
+  }
+
+  .md\:h-14 {
+    height: 3.5rem;
+  }
+
+  .md\:h-10 {
+    height: 2.5rem;
   }
 
   .md\:w-1\/12 {
