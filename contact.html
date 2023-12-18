@@ -7,10 +7,11 @@
   <link rel="stylesheet" type="text/css" href="../output.css">
   <link rel="stylesheet" type="text/css" href="../css/animations.css">
 
-  
-
   <!-- External Libraries -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
+
 
   <script src="https://kit.fontawesome.com/9fa9d11dac.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.x.x/dist/alpine.js" defer></script>
@@ -19,183 +20,196 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@motionone/types@10.16.3/dist/index.es.min.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+
 
   <!-- Google Fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap">
   <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/helvetica-neue-55">
 
   <!-- Custom Scripts -->
   <script src="../js/main.js" defer></script>
-    <script src="../js/animations.js" defer></script>
+  <script src="../js/animations.js" defer></script>
   <script src="../js/aos.js" defer></script>
   <script src="../js/gsap.js" defer></script>
+
+
+
+
+
 </head>
 
-  <body class=" scroll-smooth mx-auto leading-relaxed">
-    
-    <header class="sticky top-0 flex flex-col z-[100] h-14   bg-light drop-shadow-2xl ">
-    
-      <div class="absolute top-0">
-        <a>
-          <img class="h-14 px-5" src="../img/logo.svg" alt="logo">
-        </a>
-      </div>
-    
-      <div class="absolute  h-14 right-5 cursor-pointer z-[50] antialiased landscape:hidden" id="menuButtonContainer">
-        <button class="h-14" id="menuButton">
-          <svg xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-menu-2 stroke-dark-purple h-10 transition-transform transform"
-            viewBox="0 0 24 24" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <line x1="4" y1="6" x2="20" y2="6" />
-            <line x1="4" y1="12" x2="20" y2="12" />
-            <line x1="4" y1="18" x2="20" y2="18" />
-          </svg>
+<body class=" scroll-smooth mx-auto leading-relaxed">
+
+  <header class="sticky top-0 flex flex-col z-[100] h-[7svh] md:h-14   bg-light drop-shadow-2xl ">
+
+    <div class="absolute top-0">
+      <a href="./index.html">
+        <button aria-label="Home">
+          <img class="h-[7svh] md:h-14 px-5 " src="../img/logo.svg" alt="Logo">
         </button>
-      </div>
-    
-      <nav class="relative top-0 transform translate-y-[-100%] menudrop landscape:hidden">
-        <ul
-          class="md:text-xl bg-dark-purple font-poppins text-light z-20 flex flex-col items-center justify-center h-screen gap-2 text-lg antialiased text-center">
-          <li><a href="../html/home.html">HOME</a></li>
-          <li><a href="../html/about.html">ABOUT</a></li>
-          <li><a href="../html/pricing.html">PRICING</a></li>
-    
-          <li class="mt-7 md:mt-10 text-light-purple mb-2 text-xs font-medium">
-            OUR SERVICES
-          </li>
-    
-          <li><a href="../html/therapy.html">THERAPY</a></li>
-          <li><a href="../html/diagnosis.html">DIAGNOSIS</a></li>
-          <li><a href="../html/couples-counselling.html">COUPLE'S COUNSELLING</a></li>
-          <li class="mt-7 md:mt-10 text-light-purple mb-2 text-xs font-medium">
-            HAVE A QUESTION ?
-          </li>
-    
-          <li><a href="../html/faq.html">FAQ</a></li>
-          <li><a href="../html/contact.html">CONTACT</a></li>
-    
-          <li class="mt-10">
-          </li>
-    
-          <li><a href="#">WORKSHOP</a></li>
-          <li><a href="../html/career.html ">CAREER</a></li>
-          <li><a href="../html/test.html ">TEST</a></li>
-    
-        </ul>
-      </nav>
-    
-      <nav class="absolute h-14 right-3 cursor-pointer z-[50] antialiased portrait:hidden text-dark-purple">
-        <ul class="flex flex-row flex-wrap items-center w-full">
-    
-    
-          <li class=" relative block">
-            <a href="../html/home.html"
-              class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
-              <span>Home</span>
-            </a>
-          </li>
-    
-          <li class="relative block">
-            <a href="../html/about.html"
-              class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
-              <span>About</span>
-            </a>
-          </li>
-          <li class="relative block">
-            <a href="../html/pricing.html"
-              class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
-              <span>Pricing</span>
-            </a>
-          </li>
-    
-    
-    
-          <li class="relative block" x-data="{ showChildren: false, submenuTimeout: null }"
-            @click.away="showChildren = false; clearTimeout(submenuTimeout)" @touchstart="showChildren = !showChildren">
-            <a href="#"
-              class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer"
-              @mouseenter="showChildren = true; clearTimeout(submenuTimeout)"
-              @mouseleave="submenuTimeout = setTimeout(() => showChildren = false, 300)">
-              <span>Our Services</span>
-              <span class="ml-2"> <i class="mdi mdi-chevron-down"></i> </span>
-            </a>
-            <div
-              class="rounded-3xl absolute left-0 top-auto z-30 w-56 min-w-full mt-1 text-base bg-white border border-gray-300 shadow-md"
-              x-show="showChildren" x-transition:enter="transition ease duration-300 transform"
-              x-transition:enter-start="opacity-0 translate-y-2" x-transition:enter-end="opacity-100 translate-y-0"
-              x-transition:leave="transition ease duration-300 transform"
-              x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-4"
-              style="display: none;" @mouseenter="clearTimeout(submenuTimeout)" @mouseleave="showChildren = false">
-              <span class="absolute top-0 left-0 w-4 h-5 ml-6 -mt-1 transform rotate-45 bg-white border"></span>
-              <div class="rounded-3xl relative z-10 w-full px-2 py-6 bg-white">
-                <ul class="list-reset">
-                  <li class="relative" x-data="{ showChildren: false }" @mouseenter="showChildren = true"
-                    @mouseleave="showChildren = false">
-                    <a href="../html/therapy.html"
-                      class="hover:text-mid-purple hover:no-underline hover:scale-105 flex items-start w-full px-4 pb-5 no-underline transition-all duration-300 transform border-b cursor-pointer">
-                      <span class="flex-1">Therapy</span>
-                    </a>
-                  </li>
-                  <li class="relative" x-data="{ showChildren: false }" @mouseenter="showChildren = true"
-                    @mouseleave="showChildren = false">
-                    <a href="../html/diagnosis.html"
-                      class="hover:text-mid-purple hover:no-underline hover:scale-105 flex items-start w-full px-4 py-5 no-underline transition-all duration-300 transform border-b cursor-pointer">
-                      <span class="flex-1">Diagnosis</span>
-                    </a>
-                  </li>
-                  <li class="relative" x-data="{ showChildren: false }" @mouseenter="showChildren = true"
-                    @mouseleave="showChildren = false">
-                    <a href="../html/couples-counselling.html"
-                      class="hover:text-mid-purple hover:no-underline hover:scale-105 flex items-start w-full px-4 py-5 no-underline transition-all duration-300 transform border-b cursor-pointer">
-                      <span class="flex-1">Couple's Counselling</span>
-                    </a>
-                  </li>
-                  <li class="relative" x-data="{ showChildren: false }" @mouseenter="showChildren = true"
-                    @mouseleave="showChildren = false">
-                    <a href="#"
-                      class="hover:text-mid-purple hover:no-underline hover:scale-105 flex items-start w-full px-4 pt-5 no-underline transition-all duration-300 transform cursor-pointer">
-                      <span class="flex-1">Workshops</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+      </a>
+    </div>
+
+    <div class="absolute md:h-14  h-[7svh]  right-5 cursor-pointer z-[50]  antialiased landscape:hidden"
+      id="menuButtonContainer">
+      <button class="h-[7svh] md:h-14 " id="menuButton">
+        <svg xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-menu-2 stroke-dark-purple h-[5svh]  md:h-10 transition-transform transform"
+          viewBox="0 0 24 24" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <line x1="4" y1="6" x2="20" y2="6" />
+          <line x1="4" y1="12" x2="20" y2="12" />
+          <line x1="4" y1="18" x2="20" y2="18" />
+        </svg>
+      </button>
+    </div>
+
+    <nav class="relative top-0 transform translate-y-[-100%] menudrop landscape:hidden">
+      <ul
+        class="md:text-xl bg-dark-purple font-poppins text-light z-20 flex flex-col items-center justify-center h-screen gap-[1vw] text-[4vw] antialiased text-center">
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="./about.html">ABOUT</a></li>
+        <li><a href="./pricing.html">PRICING</a></li>
+
+        <li class="mt-7 md:mt-10 text-light-purple mb-2 text-xs font-medium">
+          OUR SERVICES
+        </li>
+
+        <li><a href="./therapy.html">THERAPY</a></li>
+        <li><a href="./diagnosis.html">DIAGNOSIS</a></li>
+        <li><a href="./couples-counselling.html">COUPLE'S COUNSELLING</a></li>
+        <li class="mt-7 md:mt-10 text-light-purple mb-2 text-xs font-medium">
+          HAVE A QUESTION ?
+        </li>
+
+        <li><a href="./faq.html">FAQ</a></li>
+        <li><a href="./contact.html">CONTACT</a></li>
+
+        <li class="mt-10">
+        </li>
+
+        <li><a href="#">WORKSHOP</a></li>
+        <li><a href="./career.html ">CAREER</a></li>
+        <li><a href="./test.html ">TEST</a></li>
+
+      </ul>
+    </nav>
+
+    <nav class="absolute h-14 right-3 cursor-pointer z-[50] antialiased portrait:hidden text-dark-purple">
+      <ul class="flex flex-row flex-wrap items-center w-full">
+
+
+        <li class=" relative block">
+          <a href="./index.html"
+            class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
+            <span>Home</span>
+          </a>
+        </li>
+
+        <li class="relative block">
+          <a href="./about.html"
+            class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
+            <span>About</span>
+          </a>
+        </li>
+        <li class="relative block">
+          <a href="./pricing.html"
+            class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
+            <span>Pricing</span>
+          </a>
+        </li>
+
+
+
+        <li class="relative block" x-data="{ showChildren: false, submenuTimeout: null }"
+          @click.away="showChildren = false; clearTimeout(submenuTimeout)" @touchstart="showChildren = !showChildren">
+          <a href="#"
+            class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer"
+            @mouseenter="showChildren = true; clearTimeout(submenuTimeout)"
+            @mouseleave="submenuTimeout = setTimeout(() => showChildren = false, 300)">
+            <span>Our Services</span>
+            <span class="ml-2"> <i class="mdi mdi-chevron-down"></i> </span>
+          </a>
+          <div
+            class="rounded-3xl absolute left-0 top-auto z-30 w-56 min-w-full mt-1 text-base bg-white border border-gray-300 shadow-md"
+            x-show="showChildren" x-transition:enter="transition ease duration-300 transform"
+            x-transition:enter-start="opacity-0 translate-y-2" x-transition:enter-end="opacity-100 translate-y-0"
+            x-transition:leave="transition ease duration-300 transform"
+            x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-4"
+            style="display: none;" @mouseenter="clearTimeout(submenuTimeout)" @mouseleave="showChildren = false">
+            <span class="absolute top-0 left-0 w-4 h-5 ml-6 -mt-1 transform rotate-45 bg-white border"></span>
+            <div class="rounded-3xl relative z-10 w-full px-2 py-6 bg-white">
+              <ul class="list-reset">
+                <li class="relative" x-data="{ showChildren: false }" @mouseenter="showChildren = true"
+                  @mouseleave="showChildren = false">
+                  <a href="./therapy.html"
+                    class="hover:text-mid-purple hover:no-underline hover:scale-105 flex items-start w-full px-4 pb-5 no-underline transition-all duration-300 transform border-b cursor-pointer">
+                    <span class="flex-1">Therapy</span>
+                  </a>
+                </li>
+                <li class="relative" x-data="{ showChildren: false }" @mouseenter="showChildren = true"
+                  @mouseleave="showChildren = false">
+                  <a href="./diagnosis.html"
+                    class="hover:text-mid-purple hover:no-underline hover:scale-105 flex items-start w-full px-4 py-5 no-underline transition-all duration-300 transform border-b cursor-pointer">
+                    <span class="flex-1">Diagnosis</span>
+                  </a>
+                </li>
+                <li class="relative" x-data="{ showChildren: false }" @mouseenter="showChildren = true"
+                  @mouseleave="showChildren = false">
+                  <a href="./couples-counselling.html"
+                    class="hover:text-mid-purple hover:no-underline hover:scale-105 flex items-start w-full px-4 py-5 no-underline transition-all duration-300 transform border-b cursor-pointer">
+                    <span class="flex-1">Couple's Counselling</span>
+                  </a>
+                </li>
+                <li class="relative" x-data="{ showChildren: false }" @mouseenter="showChildren = true"
+                  @mouseleave="showChildren = false">
+                  <a href="#"
+                    class="hover:text-mid-purple hover:no-underline hover:scale-105 flex items-start w-full px-4 pt-5 no-underline transition-all duration-300 transform cursor-pointer">
+                    <span class="flex-1">Workshops</span>
+                  </a>
+                </li>
+              </ul>
             </div>
-          </li>
-    
-    
-    
-    
-          <li class="relative block">
-            <a href="../html/faq.html"
-              class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
-              <span>FAQ</span>
-            </a>
-          </li>
-    
-          <li class="relative block">
-            <a href="../html/contact.html"
-              class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
-              <span>Contact Us</span>
-            </a>
-          </li>
-          <li class="relative block">
-            <a href="../html/career.html"
-              class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
-              <span>Career(test)</span>
-            </a>
-          </li>
-          <li class="relative block">
-            <a href="../html/test.html"
-              class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
-              <span>Test(test)</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    
-    </header>
+          </div>
+        </li>
+
+
+
+
+        <li class="relative block">
+          <a href="./faq.html"
+            class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
+            <span>FAQ</span>
+          </a>
+        </li>
+
+        <li class="relative block">
+          <a href="./contact.html"
+            class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
+            <span>Contact Us</span>
+          </a>
+        </li>
+        <li class="relative block">
+          <a href="./career.html"
+            class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
+            <span>Career(test)</span>
+          </a>
+        </li>
+        <li class="relative block">
+          <a href="./test.html"
+            class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
+            <span>Test(test)</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
 
     <main>
      

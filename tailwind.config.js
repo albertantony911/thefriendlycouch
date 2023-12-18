@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './html/**/*.html',
+    './**/*.html',
     './js/**/*.js',
     
   ],
@@ -9,12 +9,8 @@ module.exports = {
 
   theme: {
 
-    fluidTypography: {},
     
     extend: {
-      container: {
-        center: true,
-      },
       
      
       colors: {
@@ -26,5 +22,4 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwind-fluid-typography")],
 };
