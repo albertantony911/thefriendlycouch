@@ -4995,6 +4995,10 @@ svg {
   }
 
   @media (min-width: 768px) {
+    .landscape\:md\:h-10 {
+      height: 2.5rem;
+    }
+
     .landscape\:md\:w-1\/2 {
       width: 50%;
     }
