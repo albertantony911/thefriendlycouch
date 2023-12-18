@@ -1931,6 +1931,10 @@ html {
   border-radius: 5vw;
 }
 
+.rounded-\[4vw\] {
+  border-radius: 4vw;
+}
+
 .rounded-t-3xl {
   border-top-left-radius: 1.5rem;
   border-top-right-radius: 1.5rem;
@@ -2381,6 +2385,11 @@ html {
 .py-\[4\.5vw\] {
   padding-top: 4.5vw;
   padding-bottom: 4.5vw;
+}
+
+.py-\[2\.7vw\] {
+  padding-top: 2.7vw;
+  padding-bottom: 2.7vw;
 }
 
 .pb-1 {
@@ -3175,6 +3184,14 @@ svg {
     top: 1.75rem;
   }
 
+  .md\:right-8 {
+    right: 2rem;
+  }
+
+  .md\:top-8 {
+    top: 2rem;
+  }
+
   .md\:mx-20 {
     margin-left: 5rem;
     margin-right: 5rem;
@@ -3255,6 +3272,22 @@ svg {
 
   .md\:mt-\[0\.8rem\] {
     margin-top: 0.8rem;
+  }
+
+  .md\:mt-4 {
+    margin-top: 1rem;
+  }
+
+  .md\:mt-3 {
+    margin-top: 0.75rem;
+  }
+
+  .md\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
+  .md\:mt-1 {
+    margin-top: 0.25rem;
   }
 
   .md\:hidden {
@@ -3623,6 +3656,34 @@ svg {
 
   .md\:whitespace-normal {
     white-space: normal;
+  }
+
+  .md\:rounded-\[5vw\] {
+    border-radius: 5vw;
+  }
+
+  .md\:rounded-\[5rem\] {
+    border-radius: 5rem;
+  }
+
+  .md\:rounded-2xl {
+    border-radius: 1rem;
+  }
+
+  .md\:rounded-3xl {
+    border-radius: 1.5rem;
+  }
+
+  .md\:rounded-\[2rem\] {
+    border-radius: 2rem;
+  }
+
+  .md\:rounded-\[3rem\] {
+    border-radius: 3rem;
+  }
+
+  .md\:rounded-\[2\.5rem\] {
+    border-radius: 2.5rem;
   }
 
   .md\:border-none {
@@ -5364,6 +5425,10 @@ svg {
 
     .landscape\:md\:gap-8 {
       gap: 2rem;
+    }
+
+    .landscape\:md\:gap-5 {
+      gap: 1.25rem;
     }
 
     .landscape\:md\:divide-x > :not([hidden]) ~ :not([hidden]) {

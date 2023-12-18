@@ -308,11 +308,11 @@
 
           </div>
 
-          <div class="landscape:hidden text-center" x-data="{ showModal: true }">
+          <div x-data="{ showModal: false}">
             <!-- Trigger button -->
             <div data-aos="fade-in" data-aos-delay="250" data-aos-anchor="#hero" data-aos-once="true">
               <button
-                class=" whitespace-nowrap focus:outline-none hover:scale-105 hover:shadow-2xl hover:bg-light-purple hover:text-light text-white my-[5rem] px-8 py-6  mx-auto transition-transform duration-300 transform bg-dark-purple rounded-full select-none "
+                class="md:mt-28 whitespace-nowrap focus:outline-none hover:scale-105 hover:shadow-2xl hover:bg-light-purple hover:text-light text-dark-purple portrait:mt-[13svh] landscape:mt-[12svh] lg:landscape:mt-[13svh] landscape:text-xs lg:landscape:text-base portrait:px-8 portrait:py-6 landscape:px-4 landscape:py-3 lg:landscape:px-6 lg:landscape:py-5 mx-auto transition-transform duration-300 transform bg-white rounded-full select-none"
                 @click="showModal = true">
                 Book a Session
               </button>
@@ -347,8 +347,8 @@
                   <div class="text-[3vw] md:text-base rounded-[5vw] w-[85%] md:w-auto py-[6vw] md:py-7 flex flex-row justify-center mx-auto mt-[4vw] md:mt-5 bg-gray-100">
                     
                     <div class="pl-[3vw] pr-[5vw] md:pr-8 md:pl-12 flex flex-col justify-center gap-[1.9vw] md:gap-[0.75rem]">
-                      <p class="max-md:leading-[5vw] whitespace-pre-line">Individual 
-                        Session
+                      <p class="max-md:leading-[5vw] whitespace-pre-line">Counselling
+                        Psychologist
                       </p>
                       <p class="font-semibold md:text-base text-[3.25vw]">
                         <span class=""><span class=" font-mono">₹</span>2200</span>/session
@@ -358,11 +358,11 @@
                     <div class="w-[1px] h-auto bg-gray-300"></div>
           
                     <div class="pr-[3vw] pl-[5vw] md:pr-12 md:pl-8 flex flex-col justify-center gap-[1.9vw]">
-                      <p class="max-md:leading-[5vw] whitespace-pre-line">Joint 
-                        Session
+                      <p class="max-md:leading-[5vw] whitespace-pre-line">Clinical
+                        Psychologist
                       </p>
                       <p class="font-semibold md:text-base text-[3.25vw]">
-                        <span class=""><span class="font-mono">₹</span>4000</span>/session
+                        <span class=""><span class="font-mono">₹</span>2500</span>/session
                       </p>
                     </div>
                   </div>
