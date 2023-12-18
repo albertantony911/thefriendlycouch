@@ -3973,6 +3973,18 @@ svg {
     margin-top: 7svh;
   }
 
+  .portrait\:mb-\[0\.8svh\] {
+    margin-bottom: 0.8svh;
+  }
+
+  .portrait\:mb-\[0\.7svh\] {
+    margin-bottom: 0.7svh;
+  }
+
+  .portrait\:mb-\[3svh\] {
+    margin-bottom: 3svh;
+  }
+
   .portrait\:hidden {
     display: none;
   }
@@ -4045,6 +4057,86 @@ svg {
   .portrait\:py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+  }
+
+  .portrait\:px-\[\] {
+    padding-left: ;
+    padding-right: ;
+  }
+
+  .portrait\:px-\[3vw\] {
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+
+  .portrait\:px-\[5vw\] {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .portrait\:px-\[6vw\] {
+    padding-left: 6vw;
+    padding-right: 6vw;
+  }
+
+  .portrait\:px-\[7vw\] {
+    padding-left: 7vw;
+    padding-right: 7vw;
+  }
+
+  .portrait\:py-\[3vw\] {
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+  }
+
+  .portrait\:py-\[6vw\] {
+    padding-top: 6vw;
+    padding-bottom: 6vw;
+  }
+
+  .portrait\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .portrait\:text-\[5vw\] {
+    font-size: 5vw;
+  }
+
+  .portrait\:text-\[7vw\] {
+    font-size: 7vw;
+  }
+
+  .portrait\:text-\[6vw\] {
+    font-size: 6vw;
+  }
+
+  .portrait\:text-\[4vw\] {
+    font-size: 4vw;
+  }
+
+  .portrait\:text-\[0\.3vw\] {
+    font-size: 0.3vw;
+  }
+
+  .portrait\:text-\[1vw\] {
+    font-size: 1vw;
+  }
+
+  .portrait\:text-\[2vw\] {
+    font-size: 2vw;
+  }
+
+  .portrait\:text-\[3vw\] {
+    font-size: 3vw;
+  }
+
+  .portrait\:text-\[3\.5vw\] {
+    font-size: 3.5vw;
+  }
+
+  .portrait\:text-\[3\.75vw\] {
+    font-size: 3.75vw;
   }
 
   .portrait\:fluid-sm {
@@ -4263,6 +4355,26 @@ svg {
 
     .portrait\:md\:pt-3 {
       padding-top: 0.75rem;
+    }
+
+    .portrait\:md\:text-\[5vw\] {
+      font-size: 5vw;
+    }
+
+    .portrait\:md\:text-\[3vw\] {
+      font-size: 3vw;
+    }
+
+    .portrait\:md\:text-\[4vw\] {
+      font-size: 4vw;
+    }
+
+    .portrait\:md\:text-\[2vw\] {
+      font-size: 2vw;
+    }
+
+    .portrait\:md\:text-\[2\.5vw\] {
+      font-size: 2.5vw;
     }
   }
 }
@@ -4569,6 +4681,22 @@ svg {
     .portrait\:lg\:text-xl {
       font-size: 1.25rem;
       line-height: 1.75rem;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  @media (orientation: portrait) {
+    .lg\:portrait\:text-\[2vw\] {
+      font-size: 2vw;
+    }
+
+    .lg\:portrait\:text-\[1\.5vw\] {
+      font-size: 1.5vw;
+    }
+
+    .lg\:portrait\:text-\[1\.75vw\] {
+      font-size: 1.75vw;
     }
   }
 }
