@@ -697,11 +697,6 @@ html {
   margin-bottom: 4rem;
 }
 
-.my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -927,10 +922,6 @@ html {
 
 .h-\[1\.5svh\] {
   height: 1.5svh;
-}
-
-.h-\[100svh\] {
-  height: 100svh;
 }
 
 .h-\[2\.1svh\] {
@@ -2293,10 +2284,6 @@ html {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.underline {
-  text-decoration-line: underline;
-}
-
 .line-through {
   text-decoration-line: line-through;
 }
@@ -2531,6 +2518,10 @@ svg {
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.focus\:outline-light-purple:focus {
+  outline-color: #D1BEF9;
 }
 
 .focus\:ring:focus {
@@ -3429,14 +3420,13 @@ svg {
     border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
   }
 
+  .portrait\:p-\[6vw\] {
+    padding: 6vw;
+  }
+
   .portrait\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
-  }
-
-  .portrait\:px-\[6vw\] {
-    padding-left: 6vw;
-    padding-right: 6vw;
   }
 
   .portrait\:py-6 {
