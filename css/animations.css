@@ -1054,6 +1054,14 @@ input[type="checkbox"]:checked + label .arrow {
   background-image: url("../img/therapist_7.webp");
 }
 
+.blob-image-8:after {
+  background-image: url("../img/therapist_8.webp");
+}
+
+.blob-image-9:after {
+  background-image: url("../img/therapist_9.webp");
+}
+
 
 
 .blob-w:after {
