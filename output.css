@@ -2869,10 +2869,6 @@ svg {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
-  .md\:grid-cols-5 {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
-
   .md\:flex-row {
     flex-direction: row;
   }
@@ -3214,14 +3210,6 @@ svg {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .lg\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-5 {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
-
   .lg\:pt-10 {
     padding-top: 2.5rem;
   }
@@ -3437,19 +3425,14 @@ svg {
     padding-right: 2rem;
   }
 
-  .portrait\:py-6 {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-  }
-
   .portrait\:px-\[6vw\] {
     padding-left: 6vw;
     padding-right: 6vw;
   }
 
-  .portrait\:py-\[5vw\] {
-    padding-top: 5vw;
-    padding-bottom: 5vw;
+  .portrait\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   .portrait\:py-\[4vw\] {
@@ -3537,6 +3520,16 @@ svg {
     .md\:portrait\:p-\[3vw\] {
       padding: 3vw;
     }
+
+    .md\:portrait\:px-\[3vw\] {
+      padding-left: 3vw;
+      padding-right: 3vw;
+    }
+
+    .md\:portrait\:py-\[2vw\] {
+      padding-top: 2vw;
+      padding-bottom: 2vw;
+    }
   }
 }
 
@@ -3556,30 +3549,7 @@ svg {
       padding-left: 8rem;
       padding-right: 8rem;
     }
-  }
-}
 
-@media (min-width: 768px) {
-  @media (orientation: portrait) {
-    .md\:portrait\:px-\[3vw\] {
-      padding-left: 3vw;
-      padding-right: 3vw;
-    }
-
-    .md\:portrait\:py-\[3vw\] {
-      padding-top: 3vw;
-      padding-bottom: 3vw;
-    }
-
-    .md\:portrait\:py-\[2vw\] {
-      padding-top: 2vw;
-      padding-bottom: 2vw;
-    }
-  }
-}
-
-@media (orientation: portrait) {
-  @media (min-width: 768px) {
     .portrait\:md\:pt-0 {
       padding-top: 0px;
     }
