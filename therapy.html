@@ -841,142 +841,147 @@
                             </div>
                         </div>
                         <div class="pt-1">
-                            <p id="" class=" mb-2 text-lg font-semibold uppercase cursor-pointer">Session</p>
-                            <p class="clickable-paragraph cursor-pointer">
-                                On the scheduled date of your appointment, the therapist will conduct your session and guide you further. The therapist will recommend a general frequency for the sessions during the first session itself on the basis of the concerns you’d like to address through therapy.
-                            </p>
+                            <p id="" class=" mb-2 text-lg font-bold uppercase cursor-pointer">Session</p>
+                            
                         </div>
         
                     </div>
                     
         
-                    <div class="landscape:hidden text-center" x-data="{ showModal: false }">
-                        <!-- Trigger button -->
-                        <div data-aos="fade-in" data-aos-delay="250" data-aos-anchor="#hero" data-aos-once="true">
-                            <button
-                                class=" whitespace-nowrap focus:outline-none hover:scale-105 hover:shadow-2xl hover:bg-light-purple hover:text-light text-white my-[5rem] px-8 py-6  mx-auto transition-transform duration-300 transform bg-dark-purple rounded-full select-none "
-                                @click="showModal = true">
-                                Book a Session
-                            </button>
-                        </div>
-        
-        
-                        <!-- Modal -->
-                        <div x-show="showModal"
-                            class=" bg-dark-purple fixed inset-0 z-50 flex items-center justify-center bg-opacity-75"
-                            x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0"
-                            x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in duration-200"
-                            x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" @click="showModal = false"
-                            style="display: none;">
-        
-        
-                            <div class=" text-mid-purple rounded-[3rem] px-[6svw] md:px-8 py-9 transform bg-white shadow-2xl">
-                                <!-- Modal Header -->
-                                <div class=" flex flex-col">
-                                    <button @click="showModal = false"
-                                        class="hover:text-gray-700 focus:outline-none right-7 top-7 absolute text-gray-500">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
-                                            fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round" class="feather feather-x stroke-dark-purple">
-                                            <line x1="18" y1="6" x2="6" y2="18"></line>
-                                            <line x1="6" y1="6" x2="18" y2="18"></line>
-                                        </svg>
-                                    </button>
-                                </div>
-        
-                                <!-- Modal Content -->
-                                <div class=" md:text-base flex flex-col justify-center mx-auto text-sm text-center">
-                                    <h4 class="md:mt-5 font-semibold">OUR STANDARD CHARGES</h4>
-                                    <div class="rounded-3xl py-7 flex flex-row justify-center mx-auto mt-5 bg-gray-100">
-                                        <div class="pl-7 pr-5 md:pr-8 md:pl-12 flex flex-col justify-center gap-[0.75rem]">
-                                        <p class=" whitespace-pre-line">Counselling
-                                            Psychologist
-                                        </p>
-                                        <p class="font-semibold">
-                                            <span class="text-base"><span class="font-mono">₹</span>2200</span>/session
-                                        </p>
-                                        </div>
-                        
-                                        <div class="w-[1px] h-auto bg-gray-300"></div>
-                        
-                                        <div class="pr-7 pl-5 md:pr-12 md:pl-8 flex flex-col justify-center gap-[0.75rem]">
-                                        <p class=" whitespace-pre-line">Clinical
-                                            Psychologist
-                                        </p>
-                                        <p class="font-semibold">
-                                            <span class=" text-base"><span class="font-mono">₹</span>2500</span>/session
-                                        </p>
-                                        </div>
-                                    </div>
-        
-                                    <h4 class="mt-5 mb-3 font-normal">For more information visit</h4>
-        
-        
-        
-                                    <div
-                                        class="md:flex-row md:gap-3 text-mid-purple flex flex-wrap justify-center gap-[0.8rem] mx-auto font-medium">
-                                        <button
-                                            class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 transition bg-gray-100 rounded-full">
-                                            <a href="#">THERAPY</a>
-                                        </button>
-                                        <button
-                                            class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 transition bg-gray-100 rounded-full">
-                                            <a href="#">DIAGNOSIS</a>
-                                        </button>
-                                        <button
-                                            class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 transition bg-gray-100 rounded-full">
-                                            <a href="#">PRICING</a>
-                                        </button>
-        
-                                    </div>
-        
-                                    <button
-                                        class="font-medium text-mid-purple mt-[0.8rem] hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 mx-auto transition bg-gray-100 rounded-full">
-                                        <a href="#">COUPLE'S COUNSELLING</a>
-                                    </button>
-        
-        
-        
-                                    <div class="flex items-center w-[85%] mx-auto py-6">
-                                        <div class="flex-grow border-t border-gray-200"></div>
-                                        <span class="px-5 text-gray-500">OR</span>
-                                        <div class="flex-grow border-t border-gray-200"></div>
-                                    </div>
-        
-                                    <div>
-                                        <h3 class="text-sm font-medium">MESSAGE US AND BOOK YOUR SESSION</h3>
-                                    </div>
-        
-                                    <div class="md:flex-row landscape:md:gap-8 md:gap-5 flex justify-center gap-4 pt-6 mx-auto">
-        
-        
-                                        <button
-                                            class=" md:px-8 md:py-4 whitespace-nowrap hover:scale-105 hover:shadow-lg focus:outline-none hover:text-white px-6 py-3 mx-auto text-white transition rounded-full shadow-lg select-none"
-                                            style="background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);">
-                                            <div class="md:gap-3 flex flex-row gap-2 my-auto">
-        
-                                                <img class="md:w-6 w-5" src="./img/instagram-logo.svg" alt="">
-                                                <a class="md:text-2xl my-auto text-xl font-medium"
-                                                    style="font-family: 'Grand Hotel', cursive;"
-                                                    href="https://ig.me/m/thefriendlycouch">Instagram</a>
-                                            </div>
-                                        </button>
-        
-                                        <button
-                                            class=" shadow-lg md:px-7 md:py-4 whitespace-nowrap hover:scale-105 hover:shadow-lg focus:outline-none  text-white hover:text-white px-5 py-3 mx-auto  transition bg-[#25D366] rounded-full select-none">
-                                            <div class="md:gap-3 flex flex-row gap-2 my-auto">
-                                                <img class="md:w-6 w-5" src="./img/whatsapp-logo.svg" alt="">
-                                                <a class="md:text-lg my-auto text-base font-semibold"
-                                                    href="https://wa.me/919205025183?text=I%20want%20to%20book%20an%20online%20session."
-                                                    style="font-family: 'Helvetica Neue', sans-serif;">WhatsApp</a>
-                                            </div>
-                                        </button>
-        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="landscape:hidden text-center" x-data="{ showModal: false}">
+            <!-- Trigger button -->
+            <div data-aos="fade-in" data-aos-delay="250" data-aos-anchor="#hero" data-aos-once="true">
+                <button
+                    class="md:mt-0 whitespace-nowrap focus:outline-none hover:scale-105 hover:shadow-2xl hover:bg-light-purple hover:text-light text-white portrait:mt-10 landscape:text-base portrait:text-[3.75vw] md:portrait:text-[1.7vw] portrait:p-[6vw] md:portrait:p-[3vw] landscape:px-6 landscape:py-5 mx-auto transition-transform duration-300 transform bg-dark-purple rounded-full select-none"
+                    @click="showModal = true">
+                    Book a Session
+                </button>
+            </div>
+          
+          
+            <!-- Modal -->
+            <div x-show="showModal" class=" bg-dark-purple fixed inset-0 z-50 flex items-center justify-center bg-opacity-75"
+              x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0"
+              x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in duration-200"
+              x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" @click="showModal = false"
+              style="display: none;">
+          
+          
+              <div
+                class="landscape:max-lg:mt-[10svh] text-mid-purple rounded-[3rem] w-[85svw] md:w-auto landscape:lg:px-8 md:px-8 landscape:px-5  py-[7vw] landscape:lg:py-9 md:py-9 landscape:py-6 transform bg-white shadow-2xl">
+                <!-- Modal Header -->
+                <div class=" flex flex-col">
+                  <button @click="showModal = true"
+                    class="hover:text-gray-700 focus:outline-none right-[6.5vw] landscape:max-lg:hidden md:right-8 md:top-8 top-[6.5vw] absolute text-gray-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-[5vw] w-[5vw] md:h-[2rem] md:w-[2rem]"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" class="feather feather-x stroke-dark-purple">
+                      <line x1="18" y1="6" x2="6" y2="18"></line>
+                      <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                  </button>
+                </div>
+          
+                <!-- Modal Content -->
+                <div class=" md:text-base flex flex-col justify-center mx-auto text-center">
+                  <h4 class="md:mt-1 text-[3.5vw] landscape:max-lg:hidden md:text-base font-semibold">OUR STANDARD CHARGES</h4>
+                  <div
+                    class="text-[3vw] landscape:lg:text-base md:text-base landscape:text-[0.8rem] rounded-[5vw] md:rounded-[2.5rem] w-[85%] md:w-auto py-[6vw] landscape:lg:py-7 md:py-7 landscape:py-5 flex flex-row justify-center mx-auto mt-[4vw] landscape:lg:mt-5 md:mt-5 landscape:mt-0 bg-gray-100">
+          
+                    <div class="pl-[3vw] pr-[5vw] md:pr-8 md:pl-12 flex flex-col justify-center gap-[1.9vw] landscape:gap-[0.4rem] landscape:lg:gap-[0.75rem] md:gap-[0.75rem]">
+                      <p class="max-lg:leading-[5vw] landscape:max-lg:leading-[1.4rem] whitespace-pre-line">Counselling
+                        Psychologist
+                      </p>
+                      <p class="font-semibold landscape:lg:text-base landscape:text-[0.8rem] md:text-base  text-[3.25vw]">
+                        <span class=""><span class=" font-mono">₹</span>2200</span>/session
+                      </p>
                     </div>
+          
+                    <div class="w-[1px] h-auto bg-gray-300"></div>
+          
+                    <div class="pr-[3vw] pl-[5vw] md:pr-12 md:pl-8 flex flex-col justify-center gap-[1.9vw] landscape:gap-[0.4rem] landscape:lg:gap-[0.75rem] md:gap-[0.75rem]">
+                      <p class="max-lg:leading-[5vw] landscape:max-lg:leading-[1.4rem] whitespace-pre-line">Clinical
+                        Psychologist
+                      </p>
+                      <p class="font-semibold landscape:lg:text-base landscape:text-[0.8rem] md:text-base text-[3.25vw]">
+                        <span class=""><span class="font-mono">₹</span>2500</span>/session
+                      </p>
+                    </div>
+                  </div>
+          
+                  
+          
+          
+                  <div class="landscape:max-lg:hidden">
+                    <h4 class="mt-[4vw] md:mt-5 md:mb-3 md:text-base mb-[3vw] text-[3vw] font-normal">For more information visit
+                    </h4>
+                    <div
+                      class=" text-[3vw] landscape:text-[2vh] landscape:lg:text-sm md:text-sm md:flex-row landscape:gap-1 landscape:lg:gap-3 md:gap-3 text-mid-purple  flex flex-wrap justify-center gap-[3vw] mx-auto font-medium">
+                      <button
+                        class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-[3vw] landscape:lg:px-4 landscape:px-2 md:px-4 md:py-2 landscape:py-[0.05rem] landscape:lg:py-2 py-[2vw] transition bg-gray-100 rounded-full">
+                        <a href="#">THERAPY</a>
+                      </button>
+                      <button
+                        class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-[3vw] landscape:lg:px-4 landscape:px-2 md:px-4 md:py-2 landscape:py-[0.05rem] landscape:lg:py-2 py-[2vw] transition bg-gray-100 rounded-full">
+                        <a href="#">DIAGNOSIS</a>
+                      </button>
+                      <button
+                        class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-[3vw] landscape:lg:px-4 landscape:px-2 md:px-4 md:py-2 landscape:py-[0.05rem] landscape:lg:py-2 py-[2vw] transition bg-gray-100 rounded-full">
+                        <a href="#">PRICING</a>
+                      </button>
+                    
+                    </div>
+                    
+                    <button
+                      class="font-medium landscape:text-[2vh] landscape:lg:text-sm text-[3vw] md:text-sm landscape:mt-[0.4rem] landscape:lg:mt-[0.8rem] md:mt-[0.8rem] text-mid-purple mt-[3vw] hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-[3vw] py-[2vw] landscape:lg:px-4 md:px-4 md:py-2 landscape:px-2 landscape:py-[0.05rem] landscape:lg:py-2 mx-auto transition bg-gray-100 rounded-full">
+                      <a href="#">COUPLE'S COUNSELLING</a>
+                    </button>
+
+                    <div class="flex items-center w-[85%] mx-auto landscape:py-[0.05rem] landscape:lg:py-5 md:py-5 py-[4.5vw]">
+                      <div class="flex-grow border-t border-gray-200"></div>
+                      <span class="px-5 text-gray-500 landscape:text-[0.5rem] landscape:lg:text-base md:text-base text-[3vw]">OR</span>
+                      <div class="flex-grow border-t border-gray-200"></div>
+                    </div>
+                  </div>
+                  
+          
+          
+          
+                  
+          
+                  <div>
+                    <h3 class="text-[3vw] md:text-sm landscape:lg:mt-0 md:mt-0 landscape:mt-3 landscape:text-[0.6rem] landscape:lg:text-sm font-medium">MESSAGE US AND BOOK YOUR SESSION</h3>
+                  </div>
+          
+                  <div class="md:flex-row landscape:md:gap-5 md:gap-5 flex justify-center gap-[3vw] pt-[6vw] landscape:lg:pt-6 md:pt-6 landscape:pt-2 mx-auto">
+                  
+                  
+                    <button
+                      class="landscape:lg:px-8 landscape:px-6 md:px-8 landscape:lg:py-4 md:py-4 landscape:py-3 whitespace-nowrap hover:scale-105 hover:shadow-lg focus:outline-none hover:text-white px-[5vw] py-[2.7vw] mx-auto text-white transition rounded-full shadow-lg select-none"
+                      style="background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);">
+                      <div class="landscape:lg:gap-3 md:gap-3 landscape:gap-2 flex flex-row gap-[1.5vw] my-auto">
+                  
+                        <img class="landscape:lg:w-6 md:w-6 landscape:w-4 w-[5vw]" src="./img/instagram-logo.svg" alt="">
+                        <a class="landscape:lg:text-2xl md:text-2xl landscape:text-[1rem] my-auto text-[5vw] font-medium" style="font-family: 'Grand Hotel', cursive;"
+                          href="https://ig.me/m/thefriendlycouch">Instagram</a>
+                      </div>
+                    </button>
+                  
+                    <button
+                      class="landscape:lg:px-8 landscape:px-6 md:px-8 landscape:lg:py-4 md:py-4 landscape:py-3 whitespace-nowrap hover:scale-105 hover:shadow-lg focus:outline-none  text-white hover:text-white px-[5vw] py-[2.7vw] mx-auto  transition bg-[#25D366] rounded-full select-none">
+                      <div class="landscape:lg:gap-3 md:gap-3 landscape:gap-2 flex flex-row gap-[1.5vw] my-auto">
+                        <img class="landscape:lg:w-6 md:w-6 landscape:w-4 w-[4vw]" src="./img/whatsapp-logo.svg" alt="">
+                        <a class="landscape:lg:text-lg md:text-lg landscape:text-[0.8rem] my-auto text-[3.6vw] font-semibold"
+                          href="https://wa.me/919205025183?text=I%20want%20to%20book%20an%20online%20session."
+                          style="font-family: 'Helvetica Neue', sans-serif; color: white;">WhatsApp</a>
+                      </div>
+                    </button>
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         
         
         
@@ -986,26 +991,24 @@
                 <div class="landscape:w-[30svh] portrait:w-[60svw]  flex flex-col my-auto justify-center   mx-auto ">
 
                     <div class="">
-                        <h2 class="border portrait:text-[5.5vw] portrait:md:text-2xl  landscape:text-[1.6vw] leading-normal font-semibold text-center">
+                        <h2 class="portrait:text-[5.5vw] portrait:md:text-2xl  landscape:text-[1.6vw] leading-normal font-semibold text-center">
                             OUR PROCESS
                         </h2>
                     </div>
         
         
-                    <div class="splide mt-12  portrait:md:w-[50%] mx-auto border" role="group" aria-label="Splide Basic HTML Example">
-                        <div class="splide__track h-[24.5rem] w-full ">
-                            <ul class="splide__list">
-                                <li class="splide__slide "><img class="w-full" src="./img/modal-process.svg"
+                    <div class="splide h-full mx-auto mt-12" role="group" aria-label="Splide Basic HTML Example">
+                        <div class="splide__track w-full h-full">
+                            <ul class="splide__list w-full h-full">
+                                <li class="splide__slide h-full"><img class=" w-full h-full" src="./img/modal-process.svg"
                                         alt=""></li>
-                                <li class="splide__slide "><img class="w-full" src="./img/schedule-process.svg"
+                                <li class="splide__slide h-full"><img class=" w-full h-full" src="./img/schedule-process.svg"
                                         alt=""></li>
-                                <li class="splide__slide "><img class="w-full" src="./img/payment-process.svg"
+                                <li class="splide__slide h-full"><img class=" w-full h-full" src="./img/payment-process.svg"
                                         alt=""></li>
-                                <li class="splide__slide "><img class="w-full" src="./img/enquiry-process.svg"
+                                <li class="splide__slide h-full"><img class=" w-full h-full" src="./img/enquiry-process.svg"
                                         alt=""></li>
-                                <li class="splide__slide "><img class="w-full" src="./img/session-process.svg"
-                                        alt=""></li>
-                                <li class=" absolute"><img class="w-full" src="./img/mobile-bg-process.svg"
+                                <li class="splide__slide h-full"><img class=" w-full h-full" src="./img/session-process.svg"
                                         alt=""></li>
                             </ul>
                         </div>
@@ -1023,13 +1026,13 @@
                     </div>
         
         
-                    <div class="portrait:hidden mx-auto border" x-data="{ showModal: false }">
+                    <div class="portrait:hidden mx-auto" x-data="{ showModal: false }">
                         <!-- Trigger button -->
                         <div data-aos="fade-in" data-aos-delay="250" data-aos-anchor="#hero" data-aos-once="true">
                             <button
-                                class="whitespace-nowrap focus:outline-none hover:scale-105 hover:shadow-2xl hover:bg-light-purple hover:text-light landscape:mt-20 landscape:text-base landscape:px-6 landscape:py-5 bg-dark-purple mx-auto text-white transition-transform duration-300 transform rounded-full select-none"
-                                @click="showModal = true">
-                                Book a Session
+                            class="md:mt-10 whitespace-nowrap focus:outline-none hover:scale-105 hover:shadow-2xl hover:bg-light-purple hover:text-light text-white portrait:mt-10 landscape:text-base portrait:text-[3.75vw] md:portrait:text-[1.7vw] portrait:p-[6vw] md:portrait:p-[3vw] landscape:px-6 landscape:py-5 mx-auto transition-transform duration-300 transform bg-dark-purple rounded-full select-none"
+                            @click="showModal = true">
+                            Book a Session
                             </button>
                         </div>
         

@@ -1074,6 +1074,22 @@ html {
   height: 24.5rem;
 }
 
+.h-\[100\%\] {
+  height: 100%;
+}
+
+.h-\[120\%\] {
+  height: 120%;
+}
+
+.h-\[170\%\] {
+  height: 170%;
+}
+
+.h-\[200\%\] {
+  height: 200%;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -1825,6 +1841,10 @@ html {
 
 .to-white {
   --tw-gradient-to: #fff var(--tw-gradient-to-position);
+}
+
+.bg-cover {
+  background-size: cover;
 }
 
 .stroke-dark-purple {
