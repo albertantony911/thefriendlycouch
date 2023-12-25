@@ -9,11 +9,9 @@
 
   <!-- External Libraries -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-  <link rel="stylesheet" type="text/css"
-    href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
 
 
-  <script src="https://kit.fontawesome.com/9fa9d11dac.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.x.x/dist/alpine.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
@@ -730,7 +728,7 @@
           <h2 class="md:text-3xl portrait:hidden text-2xl font-semibold text-center">
             LANGUAGES THAT CONNECT US
           </h2>
-          <div class="align-center text-light md:grid-cols-4 grid justify-center grid-cols-3 gap-2 py-5 mx-auto">
+          <div class="align-center text-light landscape:md:grid-cols-5 grid justify-center grid-cols-3 gap-2 py-5 mx-auto">
             <div class="fade-image-set  md:w-[8rem] relative flex items-center w-[7rem] ">
               <img class="fade-image absolute transition-opacity duration-1000 ease-in-out opacity-100"
                 src="./img/english_language.svg" />
@@ -779,11 +777,17 @@
               <img class="fade-image transition-opacity duration-1000 ease-in-out opacity-0"
                 src="./img/kannada_language_eng.svg" />
             </div>
-            <div class="animate-pulse md:w-[8rem] relative flex items-center w-[7rem] md:hidden">
+
+            <div class="fade-image-set md:w-[8rem] relative flex items-center w-[7rem] ">
+              <img class="fade-image px-7 absolute transition-opacity duration-1000 ease-in-out opacity-100"
+                src="./img/bangla_language.svg" />
+              <img class="fade-image transition-opacity duration-1000 ease-in-out opacity-0" src="./img/bangla_language_eng.svg" />
+            </div>
+            
+            <div class="animate-pulse md:w-[7rem] relative flex items-center w-[7rem] portrait:hidden">
               <img class="px-11 absolute transition-opacity duration-1000 ease-in-out opacity-100" src="./img/plus.svg" />
             </div>
           </div>
-      
         </div>
       
         <div class="landscape:w-1/2 flex w-full align-middle">
@@ -985,7 +989,6 @@
       
       </div>
 
-      <!-- Concerns Covered Section-->
 
       
 
@@ -1627,51 +1630,74 @@
         
        </div>
     
-    
-        
-
-
-
-
-      
-       
-      
-      
-
-
 
       
 </main>
 
-    <footer class="bg-dark-purple flex flex-col">
-      <div class="text-center divide-y divide-light divide-solid mr-[10%] ml-[10%]">
-        <!-- Social Links -->
-        <div style="color: white"class="md:gap-16 flex justify-center gap-10 pt-12 pb-10 text-base">
-          <a href="#" title="Facebook" target="_blank"
-            ><i class="fa-brands fa-facebook"></i
-          ></a>
-          <a href="#" title="Twitter" target="_blank"
-            ><i class="fa-brands fa-twitter"></i
-          ></a>
+    <footer class="bg-mid-purple flex flex-col text-sm font-normal text-white">
+      <div class=" text-center">
+        <!-- Social Links -->   
+
+        <div>
+          <a href="./index.html"><img class="w-14 mx-auto mt-12 mb-10" src="./img/logo.svg" alt=""></a>
+        </div>
+        
+        <div class="flex flex-row flex-wrap justify-center gap-6 px-10 mx-auto mb-10 text-xs text-white">
+          <a href="">
+            <button>Home</button>
+          </a>
+          <a href="">
+            <button>About</button>
+          </a>
+          <a href="">
+            <button>Therapy</button>
+          </a>
+          <a href="">
+            <button>Diagnosis</button>
+          </a>
+          <a href="">
+            <button>Couple's Counselling</button>
+          </a>
+          <a href="">
+            <button>Pricing</button>
+          </a>
+          <a href="">
+            <button>FAQ</button>
+          </a>
+          <a href="">
+            <button>Workshops</button>
+          </a>
+          <a href="">
+            <button>Careers</button>
+          </a>
+          <a href="">
+            <button>Contact Us</button>
+          </a>
+          <a href="">
+            <button>Terms and Conditions</button>
+          </a>
+          <a href="">
+            <button>Privacy Policy</button>
+          </a>
+          
+        </div>
+
+
+        <div style="color:white"class="md:gap-8 mb-14 flex justify-center gap-10 text-base">
+          
           <a href="#" title="Behance" target="_blank"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
+            ><img class="w-6" src="./img/instagram-icon.svg" alt=""></a>
           <a href="#" title="LinkedIn+" target="_blank"
-            ><i class="fa-brands fa-linkedin"></i
-          ></a>
+            ><img class="w-6" src="./img/linkedIn-icon.svg" alt=""></a>
           <a href="#" title="Dribbble" target="_blank"
-            ><i class="fa-brands fa-whatsapp"></i
+            ><img class="w-6" src="./img/whatsapp-icon.svg" alt=""></i
           ></a>
         </div>
-        <!-- Copyright -->
-        <div class="text-slate-100 pt-8 text-sm font-thin">
-          <a href="#" target="_blank" class=""
-            >&copy; The Friendly Couch 2023</a
-          >
-        </div>
+
+
       </div>
       <div class="text-center">
-        <div class="pb-7 text-slate-100 pt-5 text-xs font-normal">
+        <div class="mb-7 text-slate-100 text-xs font-normal">
           <div>Powered By <a href="#" target="_blank">blackwoodbox.com</a></div>
         </div>
       </div>

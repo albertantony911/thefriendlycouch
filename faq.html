@@ -219,7 +219,7 @@
 
     <main>
 
-        <div  class="text-slate-100 bg-dark-purple z-10 h-[55svh] flex flex-col text-center">
+        <div  class="text-slate-100 bg-dark-purple z-10 h-[65svh] flex flex-col text-center">
                 <div data-aos="fade-down" data-aos-delay="250"
                     class="w-[70svw] md:w-[30svh] mt-[10svh] mx-auto">
                     <img src="./img/faq.svg" alt="">
@@ -229,6 +229,7 @@
                     <h1 class="md:text-3xl text-2xl font-semibold text-center">
                         FREQUENTLY ASKED QUESTIONS
                     </h1>
+                    <p class="md:text-base md:mt-16 px-8 mt-10 text-sm">Some of this information is available in the consent form provided to you when you start therapy.</p>
                 </div>
 
         </div>
@@ -237,181 +238,555 @@
         <div class="bg-light text-dark-purple flex flex-col">
             <div>
                 <h2 class="md:text-3xl md:pt-24 pt-16 text-2xl font-semibold text-center">
-                    TITLE
+                    Sessions
                 </h2>
+                
             </div>
 
-     <div class="font-poppins relative justify-center antialiased">
-        <div class="relative flex flex-col justify-center overflow-hidden">
-            <div class="md:py-20 w-3/4 py-12 mx-auto text-center">
-                <!-- Accordion component -->
-                <div class="divide-slate-200 divide-y">
-                    <!-- Accordion item  -->
-                    <div x-data="{ expanded: false }" class="py-4">
-                        <h2>
-                            <button id="faq-1" type="button"
-                                class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
-                                @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faq-1">
-                                <span>What are the charges?</span>
-    
-                                <img class="shrink-0 h-5 ml-8 transition duration-200 origin-center transform"
-                                    src="./img/drop-arrow.svg" :class="{'!rotate-180': expanded}" />
-                            </button>
-                        </h2>
-                        <div id="faq-1" role="region" aria-labelledby="faq-1"
-                            class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-justify transition-all duration-300 ease-in-out"
-                            :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
-                            <div class="overflow-hidden">
-                                <p class="whitespace-pre-line">
-                                    Our standard charges are
-                                    Counselling Psychologist - INR2200
-                                    Clinical Psychologist - INR2500
-    
-                                    For further details visit our pricing page.
-                                </p>
+            <div class=" relative justify-center antialiased">
+                <div class="relative flex flex-col justify-center overflow-hidden">
+                    <div class="md:py-20 w-3/4 py-12 mx-auto text-center">
+                        <!-- Accordion component -->
+                        <div class="divide-slate-200 divide-y">
+                            <!-- Accordion item  -->
+                            <div x-data="{ expanded: false }" class="py-4">
+                                <h2>
+                                    <button id="faq-1" type="button"
+                                        class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
+                                        @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faq-1">
+                                        <span>Can I have a session with Divija Bhasin?</span>
+            
+                                        <img class="shrink-0 h-5 ml-8 transition duration-200 origin-center transform"
+                                            src="./img/drop-arrow.svg" :class="{'!rotate-180': expanded}" />
+                                    </button>
+                                </h2>
+                                <div id="faq-1" role="region" aria-labelledby="faq-1"
+                                    class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-left transition-all duration-300 ease-in-out"
+                                    :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+                                    <div class="overflow-hidden">
+                                        <p class="whitespace-pre-line">
+                                            Unfortunately, Divija has stopped her client intake due to the unavailability of slots. The slots for her current clients are also very limited due to her other work commitments.
+            
+                                            The slots will be available only after her current client’s ongoing therapy is completed.
+                                            
+                                            We can currently only connect you with the therapists on our team who have been interviewed and selected by Divija.
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <!-- Accordion item end -->
+            
+                            <div x-data="{ expanded: false }" class="py-4">
+                                <h2>
+                                    <button id="faq-2" type="button"
+                                        class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
+                                        @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faq-2">
+                                        <span>Are there trial/free sessions available?</span>
+            
+                                        <img class="shrink-0 h-5 ml-8 transition duration-200 origin-center transform"
+                                            src="./img/drop-arrow.svg" :class="{'!rotate-180': expanded}" />
+                                    </button>
+                                </h2>
+                                <div id="faq-2" role="region" aria-labelledby="faq-2"
+                                    class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-left transition-all duration-300 ease-in-out"
+                                    :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+                                    <div class="overflow-hidden">
+                                        <p class="whitespace-pre-line">
+                                            We do not provide trial/free sessions as we value our therapists' effort and time. All sessions are paid and one hour long.
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div x-data="{ expanded: false }" class="py-4">
+                                <h2>
+                                    <button id="faq-3" type="button"
+                                        class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
+                                        @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faq-3-answer">
+                                        <span>How can I reschedule my session?</span>
+            
+                                        <img class="shrink-0 h-5 ml-8 transition duration-200 origin-center transform"
+                                            src="./img/drop-arrow.svg" :class="{'!rotate-180': expanded}" />
+                                    </button>
+                                </h2>
+                                <div id="faq-3-answer" role="region" aria-labelledby="faq-3"
+                                    class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-left transition-all duration-300 ease-in-out"
+                                    :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+                                    <div class="overflow-hidden">
+                                        <p class="whitespace-pre-line">
+                                            Our cancellation and reschedule policy states that for any changes to the session, the therapist and The Friendly Couch admin team (on Instagram/ WhatsApp) must be informed at least 24 hours in advance before the session time. The same policy applies to sessions the client does not attend as it is considered a no-show.
+                                            
+                                            The session fees paid are forfeited if the session is rescheduled less than 24 hours before and cannot be refunded or used towards a rescheduled session.
+                                            
+                                            This is in place because the session cannot be assigned to a different client at such short notice who might have been waiting for an appointment. If there’s no prior intimation and if the client doesn’t attend the scheduled session, it wastes the therapist's time and effort.
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div x-data="{ expanded: false }" class="py-4">
+                                <h2>
+                                    <button id="faq-4" type="button"
+                                        class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
+                                        @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faq-4-answer">
+                                        <span>How many sessions do I need to take?</span>
+            
+                                        <img class="shrink-0 h-5 ml-8 transition duration-200 origin-center transform"
+                                            src="./img/drop-arrow.svg" :class="{'!rotate-180': expanded}" />
+                                    </button>
+                                </h2>
+                                <div id="faq-4-answer" role="region" aria-labelledby="faq-4"
+                                    class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-left transition-all duration-300 ease-in-out"
+                                    :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+                                    <div class="overflow-hidden">
+                                        <p class="whitespace-pre-line">
+                                            The number of sessions recommended will depend on your requirements. You can discuss the frequency and number of sessions with your therapist. The therapist will give their professional recommendation and you are free to make the decision yourself.
+            
+                                            The decision is always yours!
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div x-data="{ expanded: false }" class="py-4">
+                                <h2>
+                                    <button id="faq-5" type="button"
+                                        class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
+                                        @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faq-5-answer">
+                                        <span>Are sessions available on weekends?</span>
+            
+                                        <img class="shrink-0 h-5 ml-8 transition duration-200 origin-center transform"
+                                            src="./img/drop-arrow.svg" :class="{'!rotate-180': expanded}" />
+                                    </button>
+                                </h2>
+                                <div id="faq-5-answer" role="region" aria-labelledby="faq-5"
+                                    class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-left transition-all duration-300 ease-in-out"
+                                    :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+                                    <div class="overflow-hidden">
+                                        <p class="whitespace-pre-line">
+                                            Yes! The therapists on our team do offer sessions on weekends as well as late evenings. If you’d prefer a weekend or late evening time slot for your appointment, please mention your preferences when you reach out and we’ll help you out!
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div x-data="{ expanded: false }" class="py-4">
+                                <h2>
+                                    <button id="faq-6" type="button"
+                                        class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
+                                        @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faq-6-answer">
+                                        <span>How soon can I get an appointment?</span>
+            
+                                        <img class="shrink-0 h-5 ml-8 transition duration-200 origin-center transform"
+                                            src="./img/drop-arrow.svg" :class="{'!rotate-180': expanded}" />
+                                    </button>
+                                </h2>
+                                <div id="faq-6-answer" role="region" aria-labelledby="faq-6"
+                                    class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-left transition-all duration-300 ease-in-out"
+                                    :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+                                    <div class="overflow-hidden">
+                                        <p class="whitespace-pre-line">
+                                            The therapists on The Friendly Couch team are in charge of their slots which usually get booked 3-4 days in advance.
+                                            
+                                            We’ll connect you with a psychologist and you can let them know your preference for day and time and they’ll assign the best available slot for your appointment.
+
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-    
-                    <!-- Accordion item end -->
-    
-                    <div x-data="{ expanded: false }" class="py-4">
-                        <h2>
-                            <button id="faq-2" type="button"
-                                class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
-                                @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faq-2">
-                                <span>How do I schedule a session?</span>
-    
-                                <img class="shrink-0 h-5 ml-8 transition duration-200 origin-center transform"
-                                    src="./img/drop-arrow.svg" :class="{'!rotate-180': expanded}" />
-                            </button>
-                        </h2>
-                        <div id="faq-2" role="region" aria-labelledby="faq-2"
-                            class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-justify transition-all duration-300 ease-in-out"
-                            :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
-                            <div class="overflow-hidden">
-                                <p class="whitespace-pre-line">
-                                    You can book a session by messaging us on
-    
-                                    WhatsApp (+919205025183)
-                                    Instagram (@thefriendlycouch)
-    
-                                    For further details visit our Therapy page.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div x-data="{ expanded: false }" class="py-4">
-                        <h2>
-                            <button id="faq-3" type="button"
-                                class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
-                                @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faq-3-answer">
-                                <span>Can you help me get diagnosed?</span>
-    
-                                <img class="shrink-0 h-5 ml-8 transition duration-200 origin-center transform"
-                                    src="./img/drop-arrow.svg" :class="{'!rotate-180': expanded}" />
-                            </button>
-                        </h2>
-                        <div id="faq-3-answer" role="region" aria-labelledby="faq-3"
-                            class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-justify transition-all duration-300 ease-in-out"
-                            :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
-                            <div class="overflow-hidden">
-                                <p class="whitespace-pre-line">
-                                    Yes, the clinical psychologists on our team offer diagnosis/diagnostic evaluation.
-    
-                                    Please visit our <a href="diagnosis-page-link">Diagnosis Page</a> for more information.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div x-data="{ expanded: false }" class="py-4">
-                        <h2>
-                            <button id="faq-4" type="button"
-                                class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
-                                @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faq-4-answer">
-                                <span>How many sessions will I need?</span>
-    
-                                <img class="shrink-0 h-5 ml-8 transition duration-200 origin-center transform"
-                                    src="./img/drop-arrow.svg" :class="{'!rotate-180': expanded}" />
-                            </button>
-                        </h2>
-                        <div id="faq-4-answer" role="region" aria-labelledby="faq-4"
-                            class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-justify transition-all duration-300 ease-in-out"
-                            :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
-                            <div class="overflow-hidden">
-                                <p class="whitespace-pre-line">
-                                    The therapist will recommend a general frequency for the sessions during the first
-                                    session on the basis of your concerns.There is no strict frequency you need to follow.
-                                    You can take the sessions at a frequency you're comfortable with.
-    
-                                    The decision is always yours!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div x-data="{ expanded: false }" class="py-4">
-                        <h2>
-                            <button id="faq-5" type="button"
-                                class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
-                                @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faq-5-answer">
-                                <span>Are trial/introductory sessions available?</span>
-    
-                                <img class="shrink-0 h-5 ml-8 transition duration-200 origin-center transform"
-                                    src="./img/drop-arrow.svg" :class="{'!rotate-180': expanded}" />
-                            </button>
-                        </h2>
-                        <div id="faq-5-answer" role="region" aria-labelledby="faq-5"
-                            class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-justify transition-all duration-300 ease-in-out"
-                            :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
-                            <div class="overflow-hidden">
-                                <p class="whitespace-pre-line">
-                                    We don't offer any introductory calls or trial/free sessions as we want to compensate
-                                    the therapists fairly for their time and effort in helping people as well as for their
-                                    knowledge and expertise. You can have a brief conversation over WhatsApp chat/messages
-                                    prior to your first session.
-    
-                                    There's no pressure or compulsion to continue taking therapy. The decision is always
-                                    yours!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div x-data="{ expanded: false }" class="py-4">
-                        <h2>
-                            <button id="faq-6" type="button"
-                                class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
-                                @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faq-6-answer">
-                                <span>Do you provide in-person therapy?</span>
-    
-                                <img class="shrink-0 h-5 ml-8 transition duration-200 origin-center transform"
-                                    src="./img/drop-arrow.svg" :class="{'!rotate-180': expanded}" />
-                            </button>
-                        </h2>
-                        <div id="faq-6-answer" role="region" aria-labelledby="faq-6"
-                            class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-justify transition-all duration-300 ease-in-out"
-                            :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
-                            <div class="overflow-hidden">
-                                <p class="whitespace-pre-line">
-                                    We currently only offer online therapy over audio & video calls.
-                                </p>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
-                <!-- End: Accordion component -->
-    
-                <button
-                    class="md:mt-20 md:mb-6 px-14 md:px-12 md:py-5 whitespace-nowrap bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring hover:bg-light-purple text-light hover:text-light py-6 mx-auto mt-16 mb-8 font-medium text-center transition rounded-full select-none">
-                    <a class="md:text-lg text-base font-normal" href="#">FAQ</a>
-                </button>
             </div>
         </div>
-    </div>
-</div>
+
+
+
+        <div class="bg-light text-dark-purple flex flex-col">
+            <div>
+                <h2 class="md:text-3xl md:pt-24 pt-16 text-2xl font-semibold text-center">
+                    Therapy
+                </h2>
+        
+            </div>
+        
+            <div class=" relative justify-center antialiased">
+                <div class="relative flex flex-col justify-center overflow-hidden">
+                    <div class="md:py-20 w-3/4 py-12 mx-auto text-center">
+                        <!-- Accordion component -->
+                        <div class="divide-slate-200 divide-y">
+                            <!-- Accordion item  -->
+                            <div x-data="{ expanded: false }" class="py-4">
+                                <h2>
+                                    <button id="faq-1" type="button"
+                                        class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
+                                        @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faq-1">
+                                        <span>Do I need to prepare anything for the first session?</span>
+        
+                                        <img class="shrink-0 h-5 ml-8 transition duration-200 origin-center transform"
+                                            src="./img/drop-arrow.svg" :class="{'!rotate-180': expanded}" />
+                                    </button>
+                                </h2>
+                                <div id="faq-1" role="region" aria-labelledby="faq-1"
+                                    class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-left transition-all duration-300 ease-in-out"
+                                    :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+                                    <div class="overflow-hidden">
+                                        <p class="whitespace-pre-line">
+                                            You can keep some points ready in case you want to. There is no compulsion to do any preparation before the session.
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <!-- Accordion item end -->
+        
+                            <div x-data="{ expanded: false }" class="py-4">
+                                <h2>
+                                    <button id="faq-2" type="button"
+                                        class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
+                                        @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faq-2">
+                                        <span>How to choose between a clinical/counselling psychologist??</span>
+        
+                                        <img class="shrink-0 h-5 ml-8 transition duration-200 origin-center transform"
+                                            src="./img/drop-arrow.svg" :class="{'!rotate-180': expanded}" />
+                                    </button>
+                                </h2>
+                                <div id="faq-2" role="region" aria-labelledby="faq-2"
+                                    class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-left transition-all duration-300 ease-in-out"
+                                    :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+                                    <div class="overflow-hidden">
+                                        <p class="whitespace-pre-line">
+                                            We usually suggest going to a counselling psychologist if you’re new to therapy. In case you need specialised help, youcan always be transferred to the clinical psychologist through our internal transfer process.
+                                            
+                                            However, if you are already diagnosed or would like to get diagnosed or have suicidal thoughts, or think you might have a disorder please opt for a clinical psychologist.
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div x-data="{ expanded: false }" class="py-4">
+                                <h2>
+                                    <button id="faq-3" type="button"
+                                        class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
+                                        @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faq-3-answer">
+                                        <span>Can I get "cured" in one session?</span>
+        
+                                        <img class="shrink-0 h-5 ml-8 transition duration-200 origin-center transform"
+                                            src="./img/drop-arrow.svg" :class="{'!rotate-180': expanded}" />
+                                    </button>
+                                </h2>
+                                <div id="faq-3-answer" role="region" aria-labelledby="faq-3"
+                                    class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-left transition-all duration-300 ease-in-out"
+                                    :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+                                    <div class="overflow-hidden">
+                                        <p class="whitespace-pre-line">
+                                            Therapy is a process and it is not possible to get cured in one session. The first session is to build a therapeutic relationship and understand your main concerns. Just like your problems do not appear in a day and get built over time, the healing process will also take time and cannot be finished in one session. Every person is unique and their healing will take time accordingly.
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div x-data="{ expanded: false }" class="py-4">
+                                <h2>
+                                    <button id="faq-4" type="button"
+                                        class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
+                                        @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faq-4-answer">
+                                        <span>Can I call my therapist in case of an emergency?</span>
+        
+                                        <img class="shrink-0 h-5 ml-8 transition duration-200 origin-center transform"
+                                            src="./img/drop-arrow.svg" :class="{'!rotate-180': expanded}" />
+                                    </button>
+                                </h2>
+                                <div id="faq-4-answer" role="region" aria-labelledby="faq-4"
+                                    class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-left transition-all duration-300 ease-in-out"
+                                    :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+                                    <div class="overflow-hidden">
+                                        <p class="whitespace-pre-line">
+                                            It is important to remember that our therapists are not crisis counsellors and cannot communicate with you outside of sessions. This is to ensure you do not get dependent and also to respect their professional timings/boundaries.
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div x-data="{ expanded: false }" class="py-4">
+                                <h2>
+                                    <button id="faq-5" type="button"
+                                        class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
+                                        @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faq-5-answer">
+                                        <span>Do you provide therapy over text/ chat?</span>
+        
+                                        <img class="shrink-0 h-5 ml-8 transition duration-200 origin-center transform"
+                                            src="./img/drop-arrow.svg" :class="{'!rotate-180': expanded}" />
+                                    </button>
+                                </h2>
+                                <div id="faq-5-answer" role="region" aria-labelledby="faq-5"
+                                    class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-left transition-all duration-300 ease-in-out"
+                                    :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+                                    <div class="overflow-hidden">
+                                        <p class="whitespace-pre-line">
+                                            We don’t offer chat-based therapy. Chat therapy is not taught as part of academic psychologist training and good therapy cannot be properly conducted over messages or chat.
+
+                                            We’d recommend very strongly against opting for therapy services via chat as that’s not a scientifically proven method of providing counselling and may not be beneficial.
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div x-data="{ expanded: false }" class="py-4">
+                                <h2>
+                                    <button id="faq-6" type="button"
+                                        class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
+                                        @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faq-6-answer">
+                                        <span>Do you offer therapy to minors?</span>
+        
+                                        <img class="shrink-0 h-5 ml-8 transition duration-200 origin-center transform"
+                                            src="./img/drop-arrow.svg" :class="{'!rotate-180': expanded}" />
+                                    </button>
+                                </h2>
+                                <div id="faq-6-answer" role="region" aria-labelledby="faq-6"
+                                    class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-left transition-all duration-300 ease-in-out"
+                                    :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+                                    <div class="overflow-hidden">
+                                        <p class="whitespace-pre-line">
+                                            There is no age limit to consult a psychologist on our team. However for minors (under 18), we require a consent letter/ acknowledgment from an adult regarding the minor’s therapy. The adult doesn’t have to be a parent/ guardian but any adult who can provide consent and acknowledge that the client will be taking therapy. If you’ll be able to provide a consent letter, please let us know and we’ll share the details we require as part of the letter.
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bg-light text-dark-purple flex flex-col">
+            <div>
+                <h2 class="md:text-3xl md:pt-24 pt-16 text-2xl font-semibold text-center">
+                    Diagnosis
+                </h2>
+        
+            </div>
+        
+            <div class=" relative justify-center antialiased">
+                <div class="relative flex flex-col justify-center overflow-hidden">
+                    <div class="md:py-20 w-3/4 py-12 mx-auto text-center">
+                        <!-- Accordion component -->
+                        <div class="divide-slate-200 divide-y">
+                            <!-- Accordion item  -->
+                            <div x-data="{ expanded: false }" class="py-4">
+                                <h2>
+                                    <button id="faq-1" type="button"
+                                        class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
+                                        @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faq-1">
+                                        <span>How to choose between a clinical/counselling psychologist?</span>
+        
+                                        <img class="shrink-0 h-5 ml-8 transition duration-200 origin-center transform"
+                                            src="./img/drop-arrow.svg" :class="{'!rotate-180': expanded}" />
+                                    </button>
+                                </h2>
+                                <div id="faq-1" role="region" aria-labelledby="faq-1"
+                                    class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-left transition-all duration-300 ease-in-out"
+                                    :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+                                    <div class="overflow-hidden">
+                                        <p class="whitespace-pre-line">
+                                            We usually suggest going to a counselling psychologist if you’re new to therapy. In case you need specialised help, you can always be transferred to the clinical psychologist through our internal transfer process.
+                                            
+                                            However, if you are already diagnosed or would like to get diagnosed or have suicidal thoughts, or think you might have a disorder please opt for a clinical psychologist.
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <!-- Accordion item end -->
+        
+                            <div x-data="{ expanded: false }" class="py-4">
+                                <h2>
+                                    <button id="faq-2" type="button"
+                                        class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
+                                        @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faq-2">
+                                        <span>How long does Diagnosis take and what are the charges?</span>
+        
+                                        <img class="shrink-0 h-5 ml-8 transition duration-200 origin-center transform"
+                                            src="./img/drop-arrow.svg" :class="{'!rotate-180': expanded}" />
+                                    </button>
+                                </h2>
+                                <div id="faq-2" role="region" aria-labelledby="faq-2"
+                                    class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-left transition-all duration-300 ease-in-out"
+                                    :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+                                    <div class="overflow-hidden">
+                                        <p class="whitespace-pre-line">
+                                            Please visit the <a class="underline" href="">diagnosis</a> page for more information.
+        
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            
+                           
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bg-light text-dark-purple flex flex-col">
+            <div>
+                <h2 class="md:text-3xl md:pt-24 pt-16 text-2xl font-semibold text-center">
+                    Payment
+                </h2>
+        
+            </div>
+        
+            <div class=" relative justify-center antialiased">
+                <div class="relative flex flex-col justify-center overflow-hidden">
+                    <div class="md:py-20 w-3/4 py-12 mx-auto text-center">
+                        <!-- Accordion component -->
+                        <div class="divide-slate-200 divide-y">
+                            <!-- Accordion item  -->
+                            <div x-data="{ expanded: false }" class="py-4">
+                                <h2>
+                                    <button id="faq-1" type="button"
+                                        class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
+                                        @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faq-1">
+                                        <span>How is Payment done?</span>
+        
+                                        <img class="shrink-0 h-5 ml-8 transition duration-200 origin-center transform"
+                                            src="./img/drop-arrow.svg" :class="{'!rotate-180': expanded}" />
+                                    </button>
+                                </h2>
+                                <div id="faq-1" role="region" aria-labelledby="faq-1"
+                                    class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-left transition-all duration-300 ease-in-out"
+                                    :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+                                    <div class="overflow-hidden">
+                                        <p class="whitespace-pre-line">
+                                            Payment is done through UPI/GPay/Paytm/PhonePe/Bank Transfer/Remitly/Wise. Payment is to be made in advance to confirm the slot. If you do not pay at least a day in advance, your slot may be given to someone else.
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <!-- Accordion item end -->
+        
+                            <div x-data="{ expanded: false }" class="py-4">
+                                <h2>
+                                    <button id="faq-2" type="button"
+                                        class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
+                                        @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faq-2">
+                                        <span>Can I pay using a credit card?</span>
+        
+                                        <img class="shrink-0 h-5 ml-8 transition duration-200 origin-center transform"
+                                            src="./img/drop-arrow.svg" :class="{'!rotate-180': expanded}" />
+                                    </button>
+                                </h2>
+                                <div id="faq-2" role="region" aria-labelledby="faq-2"
+                                    class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-left transition-all duration-300 ease-in-out"
+                                    :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+                                    <div class="overflow-hidden">
+                                        <p class="whitespace-pre-line">
+                                            We do accept credit and debit cards. However, due to the payment processing app’s transaction fees, we levy a ₹100 charge per session. The session fees would be ₹2,300/ ₹2,600 per session for payments via card. If you’d like to pay via credit card, please let us know and we’ll share a link for the payment.
+        
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div x-data="{ expanded: false }" class="py-4">
+                                <h2>
+                                    <button id="faq-3" type="button"
+                                        class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
+                                        @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faq-3-answer">
+                                        <span>What if I cancel last minute/don't show up?</span>
+        
+                                        <img class="shrink-0 h-5 ml-8 transition duration-200 origin-center transform"
+                                            src="./img/drop-arrow.svg" :class="{'!rotate-180': expanded}" />
+                                    </button>
+                                </h2>
+                                <div id="faq-3-answer" role="region" aria-labelledby="faq-3"
+                                    class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-left transition-all duration-300 ease-in-out"
+                                    :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+                                    <div class="overflow-hidden">
+                                        <p class="whitespace-pre-line">
+                                            We do not provide a refund in case of no-shows and last-minute cancellations. You will need to pay again in this case. Our therapists keep aside a slot for you and if you reschedule last minute we cannot give it to someone else which leads to the slot getting wasted. You can reschedule a day in advance for free.
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div x-data="{ expanded: false }" class="py-4">
+                                <h2>
+                                    <button id="faq-4" type="button"
+                                        class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
+                                        @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faq-4-answer">
+                                        <span>Do you offer discounts?</span>
+        
+                                        <img class="shrink-0 h-5 ml-8 transition duration-200 origin-center transform"
+                                            src="./img/drop-arrow.svg" :class="{'!rotate-180': expanded}" />
+                                    </button>
+                                </h2>
+                                <div id="faq-4-answer" role="region" aria-labelledby="faq-4"
+                                    class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-left transition-all duration-300 ease-in-out"
+                                    :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+                                    <div class="overflow-hidden">
+                                        <p class="whitespace-pre-line">
+                                            Yes! We offer discounted packages for multiple sessions booked in advance.
+                                            
+                                            For further information on packages and discounts, please refer to our Pricing page or reach out to us on any of our socials!
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div x-data="{ expanded: false }" class="py-4">
+                                <h2>
+                                    <button id="faq-5" type="button"
+                                        class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
+                                        @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faq-5-answer">
+                                        <span>Can I get a receipt for insurance reimbursement?</span>
+        
+                                        <img class="shrink-0 h-5 ml-8 transition duration-200 origin-center transform"
+                                            src="./img/drop-arrow.svg" :class="{'!rotate-180': expanded}" />
+                                    </button>
+                                </h2>
+                                <div id="faq-5-answer" role="region" aria-labelledby="faq-5"
+                                    class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-left transition-all duration-300 ease-in-out"
+                                    :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+                                    <div class="overflow-hidden">
+                                        <p class="whitespace-pre-line">
+                                            Yes! We offer receipts for all payments on request.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 <div class="xl:flex-row bg-mid-purple xl:px-32 xl:py-20 shadow-3xl flex flex-col">
