@@ -44,7 +44,7 @@
 
 </head>
 
-<body class=" scroll-smooth mx-auto leading-relaxed">
+<body class=" scroll-smooth mx-auto leading-relaxed" x-data="{ abroad: false }">
 
     <header class="sticky top-0 flex flex-col z-[100] h-[7svh] md:h-14   bg-light drop-shadow-2xl ">
 
@@ -221,21 +221,22 @@
         <!-- Hero Section-->
 
         <div class="text-slate-100 z-10 flex flex-col justify-around text-center">
-        
-            <div class="h-[45svh] bg-dark-purple ">
-        
-        
-        
-        
+
+            <div class="h-[50svh] bg-dark-purple ">
+
+
+
+
             </div>
-        
-            <div class="bg-mid-purple h-[25svh] relative">
-        
-        
+
+            <div class="bg-mid-purple h-[50svh] relative">
+
+
                 <div
                     class="absolute inset-x-0 top-0 mx-auto  landscape:translate-y-[-90%] portrait:translate-y-[-97%]  w-[80svw] md:w-[45svh]">
-                    <svg data-aos="fade-down" data-aos-delay="250" width="100%" height="100%" viewBox="0 0 1002 976" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"
+                    <svg data-aos="fade-down" data-aos-delay="250" width="100%" height="100%" viewBox="0 0 1002 976"
+                        version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xml:space="preserve" xmlns:serif="http://www.serif.com/"
                         style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:10;">
                         <g id="Layer">
                             <g>
@@ -460,28 +461,43 @@
 
 
                 </div>
-        
-                <div data-aos="fade-down" data-aos-delay="250" class=" mt-16">
+
+                <div data-aos="fade-down" data-aos-delay="250" class=" mt-[8svh]">
                     <h1 class="md:text-3xl text-2xl font-semibold text-center">
                         PRICING
                     </h1>
+
+                    <div
+                        class="md:w-[20rem] flex w-3/4 mx-auto font-medium bg-purple-200 border-4 border-purple-200 rounded-full text-dark-purple portrait:mt-[7svh] landscape:mt-[5svh] lg:landscape:mt-[4svh]">
+                        <button class="block w-full py-2 text-sm transition rounded-full"
+                            :class="{ 'bg-white shadow-sm': !abroad, 'hover:text-gray-400': abroad }"
+                            @click="abroad = false" type="button">
+                            INDIA
+                        </button>
+                        <button class="block w-full py-2 text-sm transition rounded-full"
+                            :class="{ 'bg-white shadow-sm': abroad, 'hover:text-gray-400': !abroad }"
+                            @click="abroad = true" type="button">
+                            OUTSIDE INDIA
+                        </button>
+                    </div>
+
                 </div>
-        
-        
-                <div class=" portrait:mt-[7svh] landscape:mt-[3svh] lg:landscape:mt-[7svh] animate-bounce absolute inset-x-0 portrait:w-6 landscape:w-[4svh] lg:landscape:w-7 mx-auto"
+
+
+                <div class=" portrait:mt-[7svh] landscape:mt-[3svh] lg:landscape:mt-[10svh] animate-bounce absolute inset-x-0 portrait:w-6 landscape:w-[4svh] lg:landscape:w-7 mx-auto"
                     data-aos="fade-in" data-aos-delay="250" data-aos-anchor="#hero" data-aos-once="true">
                     <img class="w-full mx-auto" src="./img/Arrow.svg" alt="" />
                 </div>
-        
+
             </div>
         </div>
 
 
 
         <div class="text-dark-purple md:text-lg md:px-20 flex flex-col px-8 my-20 text-sm">
-        
-        
-        
+
+
+
             <div class="landscape:md:flex-row-reverse flex flex-col-reverse gap-12 mx-auto">
                 <div class="landscape:w-4/5 mx-auto">
                     <div class="touch-control flex">
@@ -492,7 +508,8 @@
                                     <svg class=" w-4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
                                         stroke-linejoin="round" viewBox="0 0 24 24">
                                         <line fill="none" stroke-miterlimit="10" x1="12" y1="2" x2="12" y2="22"></line>
-                                        <polyline fill="none" stroke-miterlimit="10" points="19,15 12,22 5,15"></polyline>
+                                        <polyline fill="none" stroke-miterlimit="10" points="19,15 12,22 5,15">
+                                        </polyline>
                                     </svg>
                                 </div>
                             </div>
@@ -502,12 +519,13 @@
                             <p class="clickable-paragraph mb-2 text-lg font-bold uppercase cursor-pointer">REACH OUT
                             </p>
                             <p class="clickable-paragraph cursor-pointer">
-                                Drop us a message on Instagram or WhatsApp to get connected with a suitable therapist on our
+                                Drop us a message on Instagram or WhatsApp to get connected with a suitable therapist on
+                                our
                                 team.
                             </p>
                         </div>
                     </div>
-        
+
                     <div class="touch-control flex">
                         <div class="flex flex-col items-center mr-4">
                             <div>
@@ -516,18 +534,21 @@
                                     <svg class=" w-4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
                                         stroke-linejoin="round" viewBox="0 0 24 24">
                                         <line fill="none" stroke-miterlimit="10" x1="12" y1="2" x2="12" y2="22"></line>
-                                        <polyline fill="none" stroke-miterlimit="10" points="19,15 12,22 5,15"></polyline>
+                                        <polyline fill="none" stroke-miterlimit="10" points="19,15 12,22 5,15">
+                                        </polyline>
                                     </svg>
                                 </div>
                             </div>
                             <div class=" bg-light-purple w-px h-full"></div>
                         </div>
                         <div id="" class=" pt-1 pb-8">
-                            <p class="clickable-paragraph mb-2 text-lg font-bold uppercase cursor-pointer">BOOK YOUR APPOINTMENT
+                            <p class="clickable-paragraph mb-2 text-lg font-bold uppercase cursor-pointer">BOOK YOUR
+                                APPOINTMENT
                             </p>
                             <p class="clickable-paragraph cursor-pointer">
-                                Choose a convenient slot with our therapist and confirm your session by making the payment.
-        
+                                Choose a convenient slot with our therapist and confirm your session by making the
+                                payment.
+
                             </p>
                         </div>
                     </div>
@@ -539,20 +560,22 @@
                                     <svg class=" w-4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
                                         stroke-linejoin="round" viewBox="0 0 24 24">
                                         <line fill="none" stroke-miterlimit="10" x1="12" y1="2" x2="12" y2="22"></line>
-                                        <polyline fill="none" stroke-miterlimit="10" points="19,15 12,22 5,15"></polyline>
+                                        <polyline fill="none" stroke-miterlimit="10" points="19,15 12,22 5,15">
+                                        </polyline>
                                     </svg>
                                 </div>
                             </div>
                             <div class="bg-light-purple w-px h-full"></div>
                         </div>
                         <div id="" class=" pt-1 pb-8">
-                            <p class=" clickable-paragraph mb-2 text-lg font-bold uppercase cursor-pointer">Pay and Confirm</p>
+                            <p class=" clickable-paragraph mb-2 text-lg font-bold uppercase cursor-pointer">Pay and
+                                Confirm</p>
                             <p class="clickable-paragraph cursor-pointer">
                                 You can make the payment using UPI or other payment methods of your convenience.
                             </p>
                         </div>
                     </div>
-        
+
                     <div class="touch-control flex">
                         <div class=" flex flex-col items-center mr-4">
                             <div>
@@ -561,22 +584,25 @@
                                     <svg class=" w-4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
                                         stroke-linejoin="round" viewBox="0 0 24 24">
                                         <line fill="none" stroke-miterlimit="10" x1="12" y1="2" x2="12" y2="22"></line>
-                                        <polyline fill="none" stroke-miterlimit="10" points="19,15 12,22 5,15"></polyline>
+                                        <polyline fill="none" stroke-miterlimit="10" points="19,15 12,22 5,15">
+                                        </polyline>
                                     </svg>
                                 </div>
                             </div>
                             <div class="bg-light-purple w-px h-full"></div>
                         </div>
                         <div id="" class=" pt-1 pb-8">
-                            <p class=" clickable-paragraph mb-2 text-lg font-bold uppercase cursor-pointer">PRE-SESSION PROCESS
+                            <p class=" clickable-paragraph mb-2 text-lg font-bold uppercase cursor-pointer">PRE-SESSION
+                                PROCESS
                             </p>
                             <p class="clickable-paragraph cursor-pointer">
-                                The therapist will share a consent form and once it is signed by you, the session link will be
+                                The therapist will share a consent form and once it is signed by you, the session link
+                                will be
                                 shared.
                             </p>
                         </div>
                     </div>
-        
+
                     <div class="touch-control flex">
                         <div class="flex flex-col items-center mr-4">
                             <div>
@@ -588,59 +614,60 @@
                         </div>
                         <div class="pt-1">
                             <p id="" class=" mb-2 text-lg font-bold uppercase cursor-pointer">Session</p>
-        
+
                         </div>
-        
+
                     </div>
-        
-        
+
+
                     <div class="landscape:hidden text-center" x-data="{ showModal: false}">
                         <!-- Trigger button -->
                         <div data-aos="fade-in" data-aos-delay="250" data-aos-anchor="#hero" data-aos-once="true">
                             <button
-                                class="md:mt-0 whitespace-nowrap focus:outline-none hover:scale-105 hover:shadow-2xl hover:bg-light-purple hover:text-light text-white portrait:mt-10 landscape:text-base portrait:text-[3.75vw] md:portrait:text-[1.7vw] portrait:p-[6vw] md:portrait:p-[3vw] landscape:px-6 landscape:py-5 mx-auto transition-transform duration-300 transform bg-dark-purple rounded-full select-none"
+                                class="md:mt-28 whitespace-nowrap focus:outline-none hover:scale-105 hover:shadow-2xl hover:bg-light-purple hover:text-light text-white portrait:mt-[13svh] landscape:mt-[12svh] lg:landscape:mt-[13svh] landscape:text-xs lg:landscape:text-base portrait:text-[3.75vw] md:portrait:text-[1.7vw] portrait:p-[6vw] md:portrait:p-[3vw] landscape:px-4 landscape:py-3 lg:landscape:px-6 lg:landscape:py-5 mx-auto transition-transform duration-300 transform bg-dark-purple rounded-full select-none"
                                 @click="showModal = true">
                                 Book a Session
                             </button>
                         </div>
-        
-        
+
+
                         <!-- Modal -->
                         <div x-show="showModal"
                             class=" bg-dark-purple fixed inset-0 z-50 flex items-center justify-center bg-opacity-75"
                             x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0"
                             x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in duration-200"
-                            x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" @click="showModal = false"
-                            style="display: none;">
-        
-        
+                            x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0"
+                            @click="showModal = false" style="display: none;">
+
+
                             <div
                                 class="landscape:max-lg:mt-[10svh] text-mid-purple rounded-[3rem] w-[85svw] md:w-auto landscape:lg:px-8 md:px-8 landscape:px-5  py-[7vw] landscape:lg:py-9 md:py-9 landscape:py-6 transform bg-white shadow-2xl">
                                 <!-- Modal Header -->
                                 <div class=" flex flex-col">
                                     <button @click="showModal = true"
                                         class="hover:text-gray-700 focus:outline-none right-[6.5vw] landscape:max-lg:hidden md:right-8 md:top-8 top-[6.5vw] absolute text-gray-500">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-[5vw] w-[5vw] md:h-[2rem] md:w-[2rem]"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="feather feather-x stroke-dark-purple">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="h-[5vw] w-[5vw] md:h-[2rem] md:w-[2rem]" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" class="feather feather-x stroke-dark-purple">
                                             <line x1="18" y1="6" x2="6" y2="18"></line>
                                             <line x1="6" y1="6" x2="18" y2="18"></line>
                                         </svg>
                                     </button>
                                 </div>
-        
+
                                 <!-- Modal Content -->
                                 <div class=" md:text-base flex flex-col justify-center mx-auto text-center">
-                                    <h4 class="md:mt-1 text-[3.5vw] landscape:max-lg:hidden md:text-base font-semibold">OUR
+                                    <h4 class="md:mt-1 text-[3.5vw] landscape:max-lg:hidden md:text-base font-semibold">
+                                        OUR
                                         STANDARD CHARGES</h4>
                                     <div
                                         class="text-[3vw] landscape:lg:text-base md:text-base landscape:text-[0.8rem] rounded-[5vw] md:rounded-[2.5rem] w-[85%] md:w-auto py-[6vw] landscape:lg:py-7 md:py-7 landscape:py-5 flex flex-row justify-center mx-auto mt-[4vw] landscape:lg:mt-5 md:mt-5 landscape:mt-0 bg-gray-100">
-        
+
                                         <div
                                             class="pl-[3vw] pr-[5vw] md:pr-8 md:pl-12 flex flex-col justify-center gap-[1.9vw] landscape:gap-[0.4rem] landscape:lg:gap-[0.75rem] md:gap-[0.75rem]">
                                             <p
-                                                class="max-lg:leading-[5vw] landscape:max-lg:leading-[1.4rem] whitespace-pre-line">
+                                                class="max-md:leading-[5vw] landscape:max-md:leading-[1.4rem] whitespace-pre-line">
                                                 Counselling
                                                 Psychologist
                                             </p>
@@ -649,13 +676,13 @@
                                                 <span class=""><span class=" font-mono">₹</span>2200</span>/session
                                             </p>
                                         </div>
-        
+
                                         <div class="w-[1px] h-auto bg-gray-300"></div>
-        
+
                                         <div
                                             class="pr-[3vw] pl-[5vw] md:pr-12 md:pl-8 flex flex-col justify-center gap-[1.9vw] landscape:gap-[0.4rem] landscape:lg:gap-[0.75rem] md:gap-[0.75rem]">
                                             <p
-                                                class="max-lg:leading-[5vw] landscape:max-lg:leading-[1.4rem] whitespace-pre-line">
+                                                class="max-md:leading-[5vw] landscape:max-md:leading-[1.4rem] whitespace-pre-line">
                                                 Clinical
                                                 Psychologist
                                             </p>
@@ -665,12 +692,14 @@
                                             </p>
                                         </div>
                                     </div>
-        
-        
-        
-        
+
+
+
+
                                     <div class="landscape:max-lg:hidden">
-                                        <h4 class="mt-[4vw] md:mt-5 md:mb-3 md:text-base mb-[3vw] text-[3vw] font-normal">For
+                                        <h4
+                                            class="mt-[4vw] md:mt-5 md:mb-3 md:text-base mb-[3vw] text-[3vw] font-normal">
+                                            For
                                             more information visit
                                         </h4>
                                         <div
@@ -687,14 +716,14 @@
                                                 class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-[3vw] landscape:lg:px-4 landscape:px-2 md:px-4 md:py-2 landscape:py-[0.05rem] landscape:lg:py-2 py-[2vw] transition bg-gray-100 rounded-full">
                                                 <a href="#">PRICING</a>
                                             </button>
-        
+
                                         </div>
-        
+
                                         <button
                                             class="font-medium landscape:text-[2vh] landscape:lg:text-sm text-[3vw] md:text-sm landscape:mt-[0.4rem] landscape:lg:mt-[0.8rem] md:mt-[0.8rem] text-mid-purple mt-[3vw] hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-[3vw] py-[2vw] landscape:lg:px-4 md:px-4 md:py-2 landscape:px-2 landscape:py-[0.05rem] landscape:lg:py-2 mx-auto transition bg-gray-100 rounded-full">
                                             <a href="#">COUPLE'S COUNSELLING</a>
                                         </button>
-        
+
                                         <div
                                             class="flex items-center w-[85%] mx-auto landscape:py-[0.05rem] landscape:lg:py-5 md:py-5 py-[4.5vw]">
                                             <div class="flex-grow border-t border-gray-200"></div>
@@ -703,28 +732,28 @@
                                             <div class="flex-grow border-t border-gray-200"></div>
                                         </div>
                                     </div>
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
                                     <div>
                                         <h3
                                             class="text-[3vw] md:text-sm landscape:lg:mt-0 md:mt-0 landscape:mt-3 landscape:text-[0.6rem] landscape:lg:text-sm font-medium">
                                             MESSAGE US AND BOOK YOUR SESSION</h3>
                                     </div>
-        
+
                                     <div
                                         class="md:flex-row landscape:md:gap-5 md:gap-5 flex justify-center gap-[3vw] pt-[6vw] landscape:lg:pt-6 md:pt-6 landscape:pt-2 mx-auto">
-        
-        
+
+
                                         <button
                                             class="landscape:lg:px-8 landscape:px-6 md:px-8 landscape:lg:py-4 md:py-4 landscape:py-3 whitespace-nowrap hover:scale-105 hover:shadow-lg focus:outline-none hover:text-white px-[5vw] py-[2.7vw] mx-auto text-white transition rounded-full shadow-lg select-none"
                                             style="background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);">
                                             <div
                                                 class="landscape:lg:gap-3 md:gap-3 landscape:gap-2 flex flex-row gap-[1.5vw] my-auto">
-        
+
                                                 <img class="landscape:lg:w-6 md:w-6 landscape:w-4 w-[5vw]"
                                                     src="./img/instagram-logo.svg" alt="">
                                                 <a class="landscape:lg:text-2xl md:text-2xl landscape:text-[1rem] my-auto text-[5vw] font-medium"
@@ -732,7 +761,7 @@
                                                     href="https://ig.me/m/thefriendlycouch">Instagram</a>
                                             </div>
                                         </button>
-        
+
                                         <button
                                             class="landscape:lg:px-8 landscape:px-6 md:px-8 landscape:lg:py-4 md:py-4 landscape:py-3 whitespace-nowrap hover:scale-105 hover:shadow-lg focus:outline-none  text-white hover:text-white px-[5vw] py-[2.7vw] mx-auto  transition bg-[#25D366] rounded-full select-none">
                                             <div
@@ -744,44 +773,48 @@
                                                     style="font-family: 'Helvetica Neue', sans-serif; color: white;">WhatsApp</a>
                                             </div>
                                         </button>
-        
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-        
-        
-        
-        
+
+
+
+
                 </div>
-        
+
                 <div class="landscape:w-[30svh] portrait:w-[60svw]  flex flex-col my-auto justify-center   mx-auto ">
-        
+
                     <div class="">
                         <h2
                             class="portrait:text-[5.5vw] portrait:md:text-2xl  landscape:text-[1.6vw] leading-normal font-semibold text-center">
                             OUR PROCESS
                         </h2>
                     </div>
-        
-        
+
+
                     <div class="splide h-full mx-auto mt-12" role="group" aria-label="Splide Basic HTML Example">
                         <div class="splide__track w-full h-full">
                             <ul class="splide__list w-full h-full">
-                                <li class="splide__slide h-full"><img class=" w-full h-full" src="./img/modal-process.svg"
-                                        alt=""></li>
-                                <li class="splide__slide h-full"><img class=" w-full h-full" src="./img/schedule-process.svg"
-                                        alt=""></li>
-                                <li class="splide__slide h-full"><img class=" w-full h-full" src="./img/payment-process.svg"
-                                        alt=""></li>
-                                <li class="splide__slide h-full"><img class=" w-full h-full" src="./img/enquiry-process.svg"
-                                        alt=""></li>
-                                <li class="splide__slide h-full"><img class=" w-full h-full" src="./img/session-process.svg"
-                                        alt=""></li>
+                                <li class="splide__slide h-full"><img class=" w-full h-full"
+                                        src="./img/modal-process.svg" alt=""></li>
+                                <li class="splide__slide h-full"><img class=" w-full h-full"
+                                        src="./img/schedule-process.svg" alt="">
+                                </li>
+                                <li class="splide__slide h-full"><img class=" w-full h-full"
+                                        src="./img/payment-process.svg" alt="">
+                                </li>
+                                <li class="splide__slide h-full"><img class=" w-full h-full"
+                                        src="./img/enquiry-process.svg" alt="">
+                                </li>
+                                <li class="splide__slide h-full"><img class=" w-full h-full"
+                                        src="./img/session-process.svg" alt="">
+                                </li>
                             </ul>
                         </div>
-        
+
                         <div class="splide__arrows splide__arrows--ltr sr-only">
                             <button class="splide__arrow splide__arrow--prev" type="button" aria-label="Previous slide"
                                 aria-controls="splide01-track">
@@ -793,8 +826,8 @@
                             </button>
                         </div>
                     </div>
-        
-        
+
+
                     <div class="portrait:hidden mx-auto" x-data="{ showModal: false }">
                         <!-- Trigger button -->
                         <div data-aos="fade-in" data-aos-delay="250" data-aos-anchor="#hero" data-aos-once="true">
@@ -804,60 +837,66 @@
                                 Book a Session
                             </button>
                         </div>
-        
-        
+
+
                         <!-- Modal -->
                         <div x-show="showModal"
                             class=" bg-dark-purple fixed inset-0 z-50 flex items-center justify-center bg-opacity-75"
                             x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0"
                             x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in duration-200"
-                            x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" @click="showModal = false"
-                            style="display: none;">
-        
-        
-                            <div class=" text-mid-purple rounded-[3rem] px-[6svw] md:px-8 py-9 transform bg-white shadow-2xl">
+                            x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0"
+                            @click="showModal = false" style="display: none;">
+
+
+                            <div
+                                class=" text-mid-purple rounded-[3rem] px-[6svw] md:px-8 py-9 transform bg-white shadow-2xl">
                                 <!-- Modal Header -->
                                 <div class=" flex flex-col">
                                     <button @click="showModal = false"
                                         class="hover:text-gray-700 focus:outline-none right-7 top-7 absolute text-gray-500">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
-                                            fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round" class="feather feather-x stroke-dark-purple">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-x stroke-dark-purple">
                                             <line x1="18" y1="6" x2="6" y2="18"></line>
                                             <line x1="6" y1="6" x2="18" y2="18"></line>
                                         </svg>
                                     </button>
                                 </div>
-        
+
                                 <!-- Modal Content -->
                                 <div class=" md:text-base flex flex-col justify-center mx-auto text-sm text-center">
                                     <h4 class="md:mt-5 font-semibold">OUR STANDARD CHARGES</h4>
                                     <div class="rounded-3xl py-7 flex flex-row justify-center mx-auto mt-5 bg-gray-100">
-                                        <div class="pl-7 pr-5 md:pr-8 md:pl-12 flex flex-col justify-center gap-[0.75rem]">
+                                        <div
+                                            class="pl-7 pr-5 md:pr-8 md:pl-12 flex flex-col justify-center gap-[0.75rem]">
                                             <p class=" whitespace-pre-line">Counselling
                                                 Psychologist
                                             </p>
                                             <p class="font-semibold">
-                                                <span class="text-base"><span class="font-mono">₹</span>2200</span>/session
+                                                <span class="text-base"><span
+                                                        class="font-mono">₹</span>2200</span>/session
                                             </p>
                                         </div>
-        
+
                                         <div class="w-[1px] h-auto bg-gray-300"></div>
-        
-                                        <div class="pr-7 pl-5 md:pr-12 md:pl-8 flex flex-col justify-center gap-[0.75rem]">
+
+                                        <div
+                                            class="pr-7 pl-5 md:pr-12 md:pl-8 flex flex-col justify-center gap-[0.75rem]">
                                             <p class=" whitespace-pre-line">Clinical
                                                 Psychologist
                                             </p>
                                             <p class="font-semibold">
-                                                <span class=" text-base"><span class="font-mono">₹</span>2500</span>/session
+                                                <span class=" text-base"><span
+                                                        class="font-mono">₹</span>2500</span>/session
                                             </p>
                                         </div>
                                     </div>
-        
+
                                     <h4 class="mt-5 mb-3 font-normal">For more information visit</h4>
-        
-        
-        
+
+
+
                                     <div
                                         class="md:flex-row md:gap-3 text-mid-purple flex flex-wrap justify-center gap-[0.8rem] mx-auto font-medium">
                                         <button
@@ -872,41 +911,42 @@
                                             class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 transition bg-gray-100 rounded-full">
                                             <a href="#">PRICING</a>
                                         </button>
-        
+
                                     </div>
-        
+
                                     <button
                                         class="font-medium text-mid-purple mt-[0.8rem] hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 mx-auto transition bg-gray-100 rounded-full">
                                         <a href="#">COUPLE'S COUNSELLING</a>
                                     </button>
-        
-        
-        
+
+
+
                                     <div class="flex items-center w-[85%] mx-auto py-6">
                                         <div class="flex-grow border-t border-gray-200"></div>
                                         <span class="px-5 text-gray-500">OR</span>
                                         <div class="flex-grow border-t border-gray-200"></div>
                                     </div>
-        
+
                                     <div>
                                         <h3 class="text-sm font-medium">MESSAGE US AND BOOK YOUR SESSION</h3>
                                     </div>
-        
-                                    <div class="md:flex-row landscape:md:gap-8 md:gap-5 flex justify-center gap-4 pt-6 mx-auto">
-        
-        
+
+                                    <div
+                                        class="md:flex-row landscape:md:gap-8 md:gap-5 flex justify-center gap-4 pt-6 mx-auto">
+
+
                                         <button
                                             class=" md:px-8 md:py-4 whitespace-nowrap hover:scale-105 hover:shadow-lg focus:outline-none hover:text-white px-6 py-3 mx-auto text-white transition rounded-full shadow-lg select-none"
                                             style="background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);">
                                             <div class="md:gap-3 flex flex-row gap-2 my-auto">
-        
+
                                                 <img class="md:w-6 w-5" src="./img/instagram-logo.svg" alt="">
                                                 <a class="md:text-2xl my-auto text-xl font-medium"
                                                     style="font-family: 'Grand Hotel', cursive;"
                                                     href="https://ig.me/m/thefriendlycouch">Instagram</a>
                                             </div>
                                         </button>
-        
+
                                         <button
                                             class=" shadow-lg md:px-7 md:py-4 whitespace-nowrap hover:scale-105 hover:shadow-lg focus:outline-none  text-white hover:text-white px-5 py-3 mx-auto  transition bg-[#25D366] rounded-full select-none">
                                             <div class="md:gap-3 flex flex-row gap-2 my-auto">
@@ -916,14 +956,14 @@
                                                     style="font-family: 'Helvetica Neue', sans-serif;">WhatsApp</a>
                                             </div>
                                         </button>
-        
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-        
-        
+
+
                 </div>
             </div>
         </div>
@@ -931,140 +971,557 @@
 
 
         <div class="bg-dark-purple text-slate-100 flex flex-col mx-auto">
-            <div x-data="{ abroad: false }">
-                <div class="flex flex-col">
 
-                    <div class="landscape:flex-row landscape:px-24 gap-14 landscape:gap-0 flex flex-col justify-center py-24 mx-auto">
-            
-                        <div class="landscape:w-[50%] portrait:md:px-32 w-full mx-auto my-auto leading-relaxed text-left">
-                            <div class=" mx-auto">
-            
-                                <div class=" flex w-full">
-            
-                                    <div class=" flex flex-col items-center mx-auto text-left">
-                                        <div class="">
-                                            <div class="">
-                                                <img class="w-1/2 mx-auto" src="./img/therapy_circle.svg" alt="" />
-                                            </div>
-            
-                                            <div class="md:pt-5 md:pb-10 pt-5 pb-10">
-                                                <p class="text-3xl font-semibold text-center">
-                                                    THERAPY PRICING
-                                                </p>
-                                            </div>
-                                        </div>
-            
-                                        <div class="md:text-lg md:px-5 mx-auto my-auto text-sm leading-relaxed text-left">
-                                            <p class="">
-                                                Trained and experienced therapists that provide a non-judgmental open space for you to empower yourself. Our Clinical Psychologists are RCI registered who can provide specialised therapy for disorders and severe concerns. 
-                                            </p>
-            
-                                        </div>
-            
-                                        <div class=" flex flex-col mt-12 text-center">
-                                                <p>For more info visit</p>
-                                            <div class=" flex flex-row gap-4 mx-auto mt-5">
-                                                <button
-                                                    class="hover:text-white hover:bg-light-purple text-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 mx-auto text-sm transition bg-gray-100 rounded-full">
-                                                    <a rel="noopener" href="#discountPackages">DISCOUNTS</a>
-                                                </button>
-                                                <button
-                                                    class="hover:text-white hover:bg-light-purple text-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 mx-auto text-sm transition bg-gray-100 rounded-full">
-                                                    <a href="#">THERAPY</a>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        
+
+
+            <div
+                class="landscape:lg:flex-row gap-14 md:px-20 landscape:lg:gap-0 lg:justify-around flex flex-col justify-center py-24 mx-auto">
+
+                <div
+                    class="landscape:w-[50%] landscape:md:px-0 portrait:md:px-32 px-8 w-full mx-auto my-auto leading-relaxed text-left ">
+                    <div class=" mx-auto">
+
+                        <div class=" flex w-full">
+
+                            <div class=" flex flex-col items-center mx-auto text-left">
+                                <div class="">
+                                    <div class="">
+                                        <img class="w-[15rem] mx-auto" src="./img/therapy_circle.svg" alt="" />
+                                    </div>
+
+                                    <div class="md:pt-5 md:pb-10 pt-5 pb-10">
+                                        <p class="text-3xl font-semibold text-center">
+                                            THERAPY PRICING
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="md:text-base mx-auto my-auto text-sm leading-relaxed text-left">
+                                    <p class="">
+                                        Trained and experienced therapists that provide a non-judgmental open space for
+                                        you to empower
+                                        yourself. Our Clinical Psychologists are RCI registered who can provide
+                                        specialised therapy for
+                                        disorders and severe concerns.
+                                    </p>
+
+                                </div>
+
+                                <div class=" mt-7 flex flex-col text-center">
+                                    <p>For more info visit</p>
+                                    <div class=" flex flex-row gap-4 mx-auto mt-5">
+                                        <button
+                                            class="hover:text-white hover:bg-light-purple text-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 mx-auto text-sm transition bg-gray-100 rounded-full">
+                                            <a rel="noopener" href="#discountPackages">DISCOUNTS</a>
+                                        </button>
+                                        <button
+                                            class="hover:text-white hover:bg-light-purple text-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 mx-auto text-sm transition bg-gray-100 rounded-full">
+                                            <a href="#">THERAPY</a>
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="text-dark-purple landscape:w-auto landscape:lg:w-[40%] flex flex-col justify-center w-full mx-auto">
+
+
+
+                    <div
+                        class="sm:text-base text-dark-purple sm:rounded-[3.75rem] rounded-[15vw] sm:px-10 flex flex-col justify-center mx-auto w-[85vw] py-[7vw] sm:w-auto sm:py-10 text-sm text-center bg-white shadow-2xl">
+
+                        <div>
+                            <div class="text-[4vw] sm:text-xl  font-semibold text-center">
+                                <p><span x-text="abroad ? 'CHARGES OUTSIDE INDIA' : 'CHARGES IN INDIA'"></span></p>
+                            </div>
+
+                            <div class="pt-1 pb-1 sm:text-sm text-[2.75vw] font-light text-center">
+                                <p><span x-text="abroad ? '(Non-students based abroad)' : ''"></span></p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="py-1 sm:py-[0.7rem] rounded-[9vw] sm:rounded-[2.5rem] sm:px-8  bg-gray-100 sm:w-auto w-[83%] shadow-lg flex flex-col mx-auto sm:mt-5 mt-[3vw] text-dark-purple">
+
+                            <div class="sm:gap-7 flex flex-row items-center justify-center gap-[5vw] mx-auto ">
+
+                                <div class=" flex flex-col font-semibold justify-center sm:gap-1 gap-[1vw]">
+
+                                    <p class="sm:text-2xl  text-[5vw] ">
+                                        <span class="font-mono">₹</span><span
+                                            x-text="abroad ? '4,400' : '2,200'"></span>
+                                    </p>
+
+                                    <p class=" sm:text-xs font-medium text-[2.75vw]">PER SESSION</p>
+
+                                </div>
+
+                                <div class="w-[1px] h-[18vw] sm:h-20 bg-gray-300"></div>
+
+                                <div
+                                    class=" sm:text-base  text-[3.7vw] portrait:max-sm:leading-[6vw] font-semibold text-left whitespace-pre-line">
+                                    <p>Counselling
+                                        Psychologist</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="py-1 sm:py-[0.7rem] rounded-[9vw] sm:rounded-[2.5rem] sm:px-8  bg-gray-100 sm:w-auto w-[83%] shadow-lg flex flex-col mx-auto mt-[5vw] sm:mt-5 text-dark-purple">
+
+
+
+                            <div class="sm:gap-7 flex flex-row items-center justify-center gap-[5vw] mx-auto">
+
+                                <div class=" flex flex-col justify-center font-semibold sm:gap-1 gap-[1vw]">
+
+                                    <p class="sm:text-2xl font-semibold text-[5vw]">
+                                        <span class="font-mono">₹</span><span
+                                            x-text="abroad ? '5,000' : '2,500'"></span>
+                                    </p>
+
+                                    <p class="sm:text-xs font-medium text-[2.75vw]">PER SESSION</p>
+
+                                </div>
+
+                                <div class="w-[1px] h-[18vw] sm:h-20 bg-gray-300"></div>
+
+                                <div
+                                    class="sm:text-base  text-[3.7vw] portrait:max-sm:leading-[6vw] font-semibold text-left whitespace-pre-line">
+                                    <p>Clinical
+                                        Psychologist</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="mt-3 sm:text-xs text-[2.7vw]">The duration of one session is 1 hour.</p>
+                        </div>
+
+                        <div class="sm:flex-row flex justify-center gap-4 sm:pt-5 pt-[3vw] mx-auto">
+                            <button
+                                class="md:mt-1 whitespace-nowrap focus:outline-none hover:scale-105 hover:shadow-2xl hover:bg-light-purple hover:text-light text-white portrait:mt-1 landscape:text-base portrait:text-[3.75vw] md:portrait:text-[1.7vw] portrait:p-[6vw] md:portrait:p-[3vw] landscape:px-6 landscape:py-5 mx-auto transition-transform duration-300 transform bg-dark-purple rounded-full select-none"
+                                @click="showModal = true">
+                                Book a Session
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+        <div class="bg-mid-purple text-slate-100 flex flex-col mx-auto">
+
+
+            <div
+                class="landscape:lg:flex-row gap-14 md:px-20 landscape:lg:gap-0 lg:justify-around flex flex-col justify-center py-24 mx-auto">
+
+                <div
+                    class="landscape:w-[50%] landscape:md:px-0 portrait:md:px-32 px-8 w-full mx-auto my-auto leading-relaxed text-left">
+                    <div class=" mx-auto">
+
+                        <div class=" flex w-full">
+
+                            <div class=" flex flex-col items-center mx-auto text-left">
+                                <div class="">
+                                    <div class="">
+                                        <img class="w-[15rem] mx-auto" src="./img/diagnosis-circle.svg" alt="" />
+                                    </div>
+
+                                    <div class="md:pt-5 md:pb-10 pt-5 pb-10">
+                                        <p class="text-3xl font-semibold text-center">
+                                            DIAGNOSIS PRICING
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="md:text-base mx-auto my-auto text-sm leading-relaxed text-left">
+                                    <p class="">
+                                        We use standardised tests & assessments and follow the International
+                                        Classification of Diseases
+                                        (ICD-10) guidelines to give you official diagnoses for mental health disorders.
+                                    </p>
+
+                                </div>
+
+                                <div class=" mt-7 flex flex-col text-center">
+                                    <p>For more info visit</p>
+                                    <div class=" flex flex-row gap-4 mx-auto mt-5">
+                                        <button
+                                            class="hover:text-white hover:bg-light-purple text-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 mx-auto text-sm transition bg-gray-100 rounded-full">
+                                            <a rel="noopener" href="#discountPackages">DISCOUNTS</a>
+                                        </button>
+                                        <button
+                                            class="hover:text-white hover:bg-light-purple text-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 mx-auto text-sm transition bg-gray-100 rounded-full">
+                                            <a href="#">DIAGNOSIS</a>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-            
-                        <div class="text-dark-purple landscape:w-[35%] flex flex-col justify-center w-full mx-auto">
-            
-                            <div class="pb-10">
-                                <div
-                                    class="md:w-[20rem] flex w-3/4 mx-auto font-medium bg-purple-200 border-4 border-purple-200 rounded-full">
-                                    <button class="block w-full py-2 text-sm transition rounded-full"
-                                        :class="{ 'bg-white shadow-sm': !abroad, 'hover:text-gray-400': abroad }"
-                                        @click="abroad = false" type="button">
-                                        INDIA
-                                    </button>
-                                    <button class="block w-full py-2 text-sm transition rounded-full"
-                                        :class="{ 'bg-white shadow-sm': abroad, 'hover:text-gray-400': !abroad }"
-                                        @click="abroad = true" type="button">
-                                        OUTSIDE INDIA
-                                    </button>
+                    </div>
+                </div>
+
+
+                <div
+                    class="text-dark-purple landscape:w-auto landscape:lg:w-[40%] flex flex-col justify-center w-full mx-auto">
+
+
+
+                    <div
+                        class="sm:text-base text-dark-purple sm:rounded-[3.75rem] rounded-[15vw] sm:px-10 flex flex-col justify-center mx-auto w-[85vw] py-[7vw] sm:w-auto sm:py-10 text-sm text-center bg-white shadow-2xl">
+
+                        <div>
+                            <div class="text-[4vw] sm:text-xl  font-semibold text-center">
+                                <p><span x-text="abroad ? 'CHARGES OUTSIDE INDIA' : 'CHARGES IN INDIA'"></span></p>
+                            </div>
+
+                            <div class="pt-1 pb-1 sm:text-sm text-[2.75vw] font-light text-center">
+                                <p><span x-text="abroad ? '(Non-students based abroad)' : ''"></span></p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="py-[5vw] sm:py-[1rem] rounded-[9vw] sm:rounded-[2.5rem] sm:px-8  bg-gray-100 sm:w-auto w-[83%] shadow-lg flex flex-col mx-auto sm:mt-5 mt-[2vw] text-dark-purple ">
+
+                            <h4 class="sm:text-lg text-[4vw] sm:pb-4 pb-[3.5vw] font-semibold">DIAGNOSIS PACKAGE</h4>
+
+
+                            <div class="sm:gap-5 flex flex-row items-center justify-center gap-[5vw] mx-auto ">
+
+                                <div class="flex flex-col font-semibold justify-center sm:gap-1 gap-[1vw]">
+
+                                    <p class="sm:text-2xl text-[4.8vw]">
+                                        <span class="font-mono">₹</span><span
+                                            x-text="abroad ? '20,000' : '10,000'"></span>
+                                    </p>
+
+                                    <p class="sm:text-xs font-medium text-[2.5vw]">PER DIAGNOSIS</p>
+
+                                </div>
+
+                                <div class="w-[1px] h-16 bg-gray-300"></div>
+
+                                <div>
+                                    <ul class="flex flex-col justify-center gap-[1vw] sm:gap-1  text-left">
+
+                                        <li class=" flex flex-row gap-[1.5vw] sm:gap-2">
+                                            <img class="w-[3.5vw] sm:w-4" src="./img/checkmark_purple.svg" alt="">
+                                            <span class="sm:text-sm text-[3vw] font-medium ">
+                                                Case History
+                                            </span>
+                                        </li>
+
+                                        <li class=" flex flex-row gap-[1.5vw] sm:gap-2 ">
+                                            <img class="w-[3.5vw] sm:w-4" src="./img/checkmark_purple.svg" alt="">
+                                            <span class="sm:text-sm text-[3vw] font-medium">
+                                                Diagnosis Test
+                                            </span>
+                                        </li>
+
+                                        <li class=" flex flex-row gap-[1.5vw] sm:gap-2">
+                                            <img class="w-[3.5vw] sm:w-4" src="./img/checkmark_purple.svg" alt="">
+                                            <span class="sm:text-sm text-[3vw] font-medium">
+                                                Report
+                                            </span>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-            
-                            <div class="md:text-base text-dark-purple rounded-[30px] md:px-10 flex flex-col justify-center mx-auto px-7 py-8 md:py-10 text-sm text-center bg-white shadow-2xl">
-            
-                                <div>
-                                    <div class="md:text-2xl text-xl font-semibold text-center">
-                                        <p><span x-text="abroad ? 'CHARGES OUTSIDE INDIA' : 'CHARGES IN INDIA'"></span></p>
+                        </div>
+
+                        <div>
+                            <p class="mt-3 sm:text-xs text-[2.7vw]">Assessment usually takes around is 3 hours.</p>
+                        </div>
+
+                        <div class="sm:flex-row flex justify-center gap-4 sm:pt-5 pt-[3vw] mx-auto">
+                            <button
+                                class="md:mt-1 whitespace-nowrap focus:outline-none hover:scale-105 hover:shadow-2xl hover:bg-light-purple hover:text-light text-white portrait:mt-1 landscape:text-base portrait:text-[3.75vw] md:portrait:text-[1.7vw] portrait:p-[6vw] md:portrait:p-[3vw] landscape:px-6 landscape:py-5 mx-auto transition-transform duration-300 transform bg-dark-purple rounded-full select-none"
+                                @click="showModal = true">
+                                Book a Session
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+        <div class="bg-dark-purple text-slate-100 flex flex-col mx-auto">
+
+
+
+            <div
+                class="landscape:lg:flex-row gap-14 md:px-20 landscape:lg:gap-0 lg:justify-around flex flex-col justify-center py-24 mx-auto">
+
+                <div
+                    class="landscape:w-[50%] landscape:md:px-0 portrait:md:px-32 px-8 w-full mx-auto my-auto leading-relaxed text-left">
+                    <div class=" mx-auto">
+
+                        <div class=" flex w-full mx-auto">
+
+                            <div class=" flex flex-col items-center mx-auto text-left">
+                                <div class="">
+                                    <div class="">
+                                        <img class="w-[15rem] mx-auto" src="./img/couple-counselling.svg" alt="" />
                                     </div>
-            
-                                    <div class="pt-1 pb-2 text-sm font-light text-center">
-                                        <p><span x-text="abroad ? '(Non-students based abroad)' : ''"></span></p>
-                                    </div>
-                                </div>
-            
-                                <div class="py-4 md:py-6 rounded-[30px] md:px-8 px-9 bg-gray-100 shadow-lg flex flex-col mx-auto mt-2 text-dark-purple">
-            
-                                    <div class="md:gap-7 flex flex-row items-center justify-center gap-5 mx-auto">
-            
-                                        <div class=" flex flex-col justify-center gap-1">
-            
-                                            <p class="text-2xl font-semibold">
-                                                <span class="font-mono">₹</span><span x-text="abroad ? '4,400' : '2,200'"></span>
-                                            </p>
-            
-                                            <p class="flex text-xs font-medium">PER SESSION</p>
-            
-                                        </div>
-            
-                                        <div class="w-[1px] h-20 bg-gray-300"></div>
-            
-                                        <div class=" text-base font-semibold text-left whitespace-pre-line">
-                                            <p>Counselling
-                                                Psychologist</p>
-                                        </div>
+
+                                    <div class="md:pt-5 md:pb-10 pt-5 pb-10">
+                                        <p class="text-3xl font-semibold text-center">
+                                            COUPLE'S COUNSELLING
+                                        </p>
                                     </div>
                                 </div>
 
-                                <div class="py-4 md:py-6 rounded-[30px] md:px-8 px-9 bg-gray-100 shadow-lg flex flex-col mx-auto mt-7 text-dark-purple">
-                                
-                                
-                                
-                                    <div class="md:gap-7 flex flex-row items-center justify-center gap-5 mx-auto">
-                                
-                                        <div class=" flex flex-col justify-center gap-1">
-                                
-                                            <p class="text-2xl font-semibold">
-                                                <span class="font-mono">₹</span><span x-text="abroad ? '5,000' : '2,500'"></span>
-                                            </p>
-                                
-                                            <p class="flex text-xs font-medium">PER SESSION</p>
-                                
-                                        </div>
-                                
-                                        <div class="w-[1px] h-20 bg-gray-300"></div>
-                                
-                                        <div class=" text-base font-semibold text-left whitespace-pre-line">
-                                            <p>Clinical
-                                                Psychologist</p>
-                                        </div>
+                                <div class="md:text-base mx-auto my-auto text-sm leading-relaxed text-left">
+                                    <p class="">
+                                        Our Couple’s Counselling sessions empower couples to navigate through open
+                                        dialogue and personal
+                                        growth; enhancing communication and emotional intimacy while also equipping them
+                                        with the skills
+                                        needed for a balanced relationship.
+                                    </p>
+
+                                </div>
+
+                                <div class=" mt-7 flex flex-col text-center">
+                                    <p>For more info visit</p>
+                                    <div class=" flex flex-row gap-4 mx-auto mt-5">
+                                        <button
+                                            class="hover:text-white hover:bg-light-purple text-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 mx-auto text-sm transition bg-gray-100 rounded-full">
+                                            <a rel="noopener" href="#discountPackages">DISCOUNTS</a>
+                                        </button>
+                                        <button
+                                            class="hover:text-white hover:bg-light-purple text-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 mx-auto text-sm transition bg-gray-100 rounded-full">
+                                            <a href="#">THERAPY</a>
+                                        </button>
                                     </div>
                                 </div>
-            
-                                <div>
-                                    <p class="mt-3 text-xs">The duration of one session is 1 hour.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div
+                    class="text-dark-purple landscape:w-auto landscape:lg:w-[40%] flex flex-col justify-center w-full mx-auto">
+
+
+
+                    <div
+                        class="sm:text-base text-dark-purple sm:rounded-[3.75rem] rounded-[15vw] sm:px-10 flex flex-col justify-center mx-auto w-[85vw] py-[7vw] sm:w-auto sm:py-10 text-sm text-center bg-white shadow-2xl">
+
+                        <div>
+                            <div class="text-[4vw] sm:text-xl  font-semibold text-center">
+                                <p><span x-text="abroad ? 'CHARGES OUTSIDE INDIA' : 'CHARGES IN INDIA'"></span></p>
+                            </div>
+
+                            <div class="pt-1 pb-1 sm:text-sm text-[2.75vw] font-light text-center">
+                                <p><span x-text="abroad ? '(Non-students based abroad)' : ''"></span></p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="py-6 sm:py-[1.5rem] rounded-[9vw] sm:rounded-[2.5rem] sm:px-8  bg-gray-100 sm:w-auto w-[83%] shadow-lg flex flex-col mx-auto sm:mt-5 mt-[3vw] text-dark-purple">
+
+                            <h4 class="sm:text-lg text-[3.75vw] sm:pb-4 pb-[3.5vw]  font-semibold">COUNSELLING PACKAGE
+                            </h4>
+
+
+                            <div class="md:gap-7 flex flex-row justify-center gap-5 mx-auto">
+
+                                <div class="flex flex-col font-semibold justify-center sm:gap-1 gap-[1.5vw]">
+
+                                    <p class="sm:text-2xl  text-[5vw] font-semibold">
+                                        <span class="font-mono">₹</span><span
+                                            x-text="abroad ? '4,400' : '2,200'"></span>
+                                    </p>
+
+                                    <p class="sm:text-xs font-medium text-[2.5vw] whitespace-pre-line">INDIVIDUAL
+                                        SESSION</p>
+
                                 </div>
-            
+
+                                <div class="w-[1px] h-16 bg-gray-300"></div>
+
+                                <div class="flex flex-col font-semibold justify-center sm:gap-1 gap-[1.5vw]">
+
+                                    <p class="sm:text-2xl font-semibold text-[5vw]">
+                                        <span class="font-mono">₹</span><span
+                                            x-text="abroad ? '8,000' : '4,000'"></span>
+                                    </p>
+
+                                    <p class="sm:text-xs font-medium text-[2.5vw]">JOINT SESSION</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="mt-3 sm:text-xs text-[2.7vw]">The duration of one session is 1 hour.</p>
+                        </div>
+
+                        <div class="sm:flex-row flex justify-center gap-4 sm:mt-5 mt-[3vw] mx-auto">
+                            <button
+                                class="md:mt-1 whitespace-nowrap focus:outline-none hover:scale-105 hover:shadow-2xl hover:bg-light-purple hover:text-light text-white portrait:mt-1 landscape:text-base portrait:text-[3.75vw] md:portrait:text-[1.7vw] portrait:p-[6vw] md:portrait:p-[3vw] landscape:px-6 landscape:py-5 mx-auto transition-transform duration-300 transform bg-dark-purple rounded-full select-none"
+                                @click="showModal = true">
+                                Book a Session
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+        <div class="bg-mid-purple text-slate-100 flex flex-col mx-auto" id="discountPackages">
+            <div>
+
+
+                <div class="flex flex-col py-24">
+
+                    <div
+                        class="md:text-3xl md:w-[45rem] flex flex-col items-center w-[17rem]   mx-auto text-xl font-semibold ">
+                        <span class="px-4">THERAPY PACKAGES</span>
+                        <p class=" pb-14 mt-5 text-sm font-normal text-center">we can put a description about discounts
+                            here</p>
+
+                    </div>
+
+
+
+
+                    <div class="lg:flex-row gap-14 flex flex-col justify-center mx-auto">
+
+
+                        <div class=" flex justify-center mx-auto">
+
+                            <div
+                                class="sm:text-base text-dark-purple sm:rounded-[3.75rem] rounded-[15vw] sm:px-10 flex flex-col justify-center mx-auto w-[85vw] py-[7vw] sm:w-auto sm:py-10 text-sm text-center bg-white shadow-2xl">
+
+                                <h4 class="sm:text-lg text-[3.75vw] pb-4  font-semibold">COUNSELLING PSYCHOLOGIST</h4>
+
+                                <div
+                                    class="py-[6vw] sm:py-[1rem] rounded-[9vw] sm:rounded-[2.5rem] sm:px-8  bg-mid-purple sm:w-auto w-[83%] shadow-lg flex flex-col mx-auto sm:mt-5 mt-[3vw] text-white">
+
+                                    <p class="sm:text-lg text-[4vw] sm:pb-4 pb-[5vw] font-semibold">PURPLE PACK</p>
+
+                                    <div class="sm:gap-7 flex flex-row items-center justify-center gap-[5vw] mx-auto">
+
+                                        <div
+                                            class="flex flex-col font-semibold sm:text-sm  text-[3.5vw] justify-center sm:gap-1 gap-[1vw]">
+                                            <p
+                                                class=" sm:translate-x-4 sm:-translate-y-8 translate-x-[3vw] -translate-y-[7.5vw] absolute font-semibold opacity-50">
+                                                <span class="font-mono">₹</span><span class="line-through"
+                                                    x-text="abroad ? '4,400' : '2,200'"></span>
+                                            </p>
+                                            <p class="sm:text-2xl  text-[5vw] font-semibold">
+                                                <span class="font-mono">₹</span><span
+                                                    x-text="abroad ? '4,000' : '2,000'"></span>
+                                            </p>
+                                            <div class=" flex flex-col">
+                                                <p class="sm:text-xs font-medium text-[2.75vw]">PER SESSION*</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="w-[1px] h-16 bg-gray-300"></div>
+
+                                        <div class="flex flex-col justify-center gap-1 text-left">
+
+                                            <p
+                                                class="sm:-translate-y-8 sm:translate-x-14 absolute  font-semibold  sm:text-sm  text-[3.5vw] translate-x-[10vw] -translate-y-[7.5vw] opacity-50">
+                                                <span class="font-mono">₹</span>
+                                                <span class=" line-through" x-text="abroad ? '17,600' : '8,800'"></span>
+                                            </p>
+                                            <p class="sm:text-base text-[3.2vw]">Total : <span
+                                                    class="font-mono font-semibold">₹</span>
+                                                <span class=" font-semibold sm:text-base text-[4vw]"
+                                                    x-text="abroad ? '16,000' : '8,000'"></span>**
+                                            </p>
+                                            <p class="sm:text-base  text-[3.2vw]">Pack : <span class="font-semibold">4
+                                                    Sessions</span></p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div
+                                    class="py-[6vw] sm:py-[1rem] rounded-[9vw] sm:rounded-[2.5rem] sm:px-8  bg-dark-purple sm:w-auto w-[83%] shadow-lg flex flex-col mx-auto sm:mt-5 mt-[3vw] text-white">
+
+                                    <p class="sm:text-lg text-[4vw] sm:pb-4 pb-[5vw] font-semibold">VIOLET PACK</p>
+
+                                    <div class="sm:gap-7 flex flex-row items-center justify-center gap-[5vw] mx-auto">
+
+                                        <div
+                                            class="flex flex-col font-semibold sm:text-sm  text-[3.5vw] justify-center sm:gap-1 gap-[1vw]">
+                                            <p
+                                                class="sm:translate-x-4 sm:-translate-y-8 translate-x-[3vw] -translate-y-[7.5vw] absolute font-semibold opacity-50">
+                                                <span class="font-mono">₹</span><span class="line-through"
+                                                    x-text="abroad ? '4,400' : '2,200'"></span>
+                                            </p>
+                                            <p class="sm:text-2xl  text-[5vw] font-semibold">
+                                                <span class="font-mono">₹</span><span
+                                                    x-text="abroad ? '3,850' : '1,925'"></span>
+                                            </p>
+                                            <div class=" flex flex-col">
+                                                <p class="sm:text-xs text-[2.75vw] font-medium">PER SESSION*</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="w-[1px] h-16 bg-gray-300"></div>
+
+                                        <div class="flex flex-col justify-center gap-1 text-left">
+
+                                            <p
+                                                class="sm:-translate-y-8 sm:translate-x-14 absolute  font-semibold  sm:text-sm  text-[3.5vw] translate-x-[10vw] -translate-y-[7.5vw] opacity-50">
+                                                <span class="font-mono">₹</span>
+                                                <span class="line-through" x-text="abroad ? '26,400' : '13,200'"></span>
+                                            </p>
+                                            <p class="sm:text-base text-[3.2vw]">Total : <span
+                                                    class="font-mono font-semibold">₹</span>
+                                                <span class="sm:text-base text-[4vw] font-semibold"
+                                                    x-text="abroad ? '23,100' : '11,550'"></span>**
+                                            </p>
+                                            <p class="sm:text-base  text-[3.2vw]">Pack : <span class="font-semibold">6
+                                                    Sessions</span></p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+
+                                <div>
+                                    <p class="mt-3 text-xs">*Each session is 60mins (1 hour)</p>
+                                    <p class="mt-1 text-xs">**To be paid in full in advance.</p>
+                                </div>
+
                                 <div class="md:flex-row flex justify-center gap-4 pt-5 mx-auto">
                                     <button
-                                        class="md:mt-28 whitespace-nowrap focus:outline-none hover:scale-105 hover:shadow-2xl hover:bg-light-purple hover:text-light text-dark-purple portrait:mt-[13svh] landscape:mt-[12svh] lg:landscape:mt-[13svh] landscape:text-xs lg:landscape:text-base portrait:text-[3.75vw] md:portrait:text-[1.7vw] portrait:p-[6vw] md:portrait:p-[3vw] landscape:px-4 landscape:py-3 lg:landscape:px-6 lg:landscape:py-5 mx-auto transition-transform duration-300 transform bg-white rounded-full select-none"
+                                        class="md:mt-1 whitespace-nowrap focus:outline-none hover:scale-105 hover:shadow-2xl hover:bg-light-purple hover:text-light text-white portrait:mt-1 landscape:text-base portrait:text-[3.75vw] md:portrait:text-[1.7vw] portrait:p-[6vw] md:portrait:p-[3vw] landscape:px-6 landscape:py-5 mx-auto transition-transform duration-300 transform bg-dark-purple rounded-full select-none"
                                         @click="showModal = true">
                                         Book a Session
                                     </button>
@@ -1072,777 +1529,357 @@
                             </div>
                         </div>
 
-                    </div>
 
-                </div>
-            </div>
-        </div>
+                        <div class=" flex justify-center mx-auto">
 
-
-
-
-        <div class="bg-mid-purple text-slate-100 flex flex-col mx-auto">
-            <div x-data="{ abroad: false }">
-
-                <div class="landscape:flex-row landscape:px-24 gap-14 landscape:gap-0 flex flex-col justify-center py-24 mx-auto">
-                
-                    <div class="landscape:w-1/2 portrait:md:px-32 w-full px-10 mx-auto my-auto leading-relaxed text-left">
-                        <div class=" mx-auto">
-                        
-                            <div class="flex w-full mx-auto">
-                        
-                                <div class=" flex flex-col items-center mx-auto text-left">
-                                    <div class="">
-                                        <div class="">
-                                            <img class="w-1/2 mx-auto" src="./img/diagnosis-circle.svg" alt="" />
-                                        </div>
-                        
-                                        <div class="md:pt-5 md:pb-10 pt-5 pb-10">
-                                            <p class="text-3xl font-semibold text-center">
-                                                DIAGNOSIS PRICING
-                                            </p>
-                                        </div>
-                                    </div>
-                        
-                                    <div class="md:text-lg mx-auto my-auto text-sm leading-relaxed text-left">
-                                        <p class="">
-                                            We use standardised tests & assessments and follow the International Classification of Diseases
-                                            (ICD-10) guidelines to give you official diagnoses for mental health disorders.
-                                        </p>
-                        
-                                    </div>
-                        
-                                    <div class=" flex flex-col mt-12 text-center">
-                                        <p>For more info visit</p>
-                                        <div class=" flex flex-row gap-4 mx-auto mt-5">
-                                            <button
-                                                class="hover:text-white hover:bg-light-purple text-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 mx-auto text-sm transition bg-gray-100 rounded-full">
-                                                <a rel="noopener" href="#discountPackages">DISCOUNTS</a>
-                                            </button>
-                                            <button
-                                                class="hover:text-white hover:bg-light-purple text-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 mx-auto text-sm transition bg-gray-100 rounded-full">
-                                                <a href="#">DIAGNOSIS</a>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                
-                
-                    <div class=" text-dark-purple landscape:w-1/2 flex flex-col justify-center w-full px-4 mx-auto">
-                    
-                        <div class="pb-10">
-                            <div class="md:w-[20rem] flex w-2/3 mx-auto font-medium bg-purple-200 border-4 border-purple-200 rounded-full">
-                                <button class="block w-full py-2 text-sm transition rounded-full"
-                                    :class="{ 'bg-white shadow-sm': !abroad, 'hover:text-gray-400': abroad }" @click="abroad = false"
-                                    type="button">
-                                    INDIA
-                                </button>
-                                <button class="block w-full py-2 text-sm transition rounded-full"
-                                    :class="{ 'bg-white shadow-sm': abroad, 'hover:text-gray-400': !abroad }" @click="abroad = true"
-                                    type="button">
-                                    OUTSIDE INDIA
-                                </button>
-                            </div>
-                        </div>
-                    
-                        <div class="md:text-base text-dark-purple rounded-[30px] landscape:px-8 flex flex-col justify-center mx-auto px-6 py-10 text-sm text-center bg-white shadow-2xl">
-                    
-                            <div>
-                                <div class="md:text-2xl text-xl font-semibold text-center">
-                                    <p><span x-text="abroad ? 'CHARGES OUTSIDE INDIA' : 'CHARGES IN INDIA'"></span></p>
-                                </div>
-                    
-                                <div class="pt-1 pb-2 text-sm font-light text-center">
-                                    <p><span x-text="abroad ? '(Non-students based abroad)' : ''"></span></p>
-                                </div>
-                            </div>
-                    
                             <div
-                                class="py-4 md:py-6 rounded-[30px] md:px-8 px-9 bg-gray-100 shadow-lg flex flex-col mx-auto mt-2 text-dark-purple">
-                    
-                                <h4 class="md:text-xl pb-4 text-lg font-semibold">DIAGNOSIS PACKAGE</h4>
-                    
-                    
-                                <div class="md:gap-7 flex flex-row justify-center gap-5 mx-auto">
-                    
-                                    <div class=" flex flex-col justify-center gap-1">
-                    
-                                        <p class="text-2xl font-semibold">
-                                            <span class="font-mono">₹</span><span x-text="abroad ? '20,000' : '10,000'"></span>
-                                        </p>
-                    
-                                        <p class="flex text-xs font-medium">PER DIAGNOSIS</p>
-                    
-                                    </div>
-                    
-                                    <div class="w-[1px] h-20 bg-gray-300"></div>
-                    
-                                    <div>
-                                        <ul class="flex flex-col justify-center gap-2 text-left">
-                    
-                                            <li class=" flex space-x-1">
-                                                <svg class="flex-shrink-0 w-4 h-4 md:w-3 md:h-3 md:mt-[0.3rem] mt-[0.15rem]"
-                                                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                                    viewBox="0 0 20 20">
-                                                    <path
-                                                        d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                                                </svg>
-                                                <span class="text-sm font-medium">
-                                                    Case History
-                                                </span>
-                                            </li>
-                    
-                                            <li class=" flex space-x-1">
-                                                <svg class="flex-shrink-0 w-4 h-4 md:w-3 md:h-3 md:mt-[0.3rem] mt-[0.15rem]"
-                                                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                                    viewBox="0 0 20 20">
-                                                    <path
-                                                        d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                                                </svg>
-                                                <span class="text-sm font-medium">
-                                                    Diagnosis Test
-                                                </span>
-                                            </li>
-                    
-                                            <li class=" flex space-x-1">
-                                                <svg class="flex-shrink-0 w-4 h-4 md:w-3 md:h-3 md:mt-[0.3rem] mt-[0.15rem]"
-                                                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                                    viewBox="0 0 20 20">
-                                                    <path
-                                                        d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                                                </svg>
-                                                <span class="text-sm font-medium">
-                                                    Report
-                                                </span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                    
-                            <div>
-                                <p class="mt-3 text-xs">Assessment usually takes around is 3 hours.</p>
-                            </div>
-                    
-                            <div class="md:flex-row flex justify-center gap-4 pt-5 mx-auto">
-                                <button
-                                    class="md:px-8 md:py-5 whitespace-nowrap bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring hover:bg-light-purple hover:text-light px-8 py-6 mx-auto text-white transition rounded-full select-none">
-                    
-                                    <a class="md:text-lg text-base font-normal" href="#">Book a Session</a>
-                    
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                    
-            </div>
-        </div>
+                                class="sm:text-base text-dark-purple sm:rounded-[3.75rem] rounded-[15vw] sm:px-10 flex flex-col justify-center mx-auto w-[85vw] py-[7vw] sm:w-auto sm:py-10 text-sm text-center bg-white shadow-2xl">
+
+                                <h4 class="sm:text-lg text-[3.75vw] pb-4  font-semibold">CLINICAL PSYCHOLOGIST</h4>
 
 
 
-        <div class="bg-dark-purple text-slate-100 flex flex-col mx-auto">
-            <div x-data="{ abroad: false }">
-        
-        
-                <div
-                    class="landscape:flex-row landscape:px-24 gap-14 landscape:gap-0 flex flex-col justify-center py-24 mx-auto">
-        
-                    <div class="landscape:w-1/2 portrait:md:px-32 w-full px-10 mx-auto my-auto leading-relaxed text-left">
-                        <div class=" mx-auto">
-                        
-                            <div class=" flex w-full mx-auto">
-                        
-                                <div class=" flex flex-col items-center mx-auto text-left">
-                                    <div class="">
-                                        <div class="">
-                                            <img class="w-1/2 mx-auto" src="./img/couple-counselling.svg" alt="" />
-                                        </div>
-                        
-                                        <div class="md:pt-5 md:pb-10 pt-5 pb-10">
-                                            <p class="text-3xl font-semibold text-center">
-                                                COUPLE'S COUNSELLING
+
+                                <div
+                                    class="py-[6vw] sm:py-[1rem] rounded-[9vw] sm:rounded-[2.5rem] sm:px-8  bg-mid-purple sm:w-auto w-[83%] shadow-lg flex flex-col mx-auto sm:mt-5 mt-[3vw] text-white">
+
+                                    <p class="sm:text-lg text-[4vw] sm:pb-4 pb-[5vw] font-semibold">PURPLE PACK</p>
+
+                                    <div class="sm:gap-7 flex flex-row items-center justify-center gap-[5vw] mx-auto">
+
+                                        <div
+                                            class="flex flex-col font-semibold sm:text-sm  text-[3.5vw] justify-center sm:gap-1 gap-[1vw]">
+                                            <p
+                                                class="sm:translate-x-4 sm:-translate-y-8 translate-x-[3vw] -translate-y-[7.5vw] absolute font-semibold opacity-50">
+                                                <span class="font-mono">₹</span><span class="line-through"
+                                                    x-text="abroad ? '5,000' : '2,500'"></span>
                                             </p>
+                                            <p class="sm:text-2xl  text-[5vw] font-semibold">
+                                                <span class="font-mono">₹</span><span
+                                                    x-text="abroad ? '4,500' : '2,250'"></span>
+                                            </p>
+                                            <div class=" flex flex-col">
+                                                <p class="sm:text-xs font-medium text-[2.75vw]">PER SESSION*</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="w-[1px] h-16 bg-gray-300"></div>
+
+                                        <div class="flex flex-col justify-center gap-1 text-left">
+
+                                            <p
+                                                class="sm:-translate-y-8 sm:translate-x-14 absolute  font-semibold  sm:text-sm  text-[3.5vw] translate-x-[10vw] -translate-y-[7.5vw] opacity-50">
+                                                <span class="font-mono">₹</span>
+                                                <span class="line-through" x-text="abroad ? '20,000' : '10,000'"></span>
+                                            </p>
+                                            <p class="sm:text-base text-[3.2vw]">Total : <span
+                                                    class="font-mono font-semibold">₹</span>
+                                                <span class="font-semibold sm:text-base text-[4vw]"
+                                                    x-text="abroad ? '18,000' : '9,000'"></span>**
+                                            </p>
+                                            <p class="sm:text-base  text-[3.2vw]">Pack : <span class="font-semibold">4
+                                                    Sessions</span></p>
                                         </div>
                                     </div>
-                        
-                                    <div class="md:text-lg mx-auto my-auto text-sm leading-relaxed text-left">
-                                        <p class="">
-                                            Our Couple’s Counselling sessions empower couples to navigate through open dialogue and personal
-                                            growth; enhancing communication and emotional intimacy while also equipping them with the skills
-                                            needed for a balanced relationship.
-                                        </p>
-                        
-                                    </div>
-                        
-                                    <div class=" flex flex-col mt-12 text-center">
-                                        <p>For more info visit</p>
-                                        <div class=" flex flex-row gap-4 mx-auto mt-5">
-                                            <button
-                                                class="hover:text-white hover:bg-light-purple text-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 mx-auto text-sm transition bg-gray-100 rounded-full">
-                                                <a rel="noopener" href="#discountPackages">DISCOUNTS</a>
-                                            </button>
-                                            <button
-                                                class="hover:text-white hover:bg-light-purple text-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none px-4 py-2 mx-auto text-sm transition bg-gray-100 rounded-full">
-                                                <a href="#">THERAPY</a>
-                                            </button>
+
+                                </div>
+
+                                <div
+                                    class="py-[6vw] sm:py-[1rem] rounded-[9vw] sm:rounded-[2.5rem] sm:px-8  bg-dark-purple sm:w-auto w-[83%] shadow-lg flex flex-col mx-auto sm:mt-5 mt-[3vw] text-white">
+
+                                    <p class="sm:text-lg text-[4vw] sm:pb-4 pb-[5vw] font-semibold">VIOLET PACK</p>
+
+                                    <div class="sm:gap-7 flex flex-row items-center justify-center gap-[5vw] mx-auto">
+
+                                        <div
+                                            class="flex flex-col font-semibold sm:text-sm  text-[3.5vw] justify-center sm:gap-1 gap-[1vw]">
+                                            <p
+                                                class=" sm:translate-x-4 sm:-translate-y-8 translate-x-[3vw] -translate-y-[7.5vw] absolute font-semibold opacity-50">
+                                                <span class="font-mono">₹</span><span class="line-through"
+                                                    x-text="abroad ? '5,000' : '2,500'"></span>
+                                            </p>
+                                            <p class="sm:text-2xl  text-[5vw] font-semibold">
+                                                <span class="font-mono">₹</span><span
+                                                    x-text="abroad ? '4,375' : '2,188'"></span>
+                                            </p>
+                                            <div class=" flex flex-col">
+                                                <p class="sm:text-xs  text-[2.75vw] font-medium">PER SESSION*</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="w-[1px] h-16 bg-gray-300"></div>
+
+                                        <div class="flex flex-col justify-center gap-1 text-left">
+
+                                            <p
+                                                class="sm:-translate-y-8 sm:translate-x-14 absolute  font-semibold  sm:text-sm  text-[3.5vw] translate-x-[10vw] -translate-y-[7.5vw] opacity-50">
+                                                <span class="font-mono">₹</span>
+                                                <span class="line-through" x-text="abroad ? '30,000' : '15,000'"></span>
+                                            </p>
+                                            <p class="sm:text-base text-[3.2vw]">Total : <span
+                                                    class="font-mono font-semibold">₹</span>
+                                                <span class="sm:text-base text-[4vw] font-semibold"
+                                                    x-text="abroad ? '26,250' : '13,128'"></span>**
+                                            </p>
+                                            <p class="sm:text-base  text-[3.2vw]">Pack : <span class="font-semibold">6
+                                                    Sessions</span></p>
                                         </div>
                                     </div>
+
+                                </div>
+
+
+
+                                <div>
+                                    <p class="mt-3 text-xs">*Each session is 60mins (1 hour)</p>
+                                    <p class="mt-1 text-xs">**To be paid in full in advance.</p>
+                                </div>
+
+                                <div class="md:flex-row flex justify-center gap-4 pt-5 mx-auto">
+                                    <button
+                                        class="md:mt-1 whitespace-nowrap focus:outline-none hover:scale-105 hover:shadow-2xl hover:bg-light-purple hover:text-light text-white portrait:mt-1 landscape:text-base portrait:text-[3.75vw] md:portrait:text-[1.7vw] portrait:p-[6vw] md:portrait:p-[3vw] landscape:px-6 landscape:py-5 mx-auto transition-transform duration-300 transform bg-dark-purple rounded-full select-none"
+                                        @click="showModal = true">
+                                        Book a Session
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
-        
-        
-                    <div class=" text-dark-purple landscape:w-1/2 flex flex-col justify-center w-full px-4 mx-auto">
-                    
-                        <div class="pb-10">
-                            <div class="md:w-[20rem] flex w-2/3 mx-auto font-medium bg-purple-200 border-4 border-purple-200 rounded-full">
-                                <button class="block w-full py-2 text-sm transition rounded-full"
-                                    :class="{ 'bg-white shadow-sm': !abroad, 'hover:text-gray-400': abroad }" @click="abroad = false"
-                                    type="button">
-                                    INDIA
-                                </button>
-                                <button class="block w-full py-2 text-sm transition rounded-full"
-                                    :class="{ 'bg-white shadow-sm': abroad, 'hover:text-gray-400': !abroad }" @click="abroad = true"
-                                    type="button">
-                                    OUTSIDE INDIA
-                                </button>
-                            </div>
-                        </div>
-                    
-                        <div
-                            class="md:text-base text-dark-purple rounded-[30px]  flex flex-col justify-center mx-auto px-6 py-10 text-sm text-center bg-white shadow-2xl">
-                    
-                            <div>
-                                <div class="md:text-2xl text-xl font-semibold text-center">
-                                    <p><span x-text="abroad ? 'CHARGES OUTSIDE INDIA' : 'CHARGES IN INDIA'"></span></p>
-                                </div>
-                    
-                                <div class="pt-1 pb-2 text-sm font-light text-center">
-                                    <p><span x-text="abroad ? '(Non-students based abroad)' : ''"></span></p>
-                                </div>
-                            </div>
-                    
-                            <div
-                                class="py-4 md:py-6 rounded-[30px] md:px-8 px-9 bg-gray-100 shadow-lg flex flex-col mx-auto mt-2 text-dark-purple">
-                    
-                                <h4 class="md:text-xl pb-4 text-lg font-semibold">COUNSELLING PACKAGE</h4>
-                    
-                    
-                                <div class="md:gap-7 flex flex-row justify-center gap-5 mx-auto">
-                    
-                                    <div class=" flex flex-col justify-center gap-1">
-                    
-                                        <p class="text-2xl font-semibold">
-                                            <span class="font-mono">₹</span><span x-text="abroad ? '4,400' : '2,200'"></span>
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="bg-light text-dark-purple flex flex-col">
+            <div>
+                <h2 class="md:text-3xl md:pt-24 pt-16 text-2xl font-semibold text-center">
+                    COMMON QUESTIONS
+                </h2>
+            </div>
+
+            <div class="font-poppins relative justify-center antialiased">
+                <div class="relative flex flex-col justify-center overflow-hidden">
+                    <div class="md:py-20 w-3/4 py-12 mx-auto text-center">
+                        <!-- Accordion component -->
+                        <div class="divide-slate-200 divide-y">
+                            <!-- Accordion item  -->
+                            <div x-data="{ expanded: false }" class="py-4">
+                                <h2>
+                                    <button id="faq-1" type="button"
+                                        class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
+                                        @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faq-1">
+                                        <span>What are the charges?</span>
+
+                                        <img class="shrink-0 h-5 ml-8 transition duration-200 origin-center transform"
+                                            src="./img/drop-arrow.svg" :class="{'!rotate-180': expanded}" />
+                                    </button>
+                                </h2>
+                                <div id="faq-1" role="region" aria-labelledby="faq-1"
+                                    class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-justify transition-all duration-300 ease-in-out"
+                                    :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+                                    <div class="overflow-hidden">
+                                        <p class="whitespace-pre-line">
+                                            Our standard charges are
+                                            Counselling Psychologist - INR2200
+                                            Clinical Psychologist - INR2500
+
+                                            For further details visit our pricing page.
                                         </p>
-                    
-                                        <p class="flex text-xs font-medium">INDIVIDUAL SESSION</p>
-                    
                                     </div>
-                    
-                                    <div class="w-[1px] h-16 bg-gray-300"></div>
-                    
-                                    <div class=" flex flex-col justify-center gap-1">
-                    
-                                        <p class="text-2xl font-semibold">
-                                            <span class="font-mono">₹</span><span x-text="abroad ? '8,000' : '4,000'"></span>
+                                </div>
+                            </div>
+
+                            <!-- Accordion item end -->
+
+                            <div x-data="{ expanded: false }" class="py-4">
+                                <h2>
+                                    <button id="faq-2" type="button"
+                                        class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
+                                        @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faq-2">
+                                        <span>How do I schedule a session?</span>
+
+                                        <img class="shrink-0 h-5 ml-8 transition duration-200 origin-center transform"
+                                            src="./img/drop-arrow.svg" :class="{'!rotate-180': expanded}" />
+                                    </button>
+                                </h2>
+                                <div id="faq-2" role="region" aria-labelledby="faq-2"
+                                    class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-justify transition-all duration-300 ease-in-out"
+                                    :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+                                    <div class="overflow-hidden">
+                                        <p class="whitespace-pre-line">
+                                            You can book a session by messaging us on
+
+                                            WhatsApp (+919205025183)
+                                            Instagram (@thefriendlycouch)
+
+                                            For further details visit our Therapy page.
                                         </p>
-                    
-                                        <p class="flex text-xs font-medium">JOINT SESSION</p>
-                    
                                     </div>
                                 </div>
                             </div>
-                    
-                            <div>
-                                <p class="mt-3 text-xs">The duration of one session is 1 hour.</p>
+
+                            <div x-data="{ expanded: false }" class="py-4">
+                                <h2>
+                                    <button id="faq-3" type="button"
+                                        class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
+                                        @click="expanded = !expanded" :aria-expanded="expanded"
+                                        aria-controls="faq-3-answer">
+                                        <span>Can you help me get diagnosed?</span>
+
+                                        <img class="shrink-0 h-5 ml-8 transition duration-200 origin-center transform"
+                                            src="./img/drop-arrow.svg" :class="{'!rotate-180': expanded}" />
+                                    </button>
+                                </h2>
+                                <div id="faq-3-answer" role="region" aria-labelledby="faq-3"
+                                    class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-justify transition-all duration-300 ease-in-out"
+                                    :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+                                    <div class="overflow-hidden">
+                                        <p class="whitespace-pre-line">
+                                            Yes, the clinical psychologists on our team offer diagnosis/diagnostic
+                                            evaluation.
+
+                                            Please visit our <a href="diagnosis-page-link">Diagnosis Page</a> for more
+                                            information.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                    
-                            <div class="md:flex-row flex justify-center gap-4 pt-5 mx-auto">
-                                <button
-                                    class="md:px-8 md:py-5 whitespace-nowrap bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring hover:bg-light-purple hover:text-light px-8 py-6 mx-auto text-white transition rounded-full select-none">
-                    
-                                    <a class="md:text-lg text-base font-normal" href="#">Book a Session</a>
-                    
-                                </button>
+
+                            <div x-data="{ expanded: false }" class="py-4">
+                                <h2>
+                                    <button id="faq-4" type="button"
+                                        class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
+                                        @click="expanded = !expanded" :aria-expanded="expanded"
+                                        aria-controls="faq-4-answer">
+                                        <span>How many sessions will I need?</span>
+
+                                        <img class="shrink-0 h-5 ml-8 transition duration-200 origin-center transform"
+                                            src="./img/drop-arrow.svg" :class="{'!rotate-180': expanded}" />
+                                    </button>
+                                </h2>
+                                <div id="faq-4-answer" role="region" aria-labelledby="faq-4"
+                                    class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-justify transition-all duration-300 ease-in-out"
+                                    :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+                                    <div class="overflow-hidden">
+                                        <p class="whitespace-pre-line">
+                                            The therapist will recommend a general frequency for the sessions during the
+                                            first
+                                            session on the basis of your concerns.There is no strict frequency you need
+                                            to follow.
+                                            You can take the sessions at a frequency you're comfortable with.
+
+                                            The decision is always yours!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div x-data="{ expanded: false }" class="py-4">
+                                <h2>
+                                    <button id="faq-5" type="button"
+                                        class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
+                                        @click="expanded = !expanded" :aria-expanded="expanded"
+                                        aria-controls="faq-5-answer">
+                                        <span>Are trial/introductory sessions available?</span>
+
+                                        <img class="shrink-0 h-5 ml-8 transition duration-200 origin-center transform"
+                                            src="./img/drop-arrow.svg" :class="{'!rotate-180': expanded}" />
+                                    </button>
+                                </h2>
+                                <div id="faq-5-answer" role="region" aria-labelledby="faq-5"
+                                    class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-justify transition-all duration-300 ease-in-out"
+                                    :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+                                    <div class="overflow-hidden">
+                                        <p class="whitespace-pre-line">
+                                            We don't offer any introductory calls or trial/free sessions as we want to
+                                            compensate
+                                            the therapists fairly for their time and effort in helping people as well as
+                                            for their
+                                            knowledge and expertise. You can have a brief conversation over WhatsApp
+                                            chat/messages
+                                            prior to your first session.
+
+                                            There's no pressure or compulsion to continue taking therapy. The decision
+                                            is always
+                                            yours!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div x-data="{ expanded: false }" class="py-4">
+                                <h2>
+                                    <button id="faq-6" type="button"
+                                        class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
+                                        @click="expanded = !expanded" :aria-expanded="expanded"
+                                        aria-controls="faq-6-answer">
+                                        <span>Do you provide in-person therapy?</span>
+
+                                        <img class="shrink-0 h-5 ml-8 transition duration-200 origin-center transform"
+                                            src="./img/drop-arrow.svg" :class="{'!rotate-180': expanded}" />
+                                    </button>
+                                </h2>
+                                <div id="faq-6-answer" role="region" aria-labelledby="faq-6"
+                                    class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-justify transition-all duration-300 ease-in-out"
+                                    :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+                                    <div class="overflow-hidden">
+                                        <p class="whitespace-pre-line">
+                                            We currently only offer online therapy over audio & video calls.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <!-- End: Accordion component -->
+
+                        <button
+                            class="md:mt-20 md:mb-6 px-14 md:px-12 md:py-5 whitespace-nowrap bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring hover:bg-light-purple text-light hover:text-light py-6 mx-auto mt-16 mb-8 font-medium text-center transition rounded-full select-none">
+                            <a class="md:text-lg text-base font-normal" href="#">FAQ</a>
+                        </button>
                     </div>
                 </div>
-        
-        
             </div>
         </div>
-
-
-        
-
-
-
-
-<div class="bg-mid-purple text-slate-100 flex flex-col mx-auto" id="discountPackages">
-    <div x-data="{ abroad: false }">
-
-
-        <div class="flex flex-col py-24">
-
-            <div
-                class="md:text-3xl md:w-[45rem] flex flex-col items-center w-[17rem]   mx-auto text-xl font-semibold ">
-                <span class="px-4">THERAPY PACKAGES</span>
-                <p class=" pb-14 mt-5 text-sm font-normal text-center">we can put a description about discounts here</p>
-
-            </div>
-
-
-
-
-            <div
-                class="md:flex-row md:items-center portrait:md:gap-4 landscape:gap-24 gap-14 flex flex-col justify-center w-full mx-auto">
-
-
-                <div class="md:w-1/2 md:justify-end flex justify-center w-full mx-auto">
-
-                    <div
-                        class="md:text-base text-dark-purple rounded-[30px] landscape:px-10 flex flex-col justify-center px-6 py-10 text-sm text-center bg-white shadow-2xl">
-
-                        <h4 class="md:text-xl text-lg font-semibold">COUNSELLING PSYCHOLOGIST</h4>
-
-                        <div
-                            class="py-5 md:py-6 rounded-[30px] shadow-lg md:px-8 px-9 bg-mid-purple flex flex-col mx-auto mt-5 text-white">
-
-                            <p class="mb-5 text-xl font-semibold text-center">PURPLE PACK</p>
-
-                            <div class="md:gap-5 flex flex-row justify-center gap-5 mx-auto">
-
-                                <div class="flex flex-col justify-center gap-1">
-                                    <p class=" absolute text-sm font-semibold translate-x-4 -translate-y-8 opacity-50">
-                                        <span class="font-mono">₹</span><span class="line-through"
-                                            x-text="abroad ? '4,400' : '2,200'"></span>
-                                    </p>
-                                    <p class="text-2xl font-semibold">
-                                        <span class="font-mono">₹</span><span
-                                            x-text="abroad ? '4,000' : '2,000'"></span>
-                                    </p>
-                                    <div class=" flex flex-col">
-                                        <p class="text-xs font-medium">PER SESSION*</p>
-                                    </div>
-                                </div>
-
-                                <div class="w-[1px] h-16 bg-gray-300"></div>
-
-                                <div class="flex flex-col justify-center gap-1 text-left">
-
-                                    <p
-                                        class="md:-translate-y-8 text-sm md:translate-x-14 absolute  font-semibold translate-x-[3rem] -translate-y-8 opacity-50">
-                                        <span class="font-mono">₹</span>
-                                        <span class="line-through" x-text="abroad ? '17,600' : '8,800'"></span>
-                                    </p>
-                                    <p class="">Total : <span class="font-mono font-semibold">₹</span>
-                                        <span class="text-base font-semibold"
-                                            x-text="abroad ? '16,000' : '8,000'"></span>**
-                                    </p>
-                                    <p class="">Pack : <span class="font-semibold">4 Sessions</span></p>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div
-                            class="py-5 md:py-6 rounded-[30px] shadow-lg md:px-8 px-9 bg-dark-purple flex flex-col mx-auto mt-5 text-white">
-
-                            <p class="mb-5 text-xl font-semibold text-center">VIOLET PACK</p>
-
-                            <div class="md:gap-5 flex flex-row justify-center gap-5 mx-auto">
-
-                                <div class="flex flex-col justify-center gap-1">
-                                    <p class=" absolute text-sm font-semibold translate-x-4 -translate-y-8 opacity-50">
-                                        <span class="font-mono">₹</span><span class="line-through"
-                                            x-text="abroad ? '4,400' : '2,200'"></span>
-                                    </p>
-                                    <p class="text-2xl font-semibold">
-                                        <span class="font-mono">₹</span><span
-                                            x-text="abroad ? '3,850' : '1,925'"></span>
-                                    </p>
-                                    <div class=" flex flex-col">
-                                        <p class="text-xs font-medium">PER SESSION*</p>
-                                    </div>
-                                </div>
-
-                                <div class="w-[1px] h-16 bg-gray-300"></div>
-
-                                <div class="flex flex-col justify-center gap-1 text-left">
-
-                                    <p
-                                        class="md:-translate-y-8 text-sm md:translate-x-14 absolute  font-semibold translate-x-[3rem] -translate-y-8 opacity-50">
-                                        <span class="font-mono">₹</span>
-                                        <span class="line-through" x-text="abroad ? '26,400' : '13,200'"></span>
-                                    </p>
-                                    <p class="">Total : <span class="font-mono font-semibold">₹</span>
-                                        <span class="text-base font-semibold"
-                                            x-text="abroad ? '23,100' : '11,550'"></span>**
-                                    </p>
-                                    <p class="">Pack : <span class="font-semibold">6 Sessions</span></p>
-                                </div>
-                            </div>
-
-                        </div>
-
-
-
-                        <div>
-                            <p class="mt-3 text-xs">*Each session is 60mins (1 hour)</p>
-                            <p class="mt-1 text-xs">**To be paid in full in advance.</p>
-                        </div>
-
-                        <div class="md:flex-row flex justify-center gap-4 pt-5 mx-auto">
-                            <button
-                                class="md:px-8 md:py-5 whitespace-nowrap bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring hover:bg-light-purple hover:text-light px-8 py-6 mx-auto text-white transition rounded-full select-none">
-
-                                <a class="md:text-lg text-base font-normal" href="#">Book a Session</a>
-
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="md:w-1/2 md:justify-start flex justify-center w-full mx-auto">
-
-                    <div
-                        class="md:text-base text-dark-purple rounded-[30px] landscape:px-10 flex flex-col justify-center px-6 py-10 text-sm text-center bg-white shadow-2xl">
-
-                        <h4 class="md:text-xl text-lg font-semibold">CLINICAL PSYCHOLOGIST</h4>
-
-
-
-
-                        <div
-                            class="py-5 md:py-6 rounded-[30px] shadow-lg md:px-8 px-9 bg-mid-purple flex flex-col mx-auto mt-5 text-white">
-
-                            <p class="mb-5 text-xl font-semibold text-center">PURPLE PACK</p>
-
-                            <div class="md:gap-5 flex flex-row justify-center gap-5 mx-auto">
-
-                                <div class="flex flex-col justify-center gap-1">
-                                    <p class=" absolute text-sm font-semibold translate-x-4 -translate-y-8 opacity-50">
-                                        <span class="font-mono">₹</span><span class="line-through"
-                                            x-text="abroad ? '5,000' : '2,500'"></span>
-                                    </p>
-                                    <p class="text-2xl font-semibold">
-                                        <span class="font-mono">₹</span><span
-                                            x-text="abroad ? '4,500' : '2,250'"></span>
-                                    </p>
-                                    <div class=" flex flex-col">
-                                        <p class="text-xs font-medium">PER SESSION*</p>
-                                    </div>
-                                </div>
-
-                                <div class="w-[1px] h-16 bg-gray-300"></div>
-
-                                <div class="flex flex-col justify-center gap-1 text-left">
-
-                                    <p
-                                        class="md:-translate-y-8 text-sm md:translate-x-14 absolute  font-semibold translate-x-[3rem] -translate-y-8 opacity-50">
-                                        <span class="font-mono">₹</span>
-                                        <span class="line-through" x-text="abroad ? '20,000' : '10,000'"></span>
-                                    </p>
-                                    <p class="">Total : <span class="font-mono font-semibold">₹</span>
-                                        <span class="text-base font-semibold"
-                                            x-text="abroad ? '18,000' : '9,000'"></span>**
-                                    </p>
-                                    <p class="">Pack : <span class="font-semibold">4 Sessions</span></p>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div
-                            class="py-5 md:py-6 rounded-[30px] shadow-lg md:px-8 px-9 bg-dark-purple flex flex-col mx-auto mt-5 text-white">
-
-                            <p class="mb-5 text-xl font-semibold text-center">VIOLET PACK</p>
-
-                            <div class="md:gap-5 flex flex-row justify-center gap-5 mx-auto">
-
-                                <div class="flex flex-col justify-center gap-1">
-                                    <p class=" absolute text-sm font-semibold translate-x-4 -translate-y-8 opacity-50">
-                                        <span class="font-mono">₹</span><span class="line-through"
-                                            x-text="abroad ? '5,000' : '2,500'"></span>
-                                    </p>
-                                    <p class="text-2xl font-semibold">
-                                        <span class="font-mono">₹</span><span
-                                            x-text="abroad ? '4,375' : '2,188'"></span>
-                                    </p>
-                                    <div class=" flex flex-col">
-                                        <p class="text-xs font-medium">PER SESSION*</p>
-                                    </div>
-                                </div>
-
-                                <div class="w-[1px] h-16 bg-gray-300"></div>
-
-                                <div class="flex flex-col justify-center gap-1 text-left">
-
-                                    <p
-                                        class="md:-translate-y-8 text-sm md:translate-x-14 absolute  font-semibold translate-x-[3rem] -translate-y-8 opacity-50">
-                                        <span class="font-mono">₹</span>
-                                        <span class="line-through" x-text="abroad ? '30,000' : '15,000'"></span>
-                                    </p>
-                                    <p class="">Total : <span class="font-mono font-semibold">₹</span>
-                                        <span class="text-base font-semibold"
-                                            x-text="abroad ? '26,250' : '13,128'"></span>**
-                                    </p>
-                                    <p class="">Pack : <span class="font-semibold">6 Sessions</span></p>
-                                </div>
-                            </div>
-
-                        </div>
-
-
-
-                        <div>
-                            <p class="mt-3 text-xs">*Each session is 60mins (1 hour)</p>
-                            <p class="mt-1 text-xs">**To be paid in full in advance.</p>
-                        </div>
-
-                        <div class="md:flex-row flex justify-center gap-4 pt-5 mx-auto">
-                            <button
-                                class="md:px-8 md:py-5 whitespace-nowrap bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring hover:bg-light-purple hover:text-light px-8 py-6 mx-auto text-white transition rounded-full select-none">
-
-                                <a class="md:text-lg text-base font-normal" href="#">Book a Session</a>
-
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-</div>
-        
-
-
-        
-
-
-
-        
-
-        
-
-
-
-
-
-
-
-
-        
-
-        
-
-
-
-
-
-
-
-
-        
-
-
-
-
-
-
-
-        
-
-
-<div class="bg-light text-dark-purple flex flex-col">
-    <div>
-        <h2 class="md:text-3xl md:pt-24 pt-16 text-2xl font-semibold text-center">
-            COMMON QUESTIONS
-        </h2>
-    </div>
-
-    <div class="font-poppins relative justify-center antialiased">
-        <div class="relative flex flex-col justify-center overflow-hidden">
-            <div class="md:py-20 w-3/4 py-12 mx-auto text-center">
-                <!-- Accordion component -->
-                <div class="divide-slate-200 divide-y">
-                    <!-- Accordion item  -->
-                    <div x-data="{ expanded: false }" class="py-4">
-                        <h2>
-                            <button id="faq-1" type="button"
-                                class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
-                                @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faq-1">
-                                <span>What are the charges?</span>
-    
-                                <img class="shrink-0 h-5 ml-8 transition duration-200 origin-center transform"
-                                    src="./img/drop-arrow.svg" :class="{'!rotate-180': expanded}" />
-                            </button>
-                        </h2>
-                        <div id="faq-1" role="region" aria-labelledby="faq-1"
-                            class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-justify transition-all duration-300 ease-in-out"
-                            :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
-                            <div class="overflow-hidden">
-                                <p class="whitespace-pre-line">
-                                    Our standard charges are
-                                    Counselling Psychologist - INR2200
-                                    Clinical Psychologist - INR2500
-    
-                                    For further details visit our pricing page.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <!-- Accordion item end -->
-    
-                    <div x-data="{ expanded: false }" class="py-4">
-                        <h2>
-                            <button id="faq-2" type="button"
-                                class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
-                                @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faq-2">
-                                <span>How do I schedule a session?</span>
-    
-                                <img class="shrink-0 h-5 ml-8 transition duration-200 origin-center transform"
-                                    src="./img/drop-arrow.svg" :class="{'!rotate-180': expanded}" />
-                            </button>
-                        </h2>
-                        <div id="faq-2" role="region" aria-labelledby="faq-2"
-                            class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-justify transition-all duration-300 ease-in-out"
-                            :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
-                            <div class="overflow-hidden">
-                                <p class="whitespace-pre-line">
-                                    You can book a session by messaging us on
-    
-                                    WhatsApp (+919205025183)
-                                    Instagram (@thefriendlycouch)
-    
-                                    For further details visit our Therapy page.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div x-data="{ expanded: false }" class="py-4">
-                        <h2>
-                            <button id="faq-3" type="button"
-                                class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
-                                @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faq-3-answer">
-                                <span>Can you help me get diagnosed?</span>
-    
-                                <img class="shrink-0 h-5 ml-8 transition duration-200 origin-center transform"
-                                    src="./img/drop-arrow.svg" :class="{'!rotate-180': expanded}" />
-                            </button>
-                        </h2>
-                        <div id="faq-3-answer" role="region" aria-labelledby="faq-3"
-                            class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-justify transition-all duration-300 ease-in-out"
-                            :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
-                            <div class="overflow-hidden">
-                                <p class="whitespace-pre-line">
-                                    Yes, the clinical psychologists on our team offer diagnosis/diagnostic evaluation.
-    
-                                    Please visit our <a href="diagnosis-page-link">Diagnosis Page</a> for more information.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div x-data="{ expanded: false }" class="py-4">
-                        <h2>
-                            <button id="faq-4" type="button"
-                                class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
-                                @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faq-4-answer">
-                                <span>How many sessions will I need?</span>
-    
-                                <img class="shrink-0 h-5 ml-8 transition duration-200 origin-center transform"
-                                    src="./img/drop-arrow.svg" :class="{'!rotate-180': expanded}" />
-                            </button>
-                        </h2>
-                        <div id="faq-4-answer" role="region" aria-labelledby="faq-4"
-                            class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-justify transition-all duration-300 ease-in-out"
-                            :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
-                            <div class="overflow-hidden">
-                                <p class="whitespace-pre-line">
-                                    The therapist will recommend a general frequency for the sessions during the first
-                                    session on the basis of your concerns.There is no strict frequency you need to follow.
-                                    You can take the sessions at a frequency you're comfortable with.
-    
-                                    The decision is always yours!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div x-data="{ expanded: false }" class="py-4">
-                        <h2>
-                            <button id="faq-5" type="button"
-                                class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
-                                @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faq-5-answer">
-                                <span>Are trial/introductory sessions available?</span>
-    
-                                <img class="shrink-0 h-5 ml-8 transition duration-200 origin-center transform"
-                                    src="./img/drop-arrow.svg" :class="{'!rotate-180': expanded}" />
-                            </button>
-                        </h2>
-                        <div id="faq-5-answer" role="region" aria-labelledby="faq-5"
-                            class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-justify transition-all duration-300 ease-in-out"
-                            :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
-                            <div class="overflow-hidden">
-                                <p class="whitespace-pre-line">
-                                    We don't offer any introductory calls or trial/free sessions as we want to compensate
-                                    the therapists fairly for their time and effort in helping people as well as for their
-                                    knowledge and expertise. You can have a brief conversation over WhatsApp chat/messages
-                                    prior to your first session.
-    
-                                    There's no pressure or compulsion to continue taking therapy. The decision is always
-                                    yours!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div x-data="{ expanded: false }" class="py-4">
-                        <h2>
-                            <button id="faq-6" type="button"
-                                class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
-                                @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faq-6-answer">
-                                <span>Do you provide in-person therapy?</span>
-    
-                                <img class="shrink-0 h-5 ml-8 transition duration-200 origin-center transform"
-                                    src="./img/drop-arrow.svg" :class="{'!rotate-180': expanded}" />
-                            </button>
-                        </h2>
-                        <div id="faq-6-answer" role="region" aria-labelledby="faq-6"
-                            class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-justify transition-all duration-300 ease-in-out"
-                            :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
-                            <div class="overflow-hidden">
-                                <p class="whitespace-pre-line">
-                                    We currently only offer online therapy over audio & video calls.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End: Accordion component -->
-    
-                <button
-                    class="md:mt-20 md:mb-6 px-14 md:px-12 md:py-5 whitespace-nowrap bg-dark-purple hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring hover:bg-light-purple text-light hover:text-light py-6 mx-auto mt-16 mb-8 font-medium text-center transition rounded-full select-none">
-                    <a class="md:text-lg text-base font-normal" href="#">FAQ</a>
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
 
 
 
