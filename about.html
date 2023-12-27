@@ -34,21 +34,21 @@
 
 <body class=" scroll-smooth mx-auto leading-relaxed">
 
-  <header class="sticky top-0 flex flex-col z-[100] h-[7svh] md:h-14   bg-light drop-shadow-2xl ">
-
+  <header class="sticky top-0 flex flex-col z-[100] h-[7svh] sm:h-14   bg-light drop-shadow-2xl ">
+  
     <div class="absolute top-0">
       <a href="./index.html">
         <button aria-label="Home">
-          <img class="h-[7svh] md:h-14 px-5 " src="./img/logo.svg" alt="Logo">
+          <img class="h-[7svh] sm:h-14 px-5 " src="./img/logo.svg" alt="Logo">
         </button>
       </a>
     </div>
-
-    <div class="absolute md:h-14  h-[7svh]  right-5 cursor-pointer z-[50]  antialiased landscape:hidden"
+  
+    <div class="absolute sm:h-14  h-[7svh]  right-5 cursor-pointer z-[50]  antialiased landscape:hidden"
       id="menuButtonContainer">
-      <button class="h-[7svh] md:h-14 " id="menuButton">
+      <button class="h-[7svh] sm:h-14 " id="menuButton">
         <svg xmlns="http://www.w3.org/2000/svg"
-          class="icon icon-tabler icon-tabler-menu-2 stroke-dark-purple h-[5svh]  md:h-10 transition-transform transform"
+          class="icon icon-tabler icon-tabler-menu-2 stroke-dark-purple h-[5svh]  sm:h-10 transition-transform transform"
           viewBox="0 0 24 24" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
           <line x1="4" y1="6" x2="20" y2="6" />
@@ -57,49 +57,52 @@
         </svg>
       </button>
     </div>
-
+  
+    <!-- Mobile Navigation -->
+  
     <nav class="relative top-0 transform translate-y-[-100%] menudrop landscape:hidden">
       <ul
-        class="md:text-xl bg-dark-purple font-poppins text-light z-20 flex flex-col items-center justify-center h-screen gap-[1vw] text-[4vw] antialiased text-center">
+        class="sm:text-xl bg-dark-purple font-poppins text-light z-20 flex flex-col items-center justify-center h-screen gap-[1vw] text-[4vw] antialiased text-center">
         <li><a href="./index.html">HOME</a></li>
         <li><a href="./about.html">ABOUT</a></li>
         <li><a href="./pricing.html">PRICING</a></li>
-
-        <li class="mt-7 md:mt-10 text-light-purple mb-2 text-xs font-medium">
+  
+        <li class="mt-7 sm:mt-10 text-light-purple mb-2 text-xs font-medium">
           OUR SERVICES
         </li>
-
+  
         <li><a href="./therapy.html">THERAPY</a></li>
         <li><a href="./diagnosis.html">DIAGNOSIS</a></li>
         <li><a href="./couples-counselling.html">COUPLE'S COUNSELLING</a></li>
-        <li class="mt-7 md:mt-10 text-light-purple mb-2 text-xs font-medium">
+        <li class="mt-7 sm:mt-10 text-light-purple mb-2 text-xs font-medium">
           HAVE A QUESTION ?
         </li>
-
+  
         <li><a href="./faq.html">FAQ</a></li>
         <li><a href="./contact.html">CONTACT</a></li>
-
+  
         <li class="mt-10">
         </li>
-
+  
         <li><a href="#">WORKSHOP</a></li>
         <li><a href="./career.html ">CAREER</a></li>
         <li><a href="./test.html ">TEST</a></li>
-
+  
       </ul>
     </nav>
-
+  
+    <!-- Landscape Navigation -->
     <nav class="absolute h-14 right-3 cursor-pointer z-[50] antialiased portrait:hidden text-dark-purple">
       <ul class="flex flex-row flex-wrap items-center w-full">
-
-
+  
+  
         <li class=" relative block">
           <a href="./index.html"
             class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
             <span>Home</span>
           </a>
         </li>
-
+  
         <li class="relative block">
           <a href="./about.html"
             class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
@@ -112,9 +115,9 @@
             <span>Pricing</span>
           </a>
         </li>
-
-
-
+  
+  
+  
         <li class="relative block" x-data="{ showChildren: false, submenuTimeout: null }"
           @click.away="showChildren = false; clearTimeout(submenuTimeout)" @touchstart="showChildren = !showChildren">
           <a href="#"
@@ -166,17 +169,15 @@
             </div>
           </div>
         </li>
-
-
-
-
+  
+  
         <li class="relative block">
           <a href="./faq.html"
             class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
             <span>FAQ</span>
           </a>
         </li>
-
+  
         <li class="relative block">
           <a href="./contact.html"
             class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
@@ -197,7 +198,7 @@
         </li>
       </ul>
     </nav>
-
+  
   </header>
 
     <main>
