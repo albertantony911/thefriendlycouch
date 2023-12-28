@@ -1021,6 +1021,8 @@ input[type="checkbox"]:checked + label .arrow {
   animation: blobber 30s 0s linear infinite, cobler 30s 0s linear infinite alternate;
 }
 
+
+
 .blob:after {
   content: "";
   display: block;
@@ -1035,6 +1037,14 @@ input[type="checkbox"]:checked + label .arrow {
   background-position: center;
   mix-blend-mode: normal;
   animation: blobber 30s 0s ease-in-out infinite, wobbler 15s 0s linear infinite alternate;
+}
+
+.blob-amod:after {
+  background-image: url("../img/co-founder-amod.webp");
+}
+
+.blob-divija:after {
+  background-image: url("../img/founder.webp");
 }
 
 
@@ -1103,7 +1113,6 @@ input[type="checkbox"]:checked + label .arrow {
   bottom: 7px;
   left: 7px;
   background-color: hsl(0, 0%, 100%);
-  background-image: url("../img/founder.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
