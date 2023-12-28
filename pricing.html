@@ -213,7 +213,7 @@
 
         <!-- Hero Section-->
 
-        <div class="text-slate-100 z-10 flex flex-col justify-around text-center">
+        <div id="head" class="text-slate-100 z-10 flex flex-col justify-around text-center">
 
             <div class="h-[50svh] bg-dark-purple ">
 
@@ -225,9 +225,9 @@
             <div class="bg-mid-purple h-[50svh] relative">
 
 
-                <div
-                    class="absolute inset-x-0 top-0 mx-auto  landscape:translate-y-[-90%] portrait:translate-y-[-97%]  w-[80svw] md:w-[45svh]">
-                    <svg data-aos="fade-down" data-aos-delay="250" width="100%" height="100%" viewBox="0 0 1002 976"
+                <div 
+                    class="absolute inset-x-0 top-0 mx-auto  landscape:translate-y-[-90%] portrait:translate-y-[-97%]  portrait:w-[80svw] portrait:sm:w-[50svw] landscape:w-[50svh]">
+                    <svg data-aos="fade-down" data-aos-delay="250" data-aos-once="true" width="100%" height="100%" viewBox="0 0 1002 976"
                         version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                         xml:space="preserve" xmlns:serif="http://www.serif.com/"
                         style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:10;">
@@ -455,19 +455,25 @@
 
                 </div>
 
-                <div data-aos="fade-down" data-aos-delay="250" class=" mt-[8svh]">
-                    <h1 class="md:text-3xl text-2xl font-semibold text-center">
+                <div data-aos="fade-down" data-aos-once="true" data-aos-anchor="#head" >
+                    
+                    <div class="landscape:lg:mt-[8svh] landscape:mt-[-2svh] portrait:sm:mt-[5svh] portrait:mt-[5svh]">
+                        <h1 class=" md:text-3xl landscape:lg:text-3xl landscape:text-sm text-[6vw] portrait:sm:text-[3vw] font-semibold text-center">
                         PRICING
-                    </h1>
+                        </h1>
+                    </div>
 
-                    <div
-                        class="md:w-[20rem] flex w-3/4 mx-auto font-medium bg-purple-200 border-4 border-purple-200 rounded-full text-dark-purple portrait:mt-[7svh] landscape:mt-[5svh] lg:landscape:mt-[4svh]">
-                        <button class="block w-full py-2 text-sm transition rounded-full"
+                    <p class="md:whitespace-normal portrait:text-[3vw] portrait:sm:text-[2vw] landscape:mt-0 landscape:lg:mt-[2svh] portrait:mt-[2svh] portrait:sm:mt-[3svh] lg:portrait:text-[1.75vw] landscape:text-xs lg:landscape:text-lg  font-light leading-relaxed whitespace-pre-line">Finding a therapist can be difficult,
+                        let us do it for you.
+                    </p>
+
+                    <div class="md:w-[20rem] landscape:lg:w-[25rem] landscape:w-[15rem] portrait:w-[70vw] portrait:sm:w-[50vw] flex w-3/4 mx-auto font-medium bg-purple-200 border-4 border-purple-200 rounded-full text-dark-purple portrait:mt-[5svh] landscape:mt-[2svh] lg:landscape:mt-[4svh]">
+                        <button class="landscape:lg:text-base landscape:text-xs portrait:text-[3.5vw] portrait:sm:text-base landscape:lg:py-2 landscape:py-1 block w-full py-2 text-base transition rounded-full"
                             :class="{ 'bg-white shadow-sm': !abroad, 'hover:text-gray-400': abroad }"
                             @click="abroad = false" type="button">
                             INDIA
                         </button>
-                        <button class="block w-full py-2 text-sm transition rounded-full"
+                        <button class="portrait:text-[3.5vw] portrait:sm:text-base landscape:lg:text-base landscape:text-xs landscape:lg:py-2 landscape:py-1 block w-full py-2 text-base transition rounded-full"
                             :class="{ 'bg-white shadow-sm': abroad, 'hover:text-gray-400': !abroad }"
                             @click="abroad = true" type="button">
                             OUTSIDE INDIA
@@ -477,9 +483,8 @@
                 </div>
 
 
-                <div class=" portrait:mt-[7svh] landscape:mt-[3svh] lg:landscape:mt-[10svh] animate-bounce absolute inset-x-0 portrait:w-6 landscape:w-[4svh] lg:landscape:w-7 mx-auto"
-                    data-aos="fade-in" data-aos-delay="250" data-aos-anchor="#hero" data-aos-once="true">
-                    <img class="w-full mx-auto" src="./img/Arrow.svg" alt="" />
+                <div
+                    class="scroll-down landscape:mt-[2svh] landscape:lg:mt-[7svh] portrait:mt-[10vw] portrait:sm:mt-[10vw] landscape:lg:w-5 landscape:w-3 landscape:h-3 portrait:w-[4vw] portrait:h-[4vw] landscape:lg:h-5 portrait:sm:w-[2vw] portrait:sm:h-[2vw] mx-auto inset-x-0">
                 </div>
 
             </div>
