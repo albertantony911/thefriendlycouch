@@ -1245,6 +1245,10 @@ html {
   width: 2vw;
 }
 
+.w-\[35svh\] {
+  width: 35svh;
+}
+
 .min-w-full {
   min-width: 100%;
 }
@@ -3782,6 +3786,26 @@ svg {
     margin-top: 22vw;
   }
 
+  .portrait\:mt-\[60vw\] {
+    margin-top: 60vw;
+  }
+
+  .portrait\:mb-\[10vw\] {
+    margin-bottom: 10vw;
+  }
+
+  .portrait\:mt-\[60svh\] {
+    margin-top: 60svh;
+  }
+
+  .portrait\:mt-\[58svh\] {
+    margin-top: 58svh;
+  }
+
+  .portrait\:mt-\[59svh\] {
+    margin-top: 59svh;
+  }
+
   .portrait\:hidden {
     display: none;
   }
@@ -3996,6 +4020,14 @@ svg {
 
   .portrait\:w-\[15vw\] {
     width: 15vw;
+  }
+
+  .portrait\:w-\[70svh\] {
+    width: 70svh;
+  }
+
+  .portrait\:w-\[35svh\] {
+    width: 35svh;
   }
 
   .portrait\:translate-x-\[13\.18svw\] {
@@ -4225,6 +4257,10 @@ svg {
 
     .portrait\:sm\:mt-\[23svh\] {
       margin-top: 23svh;
+    }
+
+    .portrait\:sm\:mt-\[6svh\] {
+      margin-top: 6svh;
     }
 
     .portrait\:sm\:hidden {
@@ -4521,6 +4557,15 @@ svg {
       font-size: 1rem;
       line-height: 1.5rem;
     }
+
+    .portrait\:sm\:text-\[1vw\] {
+      font-size: 1vw;
+    }
+
+    .portrait\:sm\:text-sm {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
   }
 
   @media (min-width: 768px) {
@@ -4723,6 +4768,18 @@ svg {
     margin-top: 15svh;
   }
 
+  .landscape\:mt-\[58svh\] {
+    margin-top: 58svh;
+  }
+
+  .landscape\:mt-\[56svh\] {
+    margin-top: 56svh;
+  }
+
+  .landscape\:mt-\[8svh\] {
+    margin-top: 8svh;
+  }
+
   .landscape\:hidden {
     display: none;
   }
@@ -4885,6 +4942,10 @@ svg {
 
   .landscape\:w-\[15svh\] {
     width: 15svh;
+  }
+
+  .landscape\:w-\[35svh\] {
+    width: 35svh;
   }
 
   .landscape\:basis-1\/6 {
@@ -5354,6 +5415,18 @@ svg {
   @media (min-width: 1024px) {
     .landscape\:lg\:mt-\[4svh\] {
       margin-top: 4svh;
+    }
+
+    .landscape\:lg\:mt-\[3svh\] {
+      margin-top: 3svh;
+    }
+
+    .landscape\:lg\:mt-\[59svh\] {
+      margin-top: 59svh;
+    }
+
+    .landscape\:lg\:mt-\[58svh\] {
+      margin-top: 58svh;
     }
 
     .landscape\:lg\:h-5 {
