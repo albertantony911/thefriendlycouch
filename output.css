@@ -3020,6 +3020,13 @@ svg {
   }
 }
 
+@media not all and (min-width: 640px) {
+  .max-sm\:my-12 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:mt-10 {
     margin-top: 2.5rem;
