@@ -717,6 +717,11 @@ html {
   margin-bottom: 2.5rem;
 }
 
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 .-mt-1 {
   margin-top: -0.25rem;
 }
@@ -899,6 +904,50 @@ html {
 
 .mt-\[15svh\] {
   margin-top: 15svh;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.mb-auto {
+  margin-bottom: auto;
+}
+
+.mt-\[1rem\] {
+  margin-top: 1rem;
+}
+
+.mt-\[0\.2rem\] {
+  margin-top: 0.2rem;
+}
+
+.mt-\[0\.25rem\] {
+  margin-top: 0.25rem;
+}
+
+.mt-\[0\.3rem\] {
+  margin-top: 0.3rem;
+}
+
+.mt-\[0\.4rem\] {
+  margin-top: 0.4rem;
+}
+
+.mt-\[0\.35rem\] {
+  margin-top: 0.35rem;
+}
+
+.mt-\[0\.38rem\] {
+  margin-top: 0.38rem;
+}
+
+.mb-\[5svh\] {
+  margin-bottom: 5svh;
+}
+
+.mb-\[3svh\] {
+  margin-bottom: 3svh;
 }
 
 .block {
@@ -1272,6 +1321,26 @@ html {
 
 .w-auto {
   width: auto;
+}
+
+.w-\[90\%\] {
+  width: 90%;
+}
+
+.w-\[50\%\] {
+  width: 50%;
+}
+
+.w-\[80\%\] {
+  width: 80%;
+}
+
+.w-\[97\%\] {
+  width: 97%;
+}
+
+.w-\[93\%\] {
+  width: 93%;
 }
 
 .min-w-full {
@@ -1681,6 +1750,36 @@ html {
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
 
+.space-y-\[5\] > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(5 * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(5 * var(--tw-space-y-reverse));
+}
+
+.space-y-\[5svh\] > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(5svh * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(5svh * var(--tw-space-y-reverse));
+}
+
+.space-y-\[3svh\] > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(3svh * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(3svh * var(--tw-space-y-reverse));
+}
+
+.space-y-\[2svh\] > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2svh * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2svh * var(--tw-space-y-reverse));
+}
+
+.space-y-\[1svh\] > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1svh * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1svh * var(--tw-space-y-reverse));
+}
+
 .divide-y > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-y-reverse: 0;
   border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
@@ -1755,6 +1854,22 @@ html {
 
 .rounded-xl {
   border-radius: 0.75rem;
+}
+
+.rounded-\[3\.75vw\] {
+  border-radius: 3.75vw;
+}
+
+.rounded-\[3\.75rem\] {
+  border-radius: 3.75rem;
+}
+
+.rounded-\[10vw\] {
+  border-radius: 10vw;
+}
+
+.rounded-\[12vw\] {
+  border-radius: 12vw;
 }
 
 .rounded-b-\[2rem\] {
@@ -1910,6 +2025,34 @@ html {
 
 .p-8 {
   padding: 2rem;
+}
+
+.p-\[80\%\] {
+  padding: 80%;
+}
+
+.p-\[5vw\] {
+  padding: 5vw;
+}
+
+.p-\[10vw\] {
+  padding: 10vw;
+}
+
+.p-\[15vw\] {
+  padding: 15vw;
+}
+
+.p-\[10\] {
+  padding: 10;
+}
+
+.p-\[10svh\] {
+  padding: 10svh;
+}
+
+.p-\[2svh\] {
+  padding: 2svh;
 }
 
 .px-0 {
@@ -2117,6 +2260,26 @@ html {
   padding-bottom: 7vw;
 }
 
+.py-\[2svh\] {
+  padding-top: 2svh;
+  padding-bottom: 2svh;
+}
+
+.py-\[4svh\] {
+  padding-top: 4svh;
+  padding-bottom: 4svh;
+}
+
+.py-\[5svh\] {
+  padding-top: 5svh;
+  padding-bottom: 5svh;
+}
+
+.py-\[6svh\] {
+  padding-top: 6svh;
+  padding-bottom: 6svh;
+}
+
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -2285,6 +2448,18 @@ html {
   padding-top: 6vw;
 }
 
+.pb-\[2vw\] {
+  padding-bottom: 2vw;
+}
+
+.pb-\[4vw\] {
+  padding-bottom: 4vw;
+}
+
+.pt-\[4vw\] {
+  padding-top: 4vw;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2438,6 +2613,14 @@ html {
 
 .text-\[5\.8vw\] {
   font-size: 5.8vw;
+}
+
+.text-\[3\.3vw\] {
+  font-size: 3.3vw;
+}
+
+.text-\[3\.4vw\] {
+  font-size: 3.4vw;
 }
 
 .font-bold {
@@ -2846,6 +3029,14 @@ svg {
     margin-top: 1.25rem;
   }
 
+  .sm\:mt-\[0\.2rem\] {
+    margin-top: 0.2rem;
+  }
+
+  .sm\:mt-\[0\.25rem\] {
+    margin-top: 0.25rem;
+  }
+
   .sm\:h-10 {
     height: 2.5rem;
   }
@@ -2868,6 +3059,11 @@ svg {
 
   .sm\:w-1\/12 {
     width: 8.333333%;
+  }
+
+  .sm\:w-min {
+    width: -moz-min-content;
+    width: min-content;
   }
 
   .sm\:-translate-y-8 {
@@ -2917,6 +3113,18 @@ svg {
     border-radius: 3.75rem;
   }
 
+  .sm\:p-5 {
+    padding: 1.25rem;
+  }
+
+  .sm\:p-12 {
+    padding: 3rem;
+  }
+
+  .sm\:p-16 {
+    padding: 4rem;
+  }
+
   .sm\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -2952,12 +3160,30 @@ svg {
     padding-bottom: 1rem;
   }
 
+  .sm\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .sm\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
   .sm\:pb-4 {
     padding-bottom: 1rem;
   }
 
   .sm\:pt-5 {
     padding-top: 1.25rem;
+  }
+
+  .sm\:pb-10 {
+    padding-bottom: 2.5rem;
+  }
+
+  .sm\:pb-3 {
+    padding-bottom: 0.75rem;
   }
 
   .sm\:text-2xl {
@@ -5361,6 +5587,10 @@ svg {
       width: 90%;
     }
 
+    .landscape\:md\:w-\[55vw\] {
+      width: 55vw;
+    }
+
     .landscape\:md\:grid-cols-5 {
       grid-template-columns: repeat(5, minmax(0, 1fr));
     }
@@ -5650,6 +5880,20 @@ svg {
 
     .landscape\:lg\:w-4 {
       width: 1rem;
+    }
+
+    .landscape\:lg\:w-\[55vw\] {
+      width: 55vw;
+    }
+
+    .landscape\:lg\:w-min {
+      width: -moz-min-content;
+      width: min-content;
+    }
+
+    .landscape\:lg\:w-max {
+      width: -moz-max-content;
+      width: max-content;
     }
   }
 }
