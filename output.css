@@ -712,6 +712,11 @@ html {
   margin-bottom: auto;
 }
 
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .-mt-1 {
   margin-top: -0.25rem;
 }
@@ -1247,6 +1252,14 @@ html {
 
 .w-\[35svh\] {
   width: 35svh;
+}
+
+.w-\[75\%\] {
+  width: 75%;
+}
+
+.w-\[3\.7vw\] {
+  width: 3.7vw;
 }
 
 .min-w-full {
@@ -2769,8 +2782,21 @@ svg {
 }
 
 @media not all and (min-width: 1280px) {
+  .max-xl\:mb-24 {
+    margin-bottom: 6rem;
+  }
+
+  .max-xl\:bg-mid-purple {
+    --tw-bg-opacity: 1;
+    background-color: rgb(89 63 146 / var(--tw-bg-opacity));
+  }
+
   .max-xl\:py-24 {
     padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .max-xl\:pb-24 {
     padding-bottom: 6rem;
   }
 }
@@ -3188,6 +3214,10 @@ svg {
     width: auto;
   }
 
+  .md\:w-4 {
+    width: 1rem;
+  }
+
   .md\:translate-x-\[-5rem\] {
     --tw-translate-x: -5rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -3598,6 +3628,16 @@ svg {
   .xl\:rounded-s-3xl {
     border-start-start-radius: 1.5rem;
     border-end-start-radius: 1.5rem;
+  }
+
+  .xl\:bg-dark-purple {
+    --tw-bg-opacity: 1;
+    background-color: rgb(70 49 116 / var(--tw-bg-opacity));
+  }
+
+  .xl\:bg-mid-purple {
+    --tw-bg-opacity: 1;
+    background-color: rgb(89 63 146 / var(--tw-bg-opacity));
   }
 
   .xl\:p-20 {
@@ -5535,6 +5575,10 @@ svg {
 
     .landscape\:lg\:w-\[13svh\] {
       width: 13svh;
+    }
+
+    .landscape\:lg\:w-4 {
+      width: 1rem;
     }
   }
 }
