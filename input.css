@@ -19,13 +19,13 @@
 img {
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
-  cursor: pointer;
+  cursor: default;
   backface-visibility: hidden; 
 }
 
 svg {
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
-  cursor: pointer;
+  cursor: default;
   backface-visibility: hidden; 
 }

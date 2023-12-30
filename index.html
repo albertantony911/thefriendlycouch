@@ -4,6 +4,7 @@
     <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="Content-Language" content="en">
       <meta name="description"
         content="Discover a compassionate space for mental health and well-being at The Friendly Couch. Our qualified psychologists offer personalized therapy sessions online to help you navigate life’s challenges, improve relationships, and achieve emotional balance. Find solace and guidance in a non-judgmental and open-minded environment. Schedule your appointment with The Friendly Couch and embark on a path to mental well-being today.">
 
@@ -50,26 +51,116 @@
       <meta name="language" content="en">
 
       <title>The Friendly Couch®</title>
+
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.thefriendlycouch.com/index.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Therapy",
+            "item": "https://www.thefriendlycouch.com/therapy.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Diagnosis",
+            "item": "https://www.thefriendlycouch.com/diagnosis.html"
+          }
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Couple's Counselling",
+            "item": "https://www.thefriendlycouch.com/couples-counselling.html"
+          }
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "About",
+            "item": "https://www.thefriendlycouch.com/about.html"
+          }
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "FAQ",
+            "item": "https://www.thefriendlycouch.com/faq.html"
+          }
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "name": "Contact",
+            "item": "https://www.thefriendlycouch.com/contact.html"
+          }
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "name": "Careers",
+            "item": "https://www.thefriendlycouch.com/career.html"
+          }
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Workshops",
+            "item": "https://www.thefriendlycouch.com/workshop.html"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "url": "https://www.thefriendlycouch.com",
+        "logo": "https://www.thefriendlycouch.com/logo.svg",
+        "name": "The Friendly Couch",
+        "description": "A brief description of your organization.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "123 Main Street",
+          "addressLocality": "Your City",
+          "addressRegion": "New Delhi",
+          "postalCode": "12345",
+          "addressCountry": "India"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91 9205025183",
+          "contactType": "customer service",
+          "email": "info@thefriendlycouch.com"
+        },
+        "sameAs": [
+          "https://www.instagram.com/thefriendlycouch/",
+          "https://in.linkedin.com/company/the-friendly-couch"
+        ]
+      }
+      </script>
+
     </head>
 
   <body class=" scroll-smooth mx-auto leading-relaxed">
 
-    <!-- Header -->
+    <!-- Header Section -->
+    <header class="sticky top-0 flex flex-col z-[100] h-[7svh] sm:h-14 bg-light drop-shadow-2xl">
     
-    <header class="sticky top-0 flex flex-col z-[100] h-[7svh] sm:h-14 bg-light drop-shadow-2xl ">
-    
+      <!-- Logo Section -->
       <div class="absolute top-0">
-        <a href="./index.html">
-          <button aria-label="Home">
-            <img class="h-[7svh] sm:h-14 px-5 " src="./img/logo.svg" alt="Logo">
-          </button>
+        <a class="cursor-pointer" href="./index.html">
+          <img class="cursor-pointer h-[7svh] sm:h-14 px-5" src="./img/logo.svg" alt="Logo" aria-label="Home">
         </a>
       </div>
     
-      <div class="absolute sm:h-14  h-[7svh]  right-5 cursor-pointer z-[50]  antialiased landscape:hidden" id="menuButtonContainer">
-        <button class="h-[7svh] sm:h-14 " id="menuButton">
+      <!-- Menu Button Section -->
+      <div class="absolute sm:h-14 h-[7svh] right-5 cursor-pointer z-[50] antialiased landscape:hidden"
+        id="menuButtonContainer">
+        <button class="h-[7svh] sm:h-14" id="menuButton" aria-label="Toggle Menu">
           <svg xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-menu-2 stroke-dark-purple h-[5svh]  sm:h-10 transition-transform transform"
+            class="icon icon-tabler icon-tabler-menu-2 stroke-dark-purple h-[5svh] sm:h-10 transition-transform transform"
             viewBox="0 0 24 24" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <line x1="4" y1="6" x2="20" y2="6" />
@@ -80,68 +171,75 @@
       </div>
 
       <!-- Mobile Navigation -->
-    
       <nav class="relative top-0 transform translate-y-[-100%] menudrop landscape:hidden">
         <ul
           class="sm:text-xl bg-dark-purple font-poppins text-light z-20 flex flex-col items-center justify-center h-screen gap-[1vw] text-[4vw] antialiased text-center">
+      
+          <!-- Navigation Links -->
           <li><a href="./index.html">HOME</a></li>
           <li><a href="./about.html">ABOUT</a></li>
           <li><a href="./pricing.html">PRICING</a></li>
-    
+      
+          <!-- Services Section -->
           <li class="mt-7 sm:mt-10 text-light-purple mb-2 text-xs font-medium">
             OUR SERVICES
           </li>
-    
           <li><a href="./therapy.html">THERAPY</a></li>
           <li><a href="./diagnosis.html">DIAGNOSIS</a></li>
           <li><a href="./couples-counselling.html">COUPLE'S COUNSELLING</a></li>
+      
+          <!-- Enquiry Section -->
           <li class="mt-7 sm:mt-10 text-light-purple mb-2 text-xs font-medium">
-            HAVE A QUESTION ?
+            HAVE A QUESTION?
           </li>
-    
           <li><a href="./faq.html">FAQ</a></li>
           <li><a href="./contact.html">CONTACT</a></li>
-    
-          <li class="mt-10">
-          </li>
-    
+      
+          <!-- Additional Links -->
+          <li class="mt-10"></li>
           <li><a href="#">WORKSHOP</a></li>
-          <li><a href="./career.html ">CAREER</a></li>
-          <li><a href="./test.html ">TEST</a></li>
-    
+          <li><a href="./career.html">CAREER</a></li>
+          <li><a href="./test.html">TEST</a></li>
+      
         </ul>
       </nav>
     
       <!-- Landscape Navigation -->
-      <nav class="absolute h-14 right-3 cursor-pointer z-[50] antialiased portrait:hidden text-dark-purple">
+      <nav aria-label="Main Navigation"
+        class="absolute h-14 right-3 cursor-pointer z-[50] antialiased portrait:hidden text-dark-purple">
         <ul class="flex flex-row flex-wrap items-center w-full">
-    
-    
-          <li class=" relative block">
+      
+          <!-- Home -->
+          <li class="relative block">
+            <!-- Navigation Link with ARIA Label -->
             <a href="./index.html"
               class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
               <span>Home</span>
             </a>
           </li>
-    
+      
+          <!-- About -->
           <li class="relative block">
+            <!-- Navigation Link with ARIA Label -->
             <a href="./about.html"
               class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
               <span>About</span>
             </a>
           </li>
+      
+          <!-- Pricing -->
           <li class="relative block">
+            <!-- Navigation Link with ARIA Label -->
             <a href="./pricing.html"
               class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
               <span>Pricing</span>
             </a>
           </li>
-    
-    
-    
+      
+          <!-- Our Services with Submenu -->
           <li class="relative block" x-data="{ showChildren: false, submenuTimeout: null }"
             @click.away="showChildren = false; clearTimeout(submenuTimeout)" @touchstart="showChildren = !showChildren">
-            <a href="#"
+            <a href="#" aria-haspopup="true" aria-expanded="false"
               class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer"
               @mouseenter="showChildren = true; clearTimeout(submenuTimeout)"
               @mouseleave="submenuTimeout = setTimeout(() => showChildren = false, 300)">
@@ -154,35 +252,40 @@
               x-transition:enter-start="opacity-0 translate-y-2" x-transition:enter-end="opacity-100 translate-y-0"
               x-transition:leave="transition ease duration-300 transform" x-transition:leave-start="opacity-100 translate-y-0"
               x-transition:leave-end="opacity-0 translate-y-4" style="display: none;" @mouseenter="clearTimeout(submenuTimeout)"
-              @mouseleave="showChildren = false">
+              @mouseleave="showChildren = false" aria-label="Submenu">
               <span class="absolute top-0 left-0 w-4 h-5 ml-6 -mt-1 transform rotate-45 bg-white border"></span>
               <div class="rounded-3xl relative z-10 w-full px-2 py-6 bg-white">
-                <ul class="list-reset">
+                <ul class="list-reset" role="menu">
+                  <!-- Submenu Items -->
                   <li class="relative" x-data="{ showChildren: false }" @mouseenter="showChildren = true"
                     @mouseleave="showChildren = false">
                     <a href="./therapy.html"
-                      class="hover:text-mid-purple hover:no-underline hover:scale-105 flex items-start w-full px-4 pb-5 no-underline transition-all duration-300 transform border-b cursor-pointer">
+                      class="hover:text-mid-purple hover:no-underline hover:scale-105 flex items-start w-full px-4 pb-5 no-underline transition-all duration-300 transform border-b cursor-pointer"
+                      role="menuitem">
                       <span class="flex-1">Therapy</span>
                     </a>
                   </li>
                   <li class="relative" x-data="{ showChildren: false }" @mouseenter="showChildren = true"
                     @mouseleave="showChildren = false">
                     <a href="./diagnosis.html"
-                      class="hover:text-mid-purple hover:no-underline hover:scale-105 flex items-start w-full px-4 py-5 no-underline transition-all duration-300 transform border-b cursor-pointer">
+                      class="hover:text-mid-purple hover:no-underline hover:scale-105 flex items-start w-full px-4 py-5 no-underline transition-all duration-300 transform border-b cursor-pointer"
+                      role="menuitem">
                       <span class="flex-1">Diagnosis</span>
                     </a>
                   </li>
                   <li class="relative" x-data="{ showChildren: false }" @mouseenter="showChildren = true"
                     @mouseleave="showChildren = false">
                     <a href="./couples-counselling.html"
-                      class="hover:text-mid-purple hover:no-underline hover:scale-105 flex items-start w-full px-4 py-5 no-underline transition-all duration-300 transform border-b cursor-pointer">
+                      class="hover:text-mid-purple hover:no-underline hover:scale-105 flex items-start w-full px-4 py-5 no-underline transition-all duration-300 transform border-b cursor-pointer"
+                      role="menuitem">
                       <span class="flex-1">Couple's Counselling</span>
                     </a>
                   </li>
                   <li class="relative" x-data="{ showChildren: false }" @mouseenter="showChildren = true"
                     @mouseleave="showChildren = false">
                     <a href="#"
-                      class="hover:text-mid-purple hover:no-underline hover:scale-105 flex items-start w-full px-4 pt-5 no-underline transition-all duration-300 transform cursor-pointer">
+                      class="hover:text-mid-purple hover:no-underline hover:scale-105 flex items-start w-full px-4 pt-5 no-underline transition-all duration-300 transform cursor-pointer"
+                      role="menuitem">
                       <span class="flex-1">Workshops</span>
                     </a>
                   </li>
@@ -191,32 +294,44 @@
             </div>
           </li>
 
+
     
+          <!-- FAQ -->
           <li class="relative block">
+            <!-- Navigation Link with ARIA Label -->
             <a href="./faq.html"
               class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
               <span>FAQ</span>
             </a>
           </li>
-    
+          
+          <!-- Contact Us -->
           <li class="relative block">
+            <!-- Navigation Link with ARIA Label -->
             <a href="./contact.html"
               class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
               <span>Contact Us</span>
             </a>
           </li>
+          
+          <!-- Career -->
           <li class="relative block">
+            <!-- Navigation Link with ARIA Label -->
             <a href="./career.html"
               class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
               <span>Career(test)</span>
             </a>
           </li>
+          
+          <!-- Test -->
           <li class="relative block">
+            <!-- Navigation Link with ARIA Label -->
             <a href="./test.html"
               class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
               <span>Test(test)</span>
             </a>
           </li>
+        
         </ul>
       </nav>
 
@@ -227,31 +342,37 @@
 
       <div id="hero" class="bg-dark-purple z-10 flex flex-col text-center text-white">
 
-        <!-- comment -->
-        
+        <!-- Flex container for hero content -->
         <div class="h-[53svh] flex flex-col justify-end" data-aos="fade-in" data-aos-delay="250">
+        
+          <!-- Hero title -->
           <h1
-            class="landscape:text-sm portrait:text-[5vw] portrait:sm:text-[3vw] lg:landscape:text-3xl portrait:mb-[0.7svh] landscape:mb-[0.25svh] lg:landscape:mb-[0.5svh] font-semibold text-center">
+            class="landscape:text-sm portrait:text-[5vw] portrait:sm:text-[3vw] lg:landscape:text-3xl portrait:mb-[0.7svh] landscape:mb-[0.25svh] lg:landscape:mb-[0.5svh] font-semibold text-center"
+            aria-label="Main Title">
             You deserve a better you
           </h1>
+        
+          <!-- Subtitle -->
           <h1
-            class="landscape:text-xs  portrait:text-[4vw] portrait:sm:text-[2.5vw] lg:landscape:text-2xl portrait:mb-[3svh] landscape:mb-[2svh] lg:landscape:mb-[3svh] font-semibold text-center">
+            class="landscape:text-xs portrait:text-[4vw] portrait:sm:text-[2.5vw] lg:landscape:text-2xl portrait:mb-[3svh] landscape:mb-[2svh] lg:landscape:mb-[3svh] font-semibold text-center"
+            aria-label="Subtitle">
             We’ll help you get there
           </h1>
-      
+        
+          <!-- Hero description -->
           <h2
-            class="md:whitespace-normal portrait:text-[3vw] portrait:sm:text-[2vw] lg:portrait:text-[1.75vw] landscape:text-xs lg:landscape:text-lg portrait:mb-[27svh] lg:landscape:mb-[29svh] landscape:mb-[31svh] font-light leading-relaxed whitespace-pre-line">
+            class="md:whitespace-normal portrait:text-[3vw] portrait:sm:text-[2vw] lg:portrait:text-[1.75vw] landscape:text-xs lg:landscape:text-lg portrait:mb-[27svh] lg:landscape:mb-[29svh] landscape:mb-[31svh] font-light leading-relaxed whitespace-pre-line"
+            aria-label="Hero Description">
             Finding a therapist can be difficult,
             let us do it for you.
           </h2>
         </div>
       
+        <div class="bg-mid-purple h-[47svh] relative" aria-label="Background Section">
       
-      <!-- Hero illustration section-->
-        <div class="bg-mid-purple h-[47svh] relative">
-      
-          <div class=" flex flex-col items-center mx-auto" data-aos="fade-down" data-aos-duration="700" data-aos-anchor="#hero">
-      
+          <div class="flex flex-col items-center mx-auto" data-aos="fade-down" data-aos-duration="700" data-aos-anchor="#hero">
+            
+            <!-- Clock -->
             <div class="clock -scale-100 absolute lg:landscape:translate-y-[-17.1svh] landscape:translate-y-[-23svh] lg:landscape:translate-x-[7.9svh] landscape:translate-x-[10.55svh] portrait:translate-y-[-28.48svw] portrait:translate-x-[13.18svw] sm:portrait:translate-y-[-20.75svw] sm:portrait:translate-x-[9.7svw]">
               <div class="wrap m-auto overflow-hidden">
                 <span class="hour bg-light-purple absolute shadow-2xl w-[0.3svh] h-[1.5svh] rounded-full m-auto transform origin-top rotate-0"></span>
@@ -261,17 +382,21 @@
               </div>
             </div>
       
-            <div class="absolute translate-y-[-60%] ">
-                <div class="couch">
-                  <img class=" landscape:w-[40svh] lg:landscape:w-[30svh] portrait:w-[50svw] sm:portrait:w-[30svw]" src="./img/couch.svg"
-                    alt="" />
-                </div>
+            <!-- Couch Image -->
+            <div class="absolute translate-y-[-60%]">
+              <div class="couch">
+                <img class="landscape:w-[40svh] lg:landscape:w-[30svh] portrait:w-[50svw] sm:portrait:w-[30svw]"
+                  src="./img/couch.svg" alt="Couch Image" />
+              </div>
             </div>
-                
+            
+            <!-- Room Image -->
             <div class="absolute translate-y-[-70%] translate-x-[3%]">
-              <img class="landscape:w-[60svh] lg:landscape:w-[45svh] portrait:w-[75svw] sm:portrait:w-[55svw]" src="./img/room.svg" alt="" />
+              <img class="landscape:w-[60svh] lg:landscape:w-[45svh] portrait:w-[75svw] sm:portrait:w-[55svw]" src="./img/room.svg"
+                alt="Room Image" />
             </div>
-
+            
+            <!-- Floating 'z' Elements -->
             <div class="-inset-x-0  absolute z-10 w-20 h-20 mx-auto text-white translate-y-[-175%] translate-x-[35%]">
               <span class=" animate-diagonal infinite absolute bottom-0 text-xl opacity-0">z</span>
               <span class=" animate-diagonal infinite absolute bottom-0 text-lg opacity-0" style="animation-delay: 0.4s">z</span>
@@ -285,11 +410,11 @@
           <div x-data="{ showModal: false}">
             <!-- Trigger button -->
             <div data-aos="fade-in" data-aos-delay="250" data-aos-anchor="#hero" data-aos-once="true">
-              <button
-                class="md:mt-28 whitespace-nowrap focus:outline-none hover:scale-105 hover:shadow-2xl hover:bg-light-purple hover:text-light text-dark-purple portrait:mt-[13svh] landscape:mt-[12svh] lg:landscape:mt-[13svh] landscape:text-xs lg:landscape:text-base portrait:text-[3.75vw] sm:portrait:text-[1.7vw] portrait:p-[6vw] sm:portrait:p-[3vw] landscape:px-4 landscape:py-3 lg:landscape:px-6 lg:landscape:py-5 mx-auto transition-transform duration-300 transform bg-white rounded-full select-none"
-                @click="showModal = true">
-                Book a Session
-              </button>
+                <button
+                  class="md:mt-28 whitespace-nowrap focus:outline-none hover:scale-105 hover:shadow-2xl hover:bg-light-purple hover:text-light text-dark-purple portrait:mt-[13svh] landscape:mt-[12svh] lg:landscape:mt-[13svh] landscape:text-xs lg:landscape:text-base portrait:text-[3.75vw] sm:portrait:text-[1.7vw] portrait:p-[6vw] sm:portrait:p-[3vw] landscape:px-4 landscape:py-3 lg:landscape:px-6 lg:landscape:py-5 mx-auto transition-transform duration-300 transform bg-white rounded-full select-none"
+                  @click="showModal = true" aria-haspopup="dialog" aria-expanded="false" aria-controls="modal-content" aria-label="Book a Session">
+                  Book a Session
+                </button>
             </div>
           
           
@@ -345,7 +470,6 @@
           
                   
           
-                <!-- comment -->
           
                   <div class="landscape:max-lg:hidden">
                     <h4 class="mt-[4vw] md:mt-5 md:mb-3 md:text-base mb-[3vw] text-[3vw] font-normal">For more information visit
@@ -1315,7 +1439,7 @@
                     id="faq-1"
                     role="region"
                     aria-labelledby="faq-1"
-                    class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-justify transition-all duration-300 ease-in-out"
+                    class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-left transition-all duration-300 ease-in-out"
                     :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
                   >
                     <div class="overflow-hidden">
@@ -1355,7 +1479,7 @@
                     id="faq-2"
                     role="region"
                     aria-labelledby="faq-2"
-                    class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-justify transition-all duration-300 ease-in-out"
+                    class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-left transition-all duration-300 ease-in-out"
                     :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
                     <div class="overflow-hidden">
                       <p class="whitespace-pre-line">
@@ -1393,7 +1517,7 @@
                     id="faq-3-answer"
                     role="region"
                     aria-labelledby="faq-3"
-                    class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-justify transition-all duration-300 ease-in-out"
+                    class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-left transition-all duration-300 ease-in-out"
                     :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
                   >
                     <div class="overflow-hidden">
@@ -1429,7 +1553,7 @@
                     id="faq-4-answer"
                     role="region"
                     aria-labelledby="faq-4"
-                    class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-justify transition-all duration-300 ease-in-out"
+                    class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-left transition-all duration-300 ease-in-out"
                     :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
                   >
                     <div class="overflow-hidden">
@@ -1465,7 +1589,7 @@
                     id="faq-5-answer"
                     role="region"
                     aria-labelledby="faq-5"
-                    class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-justify transition-all duration-300 ease-in-out"
+                    class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-left transition-all duration-300 ease-in-out"
                     :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
                   >
                     <div class="overflow-hidden">
@@ -1501,7 +1625,7 @@
                     id="faq-6-answer"
                     role="region"
                     aria-labelledby="faq-6"
-                    class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-justify transition-all duration-300 ease-in-out"
+                    class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-left transition-all duration-300 ease-in-out"
                     :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
                   >
                     <div class="overflow-hidden">

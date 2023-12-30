@@ -538,6 +538,40 @@ html {
   --tw-backdrop-sepia:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -609,10 +643,6 @@ html {
   right: 1.25rem;
 }
 
-.right-6 {
-  right: 1.5rem;
-}
-
 .right-7 {
   right: 1.75rem;
 }
@@ -627,10 +657,6 @@ html {
 
 .top-32 {
   top: 8rem;
-}
-
-.top-6 {
-  top: 1.5rem;
 }
 
 .top-7 {
@@ -789,10 +815,6 @@ html {
 
 .mt-16 {
   margin-top: 4rem;
-}
-
-.mt-2 {
-  margin-top: 0.5rem;
 }
 
 .mt-20 {
@@ -1175,10 +1197,6 @@ html {
   width: 90%;
 }
 
-.w-\[95\%\] {
-  width: 95%;
-}
-
 .w-full {
   width: 100%;
 }
@@ -1379,6 +1397,10 @@ html {
   cursor: pointer;
 }
 
+.cursor-grab {
+  cursor: grab;
+}
+
 .select-none {
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -1568,10 +1590,6 @@ html {
 
 .rounded {
   border-radius: 0.25rem;
-}
-
-.rounded-2xl {
-  border-radius: 1rem;
 }
 
 .rounded-3xl {
@@ -1923,11 +1941,6 @@ html {
 .py-7 {
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
-}
-
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 .py-9 {
@@ -2525,14 +2538,14 @@ html {
 img {
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
-  cursor: pointer;
+  cursor: default;
   backface-visibility: hidden;
 }
 
 svg {
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
-  cursor: pointer;
+  cursor: default;
   backface-visibility: hidden;
 }
 
@@ -3103,10 +3116,6 @@ svg {
 
   .md\:p-10 {
     padding: 2.5rem;
-  }
-
-  .md\:p-12 {
-    padding: 3rem;
   }
 
   .md\:p-20 {
@@ -3964,10 +3973,6 @@ svg {
       width: 50%;
     }
 
-    .portrait\:md\:w-\[65\%\] {
-      width: 65%;
-    }
-
     .portrait\:md\:w-\[70svw\] {
       width: 70svw;
     }
@@ -4434,10 +4439,6 @@ svg {
   @media (min-width: 768px) {
     .landscape\:md\:w-1\/2 {
       width: 50%;
-    }
-
-    .landscape\:md\:w-2\/3 {
-      width: 66.666667%;
     }
 
     .landscape\:md\:w-\[18rem\] {
