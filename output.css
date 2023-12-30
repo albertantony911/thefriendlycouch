@@ -897,6 +897,10 @@ html {
   margin-top: 8svh;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .block {
   display: block;
 }
@@ -1207,6 +1211,10 @@ html {
 
 .w-px {
   width: 1px;
+}
+
+.w-\[80\%\] {
+  width: 80%;
 }
 
 .min-w-full {
@@ -1540,6 +1548,11 @@ html {
        column-gap: 1.5rem;
 }
 
+.gap-x-3 {
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
+}
+
 .space-x-3 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.75rem * var(--tw-space-x-reverse));
@@ -1823,6 +1836,11 @@ html {
   padding-right: 0.5rem;
 }
 
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1943,6 +1961,11 @@ html {
   padding-bottom: 1.75rem;
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .py-9 {
   padding-top: 2.25rem;
   padding-bottom: 2.25rem;
@@ -1981,6 +2004,11 @@ html {
 .py-\[7vw\] {
   padding-top: 7vw;
   padding-bottom: 7vw;
+}
+
+.px-44 {
+  padding-left: 11rem;
+  padding-right: 11rem;
 }
 
 .pb-1 {
@@ -2149,6 +2177,10 @@ html {
 
 .pt-\[6vw\] {
   padding-top: 6vw;
+}
+
+.pt-14 {
+  padding-top: 3.5rem;
 }
 
 .text-left {
@@ -2692,6 +2724,10 @@ svg {
     margin-top: 0.25rem;
   }
 
+  .sm\:mt-3 {
+    margin-top: 0.75rem;
+  }
+
   .sm\:h-10 {
     height: 2.5rem;
   }
@@ -3068,6 +3104,10 @@ svg {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -3250,6 +3290,21 @@ svg {
     padding-bottom: 2.25rem;
   }
 
+  .md\:py-14 {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .md\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .md\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
   .md\:pb-0 {
     padding-bottom: 0px;
   }
@@ -3417,6 +3472,14 @@ svg {
     width: 80%;
   }
 
+  .xl\:w-\[60\%\] {
+    width: 60%;
+  }
+
+  .xl\:w-\[65\%\] {
+    width: 65%;
+  }
+
   .xl\:flex-row {
     flex-direction: row;
   }
@@ -3501,6 +3564,16 @@ svg {
   .xl\:py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
+  }
+
+  .xl\:px-60 {
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+
+  .xl\:px-56 {
+    padding-left: 14rem;
+    padding-right: 14rem;
   }
 }
 
@@ -3754,6 +3827,15 @@ svg {
     padding-bottom: 4vw;
   }
 
+  .portrait\:py-\[5vw\] {
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+  }
+
+  .portrait\:text-\[3\.2vw\] {
+    font-size: 3.2vw;
+  }
+
   .portrait\:text-\[3\.75vw\] {
     font-size: 3.75vw;
   }
@@ -3776,6 +3858,18 @@ svg {
 
   .portrait\:text-\[5vw\] {
     font-size: 5vw;
+  }
+
+  .portrait\:text-\[6vw\] {
+    font-size: 6vw;
+  }
+
+  .portrait\:text-\[5\.6vw\] {
+    font-size: 5.6vw;
+  }
+
+  .portrait\:text-\[5\.4vw\] {
+    font-size: 5.4vw;
   }
 
   .portrait\:font-light {
@@ -3932,6 +4026,26 @@ svg {
     .sm\:portrait\:p-\[3vw\] {
       padding: 3vw;
     }
+
+    .sm\:portrait\:px-\[3vw\] {
+      padding-left: 3vw;
+      padding-right: 3vw;
+    }
+
+    .sm\:portrait\:py-\[3vw\] {
+      padding-top: 3vw;
+      padding-bottom: 3vw;
+    }
+
+    .sm\:portrait\:py-\[2vw\] {
+      padding-top: 2vw;
+      padding-bottom: 2vw;
+    }
+
+    .sm\:portrait\:py-\[1vw\] {
+      padding-top: 1vw;
+      padding-bottom: 1vw;
+    }
   }
 }
 
@@ -3971,6 +4085,11 @@ svg {
       font-size: 0.875rem;
       line-height: 1.25rem;
     }
+
+    .portrait\:sm\:text-xs {
+      font-size: 0.75rem;
+      line-height: 1rem;
+    }
   }
 }
 
@@ -3983,6 +4102,13 @@ svg {
 }
 
 @media (orientation: portrait) {
+  @media (min-width: 640px) {
+    .portrait\:sm\:text-2xl {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  }
+
   @media (min-width: 768px) {
     .portrait\:md\:w-1\/3 {
       width: 33.333333%;
