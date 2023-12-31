@@ -34,3 +34,7 @@ svg {
   position: -webkit-sticky;
   position: sticky;
 }
+
+body {
+  overflow: hidden;
+}

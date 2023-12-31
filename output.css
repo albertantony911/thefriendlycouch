@@ -2154,6 +2154,10 @@ html {
   font-size: 3.2vw;
 }
 
+.text-\[3\.4vw\] {
+  font-size: 3.4vw;
+}
+
 .text-\[3\.5vw\] {
   font-size: 3.5vw;
 }
@@ -2172,10 +2176,6 @@ html {
 
 .text-\[3vw\] {
   font-size: 3vw;
-}
-
-.text-\[4\.3vw\] {
-  font-size: 4.3vw;
 }
 
 .text-\[4\.5vw\] {
@@ -2237,10 +2237,6 @@ html {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-\[3\.4vw\] {
-  font-size: 3.4vw;
 }
 
 .font-bold {
@@ -2516,6 +2512,10 @@ svg {
 
 .header {
   position: sticky;
+}
+
+body {
+  overflow: hidden;
 }
 
 .hover\:scale-105:hover {
