@@ -1939,6 +1939,11 @@ html {
   padding-bottom: 4.5vw;
 }
 
+.py-\[4vw\] {
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+}
+
 .py-\[5vw\] {
   padding-top: 5vw;
   padding-bottom: 5vw;
@@ -1957,21 +1962,6 @@ html {
 .py-\[7vw\] {
   padding-top: 7vw;
   padding-bottom: 7vw;
-}
-
-.py-\[2\.8vw\] {
-  padding-top: 2.8vw;
-  padding-bottom: 2.8vw;
-}
-
-.py-\[3vw\] {
-  padding-top: 3vw;
-  padding-bottom: 3vw;
-}
-
-.py-\[4vw\] {
-  padding-top: 4vw;
-  padding-bottom: 4vw;
 }
 
 .pb-1 {
@@ -2518,6 +2508,10 @@ svg {
   touch-action: manipulation;
   cursor: default;
   backface-visibility: hidden;
+}
+
+header {
+  position: sticky;
 }
 
 .hover\:scale-105:hover {

@@ -29,3 +29,8 @@ svg {
   cursor: default;
   backface-visibility: hidden; 
 }
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+}
