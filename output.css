@@ -4350,6 +4350,11 @@ svg {
     background-color: rgb(70 49 116 / var(--tw-bg-opacity));
   }
 
+  .landscape\:bg-mid-purple {
+    --tw-bg-opacity: 1;
+    background-color: rgb(89 63 146 / var(--tw-bg-opacity));
+  }
+
   .landscape\:px-2 {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
