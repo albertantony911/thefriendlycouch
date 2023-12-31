@@ -2239,6 +2239,10 @@ html {
   line-height: 1rem;
 }
 
+.text-\[3\.4vw\] {
+  font-size: 3.4vw;
+}
+
 .font-bold {
   font-weight: 700;
 }
