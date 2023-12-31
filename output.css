@@ -1249,6 +1249,14 @@ html {
   width: 65%;
 }
 
+.w-\[1\/2\] {
+  width: 1/2;
+}
+
+.w-\[60\%\] {
+  width: 60%;
+}
+
 .min-w-full {
   min-width: 100%;
 }
@@ -1699,6 +1707,16 @@ html {
   border-top-right-radius: 2rem;
 }
 
+.rounded-t-\[3\.75rem\] {
+  border-top-left-radius: 3.75rem;
+  border-top-right-radius: 3.75rem;
+}
+
+.rounded-b-\[3\.75rem\] {
+  border-bottom-right-radius: 3.75rem;
+  border-bottom-left-radius: 3.75rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -1781,6 +1799,16 @@ html {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-slate-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+}
+
+.bg-slate-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-75 {
@@ -2057,6 +2085,11 @@ html {
 .px-44 {
   padding-left: 11rem;
   padding-right: 11rem;
+}
+
+.px-32 {
+  padding-left: 8rem;
+  padding-right: 8rem;
 }
 
 .pb-1 {
@@ -2396,6 +2429,10 @@ html {
 
 .text-\[5\.1vw\] {
   font-size: 5.1vw;
+}
+
+.text-\[4\.6vw\] {
+  font-size: 4.6vw;
 }
 
 .font-bold {
@@ -2798,17 +2835,56 @@ svg {
     margin-bottom: 3rem;
   }
 
+  .max-sm\:my-10 {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
   .max-sm\:mt-10 {
     margin-top: 2.5rem;
+  }
+
+  .max-sm\:mt-12 {
+    margin-top: 3rem;
+  }
+
+  .max-sm\:w-\[90\%\] {
+    width: 90%;
+  }
+
+  .max-sm\:w-\[85\%\] {
+    width: 85%;
   }
 
   .max-sm\:whitespace-pre-line {
     white-space: pre-line;
   }
 
+  .max-sm\:rounded-t-\[10vw\] {
+    border-top-left-radius: 10vw;
+    border-top-right-radius: 10vw;
+  }
+
+  .max-sm\:rounded-b-\[10vw\] {
+    border-bottom-right-radius: 10vw;
+    border-bottom-left-radius: 10vw;
+  }
+
   .max-sm\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .max-sm\:text-\[4vw\] {
+    font-size: 4vw;
+  }
+
+  .max-sm\:text-\[2vw\] {
+    font-size: 2vw;
+  }
+
+  .max-sm\:text-\[3vw\] {
+    font-size: 3vw;
   }
 }
 
@@ -2907,6 +2983,10 @@ svg {
 
   .sm\:p-16 {
     padding: 4rem;
+  }
+
+  .sm\:p-5 {
+    padding: 1.25rem;
   }
 
   .sm\:px-10 {
@@ -4003,6 +4083,10 @@ svg {
     padding: 6vw;
   }
 
+  .portrait\:p-5 {
+    padding: 1.25rem;
+  }
+
   .portrait\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -4195,6 +4279,10 @@ svg {
 
 @media (orientation: portrait) {
   @media (min-width: 640px) {
+    .portrait\:sm\:w-1\/3 {
+      width: 33.333333%;
+    }
+
     .portrait\:sm\:translate-x-\[6vw\] {
       --tw-translate-x: 6vw;
       transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -4653,6 +4741,10 @@ svg {
   .landscape\:bg-dark-purple {
     --tw-bg-opacity: 1;
     background-color: rgb(70 49 116 / var(--tw-bg-opacity));
+  }
+
+  .landscape\:p-5 {
+    padding: 1.25rem;
   }
 
   .landscape\:px-2 {
