@@ -2510,7 +2510,7 @@ svg {
   backface-visibility: hidden;
 }
 
-header {
+.header {
   position: sticky;
 }
 

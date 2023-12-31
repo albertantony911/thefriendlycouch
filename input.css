@@ -30,7 +30,7 @@ svg {
   backface-visibility: hidden; 
 }
 
-header {
+.header {
   position: -webkit-sticky;
   position: sticky;
 }
