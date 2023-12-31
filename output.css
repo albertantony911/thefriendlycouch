@@ -1233,6 +1233,10 @@ html {
   width: 50%;
 }
 
+.w-\[100\] {
+  width: 100;
+}
+
 .min-w-full {
   min-width: 100%;
 }
@@ -2781,6 +2785,15 @@ svg {
     margin-top: 3rem;
     margin-bottom: 3rem;
   }
+
+  .max-sm\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
+  .max-sm\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 }
 
 @media (min-width: 640px) {
@@ -3168,6 +3181,10 @@ svg {
 
   .md\:w-\[60\%\] {
     width: 60%;
+  }
+
+  .md\:w-\[15rem\] {
+    width: 15rem;
   }
 
   .md\:translate-x-\[-5rem\] {
@@ -3880,6 +3897,14 @@ svg {
 
   .portrait\:w-\[80svw\] {
     width: 80svw;
+  }
+
+  .portrait\:w-\[75vw\] {
+    width: 75vw;
+  }
+
+  .portrait\:w-\[80vw\] {
+    width: 80vw;
   }
 
   .portrait\:translate-x-\[10vw\] {
