@@ -1,15 +1,4 @@
-const preloader = new Preloader({
-    containerId: 'content', // ID of the container to hide during loading
-  });
 
-  // Start the preloader
-  preloader.show();
-
-  // Wait for the entire page to load
-  window.addEventListener('load', () => {
-    // Hide the preloader
-    preloader.hide();
-  });
 
 window.addEventListener('load', () => {
   AOS.init();
