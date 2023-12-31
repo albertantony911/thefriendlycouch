@@ -1257,6 +1257,10 @@ html {
   width: 60%;
 }
 
+.w-\[25rem\] {
+  width: 25rem;
+}
+
 .min-w-full {
   min-width: 100%;
 }
@@ -4015,6 +4019,10 @@ svg {
     width: 80vw;
   }
 
+  .portrait\:w-full {
+    width: 100%;
+  }
+
   .portrait\:translate-x-\[10vw\] {
     --tw-translate-x: 10vw;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -4410,6 +4418,10 @@ svg {
       width: 100%;
     }
 
+    .portrait\:md\:w-\[45\%\] {
+      width: 45%;
+    }
+
     .portrait\:md\:flex-col {
       flex-direction: column;
     }
@@ -4664,6 +4676,30 @@ svg {
     width: max-content;
   }
 
+  .landscape\:w-\[75\%\] {
+    width: 75%;
+  }
+
+  .landscape\:w-\[35\%\] {
+    width: 35%;
+  }
+
+  .landscape\:w-\[25\%\] {
+    width: 25%;
+  }
+
+  .landscape\:w-\[20\%\] {
+    width: 20%;
+  }
+
+  .landscape\:w-\[80\%\] {
+    width: 80%;
+  }
+
+  .landscape\:w-\[70\%\] {
+    width: 70%;
+  }
+
   .landscape\:basis-1\/6 {
     flex-basis: 16.666667%;
   }
@@ -4844,6 +4880,11 @@ svg {
     line-height: 1rem;
   }
 
+  .landscape\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .landscape\:font-thin {
     font-weight: 100;
   }
@@ -5022,6 +5063,10 @@ svg {
 
     .lg\:landscape\:mt-\[5svh\] {
       margin-top: 5svh;
+    }
+
+    .lg\:landscape\:mt-1 {
+      margin-top: 0.25rem;
     }
   }
 }
