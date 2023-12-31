@@ -46,10 +46,10 @@ function animatedCounter(target, time = 300, start = 0, elementId) {
 }
 
 // Initialize the animated counters
-animatedCounter(8, 100, 0, "counter1");
+animatedCounter(9, 100, 0, "counter1");
 animatedCounter(12, 100, 0, "counter2");
 animatedCounter(2500, 100, 0, "counter3");
-animatedCounter(7000, 100, 0, "counter4");
+animatedCounter(11500, 100, 0, "counter4");
 
 
 
