@@ -1237,6 +1237,18 @@ html {
   width: 100;
 }
 
+.w-32 {
+  width: 8rem;
+}
+
+.w-36 {
+  width: 9rem;
+}
+
+.w-\[65\%\] {
+  width: 65%;
+}
+
 .min-w-full {
   min-width: 100%;
 }
@@ -2790,6 +2802,10 @@ svg {
     margin-top: 2.5rem;
   }
 
+  .max-sm\:whitespace-pre-line {
+    white-space: pre-line;
+  }
+
   .max-sm\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
@@ -3187,6 +3203,10 @@ svg {
     width: 15rem;
   }
 
+  .md\:w-\[50\%\] {
+    width: 50%;
+  }
+
   .md\:translate-x-\[-5rem\] {
     --tw-translate-x: -5rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -3484,6 +3504,14 @@ svg {
 
   .md\:pt-6 {
     padding-top: 1.5rem;
+  }
+
+  .md\:pb-5 {
+    padding-bottom: 1.25rem;
+  }
+
+  .md\:pt-20 {
+    padding-top: 5rem;
   }
 
   .md\:text-left {
