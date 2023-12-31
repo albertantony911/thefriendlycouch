@@ -1959,6 +1959,21 @@ html {
   padding-bottom: 7vw;
 }
 
+.py-\[2\.8vw\] {
+  padding-top: 2.8vw;
+  padding-bottom: 2.8vw;
+}
+
+.py-\[3vw\] {
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+}
+
+.py-\[4vw\] {
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+}
+
 .pb-1 {
   padding-bottom: 0.25rem;
 }
