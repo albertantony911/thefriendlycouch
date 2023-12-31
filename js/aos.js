@@ -1,5 +1,6 @@
 window.addEventListener('load', () => {
-    AOS.init();
+  AOS.init();
+  AOS.refresh();
 });
 
 // You can also pass an optional settings object
