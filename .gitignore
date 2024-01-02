@@ -1,1 +1,11 @@
 node_modules
+
+# Ignore specific JSON files
+package-lock.json
+package.json
+
+# Ignore Tailwind CSS config
+tailwind.config.js
+tailwindcss
+test.html
+input.css
