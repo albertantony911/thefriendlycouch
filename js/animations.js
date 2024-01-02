@@ -34,13 +34,18 @@ AOS.init({
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  const steps = document.querySelectorAll('.color-change');
-  const splide = new Splide('.splide', {
-    type: 'fade',
-    pagination: false,
-    heightRatio: 1,
-    speed: 1000,
-  }).mount();
+  // Check if there are elements with the selector '.splide' on the page
+  const splideElements = document.querySelectorAll('.splide');
+  const shouldInitializeSplide = splideElements.length > 0;
+
+  if (shouldInitializeSplide) {
+    const steps = document.querySelectorAll('.color-change');
+    const splide = new Splide('.splide', {
+      type: 'fade',
+      pagination: false,
+      heightRatio: 1,
+      speed: 1000,
+    }).mount();
 
   let currentIndex = 0;
   let automaticMode = true;
@@ -143,6 +148,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Page is visible again, restart automatic mode
       startAutomaticMode();
     }
-  });
+    });
+  }
 });
 
