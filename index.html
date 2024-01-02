@@ -640,10 +640,10 @@
               <div class="flex justify-center">
                 <svg aria-label="Sun"
                   class="absolute z-20 w-[7.5rem] md:w-[10.5rem] md:h-[10.5rem] md:translate-x-[-5rem] md:translate-y-[3rem] translate-x-[-5rem] translate-y-[4rem] h-[7.5rem]"
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-labelledby="sun-title">
               
-                  <title>Sun Icon</title>
-                  <desc>A stylized representation of the sun with multiple concentric circles.</desc>
+                  <title id="sun-title">Sun Icon</title>
+                  <desc id="sun-desc">A stylized representation of the sun with multiple concentric circles.</desc>
               
                   <defs>
                     <!-- Define the drop shadow filter -->
@@ -652,8 +652,8 @@
                     </filter>
                   </defs>
               
-                  <!-- Sun's center circle -->
-                  <g fill="#FFFFFF" role="img" aria-labelledby="sun-circles">
+                  <!-- Sun's center circle and other circles -->
+                  <g fill="#FFFFFF" aria-labelledby="sun-circles">
                     <circle cx="100" cy="100" r="58" filter="url(#drop-shadow)" data-aos="fade-in" data-aos-delay="700"
                       data-aos-anchor="#inclusivity" aria-labelledby="sun-title" />
                     <circle cx="100" cy="100" r="46" filter="url(#drop-shadow)" data-aos="fade-in" data-aos-delay="500"
@@ -661,11 +661,9 @@
                     <circle cx="100" cy="100" r="34" filter="url(#drop-shadow)" data-aos="fade-in" data-aos-delay="300"
                       data-aos-anchor="#inclusivity" />
                   </g>
-              
-                  <title id="sun-title">Sun Icon</title>
-                  <desc id="sun-desc">A stylized representation of the sun with multiple concentric circles.</desc>
                 </svg>
               </div>
+
 
 
               <svg class="flex" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1366 150" width="100%" height="150"
