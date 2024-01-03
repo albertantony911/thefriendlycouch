@@ -852,8 +852,8 @@
             </div>
           </div>
         
-          <div class="lg:pt-10 landscape:lg:pt-10 landscape:sm:pt-10 w-3/4 pt-10" role="group"
-            aria-labelledby="testimonialContainer">
+          <div id="testimonialContainer" class="lg:pt-10 landscape:lg:pt-10 landscape:sm:pt-10 w-3/4 pt-10" role="group"
+            aria-labelledby="testimonialContent">
             <p id="testimonialContent" class="md:text-lg px-5 py-5 text-sm leading-relaxed text-center" aria-live="polite">
               Thanks to your organization, which understands our Indian culture
               well and comprehends how the lack of awareness and information about
@@ -871,25 +871,10 @@
           <!-- SVG with descriptive title and description -->
           <svg class="max-md:hidden bg-transparent" viewBox="0 0 4000 182" xmlns="http://www.w3.org/2000/svg"
             xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2"
-            aria-hidden="true" role="img">
-            <title>Decorative SVG Shape</title>
-            <desc>Describe the purpose or content of the SVG shape here.</desc>
-            <clipPath id="a">
-              <path d="M0-7.513h4000v174.179H0z" />
-            </clipPath>
-        
-            <defs>
-              <!-- Define the drop shadow filter -->
-              <filter id="drop-shadow" x="-20%" y="-20%" width="140%" height="140%">
-                <feDropShadow dx="0" dy="-3" stdDeviation="20" flood-color="#D1BEF9" flood-opacity="0.7" />
-              </filter>
-            </defs>
-        
-            <g clip-path="url(#a)" filter="url(#drop-shadow)">
-              <path
-                d="M0 46.161s58.361-24.988 104.167-20.833c60.68 5.503 137.5 13.75 259.166 27.916 121.25 13.75 244.584-3.75 365.834 1.25 121.666 4.584 233.333 16.849 354.166 6.849 120.834-9.583 233.334-10.362 354.167-24.946 120.833-14.583 253.333 11.847 375 9.764 121.25-2.083 274.583-5.545 395.833 9.038C2330 69.783 2425 62.828 2545.833 73.244c120.834 10.417 250-29.9 370.834-37.4 120.833-7.917 233.333 17.4 355 4.9 121.25-12.5 232.083 7.589 353.333.923 121.667-7.084 272.917-8.334 333.333 0H4000v133.661H0V46.161Z"
-                style="fill:#ffffff;fill-rule:nonzero" />
-            </g>
+            aria-hidden="false" role="img" aria-labelledby="svgShapeTitle svgShapeDesc">
+            <title id="svgShapeTitle">Decorative SVG Shape</title>
+            <desc id="svgShapeDesc">Describe the purpose or content of the SVG shape here.</desc>
+            ...
           </svg>
         
           <img class="md:hidden" src="./img/white.svg" alt="Decorative white image" aria-hidden="true">
