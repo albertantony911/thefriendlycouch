@@ -96,17 +96,6 @@ function clock() {
     }
 }
 
-// Languages transition start
-
-
-
-
-
-     
-    // Languages transition end
-
-
-
 
 
 // India Map Animation start
@@ -186,26 +175,6 @@ if (mapElement instanceof Element && mapElement.querySelector('svg') instanceof 
     }
      
    });
-
-     var bouncingButton = anime({
-	targets: '.bouncingbutton-m',
-	translateY: '0.3rem',
-	duration: 500,
-	loop: true,
-	direction: 'alternate',
-	easing: 'easeInCubic',
-	scaleY: {
-		value: 0.98,
-		duration: 250,
-		delay: 250
-    },
-    scaleX: {
-		value: 1.01,
-		duration: 250,
-		delay: 250
-    }
-     
-	 });
 
 
 
