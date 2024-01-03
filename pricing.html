@@ -328,21 +328,16 @@
 
         <!-- Hero Section-->
 
-        <div id="head" class="text-slate-100 z-10 flex flex-col justify-around text-center">
+        
 
-            <div class="h-[50svh] bg-dark-purple ">
+        <section id="head" role="banner" aria-labelledby="headLabel" class="text-slate-100 z-10 flex flex-col justify-around text-center">
 
-
-
-
-            </div>
+            <div class="h-[50svh] bg-dark-purple "></div>
 
             <div class="bg-mid-purple h-[50svh] relative">
 
-
-                <div 
-                    class="absolute inset-x-0 top-0 mx-auto  landscape:translate-y-[-90%] portrait:translate-y-[-97%]  portrait:w-[80svw] portrait:sm:w-[50svw] landscape:w-[50svh]">
-                    <svg data-aos="fade-down" data-aos-delay="250" data-aos-once="true" width="100%" height="100%" viewBox="0 0 1002 976"
+                <div class="absolute inset-x-0 top-0 mx-auto  landscape:translate-y-[-90%] portrait:translate-y-[-97%]  portrait:w-[80svw] portrait:sm:w-[50svw] landscape:w-[50svh]">
+                    <svg aria-label="" data-aos="fade-down" data-aos-delay="250" data-aos-once="true" width="100%" height="100%" viewBox="0 0 1002 976"
                         version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                         xml:space="preserve" xmlns:serif="http://www.serif.com/"
                         style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:10;">
@@ -566,29 +561,27 @@
                             </g>
                         </g>
                     </svg>
-
-
                 </div>
 
-                <div data-aos="fade-down" data-aos-once="true" data-aos-anchor="#head" >
+                <div data-aos="fade-down" data-aos-once="true" data-aos-anchor="#head"  role="contentinfo" aria-label="Pricing Section">
                     
                     <div class="landscape:lg:mt-[8svh] landscape:mt-[10svh] portrait:sm:mt-[5svh] portrait:mt-[5svh]">
-                        <h1 class=" md:text-3xl landscape:lg:text-3xl landscape:text-sm text-[6vw] portrait:sm:text-[3vw] font-semibold text-center">
+                        <h1 id="headLabel" class=" md:text-3xl landscape:lg:text-3xl landscape:text-sm text-[6vw] portrait:sm:text-[3vw] font-semibold text-center">
                         PRICING
                         </h1>
                     </div>
 
-                    <p class="md:whitespace-normal portrait:text-[3vw] portrait:sm:text-[2vw] landscape:mt-0 landscape:lg:mt-[2svh] portrait:mt-[2svh] portrait:sm:mt-[3svh] lg:portrait:text-[1.75vw] landscape:text-xs lg:landscape:text-lg  font-light leading-relaxed whitespace-pre-line">Choose your location
+                    <p id="pricingDesc" class="md:whitespace-normal portrait:text-[3vw] portrait:sm:text-[2vw] landscape:mt-0 landscape:lg:mt-[2svh] portrait:mt-[2svh] portrait:sm:mt-[3svh] lg:portrait:text-[1.75vw] landscape:text-xs lg:landscape:text-lg  font-light leading-relaxed whitespace-pre-line">Choose your location
                         for customised pricing.
                     </p>
 
-                    <div class="md:w-[20rem] landscape:lg:w-[25rem] landscape:w-[15rem] portrait:w-[80vw] portrait:sm:w-[50vw] flex w-3/4 mx-auto font-medium bg-purple-200 border-4 border-purple-200 rounded-full text-dark-purple portrait:mt-[5svh] landscape:mt-[2svh] lg:landscape:mt-[4svh]">
-                        <button class="landscape:lg:text-base landscape:text-xs portrait:text-[3.7vw] portrait:sm:text-base landscape:lg:py-2 landscape:py-1 block w-full py-2 text-base transition rounded-full"
+                    <div role="navigation" class="md:w-[20rem] landscape:lg:w-[25rem] landscape:w-[15rem] portrait:w-[80vw] portrait:sm:w-[50vw] flex w-3/4 mx-auto font-medium bg-purple-200 border-4 border-purple-200 rounded-full text-dark-purple portrait:mt-[5svh] landscape:mt-[2svh] lg:landscape:mt-[4svh]">
+                        <button class="landscape:lg:text-base landscape:text-xs portrait:text-[3.7vw] portrait:sm:text-base landscape:lg:py-2 landscape:py-1 block w-full py-2 text-base transition rounded-full" aria-label="Pricing for India"
                             :class="{ 'bg-white shadow-sm': !abroad, 'hover:text-gray-400': abroad }"
                             @click="abroad = false" type="button">
                             INDIA
                         </button>
-                        <button class="portrait:text-[3.7vw] portrait:sm:text-base landscape:lg:text-base landscape:text-xs landscape:lg:py-2 landscape:py-1 block w-full py-2 text-base transition rounded-full"
+                        <button class="portrait:text-[3.7vw] portrait:sm:text-base landscape:lg:text-base landscape:text-xs landscape:lg:py-2 landscape:py-1 block w-full py-2 text-base transition rounded-full" aria-label="Pricing for outside India"
                             :class="{ 'bg-white shadow-sm': abroad, 'hover:text-gray-400': !abroad }"
                             @click="abroad = true" type="button">
                             OUTSIDE INDIA
@@ -603,7 +596,7 @@
                 </div>
 
             </div>
-        </div>
+        </section>
 
 
 

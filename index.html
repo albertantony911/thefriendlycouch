@@ -156,7 +156,7 @@
       <!-- Logo Section -->
       <div class="absolute h-[7svh] sm:h-14 top-0">
         <a class="cursor-pointer" href="./index.html">
-          <img class="px-5 h-[7svh] sm:h-14 cursor-pointer" src="./img/logo.svg" alt="Logo" aria-label="Home">
+          <img class="px-5 h-[7svh] sm:h-14 cursor-pointer" src="./img/logo.svg" alt="The Friendly Couch Logo" aria-label="Home">
         </a>
       </div>
 
@@ -369,14 +369,14 @@
               <div class="absolute translate-y-[-60%]">
                 <div class="couch">
                   <img class="landscape:w-[40svh] lg:landscape:w-[30svh] portrait:w-[50svw] sm:portrait:w-[30svw]"
-                    src="./img/couch.svg" alt="Couch Image" />
+                    src="./img/couch.svg" alt="Bouncing couch illustration" />
                 </div>
               </div>
               
               <!-- Room Image -->
               <div class="absolute translate-y-[-70%] translate-x-[3%]">
                 <img class="landscape:w-[60svh] lg:landscape:w-[45svh] portrait:w-[75svw] sm:portrait:w-[55svw]" src="./img/room.svg"
-                  alt="Room Image" />
+                  alt="Room background of illustration " />
               </div>
               
               <!-- Floating 'z' Elements -->
@@ -405,10 +405,10 @@
                 x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0"
                 x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in duration-200"
                 x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" @click="showModal = false"
-                style="display: none;" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+                style="display: none;" role="dialog" aria-modal="true">
             
                 <div class="landscape:max-lg:mt-[10svh] text-mid-purple rounded-[3rem] w-[85svw] md:w-auto landscape:lg:px-8 md:px-8 landscape:px-5 py-[7vw] landscape:lg:py-9 md:py-9 landscape:py-6 transform bg-white shadow-2xl"
-                  role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+                  role="dialog" aria-modal="true">
                   
                   <!-- Modal Header -->
                   <div class="flex flex-col">
@@ -426,8 +426,8 @@
             
                   <!-- Modal Content -->
                   <div class="md:text-base flex flex-col justify-center mx-auto text-center" role="region" aria-label="Standard Charges">
-                    <h4 id="chargesTitle" class="md:mt-1 text-[3.5vw] landscape:max-lg:hidden md:text-base font-semibold">OUR STANDARD
-                      CHARGES</h4>
+                    <h2 id="chargesTitle" class="md:mt-1 text-[3.5vw] landscape:max-lg:hidden md:text-base font-semibold">OUR STANDARD
+                      CHARGES</h2>
                     <div role="table" aria-labelledby="chargesTitle"
                       class="text-[3vw] landscape:lg:text-base md:text-base landscape:text-[0.8rem] rounded-[5vw] md:rounded-[2.5rem] w-[85%] md:w-auto py-[6vw] landscape:lg:py-7 md:py-7 landscape:py-5 flex flex-row justify-center mx-auto mt-[4vw] landscape:lg:mt-5 md:mt-5 landscape:mt-0 bg-gray-100">
                       <!-- Content of the charges section -->
@@ -517,7 +517,7 @@
                         class="landscape:lg:px-8 landscape:px-6 md:px-8 landscape:lg:py-4 md:py-4 landscape:py-3 whitespace-nowrap hover:scale-105 hover:shadow-lg focus:outline-none  text-white hover:text-white px-[5vw] py-[2.7vw] mx-auto  transition bg-[#25D366] rounded-full select-none"
                         aria-label="WhatsApp">
                         <div class="landscape:lg:gap-3 md:gap-3 landscape:gap-2 flex flex-row gap-[1.5vw] my-auto">
-                          <img class="landscape:lg:w-6 md:w-6 landscape:w-4 w-[4vw]" src="./img/whatsapp-logo.svg" alt="WhatsApp Logo">
+                          <img class="landscape:lg:w-6 md:w-6 landscape:w-4 w-[4vw]" src="./img/whatsapp-logo.svg" alt="WhatsApp Logo White">
                           <a class="landscape:lg:text-lg md:text-lg landscape:text-[0.8rem] my-auto text-[3.4vw] font-semibold"
                             href="https://wa.me/919205025183?text=I%20want%20to%20book%20an%20online%20session.">WhatsApp</a>
                         </div>
@@ -600,7 +600,7 @@
             </p>
           </div>
         
-          <div aria-labelledby="statisticsHeading"
+          <div 
             class="text-dark-purple md:gap-4 flex flex-row flex-wrap justify-center border">
             <!-- Counter 1 -->
             <div class="md:w-1/6 md:border-none md:p-10 sm:gap-8 flex flex-col items-center w-2/4 gap-5 py-12 border">
@@ -1788,7 +1788,7 @@
                 </div>
               </button>
               <!-- WhatsApp Button -->
-              <button role="button" class="bouncingbutton landscape:lg:px-8 landscape:px-6 md:px-8 landscape:lg:py-4 md:py-4 landscape:py-3 whitespace-nowrap hover:scale-105 hover:shadow-lg focus:outline-none  text-white hover:text-white px-[5vw] py-[2.7vw] mx-auto  transition bg-[#25D366] rounded-full select-none">
+              <button role="button" class="bouncingbutton landscape:lg:px-8 landscape:px-6 md:px-8 landscape:lg:py-4 md:py-4 landscape:py-3 whitespace-nowrap hover:scale-105 hover:shadow-lg focus:outline-none  text-white hover:text-white px-[5vw] py-[2.7vw] mx-auto  transition bg-[#2ccb66] rounded-full select-none">
                 <div class="landscape:lg:gap-3 md:gap-3 landscape:gap-2 flex flex-row gap-[1.5vw] my-auto">
                   <img class="landscape:lg:w-6 md:w-6 landscape:w-4 w-[4vw]" src="./img/whatsapp-logo.svg" alt="WhatsApp Logo" aria-hidden="true">
                   <a role="link" class="landscape:lg:text-lg md:text-lg landscape:text-[0.8rem] my-auto text-[3.4vw] font-semibold" href="https://wa.me/919205025183?text=I%20want%20to%20book%20an%20online%20session." aria-label="WhatsApp Number">WhatsApp</a>
@@ -1808,7 +1808,7 @@
               </div>
               <!-- WhatsApp Number -->
               <div class="md:gap-2 flex flex-row gap-1 my-auto">
-                <img class="landscape:lg:w-5 md:w-5 landscape:w-4 w-[3.7vw]" src="./img/whatsapp-logo_green.svg" alt="WhatsApp Logo" aria-hidden="true">
+                <img class="landscape:lg:w-5 md:w-5 landscape:w-4 w-[3.7vw] " src="./img/whatsapp-logo_green.svg" alt="WhatsApp Logo" aria-hidden="true">
                 <a role="link" class="landscape:lg:text-base md:text-lg landscape:text-[0.8rem] my-auto text-[3vw] font-medium" href="tel:+919205025183" aria-label="WhatsApp Contact Number">+91 9205025183</a>
               </div>
             </div>

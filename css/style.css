@@ -1731,6 +1731,21 @@ html {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#32bd65\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(50 189 101 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#29ba5e\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(41 186 94 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#2ccb66\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(44 203 102 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-75 {
   --tw-bg-opacity: 0.75;
 }
