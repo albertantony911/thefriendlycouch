@@ -1037,6 +1037,14 @@ html {
   height: 100vh;
 }
 
+.h-\[100vh\] {
+  height: 100vh;
+}
+
+.h-\[80vh\] {
+  height: 80vh;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -1970,6 +1978,16 @@ html {
 .py-\[7vw\] {
   padding-top: 7vw;
   padding-bottom: 7vw;
+}
+
+.py-44 {
+  padding-top: 11rem;
+  padding-bottom: 11rem;
+}
+
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 .pb-1 {
