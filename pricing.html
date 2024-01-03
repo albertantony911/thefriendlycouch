@@ -2444,61 +2444,76 @@
 
         <!-- FAQ Section-->
         
-        <div class="bg-light text-dark-purple flex flex-col py-20" data-aos="fade-in" data-aos-delay="100" data-aos-once="true">
+        <section role="region" aria-labelledby="faqTitle" class="bg-light md:py-24 text-dark-purple flex flex-col py-20"
+            data-aos="fade-in" data-aos-delay="100" data-aos-once="true">
             <div>
-                <h2 class="md:text-3xl text-2xl font-semibold text-center">
+                <h2 class="md:text-3xl text-2xl font-semibold text-center" id="faqTitle">
                     COMMON QUESTIONS
                 </h2>
             </div>
         
-            <div class="font-poppins relative justify-center antialiased">
+            <div class="relative justify-center antialiased">
                 <div class="relative flex flex-col justify-center overflow-hidden">
-                    <div class="md:pt-16 w-3/4 pt-10 mx-auto text-center">
+                    <div class="md:pt-16 w-3/4 pt-10 mx-auto text-left">
                         <!-- Accordion component -->
                         <div class="divide-slate-200 divide-y">
-                            <!-- Accordion item  -->
+                            <!-- Accordion item 1 -->
                             <div x-data="{ expanded: false }" class="py-4">
+        
                                 <h2>
+        
                                     <button id="faq-1" type="button"
                                         class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
-                                        @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faq-1">
+                                        @click="expanded = !expanded" @keydown.space.prevent="expanded = !expanded"
+                                        @keydown.enter.prevent="expanded = !expanded" :aria-expanded="expanded.toString()"
+                                        aria-controls="faq-1-answer">
+        
                                         <span>What are the charges?</span>
         
                                         <img class="shrink-0 h-5 mb-auto ml-8 transition duration-200 origin-center transform"
-                                            src="./img/drop-arrow.svg" :class="{'!rotate-180': expanded}" />
+                                            src="./img/drop-arrow.svg" alt="Expand or collapse FAQ content" aria-hidden="true"
+                                            :class="{'!rotate-180': expanded}" />
+        
                                     </button>
                                 </h2>
-                                <div id="faq-1" role="region" aria-labelledby="faq-1"
+        
+                                <div id="faq-1-answer" role="region" aria-labelledby="faq-1"
+                                    :aria-hidden="(!expanded).toString()"
                                     class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-left transition-all duration-300 ease-in-out"
                                     :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+        
                                     <div class="overflow-hidden">
+        
                                         <p class="whitespace-pre-line">
-                                            Our standard charges are
-                                            
+                                            Our standard charges are:
+        
                                             Counselling Psychologist - INR2200
                                             Clinical Psychologist - INR2500
         
-                                            For further details visit our pricing page.
-        
+                                            For further details, visit our <a class="underline" href="./pricing.html"
+                                                :tabindex="expanded ? 0 : -1">Pricing page.</a>
                                         </p>
+        
                                     </div>
                                 </div>
                             </div>
         
-                            <!-- Accordion item end -->
-        
+                            <!-- Accordion item 2 -->
                             <div x-data="{ expanded: false }" class="py-4">
                                 <h2>
                                     <button id="faq-2" type="button"
                                         class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
-                                        @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faq-2">
+                                        @click="expanded = !expanded" @keydown.space.prevent="expanded = !expanded"
+                                        @keydown.enter.prevent="expanded = !expanded" :aria-expanded="expanded.toString()"
+                                        aria-controls="faq-2-answer">
                                         <span>How do I schedule a session?</span>
-        
                                         <img class="shrink-0 h-5 mb-auto ml-8 transition duration-200 origin-center transform"
-                                            src="./img/drop-arrow.svg" :class="{'!rotate-180': expanded}" />
+                                            src="./img/drop-arrow.svg" alt="Expand or collapse FAQ content" aria-hidden="true"
+                                            :class="{'!rotate-180': expanded}" />
                                     </button>
                                 </h2>
-                                <div id="faq-2" role="region" aria-labelledby="faq-2"
+                                <div id="faq-2-answer" role="region" aria-labelledby="faq-2"
+                                    :aria-hidden="(!expanded).toString()"
                                     class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-left transition-all duration-300 ease-in-out"
                                     :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
                                     <div class="overflow-hidden">
@@ -2508,223 +2523,272 @@
                                             WhatsApp (+919205025183)
                                             Instagram (@thefriendlycouch)
         
-                                            For further details visit our Therapy page.
-        
+                                            For further details, visit our <a class="underline" href="./therapy.html"
+                                                :tabindex="expanded ? 0 : -1">Therapy page.</a>
                                         </p>
                                     </div>
                                 </div>
                             </div>
         
+                            <!-- Accordion item 3 -->
                             <div x-data="{ expanded: false }" class="py-4">
+        
                                 <h2>
+        
                                     <button id="faq-3" type="button"
                                         class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
-                                        @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faq-3-answer">
+                                        @click="expanded = !expanded" @keydown.space.prevent="expanded = !expanded"
+                                        @keydown.enter.prevent="expanded = !expanded" :aria-expanded="expanded.toString()"
+                                        aria-controls="faq-3-answer">
+        
                                         <span>Can you help me get diagnosed?</span>
         
                                         <img class="shrink-0 h-5 mb-auto ml-8 transition duration-200 origin-center transform"
-                                            src="./img/drop-arrow.svg" :class="{'!rotate-180': expanded}" />
+                                            src="./img/drop-arrow.svg" alt="Expand or collapse FAQ content" aria-hidden="true"
+                                            :class="{'!rotate-180': expanded}" />
+        
                                     </button>
                                 </h2>
+        
                                 <div id="faq-3-answer" role="region" aria-labelledby="faq-3"
+                                    :aria-hidden="(!expanded).toString()" :tabindex="expanded ? 0 : -1"
                                     class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-left transition-all duration-300 ease-in-out"
                                     :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+        
                                     <div class="overflow-hidden">
                                         <p class="whitespace-pre-line">
                                             Yes, the clinical psychologists on our team offer diagnosis/diagnostic evaluation.
         
-                                            Please visit our <a class="underline" href="./diagnosis.html">Diagnosis Page</a> for more information.
+                                            Please visit our<a class="underline" href="./diagnosis.html"
+                                                :tabindex="expanded ? 0 : -1"> Diagnosis Page </a>for more information.
                                         </p>
                                     </div>
                                 </div>
                             </div>
         
+                            <!-- Accordion item 4 -->
                             <div x-data="{ expanded: false }" class="py-4">
+        
                                 <h2>
                                     <button id="faq-4" type="button"
                                         class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
-                                        @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faq-4-answer">
+                                        @click="expanded = !expanded" @keydown.space.prevent="expanded = !expanded"
+                                        @keydown.enter.prevent="expanded = !expanded" :aria-expanded="expanded.toString()"
+                                        aria-controls="faq-4-answer">
+        
                                         <span>How many sessions will I need?</span>
         
                                         <img class="shrink-0 h-5 mb-auto ml-8 transition duration-200 origin-center transform"
-                                            src="./img/drop-arrow.svg" :class="{'!rotate-180': expanded}" />
+                                            src="./img/drop-arrow.svg" alt="Expand or collapse FAQ content" aria-hidden="true"
+                                            :class="{'!rotate-180': expanded}" />
                                     </button>
                                 </h2>
+        
                                 <div id="faq-4-answer" role="region" aria-labelledby="faq-4"
+                                    :aria-hidden="(!expanded).toString()" :tabindex="expanded ? 0 : -1"
                                     class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-left transition-all duration-300 ease-in-out"
                                     :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
-                                    <div class="overflow-hidden">
-                                        <p class=""><br>
-                                            The therapist will recommend an initial session to assess your concerns and discuss a suitable frequency for ongoing sessions. There is no strict schedule you need to adhere to; you are free to choose a session frequency that aligns with your comfort and preferences.
         
+                                    <div class="overflow-hidden">
+        
+                                        <p class=""><br>
+                                            The therapist will recommend an initial session to assess your concerns and discuss
+                                            a suitable frequency for ongoing sessions. There is no strict schedule you need to
+                                            adhere to; you are free to choose a session frequency that aligns with your comfort
+                                            and preferences.
                                         </p>
+        
                                     </div>
                                 </div>
                             </div>
         
+                            <!-- Accordion item 5 -->
                             <div x-data="{ expanded: false }" class="py-4">
+        
                                 <h2>
                                     <button id="faq-5" type="button"
                                         class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
-                                        @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faq-5-answer">
+                                        @click="expanded = !expanded" @keydown.space.prevent="expanded = !expanded"
+                                        @keydown.enter.prevent="expanded = !expanded" :aria-expanded="expanded.toString()"
+                                        aria-controls="faq-5-answer">
+        
                                         <span>Are trial/introductory sessions available?</span>
         
                                         <img class="shrink-0 h-5 mb-auto ml-8 transition duration-200 origin-center transform"
-                                            src="./img/drop-arrow.svg" :class="{'!rotate-180': expanded}" />
+                                            src="./img/drop-arrow.svg" alt="Expand or collapse FAQ content" aria-hidden="true"
+                                            :class="{'!rotate-180': expanded}" />
                                     </button>
                                 </h2>
+        
                                 <div id="faq-5-answer" role="region" aria-labelledby="faq-5"
+                                    :aria-hidden="(!expanded).toString()" :tabindex="expanded ? 0 : -1"
                                     class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-left transition-all duration-300 ease-in-out"
                                     :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+        
                                     <div class="overflow-hidden">
+        
                                         <p class=""><br>
-                                            We do not provide introductory calls or trial/free sessions to ensure fair compensation for the therapists' time, effort, and expertise in assisting individuals. However, you are welcome to engage in a brief conversation via WhatsApp chat/messages before scheduling your first session.
-        
-                                            Feel free to explore this opportunity without any pressure or obligation to continue with therapy. The decision to proceed is entirely yours.
-        
+                                            We do not provide introductory calls or trial/free sessions to ensure fair
+                                            compensation for the therapists' time, effort, and expertise in assisting
+                                            individuals. However, you are welcome to engage in a brief conversation via WhatsApp
+                                            chat/messages before scheduling your first session. Feel free to explore this
+                                            opportunity without any pressure or obligation to continue with therapy. The
+                                            decision to proceed is entirely yours.
                                         </p>
+        
                                     </div>
                                 </div>
                             </div>
         
+                            <!-- Accordion item 6 -->
                             <div x-data="{ expanded: false }" class="py-4">
+        
                                 <h2>
                                     <button id="faq-6" type="button"
                                         class="md:text-lg flex items-center justify-between w-full text-sm font-medium text-left"
-                                        @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faq-6-answer">
+                                        @click="expanded = !expanded" @keydown.space.prevent="expanded = !expanded"
+                                        @keydown.enter.prevent="expanded = !expanded" :aria-expanded="expanded.toString()"
+                                        aria-controls="faq-6-answer">
+        
                                         <span>Do you provide in-person therapy?</span>
         
                                         <img class="shrink-0 h-5 mb-auto ml-8 transition duration-200 origin-center transform"
-                                            src="./img/drop-arrow.svg" :class="{'!rotate-180': expanded}" />
+                                            src="./img/drop-arrow.svg" alt="Expand or collapse FAQ content" aria-hidden="true"
+                                            :class="{'!rotate-180': expanded}" />
                                     </button>
                                 </h2>
+        
                                 <div id="faq-6-answer" role="region" aria-labelledby="faq-6"
+                                    :aria-hidden="(!expanded).toString()" :tabindex="expanded ? 0 : -1"
                                     class="md:text-base lg:text-sm grid overflow-hidden text-sm leading-relaxed text-left transition-all duration-300 ease-in-out"
                                     :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+        
                                     <div class="overflow-hidden">
+        
                                         <p class=""><br>
                                             We currently only offer online therapy over audio & video calls.
-        
                                         </p>
+        
                                     </div>
                                 </div>
                             </div>
+        
                         </div>
-                       
+                        <!-- End: Accordion component -->
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
 
-    <!-- Contact Section -->
-    <section class="xl:flex-row bg-dark-purple xl:px-32 xl:py-20 shadow-3xl flex flex-col" role="region"
-        aria-labelledby="contactSectionHeading">
-        <!-- Contact Information Section -->
-        <div class="xl:w-1/2 bg-mid-purple max-xl:pb-24 xl:rounded-s-3xl flex flex-col justify-center w-full pb-10 mx-auto"
-            data-aos="fade-in" data-aos-delay="200" data-aos-once="true">
-            <h3 id="contactSectionHeading"
-                class="md:text-3xl landscape:lg:text-3xl landscape:text-sm text-[6vw] portrait:sm:text-[3vw] font-semibold mt-20 landscape:mt-0 mb-10 text-white text-center"
-                aria-label="Get in touch with us">GET IN TOUCH WITH US</h3>
-            <img class="mt-5 xl:w-[20rem] w-2/3 md:w-1/3 mx-auto" src="./img/contact_hero.svg"
-                alt="Image representing contact" aria-hidden="true">
-            <div class="md:gap-10 xl:gap-5 flex flex-row justify-center gap-4 pt-10 mx-auto">
-                <!-- Instagram Button -->
-                <button role="button"
-                    class="bouncingbutton landscape:lg:px-8 landscape:px-6 md:px-8 landscape:lg:py-4 md:py-4 landscape:py-3 whitespace-nowrap hover:scale-105 hover:shadow-lg focus:outline-none hover:text-white px-[5vw] py-[2.7vw] mx-auto text-white transition rounded-full shadow-lg select-none"
-                    style="background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);">
-                    <div class="landscape:lg:gap-3 md:gap-3 landscape:gap-2 flex flex-row gap-[1.5vw] my-auto">
-                        <img class="landscape:lg:w-6 md:w-6 landscape:w-4 w-[5vw]" src="./img/instagram-logo.svg"
+        <!-- Contact Section -->
+        <section class="xl:flex-row bg-dark-purple xl:px-32 xl:py-20 shadow-3xl flex flex-col" role="region"
+            aria-labelledby="contactSectionHeading">
+            <!-- Contact Information Section -->
+            <div class="xl:w-1/2 bg-mid-purple max-xl:pb-24 xl:rounded-s-3xl flex flex-col justify-center w-full pb-10 mx-auto"
+                data-aos="fade-in" data-aos-delay="200" data-aos-once="true">
+                <h3 id="contactSectionHeading"
+                    class="md:text-3xl landscape:lg:text-3xl landscape:text-sm text-[6vw] portrait:sm:text-[3vw] font-semibold mt-20 landscape:mt-0 mb-10 text-white text-center"
+                    aria-label="Get in touch with us">GET IN TOUCH WITH US</h3>
+                <img class="mt-5 xl:w-[20rem] w-2/3 md:w-1/3 mx-auto" src="./img/contact_hero.svg"
+                    alt="Image representing contact" aria-hidden="true">
+                <div class="md:gap-10 xl:gap-5 flex flex-row justify-center gap-4 pt-10 mx-auto">
+                    <!-- Instagram Button -->
+                    <button role="button"
+                        class="bouncingbutton landscape:lg:px-8 landscape:px-6 md:px-8 landscape:lg:py-4 md:py-4 landscape:py-3 whitespace-nowrap hover:scale-105 hover:shadow-lg focus:outline-none hover:text-white px-[5vw] py-[2.7vw] mx-auto text-white transition rounded-full shadow-lg select-none"
+                        style="background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);">
+                        <div class="landscape:lg:gap-3 md:gap-3 landscape:gap-2 flex flex-row gap-[1.5vw] my-auto">
+                            <img class="landscape:lg:w-6 md:w-6 landscape:w-4 w-[5vw]" src="./img/instagram-logo.svg"
+                                alt="Instagram Logo" aria-hidden="true">
+                            <a role="link"
+                                class="landscape:lg:text-2xl md:text-2xl landscape:text-[1rem] my-auto text-[5vw] font-medium"
+                                style="font-family: 'Grand Hotel', cursive;" href="https://ig.me/m/thefriendlycouch"
+                                aria-label="Instagram Page">Instagram</a>
+                        </div>
+                    </button>
+                    <!-- WhatsApp Button -->
+                    <button role="button"
+                        class="bouncingbutton landscape:lg:px-8 landscape:px-6 md:px-8 landscape:lg:py-4 md:py-4 landscape:py-3 whitespace-nowrap hover:scale-105 hover:shadow-lg focus:outline-none  text-white hover:text-white px-[5vw] py-[2.7vw] mx-auto  transition bg-[#25D366] rounded-full select-none">
+                        <div class="landscape:lg:gap-3 md:gap-3 landscape:gap-2 flex flex-row gap-[1.5vw] my-auto">
+                            <img class="landscape:lg:w-6 md:w-6 landscape:w-4 w-[4vw]" src="./img/whatsapp-logo.svg"
+                                alt="WhatsApp Logo" aria-hidden="true">
+                            <a role="link"
+                                class="landscape:lg:text-lg md:text-lg landscape:text-[0.8rem] my-auto text-[3.4vw] font-semibold"
+                                href="https://wa.me/919205025183?text=I%20want%20to%20book%20an%20online%20session."
+                                aria-label="WhatsApp Number">WhatsApp</a>
+                        </div>
+                    </button>
+                </div>
+                <div class="flex items-center w-[75%] mx-auto landscape:py-[0.05rem] landscape:lg:py-5 md:py-5 py-[4.5vw]">
+                    <div class="flex-grow border-t border-gray-200"></div>
+                    <span
+                        class="px-5 text-white landscape:text-[0.5rem] landscape:lg:text-base md:text-base text-[3vw]">OR</span>
+                    <div class="flex-grow border-t border-gray-200"></div>
+                </div>
+                <div class="flex flex-row gap-10 mx-auto text-white">
+                    <!-- Instagram Handle -->
+                    <div class="md:gap-2 flex flex-row gap-1 my-auto">
+                        <img class="landscape:lg:w-5 md:w-5 landscape:w-4 w-[4vw]" src="./img/instagram-logo.svg"
                             alt="Instagram Logo" aria-hidden="true">
-                        <a role="link"
-                            class="landscape:lg:text-2xl md:text-2xl landscape:text-[1rem] my-auto text-[5vw] font-medium"
-                            style="font-family: 'Grand Hotel', cursive;" href="https://ig.me/m/thefriendlycouch"
-                            aria-label="Instagram Page">Instagram</a>
+                        <p role="text"
+                            class="landscape:lg:text-base md:text-lg landscape:text-[0.8rem] my-auto text-[3vw] font-medium">
+                            @thefriendlycouch</p>
                     </div>
-                </button>
-                <!-- WhatsApp Button -->
-                <button role="button"
-                    class="bouncingbutton landscape:lg:px-8 landscape:px-6 md:px-8 landscape:lg:py-4 md:py-4 landscape:py-3 whitespace-nowrap hover:scale-105 hover:shadow-lg focus:outline-none  text-white hover:text-white px-[5vw] py-[2.7vw] mx-auto  transition bg-[#25D366] rounded-full select-none">
-                    <div class="landscape:lg:gap-3 md:gap-3 landscape:gap-2 flex flex-row gap-[1.5vw] my-auto">
-                        <img class="landscape:lg:w-6 md:w-6 landscape:w-4 w-[4vw]" src="./img/whatsapp-logo.svg"
+                    <!-- WhatsApp Number -->
+                    <div class="md:gap-2 flex flex-row gap-1 my-auto">
+                        <img class="landscape:lg:w-5 md:w-5 landscape:w-4 w-[3.7vw]" src="./img/whatsapp-logo_green.svg"
                             alt="WhatsApp Logo" aria-hidden="true">
                         <a role="link"
-                            class="landscape:lg:text-lg md:text-lg landscape:text-[0.8rem] my-auto text-[3.4vw] font-semibold"
-                            href="https://wa.me/919205025183?text=I%20want%20to%20book%20an%20online%20session."
-                            aria-label="WhatsApp Number">WhatsApp</a>
+                            class="landscape:lg:text-base md:text-lg landscape:text-[0.8rem] my-auto text-[3vw] font-medium"
+                            href="tel:+919205025183" aria-label="WhatsApp Contact Number">+91 9205025183</a>
                     </div>
-                </button>
-            </div>
-            <div class="flex items-center w-[75%] mx-auto landscape:py-[0.05rem] landscape:lg:py-5 md:py-5 py-[4.5vw]">
-                <div class="flex-grow border-t border-gray-200"></div>
-                <span
-                    class="px-5 text-white landscape:text-[0.5rem] landscape:lg:text-base md:text-base text-[3vw]">OR</span>
-                <div class="flex-grow border-t border-gray-200"></div>
-            </div>
-            <div class="flex flex-row gap-10 mx-auto text-white">
-                <!-- Instagram Handle -->
-                <div class="md:gap-2 flex flex-row gap-1 my-auto">
-                    <img class="landscape:lg:w-5 md:w-5 landscape:w-4 w-[4vw]" src="./img/instagram-logo.svg"
-                        alt="Instagram Logo" aria-hidden="true">
-                    <p role="text"
-                        class="landscape:lg:text-base md:text-lg landscape:text-[0.8rem] my-auto text-[3vw] font-medium">
-                        @thefriendlycouch</p>
-                </div>
-                <!-- WhatsApp Number -->
-                <div class="md:gap-2 flex flex-row gap-1 my-auto">
-                    <img class="landscape:lg:w-5 md:w-5 landscape:w-4 w-[3.7vw]" src="./img/whatsapp-logo_green.svg"
-                        alt="WhatsApp Logo" aria-hidden="true">
-                    <a role="link"
-                        class="landscape:lg:text-base md:text-lg landscape:text-[0.8rem] my-auto text-[3vw] font-medium"
-                        href="tel:+919205025183" aria-label="WhatsApp Contact Number">+91 9205025183</a>
                 </div>
             </div>
-        </div>
-        <!-- Contact Form Section -->
-        <div class="bg-light landscape:text-base xl:rounded-e-3xl landscape:xl:w-1/2 xl:py-12 flex flex-col items-center w-full py-20 mx-auto text-sm"
-            role="form" aria-labelledby="contactFormHeading">
-            <div class="text-center">
-                <h1 id="contactFormHeading" class="text-dark-purple mb-1 text-3xl font-semibold" data-aos="fade-in"
-                    data-aos-delay="100" data-aos-once="true">CONTACT US</h1>
-                <p id="fillFormInstructions"
-                    class="text-dark-purple landscape:lg:text-base md:text-lg landscape:text-[0.8rem] my-auto text-[3vw] pt-3 pb-6"
-                    data-aos="fade-in" data-aos-once="true">Fill up the form below to send us a message.</p>
+            <!-- Contact Form Section -->
+            <div class="bg-light landscape:text-base xl:rounded-e-3xl landscape:xl:w-1/2 xl:py-12 flex flex-col items-center w-full py-20 mx-auto text-sm"
+                role="form" aria-labelledby="contactFormHeading">
+                <div class="text-center">
+                    <h1 id="contactFormHeading" class="text-dark-purple mb-1 text-3xl font-semibold" data-aos="fade-in"
+                        data-aos-delay="100" data-aos-once="true">CONTACT US</h1>
+                    <p id="fillFormInstructions"
+                        class="text-dark-purple landscape:lg:text-base md:text-lg landscape:text-[0.8rem] my-auto text-[3vw] pt-3 pb-6"
+                        data-aos="fade-in" data-aos-once="true">Fill up the form below to send us a message.</p>
+                </div>
+                <div class="xl:w-[50%] w-[70%] md:w-[35%]" data-aos="fade-in" data-aos-delay="100" data-aos-once="true">
+                    <form action="https://api.web3forms.com/submit" method="POST" id="form" role="form">
+                        <!-- ... (Hidden input fields, name, email, phone, message) ... -->
+                        <div class="mb-3">
+                            <label for="name" class="text-dark-purple block mb-2 text-sm">Full Name</label>
+                            <input type="text" name="name" id="name" placeholder="Full Name" required
+                                class="focus:outline-none w-full h-12 px-4 py-2 text-sm text-gray-900 placeholder-gray-400 bg-gray-100 rounded-lg" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="text-dark-purple block mb-2 text-sm">Email Address</label>
+                            <input type="email" name="email" id="email" placeholder="name@mail.com" required
+                                class="focus:outline-none w-full h-12 px-4 py-2 text-sm text-gray-900 placeholder-gray-400 bg-gray-100 rounded-lg" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="text-dark-purple block mb-2 text-sm">Phone Number</label>
+                            <input type="text" name="phone" id="phone" placeholder="+91 98476543XX" required
+                                class="focus:outline-none w-full h-12 px-4 py-2 text-sm text-gray-900 placeholder-gray-400 bg-gray-100 rounded-lg" />
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="text-dark-purple block mb-2 text-sm">Your Message</label>
+                            <textarea rows="4" name="message" id="message" placeholder="Your Message"
+                                class="focus:outline-none w-full px-4 py-2 text-sm text-gray-900 placeholder-gray-400 bg-gray-100 rounded-lg"
+                                required></textarea>
+                        </div>
+                        <div class="px-auto flex justify-center">
+                            <button type="submit"
+                                class="hover:text-light-purple focus:outline-none bg-dark-purple md:w-[60%] md:py-5 inline-block w-[50%] px-4 py-6 text-white no-underline rounded-full"
+                                role="button">SEND MESSAGE</button>
+                        </div>
+                        <!-- Form Submission Result Message -->
+                        <p class="text-dark-purple text-base text-center" id="result" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
             </div>
-            <div class="xl:w-[50%] w-[70%] md:w-[35%]" data-aos="fade-in" data-aos-delay="100" data-aos-once="true">
-                <form action="https://api.web3forms.com/submit" method="POST" id="form" role="form">
-                    <!-- ... (Hidden input fields, name, email, phone, message) ... -->
-                    <div class="mb-3">
-                        <label for="name" class="text-dark-purple block mb-2 text-sm">Full Name</label>
-                        <input type="text" name="name" id="name" placeholder="Full Name" required
-                            class="focus:outline-none w-full h-12 px-4 py-2 text-sm text-gray-900 placeholder-gray-400 bg-gray-100 rounded-lg" />
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="text-dark-purple block mb-2 text-sm">Email Address</label>
-                        <input type="email" name="email" id="email" placeholder="name@mail.com" required
-                            class="focus:outline-none w-full h-12 px-4 py-2 text-sm text-gray-900 placeholder-gray-400 bg-gray-100 rounded-lg" />
-                    </div>
-                    <div class="mb-3">
-                        <label for="phone" class="text-dark-purple block mb-2 text-sm">Phone Number</label>
-                        <input type="text" name="phone" id="phone" placeholder="+91 98476543XX" required
-                            class="focus:outline-none w-full h-12 px-4 py-2 text-sm text-gray-900 placeholder-gray-400 bg-gray-100 rounded-lg" />
-                    </div>
-                    <div class="mb-4">
-                        <label for="message" class="text-dark-purple block mb-2 text-sm">Your Message</label>
-                        <textarea rows="4" name="message" id="message" placeholder="Your Message"
-                            class="focus:outline-none w-full px-4 py-2 text-sm text-gray-900 placeholder-gray-400 bg-gray-100 rounded-lg"
-                            required></textarea>
-                    </div>
-                    <div class="px-auto flex justify-center">
-                        <button type="submit"
-                            class="hover:text-light-purple focus:outline-none bg-dark-purple md:w-[60%] md:py-5 inline-block w-[50%] px-4 py-6 text-white no-underline rounded-full"
-                            role="button">SEND MESSAGE</button>
-                    </div>
-                    <!-- Form Submission Result Message -->
-                    <p class="text-dark-purple text-base text-center" id="result" role="status" aria-live="polite"></p>
-                </form>
-            </div>
-        </div>
-    </section>
+        </section>
     
     </main>
     
@@ -2779,6 +2843,6 @@
         </div>
     </footer>
     
-    </body>
+</body>
     
-    </html>
+</html>
