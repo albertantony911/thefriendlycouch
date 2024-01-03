@@ -1820,29 +1820,29 @@
               <p id="fillFormInstructions" class="text-dark-purple landscape:lg:text-base md:text-lg landscape:text-[0.8rem] my-auto text-[3vw] pt-3 pb-6" data-aos="fade-in" data-aos-once="true">Fill up the form below to send us a message.</p>
             </div>
             <div class="xl:w-[50%] w-[70%] md:w-[35%]" data-aos="fade-in" data-aos-delay="100" data-aos-once="true">
-              <form action="https://api.web3forms.com/submit" method="POST" id="form" role="form">
-                <!-- ... (Hidden input fields, name, email, phone, message) ... -->
+              <form action="https://api.web3forms.com/submit" method="POST" id="form">
+                  <!-- ... (Hidden input fields, name, email, phone, message) ... -->
                 <div class="mb-3">
-                  <label for="name" class="text-dark-purple block mb-2 text-sm">Full Name</label>
-                  <input type="text" name="name" id="name" placeholder="Full Name" required class="focus:outline-none w-full h-12 px-4 py-2 text-sm text-gray-900 placeholder-gray-400 bg-gray-100 rounded-lg" />
+                    <label for="name" class="text-dark-purple block mb-2 text-sm">Full Name</label>
+                    <input type="text" name="name" id="name" placeholder="Full Name" required class="focus:outline-none w-full h-12 px-4 py-2 text-sm text-gray-900 placeholder-gray-400 bg-gray-100 rounded-lg" />
                 </div>
                 <div class="mb-3">
-                  <label for="email" class="text-dark-purple block mb-2 text-sm">Email Address</label>
-                  <input type="email" name="email" id="email" placeholder="name@mail.com" required class="focus:outline-none w-full h-12 px-4 py-2 text-sm text-gray-900 placeholder-gray-400 bg-gray-100 rounded-lg" />
+                    <label for="email" class="text-dark-purple block mb-2 text-sm">Email Address</label>
+                    <input type="email" name="email" id="email" placeholder="name@mail.com" required class="focus:outline-none w-full h-12 px-4 py-2 text-sm text-gray-900 placeholder-gray-400 bg-gray-100 rounded-lg" />
                 </div>
                 <div class="mb-3">
-                  <label for="phone" class="text-dark-purple block mb-2 text-sm">Phone Number</label>
-                  <input type="text" name="phone" id="phone" placeholder="+91 98476543XX" required class="focus:outline-none w-full h-12 px-4 py-2 text-sm text-gray-900 placeholder-gray-400 bg-gray-100 rounded-lg" />
+                    <label for="phone" class="text-dark-purple block mb-2 text-sm">Phone Number</label>
+                    <input type="text" name="phone" id="phone" placeholder="+91 98476543XX" required class="focus:outline-none w-full h-12 px-4 py-2 text-sm text-gray-900 placeholder-gray-400 bg-gray-100 rounded-lg" />
                 </div>
                 <div class="mb-4">
-                  <label for="message" class="text-dark-purple block mb-2 text-sm">Your Message</label>
-                  <textarea rows="4" name="message" id="message" placeholder="Your Message" class="focus:outline-none w-full px-4 py-2 text-sm text-gray-900 placeholder-gray-400 bg-gray-100 rounded-lg" required></textarea>
+                    <label for="message" class="text-dark-purple block mb-2 text-sm">Your Message</label>
+                    <textarea rows="4" name="message" id="message" placeholder="Your Message" class="focus:outline-none w-full px-4 py-2 text-sm text-gray-900 placeholder-gray-400 bg-gray-100 rounded-lg" required></textarea>
                 </div>
                 <div class="px-auto flex justify-center">
-                  <button type="submit" class="hover:text-light-purple focus:outline-none bg-dark-purple md:w-[60%] md:py-5 inline-block w-[50%] px-4 py-6 text-white no-underline rounded-full" role="button">SEND MESSAGE</button>
+                    <button type="submit" class="hover:text-light-purple focus:outline-none bg-dark-purple md:w-[60%] md:py-5 inline-block w-[50%] px-4 py-6 text-white no-underline rounded-full">SEND MESSAGE</button>
                 </div>
-                <!-- Form Submission Result Message -->
-                <p class="text-dark-purple text-base text-center" id="result" role="status" aria-live="polite"></p>
+                  <!-- Form Submission Result Message -->
+                <p class="text-dark-purple text-base text-center" id="result" aria-live="polite"></p>
               </form>
             </div>
           </div>
