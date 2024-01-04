@@ -197,12 +197,12 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 var Mixpanel = require('mixpanel');
-var mixpanel = Mixpanel.init('<aba1840d4d5081cd61eb71737995493b>');
+var mixpanel = Mixpanel.init('<YOUR_TOKEN>');
  
-
-mixpanel.init(
-  "aba1840d4d5081cd61eb71737995493b",
-  {
-    host: "api-eu.mixpanel.com",
-  },
-);
+// track an event with optional properties
+mixpanel.track('event name', {
+    distinct_id: 'unique client id',
+    property_1: 'value 1',
+    property_2: 'value 2',
+    property_3: 'value 3'
+});
