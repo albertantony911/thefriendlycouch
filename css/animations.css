@@ -1,22 +1,172 @@
+/**
+ * ----------------------------------------
+ * Hamburger menu animation
+ * ----------------------------------------
+ */
+
+.menudrop {
+  transition: transform 0.5s cubic-bezier(0.9, 0.7, 0.1, 1);
+}
+
+/* Initially hidden */
+.menudrop li {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.2s ease-in-out, transform 0s ease-in-out; 
+}
+
+/* Class to fade in */
+.menudrop li.toggled {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.3s;
+}
+
+/* Button Aniamtion */
+
+/* Change line color on click */
+#menuButtonContainer.menu-open svg line {
+    stroke: white;
+}
+
+/* Set transform origins to center of respective line */
+#menuButton svg line:nth-of-type(1) {
+    transform-origin: center 6px;
+}
+
+#menuButton svg line:nth-of-type(2) {
+    transform-origin: center 12px;
+}
+
+#menuButton svg line:nth-of-type(3) {
+    transform-origin: center 18px;
+}
+
+
+/* Line animations */
+#menuButton svg line {
+    transition-duration: 0.5s;
+    transition-property: stroke, opacity, transform;
+    transition-timing-function: cubic-bezier(0.9, 0.7, 0.1, 1); /* Updated cubic bezier for stroke color change */
+}
+
+/* Fade out middle line on click */
+#menuButtonContainer.menu-open svg line:nth-of-type(2) {
+    opacity: 0;
+    transform: scale(0.3);
+    transition-timing-function: cubic-bezier(0.9, 0, 0.1, 1); /* Updated cubic bezier for rotation animation */
+}
+
+/* Center top and bottom lines vertically, then rotate by 45 degrees in opposing directions on click */
+#menuButtonContainer.menu-open svg line:nth-of-type(1) {
+    transform: translate(0, 6px) rotate(45deg);
+    transition-timing-function: cubic-bezier(0.9, 0, 0.1, 1); /* Updated cubic bezier for rotation animation */
+}
+
+#menuButtonContainer.menu-open svg line:nth-of-type(3) {
+    transform: translate(0, -6px) rotate(-45deg);
+    transition-timing-function: cubic-bezier(0.9, 0, 0.1, 1); /* Updated cubic bezier for rotation animation */
+}
+
+
+
+
+
+
+ /*****************************************
+ * Clock Animation 
+ *****************************************/
+
+ .time {
+	-webkit-animation: wobble-hor-bottom 2s infinite both;
+	        animation: wobble-hor-bottom 2s infinite both;
+}
+
+
+@-webkit-keyframes time {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(-6deg);
+            transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateX(15px) rotate(6deg);
+            transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(-3.6deg);
+            transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(9px) rotate(2.4deg);
+            transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(-1.2deg);
+            transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+@keyframes time {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(-6deg);
+            transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateX(15px) rotate(6deg);
+            transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(-3.6deg);
+            transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(9px) rotate(2.4deg);
+            transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(-1.2deg);
+            transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+
+
+
+
+
+/**
+ * ----------------------------------------
+ * Splide slider animation
+ * ----------------------------------------
+ */
+
 .slider {
     position: relative;
-    width: 100%; /* Adjust the width as needed */
+    width: 100%; 
     overflow: hidden;
 }
 
-
-
 .slider img {
-    width: 100%; /* Ensure the images take up the entire width of the container */
+    width: 100%; 
     height: auto;
 }
-
 
 .color-change.active-step {
   background-color: #593F92;
   color: white;
 }
-
 
 .sr-only {
   position: absolute;
@@ -30,6 +180,13 @@
 }
 
 
+
+
+/**
+ * ----------------------------------------
+ * Scroll down animation
+ * ----------------------------------------
+ */
 
 .scroll-down {
   position: absolute;
@@ -46,8 +203,6 @@
   animation:         fade_move_down 1.7s ease-in-out infinite;
 }
 
-
-/*animated scroll arrow animation*/
 @-webkit-keyframes fade_move_down {
   0%   { -webkit1transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
   50%  { opacity: 1;  }
@@ -67,6 +222,11 @@
 
 
 
+/**
+ * ----------------------------------------
+ * Shooting stars animation
+ * ----------------------------------------
+ */
 
 .shooting-star{
     position: absolute;
@@ -171,6 +331,11 @@
 
 
 
+/**
+ * ----------------------------------------
+ * Sky full of stars animation
+ * ----------------------------------------
+ */
 
 #stars-group-1 {
   width: 2px;
@@ -277,39 +442,25 @@
 }
 
 
-
-
 @keyframes rotateEyes {
   0% {
     transform: rotate(0deg);
   }
   50% {
-    transform: rotate(2deg); /* Adjust the rotation angle as needed */
+    transform: rotate(2deg); 
   }
   100% {
     transform: rotate(0deg);
   }
 }
 
-/* Apply the animation to the eye group */
-#eyes {
-  transform-origin: center;
-  animation: rotateEyes 2s ease-in-out infinite;
-}
-
-
-
-.pink-text-shadow {
-    text-shadow: .5px .5px 5px #D1BEF9;
-}
-
 
 
 
 /**
- * ----------------------------------------
- * animation heartbeat
- * ----------------------------------------
+ * -----------------------------------------------
+ * Heartbeat animation - [relationship + normal]
+ * -----------------------------------------------
  */
 
  #heart-relationship{
@@ -325,18 +476,6 @@
 	        animation: heartbeat 2s ease-in-out infinite both;
 }
 
-/* ----------------------------------------------
- * Generated by Animista on 2023-11-17 11:25:43
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
-
-/**
- * ----------------------------------------
- * animation heartbeat
- * ----------------------------------------
- */
 @-webkit-keyframes heartbeat {
   from {
     -webkit-transform: scale(1);
@@ -403,55 +542,6 @@
             transform: scale(1);
     -webkit-animation-timing-function: ease-out;
             animation-timing-function: ease-out;
-  }
-}
-
-
-
-
-.pulsate-fwd {
-	-webkit-animation: pulsate-fwd 2s ease-in-out infinite both;
-	        animation: pulsate-fwd 2s ease-in-out infinite both;
-}
-
-/* ----------------------------------------------
- * Generated by Animista on 2023-11-23 16:15:0
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
-
-/**
- * ----------------------------------------
- * animation pulsate-fwd
- * ----------------------------------------
- */
-@-webkit-keyframes pulsate-fwd {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-@keyframes pulsate-fwd {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
   }
 }
 
@@ -843,97 +933,13 @@ svg.active .svg-elem-37 {
 
 
 
-.text-center-last::after {
-        content: "";
-        display: inline-block;
-        width: 100%;
-    }
 
 
 
-/* Menu List Animation */
+/*****************************************
+ * Sleep 'zzz' animation
+ *****************************************/
 
-.menudrop {
-  transition: transform 0.5s cubic-bezier(0.9, 0.7, 0.1, 1);
-}
-
-/* Initially hidden */
-.menudrop li {
-  opacity: 0;
-  transform: translateY(-20px);
-  transition: opacity 0.2s ease-in-out, transform 0s ease-in-out; /* Adjust duration for easing in and out */
-}
-
-/* Class to fade in */
-.menudrop li.toggled {
-  opacity: 1;
-  transform: translateY(0);
-  transition-delay: 0.3s;
-}
-
-
-
-/* Button Aniamtion */
-
-/* Change line color on click */
-#menuButtonContainer.menu-open svg line {
-    stroke: white;
-}
-
-/* Set transform origins to center of respective line */
-#menuButton svg line:nth-of-type(1) {
-    transform-origin: center 6px;
-}
-
-#menuButton svg line:nth-of-type(2) {
-    transform-origin: center 12px;
-}
-
-#menuButton svg line:nth-of-type(3) {
-    transform-origin: center 18px;
-}
-
-
-
-
-/* Line animations */
-#menuButton svg line {
-    transition-duration: 0.5s;
-    transition-property: stroke, opacity, transform;
-    transition-timing-function: cubic-bezier(0.9, 0.7, 0.1, 1); /* Updated cubic bezier for stroke color change */
-}
-
-/* Fade out middle line on click */
-#menuButtonContainer.menu-open svg line:nth-of-type(2) {
-    opacity: 0;
-    transform: scale(0.3);
-    transition-timing-function: cubic-bezier(0.9, 0, 0.1, 1); /* Updated cubic bezier for rotation animation */
-}
-
-/* Center top and bottom lines vertically, then rotate by 45 degrees in opposing directions on click */
-#menuButtonContainer.menu-open svg line:nth-of-type(1) {
-    transform: translate(0, 6px) rotate(45deg);
-    transition-timing-function: cubic-bezier(0.9, 0, 0.1, 1); /* Updated cubic bezier for rotation animation */
-}
-
-#menuButtonContainer.menu-open svg line:nth-of-type(3) {
-    transform: translate(0, -6px) rotate(-45deg);
-    transition-timing-function: cubic-bezier(0.9, 0, 0.1, 1); /* Updated cubic bezier for rotation animation */
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Diagonal Fade Animation */
 @keyframes animate-diagonal {
   0% {
     opacity: 0;
@@ -957,33 +963,10 @@ svg.active .svg-elem-37 {
   animation: animate-diagonal 3500ms linear infinite;
 }
 
-/* Accordion */
-.accordion-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-in-out;
-}
-
-input[type="checkbox"] {
-  display: none;
-}
-
-input[type="checkbox"]:checked + .accordion-content {
-  max-height: 1000px;
-}
-
-.arrow {
-  transition: transform 0.3s ease-in-out;
-}
-
-input[type="checkbox"]:checked + label .arrow {
-  transform: rotate(180deg);
-}
-
 
 
  /*****************************************
- * Blob Animation - Start
+ * Blob Animation 
  *****************************************/
 
 
@@ -1036,7 +1019,7 @@ input[type="checkbox"]:checked + label .arrow {
   background-size: cover;
   background-position: center;
   mix-blend-mode: normal;
-  animation: blobber 30s 0s ease-in-out infinite, wobbler 15s 0s linear infinite alternate;
+  animation: blobber 30s 0s ease-in-out infinite;
 }
 
 .blob-amod:after {
@@ -1101,7 +1084,7 @@ input[type="checkbox"]:checked + label .arrow {
   background-size: cover;
   background-position: center;
   mix-blend-mode: normal;
-  animation: blobber 30s 0s ease-in-out infinite, wobbler 15s 0s linear infinite alternate;
+  animation: blobber 30s 0s ease-in-out infinite;
 }
 
 .blob-c:after {
@@ -1117,7 +1100,7 @@ input[type="checkbox"]:checked + label .arrow {
   background-size: cover;
   background-position: center;
   mix-blend-mode: normal;
-  animation: blobber 30s 0s ease-in-out infinite, wobbler 15s 0s linear infinite alternate;
+  animation: blobber 30s 0s ease-in-out infinite;
 }
 
 @keyframes blobber {
@@ -1193,102 +1176,12 @@ input[type="checkbox"]:checked + label .arrow {
     background-position: 100% 0%;
   }
 }
-@keyframes wobbler {
-  0% {
-    transform: rotateZ(4deg);
-  }
-  100% {
-    transform: rotateZ(-4deg);
-  }
-}
-
-
 
  /*****************************************
  * Blob Animation - End
  *****************************************/
 
 
- /* ----------------------------------------------
- * Generated by Animista on 2023-11-27 20:52:48
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
-
-/**
- * ----------------------------------------
- * animation wobble-hor-bottom
- * ----------------------------------------
- */
 
 
 
-
-
- .time {
-	-webkit-animation: wobble-hor-bottom 2s infinite both;
-	        animation: wobble-hor-bottom 2s infinite both;
-}
-
-
-
-
-@-webkit-keyframes time {
-  0%,
-  100% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-  }
-  15% {
-    -webkit-transform: translateX(-30px) rotate(-6deg);
-            transform: translateX(-30px) rotate(-6deg);
-  }
-  30% {
-    -webkit-transform: translateX(15px) rotate(6deg);
-            transform: translateX(15px) rotate(6deg);
-  }
-  45% {
-    -webkit-transform: translateX(-15px) rotate(-3.6deg);
-            transform: translateX(-15px) rotate(-3.6deg);
-  }
-  60% {
-    -webkit-transform: translateX(9px) rotate(2.4deg);
-            transform: translateX(9px) rotate(2.4deg);
-  }
-  75% {
-    -webkit-transform: translateX(-6px) rotate(-1.2deg);
-            transform: translateX(-6px) rotate(-1.2deg);
-  }
-}
-@keyframes time {
-  0%,
-  100% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-  }
-  15% {
-    -webkit-transform: translateX(-30px) rotate(-6deg);
-            transform: translateX(-30px) rotate(-6deg);
-  }
-  30% {
-    -webkit-transform: translateX(15px) rotate(6deg);
-            transform: translateX(15px) rotate(6deg);
-  }
-  45% {
-    -webkit-transform: translateX(-15px) rotate(-3.6deg);
-            transform: translateX(-15px) rotate(-3.6deg);
-  }
-  60% {
-    -webkit-transform: translateX(9px) rotate(2.4deg);
-            transform: translateX(9px) rotate(2.4deg);
-  }
-  75% {
-    -webkit-transform: translateX(-6px) rotate(-1.2deg);
-            transform: translateX(-6px) rotate(-1.2deg);
-  }
-}

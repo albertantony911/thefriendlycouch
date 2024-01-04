@@ -1,3 +1,5 @@
+ // Hambrger menu Animation
+
 document.addEventListener("DOMContentLoaded", function () {
   const menuButtonContainer = document.getElementById("menuButtonContainer");
   const nav = document.querySelector("nav");
@@ -16,170 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
    });
 
 
-
-
-function animatedCounter(target, time = 300, start = 0, elementId) {
-    let current = start;
-    const increment = (target - current) / time;
-    const counterElement = document.getElementById(elementId);
-
-    if (!counterElement) {
-        // Counter element not found on the page, do nothing
-        return;
-    }
-
-    function updateCounter() {
-        if (current < target) {
-            current += increment;
-            const roundedValue = Math.round(current);
-            counterElement.innerHTML = `${roundedValue}<span class="text-dark-purple font-normal animate-pulse">+</span>`;
-            requestAnimationFrame(updateCounter);
-        }
-    }
-
-    // Initialize the counter animation when the element is in the viewport
-    const observer = new IntersectionObserver(entries => {
-        if (entries[0].isIntersecting) {
-            updateCounter();
-            observer.unobserve(counterElement); // Stop observing once it starts
-        }
-    });
-
-    // Start observing the counter element
-    observer.observe(counterElement);
-}
-
-// Example usage on a page where the counter is used
-animatedCounter(9, 100, 0, "counter1");
-animatedCounter(12, 100, 0, "counter2");
-animatedCounter(2500, 100, 0, "counter3");
-animatedCounter(11500, 100, 0, "counter4");
-
-
-
-
-var inc = 1000;
-
-// Check if clock elements exist on the page
-const hourElement = document.querySelector('.hour');
-const minuteElement = document.querySelector('.minute');
-const secondElement = document.querySelector('.second');
-
-if (hourElement && minuteElement && secondElement) {
-    // Clock elements found, proceed with the clock script
-    clock();
-    setInterval(clock, inc);
-}
-
-function clock() {
-    const date = new Date();
-
-    const hours = ((date.getHours() + 11) % 12 + 1);
-    const minutes = date.getMinutes();
-    const seconds = date.getSeconds();
-
-    const hour = (hours * 30) + (minutes / 2);
-    const minute = minutes * 6;
-    const second = seconds * 6;
-
-    // Update clock elements only if they exist
-    if (hourElement) {
-        hourElement.style.transform = `rotate(${hour}deg)`;
-    }
-
-    if (minuteElement) {
-        minuteElement.style.transform = `rotate(${minute}deg)`;
-    }
-
-    if (secondElement) {
-        secondElement.style.transform = `rotate(${second}deg)`;
-    }
-}
-
-
-
-// India Map Animation start
-      const options = {
-    root: null, // Use the viewport as the root
-    rootMargin: '0px', // No margin
-    threshold: 0.5, // Trigger when 50% of the target is visible
-};
-
-// Callback function for the Intersection Observer
-function handleIntersection(entries, observer) {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            draw(); // If the target is in view, trigger the draw function
-        }
-    });
-}
-
-// Target the .map element
-const mapElement = document.querySelector('.map');
-
-// Check if the mapElement and its child SVG element are valid HTML elements before proceeding
-if (mapElement instanceof Element && mapElement.querySelector('svg') instanceof Element) {
-    // Create an Intersection Observer instance
-    const observer = new IntersectionObserver(handleIntersection, options);
-
-    // Start observing the SVG element
-    observer.observe(mapElement.querySelector('svg'));
-
-    // We are only adding the 'active' class,
-    // the entire animation is defined in the CSS code
-    function draw() {
-        mapElement.querySelector('svg').classList.add('active');
-        // Stop observing after animation is triggered
-        observer.unobserve(mapElement.querySelector('svg'));
-    }
-}
-
-
-  var bouncingBall = anime({
-	targets: '.couch',
-	translateY: '0.3rem',
-	duration: 400,
-	loop: true,
-	direction: 'alternate',
-	easing: 'easeInCubic',
-	scaleY: {
-		value: 0.98,
-		duration: 250,
-		delay: 250
-    },
-    scaleX: {
-		value: 1.01,
-		duration: 250,
-		delay: 250
-    }
-     
-   });
-
-
-   var bouncingButton = anime({
-	targets: '.bouncingbutton',
-	translateY: '0.7rem',
-	duration: 400,
-	loop: true,
-	direction: 'alternate',
-	easing: 'easeInCubic',
-	scaleY: {
-		value: 0.9,
-		duration: 250,
-		delay: 250
-    },
-    scaleX: {
-		value: 1.03,
-		duration: 250,
-		delay: 250
-    }
-     
-   });
-
-
-
-
-   window.addEventListener('load', () => {
+window.addEventListener('load', () => {
   AOS.init();
   AOS.refresh();
 });
@@ -212,7 +51,29 @@ AOS.init({
 
 
 
+   var bouncingButton = anime({
+	targets: '.bouncingbutton',
+	translateY: '0.7rem',
+	duration: 400,
+	loop: true,
+	direction: 'alternate',
+	easing: 'easeInCubic',
+	scaleY: {
+		value: 0.9,
+		duration: 250,
+		delay: 250
+    },
+    scaleX: {
+		value: 1.03,
+		duration: 250,
+		delay: 250
+    }
+     
+   });
 
+
+
+// Splide Slider
 
 document.addEventListener("DOMContentLoaded", function () {
   // Check if there are elements with the selector '.splide' on the page
