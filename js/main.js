@@ -1,6 +1,6 @@
 
 
-// Hambrger menu Animation
+// Hamburger menu Animation
 
 document.addEventListener("DOMContentLoaded", function () {
   const menuButtonContainer = document.getElementById("menuButtonContainer");
@@ -195,3 +195,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+var Mixpanel = require('mixpanel');
+var mixpanel = Mixpanel.init('<aba1840d4d5081cd61eb71737995493b>');
+ 
+
+mixpanel.init(
+  "aba1840d4d5081cd61eb71737995493b",
+  {
+    host: "api-eu.mixpanel.com",
+  },
+);
