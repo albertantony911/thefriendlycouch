@@ -14,7 +14,9 @@
   },
   "devDependencies": {
     "parcel": "^2.10.2",
-    "prettier-plugin-tailwindcss": "^0.5.6"
+    "prettier-plugin-tailwindcss": "^0.5.6",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
   },
   "scripts": {
     "tailwind": "./tailwindcss -i ./input.css -o ./css/style.css --watch",

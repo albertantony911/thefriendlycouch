@@ -1,5 +1,4 @@
 
-
 // Hamburger menu Animation
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -196,13 +195,5 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-var Mixpanel = require('mixpanel');
-var mixpanel = Mixpanel.init('<YOUR_TOKEN>');
+
  
-// track an event with optional properties
-mixpanel.track('event name', {
-    distinct_id: 'unique client id',
-    property_1: 'value 1',
-    property_2: 'value 2',
-    property_3: 'value 3'
-});
