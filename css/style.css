@@ -893,6 +893,38 @@ html {
   margin-top: 5vw;
 }
 
+.mt-\[0\.35rem\] {
+  margin-top: 0.35rem;
+}
+
+.mt-\[0\.33rem\] {
+  margin-top: 0.33rem;
+}
+
+.mt-\[0\.1rem\] {
+  margin-top: 0.1rem;
+}
+
+.mt-\[3rem\] {
+  margin-top: 3rem;
+}
+
+.mt-\[0\.4rem\] {
+  margin-top: 0.4rem;
+}
+
+.mt-\[0\.5rem\] {
+  margin-top: 0.5rem;
+}
+
+.mt-\[1rem\] {
+  margin-top: 1rem;
+}
+
+.mt-\[5rem\] {
+  margin-top: 5rem;
+}
+
 .block {
   display: block;
 }
@@ -2707,6 +2739,22 @@ svg {
     margin-top: 0.37rem;
   }
 
+  .sm\:mt-\[0\.2rem\] {
+    margin-top: 0.2rem;
+  }
+
+  .sm\:mt-\[0\.5rem\] {
+    margin-top: 0.5rem;
+  }
+
+  .sm\:mt-\[0\.3rem\] {
+    margin-top: 0.3rem;
+  }
+
+  .sm\:mt-\[0\.38rem\] {
+    margin-top: 0.38rem;
+  }
+
   .sm\:h-10 {
     height: 2.5rem;
   }
@@ -2841,6 +2889,18 @@ svg {
 
   .sm\:pt-5 {
     padding-top: 1.25rem;
+  }
+
+  .sm\:pb-8 {
+    padding-bottom: 2rem;
+  }
+
+  .sm\:pb-5 {
+    padding-bottom: 1.25rem;
+  }
+
+  .sm\:pb-7 {
+    padding-bottom: 1.75rem;
   }
 
   .sm\:text-2xl {
