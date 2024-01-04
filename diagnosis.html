@@ -331,19 +331,11 @@
         <!-- Hero Section-->
         <section class="text-slate-100 z-10 flex flex-col justify-around text-center">
 
-            <div id="head" class="h-[55svh] bg-mid-purple ">
-                
-                
-
-                
-            </div>
+            <div id="head" class="h-[55svh] bg-mid-purple "></div>
 
             <div class="bg-dark-purple h-[45svh] relative">
-
-
-                <div
-                    class="absolute inset-x-0 top-0 mx-auto transform -translate-y-[93%]  ">
-                    <svg data-aos="fade-down" data-aos-delay="250" class="h-[50svh]  mx-auto" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round"
+                <div class="absolute inset-x-0 top-0 mx-auto transform -translate-y-[93%]  ">
+                    <svg role="img" aria-label="Diagnostic Assessment illustration" data-aos="fade-down" data-aos-delay="250" class="h-[50svh]  mx-auto" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round"
                         viewBox="800.654 85.96 193.21 245.774" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
                         xmlns:vectornator="http://vectornator.io">
                         <defs>
@@ -482,12 +474,13 @@
 
                 <div data-aos="fade-down" data-aos-delay="250" data-aos-anchor="#head">
                     <div class="landscape:lg:mt-[8svh] landscape:mt-[5svh] portrait:sm:mt-[5svh] portrait:mt-[5svh]">
-                        <h1
-                            class=" md:text-3xl landscape:lg:text-3xl landscape:text-sm text-[6vw] portrait:sm:text-[3vw] font-semibold text-center">
+                        <h1 id="diagnosis-heading"
+                            class="md:text-3xl landscape:lg:text-3xl landscape:text-sm text-[6vw] portrait:sm:text-[3vw] font-semibold text-center">
                             DIAGNOSIS
                         </h1>
                     </div>
                 </div>
+
 
                 <div x-data="{ showModal: false}">
                     <!-- Trigger button -->
@@ -633,232 +626,186 @@
                     </div>
                 </div>
                 
-                <div
-                    class="scroll-down landscape:mt-[2svh] landscape:lg:mt-[7svh] portrait:mt-[10vw] portrait:sm:mt-[10vw] landscape:lg:w-5 landscape:w-3 landscape:h-3 portrait:w-[4vw] portrait:h-[4vw] landscape:lg:h-5 portrait:sm:w-[2vw] portrait:sm:h-[2vw] mx-auto inset-x-0">
+                <div class="scroll-down landscape:mt-[2svh] landscape:lg:mt-[7svh] portrait:mt-[10vw] portrait:sm:mt-[10vw] landscape:lg:w-5 landscape:w-3 landscape:h-3 portrait:w-[4vw] portrait:h-[4vw] landscape:lg:h-5 portrait:sm:w-[2vw] portrait:sm:h-[2vw] mx-auto inset-x-0" aria-hidden="true">
                 </div>
-
             </div>
         </section>
 
-        <!-- Booking Process Section -->
-        <section class="text-dark-purple flex flex-col bg-white">
-        
-        
-        
+        <!-- What is diagnostic assessment Section -->
+        <section class="text-dark-purple flex flex-col bg-white" aria-labelledby="diagnostic-assessment-heading">
             <div class="md:flex-row portrait:md:flex-col md:items-center md:py-20 z-10 flex flex-col items-start py-20 mx-auto">
-        
                 <div class="md:w-3/6 portrait:md:w-full w-full">
-                    <h2 class=" landscape:hidden text-dark-purple sm:text-3xl text-[4.6vw] font-semibold  text-center">
-                        WHAT IS DIAGNOSTIC ASSESSMENT ?
+                    <h2 id="diagnostic-assessment-heading"
+                        class="landscape:hidden text-dark-purple sm:text-3xl text-[4.6vw] font-semibold text-center">
+                        WHAT IS DIAGNOSTIC ASSESSMENT?
                     </h2>
-                    <img class="portrait:sm:w-1/3 md:mr-0 portrait:mx-auto mt-10 w-[70%] mx-auto" src="./img/when-to-choose-diagnostic-assessment.svg" alt="" />
+                    <img class="portrait:sm:w-1/3 md:mr-0 portrait:mx-auto mt-10 w-[70%] mx-auto"
+                        src="./img/when-to-choose-diagnostic-assessment.svg" alt="Illustration of diagnostic assessment" />
                 </div>
                 <div class="portrait:md:w-full flex flex-col w-full">
                     <h2
                         class="md:px-32 md:text-3xl md:pt-0 portrait:md:pt-16 portrait:hidden text-dark-purple px-16 pt-20 text-2xl font-semibold text-center">
-                        WHAT IS DIAGNOSTIC ASSESSMENT ?
+                        WHAT IS DIAGNOSTIC ASSESSMENT?
                     </h2>
         
                     <div
                         class="md:px-32 portrait:md:px-24 md:text-lg md:pt-10 px-10 pt-5 mx-auto text-sm font-light leading-relaxed text-left">
                         <p>
-                            Understanding and finding clarity about mental health disorders can make a big difference in your well-being. We've made
+                            Understanding and finding clarity about mental health disorders can make a big difference in your
+                            well-being. We've made
                             sure this process is as simple as possible.
-                            
-                            Our team of RCI Registered Clinical Psychologists use an objective and evidence-based process to provide you with a
-                            diagnosis or to rule out any disorders.
         
+                            Our team of RCI Registered Clinical Psychologists use an objective and evidence-based process to
+                            provide you with a
+                            diagnosis or to rule out any disorders.
                         </p>
                         <p class="mt-5 font-medium text-left">
-                            We use standardised tests & assessments and follow the International Classification of Diseases (ICD-10) guidelines to
+                            We use standardized tests & assessments and follow the International Classification of Diseases
+                            (ICD-10) guidelines to
                             give you official diagnoses for mental health disorders.
                         </p>
                     </div>
                 </div>
-         
             </div>
-        
         </section>
 
-        <!-- Booking Process Section -->
-        <section class="flex flex-col">
+        <!-- Expectations from therapist Section -->
+        <section class="flex flex-col" aria-labelledby="expectations-heading">
             <div class="text-dark-purple bg-slate-100 px-10 py-20">
-                <p class="md:text-lg text-sm font-medium text-center">If you're considering a diagnostic assessment, here are some
-                    things you can expect:</p>
+                <p id="expectations-heading" class="md:text-lg text-sm font-medium text-center">If you're considering a
+                    diagnostic assessment, here are some things you can expect:</p>
             </div>
-            
+        
             <div class="md:flex-row flex flex-col">
-            
-            
-            
-                <div class="bg-dark-purple md:w-1/3 text-slate-100 flex flex-col px-16 py-16 shadow-xl">
-            
-                    <div class=" my-auto text-center">
-            
-                        <h3 class="pb-5 text-lg font-semibold">CLARITY</h3>
-            
+                <div role="region" aria-labelledby="clarity-heading"
+                    class="bg-dark-purple md:w-1/3 text-slate-100 flex flex-col px-16 py-16 shadow-xl">
+                    <div class="my-auto text-center">
+                        <h3 id="clarity-heading" class="pb-5 text-lg font-semibold">CLARITY</h3>
                     </div>
-            
-            
+        
                     <div class="md:text-base my-auto text-sm text-center">
                         <p>
-                            If you're unsure whether you're dealing with a mental health disorder, a diagnostic assessment can help
-                            you gain
-                            clarity.
+                            If you're unsure whether you're dealing with a mental health disorder, a diagnostic assessment can
+                            help you gain clarity.
                         </p>
                     </div>
-            
                 </div>
-            
-                <div class="bg-mid-purple md:w-1/3 text-slate-100 flex flex-col px-16 py-16 shadow-xl">
-            
-                    <div class=" my-auto text-center">
-            
-                        <h3 class="pb-5 text-lg font-semibold">OFFICIAL DIAGNOSIS</h3>
-            
+        
+                <div role="region" aria-labelledby="official-diagnosis-heading"
+                    class="bg-mid-purple md:w-1/3 text-slate-100 flex flex-col px-16 py-16 shadow-xl">
+                    <div class="my-auto text-center">
+                        <h3 id="official-diagnosis-heading" class="pb-5 text-lg font-semibold">OFFICIAL DIAGNOSIS</h3>
                     </div>
-            
-            
+        
                     <div class="md:text-base my-auto text-sm text-center">
                         <p>
                             Receiving an official diagnosis from a trained & qualified mental health expert is a pivotal step in
-                            understanding and
-                            navigating through the disorder.
+                            understanding and navigating through the disorder.
                         </p>
                     </div>
-            
                 </div>
-            
-            
-                <div class="bg-dark-purple md:w-1/3 text-slate-100 flex flex-col px-16 py-16 shadow-xl">
-            
+        
+                <div role="region" aria-labelledby="re-evaluation-heading"
+                    class="bg-dark-purple md:w-1/3 text-slate-100 flex flex-col px-16 py-16 shadow-xl">
                     <div class="my-auto text-center">
-            
-                        <h3 class="pb-5 text-lg font-semibold">RE-EVALUATION</h3>
-            
+                        <h3 id="re-evaluation-heading" class="pb-5 text-lg font-semibold">RE-EVALUATION</h3>
                     </div>
-            
-            
+        
                     <div class="md:text-base my-auto text-sm text-center">
                         <p>
-                            If you've previously received a diagnosis but have doubts or questions, a diagnostic assessment with one
-                            of our Clinical
-                            Psychologists can offer a fresh perspective.
+                            If you've previously received a diagnosis but have doubts or questions, a diagnostic assessment with
+                            one of our Clinical Psychologists can offer a fresh perspective.
                         </p>
                     </div>
-            
                 </div>
-            
-            
-            
-            
             </div>
         </section>
         
-        <!-- Booking Process Section -->
-        <section class="md:py-20 md:px-24 py-20 bg-white">
-
+        <!-- Diagnostic Process Section -->
+        <section class="md:py-20 md:px-24 py-20 bg-white" aria-labelledby="diagnostic-process-heading">
             <div class="text-dark-purple pb-10">
-                <h2 class="sm:text-3xl text-[4.6vw] font-semibold text-center">
+                <h2 id="diagnostic-process-heading" class="sm:text-3xl text-[4.6vw] font-semibold text-center">
                     DIAGNOSTIC ASSESSMENT PROCESS
                 </h2>
-            
-                <p class="md:text-lg px-10 pt-5 text-sm text-center">Here's a comprehensive step-by-step overview of how we conduct the diagnostic assessment process.</p>
+        
+                <p class="md:text-lg px-10 pt-5 text-sm text-center">Here's a comprehensive step-by-step overview of how we
+                    conduct the diagnostic assessment process.</p>
             </div>
-
-
-            
-            <div class="bg-dark-purple rounded-t-[3.75rem] max-sm:rounded-t-[10vw] landscape:flex-row landscape:divide-x text-slate-100 flex flex-col gap-5 p-5 max-sm:w-[85%]  w-[80%] mx-auto shadow-xl">
-
-                
         
-                <div class="flex  flex-col landscape:md:w-[18rem] gap-4 md:p-10   text-center my-auto ">
+            <div
+                class="bg-dark-purple rounded-t-[3.75rem] max-sm:rounded-t-[10vw] landscape:flex-row landscape:divide-x text-slate-100 flex flex-col gap-5 p-5 max-sm:w-[85%] w-[80%] mx-auto shadow-xl">
         
-                    <h3 class="sm:text-3xl text-[5vw] pb-1 font-semibold">1</h3>
+                <div role="region" aria-labelledby="understanding-story-heading"
+                    class="flex flex-col landscape:md:w-[18rem] gap-4 md:p-10 text-center my-auto">
+                    <h3 id="understanding-story-heading" class="sm:text-3xl text-[5vw] pb-1 font-semibold">1</h3>
                     <h3 class="sm:text-lg text-[4.5vw] font-medium">UNDERSTANDING YOUR STORY</h3>
-        
                 </div>
         
-        
-                <div
-                    class="md:p-10 portrait:md:pt-0 px-5 pt-0 pb-10 landscape:md:w-[90%] text-left md:text-base sm:text-sm max-sm:text-[3vw]  my-auto">
+                <div role="region" aria-labelledby="understanding-story-text"
+                    class="md:p-10 portrait:md:pt-0 px-5 pt-0 pb-10 landscape:md:w-[90%] text-left md:text-base sm:text-sm max-sm:text-[3vw] my-auto">
                     <p>
                         In the first session, we'll spend time understanding your concerns. This includes a detailed
-                        history-taking
-                        session
-                        and
-                        a mental status examination. It typically lasts for 1 hour.
+                        history-taking session and a mental status examination. It typically lasts for 1 hour.
                     </p>
                 </div>
-        
             </div>
         
-            <div class="bg-mid-purple  landscape:flex-row landscape:divide-x text-slate-100 flex flex-col gap-5 p-5 max-sm:w-[85%] w-[80%] mx-auto shadow-xl">
+            <div
+                class="bg-mid-purple landscape:flex-row landscape:divide-x text-slate-100 flex flex-col gap-5 p-5 max-sm:w-[85%] w-[80%] mx-auto shadow-xl">
         
-                <div class="flex  flex-col landscape:md:w-[18rem] gap-4 md:p-10  text-center my-auto ">
-        
-                    <h3 class="sm:text-3xl text-[5vw] pb-2 font-semibold">2</h3>
+                <div role="region" aria-labelledby="psychometric-test-heading"
+                    class="flex flex-col landscape:md:w-[18rem] gap-4 md:p-10 text-center my-auto">
+                    <h3 id="psychometric-test-heading" class="sm:text-3xl text-[5vw] pb-2 font-semibold">2</h3>
                     <h3 class="sm:text-lg text-[4.5vw] font-medium">PSYCHOMETRIC TEST</h3>
-        
-        
-        
                 </div>
         
-                <div
-                    class="md:p-10 portrait:md:pt-0 px-5 pt-0 pb-10 landscape:md:w-[90%] text-left md:text-base sm:text-sm max-sm:text-[3vw]  my-auto">
+                <div role="region" aria-labelledby="psychometric-test-text"
+                    class="md:p-10 portrait:md:pt-0 px-5 pt-0 pb-10 landscape:md:w-[90%] text-left md:text-base sm:text-sm max-sm:text-[3vw] my-auto">
                     <p class="text-left">
-                        The second session is all about checking symptoms through testing. We use a set of standardised
-                        psychometric assessments
-                        that are evidence-based and widely recognised. This session typically lasts for about 1 to 2 hours*.
-                        These assessments,
-                        combined with the information from the first session, provide a clearer picture of your mental health.
+                        The second session is all about checking symptoms through testing. We use a set of standardized
+                        psychometric assessments that are evidence-based and widely recognized. This session typically lasts for
+                        about 1 to 2 hours*. These assessments, combined with the information from the first session, provide a
+                        clearer picture of your mental health.
                     </p>
                 </div>
-        
             </div>
         
             <div
                 class="bg-dark-purple rounded-b-[3.75rem] max-sm:rounded-b-[10vw] landscape:flex-row landscape:divide-x text-slate-100 flex flex-col gap-5 p-5 max-sm:w-[85%] w-[80%] mx-auto shadow-xl">
         
-                <div class="flex  flex-col landscape:md:w-[18rem] gap-4 md:p-10  text-center my-auto ">
-        
-                    <h3 class="sm:text-3xl text-[5vw] pb-2 font-semibold">3</h3>
+                <div role="region" aria-labelledby="report-heading"
+                    class="flex flex-col landscape:md:w-[18rem] gap-4 md:p-10 text-center my-auto">
+                    <h3 id="report-heading" class="sm:text-3xl text-[5vw] pb-2 font-semibold">3</h3>
                     <h3 class="sm:text-lg text-[4.5vw] font-medium">REPORT</h3>
-        
                 </div>
         
-                <div
-                    class="md:p-10 portrait:md:pt-0 px-5 pt-0 pb-10 landscape:md:w-[90%] text-left md:text-base sm:text-sm max-sm:text-[3vw]  my-auto">
+                <div role="region" aria-labelledby="report-text"
+                    class="md:p-10 portrait:md:pt-0 px-5 pt-0 pb-10 landscape:md:w-[90%] text-left md:text-base sm:text-sm max-sm:text-[3vw] my-auto">
                     <p>
-                        In the first session, we'll spend time understanding your concerns. This includes a detailed
-                        history-taking
-                        session
-                        and
-                        a mental status examination. It typically lasts for 1 hour.
+                        After the assessment sessions, our team compiles a comprehensive report based on your diagnostic
+                        evaluation. The report includes a summary of findings, diagnoses (if any), and recommendations for
+                        further treatment or support. This report is shared with you to facilitate informed decision-making
+                        about your mental health journey.
                     </p>
                 </div>
-        
             </div>
-
+        
             <div class="text-dark-purple md:text-center md:pt-10 md:text-sm p-2 px-12 pt-5 text-xs text-left">
-        
-                <p>*Please note that the duration of each session may vary depending on your specific concerns, symptoms and
-                    number of
-                    tests used.</p>
+                <p>*Please note that the duration of each session may vary depending on your specific concerns, symptoms, and
+                    the number of tests used.</p>
             </div>
-
         </section>
 
-        <!-- Booking Process Section -->
-        <section
+        <!-- Founder Note Section -->
+        <section role="region" aria-labelledby="aboutTitle"
             class="bg-mid-purple md:flex-row md:px-14 md:py-20 text-slate-100 flex flex-col items-center justify-center py-20 mx-auto shadow-lg">
             <div class="md:w-1/4 w-full">
                 <div class="">
-                    <img class="w-32 mx-auto rounded-full" src="./img/founder.webp" alt="" />
+                    <img class="w-32 mx-auto rounded-full" src="./img/founder.webp" alt="Founder Divija Bhasin" />
                 </div>
         
-                <div class=" md:pt-5 md:pb-0 pt-5 pb-10">
-                    <p class="md:text-base text-sm font-semibold text-center">
+                <div class="md:pt-5 md:pb-0 pt-5 pb-10">
+                    <p id="aboutTitle" class="md:text-base text-sm font-semibold text-center">
                         DIVIJA BHASIN
                         <br>
                         FOUNDER
@@ -875,18 +822,8 @@
         
                     Our mission is to make your journey towards mental well-being as straightforward and supportive as possible.
                 </p>
-        
-        
             </div>
-        
-        
         </section>
-        
-        
-
-
-
-        
         
         <!-- Booking Process Section -->
         <section id="bookingProcess" class="text-dark-purple md:text-lg md:px-20 flex flex-col px-10 py-20 text-sm">
@@ -1149,7 +1086,7 @@
 
                 </div>
         
-                <div class="landscape:w-[30svh] portrait:w-[60svw]  flex flex-col my-auto justify-center   mx-auto ">
+                <div class="landscape:w-[30svh] portrait:w-[60svw] flex flex-col my-auto justify-center   mx-auto ">
         
                     <h2 id="our-process"
                         class="portrait:text-[5.5vw] portrait:md:text-2xl  landscape:text-[1.6vw] leading-normal font-semibold text-center"
@@ -1194,8 +1131,6 @@
                         </div>
                     </div>
 
-
-        
         
                     <div class="portrait:hidden mx-auto" x-data="{ showModal: false }">
                         <!-- Trigger button -->
@@ -1352,25 +1287,20 @@
             </div>
         </section>
         
-        
-        
-        
-        
-        
-        
-        <div class="bg-dark-purple text-slate-100 flex flex-col">
+        <!-- Choose the right therapist Section -->
+        <section role="region" aria-labelledby="chooseTherapistTitle" class="bg-dark-purple text-slate-100 flex flex-col">
             <div class="md:flex-row portrait:md:flex-col md:items-center md:py-20 z-10 flex flex-col items-start py-20 mx-auto">
                 <div class="md:w-3/6 portrait:md:w-full w-full">
-                    <h2
-                        class=" md:text-3xl md:pt-0 portrait:md:pt-16 text-slate-100 landscape:hidden text-[5vw] font-semibold text-center">
+                    <h2 id="chooseTherapistTitle"
+                        class="md:text-3xl md:pt-0 portrait:md:pt-16 text-slate-100 landscape:hidden text-[5vw] font-semibold text-center">
                         CHOOSE THE RIGHT THERAPIST?
                     </h2>
                     <p
-                        class=" md:text-lg pt-[1vh] portrait:md:pt-2 text-slate-100 landscape:hidden text-[3vw] font-semibold text-center">
+                        class="md:text-lg pt-[1vh] portrait:md:pt-2 text-slate-100 landscape:hidden text-[3vw] font-semibold text-center">
                         ( UNDERSTAND THE DIFFERENCE )</p>
         
                     <img class="portrait:md:w-1/3 md:mr-0 portrait:mx-auto w-[65%] md:w-[50%] mx-auto my-12"
-                        src="./img/therapist-difference.svg" alt="" />
+                        src="./img/therapist-difference.svg" alt="Illustration depicting the difference between therapists" />
                 </div>
         
                 <div class="portrait:md:w-full flex flex-col w-full">
@@ -1395,69 +1325,58 @@
         
                             All the Psychologists on our team are hired after an intensive review and interview process. You can
                             trust the
-                            Psychologists on our team to be non-judgemental and professional.
-        
+                            Psychologists on our team to be non-judgmental and professional.
                         </p>
-        
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         
-        
-        
-        
-        
-        
-        
-        
-        
-        <div
+        <!-- Types of therapist Section -->
+        <section
             class="place-content-center bg-mid-purple md:px-20 md:pb-20 md:text-lg text-slate-100 flex flex-col pb-6 text-[3.5vw]">
-            <div class=" md:pt-20 md:pb-5 pt-20 pb-5">
+            <div class="md:pt-20 md:pb-5 pt-20 pb-5">
                 <h2 class="md:text-3xl text-2xl font-semibold text-center">
                     THE DIFFERENT TYPES
                 </h2>
         
-                <p class="md:text-lg max-sm:whitespace-pre-line pt-5 pb-10 text-sm text-center">A direct guide to help you
-                    choose between
-                    the type of therapist that you might looking for.</p>
+                <p class="md:text-lg max-sm:whitespace-pre-line pt-5 pb-10 text-sm text-center">
+                    A direct guide to help you choose between
+                    the type of therapist that you might be looking for.
+                </p>
             </div>
         
             <div
-                class="bg-white flex landscape:flex-row flex-col w-[90%]  mx-auto text-dark-purple font-light landscape:divide-x portrait:divide-y shadow-lg rounded-[10vw] sm:rounded-[3.75rem]">
+                class="bg-white flex landscape:flex-row flex-col w-[90%] mx-auto text-dark-purple font-light landscape:divide-x portrait:divide-y shadow-lg rounded-[10vw] sm:rounded-[3.75rem]">
                 <div class="landscape:w-1/2 flex mx-auto">
-        
-                    <div class=" flex flex-col p-[10vw] sm:p-16 mx-auto text-left">
+                    <div class="flex flex-col p-[10vw] sm:p-16 mx-auto text-left">
                         <div class="sm:pb-10 pb-[5vw]">
-        
                             <h2 class="text-[4vw] sm:text-xl landscape:text-left  font-semibold text-center">
                                 COUNSELLING PSYCHOLOGIST
                             </h2>
-        
-        
                         </div>
         
                         <div>
-        
                             <h2 class="text-[3.5vw] sm:text-xl sm:pb-3 pb-[2vw]  font-medium">
                                 QUALIFICATIONS
                             </h2>
         
-                            <li class="flex pb-1 space-x-3">
-                                <img class="w-[3.5vw] sm:w-4" src="./img/checkmark_purple.svg" alt="">
-                                <span class="">Bachelor's Degree in Psychology.</span>
-                            </li>
+                            <ul>
+                                <li class="flex pb-1 space-x-3">
+                                    <img class="w-[3.5vw] sm:w-4" src="./img/checkmark_purple.svg" alt="Checkmark icon">
+                                    <span class="">Bachelor's Degree in Psychology.</span>
+                                </li>
         
-                            <li class="flex pb-1 space-x-3">
-                                <img class="w-[3.5vw] sm:w-4" src="./img/checkmark_purple.svg" alt="">
-                                <span class="">Master's Degree in Psychology.</span>
-                            </li>
-                            <li class="flex pb-1 space-x-3">
-                                <img class="w-[3.5vw] mb-auto mt-[0.3rem]  sm:w-4" src="./img/checkmark_purple.svg" alt="">
-                                <span class="">Optional: Additional diplomas and certifications for specialisation.</span>
-                            </li>
-        
+                                <li class="flex pb-1 space-x-3">
+                                    <img class="w-[3.5vw] sm:w-4" src="./img/checkmark_purple.svg" alt="Checkmark icon">
+                                    <span class="">Master's Degree in Psychology.</span>
+                                </li>
+                                <li class="flex pb-1 space-x-3">
+                                    <img class="w-[3.5vw] mb-auto mt-[0.3rem]  sm:w-4" src="./img/checkmark_purple.svg"
+                                        alt="Checkmark icon">
+                                    <span class="">Optional: Additional diplomas and certifications for specialization.</span>
+                                </li>
+                            </ul>
                         </div>
         
                         <div class="sm:pt-5 pt-[3vw]">
@@ -1466,227 +1385,210 @@
                                 EXPERIENCE
                             </h2>
         
-                            <li class=" flex pb-1 space-x-3">
-                                <img class="w-[3.5vw] mb-auto mt-[0.3rem]  sm:w-4" src="./img/checkmark_purple.svg" alt="">
-                                <span class="">All the Counselling Psychologists at The Friendly Couch have completed a minimum
-                                    of
-                                    500+
-                                    sessions before joining our
-                                    team.</span>
-                            </li>
+                            <ul>
+                                <li class=" flex pb-1 space-x-3">
+                                    <img class="w-[3.5vw] mb-auto mt-[0.3rem]  sm:w-4" src="./img/checkmark_purple.svg"
+                                        alt="Checkmark icon">
+                                    <span class="">All the Counselling Psychologists at The Friendly Couch have completed a
+                                        minimum of 500+ sessions before joining our team.</span>
+                                </li>
+                            </ul>
                         </div>
-        
                     </div>
-        
                 </div>
         
                 <div class="landscape:md:w-1/2 flex mx-auto">
-        
                     <div class="flex flex-col p-[10vw] sm:p-16 mx-auto text-left">
                         <div class="sm:pb-10 pb-[5vw]">
-        
                             <h2 class="text-[4vw] sm:text-xl landscape:text-left  font-semibold text-center">
                                 CLINICAL PSYCHOLOGIST
                             </h2>
-        
-        
                         </div>
         
                         <div>
-        
-                            <h2 class="text-[3.5vw] sm:text-xl sm:pb-3 pb-[2vw]  font-medium">
+                            <h3 class="text-[3.5vw] sm:text-xl sm:pb-3 pb-[2vw]  font-medium">
                                 QUALIFICATIONS
-                            </h2>
+                            </h3>
         
-                            <li class="flex pb-1 space-x-3">
-                                <img class="mb-auto mt-[0.3rem] w-[3.5vw] sm:w-4" src="./img/checkmark_purple.svg" alt="">
-                                <span class="">BA/BSc in Psychology/Clinical Psychology.</span>
-                            </li>
+                            <ul>
+                                <li class="flex pb-1 space-x-3">
+                                    <img class="mb-auto mt-[0.3rem] w-[3.5vw] sm:w-4" src="./img/checkmark_purple.svg"
+                                        alt="Checkmark icon">
+                                    <span class="">BA/BSc in Psychology/Clinical Psychology.</span>
+                                </li>
         
-                            <li class="flex pb-1 space-x-3">
-                                <img class="mb-auto mt-[0.3rem] w-[3.5vw] sm:w-4" src="./img/checkmark_purple.svg" alt="">
-                                <span class="">MA/MSc in Psychology/Clinical Psychology.</span>
-                            </li>
-                            <li class="flex pb-1 space-x-3">
-                                <img class="w-[3.5vw] mb-auto mt-[0.3rem] sm:w-4" src="./img/checkmark_purple.svg" alt="">
-                                <span class="">MPhil in Clinical Psychology (RCI-recognized institute) with additional
-                                    certifications.</span>
-                            </li>
+                                <li class="flex pb-1 space-x-3">
+                                    <img class="mb-auto mt-[0.3rem] w-[3.5vw] sm:w-4" src="./img/checkmark_purple.svg"
+                                        alt="Checkmark icon">
+                                    <span class="">MA/MSc in Psychology/Clinical Psychology.</span>
+                                </li>
+                                <li class="flex pb-1 space-x-3">
+                                    <img class="w-[3.5vw] mb-auto mt-[0.3rem] sm:w-4" src="./img/checkmark_purple.svg"
+                                        alt="Checkmark icon">
+                                    <span class="">MPhil in Clinical Psychology (RCI-recognized institute) with additional
+                                        certifications.</span>
+                                </li>
         
+                                <li class="flex pb-1 space-x-3">
+                                    <img class="w-[3.5vw] sm:w-4" src="./img/checkmark_purple.svg" alt="Checkmark icon">
+                                    <span class="">RCI Registration</span>
+                                </li>
         
-        
-                            <li class="flex pb-1 space-x-3">
-                                <img class="w-[3.5vw] sm:w-4" src="./img/checkmark_purple.svg" alt="">
-                                <span class="">RCI Registration</span>
-                            </li>
-        
+                            </ul>
                         </div>
         
                         <div class="pt-5">
-        
-                            <h2 class="md:text-xl pb-3 text-base font-medium">
+                            <h3 class="md:text-xl pb-3 text-base font-medium">
                                 EXPERIENCE
-                            </h2>
+                            </h3>
         
-                            <li class="flex pb-1 space-x-3">
-                                <img class="mb-auto mt-[0.3rem] w-[3.5vw] sm:w-4" src="./img/checkmark_purple.svg" alt="">
-                                <span class="">Minimum 2 years of RCI-recognized MPhil training and 500+ sessions completed
-                                    before joining our team.</span>
-                            </li>
+                            <ul>
+                                <li class="flex pb-1 space-x-3">
+                                    <img class="mb-auto mt-[0.3rem] w-[3.5vw] sm:w-4" src="./img/checkmark_purple.svg"
+                                        alt="Checkmark icon">
+                                    <span class="">Minimum 2 years of RCI-recognized MPhil training and 500+ sessions completed
+                                        before joining our team.</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <!-- Helpful Questionnaire Section -->
+        <section aria-labelledby="helpful-questionnaire-title" class="flex flex-col">
+            <div class="bg-mid-purple text-slate-100 pt-10">
+                <h2 id="helpful-questionnaire-title" class="md:text-3xl pb-5 text-2xl font-semibold text-center">
+                    HELPFUL QUESTIONNAIRE
+                </h2>
         
-        </div>
-        
-        
-        <div class="bg-mid-purple text-slate-100 pt-10">
-            <h2 class="md:text-3xl pb-5 text-2xl font-semibold text-center">
-                HELPFUL QUESTIONNAIRE
-            </h2>
-        
-            <p class="md:text-lg max-sm:whitespace-pre-line pb-10 text-sm text-center">A direct guide to help you choose between
-                the type of therapist that you might looking for.</p>
-        </div>
-        
-        
-        <div
-            class="place-content-center bg-mid-purple md:px-20 md:pb-20 md:text-lg text-slate-100 flex flex-col pb-6 text-[3.5vw]">
-            <div
-                class="bg-dark-purple flex landscape:flex-row flex-col w-[90%]  mx-auto text-white font-light landscape:divide-x portrait:divide-y shadow-lg rounded-[10vw] sm:rounded-[3.75rem]">
-                <div class="landscape:w-1/2 flex mx-auto">
-        
-                    <div class=" flex flex-col p-[10vw] sm:p-16 mx-auto text-left">
-                        <div class="sm:pb-10 pb-[5vw]">
-        
-                            <h2 class="text-[4vw] sm:text-xl landscape:text-left  font-semibold text-center">
-                                COUNSELLING PSYCHOLOGIST
-                            </h2>
-        
-        
-                        </div>
-        
-                        <div>
-        
-                            <h2 class="text-[3.5vw] sm:text-xl sm:pb-3 pb-[2vw]  font-medium">
-                                IF YOU
-                            </h2>
-        
-                            <li class="flex pb-3 space-x-3">
-                                <img class="w-[3.5vw] mb-auto mt-[0.3rem]  sm:w-4" src="./img/checkmark_purple.svg" alt="">
-                                <span class="">Are looking to work on mental health challenges with anxiety, problems with
-                                    relationships, procrastination or trauma.</span>
-        
-                            </li>
-        
-                            <li class="flex pb-3 space-x-3">
-                                <img class="w-[3.5vw] mb-auto mt-[0.3rem]  sm:w-4" src="./img/checkmark_purple.svg" alt="">
-                                <span class="">Would like to work on your general well-being</span>
-                            </li>
-                            <li class="flex pb-3 space-x-3">
-                                <img class="w-[3.5vw] mb-auto mt-[0.3rem]  sm:w-4" src="./img/checkmark_purple.svg" alt="">
-                                <span class="">Have never been diagnosed with a disorder and do not believe you have one.</span>
-                            </li>
-        
-                            <li class="flex pb-3 space-x-3">
-                                <img class="w-[3.5vw] mb-auto mt-[0.3rem]  sm:w-4" src="./img/checkmark_purple.svg" alt="">
-                                <span class="">Would like to learn better ways of dealing with challenges in life.</span>
-                            </li>
-        
-                        </div>
-        
-        
-        
-                    </div>
-        
-                </div>
-        
-                <div class="landscape:w-1/2 flex mx-auto">
-        
-                    <div class="flex flex-col p-[10vw] sm:p-16 mx-auto text-left">
-                        <div class="sm:pb-10 pb-[5vw]">
-        
-                            <h2 class="text-[4vw] sm:text-xl landscape:text-left  font-semibold text-center">
-                                CLINICAL PSYCHOLOGIST
-                            </h2>
-        
-        
-                        </div>
-        
-                        <div>
-        
-                            <h2 class="text-[3.5vw] sm:text-xl sm:pb-3 pb-[2vw]  font-medium">
-                                IF YOU
-                            </h2>
-        
-                            <li class="flex pb-3 space-x-3">
-                                <img class="w-[3.5vw] mb-auto mt-[0.3rem]  sm:w-4" src="./img/checkmark_purple.svg" alt="">
-                                <span class="">Would like to check if you have a disorder such as ADHD, OCD, Autism, Borderline
-                                    Personality Disorder and others, and get an official diagnosis.</span>
-                            </li>
-        
-                            <li class="flex pb-3 space-x-3">
-                                <img class="w-[3.5vw] mb-auto mt-[0.3rem]  sm:w-4" src="./img/checkmark_purple.svg" alt="">
-                                <span class="">Have been diagnosed with a disorder in the past and is seeking a new
-                                    perspective</span>
-                            </li>
-                            <li class="flex pb-3 space-x-3">
-                                <img class="w-[3.5vw] mb-auto mt-[0.3rem]  sm:w-4" src="./img/checkmark_purple.svg" alt="">
-                                <span class="">Are looking to work on concerns like self-harm, suicidal ideation, intrusive
-                                    thoughts etc.</span>
-                            </li>
-        
-                            <li class="flex pb-3 space-x-3">
-                                <img class="w-[3.5vw] mb-auto mt-[0.3rem]  sm:w-4" src="./img/checkmark_purple.svg" alt="">
-                                <span class="">Are looking to work on severe mental health challenges which are impacting your
-                                    daily life.</span>
-                            </li>
-        
-                            <li class="flex pb-3 space-x-3">
-                                <img class="w-[3.5vw] mb-auto mt-[0.3rem]  sm:w-4" src="./img/checkmark_purple.svg" alt="">
-                                <span class="">Would like to understand harmful patterns in your life and learn better ways of
-                                    coping.</span>
-                            </li>
-        
-                        </div>
-        
-        
-        
-                    </div>
-                </div>
-        
-        
-        
+                <p class="md:text-lg max-sm:whitespace-pre-line pb-10 text-sm text-center">
+                    A direct guide to help you choose between the type of therapist that you might be looking for.
+                </p>
             </div>
         
-        </div>
-        
-        
-        
-            <!-- Testimonial Section-->
-        <section class="bg-dark-purple text-slate-100 md:py-28 flex flex-col items-center justify-center h-auto py-20 mx-auto">
+            <div role="region" aria-label="Questionnaire"
+                class="place-content-center bg-mid-purple md:px-20 md:pb-20 md:text-lg text-slate-100 flex flex-col pb-6 text-[3.5vw]">
+                <div
+                    class="bg-dark-purple flex landscape:flex-row flex-col w-[90%] mx-auto text-white font-light landscape:divide-x portrait:divide-y shadow-lg rounded-[10vw] sm:rounded-[3.75rem]">
+                    <div class="landscape:w-1/2 flex mx-auto">
+                        <div class=" flex flex-col p-[10vw] sm:p-16 mx-auto text-left">
+                            <div class="sm:pb-10 pb-[5vw]">
+                                <h2 class="text-[4vw] sm:text-xl landscape:text-left font-semibold text-center">
+                                    COUNSELLING PSYCHOLOGIST
+                                </h2>
+                            </div>
+                            <div>
+                                <h2 class="text-[3.5vw] sm:text-xl sm:pb-3 pb-[2vw] font-medium">
+                                    IF YOU
+                                </h2>
+                                <ul aria-label="Counseling Psychologist Criteria">
+                                    <li class="flex pb-3 space-x-3">
+                                        <img class="w-[3.5vw] mb-auto mt-[0.3rem] sm:w-4" src="./img/checkmark_purple.svg"
+                                            alt="Checkmark icon">
+                                        <span class="">Are looking to work on mental health challenges with anxiety, problems
+                                            with relationships, procrastination, or trauma.</span>
+                                    </li>
+                                    <li class="flex pb-3 space-x-3">
+                                        <img class="w-[3.5vw] mb-auto mt-[0.3rem] sm:w-4" src="./img/checkmark_purple.svg"
+                                            alt="Checkmark icon">
+                                        <span class="">Would like to work on your general well-being.</span>
+                                    </li>
+                                    <li class="flex pb-3 space-x-3">
+                                        <img class="w-[3.5vw] mb-auto mt-[0.3rem] sm:w-4" src="./img/checkmark_purple.svg"
+                                            alt="Checkmark icon">
+                                        <span class="">Have never been diagnosed with a disorder and do not believe you have
+                                            one.</span>
+                                    </li>
+                                    <li class="flex pb-3 space-x-3">
+                                        <img class="w-[3.5vw] mb-auto mt-[0.3rem] sm:w-4" src="./img/checkmark_purple.svg"
+                                            alt="Checkmark icon">
+                                        <span class="">Would like to learn better ways of dealing with challenges in
+                                            life.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="landscape:w-1/2 flex mx-auto">
+                        <div class="flex flex-col p-[10vw] sm:p-16 mx-auto text-left">
+                            <div class="sm:pb-10 pb-[5vw]">
+                                <h2 class="text-[4vw] sm:text-xl landscape:text-left font-semibold text-center">
+                                    CLINICAL PSYCHOLOGIST
+                                </h2>
+                            </div>
+                            <div>
+                                <h2 class="text-[3.5vw] sm:text-xl sm:pb-3 pb-[2vw] font-medium">
+                                    IF YOU
+                                </h2>
+                                <ul aria-label="Clinical Psychologist Criteria">
+                                    <li class="flex pb-3 space-x-3">
+                                        <img class="w-[3.5vw] mb-auto mt-[0.3rem] sm:w-4" src="./img/checkmark_purple.svg"
+                                            alt="Checkmark icon">
+                                        <span class="">Would like to check if you have a disorder such as ADHD, OCD, Autism,
+                                            Borderline Personality Disorder, and others, and get an official diagnosis.</span>
+                                    </li>
+                                    <li class="flex pb-3 space-x-3">
+                                        <img class="w-[3.5vw] mb-auto mt-[0.3rem] sm:w-4" src="./img/checkmark_purple.svg"
+                                            alt="Checkmark icon">
+                                        <span class="">Have been diagnosed with a disorder in the past and are seeking a new
+                                            perspective.</span>
+                                    </li>
+                                    <li class="flex pb-3 space-x-3">
+                                        <img class="w-[3.5vw] mb-auto mt-[0.3rem] sm:w-4" src="./img/checkmark_purple.svg"
+                                            alt="Checkmark icon">
+                                        <span class="">Are looking to work on concerns like self-harm, suicidal ideation,
+                                            intrusive thoughts, etc.</span>
+                                    </li>
+                                    <li class="flex pb-3 space-x-3">
+                                        <img class="w-[3.5vw] mb-auto mt-[0.3rem] sm:w-4" src="./img/checkmark_purple.svg"
+                                            alt="Checkmark icon">
+                                        <span class="">Are looking to work on severe mental health challenges that are impacting
+                                            your daily life.</span>
+                                    </li>
+                                    <li class="flex pb-3 space-x-3">
+                                        <img class="w-[3.5vw] mb-auto mt-[0.3rem] sm:w-4" src="./img/checkmark_purple.svg"
+                                            alt="Checkmark icon">
+                                        <span class="">Would like to understand harmful patterns in your life and learn better
+                                            ways of coping.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section role="blockquote" aria-label="Testimonial"
+            class="bg-dark-purple text-slate-100 md:py-28 flex flex-col items-center justify-center h-auto py-20 mx-auto">
             <div class="w-full">
                 <div class="animate-bounce relative inset-x-0 w-12 mx-auto">
-                    <img class="w-full" src="./img/quote-white.svg" alt="" />
+                    <img class="w-full" src="./img/quote-white.svg" alt="Quotation mark" />
                 </div>
             </div>
         
             <div class="lg:pt-10 landscape:lg:pt-10 landscape:sm:pt-10 w-3/4 pt-10">
-                <p class="md:text-lg px-5 py-5 text-sm leading-relaxed text-center">
-                    I tried different websites for therapy before, but none of them were good. Friendly Couch is very responsive, and you
-                    guys have the best therapists out there. I'm really glad I saw your page.
-                </p>
+                <div role="blockquote" aria-label="Testimonial"
+                    class="md:text-lg px-5 py-5 text-sm leading-relaxed text-center">
+                    <p>
+                        Love what you are doing. I was able to accept that I need therapy only after watching your reels. You
+                        truly made me realize that it's okay not to agree with the so-called definition of 'normal.' That it is
+                        in my power to define my 'normal.' Thank you.
+                    </p>
+                </div>
             </div>
         
             <div class="w-full py-5">
-                <p class="md:text-base text-sm italic font-light text-center">
+                <p class="md:text-base text-sm italic font-light text-center" aria-label="Attribution">
                     Someone we made happy
                 </p>
             </div>
         </section>
-            
-            <!-- FAQ Section-->
+ 
+        <!-- FAQ Section-->
         <section class="bg-light md:py-20 text-dark-purple flex flex-col py-20">
             <div>
                 <h2 class="md:text-3xl text-2xl font-semibold text-center">
@@ -1878,7 +1780,7 @@
             </div>
         </section>
             
-            <!-- Contact Section -->
+        <!-- Contact Section -->
         <section class="xl:flex-row bg-dark-purple xl:px-32 xl:py-20 shadow-3xl flex flex-col" role="region"
             aria-labelledby="contactSectionHeading">
             <!-- Contact Information Section -->
