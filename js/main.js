@@ -1,4 +1,16 @@
- // Hambrger menu Animation
+import mixpanel from 'mixpanel-browser';
+ 
+mixpanel.init('aba1840d4d5081cd61eb71737995493b', {debug: true, track_pageview: true, persistence: 'localStorage'});
+ 
+// Set this to a unique identifier for the user performing the event.
+mixpanel.identify('USER_ID')
+ 
+// Track an event. It can be anything, but in this example, we're tracking a Sign Up event.
+mixpanel.track('Sign Up', {
+  'Signup Type': 'Referral'
+})
+
+// Hambrger menu Animation
 
 document.addEventListener("DOMContentLoaded", function () {
   const menuButtonContainer = document.getElementById("menuButtonContainer");
