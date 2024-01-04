@@ -2491,6 +2491,11 @@ html {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.outline-none {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 .drop-shadow {
   --tw-drop-shadow: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -4801,6 +4806,10 @@ svg {
 
 @media (orientation: landscape) {
   @media (min-width: 1024px) {
+    .landscape\:lg\:w-4 {
+      width: 1rem;
+    }
+
     .landscape\:lg\:translate-x-\[50svw\] {
       --tw-translate-x: 50svw;
       transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -4859,6 +4868,10 @@ svg {
       gap: 0.5rem;
     }
 
+    .landscape\:lg\:gap-1 {
+      gap: 0.25rem;
+    }
+
     .landscape\:lg\:px-4 {
       padding-left: 1rem;
       padding-right: 1rem;
@@ -4912,6 +4925,21 @@ svg {
 
 @media (orientation: landscape) {
   @media (min-width: 1024px) {
+    .landscape\:lg\:px-6 {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+
+    .landscape\:lg\:px-5 {
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+    }
+
+    .landscape\:lg\:px-7 {
+      padding-left: 1.75rem;
+      padding-right: 1.75rem;
+    }
+
     .landscape\:lg\:pt-10 {
       padding-top: 2.5rem;
     }
