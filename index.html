@@ -408,7 +408,7 @@
                 x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0"
                 x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in duration-200"
                 x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" @click="showModal = false"
-                style="display: none;" role="dialog" aria-modal="true">
+                style="display: none;" role="dialog" aria-modal="true"  @keydown.window.escape="showModal = false" role="dialog" aria-modal="true" tabindex="0">
             
                 <div class="landscape:max-lg:mt-[10svh] text-mid-purple rounded-[3rem] w-[85svw] md:w-auto landscape:lg:px-8 md:px-8 landscape:px-5 py-[7vw] landscape:lg:py-9 md:py-9 landscape:py-6 transform bg-white shadow-2xl"
                   role="dialog" aria-modal="true">
