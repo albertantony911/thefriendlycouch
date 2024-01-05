@@ -197,28 +197,28 @@
                 class="sm:text-xl bg-dark-purple font-poppins text-light z-20 flex flex-col items-center justify-center h-screen gap-[1vw] text-[4vw] antialiased text-center">
 
                 <!-- Navigation Links -->
-                <li><a href="./index.html">HOME</a></li>
-                <li><a href="./about.html">ABOUT</a></li>
-                <li><a href="./pricing.html">PRICING</a></li>
+                <li class="px-3 pt-5"><a href="./index.html">HOME</a></li>
+                <li class="px-3 pt-5"><a href="./about.html">ABOUT</a></li>
+                <li class="px-3 pt-5"><a href="./pricing.html">PRICING</a></li>
 
                 <!-- Services Section -->
                 <li class="mt-7 sm:mt-10 text-light-purple mb-2 text-xs font-medium">
                     OUR SERVICES
                 </li>
-                <li><a href="./therapy.html">THERAPY</a></li>
-                <li><a href="./diagnosis.html">DIAGNOSIS</a></li>
-                <li><a href="./couples-counselling.html">COUPLE'S COUNSELLING</a></li>
+                <li class="px-3 pt-5"><a href="./therapy.html">THERAPY</a></li>
+                <li class="px-3 pt-5"><a href="./diagnosis.html">DIAGNOSIS</a></li>
+                <li class="px-3 pt-5"><a href="./couples-counselling.html">COUPLE'S COUNSELLING</a></li>
 
                 <!-- Enquiry Section -->
                 <li class="mt-7 sm:mt-10 text-light-purple mb-2 text-xs font-medium">
                     HAVE A QUESTION?
                 </li>
-                <li><a href="./faq.html">FAQ</a></li>
-                <li><a href="./contact.html">CONTACT</a></li>
+                <li class="px-3 pt-5"><a href="./faq.html">FAQ</a></li>
+                <li class="px-3 pt-5"><a href="./contact.html">CONTACT</a></li>
 
                 <!-- Additional Links -->
                 <li class="mt-10"><a href="./workshops.html">WORKSHOP</a></li>
-                <li><a href="./career.html">CAREER</a></li>
+                <li class="px-3 pt-5"><a href="./career.html">CAREER</a></li>
             </ul>
         </nav>
 
@@ -233,7 +233,7 @@
                     <!-- Navigation Link with ARIA Label -->
                     <a href="./index.html"
                         class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
-                        <span>Home</span>
+                        <span class="font-medium">Home</span>
                     </a>
                 </li>
 
@@ -242,7 +242,7 @@
                     <!-- Navigation Link with ARIA Label -->
                     <a href="./about.html"
                         class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
-                        <span>About</span>
+                        <span class="font-medium">About</span>
                     </a>
                 </li>
 
@@ -251,7 +251,7 @@
                     <!-- Navigation Link with ARIA Label -->
                     <a href="./pricing.html"
                         class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
-                        <span>Pricing</span>
+                        <span class="font-medium">Pricing</span>
                     </a>
                 </li>
 
@@ -263,7 +263,7 @@
                         class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer"
                         @mouseenter="showChildren = true; clearTimeout(submenuTimeout)"
                         @mouseleave="submenuTimeout = setTimeout(() => showChildren = false, 300)">
-                        <span>Our Services</span>
+                        <span class="font-medium">Our Services</span>
                         <span class="ml-2"> <i class="mdi mdi-chevron-down"></i> </span>
                     </a>
                     <div class="rounded-3xl absolute left-0 top-auto z-30 w-56 min-w-full mt-1 text-base bg-white border border-gray-300 shadow-md"
@@ -322,7 +322,7 @@
                     <!-- Navigation Link with ARIA Label -->
                     <a href="./faq.html"
                         class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
-                        <span>FAQ</span>
+                        <span class="font-medium">FAQ</span>
                     </a>
                 </li>
 
@@ -331,7 +331,7 @@
                     <!-- Navigation Link with ARIA Label -->
                     <a href="./contact.html"
                         class="h-14 sm:px-4 md:text-base hover:no-underline hover:bg-gray-100 flex items-center px-1 mx-1 text-xs leading-10 no-underline transition-colors duration-100 rounded cursor-pointer">
-                        <span>Contact Us</span>
+                        <span class="font-medium">Contact Us</span>
                     </a>
                 </li>
             </ul>
@@ -341,23 +341,338 @@
 
 
     <main>
-        <div  class="text-slate-100 bg-dark-purple z-10 flex flex-col h-auto text-center">
-            <div data-aos="fade-down" data-aos-delay="500" class="py-32 my-auto">
-                <h1 class="md:text-3xl landscape:lg:text-3xl landscape:text-sm text-[5vw] portrait:sm:text-[3vw] font-semibold text-center">
-                    PRIVACY POLICY
-                </h1>
-                <p class="base md:px-32 px-10 pt-5 font-normal text-center">
-                    THE FRIENDLY COUCH
+        <section aria-label="Privacy Policy" role="article">
+            <div class="text-slate-100 bg-dark-purple z-10 flex flex-col h-auto text-center" aria-hidden="true">
+                <div data-aos="fade-down" data-aos-delay="500" class="py-32 my-auto">
+                    <h1
+                        class="md:text-3xl landscape:lg:text-3xl landscape:text-sm text-[5vw] portrait:sm:text-[3vw] font-semibold text-center">
+                        PRIVACY POLICY
+                    </h1>
+                    <p class="base md:px-32 px-10 pt-5 font-normal text-center">
+                        THE FRIENDLY COUCH
+                    </p>
+                </div>
+            </div>
+        
+            <div class="bg-light md:px-32 md:text-base flex flex-col px-10 py-20 text-sm font-light leading-relaxed text-left">
+                <p class="" aria-live="polite" tabindex="0">
+                    The User’s privacy is important to us. The Privacy Policy provided below allows us to explain how we work to
+                    maintain user’s privacy, what information we may collect (if any) and how said information will be used to
+                    help
+                    improve our services and user experience on The Friendly Couch Website.
                 </p>
-            </div>   
-        </div>
+        
+                <h2 id="scope" class=" pt-10 pb-3 text-xl font-medium uppercase">
+                    1. Scope:
+                </h2>
+        
+                <p class="pt-3" aria-live="polite" tabindex="0">
+                    1.1. This website – “The Friendly Couch” (<span class="font-medium">“Website”</span>) is developed and made
+                    available by
+                    Divija Bhasin (as Sole Proprietor) which may mean and include any of our affiliates, associates, assignees
+                    or
+                    successors-in-interest as determined by us at our sole discretion and without requiring any prior notice or
+                    intimation, from time to time <span class="font-medium"> (“Company”, “we” or “us” or “our”)</span>and is
+                    committed to
+                    protecting and respecting the User’s privacy.
+                </p>
+        
+                <p class="pt-5" aria-live="polite" tabindex="0">
+                    1.2. Anyone below 18 (eighteen) years of age will be considered a minor (<span
+                        class="font-medium">"Minor"</span>) and
+                    requires parental consent to use the Website. The parents/legal guardian of the Minor or users above 18
+                    (eighteen)
+                    years of age are hereinafter referred to as <span class="font-medium">"User"</span>.
+                </p>
+        
+                <p class="pt-5" aria-live="polite" tabindex="0">
+                    1.3. This policy (this <span class="font-medium">"Privacy Policy"</span>), together with the terms and
+                    conditions for
+                    the use of the Website (<span class="font-medium">"Terms and Conditions"</span>), outlines the Website’s
+                    privacy
+                    practices regarding the collection, use and safeguard of the User’s information through the Website and the
+                    Services offered thereupon.
+                </p>
+        
+                <p class="pt-5" aria-live="polite" tabindex="0">
+                    1.4. User clicking the “I agree” button and submission of personal information or if the User is a minor,
+                    the
+                    submission of personal information either by User’s parents/ guardian or with the permission of parents/
+                    guardian
+                    will be deemed as acceptance of this Privacy Policy.
+                </p>
+        
+                <p class="pt-5" aria-live="polite" tabindex="0">
+                    1.5. This Privacy Policy is an electronic record in terms of the Information Technology Act, 2000 (as
+                    amended/re-enacted from time to time) (<span class="font-medium">"IT Act"</span>) and rules thereunder, and,
+                    amongst
+                    others, is published in accordance with the provisions of Rule 3 (1) of the Information Technology
+                    (Intermediaries
+                    Guidelines) Rules, 2011, as well as Rule 4 of the Information Technology (Reasonable Security Practices and
+                    Procedures and Sensitive Personal Data or Information) Rules, 2011, which mandates for publishing of rules
+                    and
+                    regulations, privacy policy and terms of use for access or usage of a website or any online application.
+                    This
+                    Privacy Policy is an electronic record, generated by a computer system and does not require any physical or
+                    digital signatures.
+                </p>
+        
+                <h2 id="changes" class=" pt-10 pb-3 text-xl font-medium uppercase">
+                    2. Changes to the Privacy Policy:
+                </h2>
+        
+                <p class="pt-3" aria-live="polite" tabindex="0">
+                    2.1. We are obligated to protect User information in accordance with applicable laws, and regulations.
+                </p>
+        
+                <p class="pt-5" aria-live="polite" tabindex="0">
+                    2.2. This Privacy Policy is subject to modification based on changes in the business, legal and regulatory
+                    requirements and will be updated online. We will make all efforts to communicate any significant changes to
+                    this
+                    Privacy Policy to the Users. Continued use of the Website or the Services thereunder shall constitute
+                    acceptance of
+                    any such amendment.
+                </p>
+        
+                <h2 id="user-consent" class=" pt-10 pb-3 text-xl font-medium uppercase">
+                    3. User Consent
+                </h2>
+        
+                <p class="pt-3" aria-live="polite" tabindex="0">
+                    3.1. Before we can provide the User with access to the Website and its Services (as highlighted in the Terms
+                    and
+                    Conditions), we require consent. Under the applicable laws, we cannot collect, process or store any
+                    information
+                    pertaining to the User without explicit consent. Without consent, we will not be able to collect and process
+                    the
+                    necessary information, without which we cannot provide access to our Services available through our Website.
+                </p>
+        
+                <p class="pt-5" aria-live="polite" tabindex="0">
+                    3.2. In case the User is a minor, the parent/guardian, will be considered the primary account holder. This
+                    means
+                    that:
+                </p>
+        
+                <ul aria-live="polite" tabindex="0">
+                    <li class="px-3 pt-5">3.2.1. The parents/guardians are the person primarily responsible for ordering
+                        Services and paying any fees or
+                        other charges made to us.</li>
+                    <li class="px-3 pt-5">3.2.2. The parents/guardians are responsible for deciding whether to share the Minor
+                        User’s content with us and
+                        third parties.</li>
+                    <li class="px-3 pt-5">3.2.3. The parents/guardians are responsible for the active monitoring of the Minor
+                        user’s content. Minors are
+                        expressly prohibited from including any personally identifiable information in any content that they
+                        post to us
+                        or third parties. Such personally identifiable information will be automatically deleted by us.</li>
+                </ul>
+        
+                <h2 id="information-collection" class=" pt-10 pb-3 text-xl font-medium uppercase">
+                    4. Information Collection
+                </h2>
+        
+                <p class="pt-3" aria-live="polite" tabindex="0">
+                    4.1. The User may provide certain information to us while interacting with the Website or while using the
+                    Services.
+                </p>
+        
+                <p class="pt-5" aria-live="polite" tabindex="0">
+                    4.2. The information provided by the User may include, but is not limited to, the User’s name, age, gender,
+                    email
+                    address, phone number, postal address, and any other information that may be required for the User’s
+                    identification.
+                </p>
+        
+                <p class="pt-5" aria-live="polite" tabindex="0">
+                    4.3. We may also collect non-personal information about the User, such as the type of device used, browser
+                    type,
+                    demographic information, etc.
+                </p>
+        
+                <h2 id="use-of-information" class=" pt-10 pb-3 text-xl font-medium uppercase">
+                    5. Use of Information
+                </h2>
+        
+                <p class="pt-3" aria-live="polite" tabindex="0">
+                    5.1. The information collected from the User may be used for various purposes, including but not limited to:
+                </p>
+        
+                <ul aria-live="polite" tabindex="0">
+                    <li class="px-3 pt-5">5.1.1. Providing and improving our Services.</li>
+                    <li class="px-3 pt-5">5.1.2. Customizing the Website according to the User’s interests.</li>
+                    <li class="px-3 pt-5">5.1.3. Sending periodic emails regarding the User’s order or other products and
+                        services.</li>
+                    <li class="px-3 pt-5">5.1.4. Responding to inquiries, questions, and/or other requests.</li>
+                    <li class="px-3 pt-5">5.1.5. Administering a contest, promotion, survey, or other site features.</li>
+                </ul>
+        
+                <p class="pt-5" aria-live="polite" tabindex="0">
+                    5.2. The User’s information, whether public or private, will not be sold, exchanged, transferred, or given
+                    to any
+                    other company for any reason whatsoever, without the User’s consent.
+                </p>
+        
+                <h2 id="information-protection" class=" pt-10 pb-3 text-xl font-medium uppercase">
+                    6. Information Protection
+                </h2>
+        
+                <p class="pt-3" aria-live="polite" tabindex="0">
+                    6.1. We implement a variety of security measures to maintain the safety of the User’s personal information.
+                </p>
+        
+                <p class="pt-5" aria-live="polite" tabindex="0">
+                    6.2. The User’s personal information is stored in secured networks and is only accessible by a limited
+                    number of
+                    persons who have special access rights to such systems and are required to keep the information
+                    confidential.
+                </p>
+        
+                <p class="pt-5" aria-live="polite" tabindex="0">
+                    6.3. All sensitive/credit information supplied by the User is transmitted via Secure Socket Layer (SSL)
+                    technology
+                    and then encrypted into our databases to be only accessed as stated above.
+                </p>
+        
+                <h2 id="cookies" class=" pt-10 pb-3 text-xl font-medium uppercase">
+                    7. Cookies
+                </h2>
+        
+                <p class="pt-3" aria-live="polite" tabindex="0">
+                    7.1. Cookies are small files that a site or its service provider transfers to the User’s computer’s hard
+                    drive through
+                    the browser (if the User allows) that enables the site’s or service provider’s systems to recognize the
+                    User’s
+                    browser and capture and remember certain information.
+                </p>
+        
+                <p class="pt-5" aria-live="polite" tabindex="0">
+                    7.2. We use cookies to understand and save the User’s preferences for future visits, keep track of
+                    advertisements
+                    and compile aggregate data about site traffic and site interaction so that we can offer better site
+                    experiences and
+                    tools in the future.
+                </p>
+        
+                <h2 id="third-party-disclosure" class=" pt-10 pb-3 text-xl font-medium uppercase">
+                    8. Third-Party Disclosure
+                </h2>
+        
+                <p class="pt-3" aria-live="polite" tabindex="0">
+                    8.1. We do not sell, trade, or otherwise transfer to outside parties the User’s personally identifiable
+                    information
+                    unless we provide advance notice to the User. This does not include website hosting partners and other
+                    parties who
+                    assist us in operating our website, conducting our business, or serving the User, so long as those parties
+                    agree to
+                    keep this information confidential.
+                </p>
+        
+                <p class="pt-5" aria-live="polite" tabindex="0">
+                    8.2. We may also release information when its release is appropriate to comply with the law, enforce our
+                    site
+                    policies, or protect ours or others’ rights, property, or safety.
+                </p>
+        
+                <h2 id="third-party-links" class=" pt-10 pb-3 text-xl font-medium uppercase">
+                    9. Third-Party Links
+                </h2>
+        
+                <p class="pt-3" aria-live="polite" tabindex="0">
+                    9.1. Occasionally, at our discretion, we may include or offer third-party products or services on our
+                    website. These
+                    third-party sites have separate and independent privacy policies. We, therefore, have no responsibility or
+                    liability for the content and activities of these linked sites.
+                </p>
+        
+                <h2 id="user-rights" class=" pt-10 pb-3 text-xl font-medium uppercase">
+                    10. User Rights
+                </h2>
+        
+                <p class="pt-3" aria-live="polite" tabindex="0">
+                    10.1. The User has the right to ask us not to process their personal information for marketing purposes. We
+                    will
+                    usually inform the User (before collecting their data) if we intend to use their data for such purposes or
+                    if we
+                    intend to disclose their information to any third party for such purposes.
+                </p>
+        
+                <p class="pt-5" aria-live="polite" tabindex="0"  >
+                    10.2. The User can exercise their right to prevent such processing by not checking certain boxes on the
+                    forms we use
+                    to collect their data.
+                </p>
 
-        <div class="bg-light text-dark-purple flex flex-col h-[80vh] pt-20">
-            <p class="base md:px-32 px-10 font-normal text-center">
-                Text
-            </p>
-        </div>
 
+                <h2 id="data-transfer" class="pt-10 text-xl font-medium uppercase" aria-live="polite" tabindex="0" >11. Data Transfer:</h2>
+                <p class="pt-3" aria-live="polite" tabindex="0" >
+                    11.1. The User’s information collected through the Website may be stored and processed in India or any other
+                    country in which we or our subsidiaries, affiliates, or service providers maintain facilities.
+                </p>
+                <p class="pt-5" aria-live="polite" tabindex="0" >
+                    11.2. We may transfer, in full compliance with applicable laws, any information that we collect about the User,
+                    including Personal Information, to affiliated entities, or to other third parties across borders and from the
+                    User’s country or jurisdiction to other countries or jurisdictions around the world. These countries may have
+                    data protection laws that are different to the laws of the User’s country and, in some cases, may not be as
+                    protective.
+                </p>
+                <p class="pt-5" aria-live="polite" tabindex="0" >
+                    11.3. We have taken appropriate safeguards to require that the User’s information will remain protected in
+                    accordance with this Privacy Policy such as entering into signed agreements to ensure the adequate protection
+                    of the User’s Personal Information.
+                </p>
+                <p class="pt-5" aria-live="polite" tabindex="0" >
+                    11.4. If the User is located outside India, by providing the information to us, the User consents to the transfer,
+                    processing, and storage of information in India. The User’s consent to this Privacy Policy followed by the
+                    submission of information represents the User’s agreement to that transfer.
+                </p>
+                
+                <h2 id="liabilities" class="pt-10 text-xl font-medium uppercase" aria-live="polite" tabindex="0" >12. Liabilities:</h2>
+                <p class="pt-3" aria-live="polite" tabindex="0" >
+                    12.1. We shall not be liable for any indirect, incidental, consequential, special, or exemplary damage(s) arising
+                    due to loss of data or use arising out of or in connection with the User’s access or use of or inability to
+                    access or use the Website, including but not limited to any sub-domains.
+                </p>
+                <p class="pt-5" aria-live="polite" tabindex="0" >
+                    12.2. We shall not be liable for any third-party products, software, or service provided to the User. The User
+                    shall assume all risks arising out of or resulting from any transaction undertaken by the User with such third
+                    party on the Website, and the User agrees that we shall not be responsible or liable for any loss to the User
+                    due to the User’s usage of such third-party application.
+                </p>
+                
+                <h2 id="sale-assets" class="pt-10 text-xl font-medium uppercase" aria-live="polite" tabindex="0" >13. Sale of Assets, Merger, Acquisition:
+                </h2>
+                <p class="pt-3" aria-live="polite" tabindex="0" >
+                    We may share the User’s information with our parent, subsidiaries, and/or affiliates for internal purposes. The
+                    Company also reserves the right to disclose and transfer all such information: (i) to a subsequent owner, co-owner
+                    or operator of the Website or applicable database; or (ii) in connection with a corporate merger, consolidation,
+                    restructuring, the sale of substantially all of our membership interests and/or assets or other corporate change,
+                    including, during the course of any due diligence process. The User will be notified via email and/or a prominent
+                    notice on our Website of any change in ownership.
+                </p>
+                
+                <h2 id="third-party-services" class="pt-10 text-xl font-medium uppercase" aria-live="polite" tabindex="0" >14. Third Party Services:</h2>
+                <p class="pt-3" aria-live="polite" tabindex="0" >
+                    Please note that the User’s internet service provider, operating system provider, third-party applications, social
+                    media platforms, and websites that the User access may also collect, use, and share information about the User and
+                    the User’s usage. We cannot control how these third parties collect, use, share, or secure this information. For
+                    information about third-party privacy practices, please consult their respective privacy policies.
+                </p>
+                
+                <h2 id="queries-complaints" class="pt-10 text-xl font-medium uppercase" aria-live="polite" tabindex="0" >15. Queries and Complaints:</h2>
+                <p class="pt-3" aria-live="polite" tabindex="0" >
+                    Should the User have questions about the Privacy Policy or information collection, use and disclosure practices
+                    in relation to the Services, The User may contact our Grievance Officer at:
+                    <br><br>Grievance Officer
+                    <br><br>Email: <a class="underline" href="mailto:admin@thefriendlycouch.com"
+                        aria-live="polite" tabindex="0" >admin@thefriendlycouch.com</a>
+                    <br><br>The Grievance Officer shall redress the User’s grievances expeditiously. Except
+                    where required by law, we cannot ensure a response to questions or comments regarding topics unrelated to the
+                    terms of these Terms and Conditions or the Privacy Policy.
+                </p>
+
+            </div>
+        </section>
     </main>    
     <footer class="bg-mid-purple flex flex-col text-sm font-normal text-white" role="contentinfo">
         <div class="text-center">
@@ -413,37 +728,3 @@
 </body>
     
 </html>
-               
-                   
-                   
-                       
-                                   
-                       
-                                         
-                                         
-                               
-                               
-                                                         
-                                         
-                                         
-                               
-                               
-                                                                 
-                                                         
-                                   
-                           
-                                                      
-                                   
-                           
-                                           
-                         
-                             
-                       
-                                                                   
-                                                               
-                                                               
-                                                               
-                               
-                                                       
-                               
-                                                                 
