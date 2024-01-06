@@ -3535,18 +3535,6 @@ svg {
     margin-top: 7svh;
   }
 
-  .portrait\:mt-\[12svh\] {
-    margin-top: 12svh;
-  }
-
-  .portrait\:mt-\[6svh\] {
-    margin-top: 6svh;
-  }
-
-  .portrait\:mt-\[8svh\] {
-    margin-top: 8svh;
-  }
-
   .portrait\:hidden {
     display: none;
   }
@@ -3746,10 +3734,6 @@ svg {
     font-size: 5vw;
   }
 
-  .portrait\:text-\[2vw\] {
-    font-size: 2vw;
-  }
-
   .portrait\:font-light {
     font-weight: 300;
   }
@@ -3816,10 +3800,6 @@ svg {
 
     .portrait\:sm\:mt-\[7vw\] {
       margin-top: 7vw;
-    }
-
-    .portrait\:sm\:mt-\[2vw\] {
-      margin-top: 2vw;
     }
 
     .portrait\:sm\:hidden {
@@ -4074,14 +4054,6 @@ svg {
   @media (orientation: portrait) {
     .lg\:portrait\:text-\[1\.75vw\] {
       font-size: 1.75vw;
-    }
-
-    .lg\:portrait\:text-\[1\.5vw\] {
-      font-size: 1.5vw;
-    }
-
-    .lg\:portrait\:text-\[1vw\] {
-      font-size: 1vw;
     }
   }
 }
@@ -4627,10 +4599,6 @@ svg {
 
 @media (orientation: landscape) {
   @media (min-width: 1024px) {
-    .landscape\:lg\:mt-\[1svh\] {
-      margin-top: 1svh;
-    }
-
     .landscape\:lg\:h-5 {
       height: 1.25rem;
     }
@@ -4684,18 +4652,6 @@ svg {
 
 @media (orientation: landscape) {
   @media (min-width: 1024px) {
-    .landscape\:lg\:w-\[23rem\] {
-      width: 23rem;
-    }
-
-    .landscape\:lg\:w-\[22rem\] {
-      width: 22rem;
-    }
-
-    .landscape\:lg\:w-\[20rem\] {
-      width: 20rem;
-    }
-
     .landscape\:lg\:translate-x-\[50svw\] {
       --tw-translate-x: 50svw;
       transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -4877,16 +4833,6 @@ svg {
     .lg\:landscape\:text-lg {
       font-size: 1.125rem;
       line-height: 1.75rem;
-    }
-
-    .lg\:landscape\:text-sm {
-      font-size: 0.875rem;
-      line-height: 1.25rem;
-    }
-
-    .lg\:landscape\:text-xs {
-      font-size: 0.75rem;
-      line-height: 1rem;
     }
   }
 }
