@@ -881,6 +881,10 @@ html {
   margin-top: 5vw;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .block {
   display: block;
 }
@@ -3342,6 +3346,10 @@ svg {
 
   .xl\:w-\[50\%\] {
     width: 50%;
+  }
+
+  .xl\:w-\[15rem\] {
+    width: 15rem;
   }
 
   .xl\:flex-row {
