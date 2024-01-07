@@ -3555,6 +3555,10 @@ svg {
     margin-top: 8svh;
   }
 
+  .portrait\:mt-\[3svh\] {
+    margin-top: 3svh;
+  }
+
   .portrait\:hidden {
     display: none;
   }
@@ -3828,6 +3832,14 @@ svg {
 
     .portrait\:sm\:mt-\[2vw\] {
       margin-top: 2vw;
+    }
+
+    .portrait\:sm\:mt-\[5vw\] {
+      margin-top: 5vw;
+    }
+
+    .portrait\:sm\:mt-\[4svh\] {
+      margin-top: 4svh;
     }
 
     .portrait\:sm\:hidden {
