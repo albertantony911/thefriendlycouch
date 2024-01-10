@@ -885,6 +885,18 @@ html {
   margin-top: 0.5rem;
 }
 
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
 .block {
   display: block;
 }
@@ -1203,6 +1215,38 @@ html {
 
 .w-px {
   width: 1px;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.w-\[93\%\] {
+  width: 93%;
+}
+
+.w-\[87\%\] {
+  width: 87%;
+}
+
+.w-\[88\%\] {
+  width: 88%;
+}
+
+.w-\[89\%\] {
+  width: 89%;
+}
+
+.w-\[50rem\] {
+  width: 50rem;
+}
+
+.w-\[60rem\] {
+  width: 60rem;
+}
+
+.w-\[70rem\] {
+  width: 70rem;
 }
 
 .min-w-full {
@@ -1528,6 +1572,12 @@ html {
   margin-bottom: calc(1svh * var(--tw-space-y-reverse));
 }
 
+.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .divide-y > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-y-reverse: 0;
   border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
@@ -1757,6 +1807,14 @@ html {
   padding: 10vw;
 }
 
+.p-\[8vw\] {
+  padding: 8vw;
+}
+
+.p-\[5vw\] {
+  padding: 5vw;
+}
+
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
@@ -1950,6 +2008,31 @@ html {
 .py-\[7vw\] {
   padding-top: 7vw;
   padding-bottom: 7vw;
+}
+
+.py-\[10vw\] {
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+}
+
+.px-\[10vw\] {
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.px-\[8vw\] {
+  padding-left: 8vw;
+  padding-right: 8vw;
+}
+
+.px-\[7vw\] {
+  padding-left: 7vw;
+  padding-right: 7vw;
+}
+
+.px-\[7\.5vw\] {
+  padding-left: 7.5vw;
+  padding-right: 7.5vw;
 }
 
 .pb-1 {
@@ -3635,6 +3718,18 @@ svg {
     width: 100%;
   }
 
+  .portrait\:w-\[90\%\] {
+    width: 90%;
+  }
+
+  .portrait\:w-\[95\%\] {
+    width: 95%;
+  }
+
+  .portrait\:w-\[97\%\] {
+    width: 97%;
+  }
+
   .portrait\:translate-x-\[10vw\] {
     --tw-translate-x: 10vw;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -3918,6 +4013,62 @@ svg {
 
 @media (orientation: portrait) {
   @media (min-width: 640px) {
+    .portrait\:sm\:w-auto {
+      width: auto;
+    }
+
+    .portrait\:sm\:w-\[50\%\] {
+      width: 50%;
+    }
+
+    .portrait\:sm\:w-\[60\%\] {
+      width: 60%;
+    }
+
+    .portrait\:sm\:w-\[70\%\] {
+      width: 70%;
+    }
+
+    .portrait\:sm\:w-\[80\%\] {
+      width: 80%;
+    }
+
+    .portrait\:sm\:w-\[85\%\] {
+      width: 85%;
+    }
+
+    .portrait\:sm\:w-\[90\%\] {
+      width: 90%;
+    }
+
+    .portrait\:sm\:w-\[75\%\] {
+      width: 75%;
+    }
+
+    .portrait\:sm\:w-\[84\%\] {
+      width: 84%;
+    }
+
+    .portrait\:sm\:w-\[83\%\] {
+      width: 83%;
+    }
+
+    .portrait\:sm\:w-\[82\%\] {
+      width: 82%;
+    }
+
+    .portrait\:sm\:w-\[81\%\] {
+      width: 81%;
+    }
+
+    .portrait\:sm\:w-\[80\.5\%\] {
+      width: 80.5%;
+    }
+
+    .portrait\:sm\:w-\[8\%\] {
+      width: 8%;
+    }
+
     .portrait\:sm\:translate-x-\[6vw\] {
       --tw-translate-x: 6vw;
       transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -4028,6 +4179,10 @@ svg {
       width: 100%;
     }
 
+    .portrait\:md\:w-\[80\%\] {
+      width: 80%;
+    }
+
     .portrait\:md\:flex-col {
       flex-direction: column;
     }
@@ -4102,6 +4257,18 @@ svg {
 
     .lg\:portrait\:text-\[1vw\] {
       font-size: 1vw;
+    }
+  }
+}
+
+@media (orientation: portrait) {
+  @media (min-width: 1280px) {
+    .portrait\:xl\:w-\[75\%\] {
+      width: 75%;
+    }
+
+    .portrait\:xl\:w-\[80\%\] {
+      width: 80%;
     }
   }
 }
@@ -4288,6 +4455,59 @@ svg {
     width: max-content;
   }
 
+  .landscape\:w-\[60\%\] {
+    width: 60%;
+  }
+
+  .landscape\:w-\[45\%\] {
+    width: 45%;
+  }
+
+  .landscape\:w-\[55\%\] {
+    width: 55%;
+  }
+
+  .landscape\:w-\[53\%\] {
+    width: 53%;
+  }
+
+  .landscape\:w-\[47\%\] {
+    width: 47%;
+  }
+
+  .landscape\:w-\[48\%\] {
+    width: 48%;
+  }
+
+  .landscape\:w-\[52\%\] {
+    width: 52%;
+  }
+
+  .landscape\:w-min {
+    width: -moz-min-content;
+    width: min-content;
+  }
+
+  .landscape\:w-\[90\%\] {
+    width: 90%;
+  }
+
+  .landscape\:w-\[85\%\] {
+    width: 85%;
+  }
+
+  .landscape\:w-\[80\%\] {
+    width: 80%;
+  }
+
+  .landscape\:w-\[70\%\] {
+    width: 70%;
+  }
+
+  .landscape\:w-\[70rem\] {
+    width: 70rem;
+  }
+
   .landscape\:basis-1\/6 {
     flex-basis: 16.666667%;
   }
@@ -4421,6 +4641,11 @@ svg {
     padding-bottom: 0.05rem;
   }
 
+  .landscape\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
   .landscape\:pt-2 {
     padding-top: 0.5rem;
   }
@@ -4492,6 +4717,30 @@ svg {
   }
 
   @media (min-width: 640px) {
+    .landscape\:sm\:w-\[50rem\] {
+      width: 50rem;
+    }
+
+    .landscape\:sm\:w-\[90\%\] {
+      width: 90%;
+    }
+
+    .landscape\:sm\:w-auto {
+      width: auto;
+    }
+
+    .landscape\:sm\:w-\[80\%\] {
+      width: 80%;
+    }
+
+    .landscape\:sm\:w-\[70\%\] {
+      width: 70%;
+    }
+
+    .landscape\:sm\:w-\[50\%\] {
+      width: 50%;
+    }
+
     .landscape\:sm\:pt-10 {
       padding-top: 2.5rem;
     }
@@ -4508,6 +4757,10 @@ svg {
 
     .landscape\:md\:w-\[90\%\] {
       width: 90%;
+    }
+
+    .landscape\:md\:w-\[50rem\] {
+      width: 50rem;
     }
 
     .landscape\:md\:grid-cols-5 {
@@ -4915,6 +5168,18 @@ svg {
   @media (min-width: 1280px) {
     .landscape\:xl\:w-1\/2 {
       width: 50%;
+    }
+
+    .landscape\:xl\:w-\[85\%\] {
+      width: 85%;
+    }
+
+    .landscape\:xl\:w-\[70rem\] {
+      width: 70rem;
+    }
+
+    .landscape\:xl\:w-\[50rem\] {
+      width: 50rem;
     }
   }
 }
