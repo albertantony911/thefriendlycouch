@@ -560,12 +560,12 @@
         <section
           class="md:flex-row portrait:md:flex-col bg-dark-purple landscape:md:divide-x divide-solid divide-slate-200 md:py-20 flex flex-col items-center py-20 mx-auto">
           <!-- Logo Section -->
-          <div class="w-full" data-aos="flip-left" data-aos-once="true">
+          <div class="md:w-[40%] w-full" data-aos="flip-left" data-aos-once="true">
             <img class="w-[13rem] mx-auto shadow-xl" src="./img/logo.svg" alt="Friendly Couch Logo">
           </div>
         
           <!-- What We Do Section -->
-          <div class="text-slate-100 flex flex-col w-full" data-aos="fade-in" data-aos-delay="250" data-aos-once="true">
+          <div class="text-slate-100 md:w-[60%] flex flex-col w-full" data-aos="fade-in" data-aos-delay="250" data-aos-once="true">
             <!-- Title -->
             <h2 class="md:text-3xl landscape:md:pt-0 pt-20 text-2xl font-semibold text-center text-white">
               WHAT WE DO
@@ -573,7 +573,7 @@
         
             <!-- Content -->
             <div
-              class="md:px-32 portrait:md:px-24 md:text-lg md:pt-10 px-12 pt-5 mx-auto text-sm font-light leading-relaxed text-center">
+              class="md:px-32 portrait:md:px-24 md:text-lg md:pt-10 px-12 pt-5 pb-3 mx-auto text-sm font-light leading-relaxed text-center">
               <p>
                 With so many different types of professionals (and quacks) in the field, how does one know who to choose?
               </p>
@@ -583,13 +583,30 @@
               </p>
             </div>
         
-            <!-- Button -->
-            <a href="./about.html" role="button" aria-label="About Us" class="md:mt-12 mx-auto mt-10">
-              <div
-                class="whitespace-nowrap focus:outline-light-purple hover:scale-105 hover:shadow-2xl hover:bg-light-purple hover:text-light text-dark-purple landscape:text-xs lg:landscape:text-base portrait:text-[3.75vw] md:portrait:text-[1.7vw] portrait:py-[4vw] portrait:px-[6vw] sm:portrait:px-[3vw] sm:portrait:py-[2vw] landscape:px-4 landscape:py-3 lg:landscape:px-6 lg:landscape:py-5 transition-transform duration-300 transform bg-white rounded-full select-none">
-                About Us
-              </div>
-            </a>
+            <div
+              class=" text-[3vw] landscape:text-[2vh] landscape:lg:text-sm md:text-sm md:flex-row landscape:gap-1 mt-10 landscape:lg:gap-3 md:gap-3 text-mid-purple  flex flex-wrap justify-center gap-[2vw] mx-auto font-medium">
+              <button
+                class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl  px-[3vw] landscape:lg:px-4 landscape:px-2 md:px-4 md:py-2 landscape:py-[0.05rem] landscape:lg:py-2 py-[2vw] transition bg-gray-100 rounded-full">
+                <a href="./therapy.html">THERAPY</a>
+              </button>
+              <button
+                class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl  px-[3vw] landscape:lg:px-4 landscape:px-2 md:px-4 md:py-2 landscape:py-[0.05rem] landscape:lg:py-2 py-[2vw] transition bg-gray-100 rounded-full">
+                <a href="./diagnosis.html">DIAGNOSIS</a>
+              </button>
+              <button
+                class="hover:text-white  hover:bg-dark-purple hover:scale-105 hover:shadow-2xl  px-[3vw] landscape:lg:px-4 landscape:px-2 md:px-4 md:py-2 landscape:py-[0.05rem] landscape:lg:py-2 py-[2vw] transition bg-gray-100 rounded-full">
+                <a href="./pricing.html">PRICING</a>
+              </button>
+            
+            </div>
+            
+            <button
+              class="font-medium landscape:text-[2vh] landscape:lg:text-sm text-[3vw] md:text-sm landscape:mt-[0.4rem] landscape:lg:mt-[0.8rem] md:mt-[0.8rem] text-mid-purple mt-[3vw] hover:text-white hover:bg-light-purple hover:scale-105 hover:shadow-2xl  px-[3vw] py-[2vw] landscape:lg:px-4 md:px-4 md:py-2 landscape:px-2 landscape:py-[0.05rem] landscape:lg:py-2 mx-auto transition bg-gray-100 rounded-full">
+              <a href="./couples-counselling.html">COUPLE'S COUNSELLING</a>
+            </button>
+
+          
+                            
           </div>
         </section>
 

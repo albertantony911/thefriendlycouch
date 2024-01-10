@@ -725,6 +725,16 @@ html {
   margin-bottom: auto;
 }
 
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .-mt-1 {
   margin-top: -0.25rem;
 }
@@ -1553,6 +1563,10 @@ html {
 
 .gap-\[5vw\] {
   gap: 5vw;
+}
+
+.gap-\[2vw\] {
+  gap: 2vw;
 }
 
 .gap-x-6 {
@@ -3082,6 +3096,34 @@ svg {
     width: auto;
   }
 
+  .md\:w-\[\] {
+    width: ;
+  }
+
+  .md\:w-\[1\/4\] {
+    width: 1/4;
+  }
+
+  .md\:w-\[40\%\] {
+    width: 40%;
+  }
+
+  .md\:w-\[30\%\] {
+    width: 30%;
+  }
+
+  .md\:w-\[400\%\] {
+    width: 400%;
+  }
+
+  .md\:w-\[45\%\] {
+    width: 45%;
+  }
+
+  .md\:w-\[55\%\] {
+    width: 55%;
+  }
+
   .md\:translate-x-\[-5rem\] {
     --tw-translate-x: -5rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -3815,6 +3857,16 @@ svg {
   .portrait\:py-\[4vw\] {
     padding-top: 4vw;
     padding-bottom: 4vw;
+  }
+
+  .portrait\:py-\[6vw\] {
+    padding-top: 6vw;
+    padding-bottom: 6vw;
+  }
+
+  .portrait\:py-\[5vw\] {
+    padding-top: 5vw;
+    padding-bottom: 5vw;
   }
 
   .portrait\:pt-5 {
