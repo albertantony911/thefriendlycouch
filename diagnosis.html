@@ -497,7 +497,7 @@
                 <div x-data="{ showModal: false}">
                     <!-- Trigger button -->
                     <div data-aos="fade-in" data-aos-delay="250" data-aos-anchor="#hero" data-aos-once="true">
-                        <button
+                        <button id="diagnosisBookingButton"
                             class="md:mt-28 whitespace-nowrap  hover:scale-105 hover:shadow-2xl hover:bg-light-purple hover:text-light text-dark-purple portrait:mt-[5svh] landscape:mt-[2svh] lg:landscape:mt-[5svh] landscape:text-xs lg:landscape:text-base portrait:text-[3.75vw] sm:portrait:text-[1.7vw] portrait:p-[6vw] sm:portrait:p-[3vw] landscape:px-4 landscape:py-3 lg:landscape:px-6 lg:landscape:py-5 mx-auto transition-transform duration-300 transform bg-white rounded-full select-none"
                             @click="showModal = true" aria-haspopup="dialog" aria-expanded="false" aria-controls="modal-content" aria-label="Book a Session">
                             Book a Session
@@ -575,21 +575,21 @@
                     
                                     <div
                                         class=" text-[3vw] landscape:text-[2vh] landscape:lg:text-sm md:text-sm md:flex-row landscape:gap-1 landscape:lg:gap-3 md:gap-3 text-mid-purple  flex flex-wrap justify-center gap-[3vw] mx-auto font-medium">
-                                        <button role="link"
+                                        <button role="link" id="diagnosisBookingTherapy"
                                             class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl  px-[3vw] landscape:lg:px-4 landscape:px-2 md:px-4 md:py-2 landscape:py-[0.05rem] landscape:lg:py-2 py-[2vw] transition bg-gray-100 rounded-full">
                                             <a href="./therapy.html">THERAPY</a>
                                         </button>
-                                        <button role="link"
+                                        <button role="link" id="diagnosisBookingDiagnosis"
                                             class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl  px-[3vw] landscape:lg:px-4 landscape:px-2 md:px-4 md:py-2 landscape:py-[0.05rem] landscape:lg:py-2 py-[2vw] transition bg-gray-100 rounded-full">
                                             <a href="./diagnosis.html">DIAGNOSIS</a>
                                         </button>
-                                        <button role="link"
+                                        <button role="link" id="diagnosisBookingPricing"
                                             class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl  px-[3vw] landscape:lg:px-4 landscape:px-2 md:px-4 md:py-2 landscape:py-[0.05rem] landscape:lg:py-2 py-[2vw] transition bg-gray-100 rounded-full">
                                             <a href="./pricing.html">PRICING</a>
                                         </button>
                                     </div>
                     
-                                    <button role="link"
+                                    <button role="link" id="diagnosisBookingCoupleCounselling"
                                         class="font-medium landscape:text-[2vh] landscape:lg:text-sm text-[3vw] md:text-sm landscape:mt-[0.4rem] landscape:lg:mt-[0.8rem] md:mt-[0.8rem] text-mid-purple mt-[3vw] hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl  px-[3vw] py-[2vw] landscape:lg:px-4 md:px-4 md:py-2 landscape:px-2 landscape:py-[0.05rem] landscape:lg:py-2 mx-auto transition bg-gray-100 rounded-full">
                                         <a href="./couples-counselling.html">COUPLE'S COUNSELLING</a>
                                     </button>
@@ -615,7 +615,7 @@
                 
                 
                                     <!-- Instagram Button -->
-                                    <button
+                                    <button id="diagnosisBookingInstagram"
                                         class="landscape:lg:px-8 landscape:px-6 md:px-8 landscape:lg:py-4 md:py-4 landscape:py-3 whitespace-nowrap hover:scale-105 hover:shadow-lg  hover:text-white px-[5vw] py-[2.7vw] mx-auto text-white transition rounded-full shadow-lg select-none"
                                         style="background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);"
                                         aria-label="Instagram">
@@ -627,7 +627,7 @@
                                     </button>
                                     
                                     <!-- WhatsApp Button -->
-                                    <button
+                                    <button id="diagnosisBookingWhatsApp"
                                         class="landscape:lg:px-7 landscape:px-6 md:px-8 landscape:lg:py-4 md:py-4 landscape:py-3 whitespace-nowrap hover:scale-105 hover:shadow-lg   text-white hover:text-white px-[5vw] py-[2.7vw] mx-auto  transition bg-[#25D366] rounded-full select-none"
                                         aria-label="WhatsApp">
                                         <div class="landscape:lg:gap-2 md:gap-3 landscape:gap-2 flex flex-row gap-[1.5vw] my-auto">
@@ -961,7 +961,7 @@
                     <div class="landscape:hidden text-center" x-data="{ showModal: false}">
                         <!-- Trigger button -->
                         <div data-aos="fade-in" data-aos-delay="250" data-aos-anchor="#hero" data-aos-once="true">
-                            <button
+                            <button id="diagnosisProcessPortraitBookingButton"
                                 class="md:mt-28 whitespace-nowrap  hover:scale-105 hover:shadow-2xl hover:bg-light-purple hover:text-light text-white portrait:mt-[5svh] landscape:mt-[12svh] lg:landscape:mt-[13svh] landscape:text-xs lg:landscape:text-base portrait:text-[3.75vw] md:portrait:text-[1.7vw] portrait:p-[6vw] md:portrait:p-[3vw] landscape:px-4 landscape:py-3 lg:landscape:px-6 lg:landscape:py-5 mx-auto transition-transform duration-300 transform bg-dark-purple rounded-full text-center select-none"
                                 @click="showModal = true" aria-haspopup="dialog" aria-expanded="false" aria-controls="modal-content" aria-label="Book a Session">
                                 Book a Session
@@ -1037,21 +1037,21 @@
                         
                                         <div
                                             class=" text-[3vw] landscape:text-[2vh] landscape:lg:text-sm md:text-sm md:flex-row landscape:gap-1 landscape:lg:gap-3 md:gap-3 text-mid-purple  flex flex-wrap justify-center gap-[3vw] mx-auto font-medium">
-                                            <button role="link"
+                                            <button role="link" id="diagnosisProcessPortraitBookingTherapy"
                                                 class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl  px-[3vw] landscape:lg:px-4 landscape:px-2 md:px-4 md:py-2 landscape:py-[0.05rem] landscape:lg:py-2 py-[2vw] transition bg-gray-100 rounded-full">
                                                 <a href="./therapy.html">THERAPY</a>
                                             </button>
-                                            <button role="link"
+                                            <button role="link" id="diagnosisProcessPortraitBookingDiagnosis"
                                                 class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl  px-[3vw] landscape:lg:px-4 landscape:px-2 md:px-4 md:py-2 landscape:py-[0.05rem] landscape:lg:py-2 py-[2vw] transition bg-gray-100 rounded-full">
                                                 <a href="./diagnosis.html">DIAGNOSIS</a>
                                             </button>
-                                            <button role="link"
+                                            <button role="link" id="diagnosisProcessPortraitBookingPricing"
                                                 class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl  px-[3vw] landscape:lg:px-4 landscape:px-2 md:px-4 md:py-2 landscape:py-[0.05rem] landscape:lg:py-2 py-[2vw] transition bg-gray-100 rounded-full">
                                                 <a href="./pricing.html">PRICING</a>
                                             </button>
                                         </div>
                         
-                                        <button role="link"
+                                        <button role="link" id="diagnosisProcessPortraitBookingCoupleCounselling"
                                             class="font-medium landscape:text-[2vh] landscape:lg:text-sm text-[3vw] md:text-sm landscape:mt-[0.4rem] landscape:lg:mt-[0.8rem] md:mt-[0.8rem] text-mid-purple mt-[3vw] hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl  px-[3vw] py-[2vw] landscape:lg:px-4 md:px-4 md:py-2 landscape:px-2 landscape:py-[0.05rem] landscape:lg:py-2 mx-auto transition bg-gray-100 rounded-full">
                                             <a href="./couples-counselling.html">COUPLE'S COUNSELLING</a>
                                         </button>
@@ -1076,7 +1076,7 @@
                                         role="group" aria-label="Booking Contact Options">
                         
                                         <!-- Instagram Button -->
-                                        <button
+                                        <button id="diagnosisProcessPortraitBookingInstagram"
                                             class="landscape:lg:px-8 landscape:px-6 md:px-8 landscape:lg:py-4 md:py-4 landscape:py-3 whitespace-nowrap hover:scale-105 hover:shadow-lg  hover:text-white px-[5vw] py-[4vw] mx-auto text-white transition rounded-full shadow-lg select-none"
                                             style="background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);"
                                             aria-label="Instagram">
@@ -1090,7 +1090,7 @@
                                         </button>
                         
                                         <!-- WhatsApp Button -->
-                                        <button
+                                        <button id="diagnosisProcessPortraitBookingWhatsApp"
                                             class="landscape:lg:px-8 landscape:px-6 md:px-8 landscape:lg:py-4 md:py-4 landscape:py-3 whitespace-nowrap hover:scale-105 hover:shadow-lg   text-white hover:text-white px-[5vw] py-[4vw] mx-auto  transition bg-[#25D366] rounded-full select-none"
                                             aria-label="WhatsApp">
                                             <div class="landscape:lg:gap-3 md:gap-3 landscape:gap-2 flex flex-row gap-[1.5vw] my-auto">
@@ -1158,7 +1158,7 @@
                     <div class="portrait:hidden mx-auto" x-data="{ showModal: false }">
                         <!-- Trigger button -->
                         <div data-aos="fade-in" data-aos-delay="250" data-aos-anchor="#hero" data-aos-once="true">
-                            <button
+                            <button id="diagnosisProcessLandscapeBookingButton"
                                 class="md:mt-10 whitespace-nowrap  hover:scale-105 hover:shadow-2xl hover:bg-light-purple hover:text-light text-white portrait:mt-10 landscape:text-base portrait:text-[3.75vw] md:portrait:text-[1.7vw] portrait:p-[6vw] md:portrait:p-[3vw] landscape:px-6 landscape:py-5 mx-auto transition-transform duration-300 transform bg-dark-purple rounded-full select-none"
                                 @click="showModal = true" aria-haspopup="dialog" aria-expanded="false" aria-controls="modal-content" aria-label="Book a Session">
                                 Book a Session
@@ -1236,21 +1236,21 @@
                         
                                         <div
                                             class=" text-[3vw] landscape:text-[2vh] landscape:lg:text-sm md:text-sm md:flex-row landscape:gap-1 landscape:lg:gap-3 md:gap-3 text-mid-purple  flex flex-wrap justify-center gap-[3vw] mx-auto font-medium">
-                                            <button role="link"
+                                            <button role="link" id="diagnosisProcessLandscapeBookingTherapy"
                                                 class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl  px-[3vw] landscape:lg:px-4 landscape:px-2 md:px-4 md:py-2 landscape:py-[0.05rem] landscape:lg:py-2 py-[2vw] transition bg-gray-100 rounded-full">
                                                 <a href="./therapy.html">THERAPY</a>
                                             </button>
-                                            <button role="link"
+                                            <button role="link" id="diagnosisProcessLandscapeBookingDiagnosis"
                                                 class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl  px-[3vw] landscape:lg:px-4 landscape:px-2 md:px-4 md:py-2 landscape:py-[0.05rem] landscape:lg:py-2 py-[2vw] transition bg-gray-100 rounded-full">
                                                 <a href="./diagnosis.html">DIAGNOSIS</a>
                                             </button>
-                                            <button role="link"
+                                            <button role="link" id="diagnosisProcessLandscapeBookingPricing"
                                                 class="hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl  px-[3vw] landscape:lg:px-4 landscape:px-2 md:px-4 md:py-2 landscape:py-[0.05rem] landscape:lg:py-2 py-[2vw] transition bg-gray-100 rounded-full">
                                                 <a href="./pricing.html">PRICING</a>
                                             </button>
                                         </div>
                         
-                                        <button role="link"
+                                        <button role="link" id="diagnosisProcessLandscapeBookingCoupleCounselling"
                                             class="font-medium landscape:text-[2vh] landscape:lg:text-sm text-[3vw] md:text-sm landscape:mt-[0.4rem] landscape:lg:mt-[0.8rem] md:mt-[0.8rem] text-mid-purple mt-[3vw] hover:text-white hover:bg-dark-purple hover:scale-105 hover:shadow-2xl  px-[3vw] py-[2vw] landscape:lg:px-4 md:px-4 md:py-2 landscape:px-2 landscape:py-[0.05rem] landscape:lg:py-2 mx-auto transition bg-gray-100 rounded-full">
                                             <a href="./couples-counselling.html">COUPLE'S COUNSELLING</a>
                                         </button>
@@ -1275,7 +1275,7 @@
                                         role="group" aria-label="Booking Contact Options">
                         
                                         <!-- Instagram Button -->
-                                        <button
+                                        <button id="diagnosisProcessLandscapeBookingInstagram"
                                             class="landscape:lg:px-8 landscape:px-6 md:px-8 landscape:lg:py-4 md:py-4 landscape:py-3 whitespace-nowrap hover:scale-105 hover:shadow-lg  hover:text-white px-[5vw] py-[2.7vw] mx-auto text-white transition rounded-full shadow-lg select-none"
                                             style="background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);"
                                             aria-label="Instagram">
@@ -1289,7 +1289,7 @@
                                         </button>
                         
                                         <!-- WhatsApp Button -->
-                                        <button
+                                        <button id="diagnosisProcessLandscapeBookingWhatsApp"
                                             class="landscape:lg:px-6 landscape:px-6 md:px-8 landscape:lg:py-4 md:py-4 landscape:py-3 whitespace-nowrap hover:scale-105 hover:shadow-lg   text-white hover:text-white px-[5vw] py-[2.7vw] mx-auto  transition bg-[#25D366] rounded-full select-none"
                                             aria-label="WhatsApp">
                                             <div class="landscape:lg:gap-2 md:gap-3 landscape:gap-2 flex flex-row gap-[1.5vw] my-auto">
