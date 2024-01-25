@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.6 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -121,8 +121,10 @@ strong {
 }
 
 /*
-1. Use the user's configured `mono` font family by default.
-2. Correct the odd `em` font sizing in all browsers.
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
 */
 
 code,
@@ -131,8 +133,12 @@ samp,
 pre {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   /* 1 */
-  font-size: 1em;
+  font-feature-settings: normal;
   /* 2 */
+  font-variation-settings: normal;
+  /* 3 */
+  font-size: 1em;
+  /* 4 */
 }
 
 /*
@@ -807,10 +813,6 @@ html {
 
 .mt-14 {
   margin-top: 3.5rem;
-}
-
-.mt-16 {
-  margin-top: 4rem;
 }
 
 .mt-20 {
@@ -1499,6 +1501,10 @@ html {
   gap: 1vw;
 }
 
+.gap-\[2vw\] {
+  gap: 2vw;
+}
+
 .gap-\[3vw\] {
   gap: 3vw;
 }
@@ -1510,6 +1516,12 @@ html {
 .gap-x-6 {
   -moz-column-gap: 1.5rem;
        column-gap: 1.5rem;
+}
+
+.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-x-3 > :not([hidden]) ~ :not([hidden]) {
@@ -1838,6 +1850,11 @@ html {
   padding-right: 5vw;
 }
 
+.px-\[7\.5vw\] {
+  padding-left: 7.5vw;
+  padding-right: 7.5vw;
+}
+
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -1901,6 +1918,11 @@ html {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.py-\[10vw\] {
+  padding-top: 10vw;
+  padding-bottom: 10vw;
 }
 
 .py-\[2\.7vw\] {
@@ -2967,6 +2989,10 @@ svg {
     width: 35%;
   }
 
+  .md\:w-\[40\%\] {
+    width: 40%;
+  }
+
   .md\:w-\[50\%\] {
     width: 50%;
   }
@@ -2981,10 +3007,6 @@ svg {
 
   .md\:w-\[7rem\] {
     width: 7rem;
-  }
-
-  .md\:w-\[85\%\] {
-    width: 85%;
   }
 
   .md\:w-\[8rem\] {
@@ -3479,14 +3501,6 @@ svg {
     margin-top: 0.5svh;
   }
 
-  .portrait\:mt-\[10svh\] {
-    margin-top: 10svh;
-  }
-
-  .portrait\:mt-\[10vw\] {
-    margin-top: 10vw;
-  }
-
   .portrait\:mt-\[13svh\] {
     margin-top: 13svh;
   }
@@ -3515,24 +3529,20 @@ svg {
     margin-top: 3.5svh;
   }
 
-  .portrait\:mt-\[4svh\] {
-    margin-top: 4svh;
-  }
-
-  .portrait\:mt-\[59svh\] {
-    margin-top: 59svh;
+  .portrait\:mt-\[3svh\] {
+    margin-top: 3svh;
   }
 
   .portrait\:mt-\[5svh\] {
     margin-top: 5svh;
   }
 
-  .portrait\:mt-\[6vw\] {
-    margin-top: 6vw;
-  }
-
   .portrait\:mt-\[7svh\] {
     margin-top: 7svh;
+  }
+
+  .portrait\:mt-\[8svh\] {
+    margin-top: 8svh;
   }
 
   .portrait\:hidden {
@@ -3605,6 +3615,10 @@ svg {
 
   .portrait\:w-\[80vw\] {
     width: 80vw;
+  }
+
+  .portrait\:w-\[95\%\] {
+    width: 95%;
   }
 
   .portrait\:w-full {
@@ -3702,6 +3716,10 @@ svg {
     padding-top: 1.25rem;
   }
 
+  .portrait\:text-\[2vw\] {
+    font-size: 2vw;
+  }
+
   .portrait\:text-\[3\.2vw\] {
     font-size: 3.2vw;
   }
@@ -3762,10 +3780,6 @@ svg {
       margin-top: 10svh;
     }
 
-    .portrait\:sm\:mt-\[10vw\] {
-      margin-top: 10vw;
-    }
-
     .portrait\:sm\:mt-\[15vw\] {
       margin-top: 15vw;
     }
@@ -3788,6 +3802,10 @@ svg {
 
     .portrait\:sm\:mt-\[3svh\] {
       margin-top: 3svh;
+    }
+
+    .portrait\:sm\:mt-\[4svh\] {
+      margin-top: 4svh;
     }
 
     .portrait\:sm\:mt-\[5svh\] {
@@ -3860,6 +3878,10 @@ svg {
 
     .portrait\:sm\:w-\[7rem\] {
       width: 7rem;
+    }
+
+    .portrait\:sm\:w-\[90\%\] {
+      width: 90%;
     }
   }
 }
@@ -4055,6 +4077,10 @@ svg {
     .lg\:portrait\:text-\[1\.75vw\] {
       font-size: 1.75vw;
     }
+
+    .lg\:portrait\:text-\[1vw\] {
+      font-size: 1vw;
+    }
   }
 }
 
@@ -4117,10 +4143,6 @@ svg {
 
   .landscape\:mt-\[3svh\] {
     margin-top: 3svh;
-  }
-
-  .landscape\:mt-\[56svh\] {
-    margin-top: 56svh;
   }
 
   .landscape\:mt-\[5svh\] {
@@ -4318,11 +4340,6 @@ svg {
     border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
   }
 
-  .landscape\:bg-dark-purple {
-    --tw-bg-opacity: 1;
-    background-color: rgb(70 49 116 / var(--tw-bg-opacity));
-  }
-
   .landscape\:px-2 {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -4444,6 +4461,10 @@ svg {
   }
 
   @media (min-width: 640px) {
+    .landscape\:sm\:w-auto {
+      width: auto;
+    }
+
     .landscape\:sm\:pt-10 {
       padding-top: 2.5rem;
     }
@@ -4515,6 +4536,10 @@ svg {
       margin-top: 15svh;
     }
 
+    .landscape\:lg\:mt-\[1svh\] {
+      margin-top: 1svh;
+    }
+
     .landscape\:lg\:mt-\[20svh\] {
       margin-top: 20svh;
     }
@@ -4523,20 +4548,12 @@ svg {
       margin-top: 25svh;
     }
 
-    .landscape\:lg\:mt-\[2svh\] {
-      margin-top: 2svh;
-    }
-
     .landscape\:lg\:mt-\[3svh\] {
       margin-top: 3svh;
     }
 
     .landscape\:lg\:mt-\[4svh\] {
       margin-top: 4svh;
-    }
-
-    .landscape\:lg\:mt-\[58svh\] {
-      margin-top: 58svh;
     }
 
     .landscape\:lg\:mt-\[5svh\] {
@@ -4587,10 +4604,6 @@ svg {
       margin-top: 3svh;
     }
 
-    .lg\:landscape\:mt-\[4svh\] {
-      margin-top: 4svh;
-    }
-
     .lg\:landscape\:mt-\[5svh\] {
       margin-top: 5svh;
     }
@@ -4619,12 +4632,12 @@ svg {
       width: 17svh;
     }
 
-    .landscape\:lg\:w-\[20svh\] {
-      width: 20svh;
+    .landscape\:lg\:w-\[20rem\] {
+      width: 20rem;
     }
 
-    .landscape\:lg\:w-\[25rem\] {
-      width: 25rem;
+    .landscape\:lg\:w-\[20svh\] {
+      width: 20svh;
     }
 
     .landscape\:lg\:w-\[40\%\] {
@@ -4834,6 +4847,11 @@ svg {
       font-size: 1.125rem;
       line-height: 1.75rem;
     }
+
+    .lg\:landscape\:text-xs {
+      font-size: 0.75rem;
+      line-height: 1rem;
+    }
   }
 }
 
@@ -4841,6 +4859,10 @@ svg {
   @media (min-width: 1280px) {
     .landscape\:xl\:w-1\/2 {
       width: 50%;
+    }
+
+    .landscape\:xl\:w-\[70rem\] {
+      width: 70rem;
     }
   }
 }
