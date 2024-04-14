@@ -2279,6 +2279,22 @@ html {
   line-height: 1.625;
 }
 
+.leading-loose {
+  line-height: 2;
+}
+
+.leading-4 {
+  line-height: 1rem;
+}
+
+.leading-5 {
+  line-height: 1.25rem;
+}
+
+.leading-6 {
+  line-height: 1.5rem;
+}
+
 .text-dark-purple {
   --tw-text-opacity: 1;
   color: rgb(70 49 116 / var(--tw-text-opacity));
@@ -3312,6 +3328,14 @@ svg {
 
   .md\:text-xl {
     font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:leading-8 {
+    line-height: 2rem;
+  }
+
+  .md\:leading-7 {
     line-height: 1.75rem;
   }
 }
