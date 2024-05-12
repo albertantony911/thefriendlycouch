@@ -15,6 +15,7 @@
   "devDependencies": {
     "parcel": "^2.10.2",
     "prettier-plugin-tailwindcss": "^0.5.6",
+    "tailwindcss": "^3.4.3",
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4"
   },
