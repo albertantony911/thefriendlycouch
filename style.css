@@ -2875,6 +2875,10 @@ svg {
     margin-bottom: 0.75rem;
   }
 
+  .md\:mb-4 {
+    margin-bottom: 1rem;
+  }
+
   .md\:ml-0 {
     margin-left: 0px;
   }
@@ -4133,6 +4137,10 @@ svg {
 
   .landscape\:mt-3 {
     margin-top: 0.75rem;
+  }
+
+  .landscape\:mt-5 {
+    margin-top: 1.25rem;
   }
 
   .landscape\:mt-\[0\.4rem\] {
