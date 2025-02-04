@@ -3571,10 +3571,6 @@ svg {
     margin-top: 8svh;
   }
 
-  .portrait\:mt-\[10svh\] {
-    margin-top: 10svh;
-  }
-
   .portrait\:hidden {
     display: none;
   }
